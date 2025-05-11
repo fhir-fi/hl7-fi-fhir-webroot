@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "c4d76593-7ec5-42c1-a2a9-9e5b3b541750-132",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c4d76593-7ec5-42c1-a2a9-9e5b3b541750-132",
+  "name" : "IntersectionnullAndnull",
+  "title" : "Intersection of Example value set for provenance roles And Example value set for provenance roles",
+  "status" : "draft",
+  "date" : "2025-05-11T16:28:35+03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "http://gen.kanta.fi/fikanta-cs-rolecategory",
+        "display" : "Kanta specified roles"
+      }]
+    },
+    {
+      "concept" : [{
+        "code" : "urn:oid:1.2.246.537.5.40172",
+        "display" : "eArkisto - Rekisteripitäjän laji"
+      }]
+    }]
+  }
+}

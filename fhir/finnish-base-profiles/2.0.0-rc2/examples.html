@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Examples - Finnish Base Profiles v2.0.0-rc2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+    <link href="assets/css/fi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Examples</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v0.2.0: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 1 Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles">2.0.0-rc2</a>.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#Appointment" id="markdown-toc-Appointment">Appointment</a></li>
+  <li><a href="#Bundle" id="markdown-toc-Bundle">Bundle</a></li>
+  <li><a href="#Condition" id="markdown-toc-Condition">Condition</a></li>
+  <li><a href="#Encounter" id="markdown-toc-Encounter">Encounter</a></li>
+  <li><a href="#EpisodeOfCare" id="markdown-toc-EpisodeOfCare">EpisodeOfCare</a></li>
+  <li><a href="#HealthcareService" id="markdown-toc-HealthcareService">HealthcareService</a></li>
+  <li><a href="#Immunization" id="markdown-toc-Immunization">Immunization</a></li>
+  <li><a href="#Location" id="markdown-toc-Location">Location</a></li>
+  <li><a href="#Medication" id="markdown-toc-Medication">Medication</a></li>
+  <li><a href="#MedicationAdministration" id="markdown-toc-MedicationAdministration">MedicationAdministration</a></li>
+  <li><a href="#MedicationRequest" id="markdown-toc-MedicationRequest">MedicationRequest</a></li>
+  <li><a href="#MedicationStatement" id="markdown-toc-MedicationStatement">MedicationStatement</a></li>
+  <li><a href="#Observation" id="markdown-toc-Observation">Observation</a></li>
+  <li><a href="#Organization" id="markdown-toc-Organization">Organization</a></li>
+  <li><a href="#Patient" id="markdown-toc-Patient">Patient</a></li>
+  <li><a href="#Practitioner" id="markdown-toc-Practitioner">Practitioner</a></li>
+  <li><a href="#PractitionerRole" id="markdown-toc-PractitionerRole">PractitionerRole</a></li>
+  <li><a href="#Procedure" id="markdown-toc-Procedure">Procedure</a></li>
+  <li><a href="#Provenance" id="markdown-toc-Provenance">Provenance</a></li>
+  <li><a href="#Schedule" id="markdown-toc-Schedule">Schedule</a></li>
+  <li><a href="#Slot" id="markdown-toc-Slot">Slot</a></li>
+</ul>
+
+</div>
+<p>This list includes the examples included in this implementation guide. Please note that the list
+contains examples of FI Base resources as well as examples from other known implementations from
+Finland. We hope listing many examples here promotes awareness of what has already been done and
+thereby increases interoperability.</p>
+
+<p>These example instances show what data produced and consumed by systems conforming with this
+implementation guide might look like. Every effort has been made to ensure that the examples are
+correct and useful, but they are not a normative part of the specification nor are they fully
+representative of real world examples.</p>
+
+<h3 id="Appointment">Appointment</h3>
+
+<ul>
+  <li><a href="Appointment-appointment-general-practitioner.html">GP appointment</a></li>
+</ul>
+
+<h3 id="Bundle">Bundle</h3>
+
+<ul>
+  <li>
+    <p><a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html">Patient generated glucose observations and insulin administrations as a bundle, in English</a></p>
+  </li>
+  <li>
+    <p><a href="Bundle-diabetes-data-bundle-kantaphr-sv.html">Patient generated glucose observations and insulin administrations as a bundle, in Swedish</a></p>
+  </li>
+  <li>
+    <p><a href="Bundle-diabetes-data-bundle.html">Patient generated glucose observations and insulin administrations as a bundle, in Finnish</a></p>
+  </li>
+</ul>
+
+<h3 id="Condition">Condition</h3>
+
+<ul>
+  <li>
+    <p><a href="Condition-id-for-diagnosis-1.html">Condition - an example diagnosis</a></p>
+  </li>
+  <li>
+    <p><a href="Condition-id-for-diagnosis-2.html">Condition - an example diagnosis with external cause, accident and medication information.</a></p>
+  </li>
+  <li>
+    <p><a href="Condition-id-for-diagnosis-3.html">Condition - an example diagnosis with an adverse effect.</a></p>
+  </li>
+</ul>
+
+<h3 id="Encounter">Encounter</h3>
+
+<ul>
+  <li>
+    <p><a href="Encounter-id-for-child-encounter-2.html">Another Encounter that is part of palvelutapahtuma</a></p>
+  </li>
+  <li>
+    <p><a href="Encounter-id-for-child-encounter.html">Encounter that is part of palvelutapahtuma</a></p>
+  </li>
+  <li>
+    <p><a href="Encounter-id-for-palvelutapahtuma.html">Encounter that is a palvelutapahtuma in Kanta registry</a></p>
+  </li>
+  <li>
+    <p><a href="Encounter-id-for-visit.html">Encounter - patient primary care visit</a></p>
+  </li>
+  <li>
+    <p><a href="Encounter-id-for-ward-encounter.html">Encounter - patient is currently receiving care at a ward treating surgical patients</a></p>
+  </li>
+</ul>
+
+<h3 id="EpisodeOfCare">EpisodeOfCare</h3>
+
+<ul>
+  <li><a href="EpisodeOfCare-id-for-episode-1.html">Episode of care - with provenance</a></li>
+</ul>
+
+<h3 id="HealthcareService">HealthcareService</h3>
+
+<ul>
+  <li><a href="HealthcareService-healthcareService-example.html">Codified healthcare service</a></li>
+</ul>
+
+<h3 id="Immunization">Immunization</h3>
+
+<ul>
+  <li><a href="Immunization-ImmunizationVaccinationExample.html">Vaccination for TBE</a></li>
+</ul>
+
+<h3 id="Location">Location</h3>
+
+<ul>
+  <li>
+    <p><a href="Location-LocationExample.html">Outpatient clinic</a></p>
+  </li>
+  <li>
+    <p><a href="Location-id-for-bed-3.html">A named bed</a></p>
+  </li>
+</ul>
+
+<h3 id="Medication">Medication</h3>
+
+<ul>
+  <li>
+    <p><a href="Medication-medicationesim1.html">Myyntiluvallinen lääkevalmiste</a></p>
+  </li>
+  <li>
+    <p><a href="Medication-medicationesim2.html">Myyntiluvallinen lääkevalmiste, joka on PKV-lääke</a></p>
+  </li>
+</ul>
+
+<h3 id="MedicationAdministration">MedicationAdministration</h3>
+
+<ul>
+  <li>
+    <p><a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe2.html">Kanta PHR - Insulin dosage mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe3.html">Kanta PHR - Insulin dosage optional</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationAdministration-medication-administration-insulin-basal-dose-kanta-stu3-sv.html">MedicationAdministration example of insulin basal dose</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationAdministration-medication-administration-insulin-bolus-dose-fi.html">MedicationAdministration example of insulin dose</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html">MedicationAdministration example of temporary basal rate</a></p>
+  </li>
+</ul>
+
+<h3 id="MedicationRequest">MedicationRequest</h3>
+
+<ul>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim1.html">1 tabletti 2 kertaa päivässä</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim2.html">2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim3.html">1-2 tablettia kerran päivässä</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim4.html">1-2 tablettia 1-3 kertaa päivässä</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim5.html">Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim6.html">Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim7A.html">1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim7B.html">1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim8.html">Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen</a></p>
+  </li>
+  <li>
+    <p><a href="MedicationRequest-medicationrequestesim9.html">Tarvittaessa 1-2 tippaa 3-4 tunnin välein</a></p>
+  </li>
+</ul>
+
+<h3 id="MedicationStatement">MedicationStatement</h3>
+
+<ul>
+  <li><a href="MedicationStatement-medication-statement-insulin.html">Simple medication statement example</a></li>
+</ul>
+
+<h3 id="Observation">Observation</h3>
+
+<ul>
+  <li>
+    <p><a href="Observation-1153859e-0c86-1000-abb8-511d0000b222.html">Kanta PHR - body height optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff21.html">Kanta PHR - carbohydrate intake mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html">Kanta PHR - carbohydrate intake optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f8.html">Kanta PHR - step count mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html">Kanta PHR - step count optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b6.html">Kanta PHR - MET measurement mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b7.html">Kanta PHR - MET measurement optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f7.html">Kanta PHR - calorie intake mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html">Kanta PHR - calorie intake optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784a.html">Kanta PHR - exercise tracking mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784b.html">Kanta PHR - exercise tracking optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bloodglucose-as-text.html">Kanta PHR - blood glucose result as text</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bloodglucose-data-absent.html">Kanta PHR - blood glucose with data absent</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bloodglucose-max.html">Kanta PHR - blood glucose optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bloodglucose-min.html">Kanta PHR - blood glucose mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bloodpressure-max.html">Kanta PHR - blood pressure optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bloodpressure-min.html">Kanta PHR - blood pressure mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bodyweight-max.html">Kanta PHR - body weight optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-bodyweight-min.html">Kanta PHR - body weight mandatory</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-mtvpa-max.html">Kanta PHR - physical activity optional</a></p>
+  </li>
+  <li>
+    <p><a href="Observation-mtvpa-min.html">Kanta PHR - physical activity mandatory</a></p>
+  </li>
+</ul>
+
+<h3 id="Organization">Organization</h3>
+
+<ul>
+  <li>
+    <p><a href="Organization-1.2.246.10.2085212.10.1306.html">Organization - example of a parent organization</a></p>
+  </li>
+  <li>
+    <p><a href="Organization-1.2.246.10.2085212.10.1314.html">Organization - example primary care organization</a></p>
+  </li>
+  <li>
+    <p><a href="Organization-1.2.246.10.31045308.10002.0.html">A high level organization</a></p>
+  </li>
+  <li>
+    <p><a href="Organization-1.2.246.10.8286189.10.100012.html">Encounter - example primary care organization</a></p>
+  </li>
+  <li>
+    <p><a href="Organization-organizationesim1.html">Testi terveysasema</a></p>
+  </li>
+  <li>
+    <p><a href="Organization-organizationesim2.html">Simple Organization example</a></p>
+  </li>
+</ul>
+
+<h3 id="Patient">Patient</h3>
+
+<ul>
+  <li>
+    <p><a href="Patient-36749a02-1710-44e7-aa76-0e934eb7860a.html">Kanta PHR - patient 3</a></p>
+  </li>
+  <li>
+    <p><a href="Patient-patient-of-municipality.html">Patient - with the MunicipalityCode extension.</a></p>
+  </li>
+  <li>
+    <p><a href="Patient-patient-with-turvakielto.html">Patient with a TURVAKIELTO security label.</a></p>
+  </li>
+  <li>
+    <p><a href="Patient-patientesim1.html">Karen van der Hentenryck</a></p>
+  </li>
+</ul>
+
+<h3 id="Practitioner">Practitioner</h3>
+
+<ul>
+  <li>
+    <p><a href="Practitioner-practitioner-licensed-physician.html">Licenced physician</a></p>
+  </li>
+  <li>
+    <p><a href="Practitioner-practitioneresim1.html">Lars van der Knaapi</a></p>
+  </li>
+</ul>
+
+<h3 id="PractitionerRole">PractitionerRole</h3>
+
+<ul>
+  <li>
+    <p><a href="PractitionerRole-PractitionerRoleGP.html">Licenced physician in primary care</a></p>
+  </li>
+  <li>
+    <p><a href="PractitionerRole-practitionerRoleesim1.html">A simple practitioner role</a></p>
+  </li>
+</ul>
+
+<h3 id="Procedure">Procedure</h3>
+
+<ul>
+  <li>
+    <p><a href="Procedure-ColonBiopsy.html">Biopsy of Colon procedure example</a></p>
+  </li>
+  <li>
+    <p><a href="Procedure-ProcedureColotomy.html">Procedure Colotomy example</a></p>
+  </li>
+</ul>
+
+<h3 id="Provenance">Provenance</h3>
+
+<ul>
+  <li>
+    <p><a href="Provenance-custodian-individual.html">Custodian of information (rekisterinpitäjä), an individual provider</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-custodian-occupational-healthcare.html">Custodian of information (rekisterinpitäjä), private occupational healthcare</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-custodian-public-healthcare-kela.html">Provenance example for Kanta</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-custodian-public-healthcare.html">Custodian of information (rekisterinpitäjä), public healthcare</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-id-for-provenance-1.html">A simple provenance example</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-kanta-document-metadata-profile-example-2.html">An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system, using the kanta code also for the custodian agent</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-kanta-document-metadata-profile-example.html">An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-kanta-document-metadata-profile-test-example-1.html">A test example demonstrating that validation works</a></p>
+  </li>
+  <li>
+    <p><a href="Provenance-kanta-document-metadata-profile-test-example-2.html">Another test example demonstrating that validation works</a></p>
+  </li>
+</ul>
+
+<h3 id="Schedule">Schedule</h3>
+
+<ul>
+  <li><a href="Schedule-ScheduleExample.html">SNOMED CT coded Schedule</a></li>
+</ul>
+
+<h3 id="Slot">Slot</h3>
+
+<ul>
+  <li><a href="Slot-FreeSlot.html">Free slot (kertakäynti yleislääkärillä)</a></li>
+</ul>
+
+<p class="dragon">Before deriving any conclusions from the examples alone, please do check the
+<a href="qa.html">quality asssurance report</a> of this implementation guide to learn about the identified
+issues and non-conformities of each of the examples.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 16:27+0300">2025-05-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-base-profiles/master/LICENSE.md"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

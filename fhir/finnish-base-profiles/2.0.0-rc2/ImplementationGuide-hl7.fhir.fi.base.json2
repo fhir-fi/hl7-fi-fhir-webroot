@@ -1,0 +1,2548 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "hl7.fhir.fi.base",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.base</b></p><a name=\"hl7.fhir.fi.base\"> </a><a name=\"hchl7.fhir.fi.base\"> </a><a name=\"hl7.fhir.fi.base-fi-FI\"> </a><h2>FinnishBaseProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base</pre><div><p>A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland</p>\n</div></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
+  "version" : "2.0.0-rc2",
+  "name" : "FinnishBaseProfiles",
+  "title" : "Finnish Base Profiles",
+  "status" : "draft",
+  "date" : "2025-05-11T16:26:48+03:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "packageId" : "hl7.fhir.fi.base",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "6.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.2.0"
+  },
+  {
+    "id" : "hl7_fhir_fi_scheduling",
+    "uri" : "https://hl7.fi/fhir/finnish-scheduling/ImplementationGuide/hl7.fhir.fi.scheduling",
+    "packageId" : "hl7.fhir.fi.scheduling",
+    "version" : "0.3.1"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2022+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ballot"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "ipa-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "{last}"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://gen.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://phr.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://resepti.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://hl7.fi/fhir/finnish-base-profiles/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2022+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ballot"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "ipa-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "{last}"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://gen.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://phr.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://resepti.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://hl7.fi/fhir/finnish-base-profiles/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim1"
+      },
+      "name" : "1 tabletti 2 kertaa päivässä",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim7A"
+      },
+      "name" : "1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim7B"
+      },
+      "name" : "1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim4"
+      },
+      "name" : "1-2 tablettia 1-3 kertaa päivässä",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim3"
+      },
+      "name" : "1-2 tablettia kerran päivässä",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim2"
+      },
+      "name" : "2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/36749a02-1710-44e7-aa76-0e934eb4321a"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/7257379"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/cafbe8e7-38fe-4807-b995-6770e5390365"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a"
+      },
+      "name" : "A dummy patient entry",
+      "description" : "A patient id supporting other examples, not included in the guide.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/1.2.246.10.31045308.10002.0"
+      },
+      "name" : "A high level organization",
+      "description" : "Organization on Wellbeing Services County level",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/id-for-bed-3"
+      },
+      "name" : "A named bed",
+      "description" : "Example of a bed recorded with the Location resource.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/practitionerRoleesim1"
+      },
+      "name" : "A simple practitioner role",
+      "description" : "An example PractitionerRole instance from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/id-for-provenance-1"
+      },
+      "name" : "A simple provenance example",
+      "description" : "An example Provenance resource instance from Kanta",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/kanta-document-metadata-profile-test-example-1"
+      },
+      "name" : "A test example demonstrating that validation works",
+      "description" : "This example does not have the role for the agent from system urn:oid:1.2.246.537.5.40172, as would be mandated by the Finnish Base Information Custodian profile. QA report is expected to show an error.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/kanta-document-metadata-profile-example"
+      },
+      "name" : "An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system",
+      "description" : "This example demonstrates one way in which a system might use the Finnish Base Information Custodian profile.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/kanta-document-metadata-profile-example-2"
+      },
+      "name" : "An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system, using the kanta code also for the custodian agent",
+      "description" : "This example demonstrates one way in which a system might use the Finnish Base Information Custodian profile.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/id-for-child-encounter-2"
+      },
+      "name" : "Another Encounter that is part of palvelutapahtuma",
+      "description" : "An example of a FI Base encounter which is part of another encounter that corresponds to palvelutapahtuma in Kanta.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/kanta-document-metadata-profile-test-example-2"
+      },
+      "name" : "Another test example demonstrating that validation works",
+      "description" : "This example does not have a role with the code system specified by Kanta. QA report is expected to show an error.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ColonBiopsy"
+      },
+      "name" : "Biopsy of Colon procedure example",
+      "description" : "Sub-procedure for Colotomy procedure.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-categorization-of-accident"
+      },
+      "name" : "Categorization of the type of accident",
+      "description" : "Encoded categorization of the type of accident leading to injury, illness or death.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-cause-of-adverse-effect"
+      },
+      "name" : "Cause of an adverse effect",
+      "description" : "Encoded information on the cause of an adverse effect, when involving a procedure or medication",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "HealthcareService"
+      }],
+      "reference" : {
+        "reference" : "HealthcareService/healthcareService-example"
+      },
+      "name" : "Codified healthcare service",
+      "description" : "HealthcareService example which describes general practitioner services by using THL code systems.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/id-for-diagnosis-1"
+      },
+      "name" : "Condition - an example diagnosis",
+      "description" : "An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis is asserted by a clinician.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/id-for-diagnosis-3"
+      },
+      "name" : "Condition - an example diagnosis with an adverse effect.",
+      "description" : "An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has an adverse effect.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/id-for-diagnosis-2"
+      },
+      "name" : "Condition - an example diagnosis with external cause, accident and medication information.",
+      "description" : "An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has external cause, accident and medication information.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/custodian-individual"
+      },
+      "name" : "Custodian of information (rekisterinpitäjä), an individual provider",
+      "description" : "Example of Provenance that communicates a private individual healthcare provider as the custodian of information for an episode of care.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-individual"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/custodian-occupational-healthcare"
+      },
+      "name" : "Custodian of information (rekisterinpitäjä), private occupational healthcare",
+      "description" : "Example of Provenance that communicates a private occupational healthcare organization as the custodian of information for an episode of care.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-private"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/custodian-public-healthcare"
+      },
+      "name" : "Custodian of information (rekisterinpitäjä), public healthcare",
+      "description" : "Example of Provenance that communicates a public healthcare organization as the custodian of information for an episode of care.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-public"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/1.2.246.10.8286189.10.100012"
+      },
+      "name" : "Encounter - example primary care organization",
+      "description" : "An example of a FI Base organization, a surgical ward. The partOf reference removed for brevity.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/id-for-ward-encounter"
+      },
+      "name" : "Encounter - patient is currently receiving care at a ward treating surgical patients",
+      "description" : "An example of a FI Base encounter where a patient is currently receiving care at a ward.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/id-for-visit"
+      },
+      "name" : "Encounter - patient primary care visit",
+      "description" : "An example of a FI Base encounter where a patient has completed a visit in primary care.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/id-for-palvelutapahtuma"
+      },
+      "name" : "Encounter that is a palvelutapahtuma in Kanta registry",
+      "description" : "An example of a FI Base encounter which corresponds 1-1 to palvelutapahtuma in Kanta. Identifier with use=official marks the OID of palvelutapahtuma. Has sub-encounters.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/id-for-child-encounter"
+      },
+      "name" : "Encounter that is part of palvelutapahtuma",
+      "description" : "An example of a FI Base encounter which is part of another encounter that corresponds palvelutapahtuma in Kanta.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-endocrinological-disorder"
+      },
+      "name" : "Endocrinological disorder",
+      "description" : "Code for Endocrinological disorder.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "EpisodeOfCare"
+      }],
+      "reference" : {
+        "reference" : "EpisodeOfCare/id-for-episode-1"
+      },
+      "name" : "Episode of care - with provenance",
+      "description" : "Example of episode of care. A provenance example links to this.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-episode-of-care"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-external-cause"
+      },
+      "name" : "External cause for diagnosis",
+      "description" : "External cause for diagnosis.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-appointment"
+      },
+      "name" : "FI Base Appointment",
+      "description" : "This is the Finnish base profile for the Appointment resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-condition"
+      },
+      "name" : "FI Base Condition",
+      "description" : "This is the Finnish base profile for the Condition resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-encounter"
+      },
+      "name" : "FI Base Encounter",
+      "description" : "This is the Finnish base profile for the Encounter resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-episode-of-care"
+      },
+      "name" : "FI Base EpisodeOfCare",
+      "description" : "This is the Finnish base profile for the EpisodeOfCare resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-healthcare-service"
+      },
+      "name" : "FI Base HealthcareService",
+      "description" : "This is the Finnish base profile for the HealthcareService resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-immunization"
+      },
+      "name" : "Fi Base Immunization",
+      "description" : "This is a base profile for Finnish Immunization resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-information-custodian-individual"
+      },
+      "name" : "FI Base Information Custodian (Individual Provider)",
+      "description" : "This is the Finnish base profile for the Provenance resource, used to communicate an individual practitioner as the custodian of information (*rekisterinpitäjä*).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-information-custodian-private"
+      },
+      "name" : "FI Base Information Custodian (Private Organization)",
+      "description" : "This is the Finnish base profile for the Provenance resource, used to communicate a private organization as the custodian of information (*rekisterinpitäjä*).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-information-custodian-public"
+      },
+      "name" : "FI Base Information Custodian (Public Organization)",
+      "description" : "This is the Finnish base profile for the Provenance resource, used to communicate a public organization as the custodian of information (*rekisterinpitäjä*).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource:abstract"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-information-custodian"
+      },
+      "name" : "FI Base InformationCustodian",
+      "description" : "This is a Finnish abstract base profile for the Provenance resource, used to communicate the custodian of information (*rekisterinpitäjä*).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-location"
+      },
+      "name" : "FI Base Location",
+      "description" : "This is the Finnish base profile for the Location resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-medication"
+      },
+      "name" : "FI Base Medication",
+      "description" : "This is the Finnish base profile for the Medication resource for other than patient access use cases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-medication-administration"
+      },
+      "name" : "FI Base MedicationAdministration",
+      "description" : "This is the Finnish base profile for the MedicationAdministration resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-medication-request"
+      },
+      "name" : "FI Base MedicationRequest",
+      "description" : "This is the Finnish base profile for the MedicationRequest resource, for other than patient access use cases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-medication-statement"
+      },
+      "name" : "FI Base MedicationStatement",
+      "description" : "This is the Finnish base profile for the MedicationStatement resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-observation"
+      },
+      "name" : "FI Base Observation",
+      "description" : "This is the Finnish base profile for the Observation resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-organization"
+      },
+      "name" : "FI Base Organization",
+      "description" : "This is the Finnish base profile for the Organization resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-patient"
+      },
+      "name" : "FI Base Patient",
+      "description" : "This is the Finnish base profile for the Patient resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-practitioner"
+      },
+      "name" : "FI Base Practitioner",
+      "description" : "This is the Finnish base profile for the Practitioner resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-practitioner-role"
+      },
+      "name" : "FI Base PractitionerRole",
+      "description" : "This is the Finnish base profile for the PractitionerRole resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-procedure"
+      },
+      "name" : "Fi Base Procedure",
+      "description" : "The Base profile for Finnish Procedure resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-provenance"
+      },
+      "name" : "FI Base Provenance",
+      "description" : "This is the Finnish base profile for the Provenance resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-reason-for-care"
+      },
+      "name" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)",
+      "description" : "This is the Finnish base profile for the encounter-diagnosis and (nurse asserted) reason for visit Conditions.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-schedule"
+      },
+      "name" : "FI Base Schedule",
+      "description" : "This is the Finnish base profile for the Schedule resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fi-base-slot"
+      },
+      "name" : "FI Base Slot",
+      "description" : "This is the Finnish base profile for the Slot resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fi-base-restriction-parent-vs"
+      },
+      "name" : "fi-base-restriction-parent-vs",
+      "description" : "Value set, jota käytetään ilmoittamaan, saako alaikäisen tietoja luovuttaa huoltajille. Value set sisältää koodiston THL - Alaikäisen potilastietojen luovuttaminen huoltajille arvot 1-4.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fi-base-security-label-cs"
+      },
+      "name" : "Finnish CodeSystem for security labels",
+      "description" : "This is the CodeSystem for security labels in accordance with finnish authorities.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fi-base-security-label-vs"
+      },
+      "name" : "Finnish ValueSet for security labels in accordance with finnish authorities",
+      "description" : "This is the ValueSet for security labels in accordance with finnish authorities.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fi-base-register-identifier"
+      },
+      "name" : "Finnish ValueSet for systems of registry specifiers",
+      "description" : "This value set contains the systems that can be used to identify the registry specifier for information custodianship.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Slot"
+      }],
+      "reference" : {
+        "reference" : "Slot/FreeSlot"
+      },
+      "name" : "Free slot (kertakäynti yleislääkärillä)",
+      "description" : "Example of a free slot with reference to Schedule and information about service category, service type and appointment type presented in THL code system format.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/appointment-general-practitioner"
+      },
+      "name" : "GP appointment",
+      "description" : "Example of an appointment with general practitioner.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodglucose-min"
+      },
+      "name" : "Kanta PHR - blood glucose mandatory",
+      "description" : "An example blood glucose measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodglucose-max"
+      },
+      "name" : "Kanta PHR - blood glucose optional",
+      "description" : "An example blood glucose measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodglucose-as-text"
+      },
+      "name" : "Kanta PHR - blood glucose result as text",
+      "description" : "This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code 'astext' must be used in dataAbsentReason.coding.code.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodglucose-data-absent"
+      },
+      "name" : "Kanta PHR - blood glucose with data absent",
+      "description" : "This is an example, where measurement device has failed to measure blood glucose reading. In this case 'error' must be used in dataAbsentReason.coding.code.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodpressure-min"
+      },
+      "name" : "Kanta PHR - blood pressure mandatory",
+      "description" : "An example blood pressure measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bloodpressure-max"
+      },
+      "name" : "Kanta PHR - blood pressure optional",
+      "description" : "An example blood pressure measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/1153859e-0c86-1000-abb8-511d0000b222"
+      },
+      "name" : "Kanta PHR - body height optional",
+      "description" : "An example body height measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bodyweight-min"
+      },
+      "name" : "Kanta PHR - body weight mandatory",
+      "description" : "An example body weight measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/bodyweight-max"
+      },
+      "name" : "Kanta PHR - body weight optional",
+      "description" : "An example body weight measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7"
+      },
+      "name" : "Kanta PHR - calorie intake mandatory",
+      "description" : "An example calorie intake measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8"
+      },
+      "name" : "Kanta PHR - calorie intake optional",
+      "description" : "An example calorie intake measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2894b2e6-7ebf-4c33-93e4-31935effff21"
+      },
+      "name" : "Kanta PHR - carbohydrate intake mandatory",
+      "description" : "An example estimated carbohydrate intake measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/2894b2e6-7ebf-4c33-93e4-31935effff22"
+      },
+      "name" : "Kanta PHR - carbohydrate intake optional",
+      "description" : "An example estimated carbohydrate intake measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/71831b54-1a80-47c5-ba84-0180a5eb784a"
+      },
+      "name" : "Kanta PHR - exercise tracking mandatory",
+      "description" : "An example exercise tracking measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/71831b54-1a80-47c5-ba84-0180a5eb784b"
+      },
+      "name" : "Kanta PHR - exercise tracking optional",
+      "description" : "An example exercise tracking measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2"
+      },
+      "name" : "Kanta PHR - Insulin dosage mandatory",
+      "description" : "An example insulin dosage with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3"
+      },
+      "name" : "Kanta PHR - Insulin dosage optional",
+      "description" : "An example insulin dosage with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/48983b8b-ead3-4206-9583-fcdd40d762b6"
+      },
+      "name" : "Kanta PHR - MET measurement mandatory",
+      "description" : "An example MET measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/48983b8b-ead3-4206-9583-fcdd40d762b7"
+      },
+      "name" : "Kanta PHR - MET measurement optional",
+      "description" : "An example MET measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/36749a02-1710-44e7-aa76-0e934eb7860a"
+      },
+      "name" : "Kanta PHR - patient 3",
+      "description" : "An example patient for Kanta PHR.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mtvpa-min"
+      },
+      "name" : "Kanta PHR - physical activity mandatory",
+      "description" : "An example physical activity measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/mtvpa-max"
+      },
+      "name" : "Kanta PHR - physical activity optional",
+      "description" : "An example physical activity measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8"
+      },
+      "name" : "Kanta PHR - step count mandatory",
+      "description" : "An example step count measurement with mandatory elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9"
+      },
+      "name" : "Kanta PHR - step count optional",
+      "description" : "An example step count measurement with optional elements.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/patientesim1"
+      },
+      "name" : "Karen van der Hentenryck",
+      "description" : "An example patient from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioneresim1"
+      },
+      "name" : "Lars van der Knaapi",
+      "description" : "An example practitioner from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-licensed-physician"
+      },
+      "name" : "Licenced physician",
+      "description" : "Example of Licensed Physician from CGI Pegasos EHR.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/PractitionerRoleGP"
+      },
+      "name" : "Licenced physician in primary care",
+      "description" : "This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in a specific location.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim6"
+      },
+      "name" : "Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim5"
+      },
+      "name" : "Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-caused-by-medication"
+      },
+      "name" : "Medication that caused this condition",
+      "description" : "Encoded information of medication that caused this condition. Uses ATC-coding.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv"
+      },
+      "name" : "MedicationAdministration example of insulin basal dose",
+      "description" : "A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/medication-administration-insulin-bolus-dose-fi"
+      },
+      "name" : "MedicationAdministration example of insulin dose",
+      "description" : "A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en"
+      },
+      "name" : "MedicationAdministration example of temporary basal rate",
+      "description" : "A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/municipality-code"
+      },
+      "name" : "Municipality Code",
+      "description" : "Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/medicationesim1"
+      },
+      "name" : "Myyntiluvallinen lääkevalmiste",
+      "description" : "An example Medication instance from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/medicationesim2"
+      },
+      "name" : "Myyntiluvallinen lääkevalmiste, joka on PKV-lääke",
+      "description" : "An example Medication instance from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/1.2.246.10.2085212.10.1306"
+      },
+      "name" : "Organization - example of a parent organization",
+      "description" : "An example of a FI Base organization. Acts as a parent organization for another.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/1.2.246.10.2085212.10.1314"
+      },
+      "name" : "Organization - example primary care organization",
+      "description" : "An example of a FI Base organization, a doctor's reception office. Data is from national SOTE-Rekisteri.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/LocationExample"
+      },
+      "name" : "Outpatient clinic",
+      "description" : "Example of surgery outpatient clinic with reference to an organization.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/exp-params"
+      },
+      "name" : "Parameters for Terminology selection of Finnish edition of SNOMED CT",
+      "description" : "This parameter resource is used to specify the system version of the Finnish edition of SNOMED CT to be used in the terminology service.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/patient-of-municipality"
+      },
+      "name" : "Patient - with the MunicipalityCode extension.",
+      "description" : "An example of a FI Base patient with the MunicipalityCode extension.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/diabetes-data-bundle-kantaphr-r4-en"
+      },
+      "name" : "Patient generated glucose observations and insulin administrations as a bundle, in English",
+      "description" : "A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/diabetes-data-bundle"
+      },
+      "name" : "Patient generated glucose observations and insulin administrations as a bundle, in Finnish",
+      "description" : "A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/diabetes-data-bundle-kantaphr-sv"
+      },
+      "name" : "Patient generated glucose observations and insulin administrations as a bundle, in Swedish",
+      "description" : "A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-profession"
+      },
+      "name" : "Patient Profession Extension",
+      "description" : "Extension for presenting patient profession.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/patient-with-turvakielto"
+      },
+      "name" : "Patient with a TURVAKIELTO security label.",
+      "description" : "An example of a FI Base patient that has the TURVAKIELTO security label indicating non-disclosure for personal safety reasons.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-permanence"
+      },
+      "name" : "Permanence of condition",
+      "description" : "Encoded information of whether this is the permanent.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-primary"
+      },
+      "name" : "Primary condition for encounter",
+      "description" : "Encoded information of whether this is the primary/main condition for encounter.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/ProcedureColotomy"
+      },
+      "name" : "Procedure Colotomy example",
+      "description" : "This example describes main procedure, colotomy, with reference to sub-procedure.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/custodian-public-healthcare-kela"
+      },
+      "name" : "Provenance example for Kanta",
+      "description" : "This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ReleaseDateForPatientViewing"
+      },
+      "name" : "ReleaseDateForPatientViewing",
+      "description" : "The extension indicates the end date of the delay, i.e. the first day when the delayed appointment information can be displayed (e.g Omakanta) / *Laajennuksella ilmoitetaan viivästämisen päättymispäivä eli ensimmäinen päivä, jolloin viivästetty asiakirja voidaan näyttää (esim. Omakannassa)*.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RestrictionParent"
+      },
+      "name" : "RestrictionParent",
+      "description" : "The extension informs, using the THL - Release of minor's patient information to guardians classification, whether guardians have the right to see their minor child's appointment information (e.g. in Omakanta) and whether the disclosure of appointment information to them is permitted in healthcare services. / *Laajennuksella ilmoitetaan THL - Alaikäisen potilastietojen luovuttaminen huoltajille -luokitusta käyttäen, onko huoltajilla oikeus nähdä alaikäisen lapsensa ajanvaraustiedot (esim. Omakannassa) ja onko ajanvaraustietojen luovuttaminen heille sallittu terveydenhuollon palveluissa*.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/service-event"
+      },
+      "name" : "ServiceEvent",
+      "description" : "Extension for service event id (*palvelutapahtuman tunniste*).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/medication-statement-insulin"
+      },
+      "name" : "Simple medication statement example",
+      "description" : "Patient states they are taking long acting insulin (Lantus), but not the amount.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organizationesim2"
+      },
+      "name" : "Simple Organization example",
+      "description" : "An example Organization from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Schedule"
+      }],
+      "reference" : {
+        "reference" : "Schedule/ScheduleExample"
+      },
+      "name" : "SNOMED CT coded Schedule",
+      "description" : "This is a Schedule example for appointment book. All of the used codes are from SNOMED code system.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim9"
+      },
+      "name" : "Tarvittaessa 1-2 tippaa 3-4 tunnin välein",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationRequest"
+      }],
+      "reference" : {
+        "reference" : "MedicationRequest/medicationrequestesim8"
+      },
+      "name" : "Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen",
+      "description" : "An example MedicationRequest from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/organizationesim1"
+      },
+      "name" : "Testi terveysasema",
+      "description" : "An example Organization from Kanta Prescription API",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fi-base-release-for-patient-viewing-cs"
+      },
+      "name" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+      "description" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/condition-physical-excercise"
+      },
+      "name" : "Type of physical exercise during which injury occurred.",
+      "description" : "Encoded information of the type of physical exercise during which injury occurred.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/ImmunizationVaccinationExample"
+      },
+      "name" : "Vaccination for TBE",
+      "description" : "An example vaccination against TBE.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-immunization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccination-recorder"
+      },
+      "name" : "Vaccination Recorder",
+      "description" : "Vaccination recorder may not be the same person who performed the addministration.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/kanta-document-metadata-profile"
+      },
+      "name" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
+      "description" : "This is one way in which a system might use the Finnish Base Information Custodian profile. Kanta has expressed the wish to have only one big Provenance resource containing all document metadata. This can be accomplished by creating a profile based on the Finnish Base Provenance profile and [imposing](http://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html) the Finnish Base Information Custodian profile."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/kanta-document-other-metadata-profile"
+      },
+      "name" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "description" : "This is one way in which a system might use the Finnish Base Information Custodian profile. This profile defines other constraints. The profile KantaDocumentMetadata combines the requirements."
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/kanta-provenance-agent-role"
+      },
+      "name" : "Example value set for provenance roles",
+      "description" : "This example value set contains the systems that can be used for agent roles in Kanta profiles"
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "profiles.html"
+        }],
+        "nameUrl" : "profiles.html",
+        "title" : "Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "extensions.html"
+        }],
+        "nameUrl" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "terminology.html"
+        }],
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "examples.html"
+        }],
+        "nameUrl" : "examples.html",
+        "title" : "Examples",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "downloads.html"
+        }],
+        "nameUrl" : "downloads.html",
+        "title" : "Downloads",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "versions.html"
+        }],
+        "nameUrl" : "versions.html",
+        "title" : "Version History",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

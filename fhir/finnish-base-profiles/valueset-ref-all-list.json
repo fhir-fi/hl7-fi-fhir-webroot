@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://gen.kanta.fi/kanta-provenance-agent-role",
-      "version" : "2.0.0-rc1",
+      "version" : "2.0.0-rc2",
       "status" : "draft",
       "name" : null,
       "title" : "Example value set for provenance roles",
@@ -98,9 +98,9 @@
       "uses" : {
       },
       "StructureDefinition-fi-base-condition.html" : "FI Base Condition",
+      "StructureDefinition-fi-base-reason-for-care.html" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)",
       "StructureDefinition-fi-base-procedure.html" : "Fi Base Procedure",
-      "StructureDefinition-fi-base-observation.html" : "FI Base Observation",
-      "StructureDefinition-fi-base-reason-for-care.html" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)"
+      "StructureDefinition-fi-base-observation.html" : "FI Base Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -114,11 +114,11 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService",
       "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment",
+      "StructureDefinition-fi-base-practitioner-role.html" : "FI Base PractitionerRole",
       "StructureDefinition-fi-base-schedule.html" : "FI Base Schedule",
       "StructureDefinition-fi-base-slot.html" : "FI Base Slot",
-      "StructureDefinition-fi-base-practitioner-role.html" : "FI Base PractitionerRole"
+      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -176,11 +176,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-medication-statement.html" : "FI Base MedicationStatement",
       "StructureDefinition-fi-base-medication-request.html" : "FI Base MedicationRequest",
       "StructureDefinition-fi-base-condition.html" : "FI Base Condition",
-      "StructureDefinition-fi-base-procedure.html" : "Fi Base Procedure",
-      "StructureDefinition-fi-base-reason-for-care.html" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)"
+      "StructureDefinition-fi-base-medication-statement.html" : "FI Base MedicationStatement",
+      "StructureDefinition-fi-base-reason-for-care.html" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)",
+      "StructureDefinition-fi-base-procedure.html" : "Fi Base Procedure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -282,9 +282,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService",
+      "StructureDefinition-fi-base-practitioner-role.html" : "FI Base PractitionerRole",
       "StructureDefinition-fi-base-location.html" : "FI Base Location",
-      "StructureDefinition-fi-base-practitioner-role.html" : "FI Base PractitionerRole"
+      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/device-action",
@@ -402,8 +402,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter",
-      "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment"
+      "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment",
+      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -417,8 +417,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter",
-      "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment"
+      "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment",
+      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -536,10 +536,10 @@
       "uses" : {
       },
       "StructureDefinition-fi-base-practitioner.html" : "FI Base Practitioner",
-      "StructureDefinition-fi-base-patient.html" : "FI Base Patient",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-fi-base-patient.html" : "FI Base Patient",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -555,10 +555,10 @@
       "uses" : {
       },
       "StructureDefinition-fi-base-practitioner.html" : "FI Base Practitioner",
-      "StructureDefinition-fi-base-patient.html" : "FI Base Patient",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-fi-base-patient.html" : "FI Base Patient",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -738,33 +738,33 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-medication-statement.html" : "FI Base MedicationStatement",
-      "StructureDefinition-fi-base-schedule.html" : "FI Base Schedule",
-      "StructureDefinition-fi-base-slot.html" : "FI Base Slot",
-      "StructureDefinition-fi-base-procedure.html" : "Fi Base Procedure",
-      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService",
-      "StructureDefinition-fi-base-immunization.html" : "Fi Base Immunization",
-      "StructureDefinition-fi-base-medication-administration.html" : "FI Base MedicationAdministration",
-      "StructureDefinition-fi-base-medication-request.html" : "FI Base MedicationRequest",
-      "StructureDefinition-fi-base-condition.html" : "FI Base Condition",
-      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
-      "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
-      "StructureDefinition-fi-base-medication.html" : "FI Base Medication",
-      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter",
-      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
-      "StructureDefinition-fi-base-location.html" : "FI Base Location",
-      "StructureDefinition-fi-base-patient.html" : "FI Base Patient",
-      "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian",
-      "StructureDefinition-fi-base-episode-of-care.html" : "FI Base EpisodeOfCare",
-      "StructureDefinition-fi-base-organization.html" : "FI Base Organization",
-      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
       "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment",
-      "StructureDefinition-fi-base-practitioner.html" : "FI Base Practitioner",
-      "StructureDefinition-fi-base-observation.html" : "FI Base Observation",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
-      "StructureDefinition-fi-base-reason-for-care.html" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)",
+      "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
+      "StructureDefinition-fi-base-patient.html" : "FI Base Patient",
+      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "StructureDefinition-fi-base-episode-of-care.html" : "FI Base EpisodeOfCare",
+      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
+      "StructureDefinition-fi-base-organization.html" : "FI Base Organization",
+      "StructureDefinition-fi-base-slot.html" : "FI Base Slot",
+      "StructureDefinition-fi-base-schedule.html" : "FI Base Schedule",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
-      "StructureDefinition-fi-base-practitioner-role.html" : "FI Base PractitionerRole"
+      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
+      "StructureDefinition-fi-base-medication.html" : "FI Base Medication",
+      "StructureDefinition-fi-base-condition.html" : "FI Base Condition",
+      "StructureDefinition-fi-base-medication-statement.html" : "FI Base MedicationStatement",
+      "StructureDefinition-fi-base-procedure.html" : "Fi Base Procedure",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
+      "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian",
+      "StructureDefinition-fi-base-practitioner.html" : "FI Base Practitioner",
+      "StructureDefinition-fi-base-medication-request.html" : "FI Base MedicationRequest",
+      "StructureDefinition-fi-base-practitioner-role.html" : "FI Base PractitionerRole",
+      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter",
+      "StructureDefinition-fi-base-reason-for-care.html" : "FI Base Reason for Care (encounter-diagnosis and reason for visit)",
+      "StructureDefinition-fi-base-location.html" : "FI Base Location",
+      "StructureDefinition-fi-base-observation.html" : "FI Base Observation",
+      "StructureDefinition-fi-base-medication-administration.html" : "FI Base MedicationAdministration",
+      "StructureDefinition-fi-base-immunization.html" : "Fi Base Immunization",
+      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -918,9 +918,9 @@
       "uses" : {
       },
       "StructureDefinition-fi-base-medication.html" : "FI Base Medication",
-      "StructureDefinition-fi-base-medication-administration.html" : "FI Base MedicationAdministration",
+      "StructureDefinition-fi-base-medication-request.html" : "FI Base MedicationRequest",
       "StructureDefinition-fi-base-medication-statement.html" : "FI Base MedicationStatement",
-      "StructureDefinition-fi-base-medication-request.html" : "FI Base MedicationRequest"
+      "StructureDefinition-fi-base-medication-administration.html" : "FI Base MedicationAdministration"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -1331,12 +1331,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.438"],
       "uses" : {
       },
-      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
-      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
-      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
+      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
+      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -1353,12 +1353,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1003"],
       "uses" : {
       },
-      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
-      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
-      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
+      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
+      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -1373,12 +1373,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.436"],
       "uses" : {
       },
-      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
-      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
-      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
+      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
+      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -1484,9 +1484,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -1543,12 +1543,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.978"],
       "uses" : {
       },
-      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
-      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
-      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
+      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
+      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -1563,10 +1563,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.516"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService",
       "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment",
       "StructureDefinition-fi-base-schedule.html" : "FI Base Schedule",
-      "StructureDefinition-fi-base-slot.html" : "FI Base Slot"
+      "StructureDefinition-fi-base-slot.html" : "FI Base Slot",
+      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-provision-conditions",
@@ -1612,11 +1612,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService",
-      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter",
       "StructureDefinition-fi-base-appointment.html" : "FI Base Appointment",
       "StructureDefinition-fi-base-schedule.html" : "FI Base Schedule",
-      "StructureDefinition-fi-base-slot.html" : "FI Base Slot"
+      "StructureDefinition-fi-base-encounter.html" : "FI Base Encounter",
+      "StructureDefinition-fi-base-slot.html" : "FI Base Slot",
+      "StructureDefinition-fi-base-healthcare-service.html" : "FI Base HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/slotstatus",
@@ -1757,12 +1757,12 @@
       "sources" : ["2.16.840.1.113883.1.11.20448"],
       "uses" : {
       },
-      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
-      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
-      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
-      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
       "StructureDefinition-fi-base-information-custodian-individual.html" : "FI Base Information Custodian (Individual Provider)",
       "StructureDefinition-fi-base-information-custodian-private.html" : "FI Base Information Custodian (Private Organization)",
+      "StructureDefinition-kanta-document-other-metadata-profile.html" : "An imaginary profile for Kanta system, specifying things apart from the information custodian",
+      "StructureDefinition-fi-base-information-custodian-public.html" : "FI Base Information Custodian (Public Organization)",
+      "StructureDefinition-fi-base-provenance.html" : "FI Base Provenance",
+      "StructureDefinition-kanta-document-metadata-profile.html" : "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile",
       "StructureDefinition-fi-base-information-custodian.html" : "FI Base InformationCustodian"
     },
     {
@@ -1795,7 +1795,7 @@
     },
     {
       "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier",
-      "version" : "2.0.0-rc1",
+      "version" : "2.0.0-rc2",
       "status" : "draft",
       "name" : "FiBaseRegisterIdentifier",
       "title" : "Finnish ValueSet for systems of registry specifiers",
@@ -1803,8 +1803,20 @@
       "systems" : ["urn:ietf:rfc:3986"]
     },
     {
+      "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-restriction-parent-vs",
+      "version" : "2.0.0-rc2",
+      "status" : "draft",
+      "name" : "FiBaseRestrictionParentVS",
+      "title" : "fi-base-restriction-parent-vs",
+      "description" : "Value set, jota käytetään ilmoittamaan, saako alaikäisen tietoja luovuttaa huoltajille. Value set sisältää koodiston THL - Alaikäisen potilastietojen luovuttaminen huoltajille arvot 1-4.",
+      "systems" : ["urn:oid:1.2.246.537.5.40202.201901"],
+      "uses" : {
+      },
+      "StructureDefinition-RestrictionParent.html" : "RestrictionParent"
+    },
+    {
       "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs",
-      "version" : "2.0.0-rc1",
+      "version" : "2.0.0-rc2",
       "status" : "draft",
       "name" : "FiBaseSecurityLabelVS",
       "title" : "Finnish ValueSet for security labels in accordance with finnish authorities",

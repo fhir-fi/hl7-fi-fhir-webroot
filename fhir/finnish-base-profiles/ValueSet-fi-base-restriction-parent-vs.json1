@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fi-base-restriction-parent-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fi-base-restriction-parent-vs</b></p><a name=\"fi-base-restriction-parent-vs\"> </a><a name=\"hcfi-base-restriction-parent-vs\"> </a><a name=\"fi-base-restriction-parent-vs-fi-FI\"> </a><ul><li>Include these codes as defined in <code>urn:oid:1.2.246.537.5.40202.201901</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td>1</td><td>Ei päätöskykyinen alaikäinen, tiedot luovutetaan huoltajille</td><td>Ei päätöskykyinen alaikäinen, tiedot luovutetaan huoltajille</td><td>Den minderåriga saknar beslutsförmåga, uppgifterna lämnas till vårdnadshavarna</td></tr><tr><td>2</td><td>Päätöskykyinen alaikäinen, sallii tietojensa luovuttamisen huoltajille</td><td>Päätöskykyinen alaikäinen, sallii tietojensa luovuttamisen huoltajille</td><td>Den minderåriga är beslutsförmögen och tillåter att uppgifter om honom eller henne lämnas till vårdnadshavarna</td></tr><tr><td>3</td><td>Päätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajillePäätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajille</td><td>Päätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajillePäätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajille</td><td>Den minderåriga är beslutsförmögen och tillåter inte att uppgifter om honom eller henne lämnas till vårdnadshavarna</td></tr><tr><td>4</td><td>Alaikäisen päätöskyky ei tiedossa, tietoja ei luovuteta huoltajille</td><td>Alaikäisen päätöskyky ei tiedossa, tietoja ei luovuteta huoltajille</td><td>Det är okänt om den minderåriga är beslutsförmögen, uppgifter lämnas inte till vårdnadshavarna</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-restriction-parent-vs",
+  "version" : "2.0.0-rc2",
+  "name" : "FiBaseRestrictionParentVS",
+  "title" : "fi-base-restriction-parent-vs",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-11T16:31:48+03:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "Value set, jota käytetään ilmoittamaan, saako alaikäisen tietoja luovuttaa huoltajille. Value set sisältää koodiston THL - Alaikäisen potilastietojen luovuttaminen huoltajille arvot 1-4.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.246.537.5.40202.201901",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Ei päätöskykyinen alaikäinen, tiedot luovutetaan huoltajille",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Ei päätöskykyinen alaikäinen, tiedot luovutetaan huoltajille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Den minderåriga saknar beslutsförmåga, uppgifterna lämnas till vårdnadshavarna"
+        }]
+      },
+      {
+        "code" : "2",
+        "display" : "Päätöskykyinen alaikäinen, sallii tietojensa luovuttamisen huoltajille",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Päätöskykyinen alaikäinen, sallii tietojensa luovuttamisen huoltajille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Den minderåriga är beslutsförmögen och tillåter att uppgifter om honom eller henne lämnas till vårdnadshavarna"
+        }]
+      },
+      {
+        "code" : "3",
+        "display" : "Päätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajillePäätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajille",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Päätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajillePäätöskykyinen alaikäinen, kieltää tietojensa luovuttamisen huoltajille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Den minderåriga är beslutsförmögen och tillåter inte att uppgifter om honom eller henne lämnas till vårdnadshavarna"
+        }]
+      },
+      {
+        "code" : "4",
+        "display" : "Alaikäisen päätöskyky ei tiedossa, tietoja ei luovuteta huoltajille",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Alaikäisen päätöskyky ei tiedossa, tietoja ei luovuteta huoltajille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Det är okänt om den minderåriga är beslutsförmögen, uppgifter lämnas inte till vårdnadshavarna"
+        }]
+      }]
+    }]
+  }
+}

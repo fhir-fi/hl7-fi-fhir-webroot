@@ -4,3 +4,5 @@
 # IG publisher's internal cache
 /input-cache
 /fhir/ig-build-zips
+/temp
+/ig-build-zips

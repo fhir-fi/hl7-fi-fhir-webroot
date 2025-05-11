@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e99d3d82-2ecd-4be6-bbb0-f5d4f49a3dba"/>
+  <id value="01a15b0d-6d23-4385-a7a4-ed0a4fe9250c"/>
   <meta>
-    <lastUpdated value="2025-02-06T19:06:41.433+02:00"/>
+    <lastUpdated value="2025-05-11T16:32:10.866+03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem unknown versionn/a</p>
             <p>This value set contains 2 concepts</p>
@@ -27,7 +27,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (fi-FI)</b>
                 </td>
               </tr>
               <tr>
@@ -48,12 +48,12 @@
           </div>
         </text>
         <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier"/>
-        <version value="2.0.0-rc1"/>
+        <version value="2.0.0-rc2"/>
         <name value="FiBaseRegisterIdentifier"/>
         <title value="Finnish ValueSet for systems of registry specifiers"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-06T19:06:41+02:00"/>
+        <date value="2025-05-11T16:31:48+03:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -62,10 +62,14 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:52961d83-b7bf-474a-b585-a52278605f87"/>
-          <timestamp value="2025-02-06T19:07:20+02:00"/>
+          <identifier value="urn:uuid:8a82464f-871d-4d0f-8863-a1d7a8324e8b"/>
+          <timestamp value="2025-05-11T16:33:24+03:00"/>
           <total value="2"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fi-FI"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -112,10 +116,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion done internally based on 
-              <a href="CodeSystem-fi-base-security-label-cs.html">codesystem Finnish CodeSystem for security labels v2.0.0-rc1 (CodeSystem)</a>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-fi-base-security-label-cs.html">codesystem Finnish CodeSystem for security labels v2.0.0-rc2 (CodeSystem)</a>
             </p>
             <p>This value set contains 1 concepts</p>
             <table class="codes">
@@ -127,7 +131,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (fi-FI)</b>
                 </td>
                 <td>
                   <b>Definition</b>
@@ -139,7 +143,7 @@
                   <a href="CodeSystem-fi-base-security-label-cs.html#fi-base-security-label-cs-TURVAKIELTO">TURVAKIELTO</a>
                 </td>
                 <td>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs</td>
-                <td>Turvakielto</td>
+                <td/>
                 <td>
                   <div>
                     <p>A non-disclosure for personal safety reasons according to DVV.</p>
@@ -151,12 +155,12 @@
           </div>
         </text>
         <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs"/>
-        <version value="2.0.0-rc1"/>
+        <version value="2.0.0-rc2"/>
         <name value="FiBaseSecurityLabelVS"/>
         <title value="Finnish ValueSet for security labels in accordance with finnish authorities"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-06T19:06:41+02:00"/>
+        <date value="2025-05-11T16:31:48+03:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -165,10 +169,14 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:d3e570e9-aa09-41ae-95ef-65361fbfd011"/>
-          <timestamp value="2025-02-06T19:07:20+02:00"/>
+          <identifier value="urn:uuid:f8ffc684-48ef-40a9-975c-675355e22193"/>
+          <timestamp value="2025-05-11T16:33:24+03:00"/>
           <total value="1"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fi-FI"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>
@@ -183,12 +191,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs|2.0.0-rc1"/>
+            <valueUri value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs|2.0.0-rc2"/>
           </parameter>
           <contains>
             <system value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs"/>
             <code value="TURVAKIELTO"/>
-            <display value="Turvakielto"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -202,10 +209,10 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p class="res-header-id">
-              <b>Generated Narrative: ValueSet </b>
+              <b>ValueSet </b>
             </p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem unknown versionn/a</p>
-            <p>This value set contains 2 concepts</p>
+            <p>This value set expansion contains 2 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -215,7 +222,7 @@
                   <b>System</b>
                 </td>
                 <td>
-                  <b>Display</b>
+                  <b>Display (fi-FI)</b>
                 </td>
               </tr>
               <tr>
@@ -236,11 +243,11 @@
           </div>
         </text>
         <url value="http://gen.kanta.fi/kanta-provenance-agent-role"/>
-        <version value="2.0.0-rc1"/>
+        <version value="2.0.0-rc2"/>
         <title value="Example value set for provenance roles"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2025-02-06T19:06:41+02:00"/>
+        <date value="2025-05-11T16:31:48+03:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -249,10 +256,13 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:7b96bcbc-dde9-4361-a860-f18a84d1b768"/>
-          <timestamp value="2025-02-06T19:07:20+02:00"/>
-          <total value="2"/>
+          <identifier value="urn:uuid:8ea4af60-e206-4579-925c-187d0d9b4e8e"/>
+          <timestamp value="2025-05-11T16:33:24+03:00"/>
           <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="fi-FI"/>
+          </parameter>
           <parameter>
             <name value="count"/>
             <valueInteger value="1000"/>

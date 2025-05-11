@@ -1,0 +1,200 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "4523e136-201a-466c-ae6b-a7f3a4f8fc09",
+  "meta" : {
+    "lastUpdated" : "2025-05-11T16:27:18.839+03:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on codesystem unknown versionn/a</p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (fi-FI)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:ietf:rfc:3986-urn:oid:1.2.246.537.5.40150\"> </a>\u00a0\u00a0urn:oid:1.2.246.537.5.40150</td><td>urn:ietf:rfc:3986</td><td>KanTa-palvelut - Potilasasiakirjan rekisteritunnus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:ietf:rfc:3986-urn:oid:1.2.246.537.6.1264\"> </a>\u00a0\u00a0urn:oid:1.2.246.537.6.1264</td><td>urn:ietf:rfc:3986</td><td>Sosiaalihuolto - Asiakirjan rekisteritunnus</td></tr></table></div>"
+      },
+      "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier",
+      "version" : "2.0.0-rc2",
+      "name" : "FiBaseRegisterIdentifier",
+      "title" : "Finnish ValueSet for systems of registry specifiers",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-05-11T16:26:48+03:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b89dee19-a128-44c4-8ba8-c7d5d975c333",
+        "timestamp" : "2025-05-11T16:30:47+03:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fi-FI"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "urn:oid:1.2.246.537.5.40150",
+          "display" : "KanTa-palvelut - Potilasasiakirjan rekisteritunnus"
+        },
+        {
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "urn:oid:1.2.246.537.6.1264",
+          "display" : "Sosiaalihuolto - Asiakirjan rekisteritunnus"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-fi-base-security-label-cs.html\">codesystem Finnish CodeSystem for security labels v2.0.0-rc2 (CodeSystem)</a></p><p>This value set contains 1 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (fi-FI)</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs-TURVAKIELTO\"> </a>\u00a0\u00a0<a href=\"CodeSystem-fi-base-security-label-cs.html#fi-base-security-label-cs-TURVAKIELTO\">TURVAKIELTO</a></td><td>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs</td><td/><td><div><p>A non-disclosure for personal safety reasons according to DVV.</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs",
+      "version" : "2.0.0-rc2",
+      "name" : "FiBaseSecurityLabelVS",
+      "title" : "Finnish ValueSet for security labels in accordance with finnish authorities",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-05-11T16:26:48+03:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:3ae787fd-1201-4272-a273-6a1f29bce3eb",
+        "timestamp" : "2025-05-11T16:30:49+03:00",
+        "total" : 1,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fi-FI"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs|2.0.0-rc2"
+        }],
+        "contains" : [{
+          "system" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs",
+          "code" : "TURVAKIELTO"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://gen.kanta.fi/kanta-provenance-agent-role",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on codesystem unknown versionn/a</p><p>This value set expansion contains 2 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display (fi-FI)</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:ietf:rfc:3986-http://gen.kanta.fi/fikanta-cs-rolecategory\"> </a>\u00a0\u00a0http://gen.kanta.fi/fikanta-cs-rolecategory</td><td>urn:ietf:rfc:3986</td><td>Kanta specified roles</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-urn:ietf:rfc:3986-urn:oid:1.2.246.537.5.40172\"> </a>\u00a0\u00a0urn:oid:1.2.246.537.5.40172</td><td>urn:ietf:rfc:3986</td><td>eArkisto - Rekisteripitäjän laji</td></tr></table></div>"
+      },
+      "url" : "http://gen.kanta.fi/kanta-provenance-agent-role",
+      "version" : "2.0.0-rc2",
+      "title" : "Example value set for provenance roles",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2025-05-11T16:26:48+03:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:c7c5834d-22f3-4065-914e-c252031c3b1e",
+        "timestamp" : "2025-05-11T16:30:49+03:00",
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "fi-FI"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "urn:ietf:rfc:3986|n/a"
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : true
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "http://gen.kanta.fi/fikanta-cs-rolecategory",
+          "display" : "Kanta specified roles"
+        },
+        {
+          "system" : "urn:ietf:rfc:3986",
+          "code" : "urn:oid:1.2.246.537.5.40172",
+          "display" : "eArkisto - Rekisteripitäjän laji"
+        }]
+      }
+    }
+  }]
+}

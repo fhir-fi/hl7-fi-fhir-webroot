@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.base</b></p><a name=\"hl7.fhir.fi.base\"> </a><a name=\"hchl7.fhir.fi.base\"> </a><a name=\"hl7.fhir.fi.base-fi-FI\"> </a><h2>FinnishBaseProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base</pre><div><p>A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland</p>\n</div></div>"
   },
   "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
-  "version" : "2.0.0-rc1",
+  "version" : "2.0.0-rc2",
   "name" : "FinnishBaseProfiles",
   "title" : "Finnish Base Profiles",
   "status" : "draft",
-  "date" : "2025-02-06T19:06:41+02:00",
+  "date" : "2025-05-11T16:31:48+03:00",
   "publisher" : "HL7 Finland",
   "contact" : [{
     "name" : "HL7 Finland",
@@ -42,7 +42,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "6.3.0"
   },
   {
     "id" : "hl7ext",
@@ -52,7 +52,13 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
+  },
+  {
+    "id" : "hl7_fhir_fi_scheduling",
+    "uri" : "https://hl7.fi/fhir/finnish-scheduling/ImplementationGuide/hl7.fhir.fi.scheduling",
+    "packageId" : "hl7.fhir.fi.scheduling",
+    "version" : "0.3.1"
   }],
   "definition" : {
     "extension" : [{
@@ -95,7 +101,29 @@
       },
       {
         "url" : "value",
+        "valueString" : "https://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://gen.kanta.fi/"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -376,7 +404,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
     },
     {
       "extension" : [{
@@ -418,7 +446,29 @@
       },
       {
         "url" : "value",
+        "valueString" : "https://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
         "valueString" : "http://hl7.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "extension-domain"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://gen.kanta.fi/"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1492,6 +1542,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fi-base-restriction-parent-vs"
+      },
+      "name" : "fi-base-restriction-parent-vs",
+      "description" : "Value set, jota käytetään ilmoittamaan, saako alaikäisen tietoja luovuttaa huoltajille. Value set sisältää koodiston THL - Alaikäisen potilastietojen luovuttaminen huoltajille arvot 1-4.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -2167,6 +2229,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ReleaseDateForPatientViewing"
+      },
+      "name" : "ReleaseDateForPatientViewing",
+      "description" : "The extension indicates the end date of the delay, i.e. the first day when the delayed appointment information can be displayed (e.g Omakanta) / *Laajennuksella ilmoitetaan viivästämisen päättymispäivä eli ensimmäinen päivä, jolloin viivästetty asiakirja voidaan näyttää (esim. Omakannassa)*.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RestrictionParent"
+      },
+      "name" : "RestrictionParent",
+      "description" : "The extension informs, using the THL - Release of minor's patient information to guardians classification, whether guardians have the right to see their minor child's appointment information (e.g. in Omakanta) and whether the disclosure of appointment information to them is permitted in healthcare services. / *Laajennuksella ilmoitetaan THL - Alaikäisen potilastietojen luovuttaminen huoltajille -luokitusta käyttäen, onko huoltajilla oikeus nähdä alaikäisen lapsensa ajanvaraustiedot (esim. Omakannassa) ja onko ajanvaraustietojen luovuttaminen heille sallittu terveydenhuollon palveluissa*.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/service-event"
       },
       "name" : "ServiceEvent",
@@ -2244,6 +2330,18 @@
       "name" : "Testi terveysasema",
       "description" : "An example Organization from Kanta Prescription API",
       "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fi-base-release-for-patient-viewing-cs"
+      },
+      "name" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+      "description" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
