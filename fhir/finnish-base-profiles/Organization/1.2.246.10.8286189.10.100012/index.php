@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.json2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.json1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.json');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.xml2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.xml1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.html');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.html');
 else 
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Organization-1.2.246.10.8286189.10.100012.xml');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Organization-1.2.246.10.8286189.10.100012.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

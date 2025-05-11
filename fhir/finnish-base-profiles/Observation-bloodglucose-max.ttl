@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -28,7 +27,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"><b>Verensokeri</b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Subject</td><td>Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c</td></tr><tr><td>Code</td><td>ins-short-fast</td></tr><tr><td>Display</td><td>Fast-acting insulin</td></tr><tr><td>Text</td><td>Lyhytvaikutteinen insuliini</td></tr></tbody></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"><b>Verensokeri</b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Subject</td><td>Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c</td></tr><tr><td>Code</td><td>ins-short-fast</td></tr><tr><td>Display</td><td>Fast-acting insulin</td></tr><tr><td>Text</td><td>Lyhytvaikutteinen insuliini</td></tr></tbody></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
@@ -73,10 +72,7 @@
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c> ;
      fhir:reference [ fhir:v "Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c" ]
   ] ; # 
-  fhir:effective [
-     a fhir:dateTime ;
-     fhir:v "2020-10-05"^^xsd:date
-  ] ; # 
+  fhir:effective [ fhir:v "2020-10-05"^^xsd:date] ; # 
   fhir:issued [ fhir:v "2019-12-05T09:21:37.130+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c> ;
@@ -94,7 +90,7 @@
          fhir:code [ fhir:v "mg/dL" ]
        ]
      ] ) ;
-     fhir:value [ fhir:v 10.0 ] ;
+     fhir:value [ fhir:v "10.0"^^xsd:decimal ] ;
      fhir:comparator [ fhir:v "<" ] ;
      fhir:unit [ fhir:v "mmol/l" ] ;
      fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;

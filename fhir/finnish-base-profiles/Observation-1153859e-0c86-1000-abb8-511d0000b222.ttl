@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +18,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n		<b>Code:</b> Body height (8302-2)<br />\r\n		<b>Time:</b> 20.11.2020 11:46<br />\r\n		<b>Result:</b> 182 cm </div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n		<b>Code:</b> Body height (8302-2)<br />\r\n		<b>Time:</b> 20.11.2020 11:46<br />\r\n		<b>Result:</b> 182 cm </div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
@@ -44,10 +43,7 @@
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/36749a02-1710-44e7-aa76-0e934eb4321a> ;
      fhir:reference [ fhir:v "Patient/36749a02-1710-44e7-aa76-0e934eb4321a" ]
   ] ; # 
-  fhir:effective [
-     a fhir:dateTime ;
-     fhir:v "2020-11-20T11:46:00+02:00"^^xsd:dateTime
-  ] ; # 
+  fhir:effective [ fhir:v "2020-11-20T11:46:00+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/36749a02-1710-44e7-aa76-0e934eb4321a> ;
      fhir:reference [ fhir:v "Patient/36749a02-1710-44e7-aa76-0e934eb4321a" ]

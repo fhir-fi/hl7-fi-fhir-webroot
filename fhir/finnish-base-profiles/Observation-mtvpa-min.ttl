@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +18,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Moderate to vigorous physical activity minutes in 24 hours (82290-8-24h)<br />Time: 20.11.2017 11:46<br />Result: 76 min </div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Moderate to vigorous physical activity minutes in 24 hours (82290-8-24h)<br />Time: 20.11.2017 11:46<br />Result: 76 min </div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;

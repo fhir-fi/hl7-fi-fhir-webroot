@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -19,7 +18,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">Type of insulin: Fast-acting insulin<br />Code: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Fast-acting insulin), SNOMED 67866001 (Insulin (substance))<br />Time: 9/4/2021 17:23:17 - 17:28:16<br />Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)</div>"^^rdf:XMLLiteral
+     fhir:div "<div lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">Type of insulin: Fast-acting insulin<br />Code: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Fast-acting insulin), SNOMED 67866001 (Insulin (substance))<br />Time: 9/4/2021 17:23:17 - 17:28:16<br />Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)</div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -62,7 +61,7 @@
   fhir:dosage [
      fhir:text [ fhir:v "Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)" ] ;
      fhir:dose [
-       fhir:value [ fhir:v 0.06544777777777777 ] ;
+       fhir:value [ fhir:v "0.06544777777777777"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "IU" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "[iU]" ]
@@ -70,13 +69,13 @@
      fhir:rate [
        a fhir:Ratio ;
        fhir:numerator [
-         fhir:value [ fhir:v 0.788 ] ;
+         fhir:value [ fhir:v "0.788"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "IU" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "[iU]" ]
        ] ;
        fhir:denominator [
-         fhir:value [ fhir:v 0.8883248730964466 ] ;
+         fhir:value [ fhir:v "0.8883248730964466"^^xsd:decimal ] ;
          fhir:unit [ fhir:v "h" ] ;
          fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "h" ]

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -20,13 +19,13 @@
   fhir:language [ fhir:v "fi"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fi\" lang=\"fi\"><p class=\"res-header-id\"><b>Generated Narrative: Patient 36749a02-1710-44e7-aa76-0e934eb7860a</b></p><a name=\"36749a02-1710-44e7-aa76-0e934eb7860a\"> </a><a name=\"hc36749a02-1710-44e7-aa76-0e934eb7860a\"> </a><a name=\"36749a02-1710-44e7-aa76-0e934eb7860a-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2018-03-13 14:01:59+0200; Language: fi</p><p style=\"margin-bottom: 0px\">Profile: <code>http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient</code></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( UUID:36749a02-1710-44e7-aa76-0e934eb7860a)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fi\" lang=\"fi\"><p class=\"res-header-id\"><b>Generated Narrative: Patient 36749a02-1710-44e7-aa76-0e934eb7860a</b></p><a name=\"36749a02-1710-44e7-aa76-0e934eb7860a\"> </a><a name=\"hc36749a02-1710-44e7-aa76-0e934eb7860a\"> </a><a name=\"36749a02-1710-44e7-aa76-0e934eb7860a-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Last updated: 2018-03-13 14:01:59+0200; Language: fi</p><p style=\"margin-bottom: 0px\">Profile: <code>http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient</code></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Patient (no stated gender), DoB Unknown ( UUID:36749a02-1710-44e7-aa76-0e934eb7860a)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:uuid:36749a02-1710-44e7-aa76-0e934eb7860a" ]
   ] ) ; # 
-  fhir:active [ fhir:v true] . # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] . # 
 
 # -------------------------------------------------------------------------------------
 

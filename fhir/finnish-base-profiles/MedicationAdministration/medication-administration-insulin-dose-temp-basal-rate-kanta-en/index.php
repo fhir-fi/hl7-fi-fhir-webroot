@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.json2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.json1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.json');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.xml2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.xml1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html');
 else 
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.xml');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

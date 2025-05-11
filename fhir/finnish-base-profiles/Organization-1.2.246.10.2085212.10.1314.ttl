@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,14 +16,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 1.2.246.10.2085212.10.1314</b></p><a name=\"1.2.246.10.2085212.10.1314\"> </a><a name=\"hc1.2.246.10.2085212.10.1314\"> </a><a name=\"1.2.246.10.2085212.10.1314-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-organization.html\">FI Base Organization</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.246.537.6.202.2008</code>/urn:oid:1.2.246.10.2085212.10.1314 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</p><p><b>telecom</b>: ph: 0401578947</p><p><b>address</b>: </p><ul><li>Honkalehdontie 9 Kyyjärvi 43700 </li><li>Honkalehdontie 9 Kyyjärvi 43700 </li></ul><p><b>partOf</b>: <a href=\"Organization-1.2.246.10.2085212.10.1306.html\">Organization Vastaanotot, SoTe kuntayhtymä Saarikka</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization 1.2.246.10.2085212.10.1314</b></p><a name=\"1.2.246.10.2085212.10.1314\"> </a><a name=\"hc1.2.246.10.2085212.10.1314\"> </a><a name=\"1.2.246.10.2085212.10.1314-fi-FI\"> </a><p><b>identifier</b>: <code>urn:oid:1.2.246.537.6.202.2008</code>/urn:oid:1.2.246.10.2085212.10.1314 (use: official, )</p><p><b>active</b>: true</p><p><b>name</b>: Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</p><p><b>telecom</b>: ph: 0401578947</p><p><b>address</b>: </p><ul><li>Honkalehdontie 9 Kyyjärvi 43700 </li><li>Honkalehdontie 9 Kyyjärvi 43700 </li></ul><p><b>partOf</b>: <a href=\"Organization-1.2.246.10.2085212.10.1306.html\">Organization Vastaanotot, SoTe kuntayhtymä Saarikka</a></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
      fhir:system [ fhir:v "urn:oid:1.2.246.537.6.202.2008"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "urn:oid:1.2.246.10.2085212.10.1314" ]
   ] ) ; # 
-  fhir:active [ fhir:v true] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name [ fhir:v "Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka"] ; # 
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;

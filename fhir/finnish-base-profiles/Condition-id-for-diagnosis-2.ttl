@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition id-for-diagnosis-2</b></p><a name=\"id-for-diagnosis-2\"> </a><a name=\"hcid-for-diagnosis-2\"> </a><a name=\"id-for-diagnosis-2-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-reason-for-care.html\">FI Base Reason for Care (encounter-diagnosis and reason for visit)</a></p></div><p><b>Primary condition for encounter</b>: unknown PAA: Päädiagnoosi tai päätoimenpide (version = 2003 )</p><p><b>Permanence of condition</b>: unknown KER: Kertaluonteinen (version = 2003 )</p><p><b>External cause for diagnosis</b>: unknown X44: Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen (version = 1999 )</p><p><b>Categorization of the type of accident</b>: unknown Y95.0: Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä (version = 1999 )</p><p><b>Medication that caused this condition</b>: unknown M01AE01: BURANA 200 mg tabletti, kalvopäällysteinen (version = 2007 )</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.1 T88.7}\">Määrittämätön lääkeaineen epäedullinen vaikutus</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition id-for-diagnosis-2</b></p><a name=\"id-for-diagnosis-2\"> </a><a name=\"hcid-for-diagnosis-2\"> </a><a name=\"id-for-diagnosis-2-fi-FI\"> </a><p><b>Primary condition for encounter</b>: unknown PAA: Päädiagnoosi tai päätoimenpide (version = 2003 )</p><p><b>Permanence of condition</b>: unknown KER: Kertaluonteinen (version = 2003 )</p><p><b>External cause for diagnosis</b>: unknown X44: Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen (version = 1999 )</p><p><b>Categorization of the type of accident</b>: unknown Y95.0: Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä (version = 1999 )</p><p><b>Medication that caused this condition</b>: unknown M01AE01: BURANA 200 mg tabletti, kalvopäällysteinen (version = 2007 )</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.1 T88.7}\">Määrittämätön lääkeaineen epäedullinen vaikutus</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary"^^xsd:anyURI ] ;
@@ -90,10 +89,7 @@
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
      fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
   ] ; # 
-  fhir:onset [
-     a fhir:dateTime ;
-     fhir:v "2023-01-05T02:06:24+03:00"^^xsd:dateTime
-  ] . # 
+  fhir:onset [ fhir:v "2023-01-05T02:06:24+03:00"^^xsd:dateTime] . # 
 
 # -------------------------------------------------------------------------------------
 

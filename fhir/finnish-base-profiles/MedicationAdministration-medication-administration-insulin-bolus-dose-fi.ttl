@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -19,7 +18,7 @@
   fhir:language [ fhir:v "fi"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div lang=\"fi\" xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br />Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br />Aika: 4.9.2021 19.13:48<br />Lyhytvaikutteinen insuliini 1.07 ky<br />Laite: tandemCIQ1002717799999</div>"^^rdf:XMLLiteral
+     fhir:div "<div lang=\"fi\" xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br />Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br />Aika: 4.9.2021 19.13:48<br />Lyhytvaikutteinen insuliini 1.07 ky<br />Laite: tandemCIQ1002717799999</div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -67,17 +66,14 @@
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/7257379> ;
      fhir:reference [ fhir:v "Patient/7257379" ]
   ] ; # 
-  fhir:effective [
-     a fhir:dateTime ;
-     fhir:v "2021-09-04T19:13:48.000+03:00"^^xsd:dateTime
-  ] ; # 
+  fhir:effective [ fhir:v "2021-09-04T19:13:48.000+03:00"^^xsd:dateTime] ; # 
   fhir:device ( [
      fhir:display [ fhir:v "tandemCIQ1002717799999" ]
   ] ) ; # 
   fhir:dosage [
      fhir:text [ fhir:v "Lyhytvaikutteinen insuliini 1.07 ky" ] ;
      fhir:dose [
-       fhir:value [ fhir:v 1.06542 ] ;
+       fhir:value [ fhir:v "1.06542"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "IU" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "[iU]" ]

@@ -1,30 +1,9 @@
 {
   "package": "hl7.fhir.fi.base",
-  "version": "2.0.0-rc2",
+  "version": "2.0.0-rc1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FI",
   "extensions": [
-    {
-      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/ReleaseDateForPatientViewing",
-      "title": "ReleaseDateForPatientViewing",
-      "types": [
-        "date"
-      ]
-    },
-    {
-      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/RestrictionParent",
-      "title": "RestrictionParent",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean"
-      ]
-    },
     {
       "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident",
       "title": "Categorization of the type of accident",
@@ -272,6 +251,12 @@
     ]
   },
   "usage": {
+    "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt": [
+      "Appointment"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -329,9 +314,6 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
-      "StructureDefinition.snapshot"
     ],
     "http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication": [
       "Observation"
@@ -438,12 +420,6 @@
     "https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterType": [
       "Provenance"
     ],
-    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/ReleaseDateForPatientViewing": [
-      "Appointment"
-    ],
-    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/RestrictionParent": [
-      "Appointment"
-    ],
     "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident": [
       "Condition"
     ],
@@ -474,14 +450,8 @@
     "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession": [
       "Patient"
     ],
-    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/service-event": [
-      "Appointment"
-    ],
     "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/vaccination-recorder": [
       "Immunization"
-    ],
-    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable": [
-      "Appointment"
     ]
   }
 }

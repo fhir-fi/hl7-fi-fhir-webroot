@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,14 +10,11 @@
   fhir:id [ fhir:v "medicationesim1"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication medicationesim1</b></p><a name=\"medicationesim1\"> </a><a name=\"hcmedicationesim1\"> </a><a name=\"medicationesim1-fi-FI\"> </a><p><b>fi/StructureDefinition/extension/drug</b>: CARDACE</p><p><b>fi/StructureDefinition/extension/typeOfMedicinalProduct</b>: unknown 1: 1</p><p><b>fi/StructureDefinition/extension/pharmaceuticalProductStrength</b>: 5 mg</p><p><b>fi/StructureDefinition/extension/narcotic</b>: false</p><p><b>identifier</b>: <code>urn:oid:1.2.246.537.6.55.2004</code>/403048</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.32.2007 C09AA05}\">ramipriili</span></p><p><b>form</b>: <span title=\"Codes:\">tabletti</span></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication medicationesim1</b></p><a name=\"medicationesim1\"> </a><a name=\"hcmedicationesim1\"> </a><a name=\"medicationesim1-fi-FI\"> </a><p><b>fi/StructureDefinition/extension/drug</b>: CARDACE</p><p><b>fi/StructureDefinition/extension/typeOfMedicinalProduct</b>: unknown 1: 1</p><p><b>fi/StructureDefinition/extension/pharmaceuticalProductStrength</b>: 5 mg</p><p><b>fi/StructureDefinition/extension/narcotic</b>: false</p><p><b>identifier</b>: <code>urn:oid:1.2.246.537.6.55.2004</code>/403048</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.32.2007 C09AA05}\">ramipriili</span></p><p><b>form</b>: <span title=\"Codes:\">tabletti</span></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/drug"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "CARDACE"
-     ]
+     fhir:value [ fhir:v "CARDACE" ]
   ] [
      fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct"^^xsd:anyURI ] ;
      fhir:value [
@@ -28,16 +24,10 @@
      ]
   ] [
      fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:string ;
-       fhir:v "5 mg"
-     ]
+     fhir:value [ fhir:v "5 mg" ]
   ] [
      fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/narcotic"^^xsd:anyURI ] ;
-     fhir:value [
-       a fhir:boolean ;
-       fhir:v false
-     ]
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
   ] ) ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:1.2.246.537.6.55.2004"^^xsd:anyURI ] ;

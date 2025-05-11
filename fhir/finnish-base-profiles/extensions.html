@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Extensions - Finnish Base Profiles v2.0.0-rc2</title>
+    <title>Extensions - Finnish Base Profiles v2.0.0-rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-rc2 - ballot
+            <span style="display:inline-block;">2.0.0-rc1 - ballot
 
 
 
@@ -143,7 +143,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v2.0.0-rc2: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v2.0.0-rc1: <a no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Extensions</h2>
   
 
@@ -175,10 +175,6 @@ through <a href="http://hl7.org/fhir/R4/extensibility.html">extensions</a>.</p>
 <p>This list includes the extensions for base profiles defined by HL7 Finland.</p>
 
 <ul>
- <li><a href="StructureDefinition-ReleaseDateForPatientViewing.html">ReleaseDateForPatientViewing</a> <p>The extension indicates the end date of the delay, i.e. the first day when the delayed appointment information can be displayed (e.g Omakanta) / <em>Laajennuksella ilmoitetaan viivästämisen päättymispäivä eli ensimmäinen päivä, jolloin viivästetty asiakirja voidaan näyttää (esim. Omakannassa)</em>.</p>
-</li>
- <li><a href="StructureDefinition-RestrictionParent.html">RestrictionParent</a> <p>The extension informs, using the THL - Release of minor's patient information to guardians classification, whether guardians have the right to see their minor child's appointment information (e.g. in Omakanta) and whether the disclosure of appointment information to them is permitted in healthcare services. / <em>Laajennuksella ilmoitetaan THL - Alaikäisen potilastietojen luovuttaminen huoltajille -luokitusta käyttäen, onko huoltajilla oikeus nähdä alaikäisen lapsensa ajanvaraustiedot (esim. Omakannassa) ja onko ajanvaraustietojen luovuttaminen heille sallittu terveydenhuollon palveluissa</em>.</p>
-</li>
  <li><a href="StructureDefinition-condition-categorization-of-accident.html">Categorization of the type of accident</a> <p>Encoded categorization of the type of accident leading to injury, illness or death.</p>
 </li>
  <li><a href="StructureDefinition-condition-cause-of-adverse-effect.html">Cause of an adverse effect</a> <p>Encoded information on the cause of an adverse effect, when involving a procedure or medication</p>
@@ -211,7 +207,8 @@ through <a href="http://hl7.org/fhir/R4/extensibility.html">extensions</a>.</p>
 <p>There are other, more use case specific extensions defined in other implementation guides. For
 instance:</p>
 <ul>
-  <li>The <a href="https://hl7.fi/fhir/finnish-scheduling/">Finnish Scheduling</a> IG for scheduling</li>
+  <li>Both the <a href="https://simplifier.net/finnishappointment">Finnish Appointment IG</a> and the
+<a href="https://simplifier.net/finnishschedulingr4/">Finnish Scheduling IG</a> for scheduling</li>
   <li>Both the <a href="https://simplifier.net/FinnishPHR">Finnish PHR STU3</a> and the
 <a href="https://simplifier.net/FinnishPHRR4">Finnish PHR R4</a> for health and wellbeing data in the
 national Personal Health Record platform Kanta PHR</li>
@@ -246,7 +243,7 @@ registry at <a href="http://hl7.org/fhir/registry">http://hl7.org/fhir/registry<
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 16:32+0300">2025-05-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#2.0.0-rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 6, 2025 19:06+0200">2025-02-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>

@@ -3,6 +3,10 @@
 
 # IG publisher's internal cache
 /input-cache
-/fhir/ig-build-zips
+
+# temp files for build
 /temp
+
+# Zip files, too large to be stored
+/fhir/ig-build-zips
 /ig-build-zips

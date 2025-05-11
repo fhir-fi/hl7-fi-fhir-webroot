@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,14 +16,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "additional" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Narrative: An example provenance resource instance including information custodianship and other metadata.</b></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Narrative: An example provenance resource instance including information custodianship and other metadata.</b></p></div>"
   ] ; # 
   fhir:contained ( [
      a fhir:Organization ;
      fhir:id [ fhir:v "custodianorg1" ] ;
      fhir:text [
        fhir:status [ fhir:v "generated" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Suomen Terveystalo Oy</div>"^^rdf:XMLLiteral
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Suomen Terveystalo Oy</div>"
      ] ;
      fhir:identifier ( [
        fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
@@ -36,7 +35,7 @@
      fhir:id [ fhir:v "jarjestajaorg1" ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Järjestäjäorganisaatio</div>"^^rdf:XMLLiteral
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Järjestäjäorganisaatio</div>"
      ] ;
      fhir:name [ fhir:v "Järjestäjäorganisaatio" ]
   ] [
@@ -44,7 +43,7 @@
      fhir:id [ fhir:v "tuottajaorg1" ] ;
      fhir:text [
        fhir:status [ fhir:v "empty" ] ;
-       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tuottajaorganisaatio</div>"^^rdf:XMLLiteral
+       fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Tuottajaorganisaatio</div>"
      ] ;
      fhir:name [ fhir:v "Tuottajaorganisaatio" ]
   ] ) ; # 
@@ -66,10 +65,7 @@
        ]
      ] [
        fhir:url [ fhir:v "RegisterSpecifierName"^^xsd:anyURI ] ;
-       fhir:value [
-         a fhir:string ;
-         fhir:v "Kansaneläkelaitos"
-       ]
+       fhir:value [ fhir:v "Kansaneläkelaitos" ]
      ] ) ;
      fhir:url [ fhir:v "https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterSpecifier"^^xsd:anyURI ]
   ] ) ; # 

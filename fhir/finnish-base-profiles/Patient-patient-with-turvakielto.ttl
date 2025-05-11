@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -21,7 +20,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-with-turvakielto</b></p><a name=\"patient-with-turvakielto\"> </a><a name=\"hcpatient-with-turvakielto\"> </a><a name=\"patient-with-turvakielto-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-patient.html\">FI Base Patient</a></p><p style=\"margin-bottom: 0px\">Security Label: Turvakielto (Details: Finnish CodeSystem for security labels code TURVAKIELTO = 'Turvakielto')</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Turva Henkilö (no stated gender), DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes.\"><a href=\"StructureDefinition-municipality-code.html\">Municipality Code</a></td><td colspan=\"3\">unknown 020: Akaa (version = 2003 )</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-with-turvakielto</b></p><a name=\"patient-with-turvakielto\"> </a><a name=\"hcpatient-with-turvakielto\"> </a><a name=\"patient-with-turvakielto-fi-FI\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Turva Henkilö (no stated gender), DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes.\"><a href=\"StructureDefinition-municipality-code.html\">Municipality Code</a></td><td colspan=\"3\">unknown 020: Akaa (version = 2003 )</td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code"^^xsd:anyURI ] ;
@@ -44,7 +43,7 @@
      fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "010190-999X" ]
   ] ) ; # 
-  fhir:active [ fhir:v true] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
      fhir:text [ fhir:v "Turva Henkilö" ] ;
      fhir:family [ fhir:v "Henkilö" ] ;

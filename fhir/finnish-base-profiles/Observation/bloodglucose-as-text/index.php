@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.json2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.json1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.json');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.xml2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.xml1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.html');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.html');
 else 
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Observation-bloodglucose-as-text.xml');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Observation-bloodglucose-as-text.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

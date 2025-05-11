@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.json2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.json1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.json');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.xml2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.xml1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.html');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.html');
 else 
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/Provenance-custodian-public-healthcare.xml');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/Provenance-custodian-public-healthcare.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

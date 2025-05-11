@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -17,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter id-for-visit</b></p><a name=\"id-for-visit\"> </a><a name=\"hcid-for-visit\"> </a><a name=\"id-for-visit-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-encounter.html\">FI Base Encounter</a></p></div><p><b>identifier</b>: id-for-visit (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>period</b>: 2022-02-28 15:03:00+0200 --&gt; 2022-02-28 15:33:00+0200</p><p><b>serviceProvider</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</a></p></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter id-for-visit</b></p><a name=\"id-for-visit\"> </a><a name=\"hcid-for-visit\"> </a><a name=\"id-for-visit-fi-FI\"> </a><p><b>identifier</b>: id-for-visit (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>period</b>: 2022-02-28 15:03:00+0200 --&gt; 2022-02-28 15:33:00+0200</p><p><b>serviceProvider</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</a></p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "usual" ] ;

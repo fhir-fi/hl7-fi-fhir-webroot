@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -19,7 +18,7 @@
   fhir:language [ fhir:v "en"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"> Hoitosuunnitelma<b>Boldattuu </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde</td></tr></tbody></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"> Hoitosuunnitelma<b>Boldattuu </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde</td></tr></tbody></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
@@ -44,10 +43,7 @@
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde> ;
      fhir:reference [ fhir:v "Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde" ]
   ] ; # 
-  fhir:effective [
-     a fhir:dateTime ;
-     fhir:v "2020-10-05"^^xsd:date
-  ] ; # 
+  fhir:effective [ fhir:v "2020-10-05"^^xsd:date] ; # 
   fhir:issued [ fhir:v "2019-12-05T09:21:37.130+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde> ;

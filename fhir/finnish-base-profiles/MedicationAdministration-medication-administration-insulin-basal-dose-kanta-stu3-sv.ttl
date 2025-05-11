@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -19,7 +18,7 @@
   fhir:language [ fhir:v "sv"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div lang=\"sv\" xml:lang=\"sv\" xmlns=\"http://www.w3.org/1999/xhtml\">Typ av insulin: Direktverkande insulin<br />Kod: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Direktverkande insulin), SNOMED 67866001 (Insulin (substance))<br />Tid: 4.9.2021 17.38:18 - 18.21:18<br />Direktverkande insulin 0.50 IE (0.7 [iU]/h)</div>"^^rdf:XMLLiteral
+     fhir:div "<div lang=\"sv\" xml:lang=\"sv\" xmlns=\"http://www.w3.org/1999/xhtml\">Typ av insulin: Direktverkande insulin<br />Kod: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Direktverkande insulin), SNOMED 67866001 (Insulin (substance))<br />Tid: 4.9.2021 17.38:18 - 18.21:18<br />Direktverkande insulin 0.50 IE (0.7 [iU]/h)</div>"
   ] ; # 
   fhir:identifier ( [
      fhir:use [ fhir:v "official" ] ;
@@ -62,14 +61,14 @@
   fhir:dosage [
      fhir:text [ fhir:v "Direktverkande insulin 0.50 IE (0.7 [iU]/h)" ] ;
      fhir:dose [
-       fhir:value [ fhir:v 0.5016666666666667 ] ;
+       fhir:value [ fhir:v "0.5016666666666667"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "IU" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "[iU]" ]
      ] ;
      fhir:rate [
        a fhir:Quantity ;
-       fhir:value [ fhir:v 0.7 ] ;
+       fhir:value [ fhir:v "0.7"^^xsd:decimal ] ;
        fhir:unit [ fhir:v "[iU]/h" ] ;
        fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "[iU]/h" ]

@@ -1,7 +1,6 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -21,7 +20,7 @@
   fhir:language [ fhir:v "fi"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Daily steps (41950-7)<br />Time: 20.11.2017 11:46<br />Result: 165 </div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Daily steps (41950-7)<br />Time: 20.11.2017 11:46<br />Result: 165 </div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
@@ -47,10 +46,7 @@
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad> ;
      fhir:reference [ fhir:v "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
   ] ; # 
-  fhir:effective [
-     a fhir:dateTime ;
-     fhir:v "2012-09-17"^^xsd:date
-  ] ; # 
+  fhir:effective [ fhir:v "2012-09-17"^^xsd:date] ; # 
   fhir:issued [ fhir:v "2012-02-02T10:00:00.936+02:00"^^xsd:dateTime] ; # 
   fhir:performer ( [
      fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad> ;

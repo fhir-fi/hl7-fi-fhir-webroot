@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.json2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.json1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.json');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.xml2');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.xml1');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.html');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.html');
 else 
-  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/StructureDefinition-fi-base-reason-for-care.xml');
+  Redirect('https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-reason-for-care.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

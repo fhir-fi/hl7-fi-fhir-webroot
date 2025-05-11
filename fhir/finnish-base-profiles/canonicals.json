@@ -3,335 +3,307 @@
     "id" : "kanta-provenance-agent-role",
     "type" : "ValueSet",
     "url" : "http://gen.kanta.fi/kanta-provenance-agent-role",
-    "version" : "2.0.0-rc2"
-  },
-  {
-    "id" : "fi-base-release-for-patient-viewing-cs",
-    "type" : "CodeSystem",
-    "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-release-for-patient-viewing-cs",
-    "version" : "2.0.0-rc2",
-    "name" : "FiBaseReleaseforPatientViewingCS"
+    "version" : "2.0.0-rc1"
   },
   {
     "id" : "fi-base-security-label-cs",
     "type" : "CodeSystem",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseSecurityLabelCS"
   },
   {
     "id" : "hl7.fhir.fi.base",
     "type" : "ImplementationGuide",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FinnishBaseProfiles"
-  },
-  {
-    "id" : "ReleaseDateForPatientViewing",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/ReleaseDateForPatientViewing",
-    "version" : "2.0.0-rc2",
-    "name" : "ReleaseDateForPatientViewing"
-  },
-  {
-    "id" : "RestrictionParent",
-    "type" : "StructureDefinition",
-    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/RestrictionParent",
-    "version" : "2.0.0-rc2",
-    "name" : "RestrictionParent"
   },
   {
     "id" : "condition-categorization-of-accident",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "ConditionCategorizationOfAccident"
   },
   {
     "id" : "condition-cause-of-adverse-effect",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-cause-of-adverse-effect",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "CauseOfAdverseEffect"
   },
   {
     "id" : "condition-caused-by-medication",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-caused-by-medication",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "ConditionCausedByMedication"
   },
   {
     "id" : "condition-endocrinological-disorder",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-endocrinological-disorder",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "EndocrinologicalDisorder"
   },
   {
     "id" : "condition-external-cause",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-external-cause",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "ConditionExternalCause"
   },
   {
     "id" : "condition-permanence",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "Permanence"
   },
   {
     "id" : "condition-physical-excercise",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-physical-excercise",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "PhysicalExcercise"
   },
   {
     "id" : "condition-primary",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "PrimaryCondition"
   },
   {
     "id" : "fi-base-appointment",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseAppointment"
   },
   {
     "id" : "fi-base-condition",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseCondition"
   },
   {
     "id" : "fi-base-encounter",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseEncounter"
   },
   {
     "id" : "fi-base-episode-of-care",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-episode-of-care",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseEpisodeOfCare"
   },
   {
     "id" : "fi-base-healthcare-service",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseHealthcareService"
   },
   {
     "id" : "fi-base-immunization",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-immunization",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseImmunization"
   },
   {
     "id" : "fi-base-information-custodian",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseInformationCustodian"
   },
   {
     "id" : "fi-base-information-custodian-individual",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-individual",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseInformationCustodianIndividual"
   },
   {
     "id" : "fi-base-information-custodian-private",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-private",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseInformationCustodianPrivate"
   },
   {
     "id" : "fi-base-information-custodian-public",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-public",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseInformationCustodianPublic"
   },
   {
     "id" : "fi-base-location",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseLocation"
   },
   {
     "id" : "fi-base-medication",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseMedication"
   },
   {
     "id" : "fi-base-medication-administration",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseMedicationAdministration"
   },
   {
     "id" : "fi-base-medication-request",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseMedicationRequest"
   },
   {
     "id" : "fi-base-medication-statement",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseMedicationStatement"
   },
   {
     "id" : "fi-base-observation",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseObservation"
   },
   {
     "id" : "fi-base-organization",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseOrganization"
   },
   {
     "id" : "fi-base-patient",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBasePatient"
   },
   {
     "id" : "fi-base-practitioner",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBasePractitioner"
   },
   {
     "id" : "fi-base-practitioner-role",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBasePractitionerRole"
   },
   {
     "id" : "fi-base-procedure",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseProcedure"
   },
   {
     "id" : "fi-base-provenance",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-provenance",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseProvenance"
   },
   {
     "id" : "fi-base-reason-for-care",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseReasonForCare"
   },
   {
     "id" : "fi-base-schedule",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseSchedule"
   },
   {
     "id" : "fi-base-slot",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseSlot"
   },
   {
     "id" : "kanta-document-metadata-profile",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "KantaDocumentMetadata"
   },
   {
     "id" : "kanta-document-other-metadata-profile",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "KantaDocumentOtherMetadata"
   },
   {
     "id" : "municipality-code",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "MunicipalityCode"
   },
   {
     "id" : "patient-profession",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "PatientProfession"
   },
   {
     "id" : "service-event",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/service-event",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "ServiceEvent"
   },
   {
     "id" : "vaccination-recorder",
     "type" : "StructureDefinition",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/vaccination-recorder",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "VaccinationRecorder"
   },
   {
     "id" : "fi-base-register-identifier",
     "type" : "ValueSet",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseRegisterIdentifier"
-  },
-  {
-    "id" : "fi-base-restriction-parent-vs",
-    "type" : "ValueSet",
-    "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-restriction-parent-vs",
-    "version" : "2.0.0-rc2",
-    "name" : "FiBaseRestrictionParentVS"
   },
   {
     "id" : "fi-base-security-label-vs",
     "type" : "ValueSet",
     "url" : "https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs",
-    "version" : "2.0.0-rc2",
+    "version" : "2.0.0-rc1",
     "name" : "FiBaseSecurityLabelVS"
   }
 ]

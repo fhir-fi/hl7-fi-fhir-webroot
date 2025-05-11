@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,7 +10,7 @@
   fhir:id [ fhir:v "practitioneresim1"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioneresim1</b></p><a name=\"practitioneresim1\"> </a><a name=\"hcpractitioneresim1\"> </a><a name=\"practitioneresim1-fi-FI\"> </a><p><b>identifier</b>: <code>urn:oid:1.2.246.537.25</code>/000018</p><p><b>name</b>: Lars Matias van der Knaapi (Official), Lars (Nickname)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.246.537.6.140.2008 034}\">034</span></td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioneresim1</b></p><a name=\"practitioneresim1\"> </a><a name=\"hcpractitioneresim1\"> </a><a name=\"practitioneresim1-fi-FI\"> </a><p><b>identifier</b>: <code>urn:oid:1.2.246.537.25</code>/000018</p><p><b>name</b>: Lars Matias van der Knaapi (Official), Lars (Nickname)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:1.2.246.537.6.140.2008 034}\">034</span></td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:1.2.246.537.25"^^xsd:anyURI ] ;
@@ -23,22 +22,13 @@
        fhir:v "van der Knaapi" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "van"
-         ]
+         fhir:value [ fhir:v "van" ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "der"
-         ]
+         fhir:value [ fhir:v "der" ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Knaapi"
-         ]
+         fhir:value [ fhir:v "Knaapi" ]
        ] )
      ] ;
      fhir:given ( [ fhir:v "Lars" ] [ fhir:v "Matias" ] )

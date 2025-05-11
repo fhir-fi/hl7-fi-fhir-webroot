@@ -21,28 +21,6 @@
       <fhir:details>Publication run at 11/05/2025 by mikael using Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (3 days old) source id Unknown (todo)</fhir:details>
     </item>
     <item>
-      <title>hl7.fhir.fi.base#2.0.0-rc2</title>
-      <description>Second release candidate for 2.0.0</description>
-      <link>https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/package.tgz</link>
-      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2/package.tgz</guid>
-      <dc:creator>HL7 Finland ry</dc:creator>
-      <fhir:version>4.0.1</fhir:version>
-      <fhir:kind>IG</fhir:kind>
-      <pubDate>Sun, 11 May 2025 04:26:48 +0300</pubDate>
-      <fhir:details>Publication run at 11/05/2025 by mikael using Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (3 days old) source id Unknown (todo)</fhir:details>
-    </item>
-    <item>
-      <title>hl7.fhir.fi.scheduling#2.0.0-rc2</title>
-      <description>Second release candidate for 2.0.0</description>
-      <link>https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2/package.tgz</link>
-      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2/package.tgz</guid>
-      <dc:creator>HL7 Finland ry</dc:creator>
-      <fhir:version>4.0.1</fhir:version>
-      <fhir:kind>IG</fhir:kind>
-      <pubDate>Fri, 09 May 2025 06:29:21 +0300</pubDate>
-      <fhir:details>Publication run at 09/05/2025 by mikael using Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (30 hours old) source id Unknown (todo)</fhir:details>
-    </item>
-    <item>
       <title>hl7.fhir.fi.scheduling#2.0.0-rc2</title>
       <description>Second release candidate for 2.0.0</description>
       <link>https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2/package.tgz</link>

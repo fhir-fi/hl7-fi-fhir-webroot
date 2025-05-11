@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -11,7 +10,7 @@
   fhir:id [ fhir:v "patientesim1"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patientesim1</b></p><a name=\"patientesim1\"> </a><a name=\"hcpatientesim1\"> </a><a name=\"patientesim1-fi-FI\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Karen Erika van der Hentenryck (official) (no stated gender), DoB: 2010-08-25 ( urn:oid:1.2.246.21#250810A999Y)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Karen (Nickname)</td></tr></table></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patientesim1</b></p><a name=\"patientesim1\"> </a><a name=\"hcpatientesim1\"> </a><a name=\"patientesim1-fi-FI\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Karen Erika van der Hentenryck (official) (no stated gender), DoB: 2010-08-25 ( urn:oid:1.2.246.21#250810A999Y)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Karen (Nickname)</td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
@@ -23,22 +22,13 @@
        fhir:v "van der Hentenryck" ;
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "van"
-         ]
+         fhir:value [ fhir:v "van" ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "der"
-         ]
+         fhir:value [ fhir:v "der" ]
        ] [
          fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ] ;
-         fhir:value [
-           a fhir:string ;
-           fhir:v "Hentenryck"
-         ]
+         fhir:value [ fhir:v "Hentenryck" ]
        ] )
      ] ;
      fhir:given ( [ fhir:v "Karen" ] [ fhir:v "Erika" ] )

@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs",
-      "version" : "2.0.0-rc2",
+      "version" : "2.0.0-rc1",
       "status" : "draft",
       "name" : "FiBaseSecurityLabelCS",
       "title" : "Finnish CodeSystem for security labels",
