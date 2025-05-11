@@ -1,0 +1,5 @@
+# OSX file system files
+.DS_Store
+
+# IG publisher's internal cache
+/input-cache
