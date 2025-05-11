@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "hl7.fhir.fi.scheduling",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/ImplementationGuide/hl7.fhir.fi.scheduling",
+    "version" : "0.1.0",
+    "name" : "FinnishFHIRScheduling"
+  }
+]

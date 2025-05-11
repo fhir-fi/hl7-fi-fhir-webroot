@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Slot/FreeSlot> a fhir:Slot ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FreeSlot"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Slot FreeSlot</b></p><a name=\"FreeSlot\"> </a><a name=\"hcFreeSlot\"> </a><a name=\"FreeSlot-fi-FI\"> </a><p><b>identifier</b>: 123456789</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50 SOTE3}\">Lääkäripalvelut</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49 EE}\">Yleislääkärin palvelu</span></p><p><b>appointmentType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.884 10}\">Kertakäynti toimipaikassa</span></p><p><b>schedule</b>: <a href=\"Schedule-ScheduleExample.html\">Schedule: identifier = http://example.org/scheduleid#45 (use: usual, ); serviceCategory = General medical practice (qualifier value); serviceType = General practice service; specialty = General practice (specialty) (qualifier value); planningHorizon = 2023-01-01 09:15:00+0000 --&gt; 2033-12-25 09:30:00+0000</a></p><p><b>status</b>: Free</p><p><b>start</b>: 2023-01-01 12:00:00+0200</p><p><b>end</b>: 2023-01-01 12:30:00+0200</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:serviceCategory ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201801" ] ;
+       fhir:code [ fhir:v "SOTE3" ] ;
+       fhir:display [ fhir:v "Lääkäripalvelut" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201501" ] ;
+       fhir:code [ fhir:v "EE" ] ;
+       fhir:display [ fhir:v "Yleislääkärin palvelu" ]
+     ] )
+  ] ) ; # 
+  fhir:appointmentType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.884"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2015" ] ;
+       fhir:code [ fhir:v "10" ] ;
+       fhir:display [ fhir:v "Kertakäynti toimipaikassa" ]
+     ] )
+  ] ; # 
+  fhir:schedule [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Schedule/ScheduleExample> ;
+     fhir:reference [ fhir:v "Schedule/ScheduleExample" ]
+  ] ; # 
+  fhir:status [ fhir:v "free"] ; # 
+  fhir:start [ fhir:v "2023-01-01T12:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2023-01-01T12:30:00+02:00"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-with-turvakielto> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-with-turvakielto"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient>
+     ] ) ;
+     fhir:security ( [
+       fhir:system [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "TURVAKIELTO" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Turva Henkilö </b> (no stated gender), DoB: 1990-01-01 ( NNFIN: 010190-999X (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension for home municipality\"><a href=\"StructureDefinition-municipality-code.html\">Municipality Code:</a></td><td colspan=\"3\"><ul><li>urn:oid:1.2.246.537.6.21.2003 020: Akaa</li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.21.2003"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "020" ] ;
+       fhir:display [ fhir:v "Akaa" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "NNFIN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "010190-999X" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Henkilö" ] ;
+     fhir:given ( [ fhir:v "Turva" ] )
+  ] ) ; # 
+  fhir:birthDate [ fhir:v "1990-01-01"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

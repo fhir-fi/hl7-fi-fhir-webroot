@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "patient-of-municipality"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Testi Henkilö </b> male, DoB: 1990-01-01 ( id: 010190-999Y (use: OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"tel:+358401234657\">+358401234657</a></li><li>Testikatu 1 37910 Akaa (HOME)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes: {urn:oid:2.16.840.1.113883.4.642.3.20 fi}\">fi</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension for home municipality\"><a href=\"StructureDefinition-municipality-code.html\">MunicipalityCode:</a></td><td colspan=\"3\"><ul><li>urn:oid:1.2.246.537.6.21.2003 020: Akaa</li></ul></td></tr></table></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.21.2003" ];
+       fhir:Coding.code [ fhir:value "020" ];
+       fhir:Coding.display [ fhir:value "Akaa" ]
+     ]
+  ]; # 
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.246.21" ];
+     fhir:Identifier.value [ fhir:value "010190-999Y" ]
+  ]; # 
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Henkilö" ];
+     fhir:HumanName.given [
+       fhir:value "Testi";
+       fhir:index 0
+     ]
+  ]; # 
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "+358401234657" ]
+  ]; # 
+  fhir:Patient.gender [ fhir:value "male"]; # 
+  fhir:Patient.birthDate [ fhir:value "1990-01-01"^^xsd:date]; # 
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.line [
+       fhir:value "Testikatu 1";
+       fhir:index 0
+     ], [
+       fhir:value "37910 Akaa";
+       fhir:index 1
+     ]
+  ]; # 
+  fhir:Patient.communication [
+     fhir:index 0;
+     fhir:Patient.communication.language [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.4.642.3.20" ];
+         fhir:Coding.code [ fhir:value "fi" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,9 @@
+﻿/Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 136851, Error - Canonical URL 'http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data' does not resolve (INVALID)
+/Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 168568, Error - Canonical URL 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export' does not resolve (INVALID)
+
+FinnishSmart : Validation Results
+=========================================
+
+err = 2, warn = 0, info = 0
+IG Publisher Version: 1.5.2
+Generated Thu Nov 09 22:53:40 EET 2023. FHIR version 4.0.1 for hl7.fhir.fi.smart#1.0.0 (canonical = https://hl7.fi/fhir/finnish-smart)

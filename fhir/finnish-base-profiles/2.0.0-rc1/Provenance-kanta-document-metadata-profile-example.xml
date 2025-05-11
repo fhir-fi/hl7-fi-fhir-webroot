@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="kanta-document-metadata-profile-example"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance kanta-document-metadata-profile-example</b></p><a name="kanta-document-metadata-profile-example"> </a><a name="hckanta-document-metadata-profile-example"> </a><a name="kanta-document-metadata-profile-example-fi-FI"> </a><p>Provenance for <a href="EpisodeOfCare-id-for-episode-1.html">EpisodeOfCare: status = active</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2023-08-25 16:42:17+0300</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>Role</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType CST}">Rekisterinpitäjä</span></td><td/><td>Pirkanmaan hyvinvointialueen rekisterinpitäjä (Identifier: Provider number/urn:oid:1.2.246.10.32213086.19.0)</td></tr><tr><td/><td/><td><a href="#hckanta-document-metadata-profile-example/jarjestajaorg1">Organization Pirkanmaan hyvinvointialue</a></td></tr><tr><td/><td/><td><a href="#hckanta-document-metadata-profile-example/tuottajaorg1">Organization Pirkanmaan hyvinvointialue</a></td></tr></table></div>
+  </text>
+  <contained>
+    <Organization>
+      <id value="jarjestajaorg1"/>
+      <identifier>
+        <system value="urn:oid:1.2.246.537.6.40174"/>
+        <value value="urn:oid:1.2.246.10.32213086.10.0"/>
+      </identifier>
+      <name value="Pirkanmaan hyvinvointialue"/>
+    </Organization>
+  </contained>
+  <contained>
+    <Organization>
+      <id value="tuottajaorg1"/>
+      <identifier>
+        <system value="urn:oid:1.2.246.537.6.40174"/>
+        <value value="urn:oid:1.2.246.10.32213086.10.0"/>
+      </identifier>
+      <name value="Pirkanmaan hyvinvointialue"/>
+    </Organization>
+  </contained>
+  <target>
+    <reference value="EpisodeOfCare/id-for-episode-1"/>
+  </target>
+  <recorded value="2023-08-25T16:42:17.239+03:00"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="CST"/>
+        <display value="custodian"/>
+      </coding>
+      <text value="Rekisterinpitäjä"/>
+    </type>
+    <role>
+      <coding>
+        <system value="urn:oid:1.2.246.537.5.40172"/>
+        <code value="1"/>
+        <display value="Julkinen"/>
+      </coding>
+      <text value="Julkinen"/>
+    </role>
+    <who>
+      <type value="Organization"/>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="PRN"/>
+          </coding>
+        </type>
+        <system value="urn:oid:1.2.246.537.6.40174"/>
+        <value value="urn:oid:1.2.246.10.32213086.19.0"/>
+      </identifier>
+      <display value="Pirkanmaan hyvinvointialueen rekisterinpitäjä"/>
+    </who>
+  </agent>
+  <agent>
+    <role>
+      <coding>
+        <system value="http://gen.kanta.fi/fikanta-cs-rolecategory"/>
+        <code value="8"/>
+        <display value="Palvelunjärjestäjä"/>
+      </coding>
+    </role>
+    <who>
+      <reference value="#jarjestajaorg1"/>
+    </who>
+  </agent>
+  <agent>
+    <role>
+      <coding>
+        <system value="http://gen.kanta.fi/fikanta-cs-rolecategory"/>
+        <code value="11"/>
+        <display value="Palveluntuottaja"/>
+      </coding>
+    </role>
+    <who>
+      <reference value="#tuottajaorg1"/>
+    </who>
+  </agent>
+</Provenance>

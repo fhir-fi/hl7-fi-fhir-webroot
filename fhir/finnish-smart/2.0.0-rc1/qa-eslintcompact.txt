@@ -1,0 +1,9 @@
+FinnishSmart
+=========================================
+
+/Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#2.0.0-rc1/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 138470, Error - Canonical URL 'http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data' does not resolve (INVALID)
+/Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#2.0.0-rc1/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 170187, Error - Canonical URL 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export' does not resolve (INVALID)
+/Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#2.0.0-rc1/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 0, col 0, Info - The resource CapabilityStatement/apotti-eko01 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root) (BUSINESSRULE)
+
+err = 2, warn = 0, info = 1
+IG Publisher Version: 1.8.9

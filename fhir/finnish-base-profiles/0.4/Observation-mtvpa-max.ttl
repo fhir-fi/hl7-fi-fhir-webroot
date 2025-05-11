@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/mtvpa-max> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mtvpa-max"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Weekly moderate to vigorous physical activity in minutes (82290-8)<br />Time: 20.11.2017 11:46<br />Result: 254 min </div>"
+  ]; # 
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38c" ]
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/fiphr-cs-fitnesscategory" ];
+       fhir:Coding.code [ fhir:value "fitness" ];
+       fhir:Coding.display [ fhir:value "Fitness" ]
+     ], [
+       fhir:index 1;
+       a sct:405155000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "405155000" ];
+       fhir:Coding.display [ fhir:value "Physical fitness behavior (observable entity)" ]
+     ]
+  ]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:82290-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "82290-8" ];
+       fhir:Coding.display [ fhir:value "Weekly moderate to vigorous physical activity in minutes" ]
+     ], [
+       fhir:index 1;
+       a sct:408581006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "408581006" ];
+       fhir:Coding.display [ fhir:value "Physical activity target moderate exercise (finding)" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2017-11-30T02:00:00.936+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.issued [ fhir:value "2017-02-02T10:00:00.936+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "120"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "min" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "min" ]
+  ]; # 
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ]; # 
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Note" ]
+  ]; # 
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "20"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "min" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "min" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "120"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "min" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "min" ]
+     ];
+     fhir:Observation.referenceRange.appliesTo [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:248153007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "248153007" ];
+         fhir:Coding.display [ fhir:value "Male" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Normal range" ]
+     ];
+     fhir:Observation.referenceRange.age [
+       fhir:Range.low [
+         fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "years" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "a" ]
+       ];
+       fhir:Range.high [
+         fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "years" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "a" ]
+       ]
+     ];
+     fhir:Observation.referenceRange.text [ fhir:value "Age" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/mtvpa-max.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-with-multiple-identifiers",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-with-multiple-identifiers</b></p><a name=\"patient-with-multiple-identifiers\"> </a><a name=\"hcpatient-with-multiple-identifiers\"> </a><a name=\"patient-with-multiple-identifiers-fi-FI\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anna Testi  (no stated gender), DoB Unknown ( urn:oid:1.2.246.21#010101-123N\u00a0(use:\u00a0official,\u00a0period:\u00a02019-01-01 --&gt; (ongoing)))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">081181-9984\u00a0(use:\u00a0temp,\u00a0period:\u00a02018-11-12 --&gt; 2019-01-01)</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.246.21",
+    "value" : "010101-123N",
+    "period" : {
+      "start" : "2019-01-01"
+    }
+  },
+  {
+    "use" : "temp",
+    "value" : "081181-9984",
+    "period" : {
+      "start" : "2018-11-12",
+      "end" : "2019-01-01"
+    }
+  }],
+  "name" : [{
+    "family" : "Testi",
+    "given" : ["Anna"]
+  }]
+}

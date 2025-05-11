@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-sourceforreportedmet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA26242-0/\">LA26242-0</a></td><td>Activity tracker</td><td>Aktiivisuusmittari</td><td>Aktivitetsmätare</td><td>Activity tracker</td></tr><tr><td><a href=\"https://loinc.org/LA26243-8/\">LA26243-8</a></td><td>Physical activity questionnaire</td><td>Fyysisen aktiivisuuden kyselylomake</td><td>Fysisk aktivitet frågeformulär</td><td>Physical activity questionnaire</td></tr><tr><td><a href=\"https://loinc.org/LA26251-1/\">LA26251-1</a></td><td>Activity log or diary</td><td>Aktiivisuusloki tai -päiväkirja</td><td>Aktivitetslogg eller -dagbok</td><td>Activity log or diary</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforreportedmet",
+  "version" : "0.2.1",
+  "name" : "fiphr-vs-sourceforreportedmet",
+  "title" : "Value Set Finnish PHR Source for Reported MET",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-02-24",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR Source for Reported MET value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA26242-0",
+        "display" : "Activity tracker",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Aktiivisuusmittari"
+        },
+        {
+          "language" : "sv",
+          "value" : "Aktivitetsmätare"
+        },
+        {
+          "language" : "en",
+          "value" : "Activity tracker"
+        }]
+      },
+      {
+        "code" : "LA26243-8",
+        "display" : "Physical activity questionnaire",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Fyysisen aktiivisuuden kyselylomake"
+        },
+        {
+          "language" : "sv",
+          "value" : "Fysisk aktivitet frågeformulär"
+        },
+        {
+          "language" : "en",
+          "value" : "Physical activity questionnaire"
+        }]
+      },
+      {
+        "code" : "LA26251-1",
+        "display" : "Activity log or diary",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Aktiivisuusloki tai -päiväkirja"
+        },
+        {
+          "language" : "sv",
+          "value" : "Aktivitetslogg eller -dagbok"
+        },
+        {
+          "language" : "en",
+          "value" : "Activity log or diary"
+        }]
+      }]
+    }]
+  }
+}

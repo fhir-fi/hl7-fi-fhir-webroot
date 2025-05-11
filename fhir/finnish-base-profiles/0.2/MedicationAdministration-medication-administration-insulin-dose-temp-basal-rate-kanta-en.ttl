@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en> a fhir:MedicationAdministration;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medication-administration-insulin-dose-temp-basal-rate-kanta-en"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\">Type of insulin: Fast-acting insulin<br />Code: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Fast-acting insulin), SNOMED 67866001 (Insulin (substance))<br />Time: 9/4/2021 17:23:17 - 17:28:16<br />Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)</div>"
+  ]; # 
+  fhir:MedicationAdministration.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:b03ebc59-36fa-5ad8-ab77-abea501a1fbe" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:d8c858f6-6c4d-4282-92a6-6a1878b269e8" ]
+  ]; # 
+  fhir:MedicationAdministration.status [ fhir:value "completed"]; # 
+  fhir:MedicationAdministration.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:411531001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "411531001" ];
+       fhir:Coding.display [ fhir:value "Short-acting insulin (substance)" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode" ];
+       fhir:Coding.code [ fhir:value "ins-short-fast" ];
+       fhir:Coding.display [ fhir:value "Fast-acting insulin" ]
+     ], [
+       fhir:index 2;
+       a sct:67866001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "67866001" ];
+       fhir:Coding.display [ fhir:value "Insulin (substance)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Fast-acting insulin" ]
+  ]; # 
+  fhir:MedicationAdministration.subject [
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a>;
+     fhir:Reference.reference [ fhir:value "Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a" ]
+  ]; # 
+  fhir:MedicationAdministration.effectivePeriod [
+     fhir:Period.start [ fhir:value "2021-09-04T17:23:17.000+03:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2021-09-04T17:28:16.000+03:00"^^xsd:dateTime ]
+  ]; # 
+  fhir:MedicationAdministration.dosage [
+     fhir:MedicationAdministration.dosage.text [ fhir:value "Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)" ];
+     fhir:MedicationAdministration.dosage.dose [
+       fhir:Quantity.value [ fhir:value "0.06544777777777777"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "IU" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "[iU]" ]
+     ];
+     fhir:MedicationAdministration.dosage.rateRatio [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "0.788"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "IU" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "[iU]" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.value [ fhir:value "0.8883248730964466"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "h" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "h" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

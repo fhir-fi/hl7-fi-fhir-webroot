@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medication-administration-insulin-basal-dose-kanta-stu3-sv"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-stu3"^^xsd:anyURI ;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-stu3>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "sv"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div lang=\"sv\" xml:lang=\"sv\" xmlns=\"http://www.w3.org/1999/xhtml\">Typ av insulin: Direktverkande insulin<br />Kod: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Direktverkande insulin), SNOMED 67866001 (Insulin (substance))<br />Tid: 4.9.2021 17.38:18 - 18.21:18<br />Direktverkande insulin 0.50 IE (0.7 [iU]/h)</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:ab5ab63d-4ebb-5862-b61e-7142da27a2e1" ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:fabe4e66-56e2-4f34-90e9-5856620f5309" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:411531001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "411531001" ] ;
+       fhir:display [ fhir:v "Short-acting insulin (substance)" ]
+     ] [
+       fhir:system [ fhir:v "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ins-short-fast" ] ;
+       fhir:display [ fhir:v "Direktverkande insulin" ]
+     ] [
+       a sct:67866001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "67866001" ] ;
+       fhir:display [ fhir:v "Insulin (substance)" ]
+     ] ) ;
+     fhir:text [ fhir:v "Direktverkande insulin" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/cafbe8e7-38fe-4807-b995-6770e5390365> ;
+     fhir:reference [ fhir:v "Patient/cafbe8e7-38fe-4807-b995-6770e5390365" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2021-09-04T17:38:18.000+03:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2021-09-04T18:21:18.000+03:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:dosage [
+     fhir:text [ fhir:v "Direktverkande insulin 0.50 IE (0.7 [iU]/h)" ] ;
+     fhir:dose [
+       fhir:value [ fhir:v "0.5016666666666667"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "IU" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[iU]" ]
+     ] ;
+     fhir:rate [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "0.7"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "[iU]/h" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "[iU]/h" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

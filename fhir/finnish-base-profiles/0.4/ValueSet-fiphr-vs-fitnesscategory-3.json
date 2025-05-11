@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-fitnesscategory-3",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html\"><code>http://phr.kanta.fi/fiphr-cs-fitnesscategory</code></a></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0
+  }],
+  "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+  "version" : "0.4.0",
+  "name" : "fiphr-vs-fitnesscategory",
+  "title" : "Value Set Finnish PHR Fitness Category",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2018-03-16T10:45:00+02:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Fitness Category code.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory"
+    }]
+  }
+}

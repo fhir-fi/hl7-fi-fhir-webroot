@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="medicationesim2"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Medication</b><a name="medicationesim2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Medication &quot;medicationesim2&quot; </p></div><p><b>identifier</b>: id: 469437</p><p><b>code</b>: diatsepaami <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#N05BA01)</span></p><p><b>form</b>: tabletti <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></div>
+  </text>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/drug">
+    <valueString value="DIAPAM"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.604.2014"/>
+      <code value="1"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength">
+    <valueString value="5 mg"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/narcotic">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/CNSdrug">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40118.2006"/>
+      <code value="Z"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <system value="urn:oid:1.2.246.537.6.55.2004"/>
+    <value value="469437"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.32.2007"/>
+      <code value="N05BA01"/>
+      <display value="diatsepaami"/>
+    </coding>
+  </code>
+  <form>
+    <text value="tabletti"/>
+  </form>
+</Medication>

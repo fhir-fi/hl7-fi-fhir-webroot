@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "practitioner-keijo",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-keijo</b></p><a name=\"practitioner-keijo\"> </a><a name=\"hcpractitioner-keijo\"> </a><a name=\"practitioner-keijo-fi-FI\"> </a><p><b>name</b>: Keijo Kätilö</p></div>"
+  },
+  "name" : [{
+    "text" : "Keijo Kätilö",
+    "family" : "Kätilö",
+    "given" : ["Keijo"]
+  }]
+}

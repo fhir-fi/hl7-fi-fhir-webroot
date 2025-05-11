@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Slot/example-slot> a fhir:Slot ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-slot"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Slot example-slot</b></p><a name=\"example-slot\"> </a><a name=\"hcexample-slot\"> </a><a name=\"example-slot-fi-FI\"> </a><p><b>identifier</b>: 123456789</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50.201801 SOTE19}\">Perheoikeudelliset palvelut</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49.201501 NC}\">Isyyden selvittämispalvelu</span></p><p><b>appointmentType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.884.2015 10}, {http://terminology.hl7.org/CodeSystem/v2-0276 ROUTINE}\">Kertakäynti toimipaikassa</span></p><p><b>schedule</b>: <a href=\"Schedule/234567890\">Schedule/234567890</a></p><p><b>status</b>: Free</p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:serviceCategory ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50.201801"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SOTE19" ] ;
+       fhir:display [ fhir:v "Perheoikeudelliset palvelut" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49.201501"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NC" ] ;
+       fhir:display [ fhir:v "Isyyden selvittämispalvelu" ]
+     ] )
+  ] ) ; # 
+  fhir:appointmentType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.884.2015"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10" ] ;
+       fhir:display [ fhir:v "Kertakäynti toimipaikassa" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0276"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ROUTINE" ]
+     ] ) ;
+     fhir:text [ fhir:v "Kertakäynti toimipaikassa" ]
+  ] ; # 
+  fhir:schedule [
+     fhir:link <https://hl7.fi/fhir/finnish-scheduling/Schedule/234567890> ;
+     fhir:reference [ fhir:v "Schedule/234567890" ]
+  ] ; # 
+  fhir:status [ fhir:v "free"] ; # 
+  fhir:start [ fhir:v "2020-01-01T12:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2020-01-01T12:30:00+02:00"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

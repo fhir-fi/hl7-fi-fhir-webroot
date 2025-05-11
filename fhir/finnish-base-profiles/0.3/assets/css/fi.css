@@ -1,0 +1,17 @@
+/* FHIR family-specific colors */
+:root {
+  --navbar-bg-color: #002B6C; /* 2. Header container color */
+  --footer-container-bg-color: #002B6C; /* 4. Footer container color */
+  --btn-hover-color: #0041A2;  /* 6. Menu button hover color */
+  --btn-active-color: #FFFFFF; /* 7. Menu button active color */
+  --ig-status-text-color: #002B6C; /* The color of the text in the top header */
+  --toc-box-bg-color: #DDF0FF;
+  --footer-highlight-text-color: #FFFFFF;
+  /*
+  --publish-box-bg-color: #FFC72C;
+  */
+}
+
+#family-logo {
+  padding-right: 1em;
+}

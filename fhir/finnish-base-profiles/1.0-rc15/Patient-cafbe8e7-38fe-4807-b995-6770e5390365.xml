@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="cafbe8e7-38fe-4807-b995-6770e5390365"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2023-01-05T00:04:05.318+02:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Test Patient </b> (no stated gender), DoB Unknown</p><hr/></div>
+  </text>
+  <name>
+    <family value="Patient"/>
+    <given value="Test"/>
+  </name>
+</Patient>

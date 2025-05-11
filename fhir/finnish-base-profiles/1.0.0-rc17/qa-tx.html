@@ -1,0 +1,812 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+--- 1 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.5.40105.2006","code":"1"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:43 GMT
+last-modified:Wed, 05 Jul 2023 19:48:43 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718483
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.5.40105.2006"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.5.40105.2006 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.5.40105.2006 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 2 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.605.2014","code":"1"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:43 GMT
+last-modified:Wed, 05 Jul 2023 19:48:43 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718484
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.605.2014"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.605.2014 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.605.2014 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 3 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.1403.202001","code":"1053"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:521
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:43 GMT
+last-modified:Wed, 05 Jul 2023 19:48:43 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718486
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.1403.202001"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.1403.202001 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.1403.202001 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 4 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.140.2008","code":"034"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:44 GMT
+last-modified:Wed, 05 Jul 2023 19:48:44 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718487
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.140.2008"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.140.2008 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.140.2008 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 5 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.270.202001","code":"1055"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:44 GMT
+last-modified:Wed, 05 Jul 2023 19:48:44 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718488
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.270.202001"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.270.202001 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.270.202001 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 6 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.5.40150.2009","code":"2"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:45 GMT
+last-modified:Wed, 05 Jul 2023 19:48:45 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718489
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.5.40150.2009"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.5.40150.2009 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.5.40150.2009 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 7 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.840.1.113883.4.642.3.20","code":"fi"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:530
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:45 GMT
+last-modified:Wed, 05 Jul 2023 19:48:45 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718490
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:2.16.840.1.113883.4.642.3.20"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.840.1.113883.4.642.3.20 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.840.1.113883.4.642.3.20 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 8 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.5.40005.2003","code":"SIVU"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:45 GMT
+last-modified:Wed, 05 Jul 2023 19:48:45 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718491
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.5.40005.2003"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.5.40005.2003 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.5.40005.2003 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 9 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.5.40003.2003","code":"KER"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:45 GMT
+last-modified:Wed, 05 Jul 2023 19:48:45 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718492
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.5.40003.2003"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.5.40003.2003 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.5.40003.2003 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 10 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.1.1999","code":"Y60.0"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:506
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:45 GMT
+last-modified:Wed, 05 Jul 2023 19:48:45 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718493
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.1.1999"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.1.1999 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.1.1999 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 11 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.2.2007","code":"JAB10"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:506
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:46 GMT
+last-modified:Wed, 05 Jul 2023 19:48:46 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718494
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.2.2007"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.2.2007 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.2.2007 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 12 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.50.201801","code":"SOTE9.2"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:515
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:46 GMT
+last-modified:Wed, 05 Jul 2023 19:48:46 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718495
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.50.201801"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.50.201801 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.50.201801 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 13 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.49.201501","code":"EEA"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:515
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:46 GMT
+last-modified:Wed, 05 Jul 2023 19:48:46 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718496
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.49.201501"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.49.201501 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.49.201501 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 14 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.884.2015","code":"101"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:46 GMT
+last-modified:Wed, 05 Jul 2023 19:48:46 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718499
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.884.2015"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.884.2015 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.884.2015 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 15 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/ValueSet/$expand?_limit=1000&_incomplete=true HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"includeDefinition","valueBoolean":false},{"name":"excludeNested","valueBoolean":true},{"name":"tx-resource","resource":{"resourceType":"CodeSystem","id":"SecurityLabelCS","url":"https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS","version":"1.0.0-rc17","name":"SecurityLabelCS","title":"Finnish CodeSystem for security labels","status":"active","experimental":false,"date":"2023-07-05T22:48:36+03:00","publisher":"HL7 Finland","contact":[{"name":"HL7 Finland","telecom":[{"system":"url","value":"https://www.hl7.fi/"},{"system":"email","value":"mikael@sensotrend.com"}]}],"description":"This is the CodeSystem for security labels in accordance with finnish authorities.","jurisdiction":[{"coding":[{"system":"urn:iso:std:iso:3166","code":"FI","display":"Finland"}]}],"content":"complete","count":1,"concept":[{"code":"TURVAKIELTO","display":"Turvakielto","definition":"A non-disclosure for personal safety reasons according to DVV."}]}},{"name":"cache-id","valueId":"f34b8513-e5ec-40a3-ab71-a126c7dffad5"},{"name":"valueSet","resource":{"resourceType":"ValueSet","status":"active","compose":{"inactive":true,"include":[{"system":"https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS","concept":[{"code":"TURVAKIELTO"}]}]}}},{"name":"_limit","valueString":"1000"},{"name":"_incomplete","valueString":"true"}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:562
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:46 GMT
+last-modified:Wed, 05 Jul 2023 19:48:46 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718500
+
+{"resourceType" : "ValueSet","status" : "active","expansion" : {"identifier" : "urn:uuid:a18b2547-1aab-496b-b725-855062682c2d","timestamp" : "2023-07-05T19:48:46.758Z","total" : 1,"parameter" : [{"name" : "limitedExpansion","valueBoolean" : true},{"name" : "excludeNested","valueBoolean" : true},{"name" : "version","valueUri" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS|1.0.0-rc17"}],"contains" : [{"system" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS","code" : "TURVAKIELTO","display" : "Turvakielto"}]}}
+
+--- 16 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.cgi.fi/code/person-id-type","code":"user-domain-authority"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:539
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:47 GMT
+last-modified:Wed, 05 Jul 2023 19:48:46 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718501
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "https://fhir.cgi.fi/code/person-id-type"},{"name" : "message","valueString" : "The CodeSystem https://fhir.cgi.fi/code/person-id-type is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://fhir.cgi.fi/code/person-id-type is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 17 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.148.2008","code":"86152-322"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:47 GMT
+last-modified:Wed, 05 Jul 2023 19:48:47 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718503
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.148.2008"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.148.2008 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.148.2008 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 18 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.74.2001","code":"2131"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:509
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:47 GMT
+last-modified:Wed, 05 Jul 2023 19:48:47 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718504
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.74.2001"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.74.2001 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.74.2001 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 19 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:2.16.840.1.113883.18.220","code":"MD"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:47 GMT
+last-modified:Wed, 05 Jul 2023 19:48:47 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718505
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:2.16.840.1.113883.18.220"},{"name" : "message","valueString" : "The CodeSystem urn:oid:2.16.840.1.113883.18.220 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:2.16.840.1.113883.18.220 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 20 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.32.2007","code":"M01AE01"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:509
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:47 GMT
+last-modified:Wed, 05 Jul 2023 19:48:47 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718507
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.32.2007"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.32.2007 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.32.2007 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 21 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.110.2007","code":"OO"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:48 GMT
+last-modified:Wed, 05 Jul 2023 19:48:48 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718508
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.110.2007"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.110.2007 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.110.2007 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 22 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.111.2007","code":"IM"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:48 GMT
+last-modified:Wed, 05 Jul 2023 19:48:48 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718511
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.111.2007"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.111.2007 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.111.2007 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 23 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.609.201501","code":"TBE"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:48 GMT
+last-modified:Wed, 05 Jul 2023 19:48:48 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718513
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.609.201501"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.609.201501 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.609.201501 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 24 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.121.201801","code":"E"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:518
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:48 GMT
+last-modified:Wed, 05 Jul 2023 19:48:48 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718515
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.121.201801"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.121.201801 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.121.201801 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 25 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.125.2008","code":"T11"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:48 GMT
+last-modified:Wed, 05 Jul 2023 19:48:48 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718518
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.125.2008"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.125.2008 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.125.2008 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 26 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.124.2008","code":"SH"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:512
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:49 GMT
+last-modified:Wed, 05 Jul 2023 19:48:49 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718519
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.124.2008"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.124.2008 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.124.2008 is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 27 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"urn:oid:1.2.246.537.6.601","code":"PIENTOI"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:497
+content-type:application/fhir+json
+date:Wed, 05 Jul 2023 19:48:49 GMT
+last-modified:Wed, 05 Jul 2023 19:48:49 GMT
+pragma:no-cache
+server:nginx
+x-request-id:14-718522
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueUri" : "urn:oid:1.2.246.537.6.601"},{"name" : "message","valueString" : "The CodeSystem urn:oid:1.2.246.537.6.601 is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem urn:oid:1.2.246.537.6.601 is unknown"},"location" : ["Coding.system"]}]}}]}
+</pre></head></html>

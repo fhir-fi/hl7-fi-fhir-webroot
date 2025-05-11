@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Slot xmlns="http://hl7.org/fhir">
+  <id value="FreeSlot"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Slot</b><a name="FreeSlot"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Slot &quot;FreeSlot&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-slot.html">FI Base Slot</a></p></div><p><b>identifier</b>: id: 123456789</p><p><b>serviceCategory</b>: Lääkäripalvelut <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[201801]#SOTE3)</span></p><p><b>serviceType</b>: Yleislääkärin palvelu <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[201501]#EE)</span></p><p><b>appointmentType</b>: Kertakäynti toimipaikassa <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[2015]#10)</span></p><p><b>schedule</b>: <a href="Schedule-ScheduleExample.html">Schedule/ScheduleExample</a></p><p><b>status</b>: free</p><p><b>start</b>: Jan 1, 2023, 11:00:00 AM</p><p><b>end</b>: Jan 1, 2023, 11:30:00 AM</p></div>
+  </text>
+  <identifier>
+    <value value="123456789"/>
+  </identifier>
+  <serviceCategory>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.50"/>
+      <version value="201801"/>
+      <code value="SOTE3"/>
+      <display value="Lääkäripalvelut"/>
+    </coding>
+  </serviceCategory>
+  <serviceType>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.49"/>
+      <version value="201501"/>
+      <code value="EE"/>
+      <display value="Yleislääkärin palvelu"/>
+    </coding>
+  </serviceType>
+  <appointmentType>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.884"/>
+      <version value="2015"/>
+      <code value="10"/>
+      <display value="Kertakäynti toimipaikassa"/>
+    </coding>
+  </appointmentType>
+  <schedule>
+    <reference value="Schedule/ScheduleExample"/>
+  </schedule>
+  <status value="free"/>
+  <start value="2023-01-01T12:00:00+02:00"/>
+  <end value="2023-01-01T12:30:00+02:00"/>
+</Slot>

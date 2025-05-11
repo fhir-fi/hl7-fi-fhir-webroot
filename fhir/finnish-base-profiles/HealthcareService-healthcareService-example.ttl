@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "healthcareService-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService healthcareService-example</b></p><a name=\"healthcareService-example\"> </a><a name=\"hchealthcareService-example\"> </a><a name=\"healthcareService-example-fi-FI\"> </a><p><b>active</b>: true</p><p><b>category</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50 SOTE9.2}\">SOTE9.2</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.121 E}\">E</span></p><p><b>type</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49 EEA}\">EEA</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.49 ADA001}\">ADA001</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.125 T11}\">T11</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.124 SH}\">SH</span></p><p><b>name</b>: Vastaanottoaika*</p><p><b>comment</b>: Normaali vo-aika sh:lle ja lääkäreille</p><p><b>appointmentRequired</b>: true</p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201801" ] ;
+       fhir:code [ fhir:v "SOTE9.2" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.121"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201801" ] ;
+       fhir:code [ fhir:v "E" ]
+     ] )
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201501" ] ;
+       fhir:code [ fhir:v "EEA" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201501" ] ;
+       fhir:code [ fhir:v "ADA001" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.125"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2008" ] ;
+       fhir:code [ fhir:v "T11" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.124"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2008" ] ;
+       fhir:code [ fhir:v "SH" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Vastaanottoaika*"] ; # 
+  fhir:comment [ fhir:v "Normaali vo-aika sh:lle ja lääkäreille"] ; # 
+  fhir:appointmentRequired [ fhir:v "true"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

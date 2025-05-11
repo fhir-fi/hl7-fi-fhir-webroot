@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://gen.kanta.fi/kanta-provenance-agent-role,1.0.0-rc23,draft,,null,Example value set for provenance roles,"This example value set contains the systems that can be used for agent roles in Kanta profiles",,"Other"
+https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier,1.0.0-rc23,draft,,FiBaseRegisterIdentifier,Finnish ValueSet for systems of registry specifiers,"This value set contains the systems that can be used to identify the registry specifier for information custodianship.",,"Other"
+https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs,1.0.0-rc23,draft,,FiBaseSecurityLabelVS,Finnish ValueSet for security labels in accordance with finnish authorities,"This is the ValueSet for security labels in accordance with finnish authorities.",,"Internal"

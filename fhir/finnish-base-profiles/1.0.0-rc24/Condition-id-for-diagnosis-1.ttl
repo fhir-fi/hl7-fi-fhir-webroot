@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Condition/id-for-diagnosis-1> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "id-for-diagnosis-1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"id-for-diagnosis-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;id-for-diagnosis-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-reason-for-care.html\">FI Base Reason for Care (encounter-diagnosis and reason for visit)</a></p></div><p><b>Primary condition for encounter</b>: Päädiagnoosi tai päätoimenpide (Details: urn:oid:1.2.246.537.5.40005 code PAA = 'PAA', stated as 'Päädiagnoosi tai päätoimenpide')</p><p><b>Permanence of condition</b>: Pysyväisluonteinen (Details: urn:oid:1.2.246.537.5.40003 code PYS = 'PYS', stated as 'Pysyväisluonteinen')</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[1999]#H36.03 &quot;Proliferatiivinen diabeettinen retinopatia&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p><h3>Evidences</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>Aikuistyypin diabetes diabeteksen silmäkomplikaatiot <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[1999]#E11.3)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40005"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2003" ] ;
+       fhir:code [ fhir:v "PAA" ] ;
+       fhir:display [ fhir:v "Päädiagnoosi tai päätoimenpide" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40003"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2003" ] ;
+       fhir:code [ fhir:v "PYS" ] ;
+       fhir:display [ fhir:v "Pysyväisluonteinen" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1999" ] ;
+       fhir:code [ fhir:v "H36.03" ] ;
+       fhir:display [ fhir:v "Proliferatiivinen diabeettinen retinopatia" ]
+     ] ) ;
+     fhir:text [ fhir:v "Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
+     fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2023-01-05T02:06:24+03:00"^^xsd:dateTime] ; # 
+  fhir:evidence ( [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "1999" ] ;
+         fhir:code [ fhir:v "E11.3" ] ;
+         fhir:display [ fhir:v "Aikuistyypin diabetes diabeteksen silmäkomplikaatiot" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

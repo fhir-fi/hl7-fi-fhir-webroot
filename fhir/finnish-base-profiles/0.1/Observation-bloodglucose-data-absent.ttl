@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/Observation/bloodglucose-data-absent> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bloodglucose-data-absent"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Glucose [Moles/volume] in Capillary blood by Glucometer (14743-9)<br />Time: 20.11.2017 11:46<br /> result: error</div>"
+  ]; # 
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:206fc986-517a-4054-bc0a-03eb906c9571" ]
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:14743-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "14743-9" ];
+       fhir:Coding.display [ fhir:value "Glucose [Moles/volume] in Capillary blood by Glucometer" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2017-11-20T11:46:00+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.issued [ fhir:value "2017-11-20T11:46:00+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.dataAbsentReason [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/data-absent-reason" ];
+       fhir:Coding.code [ fhir:value "error" ];
+       fhir:Coding.display [ fhir:value "Error" ]
+     ]
+  ]; # 
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "This is an example, where measurement device has failed to measure blood glucose reading. In this case 'error' must be used in dataAbsentReason.coding.code" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/Observation/bloodglucose-data-absent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

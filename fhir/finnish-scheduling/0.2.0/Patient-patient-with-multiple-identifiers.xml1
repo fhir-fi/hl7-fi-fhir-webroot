@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-with-multiple-identifiers"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-with-multiple-identifiers</b></p><a name="patient-with-multiple-identifiers"> </a><a name="hcpatient-with-multiple-identifiers"> </a><a name="patient-with-multiple-identifiers-fi-FI"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anna Testi  (no stated gender), DoB Unknown ( urn:oid:1.2.246.21#010101-123N (use: official, period: 2019-01-01 --&gt; (ongoing)))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3">081181-9984 (use: temp, period: 2018-11-12 --&gt; 2019-01-01)</td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.21"/>
+    <value value="010101-123N"/>
+    <period>
+      <start value="2019-01-01"/>
+    </period>
+  </identifier>
+  <identifier>
+    <use value="temp"/>
+    <value value="081181-9984"/>
+    <period>
+      <start value="2018-11-12"/>
+      <end value="2019-01-01"/>
+    </period>
+  </identifier>
+  <name>
+    <family value="Testi"/>
+    <given value="Anna"/>
+  </name>
+</Patient>

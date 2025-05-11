@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-nutrition",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/8999-5/\">8999-5</a></td><td>Arvio nautitusta nestemäärästä</td><td>Arvio nautitusta nestemäärästä</td><td>Uppskattat oralt vätskeintag</td><td>Fluid intake oral Estimated</td></tr><tr><td><a href=\"https://loinc.org/9052-2/\">9052-2</a></td><td>Kokonaisenergiamäärä</td><td>Kokonaisenergiamäärä</td><td>Totalt energiintag</td><td>Calorie intake total</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-nutrition",
+  "version" : "0.3.0",
+  "name" : "fiphr-vs-nutrition",
+  "title" : "Value Set Finnish PHR Nutrition",
+  "status" : "active",
+  "date" : "2019-10-23T09:00:00+02:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR Nutrition Value Set that defines codes for Nutrition.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "copyright" : "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "8999-5",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Arvio nautitusta nestemäärästä"
+        },
+        {
+          "language" : "sv",
+          "value" : "Uppskattat oralt vätskeintag"
+        },
+        {
+          "language" : "en",
+          "value" : "Fluid intake oral Estimated"
+        }]
+      },
+      {
+        "code" : "9052-2",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Kokonaisenergiamäärä"
+        },
+        {
+          "language" : "sv",
+          "value" : "Totalt energiintag"
+        },
+        {
+          "language" : "en",
+          "value" : "Calorie intake total"
+        }]
+      }]
+    }]
+  }
+}

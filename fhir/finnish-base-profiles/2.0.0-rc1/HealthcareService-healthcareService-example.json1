@@ -1,0 +1,57 @@
+{
+  "resourceType" : "HealthcareService",
+  "id" : "healthcareService-example",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService healthcareService-example</b></p><a name=\"healthcareService-example\"> </a><a name=\"hchealthcareService-example\"> </a><a name=\"healthcareService-example-fi-FI\"> </a><p><b>active</b>: true</p><p><b>category</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50 SOTE9.2}\">SOTE9.2</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.121 E}\">E</span></p><p><b>type</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49 EEA}\">EEA</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.49 ADA001}\">ADA001</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.125 T11}\">T11</span>, <span title=\"Codes:{urn:oid:1.2.246.537.6.124 SH}\">SH</span></p><p><b>name</b>: Vastaanottoaika*</p><p><b>comment</b>: Normaali vo-aika sh:lle ja lääkäreille</p><p><b>appointmentRequired</b>: true</p></div>"
+  },
+  "active" : true,
+  "category" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.50",
+      "version" : "201801",
+      "code" : "SOTE9.2"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.121",
+      "version" : "201801",
+      "code" : "E"
+    }]
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.49",
+      "version" : "201501",
+      "code" : "EEA"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.49",
+      "version" : "201501",
+      "code" : "ADA001"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.125",
+      "version" : "2008",
+      "code" : "T11"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.124",
+      "version" : "2008",
+      "code" : "SH"
+    }]
+  }],
+  "name" : "Vastaanottoaika*",
+  "comment" : "Normaali vo-aika sh:lle ja lääkäreille",
+  "appointmentRequired" : true
+}

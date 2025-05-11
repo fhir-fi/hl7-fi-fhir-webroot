@@ -1,0 +1,58 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "PractitionerRoleGP",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"PractitionerRoleGP\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;PractitionerRoleGP&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-practitioner-role.html\">FI Base PractitionerRole</a></p></div><p><b>identifier</b>: id:\u00a023</p><p><b>active</b>: true</p><p><b>period</b>: 2023-01-01 --&gt; 2023-12-31</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner-licensed-physician.html\">Practitioner/practitioner-licensed-physician</a> &quot; DOCTOR&quot;</p><p><b>organization</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization/1.2.246.10.2085212.10.1314</a> &quot;Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka&quot;</p><p><b>code</b>: Referring Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0286.html\">providerRole</a>#RP)</span></p><p><b>specialty</b>: General medical practice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#408443003)</span></p><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p><p><b>healthcareService</b>: <a href=\"HealthcareService-healthcareService-example.html\">HealthcareService/healthcareService-example</a> &quot;Vastaanottoaika*&quot;</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 16:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: thu, fri</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://www.acme.org/practitioners",
+    "value" : "23"
+  }],
+  "active" : true,
+  "period" : {
+    "start" : "2023-01-01",
+    "end" : "2023-12-31"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/practitioner-licensed-physician"
+  },
+  "organization" : {
+    "reference" : "Organization/1.2.246.10.2085212.10.1314"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0286",
+      "code" : "RP"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "408443003",
+      "display" : "General medical practice"
+    }]
+  }],
+  "location" : [{
+    "reference" : "Location/LocationExample"
+  }],
+  "healthcareService" : [{
+    "reference" : "HealthcareService/healthcareService-example"
+  }],
+  "availableTime" : [{
+    "daysOfWeek" : ["mon",
+    "tue",
+    "wed"],
+    "availableStartTime" : "09:00:00",
+    "availableEndTime" : "16:30:00"
+  },
+  {
+    "daysOfWeek" : ["thu",
+    "fri"],
+    "availableStartTime" : "09:00:00",
+    "availableEndTime" : "12:00:00"
+  }]
+}

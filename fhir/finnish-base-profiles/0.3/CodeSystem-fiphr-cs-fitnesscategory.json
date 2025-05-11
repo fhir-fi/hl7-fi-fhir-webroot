@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiphr-cs-fitnesscategory",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://phr.kanta.fi/fiphr-cs-fitnesscategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fitness<a name=\"fiphr-cs-fitnesscategory-fitness\"> </a></td><td>Fitness</td><td>Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week.</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+    "valueInteger" : 0
+  }],
+  "url" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+  "version" : "0.3.0",
+  "name" : "fiphr-cs-fitnesscategory",
+  "title" : "Code System Finnish PHR Fitness Category",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2018-03-16T10:45:00+02:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Observation category code for Finnish PHR Fitness Category",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : true,
+  "valueSet" : "http://phr.kanta.fi/ValueSet/fitness-category",
+  "content" : "complete",
+  "concept" : [{
+    "code" : "fitness",
+    "display" : "Fitness",
+    "definition" : "Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week."
+  }]
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="605791"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment 605791</b></p><a name="605791"> </a><a name="hc605791"> </a><a name="605791-fi-FI"> </a><p><b>status</b>: Booked</p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p><p><b>slot</b>: <a href="Slot-123456789.html">Slot: identifier = 123456789; serviceCategory = Perheoikeudelliset palvelut; serviceType = Isyyden selvittämispalvelu; appointmentType = Kertakäynti toimipaikassa; status = free; start = 2020-01-01 12:00:00+0200; end = 2020-01-01 12:30:00+0200</a></p><p><b>created</b>: 2019-12-01</p></div>
+  </text>
+  <extension url="http://hl7.fi/fhir/StructureDefinition/ChildAppointment">
+    <valueIdentifier>
+      <value value="345678901"/>
+    </valueIdentifier>
+  </extension>
+  <extension url="http://hl7.fi/fhir/StructureDefinition/ChildAppointment">
+    <valueIdentifier>
+      <value value="456789012"/>
+    </valueIdentifier>
+  </extension>
+  <status value="booked"/>
+  <start value="2020-01-01T12:00:00+02:00"/>
+  <end value="2020-01-01T12:30:00+02:00"/>
+  <slot>
+    <reference value="Slot/123456789"/>
+  </slot>
+  <created value="2019-12-01"/>
+</Appointment>

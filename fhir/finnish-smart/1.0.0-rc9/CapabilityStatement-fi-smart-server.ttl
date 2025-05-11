@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fi-smart-server"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FiSmartServer</h2><div><p>This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Finland.</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>The server <strong>SHALL</strong>:</p>\n<ol>\n<li>Implement the RESTful behavior according to the FHIR specification.</li>\n<li>Support JSON source formats for all interactions.</li>\n<li>Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.</li>\n</ol>\n<p>The server <strong>SHOULD</strong>:</p>\n<ol>\n<li>Support XML source formats for all interactions.</li>\n<li>Implement the International Patient Access (IPA) specification.</li>\n</ol>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-rc9"] ; # 
+  fhir:name [ fhir:v "FiSmartServer"] ; # 
+  fhir:title [ fhir:v "Finnish SMART Server Capability Statement"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-02-03"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 Finland ry"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Finland ry" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.fi/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mikael@sensotrend.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Finland."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FI" ] ;
+       fhir:display [ fhir:v "Finland" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [
+     fhir:v "json" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "SHALL" ]
+     ] )
+  ] [
+     fhir:v "xml" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "SHOULD" ]
+     ] )
+  ] ) ; # 
+  fhir:patchFormat ( [
+     fhir:v "application/json-patch+json" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "SHOULD" ]
+     ] )
+  ] ) ; # 
+  fhir:implementationGuide ( [
+     fhir:v "http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "SHALL" ]
+     ] )
+  ] [
+     fhir:v "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa> ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "SHOULD" ]
+     ] )
+  ] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:documentation [ fhir:v "The server **SHALL**:\n1. Implement the RESTful behavior according to the FHIR specification.\n1. Support JSON source formats for all interactions.\n1. Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.\n\nThe server **SHOULD**:\n1. Support XML source formats for all interactions.\n1. Implement the International Patient Access (IPA) specification." ] ;
+     fhir:security [
+       fhir:description [ fhir:v "This implementation guide relies heavily on the widely adopted SMART App Launch mechanism. This implementation guide does not define any new security mechanisms. 1. Please familiarize yourself with the securty concepts infroduced in the SMART App Launch specification, and the underlying OpenID Connect and OAuth2 specifications the SMART App Launch specification build on.\n1. See the Best Practices outlined in the SMART App Launch specification.\n1. See the [General Security Considerations](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an HTTP `401 Unauthorized`, `403 Forbidden`, or `404 Not Found` response code." ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

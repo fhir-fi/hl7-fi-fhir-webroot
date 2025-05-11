@@ -1,0 +1,6 @@
+{
+  "version" : "1.0.0-rc19",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230817164758",
+  "name" : "hl7.fhir.fi.base"
+}

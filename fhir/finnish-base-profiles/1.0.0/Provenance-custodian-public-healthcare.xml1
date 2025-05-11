@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="custodian-public-healthcare"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-public"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Provenance</b><a name="custodian-public-healthcare"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Provenance &quot;custodian-public-healthcare&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-information-custodian-public.html">FI Base Information Custodian (Public Organization)</a></p></div><p><b>target</b>: <a href="EpisodeOfCare-id-for-episode-1.html">EpisodeOfCare/id-for-episode-1</a></p><p><b>recorded</b>: Aug 25, 2023, 4:42:17 PM</p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Role</b></td><td><b>Who</b></td></tr><tr><td style="display: none">*</td><td>Rekisterinpitäjä <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#CST &quot;custodian&quot;)</span></td><td>Julkinen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#1)</span></td><td><span>: Pirkanmaan hyvinvointialueen rekisterinpitäjä</span></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="EpisodeOfCare/id-for-episode-1"/>
+  </target>
+  <recorded value="2023-08-25T16:42:17.239+03:00"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="CST"/>
+        <display value="custodian"/>
+      </coding>
+      <text value="Rekisterinpitäjä"/>
+    </type>
+    <role>
+      <coding>
+        <system value="urn:oid:1.2.246.537.5.40172"/>
+        <code value="1"/>
+        <display value="Julkinen"/>
+      </coding>
+      <text value="Julkinen"/>
+    </role>
+    <who>
+      <type value="Organization"/>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="PRN"/>
+          </coding>
+        </type>
+        <system value="urn:oid:1.2.246.537.6.40174"/>
+        <value value="urn:oid:1.2.246.10.32213086.19.0"/>
+      </identifier>
+      <display value="Pirkanmaan hyvinvointialueen rekisterinpitäjä"/>
+    </who>
+  </agent>
+</Provenance>

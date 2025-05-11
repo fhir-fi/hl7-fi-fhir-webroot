@@ -1,0 +1,12 @@
+{
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
+  "name" : "FinnishBaseProfiles",
+  "package-id" : "hl7.fhir.fi.base",
+  "ig-ver" : "1.0.0-rc2",
+  "date" : "Mon, 20 Feb, 2023 10:32:14 +0200",
+  "errs" : 124,
+  "warnings" : 96,
+  "hints" : 68,
+  "version" : "4.0.1",
+  "tool" : "5.0.0-snapshot2 (3)"
+}

@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1314> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "1.2.246.10.2085212.10.1314"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"1.2.246.10.2085212.10.1314\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;1.2.246.10.2085212.10.1314&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-organization.html\">FI Base Organization</a></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.2085212.10.1314 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</p><p><b>telecom</b>: ph: 0401578947</p><p><b>address</b>: </p><ul><li>Honkalehdontie 9 Kyyjärvi 43700 </li><li>Honkalehdontie 9 Kyyjärvi 43700 </li></ul><p><b>partOf</b>: <a href=\"Organization-1.2.246.10.2085212.10.1306.html\">Organization/1.2.246.10.2085212.10.1306</a> &quot;Vastaanotot, SoTe kuntayhtymä Saarikka&quot;</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.537.6.202.2008"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.246.10.2085212.10.1314" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name [ fhir:v "Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0401578947" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "postal" ] ;
+     fhir:line ( [ fhir:v "Honkalehdontie 9" ] ) ;
+     fhir:city [ fhir:v "Kyyjärvi" ] ;
+     fhir:postalCode [ fhir:v "43700" ]
+  ] [
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:line ( [ fhir:v "Honkalehdontie 9" ] ) ;
+     fhir:city [ fhir:v "Kyyjärvi" ] ;
+     fhir:postalCode [ fhir:v "43700" ]
+  ] ) ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1306> ;
+     fhir:reference [ fhir:v "Organization/1.2.246.10.2085212.10.1306" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

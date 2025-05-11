@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-consentcategory> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-cs-consentcategory"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://phr.kanta.fi/fiphr-cs-consentcategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"fiphr-cs-consentcategory-1\"> </a></td><td>Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers</td><td>Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td>1</td><td>Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers</td><td>Suostumus hyvinvointitietojen luovuttamiseen Omatietovarannosta sosiaali- ja terveydenhuollon palvelunantajille</td><td>Samtycke till att uppgifter om en persons välbefinnande lämnas ut från Datalagret för egna uppgifter till tillhandahållare av tjänster inom social- och hälsovården</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://phr.kanta.fi/fiphr-cs-consentcategory"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.4.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "fiphr-cs-consentcategory"]; # 
+  fhir:CodeSystem.title [ fhir:value "Code System Finnish PHR Consent Category"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2018-03-16T10:39:00+02:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Finnish PHR Consent Category codes"]; # 
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory";
+     fhir:link <http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory>
+  ]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fi" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Suostumus hyvinvointitietojen luovuttamiseen Omatietovarannosta sosiaali- ja terveydenhuollon palvelunantajille" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "sv" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Samtycke till att uppgifter om en persons välbefinnande lämnas ut från Datalagret för egna uppgifter till tillhandahållare av tjänster inom social- och hälsovården" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-consentcategory.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

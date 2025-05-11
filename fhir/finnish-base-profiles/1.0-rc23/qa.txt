@@ -1,0 +1,457 @@
+﻿FinnishBaseProfiles : Validation Results
+=========================================
+
+err = 92, warn = 39, info = 41
+IG Publisher Version: 1.5.1
+Generated Mon Nov 06 22:43:10 CET 2023. FHIR version 4.0.1 for hl7.fhir.fi.base#1.0.0-rc23 (canonical = https://hl7.fi/fhir/finnish-base-profiles)
+ Build Errors : 4 / 1 / 0
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Appointment-appointment-general-practitioner : 0 / 0 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/CodeSystem-fi-base-security-label-cs : 1 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Condition-id-for-diagnosis-1 : 0 / 0 / 5
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Condition-id-for-diagnosis-2 : 0 / 0 / 7
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Condition-id-for-diagnosis-3 : 0 / 0 / 6
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Encounter-id-for-child-encounter : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Encounter-id-for-child-encounter-2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Encounter-id-for-palvelutapahtuma : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Encounter-id-for-visit : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Encounter-id-for-ward-encounter : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/EpisodeOfCare-id-for-episode-1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/HealthcareService-healthcareService-example : 0 / 0 / 7
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Immunization-ImmunizationVaccinationExample : 0 / 0 / 5
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.base : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Location-LocationExample : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Location-id-for-bed-3 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/MedicationStatement-medication-statement-insulin : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Organization-1.2.246.10.2085212.10.1306 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Organization-1.2.246.10.2085212.10.1314 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Organization-1.2.246.10.8286189.10.100012 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Patient-patient-of-municipality : 0 / 0 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Patient-patient-with-turvakielto : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Practitioner-practitioner-licensed-physician : 0 / 2 / 11
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/PractitionerRole-PractitionerRoleGP : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Procedure-ColonBiopsy : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Procedure-ProcedureColotomy : 0 / 0 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-custodian-individual : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-custodian-occupational-healthcare : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-custodian-public-healthcare : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-kanta-document-metadata-profile-example : 0 / 0 / 13
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-kanta-document-metadata-profile-example-2 : 0 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-kanta-document-metadata-profile-test-example-1 : 4 / 0 / 11
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Provenance-kanta-document-metadata-profile-test-example-2 : 4 / 0 / 6
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Schedule-ScheduleExample : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/Slot-FreeSlot : 0 / 0 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-categorization-of-accident : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-cause-of-adverse-effect : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-caused-by-medication : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-endocrinological-disorder : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-external-cause : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-permanence : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-physical-excercise : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-condition-primary : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-appointment : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-condition : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-encounter : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-episode-of-care : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-healthcare-service : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-immunization : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-information-custodian : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-information-custodian-individual : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-information-custodian-private : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-information-custodian-public : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-location : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-medication : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-medication-administration : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-medication-request : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-medication-statement : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-observation : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-organization : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-patient : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-patient-medication : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-patient-medication-request : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-practitioner : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-practitioner-role : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-procedure : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-provenance : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-reason-for-care : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-schedule : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-fi-base-slot : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-kanta-document-metadata-profile : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-kanta-document-other-metadata-profile : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-municipality-code : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-patient-profession : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/StructureDefinition-vaccination-recorder : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/ValueSet-fi-base-register-identifier : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/ValueSet-fi-base-security-label-vs : 1 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/ValueSet-kanta-provenance-agent-role : 2 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Bloodglucose-max : 3 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/InsulinDosage-example-optional : 0 / 2 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/MedicationAdministration-InsulinDosage-mandatory : 0 / 2 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-Bloodpressure-max : 2 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-Bloodpressure-min : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-BodyWeight-max : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-BodyWeight-min : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-CalorieIntake-max : 0 / 3 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-CalorieIntake-min : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-CarbohydrateIntakeEstimated-max : 0 / 3 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-CarbohydrateIntakeEstimated-min : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-ExerciseTracking-max : 2 / 2 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-ExerciseTracking-min : 0 / 2 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-MET-max : 6 / 2 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-MET-min : 4 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-ModerateToVigorousPATime-max : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-ModerateToVigorousPATime-min : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-StepsTaken-max : 2 / 3 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/Observation-example-duplicate-7 : 3 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/VIRHE2_KELABASELISAYKSET-Provenance-custodian-public-healthcare : 1 / 1 / 12
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/bloodglucose-min : 1 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/diabetes-data-bundle : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/diabetes-data-bundle-kantaphr-r4-en : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/diabetes-data-bundle-kantaphr-sv : 3 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/example-patient : 0 / 1 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/example-patient-1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/example-patient-2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/example-patient-3 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/example-patient-4 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/example-patient-5 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/hapi-patient : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/kanta-phr-patient-1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/kanta-phr-patient-2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medication-administration-insulin-basal-dose-kanta-stu3-sv : 0 / 1 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medication-administration-insulin-bolus-dose-fi : 0 / 1 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medication-administration-insulin-dose-temporary-basal-rate-kanta-en : 0 / 1 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationesim1 : 0 / 0 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationesim2 : 0 / 0 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim1 : 4 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim2 : 5 / 0 / 16
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim3 : 4 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim4 : 4 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim5 : 5 / 0 / 16
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim6 : 4 / 0 / 13
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim7A : 6 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim7B : 6 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim8 : 4 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/medicationrequestesim9 : 4 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/observation-example-StepsTaken-min : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/observation-example-bloodglucose-astext : 1 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/observation-example-bloodglucose-dataabsentreason : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/organization-Toimintayksikko : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/organizationesim1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/organizationesim2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/patientesim1 : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/practitionerRoleesim1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/practitioneresim1 : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/input/examples/provenance_rekpit_containedviittaukset2 : 3 / 0 / 12
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Provenance/id-for-provenance-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/output/Patient-patient-with-turvakielto.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 2: The link 'CodeSystem-SecurityLabelCS.html' for "Finnish CodeSystem for security labels" cannot be resolved
+ERROR: /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/output/Provenance-custodian-public-healthcare-kela.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 2: The link 'file:///Users/mikael/GitHub/finnish-base-profiles/output/qa.html#_Users_mikael_GitHub_finnish-base-profiles_input_examples_provenance_rekpit_containedviittaukset2' for "QA report" cannot be resolved
+ERROR: /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/output/Provenance-id-for-provenance-1.html#/html/body/div/div/div/div/div/div/p/a at Line 197, column 2: The link 'file:///Users/mikael/GitHub/finnish-base-profiles/output/qa.html#_Users_mikael_GitHub_finnish-base-profiles_input_examples_VIRHE2_KELABASELISAYKSET-Provenance-custodian-public-healthcare' for "QA report" cannot be resolved
+ERROR: /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/output/StructureDefinition-fi-base-patient.html#/html/body/div/div/div/div/div/div/p/a at Line 397, column 2: The link 'CodeSystem-fi-base-security-label-cs#fi-base-security-label-cs-TURVAKIELTO' for "TURVAKIELTO" cannot be resolved
+== fsh-generated/resources/Appointment-appointment-general-practitioner.json ==
+== fsh-generated/resources/CodeSystem-fi-base-security-label-cs.json ==
+ERROR: CodeSystem/fi-base-security-label-cs: CodeSystem: Published code systems SHALL conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== fsh-generated/resources/Condition-id-for-diagnosis-1.json ==
+== fsh-generated/resources/Condition-id-for-diagnosis-2.json ==
+== fsh-generated/resources/Condition-id-for-diagnosis-3.json ==
+== fsh-generated/resources/Encounter-id-for-child-encounter.json ==
+== fsh-generated/resources/Encounter-id-for-child-encounter-2.json ==
+== fsh-generated/resources/Encounter-id-for-palvelutapahtuma.json ==
+== fsh-generated/resources/Encounter-id-for-visit.json ==
+== fsh-generated/resources/Encounter-id-for-ward-encounter.json ==
+== fsh-generated/resources/EpisodeOfCare-id-for-episode-1.json ==
+== fsh-generated/resources/HealthcareService-healthcareService-example.json ==
+== fsh-generated/resources/Immunization-ImmunizationVaccinationExample.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.base.json ==
+== fsh-generated/resources/Location-LocationExample.json ==
+== fsh-generated/resources/Location-id-for-bed-3.json ==
+== fsh-generated/resources/MedicationStatement-medication-statement-insulin.json ==
+INFORMATION: MedicationStatement/medication-statement-insulin: MedicationStatement.medication.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement|1.0.0-rc23
+== fsh-generated/resources/Organization-1.2.246.10.2085212.10.1306.json ==
+== fsh-generated/resources/Organization-1.2.246.10.2085212.10.1314.json ==
+== fsh-generated/resources/Organization-1.2.246.10.8286189.10.100012.json ==
+== fsh-generated/resources/Patient-patient-of-municipality.json ==
+== fsh-generated/resources/Patient-patient-with-turvakielto.json ==
+== fsh-generated/resources/Practitioner-practitioner-licensed-physician.json ==
+INFORMATION: Practitioner/practitioner-licensed-physician: Practitioner.identifier[3]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc23
+INFORMATION: Practitioner/practitioner-licensed-physician: Practitioner.identifier[4]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc23
+INFORMATION: Practitioner/practitioner-licensed-physician: Practitioner.identifier[5]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc23
+INFORMATION: Practitioner/practitioner-licensed-physician: Practitioner.identifier[6]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc23
+WARNING: Practitioner/practitioner-licensed-physician: Practitioner.identifier[3].type.coding[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Practitioner/practitioner-licensed-physician: Practitioner.name[0]: Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation)
+== fsh-generated/resources/PractitionerRole-PractitionerRoleGP.json ==
+== fsh-generated/resources/Procedure-ColonBiopsy.json ==
+== fsh-generated/resources/Procedure-ProcedureColotomy.json ==
+== fsh-generated/resources/Provenance-custodian-individual.json ==
+== fsh-generated/resources/Provenance-custodian-occupational-healthcare.json ==
+== fsh-generated/resources/Provenance-custodian-public-healthcare.json ==
+== fsh-generated/resources/Provenance-kanta-document-metadata-profile-example.json ==
+INFORMATION: Provenance/kanta-document-metadata-profile-example: Provenance.agent[1].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-example: Provenance.agent[2].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-example: Provenance.agent[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/kanta-document-metadata-profile-example: Provenance.agent[2]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+== fsh-generated/resources/Provenance-kanta-document-metadata-profile-example-2.json ==
+INFORMATION: Provenance/kanta-document-metadata-profile-example-2: Provenance.agent[0].role[1].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-example-2: Provenance.agent[1].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-example-2: Provenance.agent[2].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-example-2: Provenance.agent[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/kanta-document-metadata-profile-example-2: Provenance.agent[2]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/kanta-document-metadata-profile-example-2: Provenance.agent[0].role[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+== fsh-generated/resources/Provenance-kanta-document-metadata-profile-test-example-1.json ==
+INFORMATION: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[1].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[2].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[2]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+ERROR: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[0]: Provenance.agent:custodian.role: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23)
+ERROR: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[0]: Provenance.agent:custodian.role:custodianRole: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23)
+ERROR: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[0]: Provenance.agent.role: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|1.0.0-rc23)
+ERROR: Provenance/kanta-document-metadata-profile-test-example-1: Provenance.agent[0]: Provenance.agent.role:kantaCoding: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|1.0.0-rc23)
+== fsh-generated/resources/Provenance-kanta-document-metadata-profile-test-example-2.json ==
+ERROR: Provenance/kanta-document-metadata-profile-test-example-2: Provenance.agent[0]: Provenance.agent:custodian.role: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23)
+ERROR: Provenance/kanta-document-metadata-profile-test-example-2: Provenance.agent[0]: Provenance.agent:custodian.role:custodianRole: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23)
+ERROR: Provenance/kanta-document-metadata-profile-test-example-2: Provenance.agent[0]: Provenance.agent.role: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|1.0.0-rc23)
+ERROR: Provenance/kanta-document-metadata-profile-test-example-2: Provenance.agent[0]: Provenance.agent.role:kantaCoding: minimum required = 1, but only found 0 (from https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile|1.0.0-rc23)
+== fsh-generated/resources/Schedule-ScheduleExample.json ==
+== fsh-generated/resources/Slot-FreeSlot.json ==
+== fsh-generated/resources/StructureDefinition-condition-categorization-of-accident.json ==
+== fsh-generated/resources/StructureDefinition-condition-cause-of-adverse-effect.json ==
+== fsh-generated/resources/StructureDefinition-condition-caused-by-medication.json ==
+== fsh-generated/resources/StructureDefinition-condition-endocrinological-disorder.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-endocrinological-disorder'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-external-cause.json ==
+== fsh-generated/resources/StructureDefinition-condition-permanence.json ==
+== fsh-generated/resources/StructureDefinition-condition-physical-excercise.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-physical-excercise'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-primary.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-appointment.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-condition.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-base-encounter.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-episode-of-care.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-healthcare-service.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-immunization.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-information-custodian.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-information-custodian-individual.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-information-custodian-private.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-information-custodian-public.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-location.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication-administration.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication-request.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication-statement.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-observation.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-organization.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-patient.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-patient-medication.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-patient-medication-request.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-practitioner-role.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-procedure.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-provenance.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-provenance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-base-reason-for-care.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-schedule.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-slot.json ==
+== fsh-generated/resources/StructureDefinition-kanta-document-metadata-profile.json ==
+== fsh-generated/resources/StructureDefinition-kanta-document-other-metadata-profile.json ==
+INFORMATION: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-municipality-code.json ==
+== fsh-generated/resources/StructureDefinition-patient-profession.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-vaccination-recorder.json ==
+== fsh-generated/resources/ValueSet-fi-base-register-identifier.json ==
+== fsh-generated/resources/ValueSet-fi-base-security-label-vs.json ==
+ERROR: ValueSet/fi-base-security-label-vs: ValueSet: Published value sets SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-kanta-provenance-agent-role.json ==
+ERROR: ValueSet.where(url = 'http://gen.kanta.fi/kanta-provenance-agent-role'): Conformance resource /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/ValueSet-kanta-provenance-agent-role.json - the canonical URL (https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role) does not match the URL (http://gen.kanta.fi/kanta-provenance-agent-role)
+WARNING: ValueSet/kanta-provenance-agent-role: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.name should be present, but it is not
+ERROR: /Users/mikael/GitHub/finnish-base-profiles/temp/hl7.fhir.fi.base#1.0.0-rc23/fsh-generated/resources/ValueSet-kanta-provenance-agent-role: URL Mismatch https://hl7.fi/fhir/finnish-base-profiles/ValueSet/kanta-provenance-agent-role vs http://gen.kanta.fi/kanta-provenance-agent-role
+== input/examples/Bloodglucose-max.json ==
+ERROR: Observation/bloodglucose-max: Observation.code.coding[0]: Wrong Display Name 'Glucose (Bld) [Moles/Vol]' for http://loinc.org#15074-8 - should be one of 2 choices: 'Glucose [Moles/volume] in Blood' or 'Glucose Bld-sCnc' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#15074-8'
+ERROR: Observation/bloodglucose-max: Observation.code.coding[1]: Wrong Display Name 'Glucose Glucometer (BldC) [Moles/Vol]' for http://loinc.org#14743-9 - should be one of 2 choices: 'Glucose [Moles/volume] in Capillary blood by Glucometer' or 'Glucose BldC Glucomtr-sCnc' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#14743-9'
+ERROR: Observation/bloodglucose-max: Observation.code.coding[2]: Wrong Display Name 'Glucose (Body fld) [Moles/Vol]' for http://loinc.org#14745-4 - should be one of 2 choices: 'Glucose [Moles/volume] in Body fluid' or 'Glucose Fld-sCnc' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#14745-4'
+== input/examples/InsulinDosage-example-optional.json ==
+INFORMATION: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3: MedicationAdministration.medication.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration|1.0.0-rc23
+WARNING: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3: MedicationAdministration: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/MedicationAdministration-InsulinDosage-mandatory.json ==
+INFORMATION: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2: MedicationAdministration.medication.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration|1.0.0-rc23
+WARNING: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2: MedicationAdministration: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-Bloodpressure-max.json ==
+ERROR: Observation/bloodpressure-max: Observation.note[0].text: Constraint failed: ele-1: 'All FHIR elements must have a @value or children' (defined in http://hl7.org/fhir/StructureDefinition/Element)
+ERROR: Observation/bloodpressure-max: Observation.note[0].text: value cannot be empty
+WARNING: Observation/bloodpressure-max: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-Bloodpressure-min.json ==
+WARNING: Observation/bloodpressure-min: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-BodyWeight-max.json ==
+WARNING: Observation/bodyweight-max: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-BodyWeight-min.json ==
+WARNING: Observation/bodyweight-min: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-CalorieIntake-max.json ==
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8: Observation.interpretation[0]: No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N in the language fi
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-CalorieIntake-min.json ==
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-CarbohydrateIntakeEstimated-max.json ==
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff22: Observation.interpretation[0]: No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N in the language fi
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff22: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-CarbohydrateIntakeEstimated-min.json ==
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff21: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-ExerciseTracking-max.json ==
+ERROR: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Wrong Display Name 'Vigorous' for http://loinc.org#LA20166-7 - should be 'Vigorous exercise intensity' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#LA20166-7'
+ERROR: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.component[3].code.coding[0]: Wrong Display Name 'Calories burned' for http://loinc.org#55421-2 - should be one of 2 choices: 'Calories burned Machine estimate' or 'Calories burned Machine est' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#55421-2'
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-ExerciseTracking-min.json ==
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784a: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-MET-max.json ==
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.code.coding[0]: Wrong Display Name 'Metabolic equivalent of task by standard resting metabolic rate panel' for http://loinc.org#82260-1 - should be one of 2 choices: 'MET by standard RMR panel' or 'MET by stand RMR Pnl' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82260-1'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[0].code.coding[0]: Wrong Display Name 'Standard resting metabolic rate' for http://loinc.org#82284-1 - should be one of 2 choices: 'Standard RMR' or 'Standard RMR' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82284-1'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[1].code.coding[0]: Wrong Display Name 'Estimated metabolic equivalent of task' for http://loinc.org#82262-7 - should be one of 2 choices: 'Estimated activity metabolic rate/Standard RMR [Relative energy/Time]' or 'Est Act metab rate/Standard RMR' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82262-7'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[2].code.coding[0]: Wrong Display Name 'Source for estimated metabolic equivalent of task' for http://loinc.org#82280-9 - should be one of 2 choices: 'Source used to estimate activity metabolic rate' or 'Source estim activ metab rate' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82280-9'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[3].code.coding[0]: Wrong Display Name 'Adjusted metabolic equivalent of task' for http://loinc.org#82271-8 - should be one of 2 choices: 'Activity metabolic rate/Standard resting metabolic rate [Relative Energy/Time] adjusted for age+sex+race+BMI 1 minute mean Estimated' or 'Act met rate/St RMR adj age+sex+race+BMI' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82271-8'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[4].code.coding[0]: Wrong Display Name 'Source for adjusted metabolic equivalent of task' for http://loinc.org#82283-3 - should be one of 2 choices: 'Source used to adjust activity MET' or 'Source to adj activity MET' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82283-3'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-MET-min.json ==
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.code.coding[0]: Wrong Display Name 'Metabolic equivalent of task by standard resting metabolic rate panel' for http://loinc.org#82260-1 - should be one of 2 choices: 'MET by standard RMR panel' or 'MET by stand RMR Pnl' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82260-1'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.component[0].code.coding[0]: Wrong Display Name 'Standard resting metabolic rate' for http://loinc.org#82284-1 - should be one of 2 choices: 'Standard RMR' or 'Standard RMR' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82284-1'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.component[1].code.coding[0]: Wrong Display Name 'Measured metabolic equivalent of task' for http://loinc.org#82261-9 - should be one of 2 choices: 'Measured activity metabolic rate/Standard RMR [Relative energy/Time]' or 'Meas Act metab rate/Standard RMR' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82261-9'
+ERROR: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.component[2].code.coding[0]: Wrong Display Name 'Adjusted metabolic equivalent of task' for http://loinc.org#82271-8 - should be one of 2 choices: 'Activity metabolic rate/Standard resting metabolic rate [Relative Energy/Time] adjusted for age+sex+race+BMI 1 minute mean Estimated' or 'Act met rate/St RMR adj age+sex+race+BMI' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82271-8'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-ModerateToVigorousPATime-max.json ==
+ERROR: Observation/mtvpa-max: Observation.code.coding[0]: Wrong Display Name 'Weekly moderate to vigorous physical activity in minutes' for http://loinc.org#82290-8 - should be one of 2 choices: 'Frequency of moderate to vigorous aerobic physical activity' or 'Freq aerobic physical activity' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82290-8'
+WARNING: Observation/mtvpa-max: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-ModerateToVigorousPATime-min.json ==
+ERROR: Observation/mtvpa-min: Observation.code.coding[0]: Wrong Display Name 'Weekly moderate to vigorous physical activity in minutes' for http://loinc.org#82290-8 - should be one of 2 choices: 'Frequency of moderate to vigorous aerobic physical activity' or 'Freq aerobic physical activity' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#82290-8'
+WARNING: Observation/mtvpa-min: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-StepsTaken-max.json ==
+ERROR: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.code.coding[0]: Wrong Display Name 'Steps' for http://loinc.org#66334-4 - should be one of 2 choices: 'Steps taken [#] [PhenX]' or 'Steps taken PhenX' (for the language(s) 'fi') (from Tx-Server) for 'http://loinc.org#66334-4'
+ERROR: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.code.coding[1]: Wrong Display Name 'Number of Steps in 24 Hours' for http://loinc.org#41950-7 - should be one of 2 choices: 'Number of steps in 24 hour Measured' or '# steps 24h nRate Measured' (for the language(s) 'fi') (from Tx-Server) for 'http://loinc.org#41950-7'
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.interpretation[0]: No valid Display Names found for http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N in the language fi
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/Observation-example-duplicate-7.json ==
+ERROR: Observation.value[x].value: Error parsing JSON: the primitive value must be a number
+ERROR: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation.category[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/observation-category'
+ERROR: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation.category[0].coding[0].system: URL value 'http://hl7.org/fhir/observation-category' does not resolve
+WARNING: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyheight' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/VIRHE2_KELABASELISAYKSET-Provenance-custodian-public-healthcare.json ==
+ERROR: Provenance.text.div: Resource has provided narrative, but the narrative indicates that it is generated - remove the narrative or fix it up
+INFORMATION: Provenance/custodian-public-healthcare-kela: Provenance.agent[1].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/custodian-public-healthcare-kela: Provenance.agent[2].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/custodian-public-healthcare-kela: Provenance.agent[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/custodian-public-healthcare-kela: Provenance.agent[2]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+WARNING: Provenance/custodian-public-healthcare-kela: Provenance.meta.profile[0]: Profile reference 'https://tietohiisi.fi/fhir/teehoo-base-profiles/StructureDefinition/th-base-information-custodian-public' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/bloodglucose-min.json ==
+ERROR: Observation/bloodglucose-min: Observation.code.coding[0]: Wrong Display Name 'Glucose (Bld) [Moles/Vol]' for http://loinc.org#15074-8 - should be one of 2 choices: 'Glucose [Moles/volume] in Blood' or 'Glucose Bld-sCnc' (for the language(s) 'en') (from Tx-Server) for 'http://loinc.org#15074-8'
+== input/examples/diabetes-data-bundle.json ==
+== input/examples/diabetes-data-bundle-kantaphr-r4-en.json ==
+== input/examples/diabetes-data-bundle-kantaphr-sv.json ==
+ERROR: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.category[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/observation-category'
+ERROR: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.category[0].coding[0].system: URL value 'http://hl7.org/fhir/observation-category' does not resolve
+ERROR: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.code.coding[0]: Wrong Display Name 'Vävnadssocker' for http://loinc.org#14745-4 - should be one of 2 choices: 'Glucose [Moles/volume] in Body fluid' or 'Glucose Fld-sCnc' (for the language(s) 'sv') (from Tx-Server) for 'http://loinc.org#14745-4'
+== input/examples/example-patient.json ==
+INFORMATION: Patient/36749a02-1710-44e7-aa76-0e934eb7860a: Patient.identifier[0]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient|1.0.0-rc23
+== input/examples/example-patient-1.json ==
+== input/examples/example-patient-2.json ==
+== input/examples/example-patient-3.json ==
+== input/examples/example-patient-4.json ==
+== input/examples/example-patient-5.json ==
+== input/examples/hapi-patient.json ==
+== input/examples/kanta-phr-patient-1.json ==
+== input/examples/kanta-phr-patient-2.json ==
+== input/examples/medication-administration-insulin-basal-dose-kanta-stu3-sv.json ==
+INFORMATION: MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv: MedicationAdministration.medication.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration|1.0.0-rc23
+INFORMATION: MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '411531001' is valid but is not active
+== input/examples/medication-administration-insulin-bolus-dose-fi.json ==
+INFORMATION: MedicationAdministration/medication-administration-insulin-bolus-dose-fi: MedicationAdministration.medication.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration|1.0.0-rc23
+INFORMATION: MedicationAdministration/medication-administration-insulin-bolus-dose-fi: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '411531001' is valid but is not active
+== input/examples/medication-administration-insulin-dose-temporary-basal-rate-kanta-en.json ==
+INFORMATION: MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en: MedicationAdministration.medication.ofType(CodeableConcept): This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration|1.0.0-rc23
+INFORMATION: MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: The code '411531001' is valid but is not active
+== input/examples/medicationesim1.json ==
+== input/examples/medicationesim2.json ==
+== input/examples/medicationrequestesim1.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim2.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dosageInstruction[1].additionalInstruction: The property additionalInstruction  must be a JSON Array, not an Object (at MedicationRequest.dosageInstruction[1])
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim3.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim4.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim5.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dosageInstruction[1].additionalInstruction: The property additionalInstruction  must be a JSON Array, not an Object (at MedicationRequest.dosageInstruction[1])
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim6.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim7A.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.category: The property category  must be a JSON Array, not an Object (at MedicationRequest)
+ERROR: MedicationRequest.category.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.category)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim7B.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.category: The property category  must be a JSON Array, not an Object (at MedicationRequest)
+ERROR: MedicationRequest.category.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.category)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim8.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/medicationrequestesim9.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: The property coding  must be a JSON Array, not an Object (at MedicationRequest.statusReason)
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+== input/examples/observation-example-StepsTaken-min.json ==
+ERROR: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8: Observation.code.coding[0]: Wrong Display Name 'Steps' for http://loinc.org#66334-4 - should be one of 2 choices: 'Steps taken [#] [PhenX]' or 'Steps taken PhenX' (for the language(s) 'fi') (from Tx-Server) for 'http://loinc.org#66334-4'
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/observation-example-bloodglucose-astext.json ==
+ERROR: Observation/bloodglucose-as-text: Observation.dataAbsentReason.coding[0]: Unknown Code 'astext' in the system 'http://terminology.hl7.org/CodeSystem/data-absent-reason|0.1.0' for 'http://terminology.hl7.org/CodeSystem/data-absent-reason#astext'
+WARNING: Observation/bloodglucose-as-text: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/observation-example-bloodglucose-dataabsentreason.json ==
+WARNING: Observation/bloodglucose-data-absent: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+== input/examples/organization-Toimintayksikko.json ==
+== input/examples/organizationesim1.json ==
+== input/examples/organizationesim2.json ==
+== input/examples/patientesim1.json ==
+INFORMATION: Patient/patientesim1: Patient.identifier[0]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient|1.0.0-rc23
+WARNING: Patient/patientesim1: Patient.name[0]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
+WARNING: Patient/patientesim1: Patient.name[1]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
+== input/examples/practitionerRoleesim1.json ==
+== input/examples/practitioneresim1.json ==
+WARNING: Practitioner/practitioneresim1: Practitioner.name[0]: Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation)
+WARNING: Practitioner/practitioneresim1: Practitioner.name[1]: Constraint failed: ipa-pract-1: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner) (Best Practice Recommendation)
+== input/examples/provenance_rekpit_containedviittaukset2.json ==
+INFORMATION: Provenance/id-for-provenance-1: Provenance.agent[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/id-for-provenance-1: Provenance.agent[2]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+ERROR: Provenance/id-for-provenance-1: Provenance.extension[0]: The extension https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterType is unknown, and not allowed here
+INFORMATION: Provenance/id-for-provenance-1: Provenance.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40150.2009' is unknown so the code cannot be validated
+ERROR: Provenance/id-for-provenance-1: Provenance.extension[1]: The extension https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterSpecifier is unknown, and not allowed here
+ERROR: Provenance/id-for-provenance-1: Provenance.target[0]: Unable to resolve resource with reference 'AuditEvent/id-for-auditevent-1'
+INFORMATION: Provenance/id-for-provenance-1: Provenance.agent[0].role[0].coding[1]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/id-for-provenance-1: Provenance.agent[0].role[0].coding[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian|1.0.0-rc23
+INFORMATION: Provenance/id-for-provenance-1: Provenance.agent[1].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated
+INFORMATION: Provenance/id-for-provenance-1: Provenance.agent[2].role[0].coding[0]: Code System URI 'http://gen.kanta.fi/fikanta-cs-rolecategory' is unknown so the code cannot be validated

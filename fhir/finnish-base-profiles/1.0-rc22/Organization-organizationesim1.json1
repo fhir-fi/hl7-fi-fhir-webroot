@@ -1,0 +1,16 @@
+{
+  "resourceType" : "Organization",
+  "id" : "organizationesim1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"organizationesim1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;organizationesim1&quot; </p></div><p><b>identifier</b>: id:\u00a0urn:oid:1.2.246.10.123456.10.1</p><p><b>name</b>: Testi terveysasema</p><p><b>partOf</b>: <a href=\"Organization-organizationesim2.html\">Organization/organizationesim2</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.246.10.123456.10.1"
+  }],
+  "name" : "Testi terveysasema",
+  "partOf" : {
+    "reference" : "Organization/organizationesim2"
+  }
+}

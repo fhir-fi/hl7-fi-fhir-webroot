@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="1.2.246.10.2085212.10.1306"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="1.2.246.10.2085212.10.1306"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;1.2.246.10.2085212.10.1306&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-organization.html">FI Base Organization</a></p></div><p><b>identifier</b>: id: 1.2.246.10.2085212.10.1306 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Vastaanotot, SoTe kuntayhtymä Saarikka</p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.537.6.202.2008"/>
+    <value value="1.2.246.10.2085212.10.1306"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Vastaanotot, SoTe kuntayhtymä Saarikka"/>
+</Organization>

@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-min> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bloodglucose-min"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"> Hoitosuunnitelma<b>Boldattuu </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde</td></tr></tbody></table></div>"
+  ]; # 
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38c" ]
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:15074-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "15074-8" ];
+       fhir:Coding.display [ fhir:value "Glucose (Bld) [Moles/Vol]" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde>;
+     fhir:Reference.reference [ fhir:value "Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-10-05"^^xsd:date]; # 
+  fhir:Observation.issued [ fhir:value "2019-12-05T09:21:37.130+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde>;
+     fhir:Reference.reference [ fhir:value "Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde" ]
+  ]; # 
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "7"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mmol/l" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mmol/L" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-min.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

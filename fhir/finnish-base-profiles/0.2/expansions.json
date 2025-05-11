@@ -1,0 +1,1431 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "8a11572e-1d6d-4295-b4f1-a5366af1e796",
+  "meta" : {
+    "lastUpdated" : "2023-02-02T09:43:43.737+02:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforestimatedmet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-sourceforestimatedmet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 4 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26238-8\"> </a>  <a href=\"https://loinc.org/LA26238-8/\">LA26238-8</a></td><td>http://loinc.org</td><td>Compendium of Physical Activities</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26239-6\"> </a>  <a href=\"https://loinc.org/LA26239-6/\">LA26239-6</a></td><td>http://loinc.org</td><td>Modifioitu Bruce-protokolla</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26240-4\"> </a>  <a href=\"https://loinc.org/LA26240-4/\">LA26240-4</a></td><td>http://loinc.org</td><td>Balke-protokolla</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA46-8\"> </a>  <a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>http://loinc.org</td><td>Muu, tarkenna</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforestimatedmet",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-sourceforestimatedmet",
+      "title" : "Value Set Finnish PHR Source for Estimated MET",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-02-04",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Source for Estimated MET value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fab7a354-2530-4a59-9aca-f7215dc75e41",
+        "timestamp" : "2023-02-02T09:45:37+02:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26238-8",
+          "display" : "Compendium of Physical Activities"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26239-6",
+          "display" : "Modifioitu Bruce-protokolla"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26240-4",
+          "display" : "Balke-protokolla"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA46-8",
+          "display" : "Muu, tarkenna"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforadjustedmet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-sourceforadjustedmet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26234-7\"> </a>  <a href=\"https://loinc.org/LA26234-7/\">LA26234-7</a></td><td>http://loinc.org</td><td>Wilms 2014 miehet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26235-4\"> </a>  <a href=\"https://loinc.org/LA26235-4/\">LA26235-4</a></td><td>http://loinc.org</td><td>Wilms 2014 naiset</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26236-2\"> </a>  <a href=\"https://loinc.org/LA26236-2/\">LA26236-2</a></td><td>http://loinc.org</td><td>Harris-Benedict miehet</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26237-0\"> </a>  <a href=\"https://loinc.org/LA26237-0/\">LA26237-0</a></td><td>http://loinc.org</td><td>Harris-Benedict naiset</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA46-8\"> </a>  <a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>http://loinc.org</td><td>Muu, tarkenna</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforadjustedmet",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-sourceforadjustedmet",
+      "title" : "Value Set Finnish PHR Source for Adjusted MET",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-02-24",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Source for Adjusted MET value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4a5aa0b5-929f-48b7-9296-a0bcea466262",
+        "timestamp" : "2023-02-02T09:45:42+02:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26234-7",
+          "display" : "Wilms 2014 miehet"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26235-4",
+          "display" : "Wilms 2014 naiset"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26236-2",
+          "display" : "Harris-Benedict miehet"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26237-0",
+          "display" : "Harris-Benedict naiset"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA46-8",
+          "display" : "Muu, tarkenna"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fitness-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-fitnesscategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html\">Code System Finnish PHR Fitness Category v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-fiphr-cs-fitnesscategory-fitness\"> </a>  <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html#fiphr-cs-fitnesscategory-fitness\">fitness</a></td><td>http://phr.kanta.fi/fiphr-cs-fitnesscategory</td><td>Fitness</td><td><div><p>Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week.</p>\n</div></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+        "valueInteger" : 0
+      }],
+      "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-fitnesscategory",
+      "title" : "Value Set Finnish PHR Fitness Category",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2018-03-16T10:45:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Fitness Category code.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:7356d8d1-415c-430c-80cd-3a61b1fe5322",
+        "timestamp" : "2023-02-02T09:45:42+02:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+          "code" : "fitness",
+          "display" : "Fitness"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fitness-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-fitnesscategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html\">Code System Finnish PHR Fitness Category v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-fiphr-cs-fitnesscategory-fitness\"> </a>  <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html#fiphr-cs-fitnesscategory-fitness\">fitness</a></td><td>http://phr.kanta.fi/fiphr-cs-fitnesscategory</td><td>Fitness</td><td><div><p>Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week.</p>\n</div></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+        "valueInteger" : 0
+      }],
+      "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-fitnesscategory",
+      "title" : "Value Set Finnish PHR Fitness Category",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2018-03-16T10:45:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Fitness Category code.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:7356d8d1-415c-430c-80cd-3a61b1fe5322",
+        "timestamp" : "2023-02-02T09:45:42+02:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+          "code" : "fitness",
+          "display" : "Fitness"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-metbystandardrmr",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-metbystandardrmr",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 9 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82260-1\"> </a>  <a href=\"https://loinc.org/82260-1/\">82260-1</a></td><td>http://loinc.org</td><td>Metabolinen ekvivalentti standardissa lepoaineenvaihdunnassa -paneeli</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82284-1\"> </a>  <a href=\"https://loinc.org/82284-1/\">82284-1</a></td><td>http://loinc.org</td><td>Standardi lepoaineenvaihdunta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82261-9\"> </a>  <a href=\"https://loinc.org/82261-9/\">82261-9</a></td><td>http://loinc.org</td><td>Mitattu metabolinen ekvivalentti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82262-7\"> </a>  <a href=\"https://loinc.org/82262-7/\">82262-7</a></td><td>http://loinc.org</td><td>Arvioitu metabolinen ekvivalentti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82280-9\"> </a>  <a href=\"https://loinc.org/82280-9/\">82280-9</a></td><td>http://loinc.org</td><td>Lähde arvioidulle metaboliselle ekvivalentille</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82263-5\"> </a>  <a href=\"https://loinc.org/82263-5/\">82263-5</a></td><td>http://loinc.org</td><td>Raportoitu metabolinen ekvivalentti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82281-7\"> </a>  <a href=\"https://loinc.org/82281-7/\">82281-7</a></td><td>http://loinc.org</td><td>Lähde raportoidulle metaboliselle ekvivalentille</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82271-8\"> </a>  <a href=\"https://loinc.org/82271-8/\">82271-8</a></td><td>http://loinc.org</td><td>Korjattu metabolinen ekvivalentti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82283-3\"> </a>  <a href=\"https://loinc.org/82283-3/\">82283-3</a></td><td>http://loinc.org</td><td>Lähde korjatulle metaboliselle ekvivalentille</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-metbystandardrmr",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-metbystandardrmr",
+      "title" : "Value Set Finnish PHR MET by Standard RMR",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-02-24",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR MET by Standard RMR value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:8bbd92aa-94e1-4f1a-bc2c-549673de6ec8",
+        "timestamp" : "2023-02-02T09:45:54+02:00",
+        "total" : 9,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "82260-1",
+          "display" : "Metabolinen ekvivalentti standardissa lepoaineenvaihdunnassa -paneeli"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82284-1",
+          "display" : "Standardi lepoaineenvaihdunta"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82261-9",
+          "display" : "Mitattu metabolinen ekvivalentti"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82262-7",
+          "display" : "Arvioitu metabolinen ekvivalentti"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82280-9",
+          "display" : "Lähde arvioidulle metaboliselle ekvivalentille"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82263-5",
+          "display" : "Raportoitu metabolinen ekvivalentti"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82281-7",
+          "display" : "Lähde raportoidulle metaboliselle ekvivalentille"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82271-8",
+          "display" : "Korjattu metabolinen ekvivalentti"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82283-3",
+          "display" : "Lähde korjatulle metaboliselle ekvivalentille"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseintensity",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-exerciseintensity",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20164-2\"> </a>  <a href=\"https://loinc.org/LA20164-2/\">LA20164-2</a></td><td>http://loinc.org</td><td>Kevyt</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20165-9\"> </a>  <a href=\"https://loinc.org/LA20165-9/\">LA20165-9</a></td><td>http://loinc.org</td><td>Reipas</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20166-7\"> </a>  <a href=\"https://loinc.org/LA20166-7/\">LA20166-7</a></td><td>http://loinc.org</td><td>Rasittava</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseintensity",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-exerciseintensity",
+      "title" : "Value Set Finnish PHR Exercise Intensity",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-02-24",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Exercise Intensity value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:359c10c7-c4e9-43c7-89ec-47903a5fa1e7",
+        "timestamp" : "2023-02-02T09:45:54+02:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA20164-2",
+          "display" : "Kevyt"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA20165-9",
+          "display" : "Reipas"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA20166-7",
+          "display" : "Rasittava"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-observationcategory",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-observationcategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fiphr-cs-observationcategory.html\">Code System Finnish PHR Observation Category v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-observationcategory-nutrition\"> </a>  <a href=\"CodeSystem-fiphr-cs-observationcategory.html#fiphr-cs-observationcategory-nutrition\">nutrition</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-observationcategory-urinary-monitoring\"> </a>  <a href=\"CodeSystem-fiphr-cs-observationcategory.html#fiphr-cs-observationcategory-urinary-monitoring\">urinary-monitoring</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory</td><td/></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-observationcategory",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-observationcategory",
+      "title" : "Value Set Finnish PHR Observation Category",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2019-10-14T11:00:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Observation Category Value Set that defines codes for Observation.category when there is no suitable code in the FHIR standard observation category value set.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9580a1bd-5d16-4033-9ea3-4345dc119d25",
+        "timestamp" : "2023-02-02T09:45:56+02:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+          "code" : "nutrition"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+          "code" : "urinary-monitoring"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforreportedmet",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-sourceforreportedmet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26242-0\"> </a>  <a href=\"https://loinc.org/LA26242-0/\">LA26242-0</a></td><td>http://loinc.org</td><td>Aktiivisuusmittari</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26243-8\"> </a>  <a href=\"https://loinc.org/LA26243-8/\">LA26243-8</a></td><td>http://loinc.org</td><td>Fyysisen aktiivisuuden kyselylomake</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA26251-1\"> </a>  <a href=\"https://loinc.org/LA26251-1/\">LA26251-1</a></td><td>http://loinc.org</td><td>Aktiivisuusloki tai -päiväkirja</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforreportedmet",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-sourceforreportedmet",
+      "title" : "Value Set Finnish PHR Source for Reported MET",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-02-24",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Source for Reported MET value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:99d4d7ca-1aa4-4cb0-91b3-4dc5bf9c5311",
+        "timestamp" : "2023-02-02T09:45:59+02:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA26242-0",
+          "display" : "Aktiivisuusmittari"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26243-8",
+          "display" : "Fyysisen aktiivisuuden kyselylomake"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "LA26251-1",
+          "display" : "Aktiivisuusloki tai -päiväkirja"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fitness-category",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-fitnesscategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html\">Code System Finnish PHR Fitness Category v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-fiphr-cs-fitnesscategory-fitness\"> </a>  <a href=\"CodeSystem-fiphr-cs-fitnesscategory.html#fiphr-cs-fitnesscategory-fitness\">fitness</a></td><td>http://phr.kanta.fi/fiphr-cs-fitnesscategory</td><td>Fitness</td><td><div><p>Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week.</p>\n</div></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+        "valueInteger" : 0
+      }],
+      "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-fitnesscategory",
+      "title" : "Value Set Finnish PHR Fitness Category",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2018-03-16T10:45:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Fitness Category code.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:7356d8d1-415c-430c-80cd-3a61b1fe5322",
+        "timestamp" : "2023-02-02T09:45:42+02:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+          "code" : "fitness",
+          "display" : "Fitness"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-consentcategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fiphr-cs-consentcategory.html\">Code System Finnish PHR Consent Category v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-fiphr-cs-consentcategory-1\"> </a>  <a href=\"CodeSystem-fiphr-cs-consentcategory.html#fiphr-cs-consentcategory-1\">1</a></td><td>http://phr.kanta.fi/fiphr-cs-consentcategory</td><td>Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers</td><td><div><p>Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-consentcategory",
+      "title" : "Value Set Finnish PHR Consent Category",
+      "status" : "active",
+      "date" : "2018-03-16T13:52:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Consent Category value set.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f7c7fcc1-deed-497c-9946-f992cb9e0b76",
+        "timestamp" : "2023-02-02T09:46:09+02:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/fiphr-cs-consentcategory|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://phr.kanta.fi/fiphr-cs-consentcategory",
+          "code" : "1",
+          "display" : "Consent to share wellbeing information stored in My Kanta Pages Personal Health Record to social welfare and healthcare service providers"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-careplancategory",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-careplancategory",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 48 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-fiphr-cs-careplancategory.html\">Finnish PHR CarePlan Category code system v0.2.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-1\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-1\">1</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Hengitystietulehdus tai -oire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-2\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-2\">2</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Yskä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-3\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-3\">3</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Virtsatietulehdus tai -oire (18–65v. naiset)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-4\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-4\">4</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Korvan kipu tai lukkoisuus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-5\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-5\">5</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Kurkkukipu tai nieluoire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-6\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-6\">6</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Ripuli</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-7\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-7\">7</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Alaselkäkipu tai -vamma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-8\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-8\">8</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Närästys</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-9\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-9\">9</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Olkapään kipu, jäykkyys tai vamma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-10\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-10\">10</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Päänsärky</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-11\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-11\">11</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Peräaukon seudun oire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-12\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-12\">12</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Polven oire tai vamma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-13\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-13\">13</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Silmän oire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-14\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-14\">14</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Sukupuolitaudin oire</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-15\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-15\">15</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Terveystarkastus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-16\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-16\">16</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Henkilökohtainen apu</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-17\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-17\">17</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Liikkuminen kodin ulkopuolella</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-18\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-18\">18</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Maahanmuuttajan hyvinvointi</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-19\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-19\">19</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Omaishoidon tuki</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-20\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-20\">20</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Läheishoitajan tarkastus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-21\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-21\">21</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-22\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-22\">22</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Viitosluokkalaisen terveystarkastus, lapsi (poistettu)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-23\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-23\">23</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Yleinen hyvinvointikysely (WHOQOL-BREF)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-24\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-24\">24</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Elämäntilannekysely (3X10D)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-25\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-25\">25</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Opiskeluterveydenhuollon esitiedot</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-26\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-26\">26</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Suun terveydentila, lapset ja nuoret</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-27\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-27\">27</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Omaishoitajan jaksaminen</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-28\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-28\">28</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Puolitoistavuotiaan laaja terveystarkastus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-29\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-29\">29</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Yötyötä tekevän työterveystarkastus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-30\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-30\">30</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Kohonnut verenpaine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-31\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-31\">31</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Yläkoululaisen terveystarkastus, vanhemmat (poistettu)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-32\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-32\">32</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Viitosluokkalaisen terveystarkastus, vanhemmat</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-33\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-33\">33</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Hampaiden tai suun oire tai vamma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-34\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-34\">34</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Suun terveydentila, aikuiset</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-35\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-35\">35</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Äitiysneuvolan esitiedot</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-36\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-36\">36</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Hyvinvointitarkastus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-37\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-37\">37</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Suunnitelma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-38\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-38\">38</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Liikuntaohjelma askeltajille</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-39\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-39\">39</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Lääkärintodistus, pyyntö</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-40\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-40\">40</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Diabetes, riskitesti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-41\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-41\">41</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Yleinen oirearvio</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-42\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-42\">42</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Painonhallinta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-43\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-43\">43</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Tupakoinnin lopettamisen valmennusohjelma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-44\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-44\">44</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Terveellinen ravinto -valmennusohjelma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-45\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-45\">45</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Univalmennus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-46\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-46\">46</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Avoin palvelupyyntö</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-47\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-47\">47</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Raskausdiabeteksen jälkiseuranta</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-CodeSystem-fiphr-cs-careplancategory-48\"> </a>  <a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-48\">48</a></td><td>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</td><td>Koronavirustauti</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-careplancategory",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-careplancategory",
+      "title" : "Finnish PHR CarePlan Category value set",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-06-05",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Indicates type of SelfCarePlan.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:b9044817-ad76-425b-a87b-600ff622e014",
+        "timestamp" : "2023-02-02T09:46:11+02:00",
+        "total" : 48,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "1",
+          "display" : "Hengitystietulehdus tai -oire"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "2",
+          "display" : "Yskä"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "3",
+          "display" : "Virtsatietulehdus tai -oire (18–65v. naiset)"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "4",
+          "display" : "Korvan kipu tai lukkoisuus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "5",
+          "display" : "Kurkkukipu tai nieluoire"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "6",
+          "display" : "Ripuli"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "7",
+          "display" : "Alaselkäkipu tai -vamma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "8",
+          "display" : "Närästys"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "9",
+          "display" : "Olkapään kipu, jäykkyys tai vamma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "10",
+          "display" : "Päänsärky"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "11",
+          "display" : "Peräaukon seudun oire"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "12",
+          "display" : "Polven oire tai vamma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "13",
+          "display" : "Silmän oire"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "14",
+          "display" : "Sukupuolitaudin oire"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "15",
+          "display" : "Terveystarkastus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "16",
+          "display" : "Henkilökohtainen apu"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "17",
+          "display" : "Liikkuminen kodin ulkopuolella"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "18",
+          "display" : "Maahanmuuttajan hyvinvointi"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "19",
+          "display" : "Omaishoidon tuki"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "20",
+          "display" : "Läheishoitajan tarkastus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "21",
+          "display" : "Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "22",
+          "display" : "Viitosluokkalaisen terveystarkastus, lapsi (poistettu)"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "23",
+          "display" : "Yleinen hyvinvointikysely (WHOQOL-BREF)"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "24",
+          "display" : "Elämäntilannekysely (3X10D)"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "25",
+          "display" : "Opiskeluterveydenhuollon esitiedot"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "26",
+          "display" : "Suun terveydentila, lapset ja nuoret"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "27",
+          "display" : "Omaishoitajan jaksaminen"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "28",
+          "display" : "Puolitoistavuotiaan laaja terveystarkastus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "29",
+          "display" : "Yötyötä tekevän työterveystarkastus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "30",
+          "display" : "Kohonnut verenpaine"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "31",
+          "display" : "Yläkoululaisen terveystarkastus, vanhemmat (poistettu)"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "32",
+          "display" : "Viitosluokkalaisen terveystarkastus, vanhemmat"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "33",
+          "display" : "Hampaiden tai suun oire tai vamma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "34",
+          "display" : "Suun terveydentila, aikuiset"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "35",
+          "display" : "Äitiysneuvolan esitiedot"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "36",
+          "display" : "Hyvinvointitarkastus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "37",
+          "display" : "Suunnitelma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "38",
+          "display" : "Liikuntaohjelma askeltajille"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "39",
+          "display" : "Lääkärintodistus, pyyntö"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "40",
+          "display" : "Diabetes, riskitesti"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "41",
+          "display" : "Yleinen oirearvio"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "42",
+          "display" : "Painonhallinta"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "43",
+          "display" : "Tupakoinnin lopettamisen valmennusohjelma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "44",
+          "display" : "Terveellinen ravinto -valmennusohjelma"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "45",
+          "display" : "Univalmennus"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "46",
+          "display" : "Avoin palvelupyyntö"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "47",
+          "display" : "Raskausdiabeteksen jälkiseuranta"
+        },
+        {
+          "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+          "code" : "48",
+          "display" : "Koronavirustauti"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exercisetracking",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-exercisetracking",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-55409-7\"> </a>  <a href=\"https://loinc.org/55409-7/\">55409-7</a></td><td>http://loinc.org</td><td>Liikunnan seuranta -paneeli</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-73985-4\"> </a>  <a href=\"https://loinc.org/73985-4/\">73985-4</a></td><td>http://loinc.org</td><td>Liikunta-aktiviteetti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-55411-3\"> </a>  <a href=\"https://loinc.org/55411-3/\">55411-3</a></td><td>http://loinc.org</td><td>Liikunnan kesto</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-74008-4\"> </a>  <a href=\"https://loinc.org/74008-4/\">74008-4</a></td><td>http://loinc.org</td><td>Liikunnan intensiteetti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-55421-2\"> </a>  <a href=\"https://loinc.org/55421-2/\">55421-2</a></td><td>http://loinc.org</td><td>Energiankulutus</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exercisetracking",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-exercisetracking",
+      "title" : "Value Set Finnish PHR Exercise Tracking",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2020-02-24",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Exercise Tracking value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:74938dd1-3d72-4df0-a3dd-0c856fe50ecc",
+        "timestamp" : "2023-02-02T09:46:12+02:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "55409-7",
+          "display" : "Liikunnan seuranta -paneeli"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "73985-4",
+          "display" : "Liikunta-aktiviteetti"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "55411-3",
+          "display" : "Liikunnan kesto"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "74008-4",
+          "display" : "Liikunnan intensiteetti"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "55421-2",
+          "display" : "Energiankulutus"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-vitalsigns",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-vitalsigns",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 20 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9279-1\"> </a>  <a href=\"https://loinc.org/9279-1/\">9279-1</a></td><td>http://loinc.org</td><td>Hengitystiheys</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8867-4\"> </a>  <a href=\"https://loinc.org/8867-4/\">8867-4</a></td><td>http://loinc.org</td><td>Syke</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41924-2\"> </a>  <a href=\"https://loinc.org/41924-2/\">41924-2</a></td><td>http://loinc.org</td><td>Sydämen syke 24 h keskiarvo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8883-1\"> </a>  <a href=\"https://loinc.org/8883-1/\">8883-1</a></td><td>http://loinc.org</td><td>Sydämen syke 24 h minimiarvo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8873-2\"> </a>  <a href=\"https://loinc.org/8873-2/\">8873-2</a></td><td>http://loinc.org</td><td>Sydämen syke 24 h maksimiarvo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8310-5\"> </a>  <a href=\"https://loinc.org/8310-5/\">8310-5</a></td><td>http://loinc.org</td><td>Kehon lämpö</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8331-1\"> </a>  <a href=\"https://loinc.org/8331-1/\">8331-1</a></td><td>http://loinc.org</td><td>Lämpö, suu</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8332-9\"> </a>  <a href=\"https://loinc.org/8332-9/\">8332-9</a></td><td>http://loinc.org</td><td>Lämpö, peräsuoli</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-76011-6\"> </a>  <a href=\"https://loinc.org/76011-6/\">76011-6</a></td><td>http://loinc.org</td><td>Lämpö, korva</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8328-7\"> </a>  <a href=\"https://loinc.org/8328-7/\">8328-7</a></td><td>http://loinc.org</td><td>Lämpö, kainalo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8302-2\"> </a>  <a href=\"https://loinc.org/8302-2/\">8302-2</a></td><td>http://loinc.org</td><td>Pituus</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-29463-7\"> </a>  <a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>http://loinc.org</td><td>Paino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-85354-9\"> </a>  <a href=\"https://loinc.org/85354-9/\">85354-9</a></td><td>http://loinc.org</td><td>Verenpaine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8480-6\"> </a>  <a href=\"https://loinc.org/8480-6/\">8480-6</a></td><td>http://loinc.org</td><td>Systolinen verenpaine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8462-4\"> </a>  <a href=\"https://loinc.org/8462-4/\">8462-4</a></td><td>http://loinc.org</td><td>Diastolinen verenpaine</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-15074-8\"> </a>  <a href=\"https://loinc.org/15074-8/\">15074-8</a></td><td>http://loinc.org</td><td>Verensokeri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14743-9\"> </a>  <a href=\"https://loinc.org/14743-9/\">14743-9</a></td><td>http://loinc.org</td><td>Verensokeri verensokerimittarilla</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-14745-4\"> </a>  <a href=\"https://loinc.org/14745-4/\">14745-4</a></td><td>http://loinc.org</td><td>Kudossokeri</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-19935-6\"> </a>  <a href=\"https://loinc.org/19935-6/\">19935-6</a></td><td>http://loinc.org</td><td>PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8280-0\"> </a>  <a href=\"https://loinc.org/8280-0/\">8280-0</a></td><td>http://loinc.org</td><td>Vyötärönympärys</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-vitalsigns",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-vitalsigns",
+      "title" : "Value Set Finnish PHR Vital Signs",
+      "status" : "active",
+      "date" : "2020-04-03T09:00:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "This value set indicates the allowed vital sign result types in Finnish PRH. The concept Vitals signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "copyright" : "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+      "expansion" : {
+        "identifier" : "urn:uuid:f8f24369-7e30-4d01-be0c-ccaaed6eff67",
+        "timestamp" : "2023-02-02T09:46:23+02:00",
+        "total" : 20,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "9279-1",
+          "display" : "Hengitystiheys"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8867-4",
+          "display" : "Syke"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41924-2",
+          "display" : "Sydämen syke 24 h keskiarvo"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8883-1",
+          "display" : "Sydämen syke 24 h minimiarvo"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8873-2",
+          "display" : "Sydämen syke 24 h maksimiarvo"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8310-5",
+          "display" : "Kehon lämpö"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8331-1",
+          "display" : "Lämpö, suu"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8332-9",
+          "display" : "Lämpö, peräsuoli"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "76011-6",
+          "display" : "Lämpö, korva"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8328-7",
+          "display" : "Lämpö, kainalo"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8302-2",
+          "display" : "Pituus"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "29463-7",
+          "display" : "Paino"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "85354-9",
+          "display" : "Verenpaine"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8480-6",
+          "display" : "Systolinen verenpaine"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8462-4",
+          "display" : "Diastolinen verenpaine"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "15074-8",
+          "display" : "Verensokeri"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "14743-9",
+          "display" : "Verensokeri verensokerimittarilla"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "14745-4",
+          "display" : "Kudossokeri"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "19935-6",
+          "display" : "PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "8280-0",
+          "display" : "Vyötärönympärys"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-macronutrients",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-macronutrients",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9059-7\"> </a>  <a href=\"https://loinc.org/9059-7/\">9059-7</a></td><td>http://loinc.org</td><td>Arvioitu hiilihydraattimäärä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9060-5\"> </a>  <a href=\"https://loinc.org/9060-5/\">9060-5</a></td><td>http://loinc.org</td><td>Mitattu hiilihydraattimäärä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9066-2\"> </a>  <a href=\"https://loinc.org/9066-2/\">9066-2</a></td><td>http://loinc.org</td><td>Arvioitu rasvan määrä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9067-0\"> </a>  <a href=\"https://loinc.org/9067-0/\">9067-0</a></td><td>http://loinc.org</td><td>Mitattu rasvan määrä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9079-5\"> </a>  <a href=\"https://loinc.org/9079-5/\">9079-5</a></td><td>http://loinc.org</td><td>Arvioitu proteiinin määrä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9080-3\"> </a>  <a href=\"https://loinc.org/9080-3/\">9080-3</a></td><td>http://loinc.org</td><td>Mitattu proteiinin määrä</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-macronutrients",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-macronutrients",
+      "title" : "Value Set Finnish PHR Macronutrients",
+      "status" : "active",
+      "date" : "2019-10-14T11:00:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Macronutrition Value Set that defines codes for Macronutrients.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "copyright" : "This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use.",
+      "expansion" : {
+        "identifier" : "urn:uuid:c04a9789-5173-4342-81f5-a3af37766964",
+        "timestamp" : "2023-02-02T09:46:23+02:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "9059-7",
+          "display" : "Arvioitu hiilihydraattimäärä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "9060-5",
+          "display" : "Mitattu hiilihydraattimäärä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "9066-2",
+          "display" : "Arvioitu rasvan määrä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "9067-0",
+          "display" : "Mitattu rasvan määrä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "9079-5",
+          "display" : "Arvioitu proteiinin määrä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "9080-3",
+          "display" : "Mitattu proteiinin määrä"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-fitnessresult",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-fitnessresult",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 11 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.73</li><li><a href=\"CodeSystem-fiphr-cs-moderatetovigorouspa.html\">Code System Finnish PHR Moderate to Vigorous Physical Activity Fitness Observation Code v0.2.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-55421-2\"> </a>  <a href=\"https://loinc.org/55421-2/\">55421-2</a></td><td>http://loinc.org</td><td>Energiankulutus</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41979-6\"> </a>  <a href=\"https://loinc.org/41979-6/\">41979-6</a></td><td>http://loinc.org</td><td>Energiankulutus vuorokaudessa</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41980-4\"> </a>  <a href=\"https://loinc.org/41980-4/\">41980-4</a></td><td>http://loinc.org</td><td>Energiankulutus viikossa</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-55430-3\"> </a>  <a href=\"https://loinc.org/55430-3/\">55430-3</a></td><td>http://loinc.org</td><td>Kuljettu matka</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41953-1\"> </a>  <a href=\"https://loinc.org/41953-1/\">41953-1</a></td><td>http://loinc.org</td><td>Kuljettu matka vuorokaudessa</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41955-6\"> </a>  <a href=\"https://loinc.org/41955-6/\">41955-6</a></td><td>http://loinc.org</td><td>Kuljettu matka viikossa</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-66334-4\"> </a>  <a href=\"https://loinc.org/66334-4/\">66334-4</a></td><td>http://loinc.org</td><td>Askelmäärä</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41950-7\"> </a>  <a href=\"https://loinc.org/41950-7/\">41950-7</a></td><td>http://loinc.org</td><td>Päivittäinen askelmäärä</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-41952-3\"> </a>  <a href=\"https://loinc.org/41952-3/\">41952-3</a></td><td>http://loinc.org</td><td>Viikoittainen askelmäärä</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-82290-8\"> </a>  <a href=\"https://loinc.org/82290-8/\">82290-8</a></td><td>http://loinc.org</td><td>Viikoittainen kohtuullisen ja raskaan liikunnan määrä minuutteina</td><td><div></div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---phr.kanta.fi-fiphr-cs-moderatetovigorouspa-82290-8-24h\"> </a>  <a href=\"CodeSystem-fiphr-cs-moderatetovigorouspa.html#fiphr-cs-moderatetovigorouspa-82290-8-24h\">82290-8-24h</a></td><td>http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa</td><td>Daily moderate to vigorous physical activity in minutes</td><td><div><p>Daily PA minutes with MET &gt; 2.9</p>\n</div></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+        "valueInteger" : 0
+      }],
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-fitnessresult",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-fitnessresult",
+      "title" : "Value Set Finnish PHR Fitness Results",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2018-12-21T13:54:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "This value set indicates the allowed fitness or physical activity result types in Finnish PHR. The concept Daily Activity fitness panel (62812-3) is a grouping structure for a set of physical activity, and for convenience also vital sign, measurements and includes related links (with type=has-member) to the Observations in this set or the parallel Finnish PHR Vital Signs value set (e.g. steps taken, minimum or maximum heart rate, calories burned, moderate to vigorous physical activity minutes, sedentary activity minutes, sleep episodes and exercises).",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "copyright" : "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+      "expansion" : {
+        "identifier" : "urn:uuid:c85276b6-639a-43d8-925b-ec2c81f0aabe",
+        "timestamp" : "2023-02-02T09:46:27+02:00",
+        "total" : 11,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "55421-2",
+          "display" : "Energiankulutus"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41979-6",
+          "display" : "Energiankulutus vuorokaudessa"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41980-4",
+          "display" : "Energiankulutus viikossa"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "55430-3",
+          "display" : "Kuljettu matka"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41953-1",
+          "display" : "Kuljettu matka vuorokaudessa"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41955-6",
+          "display" : "Kuljettu matka viikossa"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "66334-4",
+          "display" : "Askelmäärä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41950-7",
+          "display" : "Päivittäinen askelmäärä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "41952-3",
+          "display" : "Viikoittainen askelmäärä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "82290-8",
+          "display" : "Viikoittainen kohtuullisen ja raskaan liikunnan määrä minuutteina"
+        },
+        {
+          "system" : "http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa",
+          "code" : "82290-8-24h",
+          "display" : "Daily moderate to vigorous physical activity in minutes"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://phr.kanta.fi/ValueSet/fiphr-vs-nutrition",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "fiphr-vs-nutrition",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-8999-5\"> </a>  <a href=\"https://loinc.org/8999-5/\">8999-5</a></td><td>http://loinc.org</td><td>Arvio nautitusta nestemäärästä</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-9052-2\"> </a>  <a href=\"https://loinc.org/9052-2/\">9052-2</a></td><td>http://loinc.org</td><td>Kokonaisenergiamäärä</td></tr></table></div>"
+      },
+      "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-nutrition",
+      "version" : "0.2.0",
+      "name" : "fiphr-vs-nutrition",
+      "title" : "Value Set Finnish PHR Nutrition",
+      "status" : "active",
+      "date" : "2019-10-23T09:00:00+02:00",
+      "publisher" : "HL7 Finland",
+      "contact" : [{
+        "name" : "HL7 Finland",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.fi/"
+        }]
+      }],
+      "description" : "Finnish PHR Nutrition Value Set that defines codes for Nutrition.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "FI",
+          "display" : "Finland"
+        }]
+      }],
+      "copyright" : "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use",
+      "expansion" : {
+        "identifier" : "urn:uuid:b16d0476-3415-4f14-961a-eb19397d9849",
+        "timestamp" : "2023-02-02T09:46:28+02:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://loinc.org|2.73"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "8999-5",
+          "display" : "Arvio nautitusta nestemäärästä"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "9052-2",
+          "display" : "Kokonaisenergiamäärä"
+        }]
+      }
+    }
+  }]
+}

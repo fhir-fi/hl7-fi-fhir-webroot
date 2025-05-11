@@ -1,0 +1,3032 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "c31c671a-47a6-4bf8-aa3c-1f270ed13f38-62",
+  "url" : "http://hl7.org/fhir/comparison/CapabilityStatement/c31c671a-47a6-4bf8-aa3c-1f270ed13f38-62",
+  "name" : "UnionInternationalPatientAccessAPIAndFinnish PHR's capability statement for acceptance testing R4",
+  "title" : "Union of International Patient Access Server CapabilityStatement And null",
+  "status" : "draft",
+  "date" : "2023-02-02T07:21:02+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "format" : ["json",
+  "xml"],
+  "_format" : [null,
+  {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+      "valueCode" : "SHOULD"
+    }]
+  }],
+  "patchFormat" : ["application/json-patch+json"],
+  "_patchFormat" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+      "valueCode" : "SHOULD"
+    }]
+  }],
+  "implementationGuide" : ["http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"],
+  "_implementationGuide" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+      "valueCode" : "SHOULD"
+    }]
+  }],
+  "rest" : [{
+    "mode" : "server",
+    "documentation" : "The IPA Server **SHALL**:\n\n1. Support the IPA Patient resource profile.\n1. Support at least one additional resource profile from the list of IPA Profiles.\n1. Implement the RESTful behavior according to the FHIR specification.\n1. Return the following response classes:\n   - (Status 400): invalid parameter\n   - (Status 401/4xx): unauthorized request\n   - (Status 403): insufficient scope\n   - (Status 404): unknown resource\n   - (Status 410): deleted resource.\n1. Support JSON source formats for all IPA interactions.\n1. Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.\n\nThe IPA Server **SHOULD**:\n\n1. Support XML source formats for all IPA interactions.\n1. Identify the IPA profiles supported as part of the FHIR `meta.profile` attribute for each instance.",
+    "security" : {
+      "cors" : true,
+      "service" : [{
+        "text" : "OAuth"
+      },
+      {
+        "text" : "OAuth"
+      }],
+      "description" : "1. See the [General Security Considerations](security.html) section for requirements and recommendations.\n1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."
+    },
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "clinical-status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "AllergyIntolerance",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "clinical-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
+        "type" : "token",
+        "documentation" : "active | inactive | resolved"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "clinical-status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "clinical-status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "code"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "onset-date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "Condition",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-category",
+        "type" : "token",
+        "documentation" : "The category of the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "clinical-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+        "type" : "token",
+        "documentation" : "The clinical status of the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "Code for the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "onset-date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-onset-date",
+        "type" : "date",
+        "documentation" : "Date of onset for the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "type"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "contenttype"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "type"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "type"
+        },
+        {
+          "url" : "required",
+          "valueString" : "period"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "DocumentReference",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+        "type" : "token",
+        "documentation" : "Categorization of document"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "contenttype",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+        "type" : "token",
+        "documentation" : "Mime type of the content, may include charset"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "When this document reference was created"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "period",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-period",
+        "type" : "date",
+        "documentation" : "Time of service that is being documented"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-status",
+        "type" : "token",
+        "documentation" : "current | superseded | entered-in-error"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-type",
+        "type" : "token",
+        "documentation" : "Kind of document (LOINC if possible)"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }],
+      "operation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "docref",
+        "definition" : "http://hl7.org/fhir/uv/ipa/OperationDefinition/docref",
+        "documentation" : "A server **SHOULD** be capable of responding to a $docref operation and capable of returning at least a reference to a CDA document, if available. **MAY** provide references to other 'on-demand' and 'stable' documents (or 'delayed/deferred assembly') that meet the query parameters as well. If a context date range is supplied the server ** SHOULD**  provide references to any document that falls within the date range If no date range is supplied, then the server **SHALL** provide references to last or current encounter.  **SHOULD** document what resources, if any, are returned as included resources\n\n`GET [base]/DocumentReference/$docref?patient=[id]`"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "Immunization",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "Vaccination  (non)-Administration Date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Immunization-status",
+        "type" : "token",
+        "documentation" : "Immunization event status"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "Medication",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication",
+      "documentation" : "The MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria  **SHALL**  be supported.",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "intent"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "intent"
+        },
+        {
+          "url" : "required",
+          "valueString" : "authoredon"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "intent"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "MedicationRequest",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchInclude" : ["MedicationRequest:medication"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationRequest-category",
+        "type" : "token",
+        "documentation" : "Returns prescriptions with different categories"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "Return prescriptions of this medication code"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "authoredon",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon",
+        "type" : "date",
+        "documentation" : "Returns prescriptions written on this date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "intent",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationRequest-intent",
+        "type" : "token",
+        "documentation" : "Return prescriptions with this encounter identifier"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/medications-status",
+        "type" : "token",
+        "documentation" : "Status of the prescription"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "subject"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "MedicationStatement",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement",
+      "documentation" : "The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.\r\n\r\n For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:\r\n\r\n `GET /MedicationRequest?patient=[id]`\r\n\r\n `GET /MedicationRequest?patient=[id]&_include=MedicationRequest:medication`",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchInclude" : ["MedicationRequest:medication"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/medications-status",
+        "type" : "token",
+        "documentation" : "Return statements that match the given status"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "subject",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationStatement-subject",
+        "type" : "reference",
+        "documentation" : "Return statements that match the given status"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "code"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "code"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "Observation",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation",
+      "supportedProfile" : ["http://hl7.org/fhir/StructureDefinition/vitalsigns"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      }],
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-category",
+        "type" : "token",
+        "documentation" : "The classification of the type of observation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "The code of the observation type"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-status",
+        "type" : "token",
+        "documentation" : "The status of the observation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "family"
+        },
+        {
+          "url" : "required",
+          "valueString" : "gender"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "birthdate"
+        },
+        {
+          "url" : "required",
+          "valueString" : "family"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "birthdate"
+        },
+        {
+          "url" : "required",
+          "valueString" : "name"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "gender"
+        },
+        {
+          "url" : "required",
+          "valueString" : "name"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "Patient",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "birthdate",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-birthdate",
+        "type" : "date",
+        "documentation" : "A client **SHALL** provide a value precise to the *day*.\n\nA server **SHALL** support a value a value precise to the *day*."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "family",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family",
+        "type" : "string",
+        "documentation" : "A server **SHALL** support a value precise to the *day*."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "gender",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-gender",
+        "type" : "token",
+        "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "given",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given",
+        "type" : "string"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+        "type" : "token",
+        "documentation" : "The client **SHALL** provide both the system and code values.\n\nThe server **SHALL NOT** support only code values."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-name",
+        "type" : "string"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "Practitioner",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "PractitionerRole",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitionerrole",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchInclude" : ["PractitionerRole:endpoint",
+      "PractitionerRole:practitioner"],
+      "searchRevInclude" : ["Provenance:target"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "clinical-status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "AllergyIntolerance",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-allergyintolerance",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "clinical-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status",
+        "type" : "token",
+        "documentation" : "active | inactive | resolved"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "clinical-status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "clinical-status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "code"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "onset-date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "Condition",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-condition",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-category",
+        "type" : "token",
+        "documentation" : "The category of the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "clinical-status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-clinical-status",
+        "type" : "token",
+        "documentation" : "The clinical status of the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "Code for the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "onset-date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Condition-onset-date",
+        "type" : "date",
+        "documentation" : "Date of onset for the condition"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "type"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "contenttype"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "type"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "type"
+        },
+        {
+          "url" : "required",
+          "valueString" : "period"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "DocumentReference",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-documentreference",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+        "type" : "token",
+        "documentation" : "Categorization of document"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "contenttype",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-category",
+        "type" : "token",
+        "documentation" : "Mime type of the content, may include charset"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "When this document reference was created"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "period",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-period",
+        "type" : "date",
+        "documentation" : "Time of service that is being documented"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/DocumentReference-status",
+        "type" : "token",
+        "documentation" : "current | superseded | entered-in-error"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "type",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-type",
+        "type" : "token",
+        "documentation" : "Kind of document (LOINC if possible)"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }],
+      "operation" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "docref",
+        "definition" : "http://hl7.org/fhir/uv/ipa/OperationDefinition/docref",
+        "documentation" : "A server **SHOULD** be capable of responding to a $docref operation and capable of returning at least a reference to a CDA document, if available. **MAY** provide references to other 'on-demand' and 'stable' documents (or 'delayed/deferred assembly') that meet the query parameters as well. If a context date range is supplied the server ** SHOULD**  provide references to any document that falls within the date range If no date range is supplied, then the server **SHALL** provide references to last or current encounter.  **SHOULD** document what resources, if any, are returned as included resources\n\n`GET [base]/DocumentReference/$docref?patient=[id]`"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "Immunization",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-immunization",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "Vaccination  (non)-Administration Date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Immunization-status",
+        "type" : "token",
+        "documentation" : "Immunization event status"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "Medication",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medication",
+      "documentation" : "The MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria  **SHALL**  be supported.",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "intent"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "intent"
+        },
+        {
+          "url" : "required",
+          "valueString" : "authoredon"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "intent"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "MedicationRequest",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationrequest",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchInclude" : ["MedicationRequest:medication"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationRequest-category",
+        "type" : "token",
+        "documentation" : "Returns prescriptions with different categories"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "Return prescriptions of this medication code"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "authoredon",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon",
+        "type" : "date",
+        "documentation" : "Returns prescriptions written on this date"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "intent",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationRequest-intent",
+        "type" : "token",
+        "documentation" : "Return prescriptions with this encounter identifier"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/medications-status",
+        "type" : "token",
+        "documentation" : "Status of the prescription"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "subject"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      }],
+      "type" : "MedicationStatement",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-medicationstatement",
+      "documentation" : "The MedicationStatement resources can represent a medication using either a code or refer to the Medication resource. When referencing Medication, the resource may be [contained](http://hl7.org/fhir/R4/references.html#contained) or an external resource. The server application **MAY** choose any one way or more than one method, but if an external reference to Medication is used, the server **SHALL** support the _include` parameter for searching this element. The client application must support all methods.\r\n\r\n For example, A server **SHALL** be capable of returning all medications for a patient using one of or both:\r\n\r\n `GET /MedicationRequest?patient=[id]`\r\n\r\n `GET /MedicationRequest?patient=[id]&_include=MedicationRequest:medication`",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchInclude" : ["MedicationRequest:medication"],
+      "searchRevInclude" : ["Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/medications-status",
+        "type" : "token",
+        "documentation" : "Return statements that match the given status"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "subject",
+        "definition" : "http://hl7.org/fhir/SearchParameter/MedicationStatement-subject",
+        "type" : "reference",
+        "documentation" : "Return statements that match the given status"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "code"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "category"
+        },
+        {
+          "url" : "required",
+          "valueString" : "status"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "patient"
+        },
+        {
+          "url" : "required",
+          "valueString" : "code"
+        },
+        {
+          "url" : "required",
+          "valueString" : "date"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      }],
+      "type" : "Observation",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-observation",
+      "supportedProfile" : ["http://hl7.org/fhir/StructureDefinition/vitalsigns"],
+      "_supportedProfile" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }]
+      }],
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      },
+      {
+        "code" : "delete",
+        "documentation" : "Only the source of the resource or Omakanta can delete resources"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves",
+      "resolves",
+      "literal",
+      "enforced",
+      "local"],
+      "searchRevInclude" : ["Provenance:target",
+      "Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-category",
+        "type" : "token",
+        "documentation" : "The classification of the type of observation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "The code of the observation type"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-status",
+        "type" : "token",
+        "documentation" : "The status of the observation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "category",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-category",
+        "type" : "token",
+        "documentation" : "The classification of the type of observation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "code",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-code",
+        "type" : "token",
+        "documentation" : "The code of the observation type"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "date",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-date",
+        "type" : "date",
+        "documentation" : "Obtained date/time. If the obtained element is a period, a date that falls in the period"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "MAY"
+        }],
+        "name" : "status",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Observation-status",
+        "type" : "token",
+        "documentation" : "The status of the observation"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "patient",
+        "definition" : "http://hl7.org/fhir/SearchParameter/clinical-patient",
+        "type" : "reference",
+        "documentation" : "The client **SHALL** provide at least an id value and **MAY** provide both the Type and id values.\n\nThe server **SHALL** support both."
+      },
+      {
+        "name" : "_id",
+        "definition" : "Observation.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "_lastUpdated",
+        "definition" : "Observation.meta.lastUpdated",
+        "type" : "date",
+        "documentation" : "When the resource version last changed"
+      },
+      {
+        "name" : "identifier",
+        "definition" : "Observation.identifier",
+        "type" : "token",
+        "documentation" : "The unique id for a particular observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+      },
+      {
+        "name" : "_total",
+        "definition" : "Total count of resources",
+        "type" : "special",
+        "documentation" : "Total count of resources"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "family"
+        },
+        {
+          "url" : "required",
+          "valueString" : "gender"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "birthdate"
+        },
+        {
+          "url" : "required",
+          "valueString" : "family"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "birthdate"
+        },
+        {
+          "url" : "required",
+          "valueString" : "name"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        },
+        {
+          "url" : "required",
+          "valueString" : "gender"
+        },
+        {
+          "url" : "required",
+          "valueString" : "name"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHALL"
+      }],
+      "type" : "Patient",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "search-type"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves",
+      "resolves",
+      "literal",
+      "enforced",
+      "local"],
+      "searchRevInclude" : ["Provenance:target",
+      "Provenance:target"],
+      "searchParam" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "birthdate",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-birthdate",
+        "type" : "date",
+        "documentation" : "A client **SHALL** provide a value precise to the *day*.\n\nA server **SHALL** support a value a value precise to the *day*."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "family",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family",
+        "type" : "string",
+        "documentation" : "A server **SHALL** support a value precise to the *day*."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "gender",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-gender",
+        "type" : "token",
+        "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "given",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given",
+        "type" : "string"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+        "type" : "token",
+        "documentation" : "The client **SHALL** provide both the system and code values.\n\nThe server **SHALL NOT** support only code values."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-name",
+        "type" : "string"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "_id",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Resource-id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "birthdate",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-birthdate",
+        "type" : "date",
+        "documentation" : "A client **SHALL** provide a value precise to the *day*.\n\nA server **SHALL** support a value a value precise to the *day*."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "family",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-family",
+        "type" : "string",
+        "documentation" : "A server **SHALL** support a value precise to the *day*."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "gender",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-gender",
+        "type" : "token",
+        "documentation" : "The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.\n\nThe server **SHALL** support both."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "given",
+        "definition" : "http://hl7.org/fhir/SearchParameter/individual-given",
+        "type" : "string"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "name" : "identifier",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-identifier",
+        "type" : "token",
+        "documentation" : "The client **SHALL** provide both the system and code values.\n\nThe server **SHALL NOT** support only code values."
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHOULD"
+        }],
+        "name" : "name",
+        "definition" : "http://hl7.org/fhir/SearchParameter/Patient-name",
+        "type" : "string"
+      }]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "Practitioner",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchRevInclude" : ["Provenance:target"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "SHOULD"
+      }],
+      "type" : "PractitionerRole",
+      "profile" : "http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitionerrole",
+      "interaction" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode" : "SHALL"
+        }],
+        "code" : "read"
+      }],
+      "updateCreate" : false,
+      "conditionalCreate" : false,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["resolves"],
+      "searchInclude" : ["PractitionerRole:endpoint",
+      "PractitionerRole:practitioner"],
+      "searchRevInclude" : ["Provenance:target"]
+    },
+    {
+      "type" : "CarePlan",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update",
+        "documentation" : "SupportingInfo isn't validated with update"
+      },
+      {
+        "code" : "delete"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      },
+      {
+        "code" : "search-type"
+      }],
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "CarePlan.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "_lastUpdated",
+        "definition" : "CarePlan.meta.lastUpdated",
+        "type" : "date",
+        "documentation" : "When the resource version last changed"
+      },
+      {
+        "name" : "date",
+        "definition" : "CarePlan.period",
+        "type" : "date",
+        "documentation" : "Time period the plan covers"
+      },
+      {
+        "name" : "patient",
+        "definition" : "CarePlan.subject",
+        "type" : "reference",
+        "documentation" : "Who care plan is for"
+      },
+      {
+        "name" : "status",
+        "definition" : "CarePlan.status",
+        "type" : "token",
+        "documentation" : "Status of the plan"
+      },
+      {
+        "name" : "identifier",
+        "definition" : "CarePlan.identfier",
+        "type" : "token",
+        "documentation" : "Return careplans with this external identifier"
+      },
+      {
+        "name" : "category",
+        "definition" : "CarePlan.category",
+        "type" : "token",
+        "documentation" : "The category for a particular careplan"
+      },
+      {
+        "name" : "supporting-info",
+        "definition" : "CarePlan.supportingInfo",
+        "type" : "reference",
+        "documentation" : "Reference to supporting info"
+      },
+      {
+        "name" : "_total",
+        "definition" : "Total count of resources",
+        "type" : "special",
+        "documentation" : "Total count of resources"
+      }]
+    },
+    {
+      "type" : "MedicationAdministration",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      },
+      {
+        "code" : "delete",
+        "documentation" : "Only the source of the resource or Omakanta can delete resources"
+      },
+      {
+        "code" : "search-type",
+        "documentation" : "Implemented per the specification (or Insert other doco here)"
+      }],
+      "versioning" : "versioned-update",
+      "readHistory" : true,
+      "updateCreate" : false,
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "MedicationAdministration.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "_lastUpdated",
+        "definition" : "MedicationAdministration.meta.lastUpdated",
+        "type" : "date",
+        "documentation" : "When the resource version last changed"
+      },
+      {
+        "name" : "effective-time",
+        "definition" : "MedicationAdministration.effectiveTime[x]",
+        "type" : "date",
+        "documentation" : "Date administration happened (or did not happen)"
+      },
+      {
+        "name" : "patient",
+        "definition" : "MedicationAdministration.patient",
+        "type" : "reference",
+        "documentation" : "The identity of a patient to list administrations for, mandatory search parameter"
+      },
+      {
+        "name" : "identifier",
+        "definition" : "MedicationAdministration.identifier",
+        "type" : "token",
+        "documentation" : "Return administrations with this external identifier. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+      },
+      {
+        "name" : "code",
+        "definition" : "MedicationAdministration.medication[x]",
+        "type" : "token",
+        "documentation" : "Return administrations of this medication code. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode will be used."
+      },
+      {
+        "name" : "_total",
+        "definition" : "Total count of resources",
+        "type" : "special",
+        "documentation" : "Total count of resources"
+      }]
+    },
+    {
+      "type" : "Questionnaire",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "delete"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allow only identifier parameter"
+      },
+      {
+        "code" : "search-type"
+      }],
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "Questionnaire.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "_lastUpdated",
+        "definition" : "Questionnaire.meta.lastUpdated",
+        "type" : "date",
+        "documentation" : "When the resource version last changed"
+      },
+      {
+        "name" : "code",
+        "definition" : "Questionnaire.item.code",
+        "type" : "token",
+        "documentation" : "A code that corresponds to the questionnaire or one of its groups. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+      },
+      {
+        "name" : "identifier",
+        "definition" : "Questionnaire.identifier",
+        "type" : "token",
+        "documentation" : "An identifier for the questionnaire. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+      },
+      {
+        "name" : "url",
+        "definition" : "Questionnaire.url",
+        "type" : "uri",
+        "documentation" : "The logical URL for the questionnaire"
+      },
+      {
+        "name" : "_total",
+        "definition" : "Total count of resources",
+        "type" : "special",
+        "documentation" : "Total count of resources"
+      }]
+    },
+    {
+      "type" : "QuestionnaireResponse",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "delete"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allow only identifier parameter"
+      },
+      {
+        "code" : "search-type"
+      }],
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "QuestionnaireResponse.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "_lastUpdated",
+        "definition" : "QuestionnaireResponse.meta.lastUpdated",
+        "type" : "date",
+        "documentation" : "When the resource version last changed"
+      },
+      {
+        "name" : "questionnaire",
+        "definition" : "QuestionnaireResponse.questionnaire",
+        "type" : "reference",
+        "documentation" : "The questionnaire the answers are provided for"
+      },
+      {
+        "name" : "patient",
+        "definition" : "QuestionnaireResponse.subject",
+        "type" : "reference",
+        "documentation" : "The patient that is the subject of the questionnaire, mandatory search parameter"
+      },
+      {
+        "name" : "authored",
+        "definition" : "\tQuestionnaireResponse.authored",
+        "type" : "date",
+        "documentation" : "When the questionnaire was authored"
+      },
+      {
+        "name" : "identifier",
+        "definition" : "QuestionnaireResponse.identifier",
+        "type" : "token",
+        "documentation" : "The unique identifier for the questionnaire response. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."
+      },
+      {
+        "name" : "_total",
+        "definition" : "Total count of resources",
+        "type" : "special",
+        "documentation" : "Total count of resources"
+      }]
+    },
+    {
+      "type" : "ValueSet",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      },
+      {
+        "code" : "search-type",
+        "documentation" : "Implemented per the specification (or Insert other doco here)"
+      }],
+      "versioning" : "versioned-update",
+      "readHistory" : true,
+      "updateCreate" : false,
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "ValueSet.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "url",
+        "definition" : "ValueSet.url",
+        "type" : "uri",
+        "documentation" : "The logical URL for the value set"
+      }]
+    },
+    {
+      "type" : "StructureDefinition",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      },
+      {
+        "code" : "search-type",
+        "documentation" : "Implemented per the specification (or Insert other doco here)"
+      }],
+      "versioning" : "versioned-update",
+      "readHistory" : true,
+      "updateCreate" : false,
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "StructureDefinition.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "url",
+        "definition" : "StructureDefinition.url",
+        "type" : "uri",
+        "documentation" : "The uri that identifies the structure definition"
+      }]
+    },
+    {
+      "type" : "CodeSystem",
+      "interaction" : [{
+        "code" : "read"
+      },
+      {
+        "code" : "vread"
+      },
+      {
+        "code" : "update"
+      },
+      {
+        "code" : "create",
+        "documentation" : "Conditional create allows only the use of identifier as condition"
+      },
+      {
+        "code" : "search-type",
+        "documentation" : "Implemented per the specification (or Insert other doco here)"
+      }],
+      "versioning" : "versioned-update",
+      "readHistory" : true,
+      "updateCreate" : false,
+      "conditionalCreate" : true,
+      "conditionalUpdate" : false,
+      "conditionalDelete" : "not-supported",
+      "referencePolicy" : ["literal",
+      "enforced",
+      "local"],
+      "searchParam" : [{
+        "name" : "_id",
+        "definition" : "CodeSystem.id",
+        "type" : "token",
+        "documentation" : "Logical id of this artifact"
+      },
+      {
+        "name" : "url",
+        "definition" : "CodeSystem.url",
+        "type" : "uri",
+        "documentation" : "The uri that identifies the code system"
+      }]
+    }],
+    "interaction" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "MAY"
+      }],
+      "code" : "transaction"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "MAY"
+      }],
+      "code" : "batch"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "MAY"
+      }],
+      "code" : "search-system"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "MAY"
+      }],
+      "code" : "history-system"
+    }]
+  }]
+}

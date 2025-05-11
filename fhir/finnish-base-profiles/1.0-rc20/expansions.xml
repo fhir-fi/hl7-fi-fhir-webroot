@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="6e01dede-6d06-422e-905c-4b3327d2c9d8"/>
+  <meta>
+    <lastUpdated value="2023-09-04T11:56:09.152+03:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/SecurityLabelVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-SecurityLabelCS.html">codesystem Finnish CodeSystem for security labels v1.0.0-rc20 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7.fi-fhir-finnish-base-profiles-CodeSystem-SecurityLabelCS-TURVAKIELTO"> </a>  
+                  <a href="CodeSystem-SecurityLabelCS.html#SecurityLabelCS-TURVAKIELTO">TURVAKIELTO</a>
+                </td>
+                <td>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS</td>
+                <td>Turvakielto</td>
+                <td>
+                  <div>
+                    <p>A non-disclosure for personal safety reasons according to DVV.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/SecurityLabelVS"/>
+        <version value="1.0.0-rc20"/>
+        <name value="SecurityLabelVS"/>
+        <title value="Finnish ValueSet for security labels in accordance with finnish authorities"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-09-04T11:56:09+03:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FI"/>
+            <display value="Finland"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:444ba6d5-2c8b-44bd-8dd5-f85a817db500"/>
+          <timestamp value="2023-09-04T11:59:40+03:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS|1.0.0-rc20"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS"/>
+            <code value="TURVAKIELTO"/>
+            <display value="Turvakielto"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

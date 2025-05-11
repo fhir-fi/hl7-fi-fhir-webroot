@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "542ae72e-c3b0-404f-8c06-8f77441e89f8"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-05-17T13:15:04.491+03:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "fi"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div class=\"hapiHeaderText\"> Mittaustulos<b>Boldattuu </b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>Patient/c78aca7d-a983-4989-aa8f-68436068cd26</td></tr></tbody></table></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "name" ];
+       fhir:Extension.valueString [ fhir:value "usecaseWebApp" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "applicationId" ];
+       fhir:Extension.valueString [ fhir:value "usecaseWebApp" ]
+     ];
+     fhir:Extension.url [ fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication" ]
+  ]; # 
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38r" ]
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory" ];
+       fhir:Coding.code [ fhir:value "nutrition" ];
+       fhir:Coding.display [ fhir:value "Nutrition" ]
+     ], [
+       fhir:index 1;
+       a sct:405032000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "405032000" ];
+       fhir:Coding.display [ fhir:value "Nutritional status: energy (observable entity)" ]
+     ]
+  ]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:9052-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "9052-2" ];
+       fhir:Coding.display [ fhir:value "Calorie intake total" ]
+     ], [
+       fhir:index 1;
+       a sct:788472008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "788472008" ];
+       fhir:Coding.display [ fhir:value "Carbohydrate intake (observable entity)" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2019-05-17"^^xsd:date]; # 
+  fhir:Observation.issued [ fhir:value "2019-05-17T13:15:02.781+03:00"^^xsd:dateTime]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "2600"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "kcal" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "kcal" ]
+  ]; # 
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "N" ];
+       fhir:Coding.display [ fhir:value "Normal" ]
+     ]
+  ]; # 
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "Note" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

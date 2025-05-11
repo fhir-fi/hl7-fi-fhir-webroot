@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>HL7.FHIR.FI.SMART\Home - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+    <link rel="stylesheet" href="assets/css/hl7.css"/>
+    <link rel="stylesheet" href="assets/css/fhir-ig.css"/>
+    <link rel="stylesheet" href="assets/css/fi.css"/>
+    <link rel="stylesheet" href="assets/css/history.css"/>
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a no-external="true" id="hl7-logo" href="https://hl7.fi/"><img src="assets/images/hl7-finland-logo.svg" alt="Visit the HL7 Finland website" height="50"/></a>
+        </div>
+        <div id="family-nav">
+          <a no-external="true" id="family-logo" href="http://hl7.org/fhir"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Implementation Guide for SMART App Launch</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-rc1 - ballot
+
+
+
+  <img src="assets/images/fin.svg" alt="Finland flag" title="Finland" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Finnish Implementation Guide for SMART App Launch - Local Development build (v1.0.0-rc1). See the <a href="https://hl7.fi/fhir/finnish-smart/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart<button data-clipboard-text="https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart" title="Click to copy URL" class="btn-copy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-rc1<button data-clipboard-text="https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart|1.0.0-rc1" title="Click to copy versioned URL" class="btn-copy"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-02-14
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FinnishSmart</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#welcome-to-the-finnish-smart-app-launch-specification" id="markdown-toc-welcome-to-the-finnish-smart-app-launch-specification">Welcome to the Finnish SMART App Launch Specification</a></li>
+  <li><a href="#why-do-we-need-to-profile-the-smart-specification" id="markdown-toc-why-do-we-need-to-profile-the-smart-specification">Why Do We Need to Profile the SMART Specification?</a></li>
+  <li><a href="#notable-smart-implementations-in-finland" id="markdown-toc-notable-smart-implementations-in-finland">Notable SMART Implementations in Finland</a></li>
+  <li><a href="#profiling-approach" id="markdown-toc-profiling-approach">Profiling Approach</a></li>
+  <li><a href="#governance" id="markdown-toc-governance">Governance</a></li>
+  <li><a href="#collaboration" id="markdown-toc-collaboration">Collaboration</a></li>
+  <li><a href="#safety-considerations" id="markdown-toc-safety-considerations">Safety Considerations</a></li>
+  <li><a href="#license-and-legal-terms" id="markdown-toc-license-and-legal-terms">License and Legal Terms</a></li>
+</ul>
+
+</div>
+<h3 id="welcome-to-the-finnish-smart-app-launch-specification">Welcome to the Finnish SMART App Launch Specification</h3>
+
+<p>This implementation guide specifies the Finnish FHIR base profiles.</p>
+
+<p>It builds on top of both the HL7
+<a href="https://hl7.org/fhir/smart-app-launch/">SMART App Launch</a>
+and the HL7
+<a href="https://build.fhir.org/ig/HL7/fhir-ipa/">International Patient Access</a>
+specifications.</p>
+
+<p>SMART App Launch is the mechanism through which third-party apps can be integrated with Electronic
+Health Record (EHR) systems. It specifies how apps gain knowledge of which practitioner or patient
+wants to access which patient’s information, and how the app obtains the access token that can then
+be used to access further information.</p>
+
+<p>You can think of it as a single-sign-on (SSO) mechanism, but it is actually a bit more and extends
+to communicating the context too.</p>
+
+<p>When launched, the third party apps can either stand on their own or be embedded into the views of
+the EHR or a patient portal.</p>
+
+<p>The SMART specification is suitable for both web based apps and native apps. It makes a distinction
+between
+<a href="https://hl7.org/fhir/smart-app-launch/app-launch.html#support-for-public-and-confidential-apps">public and confidential apps</a>.</p>
+
+<p>In addition to launching apps, the main SMART specification defines a
+<a href="https://hl7.org/fhir/smart-app-launch/backend-services.html">profile for backend services</a>.</p>
+
+<section id="stu-ballot" class="stu-note">
+  <h4>Standard for Trial Use Ballot Feedback</h4>
+  <p><strong>This documentation and set of artifacts are still undergoing development, and they are
+  in DRAFT mode.</strong> The working group of HL7 Finland and the different interested parties are
+  working on this specification. This is a DRAFT specification that is currently under review by
+  the members of <a href="https://www.hl7.fi">HL7 Finland</a>. If you are interested in
+  participating to the formal review process, please contact Timo Kaskinen, the chair of the FL7
+  Finland Technical Committee, or Mikael Rinnetmäki, responsible for publication of this
+  implementation guide.</p>
+  <p>This version of this implementation guide is frozen and published as a base for the official
+  ballot within HL7 Finland. The p
+  See also the <a href="https://www.hl7.fi/ennakkoilmoitus-alkavasta-fhir-perusprofilointimaarittelyjen-lausuntokierroksesta/">formal
+  announcement</a> in HL7 Finland's website (in Finnish only).</p>
+  <p>This ballot cycle is considered a <strong>Standard for Trial Use</strong> ballot in the <a href="https://confluence.hl7.org/display/HL7/HL7+Balloting">HL7 Balloting process</a>.</p>
+  <p>HL7 Finland does not use the HL7 Ballot Desktop or the Jira Ballot Process, rather feedback is
+  gathered through email to <a href="mailto:timo.kaskinen@nhg.fi">timo.kaskinen@nhg.fi</a> and <a href="https://github.com/fhir-fi/finnish-smart/issues">issues in the GitHub
+  repository</a> of the implementation guide.</p>
+  <p>The main purpose of the ballot cycle is to solicit feedback from the wider FHIR community. The
+  team involved in creating the first versions of the implementation guide have a limited view on
+  the market and the activities of the community.</p>
+  <p>In the ballot process, the focus is on critical comments. We want to learn of any potential
+  doubts and disagreements the community may have towards the specification created by the smaller
+  core team.</p>
+  <p>Still, <strong>all feedback is welcome and appreciated</strong> and will be considered in the
+  further development of the implementation guide. Please do also share positive feedback.</p>
+  <p>Some questions to trigger thoughts are:</p>
+  <ul>
+    <li>Do you find the creation of a Finnish implementation guide for SMART App Launch
+    worthwhile?</li>
+    <li>Is the purpose of the implementation guide clear and is the description of the problem
+    domain adequate on this first page of the implementation guide?</li>
+    <li>Is this the right level for a national implementation guide? The global community is still
+    figuring this out. For instance, see the <a href="https://build.fhir.org/ig/HL7-Canada/ca-baseline/#base-vs-baseline-vs-core">categorization
+    of Base, Baseline, and Core profiles</a> in the Canadian Baseline specification.</li>
+    <li>Are there clear errors or mistakes in the implementation guide? Please don't hesitate
+    pointing these out!</li>
+    <li>Are there ambiguities or is some of the language confusing? Let us konw that too.</li>
+    <li>Do you know of SMART App Launch mechanism being used in Finland in ways that are not
+    covered by this implementation guide? Would the Finnish FHIR community benefit from those use
+    cases being covered? Could the parties involved benefit from making the use case more visible
+    through being mentioned in this implementation guide?</li>
+    <li>Would you be able to provide examples from use cases to be included in this implementation
+    guide?</li>
+    <li>Did you happen to learn something useful when reading this implementation guide? :)</li>
+  </ul>
+  <p>We look forward to hearing from you!</p>
+</section>
+
+<h4 id="companion-specifications">Companion Specifications</h4>
+
+<p><a name="l449">​</a>There is a separate implementation guide for <a href="../finnish-base-profiles/">Finnish Base Profiles</a>
+that defines the Finnish profiles for some of the key FHIR resources.</p>
+
+<h3 id="why-do-we-need-to-profile-the-smart-specification">Why Do We Need to Profile the SMART Specification?</h3>
+
+<p>The SMART App Launch specification is already a globally applicable specification. The
+International Patient Access specification adds some more constraints and details to it. Do we
+really need something more?</p>
+
+<p>We have found out that there are still some places in both of these specifications that allow some
+implementation feedom but may be tricky for app developers to support. In this implementation
+guide, we aim to provide clarity on topics like how an app best learns the organization or
+organization unit the practitioner launching the app works for (when launching the app).</p>
+
+<p>We believe we can get some of these details sorted out more efficiently in the local Finnish
+context. We still aim to feed our learnings and developments with the wider SMART community and
+help get parts of them adopted to the SMART and IPA specifications.</p>
+
+<h3 id="notable-smart-implementations-in-finland">Notable SMART Implementations in Finland</h3>
+
+<p>Both HL7 FHIR and the SMART App Launch mechanism are used in Finland by many implementations.</p>
+
+<p><a href="https://www.apotti.fi/">Apotti</a> is a sizeable Epic installation in Finland.
+<a href="https://www.epic.com">Epic</a> is one of the biggest electronic health record system vendors
+globally. SMART App Launch is the primary mechanism through which third-party apps SHOULD be
+integrated with Apotti. See also the
+<a href="https://www.apotti.fi/en/the-apotti-ecosystem/">Apotti Ecosystem</a>.</p>
+
+<p>The <a href="https://eskosystems.fi/tuoteperhe/integraatiot/">Esko APTJ</a> by Esko Systems is one of the
+prominent Finnish electronic health record systems. It uses both HL7 FHIR APIs and the SMART
+specification for internal communication between the components of the system. Esko also offers a
+SMART App Launch method to interact with third party systems.</p>
+
+<p>The <a href="https://www.kanta.fi/phr">Kanta PHR</a> is a personal health record platform for storing and
+exchanging health and wellbeing data produced and governed by citizens. It uses a security
+mechanism that is pretty close to FHIR, but with some subtle differences.</p>
+
+<p><a href="http://healthvillage.fi">Health Village</a> is a publicly funded group of services. It has
+built in HL7 <a href="https://www.hl7.org/fhir/smart-app-launch/">SMART App Launch</a> capability for
+interacting with third party apps.</p>
+
+<p><a href="https://www.intersystems.com/fi/">InterSystems Finland</a> has built an adapter through which
+existing CCOW based systems can launch SMART apps. The adapter has been used at least by
+<a href="https://www.vitec-acute.com/">Vitec Acute</a> and
+<a href="https://www.tietoevry.com/en/care/healthcare/">Lifecare</a> EHRs.</p>
+
+<p>Furthermore, the <a href="https://fhir.fi/en/demo2022/index.html">FHIR Demo 2022</a> showcase presented
+integrations implemented between a dozen platforms and more than a dozen FHIR apps, all based on
+HL7 FHIR and most utilizing the SMART specification.</p>
+
+<p>Even that showcase did not cover the full extent to which HL7 FHIR is being used in Finland.
+There’s a lot going on!</p>
+
+<p>To learn about the current status, please contact <a href="https://www.hl7.fi/">HL7 Finland</a>. We’re happy
+to give you an overview.</p>
+
+<h3 id="profiling-approach">Profiling Approach</h3>
+
+<p>The base FHIR specification works on a global scope. It is hard to achieve consensus on many things
+globally. However, smaller regions and jurisdictions are in a better position to agree on tighter
+constraints. We take benefit of this and move faster with things that we can agree on on a local
+level.</p>
+
+<p>We are also committed to sharing our learnings with the wider FHIR community and get parts of the
+definitions adopted in the international main specifications.</p>
+
+<p>We hope that publishing examples gives new implementers a glance of how systems exchange
+information. However, implementers are <strong>strongly encouraged</strong> to read the main SMART specification
+and the relevant parts of the IPA specification. This implementation guide should not be used as a
+comprehensive specification on which to build implementations.</p>
+
+<h3 id="governance">Governance</h3>
+
+<p>The profiling work is performed in a project driven by <a href="https://www.hl7.fi">HL7 Finland</a>.
+See the
+<a href="https://www.hl7.fi/hl7-fhir-profilointityo-kaynnistyy-tule-mukaan-vaikuttamaan-kansalliseen-tekemiseen/">announcement</a>
+(in Finnish), the <a href="https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#">running
+memo</a>, and
+<a href="https://fhir.fi">some more details</a>. We warmly welcome new participants to the project. You may
+even be compensated for your efforts.</p>
+
+<p>The team involved in creating the first version of the implementation guide includes</p>
+<ul>
+  <li>Arto Huusko, CGI Oyj</li>
+  <li>Janne Heikkinen, BCB Medical Oy</li>
+  <li>Jari Kariniemi, Kymenlaakson hyvinvointialue</li>
+  <li>Jari Vuonos, Apotti Oy</li>
+  <li>Joni Hirviniemi, Fujitsu</li>
+  <li>Jyrki Soikkeli, Apotti Oy</li>
+  <li>Marko Kaukonen, BCB Medical Oy</li>
+  <li>Markus Lind, Buddy Healthcare Oy</li>
+  <li>Markus Suonpää, CGI Finland Oyj</li>
+  <li>Mika Jylhä, Esko Systems Oy</li>
+  <li>Mika Lentovaara, HUS</li>
+  <li>Mika Tuomainen, Kela</li>
+  <li>Mikael Rinnetmäki, Sensotrend Oy</li>
+  <li>Tero Pekkola, Esko Systems Oy</li>
+</ul>
+
+<h3 id="collaboration">Collaboration</h3>
+
+<p>We want this implementation guide to be useful for you.</p>
+
+<p>If you are implementing FHIR in a system or application that is meant to be used in Finland and are
+thinking of some implementation details, you are probably in the right place and this
+implementation guide should help you with those questions. If this implementation guide in any way
+fails to give you the answers you are looking for, we’d love to hear about it so we can make it
+better. Please do be in touch in one of the ways listed below.</p>
+
+<h4 id="open-an-issue-in-github">Open an Issue in GitHub</h4>
+
+<p>The source code of this implementation guide is maintained in a
+<a href="https://github.com/fhir-fi/finnish-base-profiles">publicly accessible repository</a> in GitHub.
+Issues opened in that GitHub repo are very welcome. They help the team pick up any proposed changes
+or additions and to discuss them publicly.</p>
+
+<h4 id="open-a-pull-request-in-github">Open a Pull Request in GitHub</h4>
+
+<p>Pull requests are even better. If you are in a position to suggest how exactly your proposal should
+be implemented in the specification, do it! It helps the team maintaining the implementation guide
+a great deal.</p>
+
+<h4 id="participate-in-ig-development-and-maintenance">Participate in IG Development and Maintenance</h4>
+
+<p>Please also consider joining the development effort. This is the best way to affect the outcome of
+the profiling work. You may even be compensated for your efforts. Please be in touch with HL7
+Finland to discuss options, if this even remotely interesting for you.</p>
+
+<p>The best implementation guide is the one that reflects the views and the consensus of the whole
+FHIR community!</p>
+
+<h3 id="safety-considerations">Safety Considerations</h3>
+<p>This implementation guide defines data elements, resources, formats, and methods for exchanging
+healthcare data between different participants in the healthcare process. As such, clinical safety
+is a key concern. Additional guidance regarding safety for the specification’s many and various
+implementations is available at
+<a href="https://www.hl7.org/FHIR/safety.html">https://www.hl7.org/FHIR/safety.html</a>.</p>
+
+<p>Although the present specification does give users the opportunity to observe data protection and
+data security regulations, its use does not guarantee compliance with these regulations. Effective
+compliance must be ensured by appropriate measures during implementation projects and in daily
+operations. The corresponding implementation measures are explained in the standard. In addition,
+the present specification can only influence compliance with the security regulations in the
+technical area of standardisation. It cannot influence organisational and contractual matters.</p>
+
+<h3 id="license-and-legal-terms">License and Legal Terms</h3>
+
+<p>This document is licensed under Creative Commons
+<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> Public Domain Dedication.</p>
+
+<p>HL7&reg;, HEALTH LEVEL SEVEN&reg;, FHIR&reg; and the FHIR <img src="icon-fhir-16.png" style="float: none; margin: 0px; padding: 0px; vertical-align: bottom"/>&reg; are trademarks owned
+by Health Level Seven International, registered with the United States Patent and Trademark Office.</p>
+
+<p>This implementation guide contains and references intellectual property owned by third parties
+(“Third Party IP”). Acceptance of these License Terms does not grant any rights with respect to
+Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary
+licenses or authorizations to utilize Third Party IP in connection with the specification or
+otherwise.</p>
+
+<p>See also <a href="http://hl7.org/fhir/license.html">http://hl7.org/fhir/license.html</a>.</p>
+
+<p>Following is a non-exhaustive list of third-party artifacts and terminologies that may require a
+separate license:</p>
+
+<p><strong>SNOMED Clinical Terms&reg; (SNOMED CT&reg;)</strong>
+This material includes SNOMED Clinical Terms&reg; (SNOMED CT&reg;) which is used by permission of SNOMED
+International (former known as International Health Terminology Standards Development Organisation
+IHTSDO). All rights reserved. SNOMED CT&reg;, was originally created by The College of American
+Pathologists. “SNOMED” and “SNOMED CT” are registered trademarks of SNOMED International.</p>
+
+<p><strong>Logical Observation Identifiers Names and Codes LOINC</strong>
+This material contains content from LOINC&reg; (http://loinc.org). The LOINC table, LOINC codes, and
+LOINC panels and forms file are copyright &copy; 1995-2013, Regenstrief Institute, Inc. and the Logical
+Observation Identifiers Names and Codes (LOINC) Committee and available at no cost under the
+license at http://loinc.org/terms-of-use.</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.smart#1.0.0-rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 14, 2023 19:44+0200">2023-02-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="history.html">Version History</a>
+  | <a rel="license" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0-1.0" style="border-style: none;"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-smart">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-smart/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

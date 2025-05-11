@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "c31c671a-47a6-4bf8-aa3c-1f270ed13f38-27",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/c31c671a-47a6-4bf8-aa3c-1f270ed13f38-27",
+  "name" : "IntersectionLOINCCodesAndfiphr-vs-vitalsigns",
+  "title" : "Intersection of LOINC Codes And Value Set Finnish PHR Vital Signs",
+  "status" : "draft",
+  "date" : "2023-02-02T07:21:02+02:00"
+}

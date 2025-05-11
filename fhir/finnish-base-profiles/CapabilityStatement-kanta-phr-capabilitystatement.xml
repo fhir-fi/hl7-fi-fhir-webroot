@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="kanta-phr-capabilitystatement"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Finnish PHR's R4 capability statement</h2><div><p>The capability statement for Kanta PHR service production environment</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>See implementation guide for details</p>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET past versions of resources (vread interaction)">V-Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th><th><b title="DELETE a resource (delete interaction)">Delete</b></th></tr><tr><td>CarePlan</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Patient</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>MedicationAdministration</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Questionnaire</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>QuestionnaireResponse</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>ValueSet</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>StructureDefinition</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>CodeSystem</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr></table></div>
+  </text>
+  <url value="http://phr.kanta.fi/capabilitystatementR4"/>
+  <version value="0.4.0"/>
+  <name value="Finnish PHR's R4 capability statement"/>
+  <status value="draft"/>
+  <date value="2021-11-24"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="The capability statement for Kanta PHR service production environment"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <software>
+    <name value="Omatietovaranto"/>
+    <version value="1.1"/>
+    <releaseDate value="2021-11-24"/>
+  </software>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="See implementation guide for details"/>
+    <security>
+      <cors value="true"/>
+      <service>
+        <text value="OAuth"/>
+      </service>
+      <description value="The usage of OAuth 2.0 with Finnish PHR can be found at kanta.fi"/>
+    </security>
+    <resource>
+      <type value="CarePlan"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+        <documentation value="SupportingInfo isn't validated with update"/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="CarePlan.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="CarePlan.meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <definition value="CarePlan.period"/>
+        <type value="date"/>
+        <documentation value="Time period the plan covers"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <definition value="CarePlan.subject"/>
+        <type value="reference"/>
+        <documentation value="Who care plan is for"/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <definition value="CarePlan.status"/>
+        <type value="token"/>
+        <documentation value="Status of the plan"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="CarePlan.identfier"/>
+        <type value="token"/>
+        <documentation value="Return careplans with this external identifier"/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="CarePlan.category"/>
+        <type value="token"/>
+        <documentation value="The category for a particular careplan"/>
+      </searchParam>
+      <searchParam>
+        <name value="supporting-info"/>
+        <definition value="CarePlan.supportingInfo"/>
+        <type value="reference"/>
+        <documentation value="Reference to supporting info"/>
+      </searchParam>
+      <searchParam>
+        <name value="_total"/>
+        <definition value="Total count of resources"/>
+        <type value="special"/>
+        <documentation value="Total count of resources"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+        <documentation value="Only the source of the resource or Omakanta can delete resources"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="Observation.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="Observation.meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <definition value="Observation.effective[x]"/>
+        <type value="date"/>
+        <documentation value="Obtained date/time. If the obtained element is a period, a date that falls in the period. AND operator is supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <definition value="Observation.subject"/>
+        <type value="reference"/>
+        <documentation value="The patient that the observation is about, mandatory search parameter"/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <definition value="Observation.code"/>
+        <type value="token"/>
+        <documentation value="The code of the observation type. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://loinc.org will be used."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="Observation.identifier"/>
+        <type value="token"/>
+        <documentation value="The unique id for a particular observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <definition value="Observation.category"/>
+        <type value="token"/>
+        <documentation value="The classification of the type of observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."/>
+      </searchParam>
+      <searchParam>
+        <name value="_total"/>
+        <definition value="Total count of resources"/>
+        <type value="special"/>
+        <documentation value="Total count of resources"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="true"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="Patient.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationAdministration"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+        <documentation value="Only the source of the resource or Omakanta can delete resources"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Implemented per the specification (or Insert other doco here)"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="MedicationAdministration.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="MedicationAdministration.meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="effective-time"/>
+        <definition value="MedicationAdministration.effectiveTime[x]"/>
+        <type value="date"/>
+        <documentation value="Date administration happened (or did not happen)"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <definition value="MedicationAdministration.patient"/>
+        <type value="reference"/>
+        <documentation value="The identity of a patient to list administrations for, mandatory search parameter"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="MedicationAdministration.identifier"/>
+        <type value="token"/>
+        <documentation value="Return administrations with this external identifier. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <definition value="MedicationAdministration.medication[x]"/>
+        <type value="token"/>
+        <documentation value="Return administrations of this medication code. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode will be used."/>
+      </searchParam>
+      <searchParam>
+        <name value="_total"/>
+        <definition value="Total count of resources"/>
+        <type value="special"/>
+        <documentation value="Total count of resources"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Questionnaire"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allow only identifier parameter"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="Questionnaire.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="Questionnaire.meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <definition value="Questionnaire.item.code"/>
+        <type value="token"/>
+        <documentation value="A code that corresponds to the questionnaire or one of its groups. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="Questionnaire.identifier"/>
+        <type value="token"/>
+        <documentation value="An identifier for the questionnaire. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."/>
+      </searchParam>
+      <searchParam>
+        <name value="url"/>
+        <definition value="Questionnaire.url"/>
+        <type value="uri"/>
+        <documentation value="The logical URL for the questionnaire"/>
+      </searchParam>
+      <searchParam>
+        <name value="_total"/>
+        <definition value="Total count of resources"/>
+        <type value="special"/>
+        <documentation value="Total count of resources"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="QuestionnaireResponse"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allow only identifier parameter"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="QuestionnaireResponse.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="_lastUpdated"/>
+        <definition value="QuestionnaireResponse.meta.lastUpdated"/>
+        <type value="date"/>
+        <documentation value="When the resource version last changed"/>
+      </searchParam>
+      <searchParam>
+        <name value="questionnaire"/>
+        <definition value="QuestionnaireResponse.questionnaire"/>
+        <type value="reference"/>
+        <documentation value="The questionnaire the answers are provided for"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <definition value="QuestionnaireResponse.subject"/>
+        <type value="reference"/>
+        <documentation value="The patient that is the subject of the questionnaire, mandatory search parameter"/>
+      </searchParam>
+      <searchParam>
+        <name value="authored"/>
+        <definition value="&#x9;QuestionnaireResponse.authored"/>
+        <type value="date"/>
+        <documentation value="When the questionnaire was authored"/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <definition value="QuestionnaireResponse.identifier"/>
+        <type value="token"/>
+        <documentation value="The unique identifier for the questionnaire response. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]."/>
+      </searchParam>
+      <searchParam>
+        <name value="_total"/>
+        <definition value="Total count of resources"/>
+        <type value="special"/>
+        <documentation value="Total count of resources"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="ValueSet"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Implemented per the specification (or Insert other doco here)"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="ValueSet.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="url"/>
+        <definition value="ValueSet.url"/>
+        <type value="uri"/>
+        <documentation value="The logical URL for the value set"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="StructureDefinition"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Implemented per the specification (or Insert other doco here)"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="StructureDefinition.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="url"/>
+        <definition value="StructureDefinition.url"/>
+        <type value="uri"/>
+        <documentation value="The uri that identifies the structure definition"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="CodeSystem"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="vread"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <code value="create"/>
+        <documentation value="Conditional create allows only the use of identifier as condition"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+        <documentation value="Implemented per the specification (or Insert other doco here)"/>
+      </interaction>
+      <versioning value="versioned-update"/>
+      <readHistory value="true"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="true"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <referencePolicy value="literal"/>
+      <referencePolicy value="enforced"/>
+      <referencePolicy value="local"/>
+      <searchParam>
+        <name value="_id"/>
+        <definition value="CodeSystem.id"/>
+        <type value="token"/>
+        <documentation value="Logical id of this artifact"/>
+      </searchParam>
+      <searchParam>
+        <name value="url"/>
+        <definition value="CodeSystem.url"/>
+        <type value="uri"/>
+        <documentation value="The uri that identifies the code system"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<HealthcareService xmlns="http://hl7.org/fhir">
+  <id value="healthcareService-example"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: HealthcareService</b><a name="healthcareService-example"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource HealthcareService &quot;healthcareService-example&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-healthcare-service.html">FI Base HealthcareService</a></p></div><p><b>active</b>: true</p><p><b>category</b>: SOTE9.2 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[201801]#SOTE9.2)</span>, E <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[201801]#E)</span></p><p><b>type</b>: EEA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[201501]#EEA)</span>, ADA001 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[201501]#ADA001)</span>, T11 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[2008]#T11)</span>, SH <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[2008]#SH)</span></p><p><b>name</b>: Vastaanottoaika*</p><p><b>comment</b>: Normaali vo-aika sh:lle ja lääkäreille</p><p><b>appointmentRequired</b>: true</p></div>
+  </text>
+  <active value="true"/>
+  <category>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.50"/>
+      <version value="201801"/>
+      <code value="SOTE9.2"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.121"/>
+      <version value="201801"/>
+      <code value="E"/>
+    </coding>
+  </category>
+  <type>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.49"/>
+      <version value="201501"/>
+      <code value="EEA"/>
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.49"/>
+      <version value="201501"/>
+      <code value="ADA001"/>
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.125"/>
+      <version value="2008"/>
+      <code value="T11"/>
+    </coding>
+  </type>
+  <type>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.124"/>
+      <version value="2008"/>
+      <code value="SH"/>
+    </coding>
+  </type>
+  <name value="Vastaanottoaika*"/>
+  <comment value="Normaali vo-aika sh:lle ja lääkäreille"/>
+  <appointmentRequired value="true"/>
+</HealthcareService>

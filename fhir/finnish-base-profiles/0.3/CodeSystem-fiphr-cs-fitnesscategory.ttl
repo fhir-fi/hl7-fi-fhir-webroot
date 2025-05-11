@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-fitnesscategory> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-cs-fitnesscategory"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://phr.kanta.fi/fiphr-cs-fitnesscategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">fitness<a name=\"fiphr-cs-fitnesscategory-fitness\"> </a></td><td>Fitness</td><td>Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week.</td></tr></table></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" ];
+     fhir:Extension.valueInteger [ fhir:value "0"^^xsd:integer ]
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://phr.kanta.fi/fiphr-cs-fitnesscategory"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.3.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "fiphr-cs-fitnesscategory"]; # 
+  fhir:CodeSystem.title [ fhir:value "Code System Finnish PHR Fitness Category"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2018-03-16T10:45:00+02:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Observation category code for Finnish PHR Fitness Category"]; # 
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.valueSet [
+     fhir:value "http://phr.kanta.fi/ValueSet/fitness-category";
+     fhir:link <http://phr.kanta.fi/ValueSet/fitness-category>
+  ]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "fitness" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Fitness" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week." ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-fitnesscategory.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Schedule xmlns="http://hl7.org/fhir">
+  <id value="ScheduleExample"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Schedule</b><a name="ScheduleExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Schedule &quot;ScheduleExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-schedule.html">FI Base Schedule</a></p></div><p><b>identifier</b>: id: 45 (use: USUAL)</p><p><b>active</b>: true</p><p><b>serviceCategory</b>: General Practice <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#17)</span></p><p><b>serviceType</b>: General Practice <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#124)</span></p><p><b>specialty</b>: General medicine <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#394802001)</span></p><p><b>actor</b>: <a href="Location-LocationExample.html">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p><p><b>planningHorizon</b>: 2023-01-01 09:15:00+0000 --&gt; 2033-12-25 09:30:00+0000</p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <system value="http://example.org/scheduleid"/>
+    <value value="45"/>
+  </identifier>
+  <active value="true"/>
+  <serviceCategory>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="17"/>
+      <display value="General Practice"/>
+    </coding>
+  </serviceCategory>
+  <serviceType>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="124"/>
+      <display value="General Practice"/>
+    </coding>
+  </serviceType>
+  <specialty>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="394802001"/>
+      <display value="General medicine"/>
+    </coding>
+  </specialty>
+  <actor>
+    <reference value="Location/LocationExample"/>
+  </actor>
+  <planningHorizon>
+    <start value="2023-01-01T09:15:00Z"/>
+    <end value="2033-12-25T09:30:00Z"/>
+  </planningHorizon>
+</Schedule>

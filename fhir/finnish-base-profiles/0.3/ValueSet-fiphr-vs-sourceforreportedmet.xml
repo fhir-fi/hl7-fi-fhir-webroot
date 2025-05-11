@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-sourceforreportedmet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA26242-0/">LA26242-0</a></td><td>Activity tracker</td><td>Aktiivisuusmittari</td><td>Aktivitetsmätare</td><td>Activity tracker</td></tr><tr><td><a href="https://loinc.org/LA26243-8/">LA26243-8</a></td><td>Physical activity questionnaire</td><td>Fyysisen aktiivisuuden kyselylomake</td><td>Fysisk aktivitet frågeformulär</td><td>Physical activity questionnaire</td></tr><tr><td><a href="https://loinc.org/LA26251-1/">LA26251-1</a></td><td>Activity log or diary</td><td>Aktiivisuusloki tai -päiväkirja</td><td>Aktivitetslogg eller -dagbok</td><td>Activity log or diary</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforreportedmet"/>
+  <version value="0.3.0"/>
+  <name value="fiphr-vs-sourceforreportedmet"/>
+  <title value="Value Set Finnish PHR Source for Reported MET"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-24"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Source for Reported MET value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA26242-0"/>
+        <display value="Activity tracker"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Aktiivisuusmittari"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Aktivitetsmätare"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Activity tracker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA26243-8"/>
+        <display value="Physical activity questionnaire"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Fyysisen aktiivisuuden kyselylomake"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Fysisk aktivitet frågeformulär"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Physical activity questionnaire"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA26251-1"/>
+        <display value="Activity log or diary"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Aktiivisuusloki tai -päiväkirja"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Aktivitetslogg eller -dagbok"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Activity log or diary"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,121 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/mtvpa-max> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mtvpa-max"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime"^^xsd:anyURI ;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Weekly moderate to vigorous physical activity in minutes (82290-8)<br />Time: 20.11.2017 11:46<br />Result: 254 min </div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38c" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://phr.kanta.fi/fiphr-cs-fitnesscategory"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fitness" ] ;
+       fhir:display [ fhir:v "Fitness" ]
+     ] [
+       a sct:405155000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "405155000" ] ;
+       fhir:display [ fhir:v "Physical fitness behavior (observable entity)" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:82290-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82290-8" ] ;
+       fhir:display [ fhir:v "Weekly moderate to vigorous physical activity in minutes" ]
+     ] [
+       a sct:408581006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "408581006" ] ;
+       fhir:display [ fhir:v "Physical activity target moderate exercise (finding)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad> ;
+     fhir:reference [ fhir:v "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2017-11-30T02:00:00.936+02:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2017-02-02T10:00:00.936+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad> ;
+     fhir:reference [ fhir:v "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "min" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "min" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N" ] ;
+       fhir:display [ fhir:v "Normal" ]
+     ] )
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Note" ]
+  ] ) ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "min" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "min" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "120"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "min" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "min" ]
+     ] ;
+     fhir:appliesTo ( [
+       fhir:coding ( [
+         a sct:248153007 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "248153007" ] ;
+         fhir:display [ fhir:v "Male" ]
+       ] ) ;
+       fhir:text [ fhir:v "Normal range" ]
+     ] ) ;
+     fhir:age [
+       fhir:low [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "years" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "years" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] ;
+     fhir:text [ fhir:v "Age" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

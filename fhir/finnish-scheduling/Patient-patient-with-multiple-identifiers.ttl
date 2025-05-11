@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Patient/patient-with-multiple-identifiers> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-with-multiple-identifiers"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-with-multiple-identifiers</b></p><a name=\"patient-with-multiple-identifiers\"> </a><a name=\"hcpatient-with-multiple-identifiers\"> </a><a name=\"patient-with-multiple-identifiers-fi-FI\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anna Testi  (no stated gender), DoB Unknown ( urn:oid:1.2.246.21#010101-123N (use: official, period: 2019-01-01 --&gt; (ongoing)))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\">081181-9984 (use: temp, period: 2018-11-12 --&gt; 2019-01-01)</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "010101-123N" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2019-01-01"^^xsd:date ]
+     ]
+  ] [
+     fhir:use [ fhir:v "temp" ] ;
+     fhir:value [ fhir:v "081181-9984" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2018-11-12"^^xsd:date ] ;
+       fhir:end [ fhir:v "2019-01-01"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Testi" ] ;
+     fhir:given ( [ fhir:v "Anna" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

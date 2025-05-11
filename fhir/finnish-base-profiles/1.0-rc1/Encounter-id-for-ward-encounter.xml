@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="id-for-ward-encounter"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="id-for-ward-encounter"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;id-for-ward-encounter&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-encounter.html">FI Base Encounter</a></p></div><p><b>identifier</b>: id: id-for-ward-encounter (use: USUAL)</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/ValueSet/v3-ActEncounterCode code IMP = 'IMP', stated as 'inpatient encounter')</p><p><b>subject</b>: <a href="Patient/id-for-patient">Patient/id-for-patient</a></p><p><b>period</b>: 2022-02-27 01:03:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class="grid"><tr><td>-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td>*</td><td><a href="Location/id-for-bed-3">Location/id-for-bed-3</a></td><td>active</td><td>2022-02-27 01:03:00+0200 --&gt; (ongoing)</td></tr></table><p><b>serviceProvider</b>: <a href="Organization/1.2.246.10.8286189.10.100012">Organization/1.2.246.10.8286189.10.100012</a></p></div>
+  </text>
+  <identifier>
+    <use value="usual"/>
+    <value value="id-for-ward-encounter"/>
+  </identifier>
+  <status value="in-progress"/>
+  <class>
+    <system value="http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+  <subject>
+    <reference value="Patient/id-for-patient"/>
+  </subject>
+  <period>
+    <start value="2022-02-27T01:03:00+02:00"/>
+  </period>
+  <location>
+    <location>
+      <reference value="Location/id-for-bed-3"/>
+    </location>
+    <status value="active"/>
+    <period>
+      <start value="2022-02-27T01:03:00+02:00"/>
+    </period>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/1.2.246.10.8286189.10.100012"/>
+  </serviceProvider>
+</Encounter>

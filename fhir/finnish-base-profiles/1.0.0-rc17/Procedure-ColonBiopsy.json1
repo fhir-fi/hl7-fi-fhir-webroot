@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ColonBiopsy",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"ColonBiopsy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;ColonBiopsy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-procedure.html\">Fi Base Procedure</a></p></div><p><b>identifier</b>: id:\u00a012345</p><p><b>partOf</b>: <a href=\"Procedure-ProcedureColotomy.html\">Procedure/ProcedureColotomy</a></p><p><b>status</b>: completed</p><p><b>category</b>: PIENTOI <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PIENTOI)</span></p><p><b>code</b>: Biopsy of colon <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76164006)</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Practitioner-PractitionerLicensedPhysician.html\">Practitioner/PractitionerLicensedPhysician</a> &quot; DOCTOR&quot;</td></tr></table><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p></div>"
+  },
+  "identifier" : [{
+    "value" : "12345"
+  }],
+  "partOf" : [{
+    "reference" : "Procedure/ProcedureColotomy"
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.601",
+      "code" : "PIENTOI"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76164006"
+    }],
+    "text" : "Biopsy of colon"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-of-municipality"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/PractitionerLicensedPhysician"
+    }
+  }],
+  "location" : {
+    "reference" : "Location/LocationExample"
+  }
+}

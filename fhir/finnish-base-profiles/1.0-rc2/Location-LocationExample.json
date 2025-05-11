@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Location",
+  "id" : "LocationExample",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;LocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-location.html\">FI Base Location</a></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.3575029.10.9990311346</p><p><b>status</b>: active</p><p><b>name</b>: Kirurgian poliklinikka</p><p><b>alias</b>: 2KIRPKL</p><p><b>mode</b>: instance</p><p><b>address</b>: (WORK)</p><p><b>managingOrganization</b>: <a href=\"Organization/01\">Organization/01</a></p></div>"
+  },
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:1.2.246.10.3575029.10.9990311346"
+  }],
+  "status" : "active",
+  "name" : "Kirurgian poliklinikka",
+  "alias" : ["2KIRPKL"],
+  "mode" : "instance",
+  "address" : {
+    "use" : "work"
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/01"
+  }
+}

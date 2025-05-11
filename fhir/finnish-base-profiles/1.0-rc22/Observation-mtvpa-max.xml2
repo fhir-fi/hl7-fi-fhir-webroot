@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="mtvpa-max"/>
+  <meta>
+    <profile value="http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Weekly moderate to vigorous physical activity in minutes (82290-8)<br />Time: 20.11.2017 11:46<br />Result: 254 min </div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38c"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://phr.kanta.fi/fiphr-cs-fitnesscategory"/>
+      <code value="fitness"/>
+      <display value="Fitness"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="405155000"/>
+      <display value="Physical fitness behavior (observable entity)"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="82290-8"/>
+      <display value="Weekly moderate to vigorous physical activity in minutes"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="408581006"/>
+      <display value="Physical activity target moderate exercise (finding)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+  </subject>
+  <effectiveDateTime value="2017-11-30T02:00:00.936+02:00"/>
+  <issued value="2017-02-02T10:00:00.936+02:00"/>
+  <performer>
+    <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+  </performer>
+  <valueQuantity>
+    <value value="120"/>
+    <unit value="min"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="min"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <note>
+    <text value="Note"/>
+  </note>
+  <referenceRange>
+    <low>
+      <value value="20"/>
+      <unit value="min"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="min"/>
+    </low>
+    <high>
+      <value value="120"/>
+      <unit value="min"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="min"/>
+    </high>
+    <appliesTo>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="248153007"/>
+        <display value="Male"/>
+      </coding>
+      <text value="Normal range"/>
+    </appliesTo>
+    <age>
+      <low>
+        <value value="15"/>
+        <unit value="years"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </low>
+      <high>
+        <value value="100"/>
+        <unit value="years"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </high>
+    </age>
+    <text value="Age"/>
+  </referenceRange>
+</Observation>

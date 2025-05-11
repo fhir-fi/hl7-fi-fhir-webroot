@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-visit> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "id-for-visit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter id-for-visit</b></p><a name=\"id-for-visit\"> </a><a name=\"hcid-for-visit\"> </a><a name=\"id-for-visit-fi-FI\"> </a><p><b>identifier</b>: id-for-visit (use: usual, )</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>period</b>: 2022-02-28 15:03:00+0200 --&gt; 2022-02-28 15:33:00+0200</p><p><b>serviceProvider</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:value [ fhir:v "id-for-visit" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
+     fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-02-28T15:03:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-02-28T15:33:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1314> ;
+     fhir:reference [ fhir:v "Organization/1.2.246.10.2085212.10.1314" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

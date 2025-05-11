@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-of-municipality"/>
+  <meta>
+    <profile value="http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Testi Henkilö </b> male, DoB: 1990-01-01 ( id: 010190-999Y (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li><a href="tel:+358401234657">+358401234657</a></li><li>Testikatu 1 37910 Akaa (HOME)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Languages spoken">Language:</td><td colspan="3"><span title="Codes: {urn:oid:2.16.840.1.113883.4.642.3.20 fi}">fi</span></td></tr><tr><td style="background-color: #f3f5da" title="Extension for home municipality"><a href="StructureDefinition-municipality-code.html">MunicipalityCode:</a></td><td colspan="3"><ul><li>urn:oid:1.2.246.537.6.21.2003 020: Akaa</li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://fhir.fi/finnish-base-profiles/StructureDefinition/municipality-code">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.21.2003"/>
+      <code value="020"/>
+      <display value="Akaa"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.21"/>
+    <value value="010190-999Y"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Henkilö"/>
+    <given value="Testi"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+358401234657"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1990-01-01"/>
+  <address>
+    <use value="home"/>
+    <line value="Testikatu 1"/>
+    <line value="37910 Akaa"/>
+  </address>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.4.642.3.20"/>
+        <code value="fi"/>
+      </coding>
+    </language>
+  </communication>
+</Patient>

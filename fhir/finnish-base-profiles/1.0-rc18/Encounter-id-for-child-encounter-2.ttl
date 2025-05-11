@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-child-encounter-2> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "id-for-child-encounter-2"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"id-for-child-encounter-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;id-for-child-encounter-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-encounter.html\">FI Base Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code OBSENC = 'observation encounter', stated as 'observation encounter')</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>period</b>: 2022-02-28 12:03:00+0200 --&gt; 2022-02-28 12:18:00+0200</p><p><b>serviceProvider</b>: <span>id: 1.2.246.10.8286189.10.100014</span></p><p><b>partOf</b>: <a href=\"Encounter-id-for-palvelutapahtuma.html\">Encounter/id-for-palvelutapahtuma</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "OBSENC" ] ;
+     fhir:display [ fhir:v "observation encounter" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
+     fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-02-28T12:03:00+02:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2022-02-28T12:18:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:type [ fhir:v "ServiceProvider"^^xsd:anyURI ] ;
+     fhir:identifier [
+       fhir:value [ fhir:v "1.2.246.10.8286189.10.100014" ]
+     ]
+  ] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-palvelutapahtuma> ;
+     fhir:reference [ fhir:v "Encounter/id-for-palvelutapahtuma" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

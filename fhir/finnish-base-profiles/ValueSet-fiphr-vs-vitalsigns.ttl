@@ -1,0 +1,316 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-vitalsigns> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-vs-vitalsigns"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td><a href=\"https://loinc.org/9279-1/\">9279-1</a></td><td>Respiratory rate</td><td>Hengitystiheys</td><td>Andningsfrekvens</td></tr><tr><td><a href=\"https://loinc.org/8867-4/\">8867-4</a></td><td>Heart rate</td><td>Syke</td><td>Puls</td></tr><tr><td><a href=\"https://loinc.org/41924-2/\">41924-2</a></td><td>Heart rate 24 hour mean</td><td>Sydämen syke 24 h keskiarvo</td><td>Hjärtats puls 24 h genomsnittspuls</td></tr><tr><td><a href=\"https://loinc.org/8883-1/\">8883-1</a></td><td>Heart rate 24 hour minimum</td><td>Sydämen syke 24 h minimiarvo</td><td>Hjärtats puls 24 h minimivärde</td></tr><tr><td><a href=\"https://loinc.org/8873-2/\">8873-2</a></td><td>Heart rate 24 hour maximum</td><td>Sydämen syke 24 h maksimiarvo</td><td>Hjärtats puls 24 h maximivärde</td></tr><tr><td><a href=\"https://loinc.org/8310-5/\">8310-5</a></td><td>Body temperature</td><td>Kehon lämpö</td><td>Kroppstemperatur</td></tr><tr><td><a href=\"https://loinc.org/8331-1/\">8331-1</a></td><td>Oral temperature</td><td>Lämpö, suu</td><td>Temperatur, munnen</td></tr><tr><td><a href=\"https://loinc.org/8332-9/\">8332-9</a></td><td>Rectal temperature</td><td>Lämpö, peräsuoli</td><td>Temperatur, ändtarmen</td></tr><tr><td><a href=\"https://loinc.org/76011-6/\">76011-6</a></td><td>Ear temperature</td><td>Lämpö, korva</td><td>Termperatur, örat</td></tr><tr><td><a href=\"https://loinc.org/8328-7/\">8328-7</a></td><td>Axillary temperature</td><td>Lämpö, kainalo</td><td>Temperatur, armhålan</td></tr><tr><td><a href=\"https://loinc.org/8302-2/\">8302-2</a></td><td>Body height</td><td>Pituus</td><td>Längd</td></tr><tr><td><a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>Body weight</td><td>Paino</td><td>Vikt</td></tr><tr><td><a href=\"https://loinc.org/85354-9/\">85354-9</a></td><td>Blood pressure panel with all children optional</td><td>Verenpaine</td><td>Blodtryck</td></tr><tr><td><a href=\"https://loinc.org/8480-6/\">8480-6</a></td><td>Systolic blood pressure</td><td>Systolinen verenpaine</td><td>Systoliskt blodtryck</td></tr><tr><td><a href=\"https://loinc.org/8462-4/\">8462-4</a></td><td>Diastolic blood pressure</td><td>Diastolinen verenpaine</td><td>Diastoliskt blodtryck</td></tr><tr><td><a href=\"https://loinc.org/15074-8/\">15074-8</a></td><td>Glucose [Moles/volume] in Blood</td><td>Verensokeri</td><td>Blodsocker</td></tr><tr><td><a href=\"https://loinc.org/14743-9/\">14743-9</a></td><td>Glucose [Moles/volume] in Capillary blood by Glucometer</td><td>Verensokeri verensokerimittarilla</td><td>Blodsocker med blodsockermätare</td></tr><tr><td><a href=\"https://loinc.org/14745-4/\">14745-4</a></td><td>Glucose [Moles/volume] in Body fluid</td><td>Kudossokeri</td><td>Vävnadssocker</td></tr><tr><td><a href=\"https://loinc.org/19935-6/\">19935-6</a></td><td>Maximum expiratory gas flow Respiratory system airway by Peak flow meter</td><td>PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo</td><td>Maximalt utandningsflöde med PEF-mätare</td></tr><tr><td><a href=\"https://loinc.org/8280-0/\">8280-0</a></td><td>Waist Circumference at umbilicus by Tape measure</td><td>Vyötärönympärys</td><td>Midjemått</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-vitalsigns"]; # 
+  fhir:ValueSet.version [ fhir:value "0.4.0"]; # 
+  fhir:ValueSet.name [ fhir:value "fiphr-vs-vitalsigns"]; # 
+  fhir:ValueSet.title [ fhir:value "Value Set Finnish PHR Vital Signs"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.date [ fhir:value "2020-04-03T09:00:00+02:00"^^xsd:dateTime]; # 
+  fhir:ValueSet.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "This value set indicates the allowed vital sign result types in Finnish PRH. The concept Vitals signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4)."]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ValueSet.copyright [ fhir:value "This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use"]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9279-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Respiratory rate" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hengitystiheys" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Andningsfrekvens" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8867-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart rate" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Syke" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Puls" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41924-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart rate 24 hour mean" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sydämen syke 24 h keskiarvo" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hjärtats puls 24 h genomsnittspuls" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8883-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart rate 24 hour minimum" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sydämen syke 24 h minimiarvo" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hjärtats puls 24 h minimivärde" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8873-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Heart rate 24 hour maximum" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sydämen syke 24 h maksimiarvo" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hjärtats puls 24 h maximivärde" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8310-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Body temperature" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kehon lämpö" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kroppstemperatur" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8331-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Oral temperature" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lämpö, suu" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Temperatur, munnen" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8332-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Rectal temperature" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lämpö, peräsuoli" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Temperatur, ändtarmen" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "76011-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ear temperature" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lämpö, korva" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Termperatur, örat" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8328-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Axillary temperature" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lämpö, kainalo" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Temperatur, armhålan" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8302-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Body height" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Pituus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Längd" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29463-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Body weight" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Paino" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vikt" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "85354-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Blood pressure panel with all children optional" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Verenpaine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blodtryck" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8480-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Systolic blood pressure" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Systolinen verenpaine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Systoliskt blodtryck" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8462-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diastolic blood pressure" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diastolinen verenpaine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diastoliskt blodtryck" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15074-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glucose [Moles/volume] in Blood" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Verensokeri" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blodsocker" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14743-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glucose [Moles/volume] in Capillary blood by Glucometer" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Verensokeri verensokerimittarilla" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Blodsocker med blodsockermätare" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14745-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Glucose [Moles/volume] in Body fluid" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kudossokeri" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vävnadssocker" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19935-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maximum expiratory gas flow Respiratory system airway by Peak flow meter" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Maximalt utandningsflöde med PEF-mätare" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8280-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Waist Circumference at umbilicus by Tape measure" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Vyötärönympärys" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Midjemått" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-vitalsigns.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

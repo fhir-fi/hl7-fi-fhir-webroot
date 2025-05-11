@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "LocationExample"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;LocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-location.html\">FI Base Location</a></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.3575029.10.9990311346</p><p><b>status</b>: active</p><p><b>name</b>: Kirurgian poliklinikka</p><p><b>alias</b>: 2KIRPKL</p><p><b>mode</b>: instance</p><p><b>address</b>: (WORK)</p><p><b>managingOrganization</b>: <a href=\"Organization/01\">Organization/01</a></p></div>"
+  ]; # 
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:oid:1.2.246.10.3575029.10.9990311346" ]
+  ]; # 
+  fhir:Location.status [ fhir:value "active"]; # 
+  fhir:Location.name [ fhir:value "Kirurgian poliklinikka"]; # 
+  fhir:Location.alias [
+     fhir:value "2KIRPKL";
+     fhir:index 0
+  ]; # 
+  fhir:Location.mode [ fhir:value "instance"]; # 
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ]
+  ]; # 
+  fhir:Location.managingOrganization [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/01>;
+     fhir:Reference.reference [ fhir:value "Organization/01" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

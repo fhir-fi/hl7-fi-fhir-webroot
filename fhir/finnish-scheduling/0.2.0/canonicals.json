@@ -1,0 +1,303 @@
+[
+  {
+    "id" : "AdditionalInformationURLExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/AdditionalInformationURLExtension",
+    "version" : "0.2.0",
+    "name" : "AdditionalInformationURLExtension"
+  },
+  {
+    "id" : "AppointmentMutabilityExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension",
+    "version" : "0.2.0",
+    "name" : "AppointmentMutabilityExtension"
+  },
+  {
+    "id" : "CareGuaranteeExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/CareGuaranteeExtension",
+    "version" : "0.2.0",
+    "name" : "CareGuaranteeExtension"
+  },
+  {
+    "id" : "CareplanIdentifierExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/CareplanIdentifierExtension",
+    "version" : "0.2.0",
+    "name" : "CareplanIdentifierExtension"
+  },
+  {
+    "id" : "37cbcf84-ec38-4889-ae3c-877bace9bb84",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/ChildAppointment",
+    "version" : "0.2.0",
+    "name" : "ChildAppointment"
+  },
+  {
+    "id" : "CustomerJourneyExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/CustomerJourneyExtension",
+    "version" : "0.2.0",
+    "name" : "CustomerJourneyExtension"
+  },
+  {
+    "id" : "a5f4b52f-896d-4c6c-b8d2-8467617f60f7",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentAppointment",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentAppointment"
+  },
+  {
+    "id" : "64cde6f0-1939-4309-bd9f-1a088e197844",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentHealthcareService",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentHealthcareService"
+  },
+  {
+    "id" : "3893dc5d-c30c-4781-b6ce-2af953c9ce8d",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentLocation",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentLocation"
+  },
+  {
+    "id" : "FinnishAppointmentPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentPatient",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentPatient"
+  },
+  {
+    "id" : "FinnishAppointmentSchedule",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentSchedule",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentSchedule"
+  },
+  {
+    "id" : "FinnishAppointmentSlot",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishAppointmentSlot",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentSlot"
+  },
+  {
+    "id" : "FinnishSchedulingAppointment",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingAppointment",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingAppointment"
+  },
+  {
+    "id" : "FinnishSchedulingHealthcareService",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingHealthcareService",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingHealthcareService"
+  },
+  {
+    "id" : "FinnishSchedulingLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingLocation",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingLocation"
+  },
+  {
+    "id" : "FinnishSchedulingPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPatient",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingPatient"
+  },
+  {
+    "id" : "FinnishSchedulingPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPractitioner",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingPractitioner"
+  },
+  {
+    "id" : "ba85996c-070b-4e86-992e-4be8a61e4583",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPractitioner",
+    "version" : "0.2.0",
+    "name" : "FinnishAppointmentPractitioner"
+  },
+  {
+    "id" : "FinnishSchedulingPractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPractitionerRole",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingPractitionerRole"
+  },
+  {
+    "id" : "FinnishSchedulingSchedule",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingSchedule",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingSchedule"
+  },
+  {
+    "id" : "FinnishSchedulingSlot",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingSlot",
+    "version" : "0.2.0",
+    "name" : "FinnishSchedulingSlot"
+  },
+  {
+    "id" : "HomeMunicipalityExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension",
+    "version" : "0.2.0",
+    "name" : "HomeMunicipalityExtension"
+  },
+  {
+    "id" : "85f7bc26-0ac2-481f-a02a-bc9e26baa7b1",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/MiscAppointmentDataExtension",
+    "version" : "0.2.0",
+    "name" : "MiscAppointmentDataExtension"
+  },
+  {
+    "id" : "8b17badd-a643-46bc-a33e-305dd1625f30",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension",
+    "version" : "0.2.0",
+    "name" : "NotificationInfoExtension"
+  },
+  {
+    "id" : "NotificationMediumExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/NotificationMediumExtension",
+    "version" : "0.2.0",
+    "name" : "NotificationMediumExtension"
+  },
+  {
+    "id" : "089c6932-3bcd-4a0e-9997-92aa11b3f8db",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/ParentAppointment",
+    "version" : "0.2.0",
+    "name" : "ParentAppointment"
+  },
+  {
+    "id" : "d8e721a0-0a93-4bba-9ddd-0a9aca0c8e33",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/PatientInstructionURLExtension",
+    "version" : "0.2.0",
+    "name" : "PatientInstructionURLExtension"
+  },
+  {
+    "id" : "PractitionerGenderExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/PractitionerGenderExtension",
+    "version" : "0.2.0",
+    "name" : "PractitionerGenderExtension"
+  },
+  {
+    "id" : "QueueNoExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/QueueNoExt",
+    "version" : "0.2.0",
+    "name" : "QueueNoExtension"
+  },
+  {
+    "id" : "ReferralIdExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/ReferralIdExtension",
+    "version" : "0.2.0",
+    "name" : "ReferralIdExtension"
+  },
+  {
+    "id" : "RequestedServiceExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/RequestedServiceExtension",
+    "version" : "0.2.0",
+    "name" : "RequestedServiceExtension"
+  },
+  {
+    "id" : "ResourceCalendarIdExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/ResourceCalendarIdExtension",
+    "version" : "0.2.0",
+    "name" : "ResourceCalendarIdExtension"
+  },
+  {
+    "id" : "SelfServiceExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/SelfServiceExtension",
+    "version" : "0.2.0",
+    "name" : "SelfServiceExtension"
+  },
+  {
+    "id" : "ServiceEventExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt",
+    "version" : "0.2.0",
+    "name" : "ServiceEventExtension"
+  },
+  {
+    "id" : "TicketNoExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/TicketNoExt",
+    "version" : "0.2.0",
+    "name" : "TicketNoExtension"
+  },
+  {
+    "id" : "TopicIdExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/TopicIdExt",
+    "version" : "0.2.0",
+    "name" : "TopicIdExtension"
+  },
+  {
+    "id" : "VisibleToCustodianExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.fi/fhir/StructureDefinition/VisibleToCustodian",
+    "version" : "0.2.0",
+    "name" : "VisibleToCustodianExtension"
+  },
+  {
+    "id" : "hl7.fhir.fi.scheduling",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/ImplementationGuide/hl7.fhir.fi.scheduling",
+    "version" : "0.2.0",
+    "name" : "FinnishScheduling"
+  },
+  {
+    "id" : "fi-scheduling-appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment",
+    "version" : "0.2.0",
+    "name" : "FiSchedulingAppointment"
+  },
+  {
+    "id" : "fi-scheduling-healthcare-service",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service",
+    "version" : "0.2.0",
+    "name" : "FiSchedulingHealthcareService"
+  },
+  {
+    "id" : "fi-scheduling-location",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-location",
+    "version" : "0.2.0",
+    "name" : "FiSchedulingLocation"
+  },
+  {
+    "id" : "fi-scheduling-schedule",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-schedule",
+    "version" : "0.2.0",
+    "name" : "FiSchedulingSchedule"
+  },
+  {
+    "id" : "fi-scheduling-slot",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-slot",
+    "version" : "0.2.0",
+    "name" : "FiSchedulingSlot"
+  }
+]

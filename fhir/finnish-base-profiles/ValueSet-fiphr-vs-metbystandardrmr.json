@@ -1,0 +1,180 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-metbystandardrmr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/82260-1/\">82260-1</a></td><td>Metabolic equivalent of task by standard resting metabolic rate panel</td><td>Metabolinen ekvivalentti standardissa lepoaineenvaihdunnassa -paneeli</td><td>Metabolisk ekvivalent genom standard viloämnesomsättning -panel</td><td>Metabolic equivalent of task by standard resting metabolic rate panel</td></tr><tr><td><a href=\"https://loinc.org/82284-1/\">82284-1</a></td><td>Standard resting metabolic rate</td><td>Standardi lepoaineenvaihdunta</td><td>Standard viloämnesomsättning</td><td>Standard resting metabolic rate</td></tr><tr><td><a href=\"https://loinc.org/82261-9/\">82261-9</a></td><td>Measured metabolic equivalent of task</td><td>Mitattu metabolinen ekvivalentti</td><td>Uppmätt metabolisk ekvivalent</td><td>Measured metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82262-7/\">82262-7</a></td><td>Estimated metabolic equivalent of task</td><td>Arvioitu metabolinen ekvivalentti</td><td>Uppskattad metabolisk ekvivalent</td><td>Estimated metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82280-9/\">82280-9</a></td><td>Source for estimated metabolic equivalent of task</td><td>Lähde arvioidulle metaboliselle ekvivalentille</td><td>Källa för uppskattad metabolisk ekvivalent</td><td>Source for estimated metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82263-5/\">82263-5</a></td><td>Reported metabolic equivalent of task</td><td>Raportoitu metabolinen ekvivalentti</td><td>Rapporterad metabolisk ekvivalent</td><td>Reported metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82281-7/\">82281-7</a></td><td>Source for reported metabolic equivalent of task</td><td>Lähde raportoidulle metaboliselle ekvivalentille</td><td>Källa för rapporterad metabolisk ekvivalent</td><td>Source for reported metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82271-8/\">82271-8</a></td><td>Adjusted metabolic equivalent of task</td><td>Korjattu metabolinen ekvivalentti</td><td>Justerad metabolisk ekvivalent</td><td>Adjusted metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82283-3/\">82283-3</a></td><td>Source for adjusted metabolic equivalent of task</td><td>Lähde korjatulle metaboliselle ekvivalentille</td><td>Källa för justerad metabolisk ekvivalent</td><td>Source for adjusted metabolic equivalent of task</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-metbystandardrmr",
+  "version" : "0.4.0",
+  "name" : "fiphr-vs-metbystandardrmr",
+  "title" : "Value Set Finnish PHR MET by Standard RMR",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-02-24",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR MET by Standard RMR value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "82260-1",
+        "display" : "Metabolic equivalent of task by standard resting metabolic rate panel",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Metabolinen ekvivalentti standardissa lepoaineenvaihdunnassa -paneeli"
+        },
+        {
+          "language" : "sv",
+          "value" : "Metabolisk ekvivalent genom standard viloämnesomsättning -panel"
+        },
+        {
+          "language" : "en",
+          "value" : "Metabolic equivalent of task by standard resting metabolic rate panel"
+        }]
+      },
+      {
+        "code" : "82284-1",
+        "display" : "Standard resting metabolic rate",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Standardi lepoaineenvaihdunta"
+        },
+        {
+          "language" : "sv",
+          "value" : "Standard viloämnesomsättning"
+        },
+        {
+          "language" : "en",
+          "value" : "Standard resting metabolic rate"
+        }]
+      },
+      {
+        "code" : "82261-9",
+        "display" : "Measured metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Mitattu metabolinen ekvivalentti"
+        },
+        {
+          "language" : "sv",
+          "value" : "Uppmätt metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Measured metabolic equivalent of task"
+        }]
+      },
+      {
+        "code" : "82262-7",
+        "display" : "Estimated metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Arvioitu metabolinen ekvivalentti"
+        },
+        {
+          "language" : "sv",
+          "value" : "Uppskattad metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Estimated metabolic equivalent of task"
+        }]
+      },
+      {
+        "code" : "82280-9",
+        "display" : "Source for estimated metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Lähde arvioidulle metaboliselle ekvivalentille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Källa för uppskattad metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Source for estimated metabolic equivalent of task"
+        }]
+      },
+      {
+        "code" : "82263-5",
+        "display" : "Reported metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Raportoitu metabolinen ekvivalentti"
+        },
+        {
+          "language" : "sv",
+          "value" : "Rapporterad metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Reported metabolic equivalent of task"
+        }]
+      },
+      {
+        "code" : "82281-7",
+        "display" : "Source for reported metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Lähde raportoidulle metaboliselle ekvivalentille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Källa för rapporterad metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Source for reported metabolic equivalent of task"
+        }]
+      },
+      {
+        "code" : "82271-8",
+        "display" : "Adjusted metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Korjattu metabolinen ekvivalentti"
+        },
+        {
+          "language" : "sv",
+          "value" : "Justerad metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Adjusted metabolic equivalent of task"
+        }]
+      },
+      {
+        "code" : "82283-3",
+        "display" : "Source for adjusted metabolic equivalent of task",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Lähde korjatulle metaboliselle ekvivalentille"
+        },
+        {
+          "language" : "sv",
+          "value" : "Källa för justerad metabolisk ekvivalent"
+        },
+        {
+          "language" : "en",
+          "value" : "Source for adjusted metabolic equivalent of task"
+        }]
+      }]
+    }]
+  }
+}

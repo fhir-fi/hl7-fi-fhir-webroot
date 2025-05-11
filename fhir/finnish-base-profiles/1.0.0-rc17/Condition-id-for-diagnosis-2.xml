@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="id-for-diagnosis-2"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="id-for-diagnosis-2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;id-for-diagnosis-2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-reason-for-care.html">FI Base Reason for Care (encounter-diagnosis and reason for visit)</a></p></div><p><b>Primary condition for encounter</b>: Päädiagnoosi tai päätoimenpide (Details: urn:oid:1.2.246.537.5.40005.2003 code PAA = 'PAA', stated as 'Päädiagnoosi tai päätoimenpide')</p><p><b>Permanence of condition</b>: Kertaluonteinen (Details: urn:oid:1.2.246.537.5.40003.2003 code KER = 'KER', stated as 'Kertaluonteinen')</p><p><b>External cause for diagnosis</b>: Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen (Details: urn:oid:1.2.246.537.6.1.1999 code X44 = 'X44', stated as 'Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen')</p><p><b>Categorization of the type of accident</b>: Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä (Details: urn:oid:1.2.246.537.6.1.1999 code Y95.0 = 'Y95.0', stated as 'Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä')</p><p><b>Medication that caused this condition</b>: BURANA 200 mg tabletti, kalvopäällysteinen (Details: urn:oid:1.2.246.537.6.32.2007 code M01AE01 = 'M01AE01', stated as 'BURANA 200 mg tabletti, kalvopäällysteinen')</p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Määrittämätön lääkeaineen epäedullinen vaikutus <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#T88.7)</span></p><p><b>subject</b>: <a href="Patient-patient-of-municipality.html">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p></div>
+  </text>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40005.2003"/>
+      <code value="PAA"/>
+      <display value="Päädiagnoosi tai päätoimenpide"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40003.2003"/>
+      <code value="KER"/>
+      <display value="Kertaluonteinen"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-external-cause">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.1.1999"/>
+      <code value="X44"/>
+      <display value="Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.1.1999"/>
+      <code value="Y95.0"/>
+      <display value="Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-caused-by-medication">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.32.2007"/>
+      <code value="M01AE01"/>
+      <display value="BURANA 200 mg tabletti, kalvopäällysteinen"/>
+    </valueCoding>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.1.1999"/>
+      <code value="T88.7"/>
+      <display value="Määrittämätön lääkeaineen epäedullinen vaikutus"/>
+    </coding>
+    <text value="Määrittämätön lääkeaineen epäedullinen vaikutus"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-of-municipality"/>
+  </subject>
+  <onsetDateTime value="2023-01-05T02:06:24+03:00"/>
+</Condition>

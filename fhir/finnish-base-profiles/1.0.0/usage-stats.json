@@ -1,0 +1,459 @@
+{
+  "package": "hl7.fhir.fi.base",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FI",
+  "extensions": [
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident",
+      "title": "Categorization of the type of accident",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-cause-of-adverse-effect",
+      "title": "Cause of an adverse effect",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-caused-by-medication",
+      "title": "Medication that caused this condition",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-endocrinological-disorder",
+      "title": "Endocrinological disorder",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-external-cause",
+      "title": "External cause for diagnosis",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+      "title": "Permanence of condition",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-physical-excercise",
+      "title": "Type of physical exercise during which injury occurred.",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary",
+      "title": "Primary condition for encounter",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code",
+      "title": "Municipality Code",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession",
+      "title": "Patient Profession Extension",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/vaccination-recorder",
+      "title": "Vaccination Recorder",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "Appointment": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment",
+        "title": "FI Base Appointment"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care",
+        "title": "FI Base Reason for Care (encounter-diagnosis and reason for visit)"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter",
+        "title": "FI Base Encounter"
+      }
+    ],
+    "EpisodeOfCare": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-episode-of-care",
+        "title": "FI Base EpisodeOfCare"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service",
+        "title": "FI Base HealthcareService"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-immunization",
+        "title": "Fi Base Immunization"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile",
+        "title": "An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile"
+      },
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-other-metadata-profile",
+        "title": "An imaginary profile for Kanta system, specifying things apart from the information custodian"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location",
+        "title": "FI Base Location"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication",
+        "title": "FI Base Patient Medication"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration",
+        "title": "FI Base MedicationAdministration"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request",
+        "title": "FI Base Patient MedicationRequest"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement",
+        "title": "FI Base MedicationStatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation",
+        "title": "FI Base Observation"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization",
+        "title": "FI Base Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient",
+        "title": "FI Base Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner",
+        "title": "FI Base Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role",
+        "title": "FI Base PractitionerRole"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure",
+        "title": "Fi Base Procedure"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule",
+        "title": "FI Base Schedule"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot",
+        "title": "FI Base Slot"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt": [
+      "Appointment"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation": [
+      "Observation.valueQuantity"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication": [
+      "Observation"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/CNSdrug": [
+      "Medication"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/boundsDurationStartDate": [
+      "MedicationRequest.dosageInstruction.timing.repeat.boundsDuration"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/boundsRangeStartDate": [
+      "MedicationRequest.dosageInstruction.timing.repeat.boundsRange"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/drug": [
+      "Medication"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/lockStatus": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/medicineId": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/medicinePauseInterval": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/narcotic": [
+      "Medication"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/neRep": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/package": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength": [
+      "Medication"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/previousDispense": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/sic": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/totalAmount": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct": [
+      "Medication"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/usage": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/validityTime": [
+      "MedicationRequest.dispenseRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/versionNumber": [
+      "MedicationRequest"
+    ],
+    "http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld": [
+      "MedicationRequest.dosageInstruction"
+    ],
+    "https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterSpecifier": [
+      "Provenance"
+    ],
+    "https://gen.kanta.fi/fhir/StructureDefinition/extension/RegisterType": [
+      "Provenance"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-cause-of-adverse-effect": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-caused-by-medication": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-endocrinological-disorder": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-external-cause": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-physical-excercise": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary": [
+      "Condition"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code": [
+      "Patient"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession": [
+      "Patient"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/vaccination-recorder": [
+      "Immunization"
+    ]
+  }
+}

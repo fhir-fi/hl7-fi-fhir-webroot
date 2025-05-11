@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2> a fhir:MedicationAdministration;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "a4d97476-39fa-46c6-bf2e-1fb153a7bbe2"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-05-27T13:04:55.345+03:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n      Name of the medication: Actrapid <br/>\r\n      VNRCode: Glucose In Blood (15074-8) <br/>\r\n      Type of insulin: Fast-acting insulin (ins-short-fast) <br/>\r\n      Time: 18.5.2019 15:05 \r\n    </div>"
+  ]; # 
+  fhir:MedicationAdministration.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:2bc59f2d-5e28-4d1b-a403-bf3a27b1610c" ]
+  ]; # 
+  fhir:MedicationAdministration.status [ fhir:value "completed"]; # 
+  fhir:MedicationAdministration.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode" ];
+       fhir:Coding.code [ fhir:value "ins-short-fast" ];
+       fhir:Coding.display [ fhir:value "Fast-acting insulin" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://ownSystem.fi/CodeSystem/cs-insulincode" ];
+       fhir:Coding.code [ fhir:value "1234" ];
+       fhir:Coding.display [ fhir:value "Fast  insulin" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "A code for short and fast acting insulins, for example insulins that could be included in the group A10AB of the ATC Code System." ]
+  ]; # 
+  fhir:MedicationAdministration.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:MedicationAdministration.effectiveDateTime [ fhir:value "2020-10-05"^^xsd:date] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

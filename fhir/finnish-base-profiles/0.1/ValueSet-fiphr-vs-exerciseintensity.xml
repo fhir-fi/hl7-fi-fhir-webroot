@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-exerciseintensity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA20164-2/">LA20164-2</a></td><td>Light</td><td>Kevyt</td><td>Lätt</td><td>Light</td></tr><tr><td><a href="https://loinc.org/LA20165-9/">LA20165-9</a></td><td>Moderate</td><td>Reipas</td><td>Rask</td><td>Moderate</td></tr><tr><td><a href="https://loinc.org/LA20166-7/">LA20166-7</a></td><td>Vigorous</td><td>Rasittava</td><td>Ansträngande</td><td>Vigorous</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseintensity"/>
+  <version value="0.2.1"/>
+  <name value="fiphr-vs-exerciseintensity"/>
+  <title value="Value Set Finnish PHR Exercise Intensity"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-24"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Exercise Intensity value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA20164-2"/>
+        <display value="Light"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kevyt"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Lätt"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Light"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA20165-9"/>
+        <display value="Moderate"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Reipas"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Rask"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Moderate"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA20166-7"/>
+        <display value="Vigorous"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Rasittava"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Ansträngande"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Vigorous"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

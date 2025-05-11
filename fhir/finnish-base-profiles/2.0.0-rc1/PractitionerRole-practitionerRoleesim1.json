@@ -1,0 +1,14 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "practitionerRoleesim1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole practitionerRoleesim1</b></p><a name=\"practitionerRoleesim1\"> </a><a name=\"hcpractitionerRoleesim1\"> </a><a name=\"practitionerRoleesim1-fi-FI\"> </a><p><b>practitioner</b>: <a href=\"Practitioner-practitioneresim1.html\">Practitioner Lars Matias van der Knaapi (official)</a></p><p><b>organization</b>: <a href=\"Organization-organizationesim1.html\">Organization Testi terveysasema</a></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/practitioneresim1"
+  },
+  "organization" : {
+    "reference" : "Organization/organizationesim1"
+  }
+}

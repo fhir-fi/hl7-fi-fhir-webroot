@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiphr-cs-vnrcode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>urn:oid:1.2.246.537.6.55</code> defines many codes, but they are not represented here</p></div>
+  </text>
+  <url value="urn:oid:1.2.246.537.6.55"/>
+  <version value="0.3.0"/>
+  <name value="Code System Finnish PHR VNR Code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-17T00:00:00+00:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR VNR codesystem, that defines VNR codes with CodeSystem.content as not-present."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ColonBiopsy"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure ColonBiopsy</b></p><a name="ColonBiopsy"> </a><a name="hcColonBiopsy"> </a><a name="ColonBiopsy-fi-FI"> </a><p><b>identifier</b>: 12345</p><p><b>partOf</b>: <a href="Procedure-ProcedureColotomy.html">Procedure JFA16</a></p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{urn:oid:1.2.246.537.6.601 PIENTOI}">PIENTOI</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 76164006}">Biopsy of colon</span></p><p><b>subject</b>: <a href="Patient-patient-of-municipality.html">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-practitioner-licensed-physician.html">Practitioner Dave Doctor </a></td></tr></table><p><b>location</b>: <a href="Location-LocationExample.html">Location Kirurgian poliklinikka</a></p></div>
+  </text>
+  <identifier>
+    <value value="12345"/>
+  </identifier>
+  <partOf>
+    <reference value="Procedure/ProcedureColotomy"/>
+  </partOf>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.601"/>
+      <version value="2013"/>
+      <code value="PIENTOI"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="76164006"/>
+    </coding>
+    <text value="Biopsy of colon"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-of-municipality"/>
+  </subject>
+  <performer>
+    <actor>
+      <reference value="Practitioner/practitioner-licensed-physician"/>
+    </actor>
+  </performer>
+  <location>
+    <reference value="Location/LocationExample"/>
+  </location>
+</Procedure>

@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/PractitionerRole/PractitionerRoleGP> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PractitionerRoleGP"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"PractitionerRoleGP\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;PractitionerRoleGP&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-practitioner-role.html\">FI Base PractitionerRole</a></p></div><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>period</b>: 2023-01-01 --&gt; 2023-12-31</p><p><b>practitioner</b>: <a href=\"Practitioner-PractitionerLicensedPhysician.html\">Practitioner/PractitionerLicensedPhysician</a> &quot; DOCTOR&quot;</p><p><b>organization</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization/1.2.246.10.2085212.10.1314</a> &quot;Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka&quot;</p><p><b>code</b>: Referring Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0286.html\">providerRole</a>#RP)</span></p><p><b>specialty</b>: General medical practice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#408443003)</span></p><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p><p><b>healthcareService</b>: <a href=\"HealthcareService-healthcareService-example.html\">HealthcareService/healthcareService-example</a> &quot;Vastaanottoaika*&quot;</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 16:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: thu, fri</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote></div>"
+  ]; # 
+  fhir:PractitionerRole.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://www.acme.org/practitioners" ];
+     fhir:Identifier.value [ fhir:value "23" ]
+  ]; # 
+  fhir:PractitionerRole.active [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "2023-01-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2023-12-31"^^xsd:date ]
+  ]; # 
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Practitioner/PractitionerLicensedPhysician>;
+     fhir:Reference.reference [ fhir:value "Practitioner/PractitionerLicensedPhysician" ]
+  ]; # 
+  fhir:PractitionerRole.organization [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1314>;
+     fhir:Reference.reference [ fhir:value "Organization/1.2.246.10.2085212.10.1314" ]
+  ]; # 
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0286" ];
+       fhir:Coding.code [ fhir:value "RP" ]
+     ]
+  ]; # 
+  fhir:PractitionerRole.specialty [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:408443003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "408443003" ];
+       fhir:Coding.display [ fhir:value "General medical practice" ]
+     ]
+  ]; # 
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample>;
+     fhir:Reference.reference [ fhir:value "Location/LocationExample" ]
+  ]; # 
+  fhir:PractitionerRole.healthcareService [
+     fhir:index 0;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example>;
+     fhir:Reference.reference [ fhir:value "HealthcareService/healthcareService-example" ]
+  ]; # 
+  fhir:PractitionerRole.availableTime [
+     fhir:index 0;
+     fhir:PractitionerRole.availableTime.daysOfWeek [
+       fhir:value "mon";
+       fhir:index 0
+     ], [
+       fhir:value "tue";
+       fhir:index 1
+     ], [
+       fhir:value "wed";
+       fhir:index 2
+     ];
+     fhir:PractitionerRole.availableTime.availableStartTime [ fhir:value "09:00:00"^^xsd:time ];
+     fhir:PractitionerRole.availableTime.availableEndTime [ fhir:value "16:30:00"^^xsd:time ]
+  ], [
+     fhir:index 1;
+     fhir:PractitionerRole.availableTime.daysOfWeek [
+       fhir:value "thu";
+       fhir:index 0
+     ], [
+       fhir:value "fri";
+       fhir:index 1
+     ];
+     fhir:PractitionerRole.availableTime.availableStartTime [ fhir:value "09:00:00"^^xsd:time ];
+     fhir:PractitionerRole.availableTime.availableEndTime [ fhir:value "12:00:00"^^xsd:time ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/PractitionerRole/PractitionerRoleGP.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

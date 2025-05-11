@@ -1,0 +1,43 @@
+{
+  "resourceType" : "Slot",
+  "id" : "example-slot",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Slot example-slot</b></p><a name=\"example-slot\"> </a><a name=\"hcexample-slot\"> </a><a name=\"example-slot-fi-FI\"> </a><p><b>identifier</b>: 123456789</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50.201801 SOTE19}\">Perheoikeudelliset palvelut</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49.201501 NC}\">Isyyden selvittämispalvelu</span></p><p><b>appointmentType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.884.2015 10}, {http://terminology.hl7.org/CodeSystem/v2-0276 ROUTINE}\">Kertakäynti toimipaikassa</span></p><p><b>schedule</b>: <a href=\"Schedule/234567890\">Schedule/234567890</a></p><p><b>status</b>: Free</p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p></div>"
+  },
+  "identifier" : [{
+    "value" : "123456789"
+  }],
+  "serviceCategory" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.50.201801",
+      "code" : "SOTE19",
+      "display" : "Perheoikeudelliset palvelut"
+    }]
+  }],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.49.201501",
+      "code" : "NC",
+      "display" : "Isyyden selvittämispalvelu"
+    }]
+  }],
+  "appointmentType" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.884.2015",
+      "code" : "10",
+      "display" : "Kertakäynti toimipaikassa"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0276",
+      "code" : "ROUTINE"
+    }],
+    "text" : "Kertakäynti toimipaikassa"
+  },
+  "schedule" : {
+    "reference" : "Schedule/234567890"
+  },
+  "status" : "free",
+  "start" : "2020-01-01T12:00:00+02:00",
+  "end" : "2020-01-01T12:30:00+02:00"
+}

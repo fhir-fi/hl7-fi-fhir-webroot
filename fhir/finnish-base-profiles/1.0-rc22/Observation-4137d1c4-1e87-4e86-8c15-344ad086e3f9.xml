@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="4137d1c4-1e87-4e86-8c15-344ad086e3f9"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-05-27T12:05:44.669+03:00"/>
+    <profile value="http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken"/>
+  </meta>
+  <language value="fi"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Daily steps (41950-7)<br />Time: 20.11.2017 11:46<br />Result: 165 </div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:0b0a55d2-799a-45f5-a161-6a4a5faad1f8"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://phr.kanta.fi/fiphr-cs-fitnesscategory"/>
+      <code value="fitness"/>
+      <display value="Fitness"/>
+    </coding>
+    <coding>
+      <system value="http://ownSystem.com/phr-cs-fitnesscategory"/>
+      <code value="fitness"/>
+      <display value="Fatneeees"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="66334-4"/>
+      <display value="Steps"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="41950-7"/>
+      <display value="Number of Steps in 24 Hours"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="129006008"/>
+      <display value="Walking (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+  </subject>
+  <effectiveDateTime value="2012-09-17"/>
+  <issued value="2012-02-02T10:00:00.936+02:00"/>
+  <performer>
+    <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+  </performer>
+  <valueQuantity>
+    <value value="6500"/>
+    <unit value="1"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="1"/>
+  </valueQuantity>
+  <interpretation>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+      <code value="N"/>
+      <display value="Normal"/>
+    </coding>
+  </interpretation>
+  <note>
+    <text value="Note"/>
+  </note>
+  <referenceRange>
+    <low>
+      <value value="5000"/>
+      <unit value="1"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </low>
+    <high>
+      <value value="15000"/>
+      <unit value="1"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </high>
+    <appliesTo>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="248153007"/>
+        <display value="Male"/>
+      </coding>
+      <text value="Normal range"/>
+    </appliesTo>
+    <age>
+      <low>
+        <value value="15"/>
+        <unit value="years"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </low>
+      <high>
+        <value value="100"/>
+        <unit value="years"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </high>
+    </age>
+    <text value="Age"/>
+  </referenceRange>
+</Observation>

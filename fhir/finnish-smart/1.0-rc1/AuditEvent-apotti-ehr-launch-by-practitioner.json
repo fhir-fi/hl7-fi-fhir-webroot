@@ -1,0 +1,39 @@
+{
+  "resourceType" : "AuditEvent",
+  "id" : "apotti-ehr-launch-by-practitioner",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AuditEvent</b><a name=\"apotti-ehr-launch-by-practitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AuditEvent &quot;apotti-ehr-launch-by-practitioner&quot; </p></div><p><b>type</b>: User Authentication (Details: http://hl7.org/fhir/ValueSet/audit-event-type code 110114 = '110114', stated as 'User Authentication')</p><p><b>recorded</b>: Jan 24, 2023, 12:20:18 PM</p><blockquote><p><b>agent</b></p><p><b>who</b>: <span>: Apotti Ekosysteemi</span></p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>agent</b></p><p><b>who</b>: <span>: Sensotrend Oy</span></p><p><b>requestor</b>: false</p></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><span>: Sensotrend Oy</span></td><td>Web Server (Details: http://hl7.org/fhir/ValueSet/audit-source-type code 3 = '3', stated as 'Web Server')</td></tr></table></div>"
+  },
+  "type" : {
+    "system" : "http://hl7.org/fhir/ValueSet/audit-event-type",
+    "code" : "110114",
+    "display" : "User Authentication"
+  },
+  "recorded" : "2023-01-24T12:20:18.000+02:00",
+  "agent" : [{
+    "who" : {
+      "type" : "Organization",
+      "display" : "Apotti Ekosysteemi"
+    },
+    "requestor" : true
+  },
+  {
+    "who" : {
+      "type" : "Organization",
+      "display" : "Sensotrend Oy"
+    },
+    "requestor" : false
+  }],
+  "source" : {
+    "observer" : {
+      "type" : "Organization",
+      "display" : "Sensotrend Oy"
+    },
+    "type" : [{
+      "system" : "http://hl7.org/fhir/ValueSet/audit-source-type",
+      "code" : "3",
+      "display" : "Web Server"
+    }]
+  }
+}

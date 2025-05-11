@@ -1,0 +1,142 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ajanvarauksentila-appointmentstatus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ajanvarauksentila-appointmentstatus</b></p><a name=\"ajanvarauksentila-appointmentstatus\"> </a><a name=\"hcajanvarauksentila-appointmentstatus\"> </a><a name=\"ajanvarauksentila-appointmentstatus-fi-FI\"> </a><p>Mapping from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943 to <a href=\"http://hl7.org/fhir/R4/valueset-appointmentstatus.html\">AppointmentStatus</a></p><br/><p><b>Group 1 </b>Mapping from <code>https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</code> to <a href=\"http://hl7.org/fhir/R4/codesystem-appointmentstatus.html\">AppointmentStatus</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</td><td/><td colspan=\"2\"><b>Codes</b> from <a href=\"http://hl7.org/fhir/R4/codesystem-appointmentstatus.html\" title=\"http://hl7.org/fhir/appointmentstatus\">AppointmentStatus</a></td><td/></tr><tr><td style=\"border-right-width: 0px\">1</td><td style=\"border-left-width: 0px\">Suunniteltu</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">waitlist</td><td style=\"border-left-width: 0px\">Waitlisted</td><td>In FHIR there is no distinction between Suunniteltu and Tilattu. The distinction is that in Tilattu the service provider has been identified.</td></tr><tr><td style=\"border-right-width: 0px\">2</td><td style=\"border-left-width: 0px\">Tilattu</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">waitlist</td><td style=\"border-left-width: 0px\">Waitlisted</td><td>In FHIR there is no distinction between Suunniteltu and Tilattu. The distinction is that in Tilattu the service provider has been identified.</td></tr><tr><td style=\"border-right-width: 0px\">3</td><td style=\"border-left-width: 0px\">Varattu</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">booked</td><td style=\"border-left-width: 0px\">Booked</td><td/></tr><tr><td style=\"border-right-width: 0px\">4</td><td style=\"border-left-width: 0px\">Peruttu</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">cancelled</td><td style=\"border-left-width: 0px\">Cancelled</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">5</td><td style=\"border-left-width: 0px\">Siirretty</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">6</td><td style=\"border-left-width: 0px\">Alkanut</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">arrived</td><td style=\"border-left-width: 0px\">Arrived</td><td>There is no status for an appointment being in process in FHIR. In FHIR this information is tracked with the status of the Encounter resource.</td></tr><tr><td style=\"border-right-width: 0px\">7</td><td style=\"border-left-width: 0px\">Toteutunut</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#inexact\" title=\"inexact\">maps loosely to</a></td><td style=\"border-right-width: 0px\">fulfilled</td><td style=\"border-left-width: 0px\">Fulfilled</td><td>There is no status for an appointment being in process in FHIR. In FHIR this information is tracked with the status of the Encounter resource.</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">8</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Ehdotettu</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">proposed</td><td style=\"border-left-width: 0px\">Proposed</td><td>The code proposed can be used to highlight that none of the participants have finalized their acceptance, or that there is still uncertainty about the time.</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">pending</td><td style=\"border-left-width: 0px\">Pending</td><td>The code pending is a  more generic match to Ehdotettu.</td></tr><tr><td style=\"border-right-width: 0px\">9</td><td style=\"border-left-width: 0px\">Saapumatta</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">noshow</td><td style=\"border-left-width: 0px\">No Show</td><td/></tr><tr><td style=\"border-right-width: 0px\">10</td><td style=\"border-left-width: 0px\">Ilmoittautunut</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">checked-in</td><td style=\"border-left-width: 0px\">Checked In</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "FiAppointmentStatusCodeMap"] ; # 
+  fhir:title [ fhir:v "Ajanvarauksen tila to Appointment status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-10-22T00:30:31+03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Finland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Finland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.fi/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mikael@sensotrend.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mapping between the Finnish logical model [*Ajanvaraus - Ajanvarauksen tila*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943) (oid `1.2.246.537.6.881`) and FHIR Appointment status codes."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FI" ] ;
+       fhir:display [ fhir:v "Finland" ]
+     ] )
+  ] ) ; # 
+  fhir:source [ fhir:v "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"^^xsd:anyURI] ; # 
+  fhir:target [
+     fhir:v "http://hl7.org/fhir/ValueSet/appointmentstatus"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/appointmentstatus>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://hl7.org/fhir/appointmentstatus"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Suunniteltu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "waitlist" ] ;
+         fhir:display [ fhir:v "Waitlisted" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "In FHIR there is no distinction between Suunniteltu and Tilattu. The distinction is that in Tilattu the service provider has been identified." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Tilattu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "waitlist" ] ;
+         fhir:display [ fhir:v "Waitlisted" ] ;
+         fhir:equivalence [ fhir:v "wider" ] ;
+         fhir:comment [ fhir:v "In FHIR there is no distinction between Suunniteltu and Tilattu. The distinction is that in Tilattu the service provider has been identified." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Varattu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "booked" ] ;
+         fhir:display [ fhir:v "Booked" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "Peruttu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "cancelled" ] ;
+         fhir:display [ fhir:v "Cancelled" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "Siirretty" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ] ;
+         fhir:comment [ fhir:v "There is no status for rescheduled appointments in FHIR. This code SHOULD be mapped to cancelled, if required. Note that this code is deprecated." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "6" ] ;
+       fhir:display [ fhir:v "Alkanut" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "arrived" ] ;
+         fhir:display [ fhir:v "Arrived" ] ;
+         fhir:equivalence [ fhir:v "inexact" ] ;
+         fhir:comment [ fhir:v "There is no status for an appointment being in process in FHIR. In FHIR this information is tracked with the status of the Encounter resource." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "7" ] ;
+       fhir:display [ fhir:v "Toteutunut" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "fulfilled" ] ;
+         fhir:display [ fhir:v "Fulfilled" ] ;
+         fhir:equivalence [ fhir:v "inexact" ] ;
+         fhir:comment [ fhir:v "There is no status for an appointment being in process in FHIR. In FHIR this information is tracked with the status of the Encounter resource." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "Ehdotettu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "proposed" ] ;
+         fhir:display [ fhir:v "Proposed" ] ;
+         fhir:equivalence [ fhir:v "narrower" ] ;
+         fhir:comment [ fhir:v "The code proposed can be used to highlight that none of the participants have finalized their acceptance, or that there is still uncertainty about the time." ]
+       ] [
+         fhir:code [ fhir:v "pending" ] ;
+         fhir:display [ fhir:v "Pending" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "The code pending is a  more generic match to Ehdotettu." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:display [ fhir:v "Saapumatta" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "noshow" ] ;
+         fhir:display [ fhir:v "No Show" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "10" ] ;
+       fhir:display [ fhir:v "Ilmoittautunut" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "checked-in" ] ;
+         fhir:display [ fhir:v "Checked In" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

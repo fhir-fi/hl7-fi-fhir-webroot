@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-sourceforestimatedmet"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/LA26238-8/">LA26238-8</a></td><td>Compendium of Physical Activities</td><td>Compendium of Physical Activities</td><td>Compendium of Physical Activities</td><td>Compendium of Physical Activities</td></tr><tr><td><a href="https://loinc.org/LA26239-6/">LA26239-6</a></td><td>Modified Bruce protocol</td><td>Modifioitu Bruce-protokolla</td><td>Modifierat Bruce-protokoll</td><td>Modified Bruce protocol</td></tr><tr><td><a href="https://loinc.org/LA26240-4/">LA26240-4</a></td><td>Balke protocol</td><td>Balke-protokolla</td><td>Balke-protokoll</td><td>Balke protocol</td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other, specify</td><td>Muu, tarkenna</td><td>Annat, specificera</td><td>Other, specity</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforestimatedmet"/>
+  <version value="0.4.0"/>
+  <name value="fiphr-vs-sourceforestimatedmet"/>
+  <title value="Value Set Finnish PHR Source for Estimated MET"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-04"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Source for Estimated MET value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA26238-8"/>
+        <display value="Compendium of Physical Activities"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Compendium of Physical Activities"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Compendium of Physical Activities"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Compendium of Physical Activities"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA26239-6"/>
+        <display value="Modified Bruce protocol"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Modifioitu Bruce-protokolla"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Modifierat Bruce-protokoll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Modified Bruce protocol"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA26240-4"/>
+        <display value="Balke protocol"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Balke-protokolla"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Balke-protokoll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Balke protocol"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other, specify"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Muu, tarkenna"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Annat, specificera"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Other, specity"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

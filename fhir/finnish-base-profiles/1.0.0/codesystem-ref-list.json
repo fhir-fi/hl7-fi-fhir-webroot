@@ -1,0 +1,15 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "FiBaseSecurityLabelCS",
+      "title" : "Finnish CodeSystem for security labels",
+      "description" : "This is the CodeSystem for security labels in accordance with finnish authorities.",
+      "uses" : {
+      },
+      "ValueSet-fi-base-security-label-vs.html" : "Finnish ValueSet for security labels in accordance with finnish authorities"
+    }
+  ]
+}

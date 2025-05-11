@@ -1,0 +1,116 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-exercisetracking",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/55409-7/\">55409-7</a></td><td>Exercise tracking panel</td><td>Liikunnan seuranta -paneeli</td><td>Träningsspårning-panel</td><td>Exercise tracking panel</td></tr><tr><td><a href=\"https://loinc.org/73985-4/\">73985-4</a></td><td>Exercise activity</td><td>Liikunta-aktiviteetti</td><td>Träningsaktivitet</td><td>Exercise activity</td></tr><tr><td><a href=\"https://loinc.org/55411-3/\">55411-3</a></td><td>Exercise duration</td><td>Liikunnan kesto</td><td>Träningsvaraktighet</td><td>Exercise duration</td></tr><tr><td><a href=\"https://loinc.org/74008-4/\">74008-4</a></td><td>Exercise intensity</td><td>Liikunnan intensiteetti</td><td>Träningsintensitet</td><td>Exercise intensity</td></tr><tr><td><a href=\"https://loinc.org/55421-2/\">55421-2</a></td><td>Calories burned</td><td>Energiankulutus</td><td>Energiförbrukning</td><td>Calories burned</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exercisetracking",
+  "version" : "0.2.0",
+  "name" : "fiphr-vs-exercisetracking",
+  "title" : "Value Set Finnish PHR Exercise Tracking",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-02-24",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR Exercise Tracking value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "55409-7",
+        "display" : "Exercise tracking panel",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Liikunnan seuranta -paneeli"
+        },
+        {
+          "language" : "sv",
+          "value" : "Träningsspårning-panel"
+        },
+        {
+          "language" : "en",
+          "value" : "Exercise tracking panel"
+        }]
+      },
+      {
+        "code" : "73985-4",
+        "display" : "Exercise activity",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Liikunta-aktiviteetti"
+        },
+        {
+          "language" : "sv",
+          "value" : "Träningsaktivitet"
+        },
+        {
+          "language" : "en",
+          "value" : "Exercise activity"
+        }]
+      },
+      {
+        "code" : "55411-3",
+        "display" : "Exercise duration",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Liikunnan kesto"
+        },
+        {
+          "language" : "sv",
+          "value" : "Träningsvaraktighet"
+        },
+        {
+          "language" : "en",
+          "value" : "Exercise duration"
+        }]
+      },
+      {
+        "code" : "74008-4",
+        "display" : "Exercise intensity",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Liikunnan intensiteetti"
+        },
+        {
+          "language" : "sv",
+          "value" : "Träningsintensitet"
+        },
+        {
+          "language" : "en",
+          "value" : "Exercise intensity"
+        }]
+      },
+      {
+        "code" : "55421-2",
+        "display" : "Calories burned",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Energiankulutus"
+        },
+        {
+          "language" : "sv",
+          "value" : "Energiförbrukning"
+        },
+        {
+          "language" : "en",
+          "value" : "Calories burned"
+        }]
+      }]
+    }]
+  }
+}

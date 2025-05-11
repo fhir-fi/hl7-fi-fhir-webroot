@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/PractitionerRole/PractitionerRoleGP> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PractitionerRoleGP"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole PractitionerRoleGP</b></p><a name=\"PractitionerRoleGP\"> </a><a name=\"hcPractitionerRoleGP\"> </a><a name=\"PractitionerRoleGP-fi-FI\"> </a><p><b>identifier</b>: <code>http://www.acme.org/practitioners</code>/23</p><p><b>active</b>: true</p><p><b>period</b>: 2023-01-01 --&gt; 2023-12-31</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner-licensed-physician.html\">Practitioner Dave Doctor </a></p><p><b>organization</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</a></p><p><b>code</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0286 RP}\">Referring Provider</span></p><p><b>specialty</b>: <span title=\"Codes:{http://snomed.info/sct 408443003}\">General medical practice</span></p><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location Kirurgian poliklinikka</a></p><p><b>healthcareService</b>: <a href=\"HealthcareService-healthcareService-example.html\">HealthcareService Vastaanottoaika*</a></p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Monday, Tuesday, Wednesday</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 16:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: Thursday, Friday</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2023-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Practitioner/practitioner-licensed-physician> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-licensed-physician" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1314> ;
+     fhir:reference [ fhir:v "Organization/1.2.246.10.2085212.10.1314" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0286"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RP" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:408443003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "408443003" ] ;
+       fhir:display [ fhir:v "General medical practice" ]
+     ] )
+  ] ) ; # 
+  fhir:location ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample> ;
+     fhir:reference [ fhir:v "Location/LocationExample" ]
+  ] ) ; # 
+  fhir:healthcareService ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example> ;
+     fhir:reference [ fhir:v "HealthcareService/healthcareService-example" ]
+  ] ) ; # 
+  fhir:availableTime ( [
+     fhir:daysOfWeek ( [ fhir:v "mon" ] [ fhir:v "tue" ] [ fhir:v "wed" ] ) ;
+     fhir:availableStartTime [ fhir:v "09:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "16:30:00"^^xsd:time ]
+  ] [
+     fhir:daysOfWeek ( [ fhir:v "thu" ] [ fhir:v "fri" ] ) ;
+     fhir:availableStartTime [ fhir:v "09:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "12:00:00"^^xsd:time ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

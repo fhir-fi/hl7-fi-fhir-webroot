@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Procedure/ColonBiopsy> a fhir:Procedure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ColonBiopsy"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"ColonBiopsy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;ColonBiopsy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-procedure.html\">Fi Base Procedure</a></p></div><p><b>identifier</b>: id: 12345</p><p><b>partOf</b>: <a href=\"Procedure-ProcedureColotomy.html\">Procedure/ProcedureColotomy</a></p><p><b>status</b>: completed</p><p><b>category</b>: PIENTOI <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PIENTOI)</span></p><p><b>code</b>: Biopsy of colon <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76164006)</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Practitioner/example\">Practitioner/example</a></td></tr></table><p><b>location</b>: <a href=\"Location/1\">Location/1</a></p></div>"
+  ]; # 
+  fhir:Procedure.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "12345" ]
+  ]; # 
+  fhir:Procedure.partOf [
+     fhir:index 0;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Procedure/ProcedureColotomy>;
+     fhir:Reference.reference [ fhir:value "Procedure/ProcedureColotomy" ]
+  ]; # 
+  fhir:Procedure.status [ fhir:value "completed"]; # 
+  fhir:Procedure.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.601" ];
+       fhir:Coding.code [ fhir:value "PIENTOI" ]
+     ]
+  ]; # 
+  fhir:Procedure.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:76164006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "76164006" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Biopsy of colon" ]
+  ]; # 
+  fhir:Procedure.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality>;
+     fhir:Reference.reference [ fhir:value "Patient/patient-of-municipality" ]
+  ]; # 
+  fhir:Procedure.performer [
+     fhir:index 0;
+     fhir:Procedure.performer.actor [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Practitioner/example>;
+       fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+     ]
+  ]; # 
+  fhir:Procedure.location [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/1>;
+     fhir:Reference.reference [ fhir:value "Location/1" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Procedure/ColonBiopsy.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

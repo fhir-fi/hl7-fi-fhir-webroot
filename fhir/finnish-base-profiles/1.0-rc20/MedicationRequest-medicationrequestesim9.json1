@@ -1,0 +1,269 @@
+{
+  "resourceType" : "MedicationRequest",
+  "id" : "medicationrequestesim9",
+  "meta" : {
+    "security" : [{
+      "system" : "urn:oid:1.2.246.537.5.40202.201901",
+      "code" : "1"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"medicationrequestesim9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;medicationrequestesim9&quot; </p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{urn:oid:1.2.246.537.5.40202.201901 urn:oid:1.2.246.537.5.40202.201901}\">urn:oid:1.2.246.537.5.40202.201901</span></p></div><p><b>identifier</b>: id:\u00a0urn:oid:1.2.246.10.1602257.93.2019.855, id:\u00a0urn:oid:1.2.246.10.1602257.93.2019.855</p><p><b>status</b>: active</p><p><b>statusReason</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1)</span></p><p><b>intent</b>: order</p><p><b>category</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1)</span></p><p><b>medication</b>: <a href=\"Medication-medicationesim1.html\">Medication/medicationesim1</a></p><p><b>subject</b>: <a href=\"Patient-patientesim1.html\">Patient/patientesim1</a> &quot; VAN DER HENTENRYCK&quot;</p><p><b>authoredOn</b>: 2019-10-16 18:44:16+0200</p><p><b>requester</b>: <a href=\"PractitionerRole-practitionerRoleesim1.html\">PractitionerRole/practitionerRoleesim1</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Tarvittaessa 1-2 tippaa 3-4 tunnin välein.</p><p><b>additionalInstruction</b>: tähän tulee käyttöohjeen lisätieto <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>timing</b>: Once per 3-4 hours</p><p><b>asNeeded</b>: false</p><p><b>route</b>: 1053 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1053)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><h3>DispenseIntervals</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Unit</b></td></tr><tr><td style=\"display: none\">*</td><td>30</td><td>d</td></tr></table><p><b>validityPeriod</b>: ?? --&gt; 2019-10-17 18:44:16+0200</p><p><b>numberOfRepeatsAllowed</b>: 3</p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/versionNumber",
+    "valuePositiveInt" : 1
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/neRep",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/usage",
+    "valueString" : "Kuivien silmien hoitoon."
+  },
+  {
+    "extension" : [{
+      "url" : "dispenseStatus",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.5.40123.2006",
+        "code" : "2"
+      }
+    },
+    {
+      "url" : "invalidationReason",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.5.40103.2006",
+        "code" : "1"
+      }
+    }],
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus"
+  },
+  {
+    "extension" : [{
+      "url" : "reservedStatus",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.5.40122.2006",
+        "code" : "3"
+      }
+    },
+    {
+      "url" : "reservedLockOwner",
+      "valueString" : "1.2.246.10.8182355.10.1"
+    }],
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus"
+  },
+  {
+    "extension" : [{
+      "url" : "lockStatus",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.5.40124.2006",
+        "code" : "2"
+      }
+    },
+    {
+      "url" : "lockOwner",
+      "valueString" : "1.2.246.10.8182355.10.1"
+    }],
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/lockStatus"
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.5.40106.2006",
+      "code" : "0"
+    }
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.5.40303.201501",
+      "code" : "2"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "medicineId",
+      "valueIdentifier" : {
+        "system" : "urn:ietf:rfc:3986",
+        "value" : "urn:oid:1.2.246.10.1602257.93.2019.855.0"
+      }
+    },
+    {
+      "url" : "medicineIdPart",
+      "valuePositiveInt" : 1
+    }],
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/medicineId"
+  }],
+  "identifier" : [{
+    "system" : "http://resepti.kanta.fi/fhir/id/id",
+    "value" : "urn:oid:1.2.246.10.1602257.93.2019.855"
+  },
+  {
+    "system" : "http://resepti.kanta.fi/fhir/id/setId",
+    "value" : "urn:oid:1.2.246.10.1602257.93.2019.855"
+  }],
+  "status" : "active",
+  "statusReason" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.5.40105.2006",
+      "code" : "1"
+    }]
+  },
+  "intent" : "order",
+  "category" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.605.2014",
+      "code" : "1"
+    }]
+  }],
+  "medicationReference" : {
+    "reference" : "Medication/medicationesim1"
+  },
+  "subject" : {
+    "reference" : "Patient/patientesim1"
+  },
+  "authoredOn" : "2019-10-16T18:44:16+02:00",
+  "requester" : {
+    "reference" : "PractitionerRole/practitionerRoleesim1"
+  },
+  "dosageInstruction" : [{
+    "extension" : [{
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld",
+      "valueQuantity" : {
+        "value" : 15,
+        "unit" : "kg"
+      }
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse",
+      "valueBoolean" : false
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/sic",
+      "valueBoolean" : false
+    }],
+    "text" : "Tarvittaessa 1-2 tippaa 3-4 tunnin välein.",
+    "additionalInstruction" : [{
+      "text" : "tähän tulee käyttöohjeen lisätieto"
+    }],
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 3,
+        "periodMax" : 4,
+        "periodUnit" : "h"
+      }
+    },
+    "asNeededBoolean" : false,
+    "route" : {
+      "coding" : [{
+        "system" : "urn:oid:1.2.246.537.6.1403.202001",
+        "code" : "1053"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseRange" : {
+        "low" : {
+          "value" : 1,
+          "unit" : "tippa",
+          "system" : "urn:oid:1.2.246.537.6.138.202001",
+          "code" : "38"
+        },
+        "high" : {
+          "value" : 2,
+          "unit" : "tippa",
+          "system" : "urn:oid:1.2.246.537.6.138.202001",
+          "code" : "38"
+        }
+      }
+    }]
+  }],
+  "dispenseRequest" : {
+    "extension" : [{
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.5.40100.2006",
+        "code" : "1"
+      }
+    },
+    {
+      "extension" : [{
+        "url" : "packageFactor",
+        "valuePositiveInt" : 1
+      },
+      {
+        "url" : "packageAmount",
+        "valuePositiveInt" : 8
+      },
+      {
+        "url" : "packageSizeText",
+        "valueString" : "1X98 fol"
+      }],
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/package"
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/totalAmount",
+      "valueQuantity" : {
+        "value" : 800,
+        "unit" : "fol"
+      }
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/validityTime",
+      "valueDuration" : {
+        "value" : 1,
+        "unit" : "a",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "a"
+      }
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.5.40123.2006",
+        "code" : "1"
+      }
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText",
+      "valueString" : "8X98 fol"
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText",
+      "valueString" : "5X98 fol"
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime",
+      "valueDateTime" : "2019-10-17T18:44:16+02:00"
+    },
+    {
+      "url" : "http://resepti.kanta.fi/StructureDefinition/extension/previousDispense",
+      "valueString" : "98 fol"
+    }],
+    "dispenseInterval" : {
+      "value" : 30,
+      "unit" : "d"
+    },
+    "validityPeriod" : {
+      "end" : "2019-10-17T18:44:16+02:00"
+    },
+    "numberOfRepeatsAllowed" : 3
+  },
+  "substitution" : {
+    "allowedBoolean" : true
+  }
+}

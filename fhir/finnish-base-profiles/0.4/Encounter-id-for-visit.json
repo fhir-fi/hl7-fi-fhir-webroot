@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "id-for-visit",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"id-for-visit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;id-for-visit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-encounter.html\">FI Base Encounter</a></p></div><p><b>identifier</b>: id: id-for-visit (use: USUAL)</p><p><b>status</b>: finished</p><p><b>class</b>: ambulatory (Details: http://terminology.hl7.org/ValueSet/v3-ActEncounterCode code AMB = 'AMB', stated as 'ambulatory')</p><p><b>subject</b>: <a href=\"Patient/id-for-patient\">Patient/id-for-patient</a></p><p><b>period</b>: 2022-02-28 15:03:00+0200 --&gt; 2022-02-28 15:33:00+0200</p><p><b>serviceProvider</b>: <a href=\"Organization/1.2.246.10.2085212.10.1314\">Organization/1.2.246.10.2085212.10.1314</a></p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "value" : "id-for-visit"
+  }],
+  "status" : "finished",
+  "class" : {
+    "system" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+    "code" : "AMB",
+    "display" : "ambulatory"
+  },
+  "subject" : {
+    "reference" : "Patient/id-for-patient"
+  },
+  "period" : {
+    "start" : "2022-02-28T15:03:00+02:00",
+    "end" : "2022-02-28T15:33:00+02:00"
+  },
+  "serviceProvider" : {
+    "reference" : "Organization/1.2.246.10.2085212.10.1314"
+  }
+}

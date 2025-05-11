@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "5c5ae64f-3dd9-4847-b0c0-b9822013a668-54",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5c5ae64f-3dd9-4847-b0c0-b9822013a668-54",
+  "name" : "IntersectionLOINCCodesAndfiphr-vs-nutrition",
+  "title" : "Intersection of LOINC Codes And Value Set Finnish PHR Nutrition",
+  "status" : "draft",
+  "date" : "2023-02-02T11:49:01+02:00"
+}

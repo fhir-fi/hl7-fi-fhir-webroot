@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiphr-cs-vnrcode",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>urn:oid:1.2.246.537.6.55</code> defines many codes, but they are not represented here</p></div>"
+  },
+  "url" : "urn:oid:1.2.246.537.6.55",
+  "version" : "0.2.1",
+  "name" : "Code System Finnish PHR VNR Code",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-02-17T00:00:00+00:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR VNR codesystem, that defines VNR codes with CodeSystem.content as not-present.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "not-present"
+}

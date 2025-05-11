@@ -1,0 +1,46 @@
+{
+  "resourceType" : "Procedure",
+  "id" : "ProcedureColotomy",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Procedure ProcedureColotomy</b></p><a name=\"ProcedureColotomy\"> </a><a name=\"hcProcedureColotomy\"> </a><a name=\"ProcedureColotomy-fi-FI\"> </a><p><b>identifier</b>: 3456</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.601 TOI}\">TOI</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.2 JFA16}, {http://snomed.info/sct 9215005}\">Colotomy</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>performed</b>: 2022-06-08 09:00:00+0000</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-practitioner-licensed-physician.html\">Practitioner Dave Doctor </a></td></tr></table><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location Kirurgian poliklinikka</a></p></div>"
+  },
+  "identifier" : [{
+    "value" : "3456"
+  }],
+  "status" : "completed",
+  "category" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.601",
+      "version" : "2013",
+      "code" : "TOI"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.2",
+      "version" : "2007",
+      "code" : "JFA16"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "9215005"
+    }],
+    "text" : "Colotomy"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-of-municipality"
+  },
+  "performedDateTime" : "2022-06-08T09:00:00.000Z",
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/practitioner-licensed-physician"
+    }
+  }],
+  "location" : {
+    "reference" : "Location/LocationExample"
+  }
+}

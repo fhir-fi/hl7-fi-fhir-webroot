@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-with-turvakielto"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+    <security>
+      <system value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS"/>
+      <code value="TURVAKIELTO"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Turva Henkilö</b> (no stated gender), DoB: 1990-01-01 ( National Identifier for Finland: 010190-999X (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes."><a href="StructureDefinition-municipality-code.html">Municipality Code:</a></td><td colspan="3"><ul><li>urn:oid:1.2.246.537.6.21 020: Akaa (version = 2003)</li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.6.21"/>
+      <version value="2003"/>
+      <code value="020"/>
+      <display value="Akaa"/>
+    </valueCoding>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="NNFIN"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.246.21"/>
+    <value value="010190-999X"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <text value="Turva Henkilö"/>
+    <family value="Henkilö"/>
+    <given value="Turva"/>
+  </name>
+  <birthDate value="1990-01-01"/>
+</Patient>

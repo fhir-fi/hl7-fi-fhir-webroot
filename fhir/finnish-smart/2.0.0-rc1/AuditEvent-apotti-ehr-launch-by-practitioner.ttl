@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-smart/AuditEvent/apotti-ehr-launch-by-practitioner> a fhir:AuditEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apotti-ehr-launch-by-practitioner"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: AuditEvent apotti-ehr-launch-by-practitioner</b></p><a name=\"apotti-ehr-launch-by-practitioner\"> </a><a name=\"hcapotti-ehr-launch-by-practitioner\"> </a><a name=\"apotti-ehr-launch-by-practitioner-fi-FI\"> </a><p><b>type</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110114\">DICOM 110114</a>: User Authentication</p><p><b>subtype</b>: <a href=\"http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110120\">DICOM 110120</a>: Application Start</p><p><b>action</b>: Execute</p><p><b>recorded</b>: 2023-01-24 12:20:18+0200</p><blockquote><p><b>agent</b></p><p><b>who</b>: Apotti Ekosysteemi</p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>agent</b></p><p><b>who</b>: Sensotrend Oy</p><p><b>requestor</b>: false</p></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Sensotrend Oy</td><td><a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-security-source-type.html#security-source-type-3\">Audit Event Source Type 3</a>: Web Server</td></tr></table></div>"
+  ] ; # 
+  fhir:type [
+     fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "110114" ] ;
+     fhir:display [ fhir:v "User Authentication" ]
+  ] ; # 
+  fhir:subtype ( [
+     fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "110120" ] ;
+     fhir:display [ fhir:v "Application Start" ]
+  ] ) ; # 
+  fhir:action [ fhir:v "E"] ; # 
+  fhir:recorded [ fhir:v "2023-01-24T12:20:18.000+02:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:who [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Apotti Ekosysteemi" ]
+     ] ;
+     fhir:requestor [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:who [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Sensotrend Oy" ]
+     ] ;
+     fhir:requestor [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:source [
+     fhir:observer [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Sensotrend Oy" ]
+     ] ;
+     fhir:type ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/security-source-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Web Server" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

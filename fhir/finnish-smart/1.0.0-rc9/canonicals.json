@@ -1,0 +1,30 @@
+[
+  {
+    "id" : "apotti-eko01",
+    "type" : "CapabilityStatement",
+    "url" : "https://hl7.fi/fhir/finnish-smart/CapabilityStatement/apotti-eko01",
+    "version" : "1.0.0-rc9",
+    "name" : "CapabilityStatementExampleApotti"
+  },
+  {
+    "id" : "fi-smart-server",
+    "type" : "CapabilityStatement",
+    "url" : "https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server",
+    "version" : "1.0.0-rc9",
+    "name" : "FiSmartServer"
+  },
+  {
+    "id" : "hl7.fhir.fi.smart",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart",
+    "version" : "1.0.0-rc9",
+    "name" : "FinnishSmart"
+  },
+  {
+    "id" : "fi-smart-server-profile",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-server-profile",
+    "version" : "1.0.0-rc9",
+    "name" : "FiSmartServerProfile"
+  }
+]

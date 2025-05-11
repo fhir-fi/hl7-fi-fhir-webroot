@@ -1,0 +1,267 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/MedicationRequest/medicationrequestesim4> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "medicationrequestesim4"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40202.201901"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationRequest</b><a name=\"medicationrequestesim4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationRequest &quot;medicationrequestesim4&quot; </p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{urn:oid:1.2.246.537.5.40202.201901 urn:oid:1.2.246.537.5.40202.201901}\">urn:oid:1.2.246.537.5.40202.201901</span></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.1602257.93.2019.855, id: urn:oid:1.2.246.10.1602257.93.2019.855</p><p><b>status</b>: active</p><p><b>statusReason</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1)</span></p><p><b>intent</b>: order</p><p><b>category</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1)</span></p><p><b>medication</b>: <a href=\"Medication-medicationesim1.html\">Medication/medicationesim1</a></p><p><b>subject</b>: <a href=\"Patient-patientesim1.html\">Patient/patientesim1</a> &quot; VAN DER HENTENRYCK&quot;</p><p><b>authoredOn</b>: 2019-10-16 18:44:16+0200</p><p><b>requester</b>: <a href=\"PractitionerRole-practitionerRoleesim1.html\">PractitionerRole/practitionerRoleesim1</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: 1-2 tablettia 1-3 kertaa päivässä</p><p><b>additionalInstruction</b>: tähän tulee käyttöohjeen lisätieto <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>timing</b>: 1-1 per 1 days</p><p><b>asNeeded</b>: false</p><p><b>route</b>: 1055 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1055)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><h3>DispenseIntervals</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Value</b></td><td><b>Unit</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>d</td></tr></table><p><b>validityPeriod</b>: ?? --&gt; 2022-04-30 11:34:31+0200</p><p><b>numberOfRepeatsAllowed</b>: 3</p></blockquote><h3>Substitutions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Allowed[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/versionNumber"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/neRep"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/usage"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Verenpainelääke." ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "dispenseStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40123.2006"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "invalidationReason"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40103.2006"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "reservedStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40122.2006"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "reservedLockOwner"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1.2.246.10.8182355.10.1" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "lockStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40124.2006"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "lockOwner"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1.2.246.10.8182355.10.1" ]
+     ] ) ;
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/lockStatus"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40106.2006"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "0" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40303.201501"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "medicineId"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "urn:oid:1.2.246.10.1602257.93.2019.855.0" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "medicineIdPart"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+     ] ) ;
+     fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/medicineId"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://resepti.kanta.fi/fhir/id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.246.10.1602257.93.2019.855" ]
+  ] [
+     fhir:system [ fhir:v "http://resepti.kanta.fi/fhir/id/setId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.246.10.1602257.93.2019.855" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:statusReason [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40105.2006"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ]
+     ] )
+  ] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.605.2014"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ]
+     ] )
+  ] ) ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Medication/medicationesim1> ;
+     fhir:reference [ fhir:v "Medication/medicationesim1" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patientesim1> ;
+     fhir:reference [ fhir:v "Patient/patientesim1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2019-10-16T18:44:16+02:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/PractitionerRole/practitionerRoleesim1> ;
+     fhir:reference [ fhir:v "PractitionerRole/practitionerRoleesim1" ]
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "kg" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/sic"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:text [ fhir:v "1-2 tablettia 1-3 kertaa päivässä" ] ;
+     fhir:additionalInstruction ( [
+       fhir:text [ fhir:v "tähän tulee käyttöohjeen lisätieto" ]
+     ] ) ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:frequency [ fhir:v "1"^^xsd:positiveInteger ] ;
+         fhir:frequencyMax [ fhir:v "3"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ]
+       ]
+     ] ;
+     fhir:asNeeded [ fhir:v "false"^^xsd:boolean ] ;
+     fhir:route [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.1403.202001"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1055" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tabletti" ] ;
+           fhir:system [ fhir:v "urn:oid:1.2.246.537.6.138.202001"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "18" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "tabletti" ] ;
+           fhir:system [ fhir:v "urn:oid:1.2.246.537.6.138.202001"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "18" ]
+         ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:dispenseRequest [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40100.2006"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "packageFactor"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+       ] [
+         fhir:url [ fhir:v "packageAmount"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "8"^^xsd:positiveInteger ]
+       ] [
+         fhir:url [ fhir:v "packageSizeText"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1X98 fol" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/package"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/totalAmount"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "800"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "fol" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/validityTime"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Duration ;
+         fhir:value [ fhir:v "30"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "a" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "a" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40123.2006"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "8X98 fol" ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "5X98 fol" ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2019-10-17T18:44:16+02:00"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://resepti.kanta.fi/StructureDefinition/extension/previousDispense"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "98 fol" ]
+     ] ) ;
+     fhir:dispenseInterval [
+       fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "d" ]
+     ] ;
+     fhir:validityPeriod [
+       fhir:end [ fhir:v "2022-04-30T11:34:31+02:00"^^xsd:dateTime ]
+     ] ;
+     fhir:numberOfRepeatsAllowed [ fhir:v "3"^^xsd:nonNegativeInteger ]
+  ] ; # 
+  fhir:substitution [
+     fhir:allowed [ fhir:v "true"^^xsd:boolean ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

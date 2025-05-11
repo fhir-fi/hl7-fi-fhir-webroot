@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiphr-cs-observationcategory"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">nutrition<a name="fiphr-cs-observationcategory-nutrition"> </a></td></tr><tr><td style="white-space:nowrap">urinary-monitoring<a name="fiphr-cs-observationcategory-urinary-monitoring"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td>nutrition</td><td>Nutrition</td><td>Ravitsemus</td><td>Näringstillstånd</td></tr><tr><td>urinary-monitoring</td><td>Urinary monitoring</td><td>Virtsan seuranta</td><td>Uppföljning av urinen</td></tr></table></div>
+  </text>
+  <url value="http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory"/>
+  <version value="0.2.1"/>
+  <name value="fiphr-cs-observationcategory"/>
+  <title value="Code System Finnish PHR Observation Category"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-10-14T11:00:00Z"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Observation Category Code System that defines codes for Observation.category when there is no suitable code in the FHIR standard observation category code system."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="nutrition"/>
+    <designation>
+      <language value="fi"/>
+      <value value="Ravitsemus"/>
+    </designation>
+    <designation>
+      <language value="sv"/>
+      <value value="Näringstillstånd"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Nutrition"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="urinary-monitoring"/>
+    <designation>
+      <language value="fi"/>
+      <value value="Virtsan seuranta"/>
+    </designation>
+    <designation>
+      <language value="sv"/>
+      <value value="Uppföljning av urinen"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Urinary monitoring"/>
+    </designation>
+  </concept>
+</CodeSystem>

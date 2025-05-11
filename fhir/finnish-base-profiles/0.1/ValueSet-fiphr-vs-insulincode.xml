@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-insulincode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-fiphr-cs-vnrcode.html"><code>urn:oid:1.2.246.537.6.55</code></a></li><li>Include all codes defined in <a href="CodeSystem-fiphr-cs-insulincode.html"><code>http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode</code></a></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-insulincode"/>
+  <version value="0.2.1"/>
+  <name value="fiphr-vs-insulincode"/>
+  <title value="Value Set Finnish PHR Insulin Code "/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-17T10:00:00+00:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="A Finnish PHR value set for the codes to be used with insulin dosing. Includes VNR codes (reference to the national VNR code system) or specific codes to indicate what kind of insulin has been administered."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.246.537.6.55"/>
+    </include>
+    <include>
+      <system value="http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode"/>
+    </include>
+  </compose>
+</ValueSet>

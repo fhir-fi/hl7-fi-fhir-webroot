@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-petri"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-petri</b></p><a name="patient-petri"> </a><a name="hcpatient-petri"> </a><a name="patient-petri-fi-FI"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Petri Potilas  Male, DoB: 2010-10-11 ( urn:oid:1.2.246.21#101100A9277 (use: official, ))</p><hr/></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.21"/>
+    <value value="101100A9277"/>
+  </identifier>
+  <name>
+    <family value="Potilas"/>
+    <given value="Petri"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="2010-10-11"/>
+</Patient>

@@ -1,0 +1,111 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Practitioner/practitioner-licensed-physician> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-licensed-physician"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-licensed-physician\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-licensed-physician&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-practitioner.html\">FI Base Practitioner</a></p></div><p><b>identifier</b>: id: 00198705840 (use: OFFICIAL), id: 311080-999X (use: OFFICIAL), id: 032680 (use: OFFICIAL), MNEMONIC: DOCTODAV (use: SECONDARY), id: mailto:dave.doctor@cgi.com, user-domain-authority: 4ec06bf9-1df1-4336-bf5a-33ba1a2707b2, user-domain-authority: dave.doctor@iurcgifisaas.onmicrosoft.com</p><p><b>active</b>: true</p><p><b>name</b>: Dave Doctor </p><p><b>telecom</b>: <a href=\"mailto:dave.doctor@cgi.com\">dave.doctor@cgi.com</a></p><p><b>gender</b>: male</p><blockquote><p><b>qualification</b></p><p><b>code</b>: 001 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2008]#001)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: 86152-322 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2008]#86152-322)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: 2131 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2001]#2131)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: MD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#MD)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.537.26"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "00198705840" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "311080-999X" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.537.25"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "032680" ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:code [ fhir:v "MNEMONIC" ]
+       ] [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "XX" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "urn:oid:1.2.246.537.10.3575029.12.2.10.2131.24001"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DOCTODAV" ]
+  ] [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "mailto:dave.doctor@cgi.com" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.cgi.fi/code/person-id-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "user-domain-authority" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "4ec06bf9-1df1-4336-bf5a-33ba1a2707b2" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.cgi.fi/code/person-id-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "user-domain-authority" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "dave.doctor@iurcgifisaas.onmicrosoft.com" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Doctor" ] ;
+     fhir:given ( [ fhir:v "Dave" ] ) ;
+     fhir:suffix ( [ fhir:v "dr." ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "dave.doctor@cgi.com" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.140"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "2008" ] ;
+         fhir:code [ fhir:v "001" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.148"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "2008" ] ;
+         fhir:code [ fhir:v "86152-322" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.74"^^xsd:anyURI ] ;
+         fhir:version [ fhir:v "2001" ] ;
+         fhir:code [ fhir:v "2131" ]
+       ] )
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.18.220"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

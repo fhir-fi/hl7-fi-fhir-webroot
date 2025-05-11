@@ -1,0 +1,872 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-careplancategory> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-vs-careplancategory"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-fiphr-cs-careplancategory.html\"><code>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-1\">1</a></td><td>Hengitystietulehdus tai -oire</td><td>Hengitystietulehdus tai -oire</td><td>Luftvägsinfektion eller -symtom</td><td>Respiratory infection or symptom</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-2\">2</a></td><td>Yskä</td><td>Yskä</td><td>Hosta</td><td>Cough</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-3\">3</a></td><td>Virtsatietulehdus tai -oire (18–65v. naiset)</td><td>Virtsatietulehdus tai -oire (18–65v. naiset)</td><td>Urinvägsinfektion- eller symtom (kvinnor 18–65 år)</td><td>Urinary tract infection or symptom (women aged 18–65)</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-4\">4</a></td><td>Korvan kipu tai lukkoisuus</td><td>Korvan kipu tai lukkoisuus</td><td>Ont i öronen eller lock för örat</td><td>Earache or ear plugging</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-5\">5</a></td><td>Kurkkukipu tai nieluoire</td><td>Kurkkukipu tai nieluoire</td><td>Halsont eller svalgsymtom</td><td>Sore throat or throat symptom</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-6\">6</a></td><td>Ripuli</td><td>Ripuli</td><td>Diarré</td><td>Diarrhoea</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-7\">7</a></td><td>Alaselkäkipu tai -vamma</td><td>Alaselkäkipu tai -vamma</td><td>Ländryggssmärta eller -skada</td><td>Lower back pain or injury</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-8\">8</a></td><td>Närästys</td><td>Närästys</td><td>Halsbränna</td><td>Heartburn</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-9\">9</a></td><td>Olkapään kipu, jäykkyys tai vamma</td><td>Olkapään kipu, jäykkyys tai vamma</td><td>Smärta, stelhet eller skada i skuldran</td><td>Shoulder pain, stiffness or injury</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-10\">10</a></td><td>Päänsärky</td><td>Päänsärky</td><td>Huvudvärk</td><td>Headache</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-11\">11</a></td><td>Peräaukon seudun oire</td><td>Peräaukon seudun oire</td><td>Symtom vid ändtarmsöppningen</td><td>Anal region symptom</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-12\">12</a></td><td>Polven oire tai vamma</td><td>Polven oire tai vamma</td><td>Symtom eller skada i knät</td><td>Knee symptom or injury</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-13\">13</a></td><td>Silmän oire</td><td>Silmän oire</td><td>Symtom i öga</td><td>Eye symptom</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-14\">14</a></td><td>Sukupuolitaudin oire</td><td>Sukupuolitaudin oire</td><td>Symtom på könssjukdom</td><td>Sexually transmitted disease symptom</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-15\">15</a></td><td>Terveystarkastus</td><td>Terveystarkastus</td><td>Hälsokontroll</td><td>Health check-up</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-16\">16</a></td><td>Henkilökohtainen apu</td><td>Henkilökohtainen apu</td><td>Personlig assistans</td><td>Personal assistance</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-17\">17</a></td><td>Liikkuminen kodin ulkopuolella</td><td>Liikkuminen kodin ulkopuolella</td><td>Mobilitet utanför hemmet</td><td>Moving outside the home</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-18\">18</a></td><td>Maahanmuuttajan hyvinvointi</td><td>Maahanmuuttajan hyvinvointi</td><td>Invandrarens välbefinnande</td><td>Well-being of an immigrant</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-19\">19</a></td><td>Omaishoidon tuki</td><td>Omaishoidon tuki</td><td>Stöd för närståendevård</td><td>Informal care support</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-20\">20</a></td><td>Läheishoitajan tarkastus</td><td>Läheishoitajan tarkastus</td><td>Kontroll för anhörig omsorgsgivare</td><td>Check-up of an informal carer</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-21\">21</a></td><td>Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)</td><td>Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)</td><td>Hälsokontroll för femteklassist, föräldrar (borttagen)</td><td>Health check-up of a fifth-grader, parents (removed)</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-22\">22</a></td><td>Viitosluokkalaisen terveystarkastus, lapsi (poistettu)</td><td>Viitosluokkalaisen terveystarkastus, lapsi (poistettu)</td><td>Hälsokontroll för femteklassist, barn (borttagen)</td><td>Health check-up of a fifth-grader, child (removed)</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-23\">23</a></td><td>Yleinen hyvinvointikysely (WHOQOL-BREF)</td><td>Yleinen hyvinvointikysely (WHOQOL-BREF)</td><td>Allmän välfärdsenkät (WHOQOL-BREF)</td><td>General well-being survey (WHOQOL-BREF)</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-24\">24</a></td><td>Elämäntilannekysely (3X10D)</td><td>Elämäntilannekysely (3X10D)</td><td>Enkät om livssituation (3X10D)</td><td>Life-situation survey (3X10D)</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-25\">25</a></td><td>Opiskeluterveydenhuollon esitiedot</td><td>Opiskeluterveydenhuollon esitiedot</td><td>Förhandsuppgifter för studerandehälsovården</td><td>Preliminary information for student health care</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-26\">26</a></td><td>Suun terveydentila, lapset ja nuoret</td><td>Suun terveydentila, lapset ja nuoret</td><td>Munhälsa, barn och unga</td><td>Oral health status, children and young persons</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-27\">27</a></td><td>Omaishoitajan jaksaminen</td><td>Omaishoitajan jaksaminen</td><td>Närståendevårdarens ork</td><td>Family carer ability to cope</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-28\">28</a></td><td>Puolitoistavuotiaan laaja terveystarkastus</td><td>Puolitoistavuotiaan laaja terveystarkastus</td><td>Omfattande hälsokontroll för barn, 18 månader</td><td>Extensive health check-up of a one-and-a-half-year-old</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-29\">29</a></td><td>Yötyötä tekevän työterveystarkastus</td><td>Yötyötä tekevän työterveystarkastus</td><td>Hälsokontroll för nattarbetande</td><td>Occupational health check-up of a night worker</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-30\">30</a></td><td>Kohonnut verenpaine</td><td>Kohonnut verenpaine</td><td>Hypertoni</td><td>High blood pressure</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-31\">31</a></td><td>Yläkoululaisen terveystarkastus, vanhemmat (poistettu)</td><td>Yläkoululaisen terveystarkastus, vanhemmat (poistettu)</td><td>Hälsokontroll för högstadieelev, föräldrar (borttagen)</td><td>Health check-up of an upper comprehensive school pupil, parents (removed)</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-32\">32</a></td><td>Viitosluokkalaisen terveystarkastus, vanhemmat</td><td>Viitosluokkalaisen terveystarkastus, vanhemmat</td><td>Hälsokontroll för femteklassist, föräldrar</td><td>Health check-up of a fifth-grader, parents</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-33\">33</a></td><td>Hampaiden tai suun oire tai vamma</td><td>Hampaiden tai suun oire tai vamma</td><td>Symtom eller skada i tänder eller mun</td><td>Teeth or mouth symptom or injury</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-34\">34</a></td><td>Suun terveydentila, aikuiset</td><td>Suun terveydentila, aikuiset</td><td>Munhälsa, vuxna</td><td>Oral health status, adults</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-35\">35</a></td><td>Äitiysneuvolan esitiedot</td><td>Äitiysneuvolan esitiedot</td><td>Förhandsuppgifter till mödrarådgivningen</td><td>Preliminary information for the maternity clinic</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-36\">36</a></td><td>Hyvinvointitarkastus</td><td>Hyvinvointitarkastus</td><td>Välfärdsenkät</td><td>Well-being check-up</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-37\">37</a></td><td>Suunnitelma</td><td>Suunnitelma</td><td>Plan</td><td>Plan</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-38\">38</a></td><td>Liikuntaohjelma askeltajille</td><td>Liikuntaohjelma askeltajille</td><td>Stegprogrammet</td><td>Exercise programme for walkers and runners</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-39\">39</a></td><td>Lääkärintodistus, pyyntö</td><td>Lääkärintodistus, pyyntö</td><td>Läkarintyg, begäran</td><td>Medical certificate, request</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-40\">40</a></td><td>Diabetes, riskitesti</td><td>Diabetes, riskitesti</td><td>Diabetes, risktest</td><td>Diabetes, risk test</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-41\">41</a></td><td>Yleinen oirearvio</td><td>Yleinen oirearvio</td><td>Allmän symtombedömning</td><td>General symptom assessment</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-42\">42</a></td><td>Painonhallinta</td><td>Painonhallinta</td><td>Viktkontroll</td><td>Weight management</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-43\">43</a></td><td>Tupakoinnin lopettamisen valmennusohjelma</td><td>Tupakoinnin lopettamisen valmennusohjelma</td><td>Coachningsprogram för att sluta röka</td><td>Coaching programme for quitting smoking</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-44\">44</a></td><td>Terveellinen ravinto -valmennusohjelma</td><td>Terveellinen ravinto -valmennusohjelma</td><td>Coachningsprogrammet Hälsosam näring</td><td>Healthy nutrition coaching programme</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-45\">45</a></td><td>Univalmennus</td><td>Univalmennus</td><td>Sömncoachning</td><td>Sleep coaching</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-46\">46</a></td><td>Avoin palvelupyyntö</td><td>Avoin palvelupyyntö</td><td>Öppen servicebegäran</td><td>Open service request</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-47\">47</a></td><td>Raskausdiabeteksen jälkiseuranta</td><td>Raskausdiabeteksen jälkiseuranta</td><td>Uppföljning av graviditetsdiabetes</td><td>Gestational diabetes follow-up</td></tr><tr><td><a href=\"CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-48\">48</a></td><td>Koronavirustauti</td><td>Koronavirustauti</td><td>Coronavirusinfektion</td><td>Coronavirus disease</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-careplancategory"]; # 
+  fhir:ValueSet.version [ fhir:value "0.3.0"]; # 
+  fhir:ValueSet.name [ fhir:value "fiphr-vs-careplancategory"]; # 
+  fhir:ValueSet.title [ fhir:value "Finnish PHR CarePlan Category value set"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2020-06-05"^^xsd:date]; # 
+  fhir:ValueSet.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Indicates type of SelfCarePlan."]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hengitystietulehdus tai -oire" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hengitystietulehdus tai -oire" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Luftvägsinfektion eller -symtom" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Respiratory infection or symptom" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yskä" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Yskä" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hosta" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Cough" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Virtsatietulehdus tai -oire (18–65v. naiset)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Virtsatietulehdus tai -oire (18–65v. naiset)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Urinvägsinfektion- eller symtom (kvinnor 18–65 år)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Urinary tract infection or symptom (women aged 18–65)" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Korvan kipu tai lukkoisuus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Korvan kipu tai lukkoisuus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ont i öronen eller lock för örat" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Earache or ear plugging" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kurkkukipu tai nieluoire" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kurkkukipu tai nieluoire" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Halsont eller svalgsymtom" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sore throat or throat symptom" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ripuli" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ripuli" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diarré" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diarrhoea" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Alaselkäkipu tai -vamma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Alaselkäkipu tai -vamma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Ländryggssmärta eller -skada" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lower back pain or injury" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Närästys" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Närästys" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Halsbränna" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Heartburn" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Olkapään kipu, jäykkyys tai vamma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Olkapään kipu, jäykkyys tai vamma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Smärta, stelhet eller skada i skuldran" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Shoulder pain, stiffness or injury" ]
+         ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "10" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Päänsärky" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Päänsärky" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Huvudvärk" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Headache" ]
+         ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "11" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Peräaukon seudun oire" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Peräaukon seudun oire" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Symtom vid ändtarmsöppningen" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Anal region symptom" ]
+         ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "12" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Polven oire tai vamma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Polven oire tai vamma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Symtom eller skada i knät" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Knee symptom or injury" ]
+         ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "13" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Silmän oire" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Silmän oire" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Symtom i öga" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Eye symptom" ]
+         ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "14" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sukupuolitaudin oire" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sukupuolitaudin oire" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Symtom på könssjukdom" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sexually transmitted disease symptom" ]
+         ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "15" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Terveystarkastus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Terveystarkastus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hälsokontroll" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Health check-up" ]
+         ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "16" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Henkilökohtainen apu" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Henkilökohtainen apu" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Personlig assistans" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Personal assistance" ]
+         ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "17" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liikkuminen kodin ulkopuolella" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liikkuminen kodin ulkopuolella" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mobilitet utanför hemmet" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Moving outside the home" ]
+         ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "18" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Maahanmuuttajan hyvinvointi" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Maahanmuuttajan hyvinvointi" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Invandrarens välbefinnande" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Well-being of an immigrant" ]
+         ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "19" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Omaishoidon tuki" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Omaishoidon tuki" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Stöd för närståendevård" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Informal care support" ]
+         ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "20" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Läheishoitajan tarkastus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Läheishoitajan tarkastus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kontroll för anhörig omsorgsgivare" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Check-up of an informal carer" ]
+         ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "21" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hälsokontroll för femteklassist, föräldrar (borttagen)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Health check-up of a fifth-grader, parents (removed)" ]
+         ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "22" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Viitosluokkalaisen terveystarkastus, lapsi (poistettu)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Viitosluokkalaisen terveystarkastus, lapsi (poistettu)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hälsokontroll för femteklassist, barn (borttagen)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Health check-up of a fifth-grader, child (removed)" ]
+         ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "23" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yleinen hyvinvointikysely (WHOQOL-BREF)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Yleinen hyvinvointikysely (WHOQOL-BREF)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Allmän välfärdsenkät (WHOQOL-BREF)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "General well-being survey (WHOQOL-BREF)" ]
+         ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "24" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Elämäntilannekysely (3X10D)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Elämäntilannekysely (3X10D)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Enkät om livssituation (3X10D)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Life-situation survey (3X10D)" ]
+         ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "25" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Opiskeluterveydenhuollon esitiedot" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Opiskeluterveydenhuollon esitiedot" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Förhandsuppgifter för studerandehälsovården" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Preliminary information for student health care" ]
+         ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "26" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suun terveydentila, lapset ja nuoret" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suun terveydentila, lapset ja nuoret" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Munhälsa, barn och unga" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Oral health status, children and young persons" ]
+         ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "27" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Omaishoitajan jaksaminen" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Omaishoitajan jaksaminen" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Närståendevårdarens ork" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Family carer ability to cope" ]
+         ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "28" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Puolitoistavuotiaan laaja terveystarkastus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Puolitoistavuotiaan laaja terveystarkastus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Omfattande hälsokontroll för barn, 18 månader" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Extensive health check-up of a one-and-a-half-year-old" ]
+         ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "29" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yötyötä tekevän työterveystarkastus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Yötyötä tekevän työterveystarkastus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hälsokontroll för nattarbetande" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Occupational health check-up of a night worker" ]
+         ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "30" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Kohonnut verenpaine" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Kohonnut verenpaine" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hypertoni" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "High blood pressure" ]
+         ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "31" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yläkoululaisen terveystarkastus, vanhemmat (poistettu)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Yläkoululaisen terveystarkastus, vanhemmat (poistettu)" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hälsokontroll för högstadieelev, föräldrar (borttagen)" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Health check-up of an upper comprehensive school pupil, parents (removed)" ]
+         ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "32" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Viitosluokkalaisen terveystarkastus, vanhemmat" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Viitosluokkalaisen terveystarkastus, vanhemmat" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hälsokontroll för femteklassist, föräldrar" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Health check-up of a fifth-grader, parents" ]
+         ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "33" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hampaiden tai suun oire tai vamma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hampaiden tai suun oire tai vamma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Symtom eller skada i tänder eller mun" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Teeth or mouth symptom or injury" ]
+         ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "34" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suun terveydentila, aikuiset" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suun terveydentila, aikuiset" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Munhälsa, vuxna" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Oral health status, adults" ]
+         ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "35" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Äitiysneuvolan esitiedot" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Äitiysneuvolan esitiedot" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Förhandsuppgifter till mödrarådgivningen" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Preliminary information for the maternity clinic" ]
+         ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "36" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Hyvinvointitarkastus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Hyvinvointitarkastus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Välfärdsenkät" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Well-being check-up" ]
+         ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "37" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Suunnitelma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Suunnitelma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Plan" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Plan" ]
+         ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "38" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Liikuntaohjelma askeltajille" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liikuntaohjelma askeltajille" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Stegprogrammet" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Exercise programme for walkers and runners" ]
+         ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "39" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Lääkärintodistus, pyyntö" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lääkärintodistus, pyyntö" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Läkarintyg, begäran" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Medical certificate, request" ]
+         ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "40" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Diabetes, riskitesti" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diabetes, riskitesti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diabetes, risktest" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Diabetes, risk test" ]
+         ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "41" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Yleinen oirearvio" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Yleinen oirearvio" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Allmän symtombedömning" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "General symptom assessment" ]
+         ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "42" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Painonhallinta" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Painonhallinta" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Viktkontroll" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Weight management" ]
+         ]
+       ], [
+         fhir:index 42;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "43" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tupakoinnin lopettamisen valmennusohjelma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Tupakoinnin lopettamisen valmennusohjelma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coachningsprogram för att sluta röka" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coaching programme for quitting smoking" ]
+         ]
+       ], [
+         fhir:index 43;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "44" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Terveellinen ravinto -valmennusohjelma" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Terveellinen ravinto -valmennusohjelma" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coachningsprogrammet Hälsosam näring" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Healthy nutrition coaching programme" ]
+         ]
+       ], [
+         fhir:index 44;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "45" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Univalmennus" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Univalmennus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sömncoachning" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Sleep coaching" ]
+         ]
+       ], [
+         fhir:index 45;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "46" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Avoin palvelupyyntö" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Avoin palvelupyyntö" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Öppen servicebegäran" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Open service request" ]
+         ]
+       ], [
+         fhir:index 46;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "47" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Raskausdiabeteksen jälkiseuranta" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Raskausdiabeteksen jälkiseuranta" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uppföljning av graviditetsdiabetes" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Gestational diabetes follow-up" ]
+         ]
+       ], [
+         fhir:index 47;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "48" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Koronavirustauti" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Koronavirustauti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coronavirusinfektion" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Coronavirus disease" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-careplancategory.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

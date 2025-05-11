@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fi-base-condition-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-condition-category</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">reason-for-visit<a name="fi-base-condition-category-reason-for-visit"> </a></td><td>Reason for visit</td><td>Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish).</td></tr></table></div>
+  </text>
+  <url value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-condition-category"/>
+  <version value="1.0.0-rc11"/>
+  <name value="FiBaseConditionCategory"/>
+  <title value="Finnish Condition categories"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-04-18T11:02:48+03:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="mikael@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <description value="Additional categories for the Finnish Base Condition profile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="reason-for-visit"/>
+    <display value="Reason for visit"/>
+    <definition value="Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish)."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Practitioner/PractitionerLicensedPhysician> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PractitionerLicensedPhysician"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"PractitionerLicensedPhysician\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;PractitionerLicensedPhysician&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-practitioner.html\">FI Base Practitioner</a></p></div><p><b>identifier</b>: id: 00198705840 (use: OFFICIAL), id: 311080-999X (use: OFFICIAL), id: 032680 (use: OFFICIAL), MNEMONIC: DOCTODAV (use: SECONDARY), id: mailto:dave.doctor@cgi.com, user-domain-authority: 4ec06bf9-1df1-4336-bf5a-33ba1a2707b2, user-domain-authority: dave.doctor@iurcgifisaas.onmicrosoft.com</p><p><b>active</b>: true</p><p><b>name</b>: Dave Doctor </p><p><b>telecom</b>: <a href=\"mailto:dave.doctor@cgi.com\">dave.doctor@cgi.com</a></p><p><b>gender</b>: male</p><blockquote><p><b>qualification</b></p><p><b>code</b>: 001 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#001)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: 86152-322 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#86152-322)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: 2131 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#2131)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: MD <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#MD)</span></p></blockquote></div>"
+  ]; # 
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.246.537.26" ];
+     fhir:Identifier.value [ fhir:value "00198705840" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.246.21" ];
+     fhir:Identifier.value [ fhir:value "311080-999X" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.246.537.25" ];
+     fhir:Identifier.value [ fhir:value "032680" ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "MNEMONIC" ]
+       ], [
+         fhir:index 1;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "XX" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.246.537.10.3575029.12.2.10.2131.24001" ];
+     fhir:Identifier.value [ fhir:value "DOCTODAV" ]
+  ], [
+     fhir:index 4;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "mailto:dave.doctor@cgi.com" ]
+  ], [
+     fhir:index 5;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://fhir.cgi.fi/code/person-id-type" ];
+         fhir:Coding.code [ fhir:value "user-domain-authority" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "4ec06bf9-1df1-4336-bf5a-33ba1a2707b2" ]
+  ], [
+     fhir:index 6;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "https://fhir.cgi.fi/code/person-id-type" ];
+         fhir:Coding.code [ fhir:value "user-domain-authority" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "dave.doctor@iurcgifisaas.onmicrosoft.com" ]
+  ]; # 
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Doctor" ];
+     fhir:HumanName.given [
+       fhir:value "Dave";
+       fhir:index 0
+     ];
+     fhir:HumanName.suffix [
+       fhir:value "dr.";
+       fhir:index 0
+     ]
+  ]; # 
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "dave.doctor@cgi.com" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ]; # 
+  fhir:Practitioner.gender [ fhir:value "male"]; # 
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.140.2008" ];
+         fhir:Coding.code [ fhir:value "001" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.148.2008" ];
+         fhir:Coding.code [ fhir:value "86152-322" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.74.2001" ];
+         fhir:Coding.code [ fhir:value "2131" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.18.220" ];
+         fhir:Coding.code [ fhir:value "MD" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Practitioner/PractitionerLicensedPhysician.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

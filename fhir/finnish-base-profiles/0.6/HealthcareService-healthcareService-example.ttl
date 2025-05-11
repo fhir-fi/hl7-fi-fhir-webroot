@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example> a fhir:HealthcareService;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "healthcareService-example"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: HealthcareService</b><a name=\"healthcareService-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource HealthcareService &quot;healthcareService-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-healthcare-service.html\">FI Base HealthcareService</a></p></div><p><b>active</b>: true</p><p><b>category</b>: SOTE9.2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#SOTE9.2)</span>, E <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#E)</span></p><p><b>type</b>: EEA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#EEA)</span>, ADA001 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#ADA001)</span>, T11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T11)</span>, SH <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#SH)</span></p><p><b>name</b>: Vastaanottoaika*</p><p><b>comment</b>: Normaali vo-aika sh:lle ja lääkäreille</p><p><b>appointmentRequired</b>: true</p></div>"
+  ]; # 
+  fhir:HealthcareService.active [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:HealthcareService.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.50.201801" ];
+       fhir:Coding.code [ fhir:value "SOTE9.2" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.121.201801" ];
+       fhir:Coding.code [ fhir:value "E" ]
+     ]
+  ]; # 
+  fhir:HealthcareService.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.49.201501" ];
+       fhir:Coding.code [ fhir:value "EEA" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.49.201501" ];
+       fhir:Coding.code [ fhir:value "ADA001" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.125.2008" ];
+       fhir:Coding.code [ fhir:value "T11" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.124.2008" ];
+       fhir:Coding.code [ fhir:value "SH" ]
+     ]
+  ]; # 
+  fhir:HealthcareService.name [ fhir:value "Vastaanottoaika*"]; # 
+  fhir:HealthcareService.comment [ fhir:value "Normaali vo-aika sh:lle ja lääkäreille"]; # 
+  fhir:HealthcareService.appointmentRequired [ fhir:value "true"^^xsd:boolean] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

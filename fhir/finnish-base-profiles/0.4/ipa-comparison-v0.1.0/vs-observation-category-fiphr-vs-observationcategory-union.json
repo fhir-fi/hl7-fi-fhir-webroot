@@ -1,0 +1,105 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "5c5ae64f-3dd9-4847-b0c0-b9822013a668-32",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/5c5ae64f-3dd9-4847-b0c0-b9822013a668-32",
+  "name" : "UnionObservationCategoryCodesAndfiphr-vs-observationcategory",
+  "title" : "Union of Observation Category Codes And Value Set Finnish PHR Observation Category",
+  "status" : "draft",
+  "date" : "2023-02-02T11:49:01+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "nutrition",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Ravitsemus"
+        },
+        {
+          "language" : "sv",
+          "value" : "Näringstillstånd"
+        },
+        {
+          "language" : "en",
+          "value" : "Nutrition"
+        }]
+      },
+      {
+        "code" : "urinary-monitoring",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Virtsan seuranta"
+        },
+        {
+          "language" : "sv",
+          "value" : "Uppföljning av urinen"
+        },
+        {
+          "language" : "en",
+          "value" : "Urinary monitoring"
+        }]
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "social-history",
+      "display" : "Social History"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "imaging",
+      "display" : "Imaging"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "procedure",
+      "display" : "Procedure"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey",
+      "display" : "Survey"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "exam",
+      "display" : "Exam"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "therapy",
+      "display" : "Therapy"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "activity",
+      "display" : "Activity"
+    },
+    {
+      "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+      "code" : "nutrition"
+    },
+    {
+      "system" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+      "code" : "urinary-monitoring"
+    }]
+  }
+}

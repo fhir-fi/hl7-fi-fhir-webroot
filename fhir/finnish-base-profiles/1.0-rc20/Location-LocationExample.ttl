@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "LocationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"LocationExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;LocationExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-location.html\">FI Base Location</a></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.3575029.10.9990311346</p><p><b>status</b>: active</p><p><b>name</b>: Kirurgian poliklinikka</p><p><b>alias</b>: 2KIRPKL</p><p><b>mode</b>: instance</p><p><b>address</b>: (WORK)</p><p><b>managingOrganization</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization/1.2.246.10.2085212.10.1314</a> &quot;Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka&quot;</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.246.10.3575029.10.9990311346" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "Kirurgian poliklinikka"] ; # 
+  fhir:alias ( [ fhir:v "2KIRPKL"] ) ; # 
+  fhir:mode [ fhir:v "instance"] ; # 
+  fhir:address [
+     fhir:use [ fhir:v "work" ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1314> ;
+     fhir:reference [ fhir:v "Organization/1.2.246.10.2085212.10.1314" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

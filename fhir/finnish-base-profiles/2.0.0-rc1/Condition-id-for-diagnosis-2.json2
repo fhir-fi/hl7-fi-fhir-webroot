@@ -1,0 +1,81 @@
+{
+  "resourceType" : "Condition",
+  "id" : "id-for-diagnosis-2",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Condition id-for-diagnosis-2</b></p><a name=\"id-for-diagnosis-2\"> </a><a name=\"hcid-for-diagnosis-2\"> </a><a name=\"id-for-diagnosis-2-fi-FI\"> </a><p><b>Primary condition for encounter</b>: unknown PAA: Päädiagnoosi tai päätoimenpide (version = 2003 )</p><p><b>Permanence of condition</b>: unknown KER: Kertaluonteinen (version = 2003 )</p><p><b>External cause for diagnosis</b>: unknown X44: Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen (version = 1999 )</p><p><b>Categorization of the type of accident</b>: unknown Y95.0: Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä (version = 1999 )</p><p><b>Medication that caused this condition</b>: unknown M01AE01: BURANA 200 mg tabletti, kalvopäällysteinen (version = 2007 )</p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category encounter-diagnosis}\">Encounter Diagnosis</span></p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.1 T88.7}\">Määrittämätön lääkeaineen epäedullinen vaikutus</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p></div>"
+  },
+  "extension" : [{
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.5.40005",
+      "version" : "2003",
+      "code" : "PAA",
+      "display" : "Päädiagnoosi tai päätoimenpide"
+    }
+  },
+  {
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.5.40003",
+      "version" : "2003",
+      "code" : "KER",
+      "display" : "Kertaluonteinen"
+    }
+  },
+  {
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-external-cause",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.6.1",
+      "version" : "1999",
+      "code" : "X44",
+      "display" : "Lääkkeiden tai lääkkeenomaisten aineiden aiheuttama myrkytystapaturma tai muu altistuminen"
+    }
+  },
+  {
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-categorization-of-accident",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.6.1",
+      "version" : "1999",
+      "code" : "Y95.0",
+      "display" : "Tapaturma sairaalassa tai sairaalaoloihin liittyvä ulkoinen tekijä"
+    }
+  },
+  {
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-caused-by-medication",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.6.32",
+      "version" : "2007",
+      "code" : "M01AE01",
+      "display" : "BURANA 200 mg tabletti, kalvopäällysteinen"
+    }
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.1",
+      "version" : "1999",
+      "code" : "T88.7",
+      "display" : "Määrittämätön lääkeaineen epäedullinen vaikutus"
+    }],
+    "text" : "Määrittämätön lääkeaineen epäedullinen vaikutus"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-of-municipality"
+  },
+  "onsetDateTime" : "2023-01-05T02:06:24+03:00"
+}

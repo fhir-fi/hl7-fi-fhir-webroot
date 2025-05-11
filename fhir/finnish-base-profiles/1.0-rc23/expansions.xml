@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="3b16b1b6-8fc9-4d8f-8d4e-165855c7b9c0"/>
+  <meta>
+    <lastUpdated value="2023-11-06T22:38:02.413+01:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem urn:ietf:rfc:3986 version n/a</li>
+                <li>system urn:ietf:rfc:3986 version n/a</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-urn-oid-1.2.246.537.5.40150"> </a>  urn:oid:1.2.246.537.5.40150
+                </td>
+                <td>urn:ietf:rfc:3986</td>
+                <td>KanTa-palvelut - Potilasasiakirjan rekisteritunnus</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-urn-oid-1.2.246.537.6.1264"> </a>  urn:oid:1.2.246.537.6.1264
+                </td>
+                <td>urn:ietf:rfc:3986</td>
+                <td>Sosiaalihuolto - Asiakirjan rekisteritunnus</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier"/>
+        <version value="1.0.0-rc23"/>
+        <name value="FiBaseRegisterIdentifier"/>
+        <title value="Finnish ValueSet for systems of registry specifiers"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-11-06T22:38:02+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FI"/>
+            <display value="Finland"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:20c47337-f706-494a-8b49-a2ef97bcbcb4"/>
+          <timestamp value="2023-11-06T22:40:04+01:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="urn:oid:1.2.246.537.5.40150"/>
+            <display value="KanTa-palvelut - Potilasasiakirjan rekisteritunnus"/>
+          </contains>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="urn:oid:1.2.246.537.6.1264"/>
+            <display value="Sosiaalihuolto - Asiakirjan rekisteritunnus"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-fi-base-security-label-cs.html">codesystem Finnish CodeSystem for security labels v1.0.0-rc23 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7.fi-fhir-finnish-base-profiles-CodeSystem-fi-base-security-label-cs-TURVAKIELTO"> </a>  
+                  <a href="CodeSystem-fi-base-security-label-cs.html#fi-base-security-label-cs-TURVAKIELTO">TURVAKIELTO</a>
+                </td>
+                <td>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs</td>
+                <td>Turvakielto</td>
+                <td>
+                  <div>
+                    <p>A non-disclosure for personal safety reasons according to DVV.</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-security-label-vs"/>
+        <version value="1.0.0-rc23"/>
+        <name value="FiBaseSecurityLabelVS"/>
+        <title value="Finnish ValueSet for security labels in accordance with finnish authorities"/>
+        <status value="draft"/>
+        <date value="2023-11-06T22:38:02+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FI"/>
+            <display value="Finland"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:262285b0-0365-42b7-b0db-abec345a712f"/>
+          <timestamp value="2023-11-06T22:40:04+01:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs|1.0.0-rc23"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs"/>
+            <code value="TURVAKIELTO"/>
+            <display value="Turvakielto"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://gen.kanta.fi/kanta-provenance-agent-role"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem urn:ietf:rfc:3986 version n/a</li>
+                <li>system urn:ietf:rfc:3986 version n/a</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-http---gen.kanta.fi-fikanta-cs-rolecategory"> </a>  http://gen.kanta.fi/fikanta-cs-rolecategory
+                </td>
+                <td>urn:ietf:rfc:3986</td>
+                <td>Kanta specified roles</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="urn-ietf-rfc-3986-urn-oid-1.2.246.537.5.40172"> </a>  urn:oid:1.2.246.537.5.40172
+                </td>
+                <td>urn:ietf:rfc:3986</td>
+                <td>eArkisto - Rekisteripitäjän laji</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://gen.kanta.fi/kanta-provenance-agent-role"/>
+        <version value="1.0.0-rc23"/>
+        <title value="Example value set for provenance roles"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-11-06T22:38:02+01:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="FI"/>
+            <display value="Finland"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:e42662cd-dad1-4664-bc20-2cd0bb543902"/>
+          <timestamp value="2023-11-06T22:40:04+01:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="urn:ietf:rfc:3986|n/a"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="http://gen.kanta.fi/fikanta-cs-rolecategory"/>
+            <display value="Kanta specified roles"/>
+          </contains>
+          <contains>
+            <system value="urn:ietf:rfc:3986"/>
+            <code value="urn:oid:1.2.246.537.5.40172"/>
+            <display value="eArkisto - Rekisteripitäjän laji"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

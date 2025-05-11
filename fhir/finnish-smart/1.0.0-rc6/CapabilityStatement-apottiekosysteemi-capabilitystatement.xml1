@@ -1,0 +1,1500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="apottiekosysteemi-capabilitystatement"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-server-profile"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2/><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr><tr><td>AllergyIntolerance</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Appointment</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Condition</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Consent</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Coverage</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Device</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DeviceRequest</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DeviceUseStatement</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DiagnosticReport</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Encounter</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Endpoint</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Flag</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Goal</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Immunization</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>ImmunizationRecommendation</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>List</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Medication</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>MedicationDispense</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationRequest</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationStatement</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>NutritionOrder</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Organization</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Patient</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Practitioner</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>ProcedureRequest</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Schedule</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Slot</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Specimen</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr></table></div>
+  </text>
+  <url value="https://hl7.fi/fhir/finnish-smart/CapabilityStatement/apottiekosysteemi-capabilitystatement"/>
+  <version value="1.0.0-rc6"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2023-01-17T10:35:03Z"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="mikael@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright Epic 1979-2022"/>
+  <kind value="instance"/>
+  <software>
+    <name value="Epic"/>
+    <version value="toukokuu 2022"/>
+    <releaseDate value="2022-09-12"/>
+  </software>
+  <fhirVersion value="3.0.1"/>
+  <format value="xml"/>
+  <format value="json"/>
+  <rest>
+    <mode value="server"/>
+    <security>
+      <extension url="http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris">
+        <extension url="authorize">
+          <valueUri value="https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/authorize"/>
+        </extension>
+        <extension url="token">
+          <valueUri value="https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/token"/>
+        </extension>
+      </extension>
+      <cors value="true"/>
+      <service>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+          <code value="OAuth"/>
+          <display value="OAuth"/>
+        </coding>
+        <text value="OAuth"/>
+      </service>
+      <service>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+          <code value="SMART-on-FHIR"/>
+          <display value="SMART-on-FHIR"/>
+        </coding>
+        <text value="SMART-on-FHIR"/>
+      </service>
+      <service>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/restful-security-service"/>
+          <code value="Basic"/>
+          <display value="Basic"/>
+        </coding>
+        <text value="Basic"/>
+      </service>
+    </security>
+    <resource>
+      <type value="AllergyIntolerance"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for AllergyIntolerance resources for a specified patient ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Appointment"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Refine a search for Appointment resources by date. By default, all Appointments are returned."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Appointment resources by identifier."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Appointment resources for a specified patient ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Appointment resources by status. By default, all Appointments are returned."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Binary"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="Condition"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Condition resources by category. By default, the search returns problem list Condition resources."/>
+      </searchParam>
+      <searchParam>
+        <name value="clinical-status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Condition resources by clinicalStatus. By default, the search returns active Condition resources. Only clinical statuses of resolved and active are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="encounter"/>
+        <type value="reference"/>
+        <documentation value="Search for Condition resources for specific encounters. If not provided, only problem list Condition results are returned."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Condition resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Condition resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Consent"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Consent resources by category."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Consent resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Consent resources by status."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Consent resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Coverage"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="beneficiary"/>
+        <type value="reference"/>
+        <documentation value="Search for Coverage resource for a specific patient ID. You can use &quot;patient&quot; or &quot;beneficiary&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Coverage resource for a specific patient ID. You can use &quot;patient&quot; or &quot;beneficiary&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Device"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="device-name"/>
+        <type value="string"/>
+        <documentation value="A string that will match the Device.udi.name field. Not case sensitive."/>
+      </searchParam>
+      <searchParam>
+        <name value="manufacturer"/>
+        <type value="string"/>
+        <documentation value="Manufacturer of the device."/>
+      </searchParam>
+      <searchParam>
+        <name value="model"/>
+        <type value="string"/>
+        <documentation value="Model number of the device."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The patient in whom this device is implanted. This is a required parameter."/>
+      </searchParam>
+      <searchParam>
+        <name value="udi-carrier"/>
+        <type value="string"/>
+        <documentation value="The UDI barcode string - matches static UDI."/>
+      </searchParam>
+      <searchParam>
+        <name value="udi-di"/>
+        <type value="string"/>
+        <documentation value="The UDI device identifier (DI)."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="DeviceRequest"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for a DeviceRequest resource for a specified patient ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Search for a DeviceRequest based on a device request status"/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="DeviceUseStatement"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for DeviceUseStatement resources for a specified patient ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="DiagnosticReport"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for DiagnosticReport resources by category."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Refine a search for DiagnosticReport resources by code."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Refine a search for DiagnosticReport resources by specifying a date or date range that a DiagnosticReport was resulted or recorded. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included. Not supported by Care Plan Goal."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for DiagnosticReport resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for DiagnosticReport resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="DocumentReference"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="author"/>
+        <type value="reference"/>
+        <documentation value="Further refine a search for a given set of DocumentReferences on a patient by specifying a Practitioner ID that corresponds to the author of the document. Not supported for ccda-document or clinical-note search."/>
+      </searchParam>
+      <searchParam>
+        <name value="class"/>
+        <type value="token"/>
+        <documentation value="Refine a search for DocumentReference resources by category. Only &quot;clinical-note&quot;, &quot;ccda-document&quot;, &quot;correspondence&quot;, and &quot;imaging-result&quot; are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="created"/>
+        <type value="date"/>
+        <documentation value="Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the document creation time. Not supported for correspondence or imaging-result search."/>
+      </searchParam>
+      <searchParam>
+        <name value="docstatus"/>
+        <type value="token"/>
+        <documentation value="Further refine a search for a given set of DocumentReferences on a patient by specifying a docStatus. By default, all docStatuses are returned. Not supported for ccda-document, correspondence, or imaging-result search."/>
+      </searchParam>
+      <searchParam>
+        <name value="encounter"/>
+        <type value="reference"/>
+        <documentation value="Search for DocumentReference resources for a specified encounter ID. Not supported for ccda-document, correspondence, or imaging-result search."/>
+      </searchParam>
+      <searchParam>
+        <name value="indexed"/>
+        <type value="date"/>
+        <documentation value="Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the document indexed time. Not supported for ccda-document or clinical-note search."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for DocumentReference resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="period"/>
+        <type value="date"/>
+        <documentation value="Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the time of the service that is being documented."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for DocumentReference resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value="Further refine a search for a given set of DocumentReferences on a patient by specifying a LOINC code or internal category ID to return only documents of that type. Not supported for ccda-document search."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Encounter"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="class"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Encounter resources by class. By default, all classes are returned."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Refine a search for Encounter resources by date. By default, all Encounters are returned. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]]). Local server time is assumed if time zone information is not included."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Search for Encounter resources by encounter identifier in the format &lt;code system&gt;|&lt;code&gt;"/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Encounter resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for difference references."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Encounter resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for difference references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Endpoint"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="Flag"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Flag resources by category."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Flag resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Flag resources by status."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Flag resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Goal"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refines a search by Goal Category. This parameter is ignored if searching via _ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Patient resources for a specific patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently but they can't be used at the same time for different references. This parameter is ignored if searching via _ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refines a search based on Goal Status. This parameter is ignored if searching via _ID. This parameter is only supported by patient goals."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Patient resources for a specific patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently but they can't be used at the same time for different references. This parameter is ignored if searching via _ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Immunization"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Vaccine administration date. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included. This parameter is ignored if searching via ids."/>
+      </searchParam>
+      <searchParam>
+        <name value="notgiven"/>
+        <type value="token"/>
+        <documentation value="A boolean that indicates whether or not an immunization has been administered. This parameter is ignored if searching via ids."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Immunization resources for a specified patient ID. This parameter is ignored if searching via ids."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Immunization by status. Completed is the only supported status."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="ImmunizationRecommendation"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="The FHIR id of a patient whose immunization recommendations you'd like to obtain. Only one of either patient or subject needs to be specified."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="List"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="The kind of list to search for (e.g. PatientList)"/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Used to return patients that have questionnaires due by a certain date."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="An internal id and system allowing access to a list without knowing its FHIR ID (currently supports Patient Lists)."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Location"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="Medication"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="MedicationDispense"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for MedicationDispense resources for a specified patient ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for MedicationDispense resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for difference references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationRequest"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="authoredon"/>
+        <type value="date"/>
+        <documentation value="Further refine a search for MedicationRequest resources for a given patient by specifying a date or a range of dates for when the medication was ordered. Note: all medications will be returned regardless of date range provided on the search."/>
+      </searchParam>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for MedicationRequest resources by category. By default, the search returns all categories. Categories of inpatient, outpatient, and community are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for MedicationRequest resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for difference references."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for MedicationRequest resources by one or more statuses. By default, only medications with active statuses are returned. MedicationRequest searches support active, on-hold, completed and stopped. If searching by status, active must be included."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for MedicationRequest resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="MedicationStatement"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for MedicationStatement resources by category. By default, the search returns all categories. Categories of inpatient, outpatient, community, and patientspecified are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="effective"/>
+        <type value="date"/>
+        <documentation value="Further refine a search for MedicationStatement resources for a given patient by specifying a date or a range of dates for when the medication was ordered. Note: all medications will be returned regardless of date range provided on the search."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for MedicationStatement resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for difference references."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for MedicationStatement resources by one or more statuses. By default, only medications with active statuses are returned. MedicationStatement searches support active, on-hold, completed, and stopped. If searching by status, active must be included."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for MedicationStatement resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="NutritionOrder"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for NutritionOrder resources for a specified patient ID."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Observation"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <code value="update"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Observation resources by category. Only laboratory, vital-signs, social-history, core-characteristics, functional-mental-status, LDA, and SNOMED codes 384821006 and 118228005 are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="code"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Observation resources by LOINC code, SNOMED code, or flowsheet row IDs."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Refine a search for Observation resources by specifying a date or date range that a result- or vital sign-based Observation was resulted or recorded. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included."/>
+      </searchParam>
+      <searchParam>
+        <name value="issued"/>
+        <type value="date"/>
+        <documentation value="Refine a search for Observation resources by specifying a date or date range that a social-history-based Observation was made available. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Observation resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Observation resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Organization"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="Patient"/>
+      <interaction>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="address"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources using an address string."/>
+      </searchParam>
+      <searchParam>
+        <name value="address-city"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources using the city for a patient's home address. You can use this parameter along with other address parameters."/>
+      </searchParam>
+      <searchParam>
+        <name value="address-postalcode"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources using the postal code for a patient's home address. You can use this parameter along with other address parameters."/>
+      </searchParam>
+      <searchParam>
+        <name value="address-state"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources using the state for a patient's home address. You can use this parameter along with other address parameters."/>
+      </searchParam>
+      <searchParam>
+        <name value="birthdate"/>
+        <type value="date"/>
+        <documentation value="Search for Patient resources using a date of birth in ISO format (YYYY-MM-DD)."/>
+      </searchParam>
+      <searchParam>
+        <name value="family"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by family (last) name. You can use the family parameter along with other name parameters to search by a patient's name. Family name searching supports exact matching, &quot;sounds like&quot; matching, and patient aliases."/>
+      </searchParam>
+      <searchParam>
+        <name value="gender"/>
+        <type value="token"/>
+        <documentation value="Search for Patient resources using the following gender codes: female, male, other, or unknown."/>
+      </searchParam>
+      <searchParam>
+        <name value="given"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by given (first) name. You can use the given parameter along with other name parameters to search by a patient's name. Given name searching supports both exact and &quot;sounds like&quot; matches. Patient aliases and dominant name aliases (ex. Bob for Robert) are also supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Search for Patient resources by a patient's identifier. You can use the identifier parameter as the only parameter in a search or in conjunction with other parameters. A patient's identifier must be in the format {&lt;code system&gt;|}&lt;code&gt; or {&lt;ID Type&gt;|}&lt;ID&gt;."/>
+      </searchParam>
+      <searchParam>
+        <name value="legal-sex"/>
+        <type value="token"/>
+        <documentation value="Search for Patient resources using the following gender codes: female, male, nonbinary, x, other, or unknown."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by a patient's name. To search on specific name parts use the name part parameters, such as family or given. This parameter is ignored if any name part parameters are used."/>
+      </searchParam>
+      <searchParam>
+        <name value="own-name"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by patient's own last name, usually used in non-US names. You can use the own-name parameter along with other name parameters to search by a patient's name."/>
+      </searchParam>
+      <searchParam>
+        <name value="own-prefix"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by patient's own last name prefix, usually used in non-US names. You can use the own-prefix parameter along with other name parameters to search by a patient's name, but own-name must also be included."/>
+      </searchParam>
+      <searchParam>
+        <name value="partner-name"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by patient's spouse's last name, usually used in non-US names. You can use the partner-name parameter along with other name parameters to search by a patient's name, but own-name must also be included."/>
+      </searchParam>
+      <searchParam>
+        <name value="partner-prefix"/>
+        <type value="string"/>
+        <documentation value="Search for Patient resources by patient's spouse's last name prefix, usually used in non-US names. You can use the partner-prefix parameter along with other name parameters to search by a patient's name, but own-name must also be included."/>
+      </searchParam>
+      <searchParam>
+        <name value="telecom"/>
+        <type value="token"/>
+        <documentation value="Search for Patient resources using a patient's home phone number, cell phone number, or email address."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Practitioner"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="address"/>
+        <type value="string"/>
+        <documentation value="Any part of an address (street, city, etc.) where a practitioner can be visited. When used, family is also required. Only respected if no other address parameters are populated. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="address-city"/>
+        <type value="string"/>
+        <documentation value="The city where a practitioner can be visited. When used, address-state is also required. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="address-postalcode"/>
+        <type value="string"/>
+        <documentation value="The zip code where a practitioner can be found. When used, family is also required."/>
+      </searchParam>
+      <searchParam>
+        <name value="address-state"/>
+        <type value="string"/>
+        <documentation value="The state where a practitioner can be found. When used, family is also required. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="family"/>
+        <type value="string"/>
+        <documentation value="A practitioner's family (last) name. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="given"/>
+        <type value="string"/>
+        <documentation value="A practitioner's given (first) name. When used, family is also required. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="A practitioner's identifier in the format &lt;code system&gt;|&lt;code&gt;. Code system must be a URN. When this parameter is provided, all others (except _id) are ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value="Any part of a practitioner's name. For full names, format should be first last. When specified, family and given are ignored. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="PractitionerRole"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="email"/>
+        <type value="token"/>
+        <documentation value="Refine a search for a PractitionerRole by entering a valid email address. Code system is ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="Search for PractitionerRoles using identifiers. A code system is required. The code must be prepended with URN:OID. Some codes may need to be URL encoded prior to query."/>
+      </searchParam>
+      <searchParam>
+        <name value="location"/>
+        <type value="reference"/>
+        <documentation value="Search for PractitionerRoles using a Location ID. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="organization"/>
+        <type value="reference"/>
+        <documentation value="Search for PractitionerRoles using an Organization ID. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="phone"/>
+        <type value="token"/>
+        <documentation value="Refine a search for a PractitionerRole by entering a valid phone number. Code system is ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="practitioner"/>
+        <type value="reference"/>
+        <documentation value="Search for PractitionerRoles for a specified Practitioner ID. Only the first instance of this parameter is respected."/>
+      </searchParam>
+      <searchParam>
+        <name value="role"/>
+        <type value="token"/>
+        <documentation value="Refine a search for a PractitionerRole by entering a valid role. System must be included."/>
+      </searchParam>
+      <searchParam>
+        <name value="specialty"/>
+        <type value="token"/>
+        <documentation value="Search for PractitionerRoles for a given specialty. A code system is required. Depending on the organization, NUCC may be supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="telecom"/>
+        <type value="token"/>
+        <documentation value="Refine a search for a PractitionerRole for a specific telecom. System must be specified as either 'phone' or 'email'"/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Procedure"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="category"/>
+        <type value="token"/>
+        <documentation value="Refine a search for Procedure resources by category. Only the following values are supported: 103693007 (diagnostic procedures), 387713003 (surgical procedures), 9632001 (nursing procedures, Netherlands only), and 225317005 or freedom-restricting-intervention (restricting intervention, Netherlands only) are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="date"/>
+        <type value="date"/>
+        <documentation value="Refine a search for Procedure resources by specifying a date or date range that a Procedure was resulted. Enter dates in ISO format (YYYY[-MM[-DD]]). Not supported by nursing procedures or restricting interventions."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for Procedure resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for Procedure resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="ProcedureRequest"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="encounter"/>
+        <type value="reference"/>
+        <documentation value="Search for ProcedureRequest resources for specific encounters. If not provided, all ProcedureRequest results are returned."/>
+      </searchParam>
+      <searchParam>
+        <name value="patient"/>
+        <type value="reference"/>
+        <documentation value="Search for ProcedureRequest resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="requester"/>
+        <type value="reference"/>
+        <documentation value="Refine a search for ProcedureRequest resources by individual making the request. By defualt, all ProcedureRequests are returned."/>
+      </searchParam>
+      <searchParam>
+        <name value="status"/>
+        <type value="token"/>
+        <documentation value="Refine a search for ProcedureRequest resources by status. By default, only active ProcedureRequests are returned. Statuses of draft, active, completed, cancelled, and unknown are supported."/>
+      </searchParam>
+      <searchParam>
+        <name value="subject"/>
+        <type value="reference"/>
+        <documentation value="Search for ProcedureRequest resources for a specified patient ID. You can use &quot;patient&quot; or &quot;subject&quot; equivalently, but they cannot be used at the same time for different references."/>
+      </searchParam>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <type value="Schedule"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="Slot"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+    </resource>
+    <resource>
+      <type value="Specimen"/>
+      <interaction>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <code value="search-type"/>
+      </interaction>
+      <readHistory value="false"/>
+      <updateCreate value="false"/>
+      <conditionalCreate value="false"/>
+      <conditionalRead value="not-supported"/>
+      <conditionalUpdate value="false"/>
+      <conditionalDelete value="not-supported"/>
+      <searchInclude value="*"/>
+      <searchParam>
+        <name value="_id"/>
+        <type value="token"/>
+        <documentation value="FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored."/>
+      </searchParam>
+      <searchParam>
+        <name value="_count"/>
+        <type value="number"/>
+        <documentation value="Number of results per page."/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

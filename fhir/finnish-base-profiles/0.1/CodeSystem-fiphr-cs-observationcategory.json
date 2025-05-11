@@ -1,0 +1,63 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiphr-cs-observationcategory",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">nutrition<a name=\"fiphr-cs-observationcategory-nutrition\"> </a></td></tr><tr><td style=\"white-space:nowrap\">urinary-monitoring<a name=\"fiphr-cs-observationcategory-urinary-monitoring\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td>nutrition</td><td>Nutrition</td><td>Ravitsemus</td><td>Näringstillstånd</td></tr><tr><td>urinary-monitoring</td><td>Urinary monitoring</td><td>Virtsan seuranta</td><td>Uppföljning av urinen</td></tr></table></div>"
+  },
+  "url" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+  "version" : "0.2.1",
+  "name" : "fiphr-cs-observationcategory",
+  "title" : "Code System Finnish PHR Observation Category",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2019-10-14T11:00:00Z",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR Observation Category Code System that defines codes for Observation.category when there is no suitable code in the FHIR standard observation category code system.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "nutrition",
+    "designation" : [{
+      "language" : "fi",
+      "value" : "Ravitsemus"
+    },
+    {
+      "language" : "sv",
+      "value" : "Näringstillstånd"
+    },
+    {
+      "language" : "en",
+      "value" : "Nutrition"
+    }]
+  },
+  {
+    "code" : "urinary-monitoring",
+    "designation" : [{
+      "language" : "fi",
+      "value" : "Virtsan seuranta"
+    },
+    {
+      "language" : "sv",
+      "value" : "Uppföljning av urinen"
+    },
+    {
+      "language" : "en",
+      "value" : "Urinary monitoring"
+    }]
+  }]
+}

@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Finnish Base Profiles v1.0.0-rc22</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+    <link href="assets/css/fi.css" rel="stylesheet"/>
+    <link href="assets/css/history.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-rc22 - qa-preview
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v1.0.0-rc22: QA Preview) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Abstract Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#7">Other</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Abstract Profiles </h3>
+    <p>These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly.  I.e. instances can conform to profiles <em>based</em> on these abstract profiles, but do not declare conformance to the abstract profiles themselves.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-information-custodian.html"
+                  title="StructureDefinition/fi-base-information-custodian">FI Base InformationCustodian</a>
+            </td>
+            <td>
+<p>This is a Finnish abstract base profile for the Provenance resource, used to communicate the custodian of information (<em>rekisterinpitäjä</em>).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kanta-document-other-metadata-profile.html"
+                  title="StructureDefinition/kanta-document-other-metadata-profile">An imaginary profile for Kanta system, specifying things apart from the information custodian</a>
+            </td>
+            <td>
+<p>This is one way in which a system might use the Finnish Base Information Custodian profile. This profile defines other constraints. The profile KantaDocumentMetadata combines the requirements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-kanta-document-metadata-profile.html"
+                  title="StructureDefinition/kanta-document-metadata-profile">An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile</a>
+            </td>
+            <td>
+<p>This is one way in which a system might use the Finnish Base Information Custodian profile. Kanta has expressed the wish to have only one big Provenance resource containing all document metadata. This can be accomplished by creating a profile based on the Finnish Base Provenance profile and <a href="http://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html">imposing</a> the Finnish Base Information Custodian profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-appointment.html"
+                  title="StructureDefinition/fi-base-appointment">FI Base Appointment</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Appointment resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-condition.html"
+                  title="StructureDefinition/fi-base-condition">FI Base Condition</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Condition resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-encounter.html"
+                  title="StructureDefinition/fi-base-encounter">FI Base Encounter</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Encounter resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-episode-of-care.html"
+                  title="StructureDefinition/fi-base-episode-of-care">FI Base EpisodeOfCare</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the EpisodeOfCare resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-healthcare-service.html"
+                  title="StructureDefinition/fi-base-healthcare-service">FI Base HealthcareService</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the HealthcareService resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-information-custodian-individual.html"
+                  title="StructureDefinition/fi-base-information-custodian-individual">FI Base Information Custodian (Individual Provider)</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Provenance resource, used to communicate an individual practitioner as the custodian of information (<em>rekisterinpitäjä</em>).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-information-custodian-private.html"
+                  title="StructureDefinition/fi-base-information-custodian-private">FI Base Information Custodian (Private Organization)</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Provenance resource, used to communicate a private organization as the custodian of information (<em>rekisterinpitäjä</em>).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-information-custodian-public.html"
+                  title="StructureDefinition/fi-base-information-custodian-public">FI Base Information Custodian (Public Organization)</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Provenance resource, used to communicate a public organization as the custodian of information (<em>rekisterinpitäjä</em>).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-location.html"
+                  title="StructureDefinition/fi-base-location">FI Base Location</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Location resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-medication.html"
+                  title="StructureDefinition/fi-base-medication">FI Base Medication</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Medication resource for other than patient access use cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-medication-administration.html"
+                  title="StructureDefinition/fi-base-medication-administration">FI Base MedicationAdministration</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the MedicationAdministration resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-medication-request.html"
+                  title="StructureDefinition/fi-base-medication-request">FI Base MedicationRequest</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the MedicationRequest resource, for other than patient access use cases.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-medication-statement.html"
+                  title="StructureDefinition/fi-base-medication-statement">FI Base MedicationStatement</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the MedicationStatement resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-observation.html"
+                  title="StructureDefinition/fi-base-observation">FI Base Observation</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Observation resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-organization.html"
+                  title="StructureDefinition/fi-base-organization">FI Base Organization</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Organization resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-patient.html"
+                  title="StructureDefinition/fi-base-patient">FI Base Patient</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Patient resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-patient-medication.html"
+                  title="StructureDefinition/fi-base-patient-medication">FI Base Patient Medication</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Medication resource for patient access use case.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-patient-medication-request.html"
+                  title="StructureDefinition/fi-base-patient-medication-request">FI Base Patient MedicationRequest</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the MedicationRequest resource for the patient access use case.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-practitioner.html"
+                  title="StructureDefinition/fi-base-practitioner">FI Base Practitioner</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Practitioner resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-practitioner-role.html"
+                  title="StructureDefinition/fi-base-practitioner-role">FI Base PractitionerRole</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the PractitionerRole resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-provenance.html"
+                  title="StructureDefinition/fi-base-provenance">FI Base Provenance</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Provenance resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-reason-for-care.html"
+                  title="StructureDefinition/fi-base-reason-for-care">FI Base Reason for Care (encounter-diagnosis and reason for visit)</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the encounter-diagnosis and (nurse asserted) reason for visit Conditions.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-schedule.html"
+                  title="StructureDefinition/fi-base-schedule">FI Base Schedule</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Schedule resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-slot.html"
+                  title="StructureDefinition/fi-base-slot">FI Base Slot</a>
+            </td>
+            <td>
+<p>This is the Finnish base profile for the Slot resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-immunization.html"
+                  title="StructureDefinition/fi-base-immunization">Fi Base Immunization</a>
+            </td>
+            <td>
+<p>This is a base profile for Finnish Immunization resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-base-procedure.html"
+                  title="StructureDefinition/fi-base-procedure">Fi Base Procedure</a>
+            </td>
+            <td>
+<p>The Base profile for Finnish Procedure resource.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-categorization-of-accident.html"
+                  title="StructureDefinition/condition-categorization-of-accident">Categorization of the type of accident</a>
+            </td>
+            <td>
+<p>Encoded categorization of the type of accident leading to injury, illness or death.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-cause-of-adverse-effect.html"
+                  title="StructureDefinition/condition-cause-of-adverse-effect">Cause of an adverse effect</a>
+            </td>
+            <td>
+<p>Encoded information on the cause of an adverse effect, when involving a procedure or medication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-endocrinological-disorder.html"
+                  title="StructureDefinition/condition-endocrinological-disorder">Endocrinological disorder</a>
+            </td>
+            <td>
+<p>Code for Endocrinological disorder.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-external-cause.html"
+                  title="StructureDefinition/condition-external-cause">External cause for diagnosis</a>
+            </td>
+            <td>
+<p>External cause for diagnosis.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-caused-by-medication.html"
+                  title="StructureDefinition/condition-caused-by-medication">Medication that caused this condition</a>
+            </td>
+            <td>
+<p>Encoded information of medication that caused this condition. Uses ATC-coding.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-municipality-code.html"
+                  title="StructureDefinition/municipality-code">Municipality Code</a>
+            </td>
+            <td>
+<p>Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-profession.html"
+                  title="StructureDefinition/patient-profession">Patient Profession Extension</a>
+            </td>
+            <td>
+<p>Extension for presenting patient profession.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-permanence.html"
+                  title="StructureDefinition/condition-permanence">Permanence of condition</a>
+            </td>
+            <td>
+<p>Encoded information of whether this is the permanent.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-primary.html"
+                  title="StructureDefinition/condition-primary">Primary condition for encounter</a>
+            </td>
+            <td>
+<p>Encoded information of whether this is the primary/main condition for encounter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-condition-physical-excercise.html"
+                  title="StructureDefinition/condition-physical-excercise">Type of physical exercise during which injury occurred.</a>
+            </td>
+            <td>
+<p>Encoded information of the type of physical exercise during which injury occurred.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vaccination-recorder.html"
+                  title="StructureDefinition/vaccination-recorder">Vaccination Recorder</a>
+            </td>
+            <td>
+<p>Vaccination recorder may not be the same person who performed the addministration.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-kanta-provenance-agent-role.html"
+                  title="ValueSet/kanta-provenance-agent-role">Example value set for provenance roles</a>
+            </td>
+            <td>
+<p>This example value set contains the systems that can be used for agent roles in Kanta profiles</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SecurityLabelVS.html" title="ValueSet/SecurityLabelVS">Finnish ValueSet for security labels in accordance with finnish authorities</a>
+            </td>
+            <td>
+<p>This is the ValueSet for security labels in accordance with finnish authorities.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fi-base-register-identifier.html"
+                  title="ValueSet/fi-base-register-identifier">Finnish ValueSet for systems of registry specifiers</a>
+            </td>
+            <td>
+<p>This value set contains the systems that can be used to identify the registry specifier for information custodianship.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-SecurityLabelCS.html"
+                  title="CodeSystem/SecurityLabelCS">Finnish CodeSystem for security labels</a>
+            </td>
+            <td>
+<p>This is the CodeSystem for security labels in accordance with finnish authorities.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim1.html"
+                  title="MedicationRequest/medicationrequestesim1">1 tabletti 2 kertaa päivässä</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim7A.html"
+                  title="MedicationRequest/medicationrequestesim7A">1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim7B.html"
+                  title="MedicationRequest/medicationrequestesim7B">1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim4.html"
+                  title="MedicationRequest/medicationrequestesim4">1-2 tablettia 1-3 kertaa päivässä</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim3.html"
+                  title="MedicationRequest/medicationrequestesim3">1-2 tablettia kerran päivässä</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim2.html"
+                  title="MedicationRequest/medicationrequestesim2">2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-1.2.246.10.31045308.10002.0.html"
+                  title="Organization/1.2.246.10.31045308.10002.0">A high level organization</a>
+            </td>
+            <td>
+<p>SOTE-toimintayksikko -level organization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-id-for-bed-3.html" title="Location/id-for-bed-3">A named bed</a>
+            </td>
+            <td>
+<p>Example of a bed recorded with the Location resource.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-practitionerRoleesim1.html"
+                  title="PractitionerRole/practitionerRoleesim1">A simple practitioner role</a>
+            </td>
+            <td>
+<p>An example PractitionerRole instance from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-kanta-document-metadata-profile-test-example-1.html"
+                  title="Provenance/kanta-document-metadata-profile-test-example-1">A test example demonstrating that validation works</a>
+            </td>
+            <td>
+<p>This example does not have the role for the agent from system urn:oid:1.2.246.537.5.40172, as would be mandated by the Finnish Base Information Custodian profile. QA report is expected to show an error.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-kanta-document-metadata-profile-example.html"
+                  title="Provenance/kanta-document-metadata-profile-example">An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system</a>
+            </td>
+            <td>
+<p>This example demonstrates one way in which a system might use the Finnish Base Information Custodian profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-kanta-document-metadata-profile-example-2.html"
+                  title="Provenance/kanta-document-metadata-profile-example-2">An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system, using the kanta code also for the custodian agent</a>
+            </td>
+            <td>
+<p>This example demonstrates one way in which a system might use the Finnish Base Information Custodian profile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-id-for-child-encounter-2.html"
+                  title="Encounter/id-for-child-encounter-2">Another Encounter that is part of palvelutapahtuma</a>
+            </td>
+            <td>
+<p>An example of a FI Base encounter which is part of another encounter that corresponds to palvelutapahtuma in Kanta.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-kanta-document-metadata-profile-test-example-2.html"
+                  title="Provenance/kanta-document-metadata-profile-test-example-2">Another test example demonstrating that validation works</a>
+            </td>
+            <td>
+<p>This example does not have a role with the code system specified by Kanta. QA report is expected to show an error.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ColonBiopsy.html" title="Procedure/ColonBiopsy">Biopsy of Colon procedure example</a>
+            </td>
+            <td>
+<p>Sub-procedure for Colotomy procedure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="HealthcareService-healthcareService-example.html"
+                  title="HealthcareService/healthcareService-example">Codified healthcare service</a>
+            </td>
+            <td>
+<p>HealthcareService example which describes general practitioner services by using THL code systems.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-id-for-diagnosis-1.html"
+                  title="Condition/id-for-diagnosis-1">Condition - an example diagnosis</a>
+            </td>
+            <td>
+<p>An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis is asserted by a clinician.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-id-for-diagnosis-3.html"
+                  title="Condition/id-for-diagnosis-3">Condition - an example diagnosis with an adverse effect.</a>
+            </td>
+            <td>
+<p>An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has an adverse effect.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-id-for-diagnosis-2.html"
+                  title="Condition/id-for-diagnosis-2">Condition - an example diagnosis with external cause, accident and medication information.</a>
+            </td>
+            <td>
+<p>An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has external cause, accident and medication information.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-custodian-individual.html"
+                  title="Provenance/custodian-individual">Custodian of information (rekisterinpitäjä), an individual provider</a>
+            </td>
+            <td>
+<p>Example of Provenance that communicates a private individual healthcare provider as the custodian of information for an episode of care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-custodian-occupational-healthcare.html"
+                  title="Provenance/custodian-occupational-healthcare">Custodian of information (rekisterinpitäjä), private occupational healthcare</a>
+            </td>
+            <td>
+<p>Example of Provenance that communicates a private occupational healthcare organization as the custodian of information for an episode of care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-custodian-public-healthcare.html"
+                  title="Provenance/custodian-public-healthcare">Custodian of information (rekisterinpitäjä), public healthcare</a>
+            </td>
+            <td>
+<p>Example of Provenance that communicates a public healthcare organization as the custodian of information for an episode of care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-1.2.246.10.8286189.10.100012.html"
+                  title="Organization/1.2.246.10.8286189.10.100012">Encounter - example primary care organization</a>
+            </td>
+            <td>
+<p>An example of a FI Base organization, a surgical ward. The partOf reference removed for brevity.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-id-for-ward-encounter.html"
+                  title="Encounter/id-for-ward-encounter">Encounter - patient is currently receiving care at a ward treating surgical patients</a>
+            </td>
+            <td>
+<p>An example of a FI Base encounter where a patient is currently receiving care at a ward.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-id-for-visit.html" title="Encounter/id-for-visit">Encounter - patient primary care visit</a>
+            </td>
+            <td>
+<p>An example of a FI Base encounter where a patient has completed a visit in primary care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-id-for-palvelutapahtuma.html"
+                  title="Encounter/id-for-palvelutapahtuma">Encounter that is a palvelutapahtuma in Kanta registry</a>
+            </td>
+            <td>
+<p>An example of a FI Base encounter which corresponds 1-1 to palvelutapahtuma in Kanta. Identifier with use=official marks the OID of palvelutapahtuma. Has sub-encounters.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-id-for-child-encounter.html"
+                  title="Encounter/id-for-child-encounter">Encounter that is part of palvelutapahtuma</a>
+            </td>
+            <td>
+<p>An example of a FI Base encounter which is part of another encounter that corresponds palvelutapahtuma in Kanta.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="EpisodeOfCare-id-for-episode-1.html"
+                  title="EpisodeOfCare/id-for-episode-1">Episode of care - with provenance</a>
+            </td>
+            <td>
+<p>Example of episode of care. A provenance example links to this.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Slot-FreeSlot.html" title="Slot/FreeSlot">Free slot (kertakäynti yleislääkärillä)</a>
+            </td>
+            <td>
+<p>Example of a free slot with reference to Schedule and information about service category, service type and appointment type presented in THL code system format.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-general-practitioner.html"
+                  title="Appointment/appointment-general-practitioner">GP appointment</a>
+            </td>
+            <td>
+<p>Example of an appointment with general practitioner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe2.html"
+                  title="MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2">Kanta PHR - Insulin dosage mandatory</a>
+            </td>
+            <td>
+<p>An example insulin dosage with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe3.html"
+                  title="MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3">Kanta PHR - Insulin dosage optional</a>
+            </td>
+            <td>
+<p>An example insulin dosage with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b6.html"
+                  title="Observation/48983b8b-ead3-4206-9583-fcdd40d762b6">Kanta PHR - MET measurement mandatory</a>
+            </td>
+            <td>
+<p>An example MET measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b7.html"
+                  title="Observation/48983b8b-ead3-4206-9583-fcdd40d762b7">Kanta PHR - MET measurement optional</a>
+            </td>
+            <td>
+<p>An example MET measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bloodglucose-min.html"
+                  title="Observation/bloodglucose-min">Kanta PHR - blood glucose mandatory</a>
+            </td>
+            <td>
+<p>An example blood glucose measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bloodglucose-max.html"
+                  title="Observation/bloodglucose-max">Kanta PHR - blood glucose optional</a>
+            </td>
+            <td>
+<p>An example blood glucose measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bloodglucose-as-text.html"
+                  title="Observation/bloodglucose-as-text">Kanta PHR - blood glucose result as text</a>
+            </td>
+            <td>
+<p>This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code ‘astext’ must be used in dataAbsentReason.coding.code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bloodglucose-data-absent.html"
+                  title="Observation/bloodglucose-data-absent">Kanta PHR - blood glucose with data absent</a>
+            </td>
+            <td>
+<p>This is an example, where measurement device has failed to measure blood glucose reading. In this case ‘error’ must be used in dataAbsentReason.coding.code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bloodpressure-min.html"
+                  title="Observation/bloodpressure-min">Kanta PHR - blood pressure mandatory</a>
+            </td>
+            <td>
+<p>An example blood pressure measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bloodpressure-max.html"
+                  title="Observation/bloodpressure-max">Kanta PHR - blood pressure optional</a>
+            </td>
+            <td>
+<p>An example blood pressure measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-1153859e-0c86-1000-abb8-511d0000b222.html"
+                  title="Observation/1153859e-0c86-1000-abb8-511d0000b222">Kanta PHR - body height optional</a>
+            </td>
+            <td>
+<p>An example body height measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bodyweight-min.html"
+                  title="Observation/bodyweight-min">Kanta PHR - body weight mandatory</a>
+            </td>
+            <td>
+<p>An example body weight measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-bodyweight-max.html"
+                  title="Observation/bodyweight-max">Kanta PHR - body weight optional</a>
+            </td>
+            <td>
+<p>An example body weight measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f7.html"
+                  title="Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7">Kanta PHR - calorie intake mandatory</a>
+            </td>
+            <td>
+<p>An example calorie intake measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html"
+                  title="Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8">Kanta PHR - calorie intake optional</a>
+            </td>
+            <td>
+<p>An example calorie intake measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff21.html"
+                  title="Observation/2894b2e6-7ebf-4c33-93e4-31935effff21">Kanta PHR - carbohydrate intake mandatory</a>
+            </td>
+            <td>
+<p>An example estimated carbohydrate intake measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html"
+                  title="Observation/2894b2e6-7ebf-4c33-93e4-31935effff22">Kanta PHR - carbohydrate intake optional</a>
+            </td>
+            <td>
+<p>An example estimated carbohydrate intake measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784a.html"
+                  title="Observation/71831b54-1a80-47c5-ba84-0180a5eb784a">Kanta PHR - exercise tracking mandatory</a>
+            </td>
+            <td>
+<p>An example exercise tracking measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784b.html"
+                  title="Observation/71831b54-1a80-47c5-ba84-0180a5eb784b">Kanta PHR - exercise tracking optional</a>
+            </td>
+            <td>
+<p>An example exercise tracking measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-36749a02-1710-44e7-aa76-0e934eb7860a.html"
+                  title="Patient/36749a02-1710-44e7-aa76-0e934eb7860a">Kanta PHR - patient 3</a>
+            </td>
+            <td>
+<p>An example patient for Kanta PHR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mtvpa-min.html" title="Observation/mtvpa-min">Kanta PHR - physical activity mandatory</a>
+            </td>
+            <td>
+<p>An example physical activity measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-mtvpa-max.html" title="Observation/mtvpa-max">Kanta PHR - physical activity optional</a>
+            </td>
+            <td>
+<p>An example physical activity measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f8.html"
+                  title="Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8">Kanta PHR - step count mandatory</a>
+            </td>
+            <td>
+<p>An example step count measurement with mandatory elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html"
+                  title="Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9">Kanta PHR - step count optional</a>
+            </td>
+            <td>
+<p>An example step count measurement with optional elements.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patientesim1.html" title="Patient/patientesim1">Karen van der Hentenryck</a>
+            </td>
+            <td>
+<p>An example patient from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioneresim1.html"
+                  title="Practitioner/practitioneresim1">Lars van der Knaapi</a>
+            </td>
+            <td>
+<p>An example practitioner from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-licensed-physician.html"
+                  title="Practitioner/practitioner-licensed-physician">Licenced physician</a>
+            </td>
+            <td>
+<p>Example of Licensed Physician from CGI Pegasos EHR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-PractitionerRoleGP.html"
+                  title="PractitionerRole/PractitionerRoleGP">Licenced physician in primary care</a>
+            </td>
+            <td>
+<p>This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in spesific location.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim6.html"
+                  title="MedicationRequest/medicationrequestesim6">Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim5.html"
+                  title="MedicationRequest/medicationrequestesim5">Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-medication-administration-insulin-basal-dose-kanta-stu3-sv.html"
+                  title="MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv">MedicationAdministration example of insulin basal dose</a>
+            </td>
+            <td>
+<p>A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-medication-administration-insulin-bolus-dose-fi.html"
+                  title="MedicationAdministration/medication-administration-insulin-bolus-dose-fi">MedicationAdministration example of insulin dose</a>
+            </td>
+            <td>
+<p>A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html"
+                  title="MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en">MedicationAdministration example of temporary basal rate</a>
+            </td>
+            <td>
+<p>A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-medicationesim1.html"
+                  title="Medication/medicationesim1">Myyntiluvallinen lääkevalmiste</a>
+            </td>
+            <td>
+<p>An example Medication instance from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-medicationesim2.html"
+                  title="Medication/medicationesim2">Myyntiluvallinen lääkevalmiste, joka on PKV-lääke</a>
+            </td>
+            <td>
+<p>An example Medication instance from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-1.2.246.10.2085212.10.1306.html"
+                  title="Organization/1.2.246.10.2085212.10.1306">Organization - example of a parent organization</a>
+            </td>
+            <td>
+<p>An example of a FI Base organization. Acts as a parent organization for another.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-1.2.246.10.2085212.10.1314.html"
+                  title="Organization/1.2.246.10.2085212.10.1314">Organization - example primary care organization</a>
+            </td>
+            <td>
+<p>An example of a FI Base organization, a doctor’s reception office. Data is from national SOTE-Rekisteri.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Location-LocationExample.html" title="Location/LocationExample">Outpatient clinic</a>
+            </td>
+            <td>
+<p>Example of surgery outpatient clinic with refenrence to an organization.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-with-turvakielto.html"
+                  title="Patient/patient-with-turvakielto">Patient - has TURVAKIELTO security label.</a>
+            </td>
+            <td>
+<p>An example of a FI Base patient that has the TURVAKIELTO security label indicating non-disclosure for personal safety reasons.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-of-municipality.html"
+                  title="Patient/patient-of-municipality">Patient - with the MunicipalityCode extension.</a>
+            </td>
+            <td>
+<p>An example of a FI Base patient with the MunicipalityCode extension.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html"
+                  title="Bundle/diabetes-data-bundle-kantaphr-r4-en">Patient generated glucose observations and insulin administrations as a bundle, in English</a>
+            </td>
+            <td>
+<p>A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-diabetes-data-bundle.html"
+                  title="Bundle/diabetes-data-bundle">Patient generated glucose observations and insulin administrations as a bundle, in Finnish</a>
+            </td>
+            <td>
+<p>A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-diabetes-data-bundle-kantaphr-sv.html"
+                  title="Bundle/diabetes-data-bundle-kantaphr-sv">Patient generated glucose observations and insulin administrations as a bundle, in Swedish</a>
+            </td>
+            <td>
+<p>A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-ProcedureColotomy.html"
+                  title="Procedure/ProcedureColotomy">Procedure Colotomy example</a>
+            </td>
+            <td>
+<p>This example describes main procedure, colotomy, with reference to sub-procedure.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-custodian-public-healthcare-kela.html"
+                  title="Provenance/custodian-public-healthcare-kela">Provenance example for Kanta</a>
+            </td>
+            <td>
+<p>This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Schedule-ScheduleExample.html" title="Schedule/ScheduleExample">SNOMED CT coded Schedule</a>
+            </td>
+            <td>
+<p>This is a Schedule example for appointment book. All of the used codes are from SNOMED code system.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organizationesim2.html"
+                  title="Organization/organizationesim2">Simple Organization example</a>
+            </td>
+            <td>
+<p>An example Organization from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-medication-statement-insulin.html"
+                  title="MedicationStatement/medication-statement-insulin">Simple medication statement example</a>
+            </td>
+            <td>
+<p>Patient states they are taking long acting insulin (Lantus), but not the amount.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim9.html"
+                  title="MedicationRequest/medicationrequestesim9">Tarvittaessa 1-2 tippaa 3-4 tunnin välein</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationRequest-medicationrequestesim8.html"
+                  title="MedicationRequest/medicationrequestesim8">Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen</a>
+            </td>
+            <td>
+<p>An example MedicationRequest from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-organizationesim1.html"
+                  title="Organization/organizationesim1">Testi terveysasema</a>
+            </td>
+            <td>
+<p>An example Organization from Kanta Prescription API</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-ImmunizationVaccinationExample.html"
+                  title="Immunization/ImmunizationVaccinationExample">Vaccination for TBE</a>
+            </td>
+            <td>
+<p>An example vaccination against TBE.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Provenance-id-for-provenance-1.html"
+                  title="Provenance/id-for-provenance-1">id-for-provenance-1</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Other </h3>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-25a53703-27f9-4354-8f1b-a8b2f8f3ee86.html"
+                  title="Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-36749a02-1710-44e7-aa76-0e934eb4321a.html"
+                  title="Patient/36749a02-1710-44e7-aa76-0e934eb4321a">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-7257379.html" title="Patient/7257379">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-77c2c8d2-11ce-41d5-8150-75489f8b0b0a.html"
+                  title="Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-bb13623e-2673-4b3e-85d6-5c42f5333cde.html"
+                  title="Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-cafbe8e7-38fe-4807-b995-6770e5390365.html"
+                  title="Patient/cafbe8e7-38fe-4807-b995-6770e5390365">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-daf8ca40-b46c-4c6b-99d5-d3a1b77074ad.html"
+                  title="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-f1fa0b52-eccf-44af-96c7-84a3251bb22c.html"
+                  title="Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c">A dummy patient entry</a>
+            </td>
+            <td>
+<p>A patient id supporting other examples, not included in the guide.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#1.0.0-rc22 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 24, 2023 23:43+0300">2023-10-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-base-profiles/master/LICENSE.md"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

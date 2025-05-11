@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CarePlan/care-plan-optional> a fhir:CarePlan;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "care-plan-optional"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4>
+     ], [
+       fhir:value "http://example.oma/sd/careplan";
+       fhir:index 1;
+       fhir:link <http://example.oma/sd/careplan>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "fi"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n  \n\n    \n      <div>\n          <h2>Suunnitelman otsikko</h2>\n          <p>Alaselkäkipu tai -vamma</p>\n      </div>\n      <div>\n          <h2>Suunnitelman tila</h2>\n<p>Päättynyt</p>          \n      </div>\n      <div>\n          <h2>Suunnitelman ajanjakso</h2>\n          <p>06-10-2020 - 06-10-2020</p>      \n      </div>\n      <div>\n          <h2>Suunnitelman tyyppi</h2>\n          <p>Alaselkäkipu tai -vamma</p>\n      </div>\n      <div>\n          <h2>Suunnitelman yhteenveto</h2>\n          <div><div><p>Selkäkipusi takia sinun tulisi hakeutua välittömästi päivystysvastaanotolle.</p></div> <div><p>Alaselkäkipu on paikallista ja kestänyt 1 - 4 viikkoa.  Potilaalla on kuumetta 38C , potilas on sairastanut syövän tai sairastaa syöpää, vaikeuksia pidättää virtsaa, vaikeuksia pidättää ulostetta ja vaikeuksia virtsaamisessa (virtsaaminen ei onnistu).  Kiireellisesti terveydenhuollon ammattilaisen arviota vaativat oireet: virtsainkontinenssi, virtsaamisvaikeus ja ulosteinkontinenssi. Selkäoireeseen liittyy kipua, jonka voimakkuus on 5/10. Selkäkipu on alkanut välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen. Tapaturman sattumistapa: Kompastuin kengännauhoihin. Yleisvointi on kohtalainen (pystyy tekemään pakolliset päivittäiset toiminnot). Kipulääke auttaa. Tarvitsee sairauslomaa.</p></div></div>\n      </div>\n      <div>\n          <h2>Kysymykset ja vastaukset</h2>\n          \n    \n    \n    <div>\n      <p>Oma arvioni</p>\n	    \n	      <p>Arvelen tarvitsevani hoitoa ja haluan täyttää oirekyselyn</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Ikäsi (vuosia)</p>\n	    \n	      \n	      \n	      <p>30</p>\n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Mikä selkäkivun oire on kyseessä?</p>\n	    \n	      <p>Alaselän oire</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Alkoiko selkäkipusi välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        <p>Kyllä</p>\n	        \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Oliko kyseessä <a href=\"https://www.tyosuojelu.fi/tyoterveys-ja-tapaturmat/tyotapaturmat\">työtapaturma</a>?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Minkälaisen tapaturman seurauksena selkäkipu on alkanut?</p>\n	    \n	      \n	      \n	      \n	      <p>Kompastuin kengännauhoihin</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko lääkäri jo arvioinut selkäsi tilannetta edellä kuvaamasi tapaturman jälkeen?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Miten kauan selkäkipuoireesi on kestänyt?</p>\n	    \n	      <p>1 - 4 viikkoa</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko sinulle selkäoireesi yhteydessä ilmaantunut vaikeuksia pidättää virtsaa tai ulostetta?</p>\n	    \n	      <p>Vaikeuksia pidättää ulostetta</p>\n	      \n	      \n	      \n	              \n	    \n	      <p>Vaikeuksia pidättää virtsaa</p>\n	      \n	      \n	      \n	              \n	    \n	      <p>Vaikeuksia virtsaamisessa (virtsaaminen ei onnistu)</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko sinulla alaraajassa tai alaraajoissa tuoretta etenevää voiman puutetta (et pysty tukemaan alaraajan tai alaraajojen varaan)?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko sinulla toisen alaraajan tai molempien alaraajojen etenevää tunnottomuutta, puutumista tai voiman heikentymistä?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko kyseessä äkillisesti alkanut vatsakipu, joka säteilee myös selkään?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Miten voimakasta kipu on ollut viimeisen vuorokauden aikana?</p>\n	    \n	      <p>5</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Lievittyykö selkäkipusi, kun nukut sopivassa asennossa?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Millaisena kipu tuntuu?</p>\n	    \n	      <p>Kipu tuntuu selässä paikallisena tai ulottuu korkeintaan reiden tasoon</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Millainen on yleisvointisi?</p>\n	    \n	      <p>Pystyn olemaan jalkeilla, mutta selviydyn vain pakollisista kotiaskareista</p>\n	      \n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko sinulla kuumetta (kuumeen rajana pidetään 37,5 astetta)?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        <p>Kyllä</p>\n	        \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Kuinka paljon kuumetta sinulla on ollut korkeimmillaan kuluneen vuorokauden aikana? Vastaa kymmenyksen tarkkuudella (esim. 37,8).</p>\n	    \n	      \n	      <p>38</p>\n	      \n	      \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Sairastatko tai oletko sairastanut syöpää?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        <p>Kyllä</p>\n	        \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Minkä syövän olet sairastanut tai mitä syöpää sairastat?</p>\n	    \n	      \n	      \n	      \n	      <p>Ihosyöpä</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Tarvitsetko selkäkipusi takia sairauslomaa?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        <p>Kyllä</p>\n	        \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Tarvitsetko selkäkivun vuoksi muuhun tarkoitukseen (esimerkiksi vakuutus tms.) lääkärin antaman todistuksen tai lausunnon?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko sinulla ollut samasta vaivasta viimeisen puolen vuoden aikana käyntejä fysioterapiassa?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Oletko käyttänyt nykyiseen oireeseesi kipulääkkeitä?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        <p>Kyllä</p>\n	        \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Oletko saanut kipulääkkeistä riittävän avun, niin että pärjäät kipusi kanssa?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        <p>Kyllä</p>\n	        \n	              \n	    \n    </div>\n               \n\n    <div>\n      <p>Onko sinulla ollut samasta vaivasta viimeisen puolen vuoden aikana käyntejä lääkärillä?</p>\n	    \n	      \n	      \n	      \n	      \n	      \n	        \n	        <p>Ei</p>\n	              \n	    \n    </div>\n               \n           \n\n      </div>\n      \n    \n\n    \n\n      \n\n  \n</div>"
+  ]; # 
+  fhir:CarePlan.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:uuid:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:uuid:ietf:rfc:3981" ];
+     fhir:Identifier.value [ fhir:value "Omavalue" ]
+  ]; # 
+  fhir:CarePlan.status [ fhir:value "completed"]; # 
+  fhir:CarePlan.intent [ fhir:value "plan"]; # 
+  fhir:CarePlan.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory" ];
+       fhir:Coding.code [ fhir:value "7" ];
+       fhir:Coding.display [ fhir:value "Alaselkäkipu tai -vamma" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://example.oma" ];
+       fhir:Coding.code [ fhir:value "78" ];
+       fhir:Coding.display [ fhir:value "Another CarePlan" ]
+     ]
+  ]; # 
+  fhir:CarePlan.title [ fhir:value "Alaselkäkipu tai -vamma"]; # 
+  fhir:CarePlan.description [ fhir:value "<div class=\"read-alert\"><p>Selkäkipusi takia sinun tulisi hakeutua välittömästi päivystysvastaanotolle.</p></div> <div class=\"read-reminder\"><p>Esitiedot Omaolo-oirearviosta (22.5.2020 klo 12:13:14):  Alaselkäkipu on paikallista ja kestänyt 1 - 4 viikkoa.  Potilaalla on kuumetta 38°C , potilas on sairastanut syövän tai sairastaa syöpää, vaikeuksia pidättää virtsaa, vaikeuksia pidättää ulostetta ja vaikeuksia virtsaamisessa (virtsaaminen ei onnistu).  Kiireellisesti terveydenhuollon ammattilaisen arviota vaativat oireet: virtsainkontinenssi, virtsaamisvaikeus ja ulosteinkontinenssi. Selkäoireeseen liittyy kipua, jonka voimakkuus on 5/10. Selkäkipu on alkanut välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen. Tapaturman sattumistapa: Kompastuin kengännauhoihin. Yleisvointi on kohtalainen (pystyy tekemään pakolliset päivittäiset toiminnot). Kipulääke auttaa. Tarvitsee sairauslomaa.</p></div>"]; # 
+  fhir:CarePlan.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/36749a02-1710-44e7-aa76-0e934eb7860a>;
+     fhir:Reference.reference [ fhir:value "Patient/36749a02-1710-44e7-aa76-0e934eb7860a" ]
+  ]; # 
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2020-10-06"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2020-10-06"^^xsd:date ]
+  ]; # 
+  fhir:CarePlan.author [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/36749a02-1710-44e7-aa76-0e934eb7860a>;
+     fhir:Reference.reference [ fhir:value "Patient/36749a02-1710-44e7-aa76-0e934eb7860a" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CarePlan/care-plan-optional.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

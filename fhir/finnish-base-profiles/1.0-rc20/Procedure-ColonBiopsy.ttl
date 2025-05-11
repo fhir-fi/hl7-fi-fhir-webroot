@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Procedure/ColonBiopsy> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ColonBiopsy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Procedure</b><a name=\"ColonBiopsy\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Procedure &quot;ColonBiopsy&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-procedure.html\">Fi Base Procedure</a></p></div><p><b>identifier</b>: id: 12345</p><p><b>partOf</b>: <a href=\"Procedure-ProcedureColotomy.html\">Procedure/ProcedureColotomy</a></p><p><b>status</b>: completed</p><p><b>category</b>: PIENTOI <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PIENTOI)</span></p><p><b>code</b>: Biopsy of colon <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#76164006)</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-PractitionerLicensedPhysician.html\">Practitioner/PractitionerLicensedPhysician</a> &quot; DOCTOR&quot;</td></tr></table><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:partOf ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Procedure/ProcedureColotomy> ;
+     fhir:reference [ fhir:v "Procedure/ProcedureColotomy" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.601"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PIENTOI" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:76164006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "76164006" ]
+     ] ) ;
+     fhir:text [ fhir:v "Biopsy of colon" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
+     fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Practitioner/PractitionerLicensedPhysician> ;
+       fhir:reference [ fhir:v "Practitioner/PractitionerLicensedPhysician" ]
+     ]
+  ] ) ; # 
+  fhir:location [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample> ;
+     fhir:reference [ fhir:v "Location/LocationExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

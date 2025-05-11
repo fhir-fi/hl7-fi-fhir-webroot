@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="custodian-individual"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-individual"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Provenance</b><a name="custodian-individual"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Provenance &quot;custodian-individual&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-information-custodian-individual.html">FI Base Information Custodian (Individual Provider)</a></p></div><p><b>target</b>: <a href="EpisodeOfCare-id-for-episode-1.html">EpisodeOfCare/id-for-episode-1</a></p><p><b>recorded</b>: Feb 7, 2015, 1:28:17 PM</p><h3>Agents</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Role</b></td><td><b>Who</b></td></tr><tr><td style="display: none">*</td><td>Rekisterinpitäjä <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html">ParticipationType</a>#CST &quot;custodian&quot;)</span></td><td>Yksityinen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#2)</span></td><td><span>: Kalmanlehto Erkki</span></td></tr></table><h3>Entities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Role</b></td><td><b>What</b></td></tr><tr><td style="display: none">*</td><td>source</td><td><span>: Ammatinharjoittaja</span></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="EpisodeOfCare/id-for-episode-1"/>
+  </target>
+  <recorded value="2015-02-07T13:28:17.239+02:00"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="CST"/>
+        <display value="custodian"/>
+      </coding>
+      <text value="Rekisterinpitäjä"/>
+    </type>
+    <role>
+      <coding>
+        <system value="urn:oid:1.2.246.537.5.40172"/>
+        <code value="2"/>
+        <display value="Yksityinen"/>
+      </coding>
+      <text value="Yksityinen"/>
+    </role>
+    <who>
+      <type value="Practitioner"/>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="PRN"/>
+          </coding>
+        </type>
+        <system value="urn:oid:1.2.246.537.6.203"/>
+        <value value="urn:oid:1.2.246.537.28.10000222116"/>
+      </identifier>
+      <display value="Kalmanlehto Erkki"/>
+    </who>
+  </agent>
+  <entity>
+    <role value="source"/>
+    <what>
+      <identifier>
+        <system value="urn:oid:1.2.246.537.5.40150"/>
+        <value value="10"/>
+      </identifier>
+      <display value="Ammatinharjoittaja"/>
+    </what>
+  </entity>
+</Provenance>

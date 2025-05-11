@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "06e09d24-b565-4935-87a7-995e8602b8da-128",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/06e09d24-b565-4935-87a7-995e8602b8da-128",
+  "name" : "UnionSecurityLabelVSAndSecurityLabelVS",
+  "title" : "Union of Finnish ValueSet for security labels in accordance with finnish authorities And Finnish ValueSet for security labels in accordance with finnish authorities",
+  "status" : "active",
+  "date" : "2023-10-24T23:44:06+03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "TURVAKIELTO"
+      }]
+    }]
+  }
+}

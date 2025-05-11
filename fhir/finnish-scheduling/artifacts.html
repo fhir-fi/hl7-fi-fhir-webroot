@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Finnish Scheduling v2.0.0-rc2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+    <link href="assets/css/fi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Scheduling</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Scheduling (v2.0.0-rc2: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-scheduling/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-scheduling-appointment.html"
+                  title="StructureDefinition/fi-scheduling-appointment">FiSchedulingAppointment</a>
+            </td>
+            <td>
+<p>Profile for appointment (<em>ajanvaraus</em>) in Finnish Scheduling environment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fi-scheduling-healthcare-service.html"
+                  title="StructureDefinition/fi-scheduling-healthcare-service">FiSchedulingHealthcareService</a>
+            </td>
+            <td>
+<p>Finnish profile for healthcare service.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-additional-information-url.html"
+                  title="StructureDefinition/additional-information-url">Additional Information URL</a>
+            </td>
+            <td>
+<p>URL for additional information regarding appointment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-service-additional-information.html"
+                  title="StructureDefinition/service-additional-information">Additional Information on Service</a>
+            </td>
+            <td>
+<p>Additional details regarding the service the appointment concerns.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ajanvarauksen-tila.html"
+                  title="StructureDefinition/ajanvarauksen-tila">Ajanvarauksen tila</a>
+            </td>
+            <td>
+<p>Binding of <a href="https://hl7.org/fhir/R4/codesystem-appointmentstatus.html">AppointmentStatus</a> to the Finnish logical model <a href="https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"><em>Ajanvarauksen tila</em></a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mutable.html"
+                  title="StructureDefinition/mutable">Appointment Mutability</a>
+            </td>
+            <td>
+<p>Extension specifying whether appointment can be changed and when.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-care-guarantee-details.html"
+                  title="StructureDefinition/care-guarantee-details">Care Guarantee Details</a>
+            </td>
+            <td>
+<p>An extension for including care guarantee (<em>hoitotakuu</em>) details in appointment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-careplan-identifier.html"
+                  title="StructureDefinition/careplan-identifier">Careplan Identifier</a>
+            </td>
+            <td>
+<p>Identifier for the care plan, if provided.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-child-appointment.html"
+                  title="StructureDefinition/child-appointment">Child Appointment</a>
+            </td>
+            <td>
+<p>Reference from a master (parent) appointment to its sub (child) appointments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-customer-journey.html"
+                  title="StructureDefinition/customer-journey">Customer Journey</a>
+            </td>
+            <td>
+<p>Identifier for the customer journey (<em>hoitopolku</em>)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-notification-info.html"
+                  title="StructureDefinition/notification-info">Notification Information</a>
+            </td>
+            <td>
+<p>Information on selected notification method and address</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-notification-medium.html"
+                  title="StructureDefinition/notification-medium">Notification Medium</a>
+            </td>
+            <td>
+<p>Information on notification medium, based on <em>THL - Viestintäkanava</em> codesystem.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-instruction-url.html"
+                  title="StructureDefinition/patient-instruction-url">Patient Instruction URL</a>
+            </td>
+            <td>
+<p>URL for patient instruction.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-practitioner-gender.html"
+                  title="StructureDefinition/practitioner-gender">Practitioner Gender</a>
+            </td>
+            <td>
+<p>Extension for practitioner gender for appointment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-queue-number.html"
+                  title="StructureDefinition/queue-number">Queue Number</a>
+            </td>
+            <td>
+<p>An extension for queue number (in string format).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-referral-id.html"
+                  title="StructureDefinition/referral-id">Referral Id</a>
+            </td>
+            <td>
+<p>Referral id extension for appointment (string)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-requested-service-info.html"
+                  title="StructureDefinition/requested-service-info">Requested Service Info</a>
+            </td>
+            <td>
+<p>Extension for providing additional information for appointment service: reserved product/service.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-resource-calendar.html"
+                  title="StructureDefinition/resource-calendar">Resource Calendar</a>
+            </td>
+            <td>
+<p>Extension for resource calendar id and resource name.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-self-service-info.html"
+                  title="StructureDefinition/self-service-info">Self Service Information</a>
+            </td>
+            <td>
+<p>Extension that notifies whether there is a self-service for managing appointment (provides URL and information on whether management can be made by proxy).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ticket-number.html"
+                  title="StructureDefinition/ticket-number">Ticket Number</a>
+            </td>
+            <td>
+<p>Ticket number to be included in the appointment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-topic-id.html"
+                  title="StructureDefinition/topic-id">Topic Id</a>
+            </td>
+            <td>
+<p>Social care topic (<em>asia</em>) id.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-ajanvarauksentila-appointmentstatus.html"
+                  title="ConceptMap/ajanvarauksentila-appointmentstatus">Ajanvarauksen tila to Appointment status</a>
+            </td>
+            <td>
+<p>Mapping between the Finnish logical model <a href="https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"><em>Ajanvaraus - Ajanvarauksen tila</em></a> (oid <code class="language-plaintext highlighter-rouge">1.2.246.537.6.881</code>) and FHIR Appointment status codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-appointmentstatus-ajanvarauksentila.html"
+                  title="ConceptMap/appointmentstatus-ajanvarauksentila">Appointment status to Ajanvarauksen tila</a>
+            </td>
+            <td>
+<p>Mapping between FHIR Appointment status codes and the Finnish logical model <a href="https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"><em>Ajanvaraus - Ajanvarauksen tila</em></a> (oid <code class="language-plaintext highlighter-rouge">1.2.246.537.6.881</code>).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-605790.html" title="Appointment/605790">Appointment example 1</a>
+            </td>
+            <td>
+<p>Example appointment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-04.html"
+                  title="Appointment/appointment-status-extension-04">Appointment example 2, Cancelled / Peruttu</a>
+            </td>
+            <td>
+<p>Example Appointment (Cancelled, Peruttu). The patient moves the appointment to another time. This appointment is cancelled and a new one is created.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-03.html"
+                  title="Appointment/appointment-status-extension-03">Appointment example 2, Pending / Ehdotettu</a>
+            </td>
+            <td>
+<p>Example Appointment (Pending, Ehdotettu). Schedule of the practitioner has been confirmed, time has been proposed to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-02.html"
+                  title="Appointment/appointment-status-extension-02">Appointment example 2, Proposed / Tilattu</a>
+            </td>
+            <td>
+<p>Example Appointment (Proposed, Tilattu). Also the service provider has been identified (it could be just an organization, not necessarily a practiotioner yet).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-01.html"
+                  title="Appointment/appointment-status-extension-01">Appointment example 2, Waitlisted / Suunniteltu</a>
+            </td>
+            <td>
+<p>Example Appointment (Waitlisted, Suunniteltu). This appointment is created when the need for the appointment has been identified.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-07.html"
+                  title="Appointment/appointment-status-extension-07">Appointment example 3, Arrived / Varattu</a>
+            </td>
+            <td>
+<p>Example Appointment (Arrived, Varattu). The patient has arrived to location.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-06.html"
+                  title="Appointment/appointment-status-extension-06">Appointment example 3, Booked / Varattu</a>
+            </td>
+            <td>
+<p>Example Appointment (Booked, Varattu). The patient has accepted the new time for the appointment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-08.html"
+                  title="Appointment/appointment-status-extension-08">Appointment example 3, Checked In / Ilmoittautunut</a>
+            </td>
+            <td>
+<p>Example Appointment (Checked In, Ilmoittautunut). The patient has been checked in.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-09.html"
+                  title="Appointment/appointment-status-extension-09">Appointment example 3, Fulfilled / Alkanut</a>
+            </td>
+            <td>
+<p>Example Appointment (Fulfilled, Alkanut). The encounter has started.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-10.html"
+                  title="Appointment/appointment-status-extension-10">Appointment example 3, Fulfilled / Toteutunut</a>
+            </td>
+            <td>
+<p>Example Appointment (Fulfilled, Toteutunut). The encounter has ended.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-appointment-status-extension-05.html"
+                  title="Appointment/appointment-status-extension-05">Appointment example 3, Proposed / Tilattu</a>
+            </td>
+            <td>
+<p>Example Appointment (Proposed, Tilattu). This is created when the patient searches for a new time for the appointment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Appointment-example-appointment-4.html"
+                  title="Appointment/example-appointment-4">Appointment example 4</a>
+            </td>
+            <td>
+<p>Example appointment</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-example-org-unit.html"
+                  title="Organization/example-org-unit">Esimerkki-Palveluyksikkö</a>
+            </td>
+            <td>
+<p>Example organization unit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Schedule-234567890.html" title="Schedule/234567890">ExampleSchedule</a>
+            </td>
+            <td>
+<p>An example Schedule</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="HealthcareService-example-service-2.html"
+                  title="HealthcareService/example-service-2">Isyyden selvittäminen</a>
+            </td>
+            <td>
+<p>Example healthcare service</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-practitioner-keijo.html"
+                  title="Practitioner/practitioner-keijo">Keijo Kätilö</a>
+            </td>
+            <td>
+<p>Example practitioner 2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-pentti.html" title="Patient/patient-pentti">Pentti Potilas</a>
+            </td>
+            <td>
+<p>Example patient 2</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-patient-petri.html" title="Patient/patient-petri">Petri Potilas</a>
+            </td>
+            <td>
+<p>Example patient 3</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Slot-123456789.html" title="Slot/123456789">Slot example</a>
+            </td>
+            <td>
+<p>An example Slot</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.scheduling#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 9, 2025 18:31+0300">2025-05-09</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-scheduling/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-scheduling/master/LICENSE.md"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-scheduling">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-scheduling/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

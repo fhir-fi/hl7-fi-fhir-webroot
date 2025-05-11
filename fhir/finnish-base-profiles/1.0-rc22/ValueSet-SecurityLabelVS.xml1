@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="SecurityLabelVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-SecurityLabelCS.html"><code>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-SecurityLabelCS.html#SecurityLabelCS-TURVAKIELTO">TURVAKIELTO</a></td><td style="color: #cccccc">Turvakielto</td><td>A non-disclosure for personal safety reasons according to DVV.</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/SecurityLabelVS"/>
+  <version value="1.0.0-rc22"/>
+  <name value="SecurityLabelVS"/>
+  <title value="Finnish ValueSet for security labels in accordance with finnish authorities"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-24T23:43:24+03:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="mikael@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <description value="This is the ValueSet for security labels in accordance with finnish authorities."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS"/>
+      <concept>
+        <code value="TURVAKIELTO"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

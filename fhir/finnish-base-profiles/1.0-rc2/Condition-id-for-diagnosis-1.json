@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Condition",
+  "id" : "id-for-diagnosis-1",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"id-for-diagnosis-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;id-for-diagnosis-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-condition.html\">FI Base Condition</a></p></div><p><b>Is not authored by medical doctor</b>: false</p><p><b>clinicalStatus</b>: active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#active)</span></p><p><b>category</b>: Diagnoosit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#166)</span>, Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span>, Pysyväisluonteinen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#PYS)</span></p><p><b>code</b>: Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#H36.03 &quot;Proliferatiivinen diabeettinen retinopatia&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td></tr><tr><td>*</td><td>Aikuistyypin diabetes diabeteksen silmäkomplikaatiot <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#E11.3)</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-is-not-authored-by-medical-doctor",
+    "valueBoolean" : false
+  }],
+  "clinicalStatus" : {
+    "coding" : [{
+      "code" : "active"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.12.2002",
+      "code" : "166",
+      "display" : "Diagnoosit"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "encounter-diagnosis"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:1.2.246.537.5.40003.2003",
+      "code" : "PYS",
+      "display" : "Pysyväisluonteinen"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "1.2.246.537.6.1.1999",
+      "code" : "H36.03",
+      "display" : "Proliferatiivinen diabeettinen retinopatia"
+    }],
+    "text" : "Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-of-municipality"
+  },
+  "onsetDateTime" : "2023-01-05T02:06:24+03:00",
+  "evidence" : [{
+    "code" : [{
+      "coding" : [{
+        "system" : "1.2.246.537.6.1.1999",
+        "code" : "E11.3",
+        "display" : "Aikuistyypin diabetes diabeteksen silmäkomplikaatiot"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-macronutrients"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/9059-7/">9059-7</a></td><td>Arvioitu hiilihydraattimäärä</td><td>Arvioitu hiilihydraattimäärä</td><td>Uppskattat kolhydratintag</td><td>Carbohydrate intake Estimated</td></tr><tr><td><a href="https://loinc.org/9060-5/">9060-5</a></td><td>Mitattu hiilihydraattimäärä</td><td>Mitattu hiilihydraattimäärä</td><td>Uppmätt kolhydratintag</td><td>Carbohydrate intake Measured</td></tr><tr><td><a href="https://loinc.org/9066-2/">9066-2</a></td><td>Arvioitu rasvan määrä</td><td>Arvioitu rasvan määrä</td><td>Uppskattat fettintag</td><td>Fat intake Estimated</td></tr><tr><td><a href="https://loinc.org/9067-0/">9067-0</a></td><td>Mitattu rasvan määrä</td><td>Mitattu rasvan määrä</td><td>Uppmätt fettintag</td><td>Fat intake Measured</td></tr><tr><td><a href="https://loinc.org/9079-5/">9079-5</a></td><td>Arvioitu proteiinin määrä</td><td>Arvioitu proteiinin määrä</td><td>Uppskattat proteinintag</td><td>Protein intake Estimated</td></tr><tr><td><a href="https://loinc.org/9080-3/">9080-3</a></td><td>Mitattu proteiinin määrä</td><td>Mitattu proteiinin määrä</td><td>Uppmätt proteinintag</td><td>Protein intake Measured</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-macronutrients"/>
+  <version value="0.3.0"/>
+  <name value="fiphr-vs-macronutrients"/>
+  <title value="Value Set Finnish PHR Macronutrients"/>
+  <status value="active"/>
+  <date value="2019-10-14T11:00:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Macronutrition Value Set that defines codes for Macronutrients."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This content from LOINC® is copyright © 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="9059-7"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Arvioitu hiilihydraattimäärä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppskattat kolhydratintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Carbohydrate intake Estimated"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9060-5"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Mitattu hiilihydraattimäärä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppmätt kolhydratintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Carbohydrate intake Measured"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9066-2"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Arvioitu rasvan määrä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppskattat fettintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Fat intake Estimated"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9067-0"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Mitattu rasvan määrä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppmätt fettintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Fat intake Measured"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9079-5"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Arvioitu proteiinin määrä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppskattat proteinintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Protein intake Estimated"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9080-3"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Mitattu proteiinin määrä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppmätt proteinintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Protein intake Measured"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

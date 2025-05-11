@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Condition/id-for-diagnosis-3> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "id-for-diagnosis-3"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"id-for-diagnosis-3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;id-for-diagnosis-3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-reason-for-care.html\">FI Base Reason for Care (encounter-diagnosis and reason for visit)</a></p></div><p><b>Primary condition for encounter</b>: Sivudiagnoosi tai toissijainen toimenpide (Details: urn:oid:1.2.246.537.5.40005 code SIVU = 'SIVU', stated as 'Sivudiagnoosi tai toissijainen toimenpide')</p><p><b>Permanence of condition</b>: Kertaluonteinen (Details: urn:oid:1.2.246.537.5.40003 code KER = 'KER', stated as 'Kertaluonteinen')</p><p><b>External cause for diagnosis</b>: Leikkauksen yhteydessä vahingossa syntynyt haava, punktio, perforaatio tai verenvuoto (Details: urn:oid:1.2.246.537.6.1 code Y60.0 = 'Y60.0', stated as 'Leikkauksen yhteydessä vahingossa syntynyt haava, punktio, perforaatio tai verenvuoto')</p><p><b>Cause of an adverse effect</b>: Nivustyrän korjaus (Details: urn:oid:1.2.246.537.6.2 code JAB10 = 'JAB10', stated as 'Nivustyrän korjaus')</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Määrittämätön toimenpidekomplikaatio <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[1999]#T81.9)</span></p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40005"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2003" ] ;
+       fhir:code [ fhir:v "SIVU" ] ;
+       fhir:display [ fhir:v "Sivudiagnoosi tai toissijainen toimenpide" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40003"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2003" ] ;
+       fhir:code [ fhir:v "KER" ] ;
+       fhir:display [ fhir:v "Kertaluonteinen" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-external-cause"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1999" ] ;
+       fhir:code [ fhir:v "Y60.0" ] ;
+       fhir:display [ fhir:v "Leikkauksen yhteydessä vahingossa syntynyt haava, punktio, perforaatio tai verenvuoto" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-cause-of-adverse-effect"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Coding ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.2"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2007" ] ;
+       fhir:code [ fhir:v "JAB10" ] ;
+       fhir:display [ fhir:v "Nivustyrän korjaus" ]
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.1"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "1999" ] ;
+       fhir:code [ fhir:v "T81.9" ] ;
+       fhir:display [ fhir:v "Määrittämätön toimenpidekomplikaatio" ]
+     ] ) ;
+     fhir:text [ fhir:v "Määrittämätön toimenpidekomplikaatio" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
+     fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2023-01-05T02:06:24+03:00"^^xsd:dateTime] . # 
+
+# -------------------------------------------------------------------------------------
+

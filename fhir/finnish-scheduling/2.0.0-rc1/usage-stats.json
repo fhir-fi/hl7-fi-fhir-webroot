@@ -1,0 +1,534 @@
+{
+  "package": "hl7.fhir.fi.scheduling",
+  "version": "2.0.0-rc1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FI",
+  "extensions": [
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/additional-information-url",
+      "title": "Additional Information URL",
+      "types": [
+        "url"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ajanvarauksen-tila",
+      "title": "Ajanvarauksen tila",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/care-guarantee-details",
+      "title": "Care Guarantee Details",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/careplan-identifier",
+      "title": "Careplan Identifier",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/child-appointment",
+      "title": "Child Appointment",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/customer-journey",
+      "title": "Customer Journey",
+      "types": [
+        "Identifier",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable",
+      "title": "Appointment Mutability",
+      "types": [
+        "boolean",
+        "boolean",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-info",
+      "title": "Notification Information",
+      "types": [
+        "ContactPoint"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-medium",
+      "title": "Notification Medium",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/patient-instruction-url",
+      "title": "Patient Instruction URL",
+      "types": [
+        "url"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/practitioner-gender",
+      "title": "Practitioner Gender",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/queue-number",
+      "title": "Queue Number",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/referral-id",
+      "title": "Referral Id",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/requested-service-info",
+      "title": "Requested Service Info",
+      "types": [
+        "Identifier",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/resource-calendar",
+      "title": "Resource Calendar",
+      "types": [
+        "Identifier",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/self-service-info",
+      "title": "Self Service Information",
+      "types": [
+        "url",
+        "boolean",
+        "boolean",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/service-additional-information",
+      "title": "Additional Information on Service",
+      "types": [
+        "string",
+        "url"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ticket-number",
+      "title": "Ticket Number",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/topic-id",
+      "title": "Topic Id",
+      "types": [
+        "Identifier"
+      ]
+    }
+  ],
+  "profiles": {
+    "Appointment": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment",
+        "title": "FiSchedulingAppointment"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service",
+        "title": "FiSchedulingHealthcareService"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code": [
+      "Patient"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/additional-information-url": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ajanvarauksen-tila": [
+      "Appointment.status"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/care-guarantee-details": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/careplan-identifier": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/child-appointment": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/customer-journey": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-info": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-medium": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/patient-instruction-url": [
+      "Appointment.patientInstruction"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/practitioner-gender": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/queue-number": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/referral-id": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/requested-service-info": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/resource-calendar": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/self-service-info": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/service-additional-information": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ticket-number": [
+      "Appointment"
+    ],
+    "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/topic-id": [
+      "Appointment"
+    ]
+  }
+}

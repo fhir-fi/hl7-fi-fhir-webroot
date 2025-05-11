@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SecurityLabelCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS",
+  "version" : "1.0.0-rc20",
+  "name" : "SecurityLabelCS",
+  "title" : "Finnish CodeSystem for security labels",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-09-04T11:56:09+03:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "This is the CodeSystem for security labels in accordance with finnish authorities.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "TURVAKIELTO",
+    "display" : "Turvakielto",
+    "definition" : "A non-disclosure for personal safety reasons according to DVV."
+  }]
+}

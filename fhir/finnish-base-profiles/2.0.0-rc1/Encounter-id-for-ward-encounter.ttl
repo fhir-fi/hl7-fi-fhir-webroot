@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-ward-encounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "id-for-ward-encounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter id-for-ward-encounter</b></p><a name=\"id-for-ward-encounter\"> </a><a name=\"hcid-for-ward-encounter\"> </a><a name=\"id-for-ward-encounter-fi-FI\"> </a><p><b>identifier</b>: id-for-ward-encounter (use: usual, )</p><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode IMP</a>: inpatient encounter</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>period</b>: 2022-02-27 01:03:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-id-for-bed-3.html\">Location Vuode 3</a></td><td>Active</td><td>2022-02-27 01:03:00+0200 --&gt; (ongoing)</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization-1.2.246.10.8286189.10.100012.html\">Organization Kirurgian vuodeosasto 4B, Länsi-Pohjan keskussairaala, LPSHP</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:value [ fhir:v "id-for-ward-encounter" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality> ;
+     fhir:reference [ fhir:v "Patient/patient-of-municipality" ]
+  ] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-02-27T01:03:00+02:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/id-for-bed-3> ;
+       fhir:reference [ fhir:v "Location/id-for-bed-3" ]
+     ] ;
+     fhir:status [ fhir:v "active" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2022-02-27T01:03:00+02:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.8286189.10.100012> ;
+     fhir:reference [ fhir:v "Organization/1.2.246.10.8286189.10.100012" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

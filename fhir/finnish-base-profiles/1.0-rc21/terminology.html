@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology - Finnish Base Profiles v1.0.0-rc21</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+    <link href="assets/css/fi.css" rel="stylesheet"/>
+    <link href="assets/css/history.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0-rc21 - qa-preview
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Terminology</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v1.0.0-rc21: QA Preview) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Terminology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#fhir-terminologies" id="markdown-toc-fhir-terminologies">FHIR Terminologies</a></li>
+  <li><a href="#terminologies-not-available-in-fhir-format" id="markdown-toc-terminologies-not-available-in-fhir-format">Terminologies not available in FHIR format</a></li>
+</ul>
+
+</div>
+<p>This page lists notable terminologies used in Finland.</p>
+
+<p>Many of these terminologies are not maintained by HL7 Finland, rather they are published and
+maintained elsewhere and included into this implementation guide to raise awareness of their
+existence.</p>
+
+<p>In addition to the terminologies defined in this implementation guide, there are other, more use
+case specific implementation guides that may define terminologies for their use cases. See, for
+instance:</p>
+<ul>
+  <li>Both the <a href="https://simplifier.net/finnishappointment">Finnish Appointment IG</a> and the
+<a href="https://simplifier.net/finnishschedulingr4/">Finnish Scheduling IG</a> for scheduling</li>
+  <li>Both the <a href="https://simplifier.net/FinnishPHR">Finnish PHR STU3</a> and the
+<a href="https://simplifier.net/FinnishPHRR4">Finnish PHR R4</a> for health and wellbeing data in the
+national Personal Health Record platform Kanta PHR</li>
+  <li>The <a href="https://simplifier.net/PrescriptionR4">Kanta FHIR Prescription R4</a> for prescriptions</li>
+  <li>The <a href="https://simplifier.net/Kanta-sosiaalihuolto-R4">Kanta sosiaalihuolto R4</a> for welfare and
+social affairs</li>
+</ul>
+
+<p>Most code systems used in this guide are defined in the base FHIR specification. They are not
+replicated here, but some essential concepts are presented below.</p>
+
+<h3 id="fhir-terminologies">FHIR Terminologies</h3>
+
+<h4 id="codesystems">CodeSystems</h4>
+
+<ul>
+ <li><a href="CodeSystem-SecurityLabelCS.html">Finnish CodeSystem for security labels</a></li>
+
+</ul>
+
+<p>See the <a href="https://hl7.org/fhir/terminologies-systems.html">FHIR terminology section</a> for a complete
+discussion on code systems and a list of codes system names used in FHIR.</p>
+
+<h4 id="valuesets">ValueSets</h4>
+
+<ul>
+ <li><a href="ValueSet-SecurityLabelVS.html">Finnish ValueSet for security labels in accordance with finnish authorities</a></li>
+ <li><a href="ValueSet-fi-base-register-identifier.html">Finnish ValueSet for systems of registry specifiers</a></li>
+ <li><a href="ValueSet-kanta-provenance-agent-role.html">Example value set for provenance roles</a></li>
+
+</ul>
+
+<p>See the
+<a href="https://hl7.org/fhir/terminologies-valuesets.html">value sets defined in the FHIR specification</a>.</p>
+
+<h4 id="conceptmaps">ConceptMaps</h4>
+
+<ul>
+
+</ul>
+
+<p>See the <a href="https://hl7.org/fhir/terminologies-conceptmaps.html">mappings between value sets</a> defined
+in the main FHIR specification.</p>
+
+<h4 id="namingsystems">NamingSystems</h4>
+
+<ul>
+
+</ul>
+
+<p>See the <a href="https://hl7.org/fhir/identifier-registry.html">known identifier systems</a> of the main FHIR
+specification.</p>
+
+<h3 id="terminologies-not-available-in-fhir-format">Terminologies not available in FHIR format</h3>
+
+<p>There are several terminologies and terminology servers that don’t yet offer their contents in FHIR
+format. However, many of these terminologies are essential in Finnish healthcare and social care.</p>
+
+<h4 id="national-code-server">National Code Server</h4>
+
+<p>The Finnish Institute for Health and Welfare maintains a
+<a href="https://koodistopalvelu.kanta.fi/codeserver/pages/classification-list-page.xhtml">National code server of social welfare and health care</a>,
+only in Finnish language. The standardised data structures required by the electronic client data
+systems in social welfare and health care as well as the central code sets of the statistical and
+register data collection are all published on the code server.</p>
+
+<p>The code sets are available on the Code server free of charge.</p>
+
+<p>The responsibility for the contents of the code sets on the code server belongs to THL as laid down
+by law,
+<a href="http://www.finlex.fi/fi/laki/ajantasa/2007/20070159">Act on the Electronic Processing of Client Data in Social and Health Care, 9 Feb, 159/2007 (in Finnish)</a>.
+The technical maintenance of the code server is the responsibility of the Social Insurance
+Institution of Finland (Kela).</p>
+
+<p>The Code Service forms a part of Kanta, the national patient data system. The Code Service
+maintains nationally integrated data structures and code sets for electronic patient case
+histories. The Code server also develops registration practices for the client data in social
+welfare.</p>
+
+<h4 id="snomed-ct">Snomed CT</h4>
+
+<p>Finland
+<a href="https://www.snomed.org/our-stakeholders/member/finland">became a member of SNOMED International</a>
+in November 2019.</p>
+
+<p>To make best use of SNOMED CT with available resources, Finland has chosen not to translate the
+whole terminology. Instead, the aim is to focus on two national reference sets that meet local
+needs in areas where there is international experience and models showing implementation success.</p>
+
+<p>The first target is an obvious one: standardizing the terminology and codes for anatomic pathology
+in the clinical laboratories. Finnish pathology laboratories have used SNOMED 2 since 1980’s. But
+lack of coordination eventually resulted in several dialects and variance between hospitals. Now
+the ongoing project aims at national reference set to help the biobanks, regional and national
+quality registers and structured reporting on individual patient basis.</p>
+
+<p>The other chosen application for SNOMED CT is patient problem list. Finland decided to use CORE
+Problem List as foundation for the local effort. CORE Problem List originated from a respectable
+group of medical institutions in the U.S. and is maintained by the National Medical Library thus
+making the acceptance of the reference set by clinicians so much easier. The ongoing project
+translates terminology into Finnish and when finished will cover terms for both professionals and
+patients.</p>
+
+<p><a href="https://thl.fi/fi/web/tiedonhallinta-sosiaali-ja-terveysalalla/koodistopalvelu/snomed-ct">Read more</a>
+(in Finnish).</p>
+
+<p>For international interoperability, FHIR implementations SHOULD use SNOMED CT codes when they are
+available, even if a translation is not available in Finnish or Swedish.</p>
+
+<h4 id="finloinc">FinLOINC</h4>
+
+<p><a href="https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=273&amp;versionKey=350">FinLOINC - The Physiological Measurements classification</a>
+contains results and findings of clinical measurements that describe the patient’s condition.
+FinLOINC is based on the Logical Observation Identifiers Names and Codes (LOINC®) nomenclature
+maintained by Regenstrief Institute, covering only a small part of it.</p>
+
+<p>The classification is used to describe the physiological measurements in the core information of
+medical records.</p>
+
+<h4 id="laboratory-test-codes">Laboratory Test Codes</h4>
+
+<p>Most systems and services in Finland use the laboratory test codes and names specified in the
+<a href="https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=88&amp;versionKey=120">laboratory test name set</a>
+by Kuntaliitto.</p>
+
+<p>Upcoming European legislation, like that for the European Health Data Space introduces some
+pressure to adopt LOINC codes too. Therefore, and for international interoperability in general,
+systems SHOULD include LOINC codes in adddition to the national Kuntaliitto codes, where a LOINC
+code is known.</p>
+
+<h4 id="medication-codes">Medication Codes</h4>
+
+<p>Finland uses the <a href="https://www.whocc.no/">ATC classification</a> for codifying medicines. See the
+<a href="https://www.fimea.fi/web/en/databases_and_registers/atc-codes">Finnish localized version</a>.
+The classification divides drugs into groups according to which organ or organ system they affect
+and by their chemical, pharmacological and therapeutic properties</p>
+
+<p>Finland uses the Nordic Article Number (<a href="https://wiki.vnr.fi/">VNR</a>) system for identification
+codes of specific articles of medicine with marketing authorisation in the Nordic countries.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#1.0.0-rc21 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 23, 2023 01:04+0300">2023-10-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-base-profiles/master/LICENSE.md"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

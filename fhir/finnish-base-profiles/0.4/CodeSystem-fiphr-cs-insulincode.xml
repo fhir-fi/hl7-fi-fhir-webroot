@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiphr-cs-insulincode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">ins-short-fast<a name="fiphr-cs-insulincode-ins-short-fast"> </a></td><td>A code for short and fast acting insulins, for example insulins that could be included in the group A10AB of the ATC Code System.</td></tr><tr><td style="white-space:nowrap">ins-intermediate-long<a name="fiphr-cs-insulincode-ins-intermediate-long"> </a></td><td>A code for intermediate and long acting insulins, for example insulins that could be included in the groups A10AC, A10AD and A10AE of the ATC Code System.</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td>ins-short-fast</td><td>Fast-acting insulin</td><td>Lyhytvaikutteinen insuliini</td><td>Direktverkande insulin</td></tr><tr><td>ins-intermediate-long</td><td>Intermediate-acting insulin</td><td>Pitkävaikutteinen insuliini</td><td>Långverkande insulin</td></tr></table></div>
+  </text>
+  <url value="http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode"/>
+  <version value="0.4.0"/>
+  <name value="fiphr-cs-insulincode"/>
+  <title value="Code System Finnish PHR Insulin Code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-02-17T00:00:00+00:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Insulin Code System, includes codes indicating what kind of insulin has been administered."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="ins-short-fast"/>
+    <definition value="A code for short and fast acting insulins, for example insulins that could be included in the group A10AB of the ATC Code System."/>
+    <designation>
+      <language value="fi"/>
+      <value value="Lyhytvaikutteinen insuliini"/>
+    </designation>
+    <designation>
+      <language value="sv"/>
+      <value value="Direktverkande insulin"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Fast-acting insulin"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="ins-intermediate-long"/>
+    <definition value="A code for intermediate and long acting insulins, for example insulins that could be included in the groups A10AC, A10AD and A10AE of the ATC Code System."/>
+    <designation>
+      <language value="fi"/>
+      <value value="Pitkävaikutteinen insuliini"/>
+    </designation>
+    <designation>
+      <language value="sv"/>
+      <value value="Långverkande insulin"/>
+    </designation>
+    <designation>
+      <language value="en"/>
+      <value value="Intermediate-acting insulin"/>
+    </designation>
+  </concept>
+</CodeSystem>

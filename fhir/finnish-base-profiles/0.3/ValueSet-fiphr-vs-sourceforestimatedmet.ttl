@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforestimatedmet> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-vs-sourceforestimatedmet"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA26238-8/\">LA26238-8</a></td><td>Compendium of Physical Activities</td><td>Compendium of Physical Activities</td><td>Compendium of Physical Activities</td><td>Compendium of Physical Activities</td></tr><tr><td><a href=\"https://loinc.org/LA26239-6/\">LA26239-6</a></td><td>Modified Bruce protocol</td><td>Modifioitu Bruce-protokolla</td><td>Modifierat Bruce-protokoll</td><td>Modified Bruce protocol</td></tr><tr><td><a href=\"https://loinc.org/LA26240-4/\">LA26240-4</a></td><td>Balke protocol</td><td>Balke-protokolla</td><td>Balke-protokoll</td><td>Balke protocol</td></tr><tr><td><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>Other, specify</td><td>Muu, tarkenna</td><td>Annat, specificera</td><td>Other, specity</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforestimatedmet"]; # 
+  fhir:ValueSet.version [ fhir:value "0.3.0"]; # 
+  fhir:ValueSet.name [ fhir:value "fiphr-vs-sourceforestimatedmet"]; # 
+  fhir:ValueSet.title [ fhir:value "Value Set Finnish PHR Source for Estimated MET"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2020-02-04"^^xsd:date]; # 
+  fhir:ValueSet.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Finnish PHR Source for Estimated MET value set"]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26238-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Compendium of Physical Activities" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Compendium of Physical Activities" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Compendium of Physical Activities" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Compendium of Physical Activities" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26239-6" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Modified Bruce protocol" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Modifioitu Bruce-protokolla" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Modifierat Bruce-protokoll" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Modified Bruce protocol" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26240-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Balke protocol" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Balke-protokolla" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Balke-protokoll" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Balke protocol" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA46-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other, specify" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Muu, tarkenna" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Annat, specificera" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Other, specity" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforestimatedmet.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

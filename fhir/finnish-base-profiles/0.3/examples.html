@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.FHIR.FI.BASE\Examples - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
+            <br/>
+            <span style="display:inline-block;">0.3.0 - ci-build
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Examples</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Finnish Base Profiles - Local Development build (v0.3.0). See the <a href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+
+</div>
+<p>This list includes the examples included in this implementation guide. Please note that the list
+contains examples of FI Base resources as well as examples from other known implementations from
+Finland. We hope listing many examples here promotes awareness of what has already been done and
+thereby increases interoperability.</p>
+
+<p>These example instances show what data produced and consumed by systems conforming with this
+implementation guide might look like. Every effort has been made to ensure that the examples are
+correct and useful, but they are not a normative part of the specification nor are they fully
+representative of real world examples.</p>
+
+<h3 id="Bundle">Bundle</h3>
+
+<ul>
+      <li><a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html">Patient generated glucose observations and insulin administrations as a bundle, in English</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Bundle-diabetes-data-bundle-kantaphr-sv.html">Patient generated glucose observations and insulin administrations as a bundle, in Swedish</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Bundle-diabetes-data-bundle.html">Patient generated glucose observations and insulin administrations as a bundle, in Finnish</a></li>
+    </ul>
+
+<h3 id="CapabilityStatement">CapabilityStatement</h3>
+
+<ul>
+      <li><a href="CapabilityStatement-kanta-phr-capabilitystatement-at.html">kanta-phr-capabilitystatement-at</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CapabilityStatement-kanta-phr-capabilitystatement.html">kanta-phr-capabilitystatement</a></li>
+    </ul>
+
+<h3 id="CarePlan">CarePlan</h3>
+
+<ul>
+      <li><a href="CarePlan-b88191e3-ea47-4feb-9da9-e3b359fa8fca.html">b88191e3-ea47-4feb-9da9-e3b359fa8fca</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CarePlan-care-plan-optional.html">care-plan-optional</a></li>
+    </ul>
+
+<h3 id="CodeSystem">CodeSystem</h3>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-careplancategory.html">fiphr-cs-careplancategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-consentcategory.html">fiphr-cs-consentcategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-fitnesscategory.html">fiphr-cs-fitnesscategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-insulincode.html">fiphr-cs-insulincode</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-moderatetovigorouspa.html">fiphr-cs-moderatetovigorouspa</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-observationcategory.html">fiphr-cs-observationcategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="CodeSystem-fiphr-cs-vnrcode.html">fiphr-cs-vnrcode</a></li>
+    </ul>
+
+<h3 id="MedicationAdministration">MedicationAdministration</h3>
+
+<ul>
+      <li><a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe2.html">Kanta PHR - Insulin dosage mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe3.html">Kanta PHR - Insulin dosage optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="MedicationAdministration-medication-administration-insulin-basal-dose-kanta-stu3-sv.html">MedicationAdministration example of insulin basal dose</a></li>
+    </ul>
+
+<ul>
+      <li><a href="MedicationAdministration-medication-administration-insulin-bolus-dose-fi.html">MedicationAdministration example of insulin dose</a></li>
+    </ul>
+
+<ul>
+      <li><a href="MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html">MedicationAdministration example of temporary basal rate</a></li>
+    </ul>
+
+<h3 id="Observation">Observation</h3>
+
+<ul>
+      <li><a href="Observation-1153859e-0c86-1000-abb8-511d0000b222.html">1153859e-0c86-1000-abb8-511d0000b222</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff21.html">Kanta PHR - carbohydrate intake mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html">Kanta PHR - carbohydrate intake optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f8.html">Kanta PHR - step count mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html">Kanta PHR - step count optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b6.html">Kanta PHR - MET measurement mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b7.html">Kanta PHR - MET measurement optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f7.html">Kanta PHR - calorie intake mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html">Kanta PHR - calorie intake optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784a.html">Kanta PHR - exercise tracking mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784b.html">Kanta PHR - exercise tracking optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bloodglucose-as-text.html">Kanta PHR - blood glucose result as text</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bloodglucose-data-absent.html">Kanta PHR - blood glucose with data absent</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bloodglucose-max.html">Kanta PHR - blood glucose optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bloodglucose-min.html">Kanta PHR - blood glucose mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bloodpressure-max.html">Kanta PHR - blood pressure optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bloodpressure-min.html">Kanta PHR - blood pressure mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bodyweight-max.html">Kanta PHR - body weight optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-bodyweight-min.html">Kanta PHR - body weight mandatory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-mtvpa-max.html">Kanta PHR - physical activity optional</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Observation-mtvpa-min.html">Kanta PHR - physical activity mandatory</a></li>
+    </ul>
+
+<h3 id="Patient">Patient</h3>
+
+<ul>
+      <li><a href="Patient-36749a02-1710-44e7-aa76-0e934eb7860a.html">36749a02-1710-44e7-aa76-0e934eb7860a</a></li>
+    </ul>
+
+<ul>
+      <li><a href="Patient-patient-of-municipality.html">Patient - with the MunicipalityCode extension.</a></li>
+    </ul>
+
+<h3 id="StructureDefinition">StructureDefinition</h3>
+
+<ul>
+      <li><a href="StructureDefinition-FIPHRMetByStandardRMR.html">FIPHRMetByStandardRMR</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-ext-boolean.html">fiphr-ext-boolean</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-ext-creatingapplication.html">fiphr-ext-creatingapplication</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-ext-pq-translation.html">fiphr-ext-pq-translation</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-bloodglucose.html">fiphr-sd-bloodglucose</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-bloodpressure.html">fiphr-sd-bloodpressure</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-bodyweight.html">fiphr-sd-bodyweight</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-calorieintake.html">fiphr-sd-calorieintake</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-exercisetracking.html">fiphr-sd-exercisetracking</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-fitness.html">fiphr-sd-fitness</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-insulindosing-r4.html">fiphr-sd-insulindosing-r4</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-macronutrientintake.html">fiphr-sd-macronutrientintake</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-moderatetovigorouspatime.html">fiphr-sd-moderatetovigorouspatime</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-nutrition.html">fiphr-sd-nutrition</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-patient.html">fiphr-sd-patient</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-questionnaire.html">fiphr-sd-questionnaire</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-questionnaireresponse-r4.html">fiphr-sd-questionnaireresponse-r4</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-selfcareplan-r4.html">fiphr-sd-selfcareplan-r4</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-stepstaken.html">fiphr-sd-stepstaken</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-sd-vitalsigns.html">fiphr-sd-vitalsigns</a></li>
+    </ul>
+
+<ul>
+      <li><a href="StructureDefinition-fiphr-unsignedint.html">fiphr-unsignedint</a></li>
+    </ul>
+
+<h3 id="ValueSet">ValueSet</h3>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-careplancategory.html">fiphr-vs-careplancategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-confidentiality.html">fiphr-vs-confidentiality</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-consentcategory.html">fiphr-vs-consentcategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-exerciseactivity.html">fiphr-vs-exerciseactivity</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-exerciseintensity.html">fiphr-vs-exerciseintensity</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-exercisetracking.html">fiphr-vs-exercisetracking</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-fitnesscategory-2.html">fiphr-vs-fitnesscategory-2</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-fitnesscategory-3.html">fiphr-vs-fitnesscategory-3</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-fitnesscategory.html">fiphr-vs-fitnesscategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-fitnessresult.html">fiphr-vs-fitnessresult</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-insulincode.html">fiphr-vs-insulincode</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-macronutrients.html">fiphr-vs-macronutrients</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-metbystandardrmr.html">fiphr-vs-metbystandardrmr</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-nutrition.html">fiphr-vs-nutrition</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-observationcategory.html">fiphr-vs-observationcategory</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-sourceforadjustedmet.html">fiphr-vs-sourceforadjustedmet</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-sourceforestimatedmet.html">fiphr-vs-sourceforestimatedmet</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-sourceforreportedmet.html">fiphr-vs-sourceforreportedmet</a></li>
+    </ul>
+
+<ul>
+      <li><a href="ValueSet-fiphr-vs-vitalsigns.html">fiphr-vs-vitalsigns</a></li>
+    </ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#0.3.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 2, 2023 10:01+0200">2023-02-02</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="history.html">Version History</a>
+  | <a rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

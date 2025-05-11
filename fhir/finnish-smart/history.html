@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta charset="UTF-8"/>
+  <title>Finnish Implementation Guide for SMART App Launch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="http://www.hl7.org"/>
+  <link href="fhir.css" rel="stylesheet"/>
+  <link href="dist-hist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets-hist/css/bootstrap-fhir.css" rel="stylesheet"/>
+  <link href="assets-hist/css/project.css" rel="stylesheet"/>
+  <link href="assets-hist/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
+  <link href="history.css" rel="stylesheet"/>
+  <!-- header.template starts here -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets-hist/ico/apple-touch-icon-144-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets-hist/ico/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets-hist/ico/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="assets-hist/ico/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="assets-hist/ico/favicon.png"/>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+  <!-- Project extras -->
+  <link href="assets/css/project.css" rel="stylesheet"/>
+  <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+  <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+	<link href="assets/css/prism.css" rel="stylesheet" />
+
+  <link href="assets/css/hl7.css" rel="stylesheet"/>
+  <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+  <link href="assets/css/fi.css" rel="stylesheet"/>
+  <link href="assets/css/history.css" rel="stylesheet"/>
+
+  
+  <!-- header.template ends here -->
+</head>
+<!-- preamble.template starts here -->
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span id="ig-title" style="font-size:12pt;font-weight:bold">Finnish Implementation Guide for SMART App Launch</span>
+            <span style="display:inline-block;"><img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/></span></p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- preamble.template ends here -->
+
+<div class="col-12">
+
+<h2>Publication (Version) History</h2>
+
+<div id="intro"></div>
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<div id="history-data"></div>
+<style>
+    #history-data table td { padding-right: 1em; }
+</style>
+
+  <!-- postamble.template starts here -->
+  <!-- ==============END CONTENT END CONTENT=================== -->
+
+<p></p>
+<h2>Build Snapshots</h2>
+<p>Additional build snapshots are available, even for each development branch. See the <a href="versions.html#build-snapshots">version history page of the latest release</a> for details.</p>
+ </div>
+
+    </div>  <!-- /inner-wrapper -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><span id="ig-footer">hl7.fhir.fi.smart </span> &reg;&copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland ry</a>. 
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- postamble.template ends here -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets-hist/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist-hist/js/bootstrap.min.js"> </script>
+<script src="./assets-hist/js/respond.min.js"> </script>
+<script src="./assets-hist/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+<!--- Include in the page --->
+<script>
+var pageJSON = '{"package-id":"hl7.fhir.fi.smart","title":"Finnish Implementation Guide for SMART App Launch","canonical":"https://hl7.fi/fhir/finnish-smart","path":"https://hl7.fi/fhir/finnish-smart/package-list.json","introduction":"Guidelines for using the SMART App Launch mechanism in Finland, published and maintained by HL7 Finland.","category":"National Base","list":[{"version":"current","desc":"Continuous CI Build (master branch in version control)","path":"https://fhir.fi/finnish-smart/","fhirversion":"4.0.1","status":"ci-build","current":true},{"version":"2.0.0-rc1","path":"https://hl7.fi/fhir/finnish-smart/2.0.0-rc1","status":"ballot","sequence":"STU 2","fhirversion":"4.0.1","date":"2025-02-06","current":true,"desc":"Release Candidate 1 for v 2.0.0","descmd":"Release Candidate 1 for v 2.0.0"},{"version":"1.0.0","path":"https://hl7.fi/fhir/finnish-smart/1.0.0","status":"trial-use","sequence":"STU 1","fhirversion":"4.0.1","date":"2023-11-09","desc":"Release 1.0.0, STU 1","descmd":"Release 1.0.0, STU 1"},{"version":"1.0.0-rc9","path":"https://hl7.fi/fhir/finnish-smart/1.0.0-rc9","status":"qa-preview","sequence":"STU 1","fhirversion":"4.0.1","date":"2023-07-12","desc":"Restore the version history page, separate from publication directory","descmd":"Restore the version history page, separate from publication directory"},{"version":"1.0.0-rc8","path":"https://hl7.fi/fhir/finnish-smart/1.0.0-rc8","status":"qa-preview","sequence":"STU 1","fhirversion":"4.0.1","date":"2023-07-04","desc":"Finishing touches before 1.0.0 release","descmd":"Finishing touches before 1.0.0 release"},{"version":"1.0.0-rc7","path":"https://hl7.fi/fhir/finnish-smart/1.0.0-rc7","status":"draft","sequence":"STU 1","fhirversion":"4.0.1","date":"2023-07-03","desc":"Incorporate feedback from the official ballot"},{"version":"1.0.0-rc5","date":"2023-04-28","desc":"Official ballot version for 1.0.0","path":"https://hl7.fi/fhir/finnish-smart/1.0-rc5/","status":"ballot","sequence":"STU 1","fhirversion":"4.0.1"},{"version":"1.0.0-rc2","date":"2023-02-20","desc":"Pre-ballot version for 1.0.0","path":"https://hl7.fi/fhir/finnish-smart/1.0-rc2/","status":"ballot","sequence":"STU 1","fhirversion":"4.0.1"},{"version":"1.0.0-rc1","date":"2023-02-14","desc":"First release candidate for STU 1","path":"https://hl7.fi/fhir/finnish-smart/1.0-rc1/","status":"qa-preview","sequence":"STU 1","fhirversion":"4.0.1"},{"version":"0.3.0","date":"2023-02-01","desc":"CI Snapshot, use the Finnish color theme","path":"https://hl7.fi/fhir/finnish-smart/0.3/","status":"draft","sequence":"STU 1","fhirversion":"4.0.1"}]}';
+load(pageJSON);
+</script>
+
+</body>
+</html>
+
+

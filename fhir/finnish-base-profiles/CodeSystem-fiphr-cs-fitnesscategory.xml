@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiphr-cs-fitnesscategory"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://phr.kanta.fi/fiphr-cs-fitnesscategory</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">fitness<a name="fiphr-cs-fitnesscategory-fitness"> </a></td><td>Fitness</td><td>Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week.</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="http://phr.kanta.fi/fiphr-cs-fitnesscategory"/>
+  <version value="0.4.0"/>
+  <name value="fiphr-cs-fitnesscategory"/>
+  <title value="Code System Finnish PHR Fitness Category"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2018-03-16T10:45:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Observation category code for Finnish PHR Fitness Category"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="http://phr.kanta.fi/ValueSet/fitness-category"/>
+  <content value="complete"/>
+  <concept>
+    <code value="fitness"/>
+    <display value="Fitness"/>
+    <definition value="Fitness or physical activity observations measure the patient's fitness indicators: resting heart rate, maximum heart rate, active time exercised, sedentary behaviour, sleep episodes, calories burned, distance reached or steps taken. Measures can be timed over arbitrary periods (sessions) or over a day or week."/>
+  </concept>
+</CodeSystem>

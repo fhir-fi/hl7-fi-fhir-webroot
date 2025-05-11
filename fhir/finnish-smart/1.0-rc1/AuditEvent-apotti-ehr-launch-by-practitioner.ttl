@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-smart/AuditEvent/apotti-ehr-launch-by-practitioner> a fhir:AuditEvent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "apotti-ehr-launch-by-practitioner"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AuditEvent</b><a name=\"apotti-ehr-launch-by-practitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AuditEvent &quot;apotti-ehr-launch-by-practitioner&quot; </p></div><p><b>type</b>: User Authentication (Details: http://hl7.org/fhir/ValueSet/audit-event-type code 110114 = '110114', stated as 'User Authentication')</p><p><b>recorded</b>: Jan 24, 2023, 12:20:18 PM</p><blockquote><p><b>agent</b></p><p><b>who</b>: <span>: Apotti Ekosysteemi</span></p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>agent</b></p><p><b>who</b>: <span>: Sensotrend Oy</span></p><p><b>requestor</b>: false</p></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><span>: Sensotrend Oy</span></td><td>Web Server (Details: http://hl7.org/fhir/ValueSet/audit-source-type code 3 = '3', stated as 'Web Server')</td></tr></table></div>"
+  ]; # 
+  fhir:AuditEvent.type [
+     fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/audit-event-type" ];
+     fhir:Coding.code [ fhir:value "110114" ];
+     fhir:Coding.display [ fhir:value "User Authentication" ]
+  ]; # 
+  fhir:AuditEvent.recorded [ fhir:value "2023-01-24T12:20:18.000+02:00"^^xsd:dateTime]; # 
+  fhir:AuditEvent.agent [
+     fhir:index 0;
+     fhir:AuditEvent.agent.who [
+       fhir:Reference.type [ fhir:value "Organization" ];
+       fhir:Reference.display [ fhir:value "Apotti Ekosysteemi" ]
+     ];
+     fhir:AuditEvent.agent.requestor [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:AuditEvent.agent.who [
+       fhir:Reference.type [ fhir:value "Organization" ];
+       fhir:Reference.display [ fhir:value "Sensotrend Oy" ]
+     ];
+     fhir:AuditEvent.agent.requestor [ fhir:value "false"^^xsd:boolean ]
+  ]; # 
+  fhir:AuditEvent.source [
+     fhir:AuditEvent.source.observer [
+       fhir:Reference.type [ fhir:value "Organization" ];
+       fhir:Reference.display [ fhir:value "Sensotrend Oy" ]
+     ];
+     fhir:AuditEvent.source.type [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/ValueSet/audit-source-type" ];
+       fhir:Coding.code [ fhir:value "3" ];
+       fhir:Coding.display [ fhir:value "Web Server" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-smart/AuditEvent/apotti-ehr-launch-by-practitioner.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

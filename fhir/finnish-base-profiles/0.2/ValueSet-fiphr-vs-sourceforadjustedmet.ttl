@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforadjustedmet> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-vs-sourceforadjustedmet"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA26234-7/\">LA26234-7</a></td><td>Wilms 2014 male</td><td>Wilms 2014 miehet</td><td>Wilms 2014 manlig</td><td>Wilms 2014 male</td></tr><tr><td><a href=\"https://loinc.org/LA26235-4/\">LA26235-4</a></td><td>Wilms 2014 female</td><td>Wilms 2014 naiset</td><td>Wilms 2014 kvinnlig</td><td>Wilms 2014 female</td></tr><tr><td><a href=\"https://loinc.org/LA26236-2/\">LA26236-2</a></td><td>Harris-Benedict male</td><td>Harris-Benedict miehet</td><td>Harris-Benedict manlig</td><td>Harris-Benedict male</td></tr><tr><td><a href=\"https://loinc.org/LA26237-0/\">LA26237-0</a></td><td>Harris-Benedict female</td><td>Harris-Benedict naiset</td><td>Harris-Benedict kvinnlig</td><td>Harris-Benedict female</td></tr><tr><td><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>Other, specify</td><td>Muu, tarkenna</td><td>Annat, specificera</td><td>Other, specity</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforadjustedmet"]; # 
+  fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
+  fhir:ValueSet.name [ fhir:value "fiphr-vs-sourceforadjustedmet"]; # 
+  fhir:ValueSet.title [ fhir:value "Value Set Finnish PHR Source for Adjusted MET"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2020-02-24"^^xsd:date]; # 
+  fhir:ValueSet.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Finnish PHR Source for Adjusted MET value set"]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26234-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wilms 2014 male" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wilms 2014 miehet" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wilms 2014 manlig" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wilms 2014 male" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26235-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Wilms 2014 female" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wilms 2014 naiset" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wilms 2014 kvinnlig" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Wilms 2014 female" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26236-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Harris-Benedict male" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Harris-Benedict miehet" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Harris-Benedict manlig" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Harris-Benedict male" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA26237-0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Harris-Benedict female" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Harris-Benedict naiset" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Harris-Benedict kvinnlig" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Harris-Benedict female" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "LA46-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Other, specify" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Muu, tarkenna" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Annat, specificera" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Other, specity" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforadjustedmet.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

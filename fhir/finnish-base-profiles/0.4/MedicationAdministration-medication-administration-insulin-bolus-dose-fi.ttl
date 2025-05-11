@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-bolus-dose-fi> a fhir:MedicationAdministration;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "medication-administration-insulin-bolus-dose-fi"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://roche.com/fhir/rdc/StructureDefinition/medication-administration";
+       fhir:index 0;
+       fhir:link <http://roche.com/fhir/rdc/StructureDefinition/medication-administration>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "fi"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div lang=\"fi\" xml:lang=\"fi\" xmlns=\"http://www.w3.org/1999/xhtml\">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br />Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br />Aika: 4.9.2021 19.13:48<br />Lyhytvaikutteinen insuliini 1.07 ky<br />Laite: tandemCIQ1002717799999</div>"
+  ]; # 
+  fhir:MedicationAdministration.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:a41e3987-cb6f-5224-8ea2-2a5a35125a22" ];
+     fhir:Identifier.assigner [
+       fhir:link <https://www.sensotrend.com/>;
+       fhir:Reference.reference [ fhir:value "https://www.sensotrend.com/" ];
+       fhir:Reference.type [ fhir:value "Organization" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:c9494ac9-9303-4650-ae95-2b1cf95e32c0" ];
+     fhir:Identifier.assigner [
+       fhir:link <https://www.tidepool.org/>;
+       fhir:Reference.reference [ fhir:value "https://www.tidepool.org/" ];
+       fhir:Reference.type [ fhir:value "Organization" ]
+     ]
+  ]; # 
+  fhir:MedicationAdministration.status [ fhir:value "completed"]; # 
+  fhir:MedicationAdministration.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:411531001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "411531001" ];
+       fhir:Coding.display [ fhir:value "Short-acting insulin (substance)" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode" ];
+       fhir:Coding.code [ fhir:value "ins-short-fast" ];
+       fhir:Coding.display [ fhir:value "Lyhytvaikutteinen insuliini" ]
+     ], [
+       fhir:index 2;
+       a sct:67866001;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "67866001" ];
+       fhir:Coding.display [ fhir:value "Insulin (substance)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Lyhytvaikutteinen insuliini" ]
+  ]; # 
+  fhir:MedicationAdministration.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/7257379>;
+     fhir:Reference.reference [ fhir:value "Patient/7257379" ]
+  ]; # 
+  fhir:MedicationAdministration.effectiveDateTime [ fhir:value "2021-09-04T19:13:48.000+03:00"^^xsd:dateTime]; # 
+  fhir:MedicationAdministration.device [
+     fhir:index 0;
+     fhir:Reference.display [ fhir:value "tandemCIQ1002717799999" ]
+  ]; # 
+  fhir:MedicationAdministration.dosage [
+     fhir:MedicationAdministration.dosage.text [ fhir:value "Lyhytvaikutteinen insuliini 1.07 ky" ];
+     fhir:MedicationAdministration.dosage.dose [
+       fhir:Quantity.value [ fhir:value "1.06542"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "IU" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "[iU]" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-bolus-dose-fi.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

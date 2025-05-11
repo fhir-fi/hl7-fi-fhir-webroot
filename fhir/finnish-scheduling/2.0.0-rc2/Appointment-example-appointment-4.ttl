@@ -1,0 +1,192 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Appointment/example-appointment-4> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-appointment-4"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment example-appointment-4</b></p><a name=\"example-appointment-4\"> </a><a name=\"hcexample-appointment-4\"> </a><a name=\"example-appointment-4-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-scheduling-appointment.html\">FiSchedulingAppointment</a></p></div><p><b>identifier</b>: <code>http://organisaationmaarittelemanimiavaruus.fi</code>/12345</p><p><b>status</b>: Booked</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50 SOTE23.1}, {http://terminology.hl7.org/CodeSystem/service-category 17}\">Perusterveydenhuollon vastaanottopalvelu</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49 EDC}, {http://terminology.hl7.org/CodeSystem/service-type 74}\">Terveydenhoitajan palvelu</span></p><p><b>reasonReference</b>: </p><ul><li><a href=\"#hcexample-appointment-4/example-condition-1\">Condition Poikkeava verensokeri (löydös)</a></li><li><a href=\"#hcexample-appointment-4/example-condition-2\">Condition Ravitsemusneuvonta (toimenpide)</a></li></ul><p><b>start</b>: 2023-06-10 09:00:00+0000</p><p><b>end</b>: 2023-06-10 11:00:00+0000</p><p><b>comment</b>: Asiakkaalle tai ajanvarauksen katselijalle tarkoitettu vapaamuotoinen lisätieto voidaan kirjoittaa tähän.</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"#hcexample-appointment-4/patient-iida\">Iida Maria Koski (official) (no stated gender), DoB: 2011-01-30 ( urn:oid:1.2.246.21#300111A9001 (use: official, ))</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"#hcexample-appointment-4/example-service\">HealthcareService Ajanvaraus terveydenhoitajalle</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"#hcexample-appointment-4/example-location\">Location: description = Hissillä ylös kolmanteen kerrokseen</a></p><p><b>status</b>: Accepted</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Patient #patient-iida</b></p><a name=\"example-appointment-4/patient-iida\"> </a><a name=\"hcexample-appointment-4/patient-iida\"> </a><a name=\"example-appointment-4/patient-iida-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.fi/fhir/finnish-base-profiles/1.0.0/StructureDefinition-fi-base-patient.html\">FI Base Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Iida Maria Koski (official) (no stated gender), DoB: 2011-01-30 ( urn:oid:1.2.246.21#300111A9001 (use: official, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>urn:oid:1.2.246.10.12345678.22.2023</code>/1122 (use: old, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Iitu (Nickname)</td></tr></table></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Condition #example-condition-1</b></p><a name=\"example-appointment-4/example-condition-1\"> </a><a name=\"hcexample-appointment-4/example-condition-1\"> </a><a name=\"example-appointment-4/example-condition-1-fi-FI\"> </a><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.355.202001 166922008}\">Poikkeava verensokeri (löydös)</span></p><p><b>subject</b>: <a href=\"#hcexample-appointment-4/patient-iida\">Iida Maria Koski (official) (no stated gender), DoB: 2011-01-30 ( urn:oid:1.2.246.21#300111A9001 (use: official, ))</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Condition #example-condition-2</b></p><a name=\"example-appointment-4/example-condition-2\"> </a><a name=\"hcexample-appointment-4/example-condition-2\"> </a><a name=\"example-appointment-4/example-condition-2-fi-FI\"> </a><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.355.202001 11816003}\">Ravitsemusneuvonta (toimenpide)</span></p><p><b>subject</b>: <a href=\"#hcexample-appointment-4/patient-iida\">Iida Maria Koski (official) (no stated gender), DoB: 2011-01-30 ( urn:oid:1.2.246.21#300111A9001 (use: official, ))</a></p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Organization #example-org-unit</b></p><a name=\"example-appointment-4/example-org-unit\"> </a><a name=\"hcexample-appointment-4/example-org-unit\"> </a><a name=\"example-appointment-4/example-org-unit-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.fi/fhir/finnish-base-profiles/1.0.0/StructureDefinition-fi-base-organization.html\">FI Base Organization</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">URI</a>/urn:oid:1.2.246.10.10688929.10.20.1010</p><p><b>name</b>: Esimerkki-Palveluyksikkö</p><p><b>partOf</b>: Esimerkki-Palveluntuottaja (Identifier: <a href=\"http://terminology.hl7.org/5.0.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt \r\n\r\nThis oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: \r\n\r\nNote that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.\r\n\r\nThis OID may also be used in CD.codeSystem.\">URI</a>/urn:oid:1.2.246.10.10688929.10.0)</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService #example-service</b></p><a name=\"example-appointment-4/example-service\"> </a><a name=\"hcexample-appointment-4/example-service\"> </a><a name=\"example-appointment-4/example-service-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-scheduling-healthcare-service.html\">FiSchedulingHealthcareService</a></p></div><p><b>providedBy</b>: <a href=\"#hcexample-appointment-4/example-org-unit\">Organization Esimerkki-Palveluyksikkö</a></p><p><b>category</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50 SOTE4.2}\">Terveydenhoitajan palvelu</span>, <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/service-category 17}\">General Practice</span></p><p><b>type</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49 EDC}\">Terveydenhoitajan palvelu</span></p><p><b>name</b>: Ajanvaraus terveydenhoitajalle</p></blockquote><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: Location #example-location</b></p><a name=\"example-appointment-4/example-location\"> </a><a name=\"hcexample-appointment-4/example-location\"> </a><a name=\"example-appointment-4/example-location-fi-FI\"> </a><p><b>description</b>: Hissillä ylös kolmanteen kerrokseen</p><p><b>address</b>: Terveyskuja 5 A 2 Iisalmi </p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Patient ;
+     fhir:id [ fhir:v "patient-iida" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"^^xsd:anyURI ;
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "300111A9001" ]
+     ] [
+       fhir:use [ fhir:v "old" ] ;
+       fhir:system [ fhir:v "urn:oid:1.2.246.10.12345678.22.2023"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1122" ]
+     ] ) ;
+     fhir:name ( [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:family [ fhir:v "Koski" ] ;
+       fhir:given ( [ fhir:v "Iida" ] [ fhir:v "Maria" ] )
+     ] [
+       fhir:use [ fhir:v "nickname" ] ;
+       fhir:given ( [ fhir:v "Iitu" ] )
+     ] ) ;
+     fhir:birthDate [ fhir:v "2011-01-30"^^xsd:date ]
+  ] [
+     a fhir:Condition ;
+     fhir:id [ fhir:v "example-condition-1" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.355.202001"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "166922008" ] ;
+         fhir:display [ fhir:v "Poikkeava verensokeri (löydös)" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:reference [ fhir:v "#patient-iida" ]
+     ]
+  ] [
+     a fhir:Condition ;
+     fhir:id [ fhir:v "example-condition-2" ] ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.355.202001"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11816003" ] ;
+         fhir:display [ fhir:v "Ravitsemusneuvonta (toimenpide)" ]
+       ] )
+     ] ;
+     fhir:subject [
+       fhir:reference [ fhir:v "#patient-iida" ]
+     ]
+  ] [
+     a fhir:Organization ;
+     fhir:id [ fhir:v "example-org-unit" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"^^xsd:anyURI ;
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "urn:oid:1.2.246.10.10688929.10.20.1010" ]
+     ] ) ;
+     fhir:name [ fhir:v "Esimerkki-Palveluyksikkö" ] ;
+     fhir:partOf [
+       fhir:identifier [
+         fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "urn:oid:1.2.246.10.10688929.10.0" ]
+       ] ;
+       fhir:display [ fhir:v "Esimerkki-Palveluntuottaja" ]
+     ]
+  ] [
+     a fhir:HealthcareService ;
+     fhir:id [ fhir:v "example-service" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service"^^xsd:anyURI ;
+         fhir:link <https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service>
+       ] )
+     ] ;
+     fhir:providedBy [
+       fhir:reference [ fhir:v "#example-org-unit" ]
+     ] ;
+     fhir:category ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SOTE4.2" ] ;
+         fhir:display [ fhir:v "Terveydenhoitajan palvelu" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "17" ] ;
+         fhir:display [ fhir:v "General Practice" ]
+       ] )
+     ] ) ;
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "EDC" ] ;
+         fhir:display [ fhir:v "Terveydenhoitajan palvelu" ]
+       ] )
+     ] ) ;
+     fhir:name [ fhir:v "Ajanvaraus terveydenhoitajalle" ]
+  ] [
+     a fhir:Location ;
+     fhir:id [ fhir:v "example-location" ] ;
+     fhir:description [ fhir:v "Hissillä ylös kolmanteen kerrokseen" ] ;
+     fhir:address [
+       fhir:type [ fhir:v "physical" ] ;
+       fhir:line ( [ fhir:v "Terveyskuja 5 A 2" ] ) ;
+       fhir:city [ fhir:v "Iisalmi" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://organisaationmaarittelemanimiavaruus.fi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:serviceCategory ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SOTE23.1" ] ;
+       fhir:display [ fhir:v "Perusterveydenhuollon vastaanottopalvelu" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "17" ] ;
+       fhir:display [ fhir:v "General Practice" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "EDC" ] ;
+       fhir:display [ fhir:v "Terveydenhoitajan palvelu" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "74" ] ;
+       fhir:display [ fhir:v "Generalist counselling" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:reference [ fhir:v "#example-condition-1" ]
+  ] [
+     fhir:reference [ fhir:v "#example-condition-2" ]
+  ] ) ; # 
+  fhir:start [ fhir:v "2023-06-10T09:00:00+00:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2023-06-10T11:00:00+00:00"^^xsd:dateTime] ; # 
+  fhir:comment [ fhir:v "Asiakkaalle tai ajanvarauksen katselijalle tarkoitettu vapaamuotoinen lisätieto voidaan kirjoittaa tähän."] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:reference [ fhir:v "#patient-iida" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:reference [ fhir:v "#example-service" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:reference [ fhir:v "#example-location" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Appointment/appointment-general-practitioner> a fhir:Appointment;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "appointment-general-practitioner"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"appointment-general-practitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;appointment-general-practitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-appointment.html\">FI Base Appointment</a></p></div><p><b>status</b>: fulfilled</p><p><b>serviceCategory</b>: SOTE9.2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#SOTE9.2)</span></p><p><b>serviceType</b>: EEA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#EEA)</span></p><p><b>appointmentType</b>: 101 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#101)</span></p><p><b>description</b>: Kuume</p><p><b>start</b>: Jan 20, 2023, 10:00:00 AM</p><p><b>end</b>: Jan 20, 2023, 10:20:00 AM</p><p><b>created</b>: 2023-01-20 08:45:15+0200</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: PPRF <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ParticipationType#PPRF)</span></p><p><b>actor</b>: <a href=\"Practitioner-PractitionerLicensedPhysician.html\">Practitioner/PractitionerLicensedPhysician</a> &quot; DOCTOR&quot;</p><p><b>required</b>: required</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"HealthcareService-healthcareService-example.html\">HealthcareService/healthcareService-example</a> &quot;Vastaanottoaika*&quot;</p><p><b>status</b>: accepted</p></blockquote></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt" ];
+     fhir:Extension.valueIdentifier [
+       fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+       fhir:Identifier.value [ fhir:value "urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "Cancellable" ];
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "Reschedulable" ];
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension" ]
+  ]; # 
+  fhir:Appointment.status [ fhir:value "fulfilled"]; # 
+  fhir:Appointment.serviceCategory [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.50.201801" ];
+       fhir:Coding.code [ fhir:value "SOTE9.2" ]
+     ]
+  ]; # 
+  fhir:Appointment.serviceType [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.49.201501" ];
+       fhir:Coding.code [ fhir:value "EEA" ]
+     ]
+  ]; # 
+  fhir:Appointment.appointmentType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:1.2.246.537.6.884.2015" ];
+       fhir:Coding.code [ fhir:value "101" ]
+     ]
+  ]; # 
+  fhir:Appointment.description [ fhir:value "Kuume"]; # 
+  fhir:Appointment.start [ fhir:value "2023-01-20T10:00:00+02:00"^^xsd:dateTime]; # 
+  fhir:Appointment.end [ fhir:value "2023-01-20T10:20:00+02:00"^^xsd:dateTime]; # 
+  fhir:Appointment.created [ fhir:value "2023-01-20T08:45:15+02:00"^^xsd:dateTime]; # 
+  fhir:Appointment.participant [
+     fhir:index 0;
+     fhir:Appointment.participant.actor [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality>;
+       fhir:Reference.reference [ fhir:value "Patient/patient-of-municipality" ]
+     ];
+     fhir:Appointment.participant.required [ fhir:value "required" ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 1;
+     fhir:Appointment.participant.type [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/v3/ParticipationType" ];
+         fhir:Coding.code [ fhir:value "PPRF" ]
+       ]
+     ];
+     fhir:Appointment.participant.actor [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Practitioner/PractitionerLicensedPhysician>;
+       fhir:Reference.reference [ fhir:value "Practitioner/PractitionerLicensedPhysician" ]
+     ];
+     fhir:Appointment.participant.required [ fhir:value "required" ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 2;
+     fhir:Appointment.participant.actor [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample>;
+       fhir:Reference.reference [ fhir:value "Location/LocationExample" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ], [
+     fhir:index 3;
+     fhir:Appointment.participant.actor [
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example>;
+       fhir:Reference.reference [ fhir:value "HealthcareService/healthcareService-example" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Appointment/appointment-general-practitioner.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

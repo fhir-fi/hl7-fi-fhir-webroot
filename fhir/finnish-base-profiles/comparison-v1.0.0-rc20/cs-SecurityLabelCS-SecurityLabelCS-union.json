@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "28a24472-fe55-4d8a-b0d8-08f8f5bfcbf6-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/28a24472-fe55-4d8a-b0d8-08f8f5bfcbf6-2",
+  "name" : "UnionSecurityLabelCSAndSecurityLabelCS",
+  "title" : "Union of Finnish CodeSystem for security labels And Finnish CodeSystem for security labels",
+  "status" : "active",
+  "date" : "2023-10-23T01:15:25+03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "concept" : [{
+    "code" : "TURVAKIELTO",
+    "display" : "Turvakielto",
+    "definition" : "A non-disclosure for personal safety reasons according to DVV."
+  }]
+}

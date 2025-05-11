@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/71831b54-1a80-47c5-ba84-0180a5eb784a> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "71831b54-1a80-47c5-ba84-0180a5eb784a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking"^^xsd:anyURI ;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Exercise tracking (55409-7)<br />Time: 26.11.2019<br />Result: Exercise activity (73985-4): Orienteering, Exercise duration (55411-3): 60 min, Exercise intensity (74008-4): Vigorous, Caloried burned (55421-2): 709 kcal</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:6288f477-90ef-424a-b6e3-da4ff18a058e" ]
+  ] [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:00000000-5cb1-fef8-16b6-835409677fb6" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://phr.kanta.fi/fiphr-cs-fitnesscategory"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fitness" ] ;
+       fhir:display [ fhir:v "Fitness" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:55409-7 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "55409-7" ] ;
+       fhir:display [ fhir:v "Exercise tracking panel" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad> ;
+     fhir:reference [ fhir:v "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-11-26"^^xsd:date] ; # 
+  fhir:issued [ fhir:v "2019-11-26T12:00:00+03:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad> ;
+     fhir:reference [ fhir:v "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:73985-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "73985-4" ] ;
+         fhir:display [ fhir:v "Exercise activity" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.301"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "B1504" ] ;
+         fhir:display [ fhir:v "Orienteering" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

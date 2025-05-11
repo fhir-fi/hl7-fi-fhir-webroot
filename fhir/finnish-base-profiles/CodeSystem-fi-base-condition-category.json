@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fi-base-condition-category",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-condition-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">reason-for-visit<a name=\"fi-base-condition-category-reason-for-visit\"> </a></td><td>Reason for visit</td><td>Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish).</td></tr></table></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-condition-category",
+  "version" : "1.0.0-rc11",
+  "name" : "FiBaseConditionCategory",
+  "title" : "Finnish Condition categories",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-04-18T11:02:48+03:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "Additional categories for the Finnish Base Condition profile",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "reason-for-visit",
+    "display" : "Reason for visit",
+    "definition" : "Indicates that this Condition is reason for visit (or treatment period). Reason for visit may be a diagnosis asserted by a clinician (a Diagnosis or Diagnoosi in finnish) or other healthcare professional (Käyntisyy in finnish)."
+  }]
+}

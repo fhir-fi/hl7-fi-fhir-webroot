@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Provenance/custodian-occupational-healthcare> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "custodian-occupational-healthcare"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-private"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-private>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Provenance</b><a name=\"custodian-occupational-healthcare\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Provenance &quot;custodian-occupational-healthcare&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-information-custodian-private.html\">FI Base Information Custodian (Private Organization)</a></p></div><p><b>target</b>: <a href=\"EpisodeOfCare-id-for-episode-1.html\">EpisodeOfCare/id-for-episode-1</a></p><p><b>recorded</b>: Feb 7, 2015, 1:28:17 PM</p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Role</b></td><td><b>Who</b></td></tr><tr><td style=\"display: none\">*</td><td>Rekisterinpitäjä <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#CST &quot;custodian&quot;)</span></td><td>Yksityinen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#2)</span></td><td><span>: Ratinan Terveys Oy</span></td></tr></table><blockquote><p><b>entity</b></p><p><b>role</b>: source</p><p><b>what</b>: <span>: Työterveyshuolto</span></p></blockquote><blockquote><p><b>entity</b></p><p><b>role</b>: source</p><p><b>what</b>: <span>: Sensotrend Oy</span></p></blockquote></div>"
+  ] ; # 
+  fhir:target ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/EpisodeOfCare/id-for-episode-1> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/id-for-episode-1" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2015-02-07T13:28:17.239+02:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CST" ] ;
+         fhir:display [ fhir:v "custodian" ]
+       ] ) ;
+       fhir:text [ fhir:v "Rekisterinpitäjä" ]
+     ] ;
+     fhir:role ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40172"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "Yksityinen" ]
+       ] ) ;
+       fhir:text [ fhir:v "Yksityinen" ]
+     ] ) ;
+     fhir:who [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:identifier [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "PRN" ]
+           ] )
+         ] ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.202"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "urn:oid:1.2.246.10.32515682.10.0" ]
+       ] ;
+       fhir:display [ fhir:v "Ratinan Terveys Oy" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:identifier [
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.5.40150"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "4" ]
+       ] ;
+       fhir:display [ fhir:v "Työterveyshuolto" ]
+     ]
+  ] [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:identifier [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "XX" ]
+           ] )
+         ] ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.10"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "2606155-7" ]
+       ] ;
+       fhir:display [ fhir:v "Sensotrend Oy" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

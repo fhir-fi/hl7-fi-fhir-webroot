@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ipa-server vs fi-smart-server</title>
+ <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+
+<h2>CapabilityStatement Comparison between http://hl7.org/fhir/uv/ipa/CapabilityStatement/ipa-server vs https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server</h2>
+
+<h3>Messages</h3>
+
+<div><table class="grid"><tr style="background-color: #ffcccc"><td>Error</td><td>CapabilityStatement.url</td><td>Values for url differ: 'http://hl7.org/fhir/uv/ipa/CapabilityStatement/ipa-server' vs 'https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server'</td></tr><tr style="background-color: #ffcccc"><td>Error</td><td>CapabilityStatement.version</td><td>Values for version differ: '1.0.0' vs '2.0.0-rc1'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.name</td><td>Values for name differ: 'InternationalPatientAccessAPI' vs 'FiSmartServer'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.title</td><td>Values for title differ: 'International Patient Access Server CapabilityStatement' vs 'Finnish SMART Server Capability Statement'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.date</td><td>Values for date differ: '2022-12-09' vs '2023-11-09'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.publisher</td><td>Values for publisher differ: 'HL7 International - Patient Care Work Group' vs 'HL7 Finland ry'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.jurisdiction</td><td>Removed the item 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.jurisdiction</td><td>Added the item 'urn:iso:std:iso:3166#FI'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.implementationGuide</td><td>Removed the item 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.implementationGuide</td><td>Added the item 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch|2.2.0'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.implementationGuide</td><td>Added the item 'http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa'</td></tr><tr style="background-color: #ffebcc"><td>Warning</td><td>CapabilityStatement.rest.where(mode='SERVER').documentation</td><td>Changed value for documentation: 'The IPA Server **SHALL**:
+1. Support the IPA Patient resource profile.
+1. Support at least one additional resource profile from the list of IPA Profiles.
+1. Implement the RESTful behavior according to the FHIR specification.
+1. Return the following response classes:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   - (Status 400): invalid parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   - (Status 401/4xx): unauthorized request
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   - (Status 403): insufficient scope
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   - (Status 404): unknown resource
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Support JSON source formats for all IPA interactions.
+1. Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.
+
+
+
+
+
+
+
+
+The IPA Server **SHOULD**:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Support XML source formats for all IPA interactions.' vs 'The server **SHALL**:
+1. Implement the RESTful behavior according to the FHIR specification.
+1. Support JSON source formats for all interactions.
+1. Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.
+
+The server **SHOULD**:
+1. Support XML source formats for all interactions.
+1. Implement the International Patient Access (IPA) specification.'</td></tr><tr style="background-color: #ffffe6"><td>Information</td><td>CapabilityStatement.rest.security.security.description</td><td>Changed value for security.description: '1. See the [General Security Considerations](security.html) section for requirements and recommendations.
+1. A server **SHALL** reject any unauthorized requests by returning an HTTP `401 Unauthorized`, `403 Forbidden`, or `404 Not Found` response code.' vs 'This implementation guide relies heavily on the widely adopted SMART App Launch mechanism. This implementation guide does not define any new security mechanisms. Please familiarize yourself with the securty concepts infroduced in the SMART App Launch specification, and the underlying OpenID Connect and OAuth2 specifications the SMART App Launch specification build on.
+1. See the Best Practices outlined in the SMART App Launch specification.
+1. See the [FHIR Security](https://www.hl7.org/fhir/security.html) section of the FHIR specification for requirements and recommendations.
+1. A server **SHALL** reject any unauthorized requests by returning an HTTP `401 Unauthorized`, `403 Forbidden`, or `404 Not Found` response code.'</td></tr></table></div>
+
+<h3>Metadata</h3>
+
+<table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="null"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="width: 100px" class="hierarchy"><span title="Property Name">Name</span></th><th colspan="2" style="width: 200px" class="hierarchy"><span title="The value of the property">Value</span></th><th style="width: 200px" class="hierarchy"><span title="Additional information about the comparison">Comments</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffecb3" id="a"><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>copyright</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Used by permission of HL7 International, all rights reserved Creative Commons License</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Removed the item 'Used by permission of HL7 International, all rights reserved Creative Commons License'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="b"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>date</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">2022-12-09</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">2023-11-09</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Values Differ</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="c"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>description</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">This CapabilityStatement describes the basic rules for the International Patient Access server actor that is responsible for providing responses to queries submitted by International Patient Access requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by International Patient Access servers are defined in this CapabilityStatement.</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Finland.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Values Differ</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffecb3" id="d"><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>experimental</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">false</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Removed the item 'false'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="e"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>fhirVersion</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="f"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>format</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="fa"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>format[0]</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">json</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="fb"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>format[1]</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">xml</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="g"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>implementation.description</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="h"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>implementation.url</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="i"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>implementationGuide</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffecb3" id="ia"><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>implementationGuide[0]</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Removed the item 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffffb3" id="ib"><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>implementationGuide[1]</td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch|2.2.0</td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Added the item 'http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch|2.2.0'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffffb3" id="ic"><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>implementationGuide[2]</td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa</td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Added the item 'http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="j"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>imports</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="k"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>instantiates</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="l"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>jurisdiction</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffecb3" id="la"><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/>jurisdiction[0]</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://unstats.un.org/unsd/methods/m49/m49.htm#001</td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffecb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Removed the item 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #ffffb3" id="lb"><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>jurisdiction[1]</td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">urn:iso:std:iso:3166#FI</td><td style="vertical-align: top; text-align : left; background-color: #ffffb3; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Added the item 'urn:iso:std:iso:3166#FI'</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="m"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>kind</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">requirements</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="n"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>name</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">InternationalPatientAccessAPI</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">FiSmartServer</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Values Differ</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="o"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>patchFormat</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="oa"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/>patchFormat[0]</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">application/json-patch+json</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="p"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>publisher</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">HL7 International - Patient Care Work Group</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">HL7 Finland ry</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Values Differ</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="q"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>purpose</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="r"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>software.name</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="s"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>software.releaseDate</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="t"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>software.version</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="u"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>status</td><td colspan="2" style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">active</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="v"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>title</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">International Patient Access Server CapabilityStatement</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">Finnish SMART Server Capability Statement</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #fffff2">Values Differ</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="w"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>url</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">http://hl7.org/fhir/uv/ipa/CapabilityStatement/ipa-server</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #ffdddd; font-weight: bold">Values Differ</li></ul></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="x"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/>version</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px;background-color: #f0b3ff" class="hierarchy">2.0.0-rc1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><ul><li style="background-color: #ffdddd; font-weight: bold">Values Differ</li></ul></td></tr>
+</table>
+
+<h3>Structure</h3>
+
+
+</body>
+</html>
+
+<ul>
+</ul>

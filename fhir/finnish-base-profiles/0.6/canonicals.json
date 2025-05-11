@@ -1,0 +1,156 @@
+[
+  {
+    "id" : "hl7.fhir.fi.base",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
+    "version" : "0.6.0",
+    "name" : "FinnishBaseProfiles"
+  },
+  {
+    "id" : "fi-base-appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment",
+    "version" : "0.6.0",
+    "name" : "FiBaseAppointment"
+  },
+  {
+    "id" : "fi-base-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition",
+    "version" : "0.6.0",
+    "name" : "FiBaseCondition"
+  },
+  {
+    "id" : "fi-base-consent",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-consent",
+    "version" : "0.6.0",
+    "name" : "FiBaseConsent"
+  },
+  {
+    "id" : "fi-base-device",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-device",
+    "version" : "0.6.0",
+    "name" : "FiBaseDevice"
+  },
+  {
+    "id" : "fi-base-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-diagnostic-report",
+    "version" : "0.6.0",
+    "name" : "FiBaseDiagnosticReport"
+  },
+  {
+    "id" : "fi-base-encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter",
+    "version" : "0.6.0",
+    "name" : "FiBaseEncounter"
+  },
+  {
+    "id" : "fi-base-healthcare-service",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service",
+    "version" : "0.6.0",
+    "name" : "FiBaseHealthcareService"
+  },
+  {
+    "id" : "fi-base-location",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location",
+    "version" : "0.6.0",
+    "name" : "FiBaseLocation"
+  },
+  {
+    "id" : "fi-base-medication",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication",
+    "version" : "0.6.0",
+    "name" : "FiBaseMedication"
+  },
+  {
+    "id" : "fi-base-medication-administration",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration",
+    "version" : "0.6.0",
+    "name" : "FiBaseMedicationAdministration"
+  },
+  {
+    "id" : "fi-base-medication-statement",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement",
+    "version" : "0.6.0",
+    "name" : "FiBaseMedicationStatement"
+  },
+  {
+    "id" : "fi-base-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation",
+    "version" : "0.6.0",
+    "name" : "FiBaseObservation"
+  },
+  {
+    "id" : "fi-base-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization",
+    "version" : "0.6.0",
+    "name" : "FiBaseOrganization"
+  },
+  {
+    "id" : "fi-base-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient",
+    "version" : "0.6.0",
+    "name" : "FiBasePatient"
+  },
+  {
+    "id" : "fi-base-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner",
+    "version" : "0.6.0",
+    "name" : "FiBasePractitioner"
+  },
+  {
+    "id" : "fi-base-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role",
+    "version" : "0.6.0",
+    "name" : "FiBasePractitionerRole"
+  },
+  {
+    "id" : "fi-base-procedure",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure",
+    "version" : "0.6.0",
+    "name" : "FiBaseProcedure"
+  },
+  {
+    "id" : "fi-base-schedule",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule",
+    "version" : "0.6.0",
+    "name" : "FiBaseSchedule"
+  },
+  {
+    "id" : "fi-base-slot",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot",
+    "version" : "0.6.0",
+    "name" : "FiBaseSlot"
+  },
+  {
+    "id" : "municipality-code",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code",
+    "version" : "0.6.0",
+    "name" : "MunicipalityCode"
+  },
+  {
+    "id" : "patient-profession",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession",
+    "version" : "0.6.0",
+    "name" : "PatientProfession"
+  }
+]

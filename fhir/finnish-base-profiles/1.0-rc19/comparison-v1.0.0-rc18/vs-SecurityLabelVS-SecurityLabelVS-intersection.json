@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "a246923a-17a2-45a8-9dbb-c8c7ef4a7874-114",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/a246923a-17a2-45a8-9dbb-c8c7ef4a7874-114",
+  "name" : "IntersectionSecurityLabelVSAndSecurityLabelVS",
+  "title" : "Intersection of Finnish ValueSet for security labels in accordance with finnish authorities And Finnish ValueSet for security labels in accordance with finnish authorities",
+  "status" : "active",
+  "date" : "2023-08-17T16:55:15+03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "TURVAKIELTO"
+      }]
+    }]
+  },
+  "expansion" : {
+    "contains" : [{
+      "system" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/SecurityLabelCS",
+      "code" : "TURVAKIELTO",
+      "display" : "Turvakielto"
+    }]
+  }
+}

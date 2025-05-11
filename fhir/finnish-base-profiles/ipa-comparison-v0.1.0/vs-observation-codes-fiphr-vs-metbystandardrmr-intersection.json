@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "3d0d6ce3-fb24-4162-af55-2f4c1e9d1c5d-9",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/3d0d6ce3-fb24-4162-af55-2f4c1e9d1c5d-9",
+  "name" : "IntersectionLOINCCodesAndfiphr-vs-metbystandardrmr",
+  "title" : "Intersection of LOINC Codes And Value Set Finnish PHR MET by Standard RMR",
+  "status" : "draft",
+  "date" : "2023-02-02T13:14:21+02:00"
+}

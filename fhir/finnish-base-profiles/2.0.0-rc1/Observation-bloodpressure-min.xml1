@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="bloodpressure-min"/>
+  <meta>
+    <profile value="http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Blood pressure (85354-9)<br />Time: 20.11.2017 11:46<br />Result: Systolic blood pressure (8480-6): 95 mm[Hg], Diastolic blood pressure (8462-4): 65 mm[Hg]</div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:3ca3ffc6-234e-481c-b0f3-37c05e14c8e2"/>
+  </identifier>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85354-9"/>
+      <display value="Blood pressure panel with all children optional"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"/>
+  </subject>
+  <effectiveDateTime value="2017-11-20T11:46:00+02:00"/>
+  <issued value="2017-11-20T11:46:00+02:00"/>
+  <performer>
+    <reference value="Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"/>
+  </performer>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="95"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="65"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+</Observation>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-consentcategory"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-fiphr-cs-consentcategory.html"><code>http://phr.kanta.fi/fiphr-cs-consentcategory</code></a></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory"/>
+  <version value="0.2.1"/>
+  <name value="fiphr-vs-consentcategory"/>
+  <title value="Value Set Finnish PHR Consent Category"/>
+  <status value="active"/>
+  <date value="2018-03-16T13:52:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Consent Category value set."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://phr.kanta.fi/fiphr-cs-consentcategory"/>
+    </include>
+  </compose>
+</ValueSet>

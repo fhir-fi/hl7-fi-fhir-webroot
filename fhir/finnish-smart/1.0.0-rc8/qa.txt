@@ -1,0 +1,21 @@
+﻿FinnishSmart : Validation Results
+=========================================
+
+err = 2, warn = 0, info = 0
+IG Publisher Version: 1.3.22
+Generated Tue Jul 04 18:51:17 EEST 2023. FHIR version 4.0.1 for hl7.fhir.fi.smart#1.0.0-rc8 (canonical = https://hl7.fi/fhir/finnish-smart)
+ Build Errors : 0 / 0 / 0
+ /Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0-rc8/fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0-rc8/fsh-generated/resources/CapabilityStatement-fi-smart-server : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0-rc8/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0-rc8/fsh-generated/resources/StructureDefinition-fi-smart-server-profile : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-smart/temp/hl7.fhir.fi.smart#1.0.0-rc8/input/examples/CapabilityStatement-apotti-ekosysteemi : 2 / 5 / 1
+</table>
+== n/a ==
+== fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner.json ==
+== fsh-generated/resources/CapabilityStatement-fi-smart-server.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json ==
+== input/examples/CapabilityStatement-apotti-ekosysteemi.json ==
+ERROR: CapabilityStatement/apotti-eko01: CapabilityStatement.instantiates[0]: Canonical URL 'http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data' does not resolve
+ERROR: CapabilityStatement/apotti-eko01: CapabilityStatement.rest[0].resource[24].operation[0].definition: Canonical URL 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export' does not resolve

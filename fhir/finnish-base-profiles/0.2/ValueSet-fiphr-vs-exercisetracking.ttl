@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-exercisetracking> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-vs-exercisetracking"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/55409-7/\">55409-7</a></td><td>Exercise tracking panel</td><td>Liikunnan seuranta -paneeli</td><td>Träningsspårning-panel</td><td>Exercise tracking panel</td></tr><tr><td><a href=\"https://loinc.org/73985-4/\">73985-4</a></td><td>Exercise activity</td><td>Liikunta-aktiviteetti</td><td>Träningsaktivitet</td><td>Exercise activity</td></tr><tr><td><a href=\"https://loinc.org/55411-3/\">55411-3</a></td><td>Exercise duration</td><td>Liikunnan kesto</td><td>Träningsvaraktighet</td><td>Exercise duration</td></tr><tr><td><a href=\"https://loinc.org/74008-4/\">74008-4</a></td><td>Exercise intensity</td><td>Liikunnan intensiteetti</td><td>Träningsintensitet</td><td>Exercise intensity</td></tr><tr><td><a href=\"https://loinc.org/55421-2/\">55421-2</a></td><td>Calories burned</td><td>Energiankulutus</td><td>Energiförbrukning</td><td>Calories burned</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-exercisetracking"]; # 
+  fhir:ValueSet.version [ fhir:value "0.2.0"]; # 
+  fhir:ValueSet.name [ fhir:value "fiphr-vs-exercisetracking"]; # 
+  fhir:ValueSet.title [ fhir:value "Value Set Finnish PHR Exercise Tracking"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2020-02-24"^^xsd:date]; # 
+  fhir:ValueSet.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Finnish PHR Exercise Tracking value set"]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55409-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exercise tracking panel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liikunnan seuranta -paneeli" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Träningsspårning-panel" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Exercise tracking panel" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "73985-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exercise activity" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liikunta-aktiviteetti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Träningsaktivitet" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Exercise activity" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55411-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exercise duration" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liikunnan kesto" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Träningsvaraktighet" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Exercise duration" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "74008-4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Exercise intensity" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Liikunnan intensiteetti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Träningsintensitet" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Exercise intensity" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "55421-2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Calories burned" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Energiankulutus" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Energiförbrukning" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Calories burned" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-exercisetracking.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

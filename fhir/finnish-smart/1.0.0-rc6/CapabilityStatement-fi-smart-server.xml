@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="fi-smart-server"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2/><div><p>This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Finland.</p>
+</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>The server <strong>SHALL</strong>:</p>
+<ol>
+<li>Implement the RESTful behavior according to the FHIR specification.</li>
+<li>Support JSON source formats for all interactions.</li>
+<li>Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.</li>
+</ol>
+<p>The server <strong>SHOULD</strong>:</p>
+<ol>
+<li>Support XML source formats for all interactions.</li>
+<li>Implement the International Patient Access (IPA) specification.</li>
+</ol>
+</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title="GET a resource (read interaction)">Read</b></th><th><b title="GET all set of resources of the type (search interaction)">Search</b></th><th><b title="PUT a new resource version (update interaction)">Update</b></th><th><b title="POST a new resource (create interaction)">Create</b></th></tr></table></div>
+  </text>
+  <url value="https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server"/>
+  <version value="1.0.0-rc6"/>
+  <title value="Finnish SMART Server Capability Statement"/>
+  <status value="active"/>
+  <date value="2023-02-03"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="mikael@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <description value="This CapabilityStatement describes the basic rules for a server actor providing SMART App Launch in Finland."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </format>
+  <format value="xml">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHOULD"/>
+    </extension>
+  </format>
+  <patchFormat value="application/json-patch+json">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHOULD"/>
+    </extension>
+  </patchFormat>
+  <implementationGuide value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </implementationGuide>
+  <implementationGuide value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHOULD"/>
+    </extension>
+  </implementationGuide>
+  <rest>
+    <mode value="server"/>
+    <documentation value="The server **SHALL**:&#xA;1. Implement the RESTful behavior according to the FHIR specification.&#xA;1. Support JSON source formats for all interactions.&#xA;1. Declare a CapabilityStatement identifying the list of profiles, operations, and search parameters supported.&#xA;&#xA;The server **SHOULD**:&#xA;1. Support XML source formats for all interactions.&#xA;1. Implement the International Patient Access (IPA) specification."/>
+    <security>
+      <description value="This implementation guide relies heavily on the widely adopted SMART App Launch mechanism. This implementation guide does not define any new security mechanisms. 1. Please familiarize yourself with the securty concepts infroduced in the SMART App Launch specification, and the underlying OpenID Connect and OAuth2 specifications the SMART App Launch specification build on.&#xA;1. See the Best Practices outlined in the SMART App Launch specification.&#xA;1. See the [General Security Considerations](security.html) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an HTTP `401 Unauthorized`, `403 Forbidden`, or `404 Not Found` response code."/>
+    </security>
+  </rest>
+</CapabilityStatement>

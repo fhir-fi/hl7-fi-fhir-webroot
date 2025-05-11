@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/PractitionerRole/PractitionerRoleGP> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PractitionerRoleGP"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"PractitionerRoleGP\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;PractitionerRoleGP&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-practitioner-role.html\">FI Base PractitionerRole</a></p></div><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>period</b>: 2023-01-01 --&gt; 2023-12-31</p><p><b>practitioner</b>: <a href=\"Practitioner-PractitionerLicensedPhysician.html\">Practitioner/PractitionerLicensedPhysician</a> &quot; DOCTOR&quot;</p><p><b>organization</b>: <a href=\"Organization-1.2.246.10.2085212.10.1314.html\">Organization/1.2.246.10.2085212.10.1314</a> &quot;Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka&quot;</p><p><b>code</b>: Referring Provider <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v2-0286.html\">providerRole</a>#RP)</span></p><p><b>specialty</b>: General medical practice <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#408443003)</span></p><p><b>location</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p><p><b>healthcareService</b>: <a href=\"HealthcareService-healthcareService-example.html\">HealthcareService/healthcareService-example</a> &quot;Vastaanottoaika*&quot;</p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 16:30:00</p></blockquote><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: thu, fri</p><p><b>availableStartTime</b>: 09:00:00</p><p><b>availableEndTime</b>: 12:00:00</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.acme.org/practitioners"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "23" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2023-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Practitioner/PractitionerLicensedPhysician> ;
+     fhir:reference [ fhir:v "Practitioner/PractitionerLicensedPhysician" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/1.2.246.10.2085212.10.1314> ;
+     fhir:reference [ fhir:v "Organization/1.2.246.10.2085212.10.1314" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0286"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "RP" ]
+     ] )
+  ] ) ; # 
+  fhir:specialty ( [
+     fhir:coding ( [
+       a sct:408443003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "408443003" ] ;
+       fhir:display [ fhir:v "General medical practice" ]
+     ] )
+  ] ) ; # 
+  fhir:location ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Location/LocationExample> ;
+     fhir:reference [ fhir:v "Location/LocationExample" ]
+  ] ) ; # 
+  fhir:healthcareService ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example> ;
+     fhir:reference [ fhir:v "HealthcareService/healthcareService-example" ]
+  ] ) ; # 
+  fhir:availableTime ( [
+     fhir:daysOfWeek ( [ fhir:v "mon" ] [ fhir:v "tue" ] [ fhir:v "wed" ] ) ;
+     fhir:availableStartTime [ fhir:v "09:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "16:30:00"^^xsd:time ]
+  ] [
+     fhir:daysOfWeek ( [ fhir:v "thu" ] [ fhir:v "fri" ] ) ;
+     fhir:availableStartTime [ fhir:v "09:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "12:00:00"^^xsd:time ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

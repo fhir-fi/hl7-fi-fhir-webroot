@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Organization",
+  "id" : "1.2.246.10.2085212.10.1314",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"1.2.246.10.2085212.10.1314\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;1.2.246.10.2085212.10.1314&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-organization.html\">FI Base Organization</a></p></div><p><b>identifier</b>: id:\u00a01.2.246.10.2085212.10.1314\u00a0(use:\u00a0OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka</p><p><b>telecom</b>: ph: 0401578947</p><p><b>address</b>: </p><ul><li>Honkalehdontie 9 Kyyjärvi 43700 </li><li>Honkalehdontie 9 Kyyjärvi 43700 </li></ul><p><b>partOf</b>: <a href=\"Organization-1.2.246.10.2085212.10.1306.html\">Organization/1.2.246.10.2085212.10.1306</a> &quot;Vastaanotot, SoTe kuntayhtymä Saarikka&quot;</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.246.537.6.202.2008",
+    "value" : "1.2.246.10.2085212.10.1314"
+  }],
+  "active" : true,
+  "name" : "Kyyjärven lääkärin vastaanotto, Kyyjärven terveysasema, SoTe kuntayhtymä Saarikka",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "0401578947"
+  }],
+  "address" : [{
+    "type" : "postal",
+    "line" : ["Honkalehdontie 9"],
+    "city" : "Kyyjärvi",
+    "postalCode" : "43700"
+  },
+  {
+    "type" : "physical",
+    "line" : ["Honkalehdontie 9"],
+    "city" : "Kyyjärvi",
+    "postalCode" : "43700"
+  }],
+  "partOf" : {
+    "reference" : "Organization/1.2.246.10.2085212.10.1306"
+  }
+}

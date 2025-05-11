@@ -1,0 +1,201 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodpressure-max> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "bloodpressure-max"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure"^^xsd:anyURI ;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Blood pressure (85354-9) / Systolic blood pressure (observable entity)(46973005)<br />Time: 20.11.2017 11:46<br />Result: Systolic blood pressure (8480-6): 95 mm[Hg], Diastolic blood pressure (8462-4): 65 mm[Hg]</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:uuid:3ca3ffc6-234e-481c-b0f3-37c05e14c8e2" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.own.com"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "OwnCode123" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85354-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85354-9" ] ;
+       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+     ] [
+       a sct:46973005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "46973005" ] ;
+       fhir:display [ fhir:v "Blood pressure taking (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86> ;
+     fhir:reference [ fhir:v "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2017-11-20T11:46:00+02:00"^^xsd:dateTime] ; # 
+  fhir:issued [ fhir:v "2017-11-20T11:46:00+02:00"^^xsd:dateTime] ; # 
+  fhir:performer ( [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86> ;
+     fhir:reference [ fhir:v "Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86" ]
+  ] ) ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "" ]
+  ] ) ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8480-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8480-6" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure" ]
+       ] [
+         a sct:271649006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271649006" ] ;
+         fhir:display [ fhir:v "Systolic blood pressure (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "95"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm[Hg]" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "<" ] ;
+         fhir:display [ fhir:v "Off scale low" ]
+       ] )
+     ] ) ;
+     fhir:referenceRange ( [
+       fhir:low [
+         fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mm[Hg]" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mm[Hg]" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v "150"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mm[Hg]" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mm[Hg]" ]
+       ] ;
+       fhir:appliesTo ( [
+         fhir:coding ( [
+           a sct:248153007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "248153007" ] ;
+           fhir:display [ fhir:v "Male" ]
+         ] ) ;
+         fhir:text [ fhir:v "Normal range" ]
+       ] ) ;
+       fhir:age [
+         fhir:low [
+           fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "years" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "a" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "years" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "a" ]
+         ]
+       ] ;
+       fhir:text [ fhir:v "Age" ]
+     ] )
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8462-4 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8462-4" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure" ]
+       ] [
+         a sct:271650006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271650006" ] ;
+         fhir:display [ fhir:v "Diastolic blood pressure (observable entity)" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "65"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm[Hg]" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm[Hg]" ]
+     ] ;
+     fhir:interpretation ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N" ] ;
+         fhir:display [ fhir:v "Normal" ]
+       ] )
+     ] ) ;
+     fhir:referenceRange ( [
+       fhir:low [
+         fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mm[Hg]" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mm[Hg]" ]
+       ] ;
+       fhir:high [
+         fhir:value [ fhir:v "110"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mm[Hg]" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mm[Hg]" ]
+       ] ;
+       fhir:appliesTo ( [
+         fhir:coding ( [
+           a sct:248153007 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "248153007" ] ;
+           fhir:display [ fhir:v "Male" ]
+         ] ) ;
+         fhir:text [ fhir:v "Normal range" ]
+       ] ) ;
+       fhir:age [
+         fhir:low [
+           fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "years" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "a" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "years" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "a" ]
+         ]
+       ] ;
+       fhir:text [ fhir:v "Age" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

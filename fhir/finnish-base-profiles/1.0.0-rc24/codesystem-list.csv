@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs,1.0.0-rc24,draft,,FiBaseSecurityLabelCS,Finnish CodeSystem for security labels,"This is the CodeSystem for security labels in accordance with finnish authorities.",

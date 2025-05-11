@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="id-for-diagnosis-1"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="id-for-diagnosis-1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;id-for-diagnosis-1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-reason-for-care.html">FI Base Reason for Care (encounter-diagnosis and reason for visit)</a></p></div><p><b>Primary condition for encounter</b>: Päädiagnoosi tai päätoimenpide (Details: urn:oid:1.2.246.537.5.40005 code PAA = 'PAA', stated as 'Päädiagnoosi tai päätoimenpide')</p><p><b>Permanence of condition</b>: Pysyväisluonteinen (Details: urn:oid:1.2.246.537.5.40003 code PYS = 'PYS', stated as 'Pysyväisluonteinen')</p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-condition-category.html">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[1999]#H36.03 &quot;Proliferatiivinen diabeettinen retinopatia&quot;)</span></p><p><b>subject</b>: <a href="Patient-patient-of-municipality.html">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>onset</b>: 2023-01-05 02:06:24+0300</p><h3>Evidences</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>Aikuistyypin diabetes diabeteksen silmäkomplikaatiot <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[1999]#E11.3)</span></td></tr></table></div>
+  </text>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-primary">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40005"/>
+      <version value="2003"/>
+      <code value="PAA"/>
+      <display value="Päädiagnoosi tai päätoimenpide"/>
+    </valueCoding>
+  </extension>
+  <extension url="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-permanence">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40003"/>
+      <version value="2003"/>
+      <code value="PYS"/>
+      <display value="Pysyväisluonteinen"/>
+    </valueCoding>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.1"/>
+      <version value="1999"/>
+      <code value="H36.03"/>
+      <display value="Proliferatiivinen diabeettinen retinopatia"/>
+    </coding>
+    <text value="Proliferatiivinen diabeettinen retinopatia, vasen, laserhoidettu"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-of-municipality"/>
+  </subject>
+  <onsetDateTime value="2023-01-05T02:06:24+03:00"/>
+  <evidence>
+    <code>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.1"/>
+        <version value="1999"/>
+        <code value="E11.3"/>
+        <display value="Aikuistyypin diabetes diabeteksen silmäkomplikaatiot"/>
+      </coding>
+    </code>
+  </evidence>
+</Condition>

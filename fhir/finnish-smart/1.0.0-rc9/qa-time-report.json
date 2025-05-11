@@ -1,0 +1,261 @@
+{
+  "date" : "Wed, 12 Jul, 2023 10:52:49 +0300",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json",
+      "size" : 3814,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 56
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 109
+        },
+        {
+          "activity" : "validate",
+          "start" : 30,
+          "length" : 459
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 44,
+          "length" : 152
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 71
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 144,
+          "length" : 2
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 152,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "input/examples/CapabilityStatement-apotti-ekosysteemi.json",
+      "size" : 139603,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 185
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 26,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 184
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 226
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 167
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 390
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 135
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 144,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 152,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-fi-smart-server.json",
+      "size" : 3003,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 32
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 144,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner.json",
+      "size" : 994,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 12
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 132
+        },
+        {
+          "activity" : "validate",
+          "start" : 44,
+          "length" : 26
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 19
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json",
+      "size" : 1590,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 19
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 26,
+          "length" : 570
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 463
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 1713
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 44,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 45,
+          "length" : 1015
+        },
+        {
+          "activity" : "generate2",
+          "start" : 48,
+          "length" : 4708
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 144,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 144,
+          "length" : 15
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 152,
+          "length" : 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Organization/organizationesim1> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organizationesim1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"organizationesim1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;organizationesim1&quot; </p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.123456.10.1</p><p><b>name</b>: Testi terveysasema</p><p><b>partOf</b>: <a href=\"Organization-organizationesim2.html\">Organization/organizationesim2</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.2.246.10.123456.10.1" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Testi terveysasema"] ; # 
+  fhir:partOf [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Organization/organizationesim2> ;
+     fhir:reference [ fhir:v "Organization/organizationesim2" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

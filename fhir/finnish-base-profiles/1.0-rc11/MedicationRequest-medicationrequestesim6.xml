@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="medicationrequestesim6"/>
+  <meta>
+    <security>
+      <system value="urn:oid:1.2.246.537.5.40202.201901"/>
+      <code value="1"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationRequest</b><a name="medicationrequestesim6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationRequest &quot;medicationrequestesim6&quot; </p><p style="margin-bottom: 0px">Security Labels: <span title="{urn:oid:1.2.246.537.5.40202.201901 urn:oid:1.2.246.537.5.40202.201901}">urn:oid:1.2.246.537.5.40202.201901</span></p></div><p><b>identifier</b>: id: urn:oid:1.2.246.10.1602257.93.2019.855, id: urn:oid:1.2.246.10.1602257.93.2019.855</p><p><b>status</b>: active</p><p><b>statusReason</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#1)</span></p><p><b>intent</b>: order</p><p><b>category</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#1)</span></p><p><b>medication</b>: <a href="Medication-medicationesim1.html">Medication/medicationesim1</a></p><p><b>subject</b>: <a href="Patient-patientesim1.html">Patient/patientesim1</a> &quot; VAN DER HENTENRYCK&quot;</p><p><b>authoredOn</b>: 2019-10-16 18:44:16+0200</p><p><b>requester</b>: <a href="PractitionerRole-practitionerRoleesim1.html">PractitionerRole/practitionerRoleesim1</a></p><blockquote><p><b>dosageInstruction</b></p><p><b>text</b>: Lääke tauolla (-vakioteksti) 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: (-vakioteksti) 25 mg klo 08:00 10 päivän ajan ihon alle</p><p><b>additionalInstruction</b>: Tauon jälkeen jatkuu samalla annostuksella. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>timing</b>: Once per 1 days</p><p><b>asNeeded</b>: false</p><p><b>route</b>: 1069 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#1069)</span></p><blockquote><p><b>doseAndRate</b></p></blockquote></blockquote><blockquote><p><b>dispenseRequest</b></p><h3>DispenseIntervals</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td><td><b>Unit</b></td></tr><tr><td>*</td><td>30</td><td>d</td></tr></table><p><b>validityPeriod</b>: ?? --&gt; 2022-04-30 11:34:31+0200</p><p><b>numberOfRepeatsAllowed</b>: 3</p></blockquote><h3>Substitutions</h3><table class="grid"><tr><td>-</td><td><b>Allowed[x]</b></td></tr><tr><td>*</td><td>true</td></tr></table></div>
+  </text>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/versionNumber">
+    <valuePositiveInt value="1"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/neRep">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/usage">
+    <valueString value="Verenpainelääke."/>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus">
+    <extension url="dispenseStatus">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.5.40123.2006"/>
+        <code value="2"/>
+      </valueCoding>
+    </extension>
+    <extension url="invalidationReason">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.5.40103.2006"/>
+        <code value="1"/>
+      </valueCoding>
+    </extension>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus">
+    <extension url="reservedStatus">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.5.40122.2006"/>
+        <code value="3"/>
+      </valueCoding>
+    </extension>
+    <extension url="reservedLockOwner">
+      <valueString value="1.2.246.10.8182355.10.1"/>
+    </extension>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/lockStatus">
+    <extension url="lockStatus">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.5.40124.2006"/>
+        <code value="2"/>
+      </valueCoding>
+    </extension>
+    <extension url="lockOwner">
+      <valueString value="1.2.246.10.8182355.10.1"/>
+    </extension>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40106.2006"/>
+      <code value="0"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy">
+    <valueCoding>
+      <system value="urn:oid:1.2.246.537.5.40303.201501"/>
+      <code value="2"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://resepti.kanta.fi/StructureDefinition/extension/medicineId">
+    <extension url="medicineId">
+      <valueIdentifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:1.2.246.10.1602257.93.2019.855.0"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="medicineIdPart">
+      <valuePositiveInt value="1"/>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://resepti.kanta.fi/fhir/id/id"/>
+    <value value="urn:oid:1.2.246.10.1602257.93.2019.855"/>
+  </identifier>
+  <identifier>
+    <system value="http://resepti.kanta.fi/fhir/id/setId"/>
+    <value value="urn:oid:1.2.246.10.1602257.93.2019.855"/>
+  </identifier>
+  <status value="active"/>
+  <statusReason>
+    <coding>
+      <system value="urn:oid:1.2.246.537.5.40105.2006"/>
+      <code value="1"/>
+    </coding>
+  </statusReason>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.605.2014"/>
+      <code value="1"/>
+    </coding>
+  </category>
+  <medicationReference>
+    <reference value="Medication/medicationesim1"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/patientesim1"/>
+  </subject>
+  <authoredOn value="2019-10-16T18:44:16+02:00"/>
+  <requester>
+    <reference value="PractitionerRole/practitionerRoleesim1"/>
+  </requester>
+  <dosageInstruction>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld">
+      <valueQuantity>
+        <value value="15"/>
+        <unit value="kg"/>
+      </valueQuantity>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse">
+      <valueBoolean value="false"/>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/sic">
+      <valueBoolean value="false"/>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/medicinePauseInterval">
+      <valuePeriod>
+        <start value="2020-03-01"/>
+        <end value="2020-06-30"/>
+      </valuePeriod>
+    </extension>
+    <text value="Lääke tauolla (-vakioteksti) 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: (-vakioteksti) 25 mg klo 08:00 10 päivän ajan ihon alle"/>
+    <additionalInstruction>
+      <text value="Tauon jälkeen jatkuu samalla annostuksella."/>
+    </additionalInstruction>
+    <timing>
+      <repeat>
+        <boundsDuration>
+          <value value="10"/>
+          <unit value="d"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="d"/>
+        </boundsDuration>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+        <timeOfDay value="08:00:00"/>
+      </repeat>
+    </timing>
+    <asNeededBoolean value="false"/>
+    <route>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.1403.202001"/>
+        <code value="1069"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="25"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+  <dispenseRequest>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.5.40100.2006"/>
+        <code value="1"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/package">
+      <extension url="packageFactor">
+        <valuePositiveInt value="1"/>
+      </extension>
+      <extension url="packageAmount">
+        <valuePositiveInt value="8"/>
+      </extension>
+      <extension url="packageSizeText">
+        <valueString value="1X98 fol"/>
+      </extension>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/totalAmount">
+      <valueQuantity>
+        <value value="800"/>
+        <unit value="fol"/>
+      </valueQuantity>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/validityTime">
+      <valueDuration>
+        <value value="1"/>
+        <unit value="a"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="a"/>
+      </valueDuration>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.5.40123.2006"/>
+        <code value="1"/>
+      </valueCoding>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText">
+      <valueString value="8X98 fol"/>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText">
+      <valueString value="5X98 fol"/>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime">
+      <valueDateTime value="2019-10-17T18:44:16+02:00"/>
+    </extension>
+    <extension url="http://resepti.kanta.fi/StructureDefinition/extension/previousDispense">
+      <valueString value="98 fol"/>
+    </extension>
+    <dispenseInterval>
+      <value value="30"/>
+      <unit value="d"/>
+    </dispenseInterval>
+    <validityPeriod>
+      <end value="2022-04-30T11:34:31+02:00"/>
+    </validityPeriod>
+    <numberOfRepeatsAllowed value="3"/>
+  </dispenseRequest>
+  <substitution>
+    <allowedBoolean value="true"/>
+  </substitution>
+</MedicationRequest>

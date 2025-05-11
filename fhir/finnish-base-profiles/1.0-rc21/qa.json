@@ -1,0 +1,13 @@
+{
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
+  "name" : "FinnishBaseProfiles",
+  "package-id" : "hl7.fhir.fi.base",
+  "ig-ver" : "1.0.0-rc21",
+  "date" : "Mon, 23 Oct, 2023 01:04:07 +0300",
+  "errs" : 87,
+  "warnings" : 39,
+  "hints" : 41,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 3244320408
+}

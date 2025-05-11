@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-exerciseintensity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA20164-2/\">LA20164-2</a></td><td>Light</td><td>Kevyt</td><td>Lätt</td><td>Light</td></tr><tr><td><a href=\"https://loinc.org/LA20165-9/\">LA20165-9</a></td><td>Moderate</td><td>Reipas</td><td>Rask</td><td>Moderate</td></tr><tr><td><a href=\"https://loinc.org/LA20166-7/\">LA20166-7</a></td><td>Vigorous</td><td>Rasittava</td><td>Ansträngande</td><td>Vigorous</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseintensity",
+  "version" : "0.3.0",
+  "name" : "fiphr-vs-exerciseintensity",
+  "title" : "Value Set Finnish PHR Exercise Intensity",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-02-24",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR Exercise Intensity value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA20164-2",
+        "display" : "Light",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Kevyt"
+        },
+        {
+          "language" : "sv",
+          "value" : "Lätt"
+        },
+        {
+          "language" : "en",
+          "value" : "Light"
+        }]
+      },
+      {
+        "code" : "LA20165-9",
+        "display" : "Moderate",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Reipas"
+        },
+        {
+          "language" : "sv",
+          "value" : "Rask"
+        },
+        {
+          "language" : "en",
+          "value" : "Moderate"
+        }]
+      },
+      {
+        "code" : "LA20166-7",
+        "display" : "Vigorous",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Rasittava"
+        },
+        {
+          "language" : "sv",
+          "value" : "Ansträngande"
+        },
+        {
+          "language" : "en",
+          "value" : "Vigorous"
+        }]
+      }]
+    }]
+  }
+}

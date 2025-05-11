@@ -1,0 +1,104 @@
+FinnishScheduling : Validation Results
+=========================================
+
+err = 7, warn = 25, info = 2
+IG Publisher Version: 1.6.31
+Generated Tue Oct 22 01:23:46 EEST 2024. FHIR version 4.0.1 for hl7.fhir.fi.scheduling#0.3.1 (canonical = https://hl7.fi/fhir/finnish-scheduling)
+ Build Errors : 3 / 3 / 0
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/ConceptMap-ajanvarauksentila-appointmentstatus : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/ConceptMap-appointmentstatus-ajanvarauksentila : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.scheduling : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/Patient-example-patient : 1 / 2 / 3
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/Slot-example-slot : 2 / 3 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-additional-information-url : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-care-guarantee-details : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-careplan-identifier : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-customer-journey : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-fi-scheduling-appointment : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-fi-scheduling-healthcare-service : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-fi-scheduling-location : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-fi-scheduling-schedule : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-fi-scheduling-slot : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-mutable : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-notification-info : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-notification-medium : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-parent-appointment : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-patient-instruction-url : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-prectitioner-gender : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-queue-number : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-referral-id : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-requested-service-info : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-resource-calendar : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-self-service-info : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-service-additional-information : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-ticket-number : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/fsh-generated/resources/StructureDefinition-topic-id : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/input/examples/appointment : 4 / 3 / 2
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Appointment/605790.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Slot/example-slot.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/output/Appointment-605790.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 826: The link 'Slot/123456789' for "Slot/123456789" cannot be resolved
+ERROR: /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/output/Appointment-605790.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 194, column 1917: The link 'HealthcareService/example' for "Lastenvalvojan vastaanotto" cannot be resolved
+ERROR: /Users/mikael/GitHub/finnish-scheduling/temp/hl7.fhir.fi.scheduling#0.3.1/output/Slot-example-slot.html#/html/body/div/div/div/div/div/div/p/a at Line 194, column 647: The link 'Schedule/234567890' for "Schedule/234567890" cannot be resolved
+== fsh-generated/resources/ConceptMap-ajanvarauksentila-appointmentstatus.json ==
+== fsh-generated/resources/ConceptMap-appointmentstatus-ajanvarauksentila.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.scheduling.json ==
+== fsh-generated/resources/Patient-example-patient.json ==
+ERROR: Patient/example-patient: Patient.extension[0].value.ofType(Coding).system: Value is 'urn:oid:1.2.246.537.6.21.2003' but must be 'urn:oid:1.2.246.537.6.21'
+WARNING: Patient/example-patient: Patient.communication[0].language.coding[0].system: A definition for CodeSystem 'urn:oid:1.2.246.537.5.40175' could not be found, so the code cannot be validated
+INFORMATION: Patient/example-patient: Patient.communication[0].language: None of the codings provided are in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a coding is recommended to come from this value set (codes = urn:oid:1.2.246.537.5.40175#FI)
+== fsh-generated/resources/Slot-example-slot.json ==
+ERROR: Slot/example-slot: Slot.schedule: Unable to resolve resource with reference 'Schedule/234567890'
+ERROR: Slot.text.div: Hyperlink 'Schedule/234567890' at 'div/p/a' for 'Schedule/234567890' does not resolve
+== fsh-generated/resources/StructureDefinition-additional-information-url.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/additional-information-url'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-care-guarantee-details.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/care-guarantee-details'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-careplan-identifier.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/careplan-identifier'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-customer-journey.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/customer-journey'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-fi-scheduling-appointment.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-scheduling-healthcare-service.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-scheduling-location.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-scheduling-schedule.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-schedule'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-scheduling-slot.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-slot'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-mutable.json ==
+== fsh-generated/resources/StructureDefinition-notification-info.json ==
+== fsh-generated/resources/StructureDefinition-notification-medium.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-medium'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-parent-appointment.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/parent-appointment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-patient-instruction-url.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/patient-instruction-url'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-prectitioner-gender.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/prectitioner-gender'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-queue-number.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/queue-number'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-referral-id.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/referral-id'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-requested-service-info.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/requested-service-info'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-resource-calendar.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/resource-calendar'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-self-service-info.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/self-service-info'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-service-additional-information.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/service-additional-information'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ticket-number.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ticket-number'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-topic-id.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/topic-id'): The Implementation Guide contains no examples for this extension
+== input/examples/appointment.json ==
+INFORMATION: Appointment/605790: Appointment.appointmentType: None of the codings provided are in the value set 'hl7VS-appointmentReasonCodes' (http://terminology.hl7.org/ValueSet/v2-0276|2.0.0), and a coding is recommended to come from this value set (codes = urn:oid:1.2.246.537.6.884.2015#10)
+ERROR: Appointment/605790: Appointment.slot[0]: Unable to resolve resource with reference 'Slot/123456789'
+ERROR: Appointment/605790: Appointment.participant[2].actor: Unable to resolve resource with reference 'HealthcareService/example'
+ERROR: Appointment.text.div: Hyperlink 'Slot/123456789' at 'div/p/a' for 'Slot/123456789' does not resolve
+ERROR: Appointment.text.div: Hyperlink 'HealthcareService/example' at 'div/blockquote/p/a' for 'Lastenvalvojan vastaanotto' does not resolve

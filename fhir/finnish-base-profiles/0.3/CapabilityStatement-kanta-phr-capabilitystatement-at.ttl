@@ -1,0 +1,682 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CapabilityStatement/kanta-phr-capabilitystatement-at> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "kanta-phr-capabilitystatement-at"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Finnish PHR's capability statement for acceptance testing R4</h2><div><p>The capability statement for Kanta PHR service client software acceptance testing environment</p>\n</div><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td><div><p>See implementation guide for details</p>\n</div></td></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th></tr><tr><td>CarePlan</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Patient</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>MedicationAdministration</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Questionnaire</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>QuestionnaireResponse</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>ValueSet</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>StructureDefinition</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr><tr><td>CodeSystem</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td></td></tr></table></div>"
+  ]; # 
+  fhir:CapabilityStatement.url [ fhir:value "http://phr.kanta.fi/capabilitystatementATR4"]; # 
+  fhir:CapabilityStatement.version [ fhir:value "0.3.0"]; # 
+  fhir:CapabilityStatement.name [ fhir:value "Finnish PHR's capability statement for acceptance testing R4"]; # 
+  fhir:CapabilityStatement.status [ fhir:value "draft"]; # 
+  fhir:CapabilityStatement.date [ fhir:value "2021-11-25"^^xsd:date]; # 
+  fhir:CapabilityStatement.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:CapabilityStatement.description [ fhir:value "The capability statement for Kanta PHR service client software acceptance testing environment"]; # 
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"]; # 
+  fhir:CapabilityStatement.software [
+     fhir:CapabilityStatement.software.name [ fhir:value "Omatietovaranto" ];
+     fhir:CapabilityStatement.software.version [ fhir:value "1.1" ];
+     fhir:CapabilityStatement.software.releaseDate [ fhir:value "2021-11-25"^^xsd:date ]
+  ]; # 
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"]; # 
+  fhir:CapabilityStatement.format [
+     fhir:value "json";
+     fhir:index 0
+  ]; # 
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "See implementation guide for details" ];
+     fhir:CapabilityStatement.rest.security [
+       fhir:CapabilityStatement.rest.security.cors [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.security.service [
+         fhir:index 0;
+         fhir:CodeableConcept.text [ fhir:value "OAuth" ]
+       ];
+       fhir:CapabilityStatement.rest.security.description [ fhir:value "The usage of OAuth 2.0 with Finnish PHR can be found at kanta.fi" ]
+     ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "CarePlan" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "SupportingInfo isn't validated with update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.meta.lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the resource version last changed" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.period" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Time period the plan covers" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.subject" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Who care plan is for" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "status" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.status" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Status of the plan" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.identfier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Return careplans with this external identifier" ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The category for a particular careplan" ]
+       ], [
+         fhir:index 7;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "supporting-info" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CarePlan.supportingInfo" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Reference to supporting info" ]
+       ], [
+         fhir:index 8;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_total" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Total count of resources" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "special" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Total count of resources" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Observation" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Only the source of the resource or Omakanta can delete resources" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.meta.lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the resource version last changed" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.effective[x]" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Obtained date/time. If the obtained element is a period, a date that falls in the period. AND operator is supported." ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.subject" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The patient that the observation is about, mandatory search parameter" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.code" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The code of the observation type. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://loinc.org will be used." ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The unique id for a particular observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]." ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Observation.category" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The classification of the type of observation. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]." ]
+       ], [
+         fhir:index 7;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_total" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Total count of resources" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "special" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Total count of resources" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Patient.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "MedicationAdministration" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Only the source of the resource or Omakanta can delete resources" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Implemented per the specification (or Insert other doco here)" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "MedicationAdministration.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "MedicationAdministration.meta.lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the resource version last changed" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "effective-time" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "MedicationAdministration.effectiveTime[x]" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Date administration happened (or did not happen)" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "MedicationAdministration.patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The identity of a patient to list administrations for, mandatory search parameter" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "MedicationAdministration.identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Return administrations with this external identifier. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]." ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "MedicationAdministration.medication[x]" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Return administrations of this medication code. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]. OR operator is supported. If searching with multiple codes and code.system isn't given, default codesystem http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode will be used." ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_total" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Total count of resources" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "special" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Total count of resources" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Questionnaire" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allow only identifier parameter" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Questionnaire.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Questionnaire.meta.lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the resource version last changed" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "code" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Questionnaire.item.code" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "A code that corresponds to the questionnaire or one of its groups. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]." ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Questionnaire.identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "An identifier for the questionnaire. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]." ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Questionnaire.url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The logical URL for the questionnaire" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_total" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Total count of resources" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "special" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Total count of resources" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "QuestionnaireResponse" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "delete" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allow only identifier parameter" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "QuestionnaireResponse.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "QuestionnaireResponse.meta.lastUpdated" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the resource version last changed" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "questionnaire" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "QuestionnaireResponse.questionnaire" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The questionnaire the answers are provided for" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "patient" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "QuestionnaireResponse.subject" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "reference" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The patient that is the subject of the questionnaire, mandatory search parameter" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "authored" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "	QuestionnaireResponse.authored" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "date" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "When the questionnaire was authored" ]
+       ], [
+         fhir:index 5;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "QuestionnaireResponse.identifier" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The unique identifier for the questionnaire response. The following syntaxes are supported: [parameter]=[code] and [parameter]=[system]|[code]." ]
+       ], [
+         fhir:index 6;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_total" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "Total count of resources" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "special" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Total count of resources" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "ValueSet" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Implemented per the specification (or Insert other doco here)" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "ValueSet.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "ValueSet.url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The logical URL for the value set" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "StructureDefinition" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Implemented per the specification (or Insert other doco here)" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "StructureDefinition.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "StructureDefinition.url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The uri that identifies the structure definition" ]
+       ]
+     ], [
+       fhir:index 8;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "CodeSystem" ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Conditional create allows only the use of identifier as condition" ]
+       ], [
+         fhir:index 4;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "search-type" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "Implemented per the specification (or Insert other doco here)" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.versioning [ fhir:value "versioned-update" ];
+       fhir:CapabilityStatement.rest.resource.readHistory [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.updateCreate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalCreate [ fhir:value "true"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalUpdate [ fhir:value "false"^^xsd:boolean ];
+       fhir:CapabilityStatement.rest.resource.conditionalDelete [ fhir:value "not-supported" ];
+       fhir:CapabilityStatement.rest.resource.referencePolicy [
+         fhir:value "literal";
+         fhir:index 0
+       ], [
+         fhir:value "enforced";
+         fhir:index 1
+       ], [
+         fhir:value "local";
+         fhir:index 2
+       ];
+       fhir:CapabilityStatement.rest.resource.searchParam [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "_id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CodeSystem.id" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "token" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "Logical id of this artifact" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.searchParam.name [ fhir:value "url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.definition [ fhir:value "CodeSystem.url" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.type [ fhir:value "uri" ];
+         fhir:CapabilityStatement.rest.resource.searchParam.documentation [ fhir:value "The uri that identifies the code system" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CapabilityStatement/kanta-phr-capabilitystatement-at.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

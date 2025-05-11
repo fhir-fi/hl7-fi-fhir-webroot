@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-max> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bloodglucose-max"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose>
+     ], [
+       fhir:value "http://example.org/StructureDefinition/other-bloodglucose-structuredefinition";
+       fhir:index 1;
+       fhir:link <http://example.org/StructureDefinition/other-bloodglucose-structuredefinition>
+     ];
+     fhir:Meta.security [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-Confidentiality" ];
+       fhir:Coding.code [ fhir:value "U" ];
+       fhir:Coding.display [ fhir:value "unrestricted" ]
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"><b>Verensokeri</b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Subject</td><td>Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c</td></tr><tr><td>Code</td><td>ins-short-fast</td></tr><tr><td>Display</td><td>Fast-acting insulin</td></tr><tr><td>Text</td><td>Lyhytvaikutteinen insuliini</td></tr></tbody></table></div>"
+  ]; # 
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:206fc986-517a-4054-bc0a-03eb906c9571" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:39862" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:be18620b-ee17-4bd6-8304-102fdd10a38c2" ]
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ], [
+       fhir:index 1;
+       fhir:Coding.system [ fhir:value "http://example.org/CodeSystem/categories" ];
+       fhir:Coding.code [ fhir:value "observation" ]
+     ]
+  ]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:15074-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "15074-8" ];
+       fhir:Coding.display [ fhir:value "Glucose (Bld) [Moles/Vol]" ]
+     ], [
+       fhir:index 1;
+       a loinc:14743-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "14743-9" ];
+       fhir:Coding.display [ fhir:value "Glucose Glucometer (BldC) [Moles/Vol]" ]
+     ], [
+       fhir:index 2;
+       a loinc:14745-4;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "14745-4" ];
+       fhir:Coding.display [ fhir:value "Glucose (Body fld) [Moles/Vol]" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://example.org" ];
+       fhir:Coding.code [ fhir:value "12345" ];
+       fhir:Coding.display [ fhir:value "Glucose [Moles/Vol]" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c>;
+     fhir:Reference.reference [ fhir:value "Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c" ]
+  ]; # 
+  fhir:Observation.effectiveDateTime [ fhir:value "2020-10-05"^^xsd:date]; # 
+  fhir:Observation.issued [ fhir:value "2019-12-05T09:21:37.130+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c>;
+     fhir:Reference.reference [ fhir:value "Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c" ]
+  ]; # 
+  fhir:Observation.valueQuantity [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation" ];
+       fhir:Extension.valueQuantity [
+         fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mg/dl" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mg/dL" ]
+       ]
+     ];
+     fhir:Quantity.value [ fhir:value "10.0"^^xsd:decimal ];
+     fhir:Quantity.comparator [ fhir:value "<" ];
+     fhir:Quantity.unit [ fhir:value "mmol/l" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mmol/L" ]
+  ]; # 
+  fhir:Observation.interpretation [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ];
+       fhir:Coding.code [ fhir:value "<" ];
+       fhir:Coding.display [ fhir:value "Off scale low" ]
+     ]
+  ]; # 
+  fhir:Observation.note [
+     fhir:index 0;
+     fhir:Annotation.text [ fhir:value "käyttäjän lisäämä kommentti" ]
+  ]; # 
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "16"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmol/l" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "10"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mmol/l" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mg/dL" ]
+     ];
+     fhir:Observation.referenceRange.appliesTo [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:248153007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "248153007" ];
+         fhir:Coding.display [ fhir:value "Male" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Normal range" ]
+     ];
+     fhir:Observation.referenceRange.age [
+       fhir:Range.low [
+         fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "years" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "a" ]
+       ];
+       fhir:Range.high [
+         fhir:Quantity.value [ fhir:value "100"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "years" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "a" ]
+       ]
+     ];
+     fhir:Observation.referenceRange.text [ fhir:value "Age" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-max.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

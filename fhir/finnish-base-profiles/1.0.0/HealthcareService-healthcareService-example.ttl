@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/HealthcareService/healthcareService-example> a fhir:HealthcareService ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "healthcareService-example"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: HealthcareService</b><a name=\"healthcareService-example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource HealthcareService &quot;healthcareService-example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-healthcare-service.html\">FI Base HealthcareService</a></p></div><p><b>active</b>: true</p><p><b>category</b>: SOTE9.2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[201801]#SOTE9.2)</span>, E <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[201801]#E)</span></p><p><b>type</b>: EEA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[201501]#EEA)</span>, ADA001 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[201501]#ADA001)</span>, T11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2008]#T11)</span>, SH <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown[2008]#SH)</span></p><p><b>name</b>: Vastaanottoaika*</p><p><b>comment</b>: Normaali vo-aika sh:lle ja lääkäreille</p><p><b>appointmentRequired</b>: true</p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201801" ] ;
+       fhir:code [ fhir:v "SOTE9.2" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.121"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201801" ] ;
+       fhir:code [ fhir:v "E" ]
+     ] )
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201501" ] ;
+       fhir:code [ fhir:v "EEA" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "201501" ] ;
+       fhir:code [ fhir:v "ADA001" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.125"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2008" ] ;
+       fhir:code [ fhir:v "T11" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.124"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2008" ] ;
+       fhir:code [ fhir:v "SH" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Vastaanottoaika*"] ; # 
+  fhir:comment [ fhir:v "Normaali vo-aika sh:lle ja lääkäreille"] ; # 
+  fhir:appointmentRequired [ fhir:v "true"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,884 @@
+﻿FinnishBaseProfiles : Validation Results
+=========================================
+
+err = 321, warn = 96, info = 221
+IG Publisher Version: 1.3.4
+Generated Tue Apr 18 11:05:10 EEST 2023. FHIR version 4.0.1 for hl7.fhir.fi.base#1.0.0-rc11 (canonical = https://hl7.fi/fhir/finnish-base-profiles)
+ Build Errors : 1 / 11 / 0
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Appointment-appointment-general-practitioner : 2 / 0 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/CodeSystem-fi-base-condition-category : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Condition-id-for-diagnosis-1 : 0 / 0 / 5
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Condition-id-for-diagnosis-2 : 0 / 0 / 7
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Condition-id-for-diagnosis-3 : 0 / 0 / 6
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Encounter-id-for-child-encounter : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Encounter-id-for-child-encounter-2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Encounter-id-for-palvelutapahtuma : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Encounter-id-for-visit : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Encounter-id-for-ward-encounter : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/EpisodeOfCare-id-for-episode-1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/HealthcareService-healthcareService-example : 0 / 0 / 7
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Immunization-ImmunizationVaccinationExample : 0 / 0 / 5
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.base : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Location-LocationExample : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Location-id-for-bed-3 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Organization-1.2.246.10.2085212.10.1306 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Organization-1.2.246.10.2085212.10.1314 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Organization-1.2.246.10.8286189.10.100012 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Patient-patient-of-municipality : 0 / 0 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Practitioner-PractitionerLicensedPhysician : 0 / 1 / 11
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/PractitionerRole-PractitionerRoleGP : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Procedure-ColonBiopsy : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Procedure-ProcedureColotomy : 0 / 0 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Provenance-id-for-provenance-1 : 1 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Schedule-ScheduleExample : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/Slot-FreeSlot : 0 / 0 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-categorization-of-accident : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-cause-of-adverse-effect : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-caused-by-medication : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-endocrinological-disorder : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-external-cause : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-permanence : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-physical-excercise : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-condition-primary : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-appointment : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-condition : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-encounter : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-episode-of-care : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-healthcare-service : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-immunization : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-location : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-medication : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-medication-administration : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-medication-request : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-medication-statement : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-observation : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-organization : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-patient : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-practitioner : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-practitioner-role : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-procedure : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-provenance : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-schedule : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-fi-base-slot : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-municipality-code : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-patient-profession : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-register-specifier : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-register-type-code : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/fsh-generated/resources/StructureDefinition-vaccination-recorder : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Bloodglucose-max : 0 / 5 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/InsulinDosage-example-optional : 0 / 2 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/MedicationAdministration-InsulinDosage-mandatory : 0 / 2 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-Bloodpressure-max : 2 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-Bloodpressure-min : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-BodyWeight-max : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-BodyWeight-min : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-CalorieIntake-max : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-CalorieIntake-min : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-CarbohydrateIntakeEstimated-max : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-CarbohydrateIntakeEstimated-min : 0 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-ExerciseTracking-max : 0 / 4 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-ExerciseTracking-min : 0 / 2 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-MET-max : 0 / 8 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-MET-min : 0 / 6 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-ModerateToVigorousPATime-max : 0 / 3 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-ModerateToVigorousPATime-min : 0 / 3 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-StepsTaken-max : 0 / 4 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/Observation-example-duplicate-7 : 3 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/bloodglucose-min : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/diabetes-data-bundle : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/diabetes-data-bundle-kantaphr-r4-en : 0 / 1 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/diabetes-data-bundle-kantaphr-sv : 2 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-CarePlan-mandatory : 1 / 2 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-CarePlan-optional : 2 / 3 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-patient : 0 / 1 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-patient-1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-patient-2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-patient-3 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-patient-4 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/example-patient-5 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/hapi-patient : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/kanta-phr-patient-1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/kanta-phr-patient-2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medication-administration-insulin-basal-dose-kanta-stu3-sv : 0 / 1 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medication-administration-insulin-bolus-dose-fi : 0 / 1 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medication-administration-insulin-dose-temporary-basal-rate-kanta-en : 0 / 1 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationesim1 : 4 / 0 / 3
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationesim2 : 5 / 0 / 4
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim1 : 28 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim2 : 31 / 0 / 16
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim3 : 28 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim4 : 28 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim5 : 31 / 0 / 16
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim6 : 29 / 0 / 13
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim7A : 31 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim7B : 31 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim8 : 28 / 0 / 14
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/medicationrequestesim9 : 28 / 0 / 15
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/observation-example-StepsTaken-min : 0 / 3 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/observation-example-bloodglucose-astext : 1 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/observation-example-bloodglucose-dataabsentreason : 0 / 2 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/organization-Toimintayksikko : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/organizationesim1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/organizationesim2 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/patientesim1 : 0 / 0 / 2
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/practitionerRoleesim1 : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-base-profiles/input/examples/practitioneresim1 : 2 / 0 / 2
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/36749a02-1710-44e7-aa76-0e934eb4321a.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/7257379.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/cafbe8e7-38fe-4807-b995-6770e5390365.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/mikael/GitHub/finnish-base-profiles/output/Encounter-id-for-ward-encounter.html#/html/body/div/div/div/div/div/div/p/a at Line 260, column 9: The link 'StructureDefinition-fi-base-encounter-patients-in-ward.html' for "the guide" cannot be resolved
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Appointment-appointment-general-practitioner.json ==
+ERROR: Appointment/appointment-general-practitioner: Appointment.extension[0]: The extension http://hl7.fi/fhir/StructureDefinition/ServiceEventExt is unknown, and not allowed here
+ERROR: Appointment/appointment-general-practitioner: Appointment.extension[1]: The extension http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension is unknown, and not allowed here
+INFORMATION: Appointment/appointment-general-practitioner: Appointment.serviceCategory[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.50.201801' is unknown so the code cannot be validated
+INFORMATION: Appointment/appointment-general-practitioner: Appointment.serviceType[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.49.201501' is unknown so the code cannot be validated
+INFORMATION: Appointment/appointment-general-practitioner: Appointment.appointmentType.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.884.2015' is unknown so the code cannot be validated
+== fsh-generated/resources/CodeSystem-fi-base-condition-category.json ==
+== fsh-generated/resources/Condition-id-for-diagnosis-1.json ==
+INFORMATION: Condition/id-for-diagnosis-1: Condition.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40005.2003' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-1: Condition.extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40003.2003' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-1: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-1: Condition.evidence[0].code[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-id-for-diagnosis-2.json ==
+INFORMATION: Condition/id-for-diagnosis-2: Condition.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40005.2003' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-2: Condition.extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40003.2003' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-2: Condition.extension[2].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-2: Condition.extension[3].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-2: Condition.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.32.2007' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-2: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+== fsh-generated/resources/Condition-id-for-diagnosis-3.json ==
+INFORMATION: Condition/id-for-diagnosis-3: Condition.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40005.2003' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-3: Condition.extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40003.2003' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-3: Condition.extension[2].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-3: Condition.extension[3].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.2.2007' is unknown so the code cannot be validated
+INFORMATION: Condition/id-for-diagnosis-3: Condition.code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1.1999' is unknown so the code cannot be validated
+== fsh-generated/resources/Encounter-id-for-child-encounter.json ==
+== fsh-generated/resources/Encounter-id-for-child-encounter-2.json ==
+== fsh-generated/resources/Encounter-id-for-palvelutapahtuma.json ==
+== fsh-generated/resources/Encounter-id-for-visit.json ==
+== fsh-generated/resources/Encounter-id-for-ward-encounter.json ==
+== fsh-generated/resources/EpisodeOfCare-id-for-episode-1.json ==
+== fsh-generated/resources/HealthcareService-healthcareService-example.json ==
+INFORMATION: HealthcareService/healthcareService-example: HealthcareService.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.50.201801' is unknown so the code cannot be validated
+INFORMATION: HealthcareService/healthcareService-example: HealthcareService.category[1].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.121.201801' is unknown so the code cannot be validated
+INFORMATION: HealthcareService/healthcareService-example: HealthcareService.type[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.49.201501' is unknown so the code cannot be validated
+INFORMATION: HealthcareService/healthcareService-example: HealthcareService.type[1].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.49.201501' is unknown so the code cannot be validated
+INFORMATION: HealthcareService/healthcareService-example: HealthcareService.type[2].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.125.2008' is unknown so the code cannot be validated
+INFORMATION: HealthcareService/healthcareService-example: HealthcareService.type[3].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.124.2008' is unknown so the code cannot be validated
+== fsh-generated/resources/Immunization-ImmunizationVaccinationExample.json ==
+INFORMATION: Immunization/ImmunizationVaccinationExample: Immunization.vaccineCode.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.32.2007' is unknown so the code cannot be validated
+INFORMATION: Immunization/ImmunizationVaccinationExample: Immunization.site.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.110.2007' is unknown so the code cannot be validated
+INFORMATION: Immunization/ImmunizationVaccinationExample: Immunization.route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.111.2007' is unknown so the code cannot be validated
+INFORMATION: Immunization/ImmunizationVaccinationExample: Immunization.protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.609.201501' is unknown so the code cannot be validated
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.base.json ==
+INFORMATION: ImplementationGuide/hl7.fhir.fi.base: ImplementationGuide.definition.resource[83].description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+== fsh-generated/resources/Location-LocationExample.json ==
+== fsh-generated/resources/Location-id-for-bed-3.json ==
+== fsh-generated/resources/Organization-1.2.246.10.2085212.10.1306.json ==
+== fsh-generated/resources/Organization-1.2.246.10.2085212.10.1314.json ==
+== fsh-generated/resources/Organization-1.2.246.10.8286189.10.100012.json ==
+== fsh-generated/resources/Patient-patient-of-municipality.json ==
+INFORMATION: Patient/patient-of-municipality: Patient.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.21.2003' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-of-municipality: Patient.communication[0].language.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.4.642.3.20' is unknown so the code cannot be validated
+== fsh-generated/resources/Practitioner-PractitionerLicensedPhysician.json ==
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[3]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc11
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[4]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc11
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[5]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc11
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[6]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner|1.0.0-rc11
+WARNING: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[3].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[5].type.coding[0]: Code System URI 'https://fhir.cgi.fi/code/person-id-type' is unknown so the code cannot be validated
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.identifier[6].type.coding[0]: Code System URI 'https://fhir.cgi.fi/code/person-id-type' is unknown so the code cannot be validated
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.qualification[0].code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.140.2008' is unknown so the code cannot be validated
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.qualification[1].code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.148.2008' is unknown so the code cannot be validated
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.qualification[2].code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.74.2001' is unknown so the code cannot be validated
+INFORMATION: Practitioner/PractitionerLicensedPhysician: Practitioner.qualification[3].code.coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.18.220' is unknown so the code cannot be validated
+== fsh-generated/resources/PractitionerRole-PractitionerRoleGP.json ==
+== fsh-generated/resources/Procedure-ColonBiopsy.json ==
+INFORMATION: Procedure/ColonBiopsy: Procedure.category.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.601' is unknown so the code cannot be validated
+== fsh-generated/resources/Procedure-ProcedureColotomy.json ==
+INFORMATION: Procedure/ProcedureColotomy: Procedure.category.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.601' is unknown so the code cannot be validated
+INFORMATION: Procedure/ProcedureColotomy: Procedure.code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.2' is unknown so the code cannot be validated
+== fsh-generated/resources/Provenance-id-for-provenance-1.json ==
+INFORMATION: Provenance/id-for-provenance-1: Provenance.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40150.2009' is unknown so the code cannot be validated
+ERROR: Provenance/id-for-provenance-1: Provenance.agent[0].type.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v3-ParticipationType#custodian in http://terminology.hl7.org/CodeSystem/v3-ParticipationType for 'http://terminology.hl7.org/CodeSystem/v3-ParticipationType#custodian'
+== fsh-generated/resources/Schedule-ScheduleExample.json ==
+== fsh-generated/resources/Slot-FreeSlot.json ==
+INFORMATION: Slot/FreeSlot: Slot.serviceCategory[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.50.201801' is unknown so the code cannot be validated
+INFORMATION: Slot/FreeSlot: Slot.serviceType[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.49.201501' is unknown so the code cannot be validated
+INFORMATION: Slot/FreeSlot: Slot.appointmentType.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.884.2015' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-condition-categorization-of-accident.json ==
+== fsh-generated/resources/StructureDefinition-condition-cause-of-adverse-effect.json ==
+== fsh-generated/resources/StructureDefinition-condition-caused-by-medication.json ==
+== fsh-generated/resources/StructureDefinition-condition-endocrinological-disorder.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-endocrinological-disorder'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-external-cause.json ==
+== fsh-generated/resources/StructureDefinition-condition-permanence.json ==
+== fsh-generated/resources/StructureDefinition-condition-physical-excercise.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/condition-physical-excercise'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-condition-primary.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-appointment.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-condition.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-encounter.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-episode-of-care.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-healthcare-service.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-immunization.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-location.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication-administration.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication-request.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-medication-statement.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-fi-base-observation.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-organization.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-patient.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-practitioner-role.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-procedure.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-provenance.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-schedule.json ==
+== fsh-generated/resources/StructureDefinition-fi-base-slot.json ==
+== fsh-generated/resources/StructureDefinition-municipality-code.json ==
+== fsh-generated/resources/StructureDefinition-patient-profession.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-register-specifier.json ==
+WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/register-specifier'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-register-type-code.json ==
+== fsh-generated/resources/StructureDefinition-vaccination-recorder.json ==
+== input/examples/Bloodglucose-max.json ==
+WARNING: Observation/bloodglucose-max: Observation.code.coding[0]: The display "Glucose (Bld) [Moles/Vol]" is not a valid display for the code {http://loinc.org}15074-8 - should be one of ['Glucose [Moles/volume] in Blood', 'Glucose Bld-sCnc', '', 'GLU' (pl-PL), 'Gluc' (zh-CN), '右旋糖' (zh-CN), '葡糖 克分子浓度' (zh-CN), '克分子浓度(单位体积)' (zh-CN), '摩尔浓度' (zh-CN), '摩尔浓度(单位体积)' (zh-CN), '物质的量浓度(单位体积) 化学' (zh-CN), '化学检验项目' (zh-CN), '化学检验项目类' (zh-CN), '化学类' (zh-CN), '化学试验' (zh-CN), '非刺激耐受型化学检验项目' (zh-CN), '非刺激耐受型化学检验项目类' (zh-CN), '非刺激耐受型化学试验' (zh-CN), '非刺激耐受型化学试验类 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血' (zh-CN), '血液' (zh-CN), 'Aine kontsentratsioon Juhuslik Kvantitatiivne Veri' (et-EE), 'Glucoseur' (pt-BR), 'Substance concentration' (pt-BR), 'Level' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Blood' (pt-BR), 'WB' (pt-BR), 'Whole blood' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Chemistry' (pt-BR), 'Glukose' (de-DE), 'Chimica Concentrazione di Sostanza Punto nel tempo (episodio) Sangue' (it-IT), 'Количественный Кровь Молярность' (ru-RU), 'Молярная объёмная концентрация Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#15074-8'
+WARNING: Observation/bloodglucose-max: Observation.code.coding[1]: The display "Glucose Glucometer (BldC) [Moles/Vol]" is not a valid display for the code {http://loinc.org}14743-9 - should be one of ['Glucose [Moles/volume] in Capillary blood by Glucometer', 'Glucose BldC Glucomtr-sCnc', '', 'GLU Krew kapilarna' (pl-PL), 'Glu' (zh-CN), 'Gluc' (zh-CN), '右旋糖' (zh-CN), '葡糖 克分子浓度' (zh-CN), '克分子浓度(单位体积)' (zh-CN), '摩尔浓度' (zh-CN), '摩尔浓度(单位体积)' (zh-CN), '物质的量浓度(单位体积) 化学' (zh-CN), '化学检验项目' (zh-CN), '化学检验项目类' (zh-CN), '化学类' (zh-CN), '化学试验' (zh-CN), '非刺激耐受型化学检验项目' (zh-CN), '非刺激耐受型化学检验项目类' (zh-CN), '非刺激耐受型化学试验' (zh-CN), '非刺激耐受型化学试验类 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 毛细血管血 葡萄糖测定计' (zh-CN), 'Aine kontsentratsioon Juhuslik Kapillaarne veri Kvantitatiivne' (et-EE), 'Glucoseur' (pt-BR), 'Substance concentration' (pt-BR), 'Level' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Blood' (pt-BR), 'Blood - capillary' (pt-BR), 'Blood cap' (pt-BR), 'Blood capillary' (pt-BR), 'Bld cap' (pt-BR), 'Bld capillary' (pt-BR), 'cap blood' (pt-BR), 'cap bld' (pt-BR), 'Capillary bld' (pt-BR), 'Capillary blood' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Glucomtr' (pt-BR), 'Chemistry' (pt-BR), 'Glukose' (de-DE), 'Chimica Concentrazione di Sostanza Punto nel tempo (episodio) Sangue capillare' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#14743-9'
+WARNING: Observation/bloodglucose-max: Observation.code.coding[2]: The display "Glucose (Body fld) [Moles/Vol]" is not a valid display for the code {http://loinc.org}14745-4 - should be one of ['Glucose [Moles/volume] in Body fluid', 'Glucose Fld-sCnc', '', 'GLU' (pl-PL), 'Gluc' (zh-CN), '右旋糖' (zh-CN), '葡糖 克分子浓度' (zh-CN), '克分子浓度(单位体积)' (zh-CN), '摩尔浓度' (zh-CN), '摩尔浓度(单位体积)' (zh-CN), '物质的量浓度(单位体积) 化学' (zh-CN), '化学检验项目' (zh-CN), '化学检验项目类' (zh-CN), '化学类' (zh-CN), '化学试验' (zh-CN), '非刺激耐受型化学检验项目' (zh-CN), '非刺激耐受型化学检验项目类' (zh-CN), '非刺激耐受型化学试验' (zh-CN), '非刺激耐受型化学试验类 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 物体' (zh-CN), 'Aine kontsentratsioon Juhuslik Kehavedelik Kvantitatiivne' (et-EE), 'Glucoseur' (pt-BR), 'Substance concentration' (pt-BR), 'Level' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'BF' (pt-BR), 'Fluid' (pt-BR), 'Body fluid' (pt-BR), 'FLU' (pt-BR), 'Fl' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Chemistry' (pt-BR), 'Glukose' (de-DE), 'Chimica Concentrazione di Sostanza Liquido corporeo Punto nel tempo (episodio)' (it-IT), 'Количественный Молярность' (ru-RU), 'Молярная объёмная концентрация Тела жидкость Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#14745-4'
+WARNING: Observation/bloodglucose-max: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Observation/bloodglucose-max: Observation.meta.profile[1]: Profile reference 'http://example.org/StructureDefinition/other-bloodglucose-structuredefinition' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/InsulinDosage-example-optional.json ==
+INFORMATION: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3: MedicationAdministration.medication.ofType(CodeableConcept).coding[1]: Code System URI 'http://ownSystem.fi/CodeSystem/cs-insulincode' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3: MedicationAdministration: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3: MedicationAdministration.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/MedicationAdministration-InsulinDosage-mandatory.json ==
+INFORMATION: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2: MedicationAdministration.medication.ofType(CodeableConcept).coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2: MedicationAdministration.medication.ofType(CodeableConcept).coding[1]: Code System URI 'http://ownSystem.fi/CodeSystem/cs-insulincode' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2: MedicationAdministration: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2: MedicationAdministration.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-Bloodpressure-max.json ==
+INFORMATION: Observation/bloodpressure-max: Observation.category[1].coding[0]: Code System URI 'http://terminology.own.com' is unknown so the code cannot be validated
+ERROR: Observation/bloodpressure-max: Observation.note[0].text: Rule ele-1: 'All FHIR elements must have a @value or children' Failed
+ERROR: Observation/bloodpressure-max: Observation.note[0].text: value cannot be empty
+WARNING: Observation/bloodpressure-max: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/bloodpressure-max: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-Bloodpressure-min.json ==
+WARNING: Observation/bloodpressure-min: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/bloodpressure-min: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-BodyWeight-max.json ==
+INFORMATION: Observation/bodyweight-max: Observation.category[1].coding[0]: Code System URI 'http://terminology.own.com' is unknown so the code cannot be validated
+WARNING: Observation/bodyweight-max: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/bodyweight-max: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyweight' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-BodyWeight-min.json ==
+WARNING: Observation/bodyweight-min: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/bodyweight-min: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyweight' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-CalorieIntake-max.json ==
+ERROR: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8: Observation.extension[0]: The extension http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication is unknown, and not allowed here
+INFORMATION: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory' is unknown so the code cannot be validated
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-CalorieIntake-min.json ==
+ERROR: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7: Observation.extension[0]: The extension http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication is unknown, and not allowed here
+INFORMATION: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory' is unknown so the code cannot be validated
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-CarbohydrateIntakeEstimated-max.json ==
+ERROR: Observation/2894b2e6-7ebf-4c33-93e4-31935effff22: Observation.extension[0]: The extension http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication is unknown, and not allowed here
+INFORMATION: Observation/2894b2e6-7ebf-4c33-93e4-31935effff22: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory' is unknown so the code cannot be validated
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff22: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff22: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-macronutrientintake' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-CarbohydrateIntakeEstimated-min.json ==
+INFORMATION: Observation/2894b2e6-7ebf-4c33-93e4-31935effff21: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory' is unknown so the code cannot be validated
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff21: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/2894b2e6-7ebf-4c33-93e4-31935effff21: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-macronutrientintake' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-ExerciseTracking-max.json ==
+INFORMATION: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+INFORMATION: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.246.537.6.301' is unknown so the code cannot be validated
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.component[2].value.ofType(CodeableConcept).coding[0]: The display "Vigorous" is not a valid display for the code {http://loinc.org}LA20166-7 - should be one of ['Vigorous exercise intensity'] (from http://tx.fhir.org/r4) for 'http://loinc.org#LA20166-7'
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.component[3].code.coding[0]: The display "Calories burned" is not a valid display for the code {http://loinc.org}55421-2 - should be one of ['Calories burned Machine estimate', 'Calories burned Machine est', '', '估算' (zh-CN), '估算法' (zh-CN), '估计 做功的速率' (zh-CN), '功率(能量/时间)' (zh-CN), '单位时间内所做功的量' (zh-CN), '能量/时间' (zh-CN), '能量速率 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 已消耗的卡' (zh-CN), '已消耗的大卡' (zh-CN), '已消耗的卡路里' (zh-CN), '已燃烧的卡' (zh-CN), '已燃烧的卡路里' (zh-CN), '已燃烧的大卡' (zh-CN), '已燃烧的热量 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 机器估算法' (zh-CN), '机估法' (zh-CN), '计算机估算法' (zh-CN), 'Power' (pt-BR), 'Energy/time' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Machine est' (pt-BR), 'estimation' (pt-BR), 'Clinico paziente Potenza (Energia/Tempo) Punto nel tempo (episodio)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#55421-2'
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784b: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-ExerciseTracking-min.json ==
+INFORMATION: Observation/71831b54-1a80-47c5-ba84-0180a5eb784a: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+INFORMATION: Observation/71831b54-1a80-47c5-ba84-0180a5eb784a: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.246.537.6.301' is unknown so the code cannot be validated
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784a: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/71831b54-1a80-47c5-ba84-0180a5eb784a: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-MET-max.json ==
+INFORMATION: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+INFORMATION: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.category[0].coding[1]: Code System URI 'http://ownSystem.com/phr-cs-fitnesscategory' is unknown so the code cannot be validated
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.code.coding[0]: The display "Metabolic equivalent of task by standard resting metabolic rate panel" is not a valid display for the code {http://loinc.org}82260-1 - should be one of ['MET by standard RMR panel', 'MET by stand RMR Pnl', '', '1分' (zh-CN), '一分钟 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 以标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）为参考基准（参考基线、标准基线、参考基准线）的任务（工作、活动）代谢（新陈代谢）当量组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR' (zh-CN), '代谢当量任务' (zh-CN), '新陈代谢当量任务' (zh-CN), '代谢（新陈代谢）当量任务（工作、活动）' (zh-CN), 'metabolic equivalent task' (zh-CN), 'MET 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.临床' (zh-CN), '组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）.临床（CLIN、Clinical） 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 均值' (zh-CN), '平均' (zh-CN), '平均数 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), 'RMR 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套 速度 静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '1 minuto Clinico paziente Set clinico NEC (non classificato altrove)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82260-1'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[0].code.coding[0]: The display "Standard resting metabolic rate" is not a valid display for the code {http://loinc.org}82284-1 - should be one of ['Standard RMR', 'Standard RMR', '', '1分' (zh-CN), '一分钟 人口' (zh-CN), '全体人员' (zh-CN), '对象总体' (zh-CN), '居民' (zh-CN), '居群' (zh-CN), '总体' (zh-CN), '种群' (zh-CN), '群' (zh-CN), '群体' (zh-CN), '聚居群 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 做功的速率' (zh-CN), '功率(能量/时间)' (zh-CN), '单位时间内所做功的量' (zh-CN), '能量/时间' (zh-CN), '能量速率 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 均值' (zh-CN), '平均' (zh-CN), '平均数 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR 速度' (zh-CN), '1 minuto Clinico Potenza (Energia/Tempo)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82284-1'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[1].code.coding[0]: The display "Estimated metabolic equivalent of task" is not a valid display for the code {http://loinc.org}82262-7 - should be one of ['Estimated activity metabolic rate/Standard RMR [Relative energy/Time]', 'Est Act metab rate/Standard RMR', '', '1分' (zh-CN), '一分钟 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 均值' (zh-CN), '平均' (zh-CN), '平均数 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR 活动 活动（运动、锻炼活动、锻炼）代谢率（代谢速率、新陈代谢速率、新陈代谢率） 相对能量速率 胎龄估计法' (zh-CN), '孕龄估计法 速度' (zh-CN), '1 minuto Clinico Energia relative/Tempo paziente' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82262-7'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[2].code.coding[0]: The display "Source for estimated metabolic equivalent of task" is not a valid display for the code {http://loinc.org}82280-9 - should be one of ['Source used to estimate activity metabolic rate', 'Source estim activ metab rate', '', '代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 分类型应答' (zh-CN), '分类型结果' (zh-CN), '名义性' (zh-CN), '名称型' (zh-CN), '名词型' (zh-CN), '名词性' (zh-CN), '标称性' (zh-CN), '没有自然次序的名义型或分类型应答 参考（参考文献、参考资源）来源 型 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 活动 活动（运动、锻炼活动、锻炼）代谢率（代谢速率、新陈代谢速率、新陈代谢率） 源 用于估计（估算、估量、评估、估测）活动（运动、锻炼活动、锻炼）代谢率（代谢速率、新陈代谢速率、新陈代谢率）的数据来源（资料来源、来源、数据源） 速度' (zh-CN), 'Clinico Punto nel tempo (episodio) Riferimento' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82280-9'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[3].code.coding[0]: The display "Adjusted metabolic equivalent of task" is not a valid display for the code {http://loinc.org}82271-8 - should be one of ['Activity metabolic rate/Standard resting metabolic rate [Relative Energy/Time] adjusted for age+sex+race+BMI 1 minute mean Estimated', 'Act met rate/St RMR adj age+sex+race+BMI', '', '1分' (zh-CN), '一分钟 人种' (zh-CN), '族' (zh-CN), '民族' (zh-CN), '种 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 均值' (zh-CN), '平均' (zh-CN), '平均数 性' (zh-CN), '性别特征' (zh-CN), '性行为' (zh-CN), '性交' (zh-CN), '性活动 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR 活动 活动（运动、锻炼活动、锻炼）代谢率（代谢速率、新陈代谢速率、新陈代谢率） 相对能量速率 经过针对年龄（岁数、年龄大小）+性别+种族+体质指数（BMI、体重指数、体质量指数、身体质量指数）而调整的 经过针对年龄（岁数、年龄大小）而调整的 胎龄估计法' (zh-CN), '孕龄估计法 速度' (zh-CN), '1 minuto Clinico Energia relative/Tempo età regolato paziente' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82271-8'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.component[4].code.coding[0]: The display "Source for adjusted metabolic equivalent of task" is not a valid display for the code {http://loinc.org}82283-3 - should be one of ['Source used to adjust activity MET', 'Source to adj activity MET', '', '分类型应答' (zh-CN), '分类型结果' (zh-CN), '名义性' (zh-CN), '名称型' (zh-CN), '名词型' (zh-CN), '名词性' (zh-CN), '标称性' (zh-CN), '没有自然次序的名义型或分类型应答 参考（参考文献、参考资源）来源 型 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 活动 源 用于调整（调节、校正、校准、适应）活动（运动、锻炼活动、锻炼）代谢（新陈代谢）当量任务（工作、活动）的数据来源（资料来源、来源、数据源）' (zh-CN), '代谢当量任务' (zh-CN), '新陈代谢当量任务' (zh-CN), '代谢（新陈代谢）当量任务（工作、活动）' (zh-CN), 'metabolic equivalent task' (zh-CN), 'Met' (zh-CN), 'Clinico Punto nel tempo (episodio) Riferimento' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82283-3'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b7: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-metbystandardrmr' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-MET-min.json ==
+INFORMATION: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.code.coding[0]: The display "Metabolic equivalent of task by standard resting metabolic rate panel" is not a valid display for the code {http://loinc.org}82260-1 - should be one of ['MET by standard RMR panel', 'MET by stand RMR Pnl', '', '1分' (zh-CN), '一分钟 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 以标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）为参考基准（参考基线、标准基线、参考基准线）的任务（工作、活动）代谢（新陈代谢）当量组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR' (zh-CN), '代谢当量任务' (zh-CN), '新陈代谢当量任务' (zh-CN), '代谢（新陈代谢）当量任务（工作、活动）' (zh-CN), 'metabolic equivalent task' (zh-CN), 'MET 医嘱套餐 医嘱套餐类 医嘱套餐组 医嘱组 医嘱组.临床' (zh-CN), '组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）.临床（CLIN、Clinical） 医嘱组合 医嘱组合类 医嘱组套 医嘱组套类 医嘱组类 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 均值' (zh-CN), '平均' (zh-CN), '平均数 多重' (zh-CN), '多重型' (zh-CN), '多重标尺类型' (zh-CN), '多重精度类型 套餐 套餐医嘱 套餐医嘱组 套餐医嘱组类 实验室医嘱套餐 实验室医嘱套餐类 实验室医嘱组 实验室医嘱组合类 实验室医嘱组套 实验室医嘱组套类 实验室套餐医嘱组 实验室套餐医嘱组类 实验室检验项目医嘱组合类 实验室检验项目组合类 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), 'RMR 检验医嘱组合类 检验项目医嘱组合类 检验项目组合类 组 组合 组合医嘱 组合类 组套 速度 静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）组套（组合、医嘱组、套餐、套餐医嘱、医嘱套餐、组合申请、组合项目）' (zh-CN), '1 minuto Clinico paziente Set clinico NEC (non classificato altrove)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82260-1'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.component[0].code.coding[0]: The display "Standard resting metabolic rate" is not a valid display for the code {http://loinc.org}82284-1 - should be one of ['Standard RMR', 'Standard RMR', '', '1分' (zh-CN), '一分钟 人口' (zh-CN), '全体人员' (zh-CN), '对象总体' (zh-CN), '居民' (zh-CN), '居群' (zh-CN), '总体' (zh-CN), '种群' (zh-CN), '群' (zh-CN), '群体' (zh-CN), '聚居群 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 做功的速率' (zh-CN), '功率(能量/时间)' (zh-CN), '单位时间内所做功的量' (zh-CN), '能量/时间' (zh-CN), '能量速率 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 均值' (zh-CN), '平均' (zh-CN), '平均数 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR 速度' (zh-CN), '1 minuto Clinico Potenza (Energia/Tempo)' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82284-1'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.component[1].code.coding[0]: The display "Measured metabolic equivalent of task" is not a valid display for the code {http://loinc.org}82261-9 - should be one of ['Measured activity metabolic rate/Standard RMR [Relative energy/Time]', 'Meas Act metab rate/Standard RMR', '', '1分' (zh-CN), '一分钟 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 均值' (zh-CN), '平均' (zh-CN), '平均数 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR 活动 活动（运动、锻炼活动、锻炼）代谢率（代谢速率、新陈代谢速率、新陈代谢率） 测定法' (zh-CN), '量度法' (zh-CN), '量测法 相对能量速率 速度' (zh-CN), '1 minuto Clinico Energia relative/Tempo paziente' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82261-9'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.component[2].code.coding[0]: The display "Adjusted metabolic equivalent of task" is not a valid display for the code {http://loinc.org}82271-8 - should be one of ['Activity metabolic rate/Standard resting metabolic rate [Relative Energy/Time] adjusted for age+sex+race+BMI 1 minute mean Estimated', 'Act met rate/St RMR adj age+sex+race+BMI', '', '1分' (zh-CN), '一分钟 人种' (zh-CN), '族' (zh-CN), '民族' (zh-CN), '种 代谢作用' (zh-CN), '新陈代谢 代谢速率' (zh-CN), '代谢速度' (zh-CN), '新陈代谢率 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 均值' (zh-CN), '平均' (zh-CN), '平均数 性' (zh-CN), '性别特征' (zh-CN), '性行为' (zh-CN), '性交' (zh-CN), '性活动 标准静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息（休息、休止、基础）代谢率（代谢速率、新陈代谢速率、新陈代谢率）' (zh-CN), '静息代谢率' (zh-CN), '基础代谢率' (zh-CN), 'Resting metabolic rate' (zh-CN), 'RMR 活动 活动（运动、锻炼活动、锻炼）代谢率（代谢速率、新陈代谢速率、新陈代谢率） 相对能量速率 经过针对年龄（岁数、年龄大小）+性别+种族+体质指数（BMI、体重指数、体质量指数、身体质量指数）而调整的 经过针对年龄（岁数、年龄大小）而调整的 胎龄估计法' (zh-CN), '孕龄估计法 速度' (zh-CN), '1 minuto Clinico Energia relative/Tempo età regolato paziente' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82271-8'
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/48983b8b-ead3-4206-9583-fcdd40d762b6: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-metbystandardrmr' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-ModerateToVigorousPATime-max.json ==
+INFORMATION: Observation/mtvpa-max: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+WARNING: Observation/mtvpa-max: Observation.code.coding[0]: The display "Weekly moderate to vigorous physical activity in minutes" is not a valid display for the code {http://loinc.org}82290-8 - should be one of ['Frequency of moderate to vigorous aerobic physical activity', 'Freq aerobic physical activity', '', '中度（中等）至剧烈（强烈、重度）有氧体力活动（身体活动、体力劳动、身体运动、锻炼活动、锻炼、身体锻炼、健身、体育锻炼）的频率（频次、频繁程度、经常程度） 体力活动（身体活动、体力劳动、身体运动、锻炼活动、锻炼、身体锻炼、健身、体育锻炼） 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 单位时间内的数量或计数' (zh-CN), '数量/时间' (zh-CN), '数量型速率' (zh-CN), '数量型速率或计数型速率' (zh-CN), '数量型速率或计数型速率(单位时间)' (zh-CN), '数量或计数型速率' (zh-CN), '计数/时间' (zh-CN), '计数型速率(单位时间)' (zh-CN), '数量或计数型速率(单位时间) 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 报告期间' (zh-CN), '报告周期' (zh-CN), '报表周期' (zh-CN), '编报期' (zh-CN), '申报期' (zh-CN), '上报期 活动 频次' (zh-CN), '频度' (zh-CN), '频繁性' (zh-CN), '次数' (zh-CN), '频率分布' (zh-CN), '发生次数' (zh-CN), '周率' (zh-CN), '频繁程度' (zh-CN), 'Clinico Indice numerico paziente' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82290-8'
+WARNING: Observation/mtvpa-max: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/mtvpa-max: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-ModerateToVigorousPATime-min.json ==
+INFORMATION: Observation/mtvpa-min: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+WARNING: Observation/mtvpa-min: Observation.code.coding[0]: The display "Weekly moderate to vigorous physical activity in minutes" is not a valid display for the code {http://loinc.org}82290-8 - should be one of ['Frequency of moderate to vigorous aerobic physical activity', 'Freq aerobic physical activity', '', '中度（中等）至剧烈（强烈、重度）有氧体力活动（身体活动、体力劳动、身体运动、锻炼活动、锻炼、身体锻炼、健身、体育锻炼）的频率（频次、频繁程度、经常程度） 体力活动（身体活动、体力劳动、身体运动、锻炼活动、锻炼、身体锻炼、健身、体育锻炼） 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 单位时间内的数量或计数' (zh-CN), '数量/时间' (zh-CN), '数量型速率' (zh-CN), '数量型速率或计数型速率' (zh-CN), '数量型速率或计数型速率(单位时间)' (zh-CN), '数量或计数型速率' (zh-CN), '计数/时间' (zh-CN), '计数型速率(单位时间)' (zh-CN), '数量或计数型速率(单位时间) 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 报告期间' (zh-CN), '报告周期' (zh-CN), '报表周期' (zh-CN), '编报期' (zh-CN), '申报期' (zh-CN), '上报期 活动 频次' (zh-CN), '频度' (zh-CN), '频繁性' (zh-CN), '次数' (zh-CN), '频率分布' (zh-CN), '发生次数' (zh-CN), '周率' (zh-CN), '频繁程度' (zh-CN), 'Clinico Indice numerico paziente' (it-IT)] (from http://tx.fhir.org/r4) for 'http://loinc.org#82290-8'
+WARNING: Observation/mtvpa-min: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/mtvpa-min: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-StepsTaken-max.json ==
+INFORMATION: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+INFORMATION: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.category[0].coding[1]: Code System URI 'http://ownSystem.com/phr-cs-fitnesscategory' is unknown so the code cannot be validated
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.code.coding[0]: The display "Steps" is not a valid display for the code {http://loinc.org}66334-4 - should be one of ['Steps taken [#] [PhenX]', 'Steps taken PhenX', '', 'Consensus measures for Phenotypes and eXposures' (zh-CN), 'PhenX' (zh-CN), '暴露' (zh-CN), '接触' (zh-CN), '表型与暴露共识指标' (zh-CN), '表现型与暴露共识指标' (zh-CN), '表型与暴露公认指标 Consensus measures for Phenotypes and eXposures' (zh-CN), '表型与暴露公认指标 个数' (zh-CN), '数量' (zh-CN), '数量或计数（非负整数）' (zh-CN), '计数 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 所采取（迈出、走出、完成）的步数（步子数量、步骤数） 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间' (zh-CN), 'Numero (conta) paziente PhenX Punto nel tempo (episodio)' (it-IT), 'Количественный Количество Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#66334-4'
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.code.coding[1]: The display "Number of Steps in 24 Hours" is not a valid display for the code {http://loinc.org}41950-7 - should be one of ['Number of steps in 24 hour Measured', '# steps 24h nRate Measured', '', '1天' (zh-CN), '1日' (zh-CN), '24.0小时' (zh-CN), '一天' (zh-CN), '一日' (zh-CN), '二十四个小时' (zh-CN), '二十四小时 个数' (zh-CN), '数目 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 单位时间内的数量或计数' (zh-CN), '数量/时间' (zh-CN), '数量型速率' (zh-CN), '数量型速率或计数型速率' (zh-CN), '数量型速率或计数型速率(单位时间)' (zh-CN), '数量或计数型速率' (zh-CN), '计数/时间' (zh-CN), '计数型速率(单位时间)' (zh-CN), '数量或计数型速率(单位时间) 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 测定法' (zh-CN), '量度法' (zh-CN), '量测法 迈出步子的数量' (zh-CN), '步骤数' (zh-CN), '台阶级数' (zh-CN), '# steps' (pt-BR), 'Num' (pt-BR), 'No' (pt-BR), 'nRate' (pt-BR), 'Number rate' (pt-BR), 'Count/time' (pt-BR), '1 day' (pt-BR), '24 hours' (pt-BR), '24HR' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), '24 Ore Clinico Indice numerico paziente' (it-IT), 'Количественный Количество скорость' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#41950-7'
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/Observation-example-duplicate-7.json ==
+ERROR: Observation.value[x].value: Error parsing JSON: the primitive value must be a number
+ERROR: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation.category[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/observation-category'
+ERROR: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation.category[0].coding[0].system: URL value 'http://hl7.org/fhir/observation-category' does not resolve
+WARNING: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/1153859e-0c86-1000-abb8-511d0000b222: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyheight' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/bloodglucose-min.json ==
+WARNING: Observation/bloodglucose-min: Observation.code.coding[0]: The display "Glucose (Bld) [Moles/Vol]" is not a valid display for the code {http://loinc.org}15074-8 - should be one of ['Glucose [Moles/volume] in Blood', 'Glucose Bld-sCnc', '', 'GLU' (pl-PL), 'Gluc' (zh-CN), '右旋糖' (zh-CN), '葡糖 克分子浓度' (zh-CN), '克分子浓度(单位体积)' (zh-CN), '摩尔浓度' (zh-CN), '摩尔浓度(单位体积)' (zh-CN), '物质的量浓度(单位体积) 化学' (zh-CN), '化学检验项目' (zh-CN), '化学检验项目类' (zh-CN), '化学类' (zh-CN), '化学试验' (zh-CN), '非刺激耐受型化学检验项目' (zh-CN), '非刺激耐受型化学检验项目类' (zh-CN), '非刺激耐受型化学试验' (zh-CN), '非刺激耐受型化学试验类 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 血' (zh-CN), '血液' (zh-CN), 'Aine kontsentratsioon Juhuslik Kvantitatiivne Veri' (et-EE), 'Glucoseur' (pt-BR), 'Substance concentration' (pt-BR), 'Level' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Blood' (pt-BR), 'WB' (pt-BR), 'Whole blood' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Chemistry' (pt-BR), 'Glukose' (de-DE), 'Chimica Concentrazione di Sostanza Punto nel tempo (episodio) Sangue' (it-IT), 'Количественный Кровь Молярность' (ru-RU), 'Молярная объёмная концентрация Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#15074-8'
+WARNING: Observation/bloodglucose-min: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/diabetes-data-bundle.json ==
+WARNING: Bundle/diabetes-data-bundle: Bundle.entry[0].resource.meta.profile[0]: Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/bg-observation' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/diabetes-data-bundle-kantaphr-r4-en.json ==
+WARNING: Bundle/diabetes-data-bundle-kantaphr-r4-en: Bundle.entry[0].resource.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/diabetes-data-bundle-kantaphr-sv.json ==
+ERROR: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.category[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/observation-category'
+ERROR: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.category[0].coding[0].system: URL value 'http://hl7.org/fhir/observation-category' does not resolve
+WARNING: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.code.coding[0]: The display "Vävnadssocker" is not a valid display for the code {http://loinc.org}14745-4 - should be one of ['Glucose [Moles/volume] in Body fluid', 'Glucose Fld-sCnc', '', 'GLU' (pl-PL), 'Gluc' (zh-CN), '右旋糖' (zh-CN), '葡糖 克分子浓度' (zh-CN), '克分子浓度(单位体积)' (zh-CN), '摩尔浓度' (zh-CN), '摩尔浓度(单位体积)' (zh-CN), '物质的量浓度(单位体积) 化学' (zh-CN), '化学检验项目' (zh-CN), '化学检验项目类' (zh-CN), '化学类' (zh-CN), '化学试验' (zh-CN), '非刺激耐受型化学检验项目' (zh-CN), '非刺激耐受型化学检验项目类' (zh-CN), '非刺激耐受型化学试验' (zh-CN), '非刺激耐受型化学试验类 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 物体' (zh-CN), 'Aine kontsentratsioon Juhuslik Kehavedelik Kvantitatiivne' (et-EE), 'Glucoseur' (pt-BR), 'Substance concentration' (pt-BR), 'Level' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'BF' (pt-BR), 'Fluid' (pt-BR), 'Body fluid' (pt-BR), 'FLU' (pt-BR), 'Fl' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'Chemistry' (pt-BR), 'Glukose' (de-DE), 'Chimica Concentrazione di Sostanza Liquido corporeo Punto nel tempo (episodio)' (it-IT), 'Количественный Молярность' (ru-RU), 'Молярная объёмная концентрация Тела жидкость Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#14745-4'
+WARNING: Bundle/diabetes-data-bundle-kantaphr-sv: Bundle.entry[0].resource.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-bloodglucose-stu3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/example-CarePlan-mandatory.json ==
+ERROR: CarePlan/b88191e3-ea47-4feb-9da9-e3b359fa8fca: CarePlan.identifier[0].system: UUIDs must be valid and lowercase (ietf:rfc:3986)
+INFORMATION: CarePlan/b88191e3-ea47-4feb-9da9-e3b359fa8fca: CarePlan.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory' is unknown so the code cannot be validated
+WARNING: CarePlan/b88191e3-ea47-4feb-9da9-e3b359fa8fca: CarePlan: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: CarePlan/b88191e3-ea47-4feb-9da9-e3b359fa8fca: CarePlan.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/example-CarePlan-optional.json ==
+ERROR: CarePlan/care-plan-optional: CarePlan.identifier[0].system: UUIDs must be valid and lowercase (ietf:rfc:3986)
+ERROR: CarePlan/care-plan-optional: CarePlan.identifier[1].system: UUIDs must be valid and lowercase (ietf:rfc:3981)
+INFORMATION: CarePlan/care-plan-optional: CarePlan.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory' is unknown so the code cannot be validated
+INFORMATION: CarePlan/care-plan-optional: CarePlan.category[0].coding[1]: Code System URI 'http://example.oma' is unknown so the code cannot be validated
+INFORMATION: CarePlan/care-plan-optional: CarePlan.description: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: CarePlan/care-plan-optional: CarePlan: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: CarePlan/care-plan-optional: CarePlan.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: CarePlan/care-plan-optional: CarePlan.meta.profile[1]: Profile reference 'http://example.oma/sd/careplan' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/example-patient.json ==
+INFORMATION: Patient/36749a02-1710-44e7-aa76-0e934eb7860a: Patient.identifier[0]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient|1.0.0-rc11
+WARNING: Patient/36749a02-1710-44e7-aa76-0e934eb7860a: Patient.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/example-patient-1.json ==
+== input/examples/example-patient-2.json ==
+== input/examples/example-patient-3.json ==
+== input/examples/example-patient-4.json ==
+== input/examples/example-patient-5.json ==
+== input/examples/hapi-patient.json ==
+== input/examples/kanta-phr-patient-1.json ==
+== input/examples/kanta-phr-patient-2.json ==
+== input/examples/medication-administration-insulin-basal-dose-kanta-stu3-sv.json ==
+INFORMATION: MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv: MedicationAdministration.medication.ofType(CodeableConcept).coding[1]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv: MedicationAdministration.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-stu3' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/medication-administration-insulin-bolus-dose-fi.json ==
+INFORMATION: MedicationAdministration/medication-administration-insulin-bolus-dose-fi: MedicationAdministration.medication.ofType(CodeableConcept).coding[1]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/medication-administration-insulin-bolus-dose-fi: MedicationAdministration.meta.profile[0]: Profile reference 'http://roche.com/fhir/rdc/StructureDefinition/medication-administration' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/medication-administration-insulin-dose-temporary-basal-rate-kanta-en.json ==
+INFORMATION: MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en: MedicationAdministration.medication.ofType(CodeableConcept).coding[1]: Code System URI 'http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en: MedicationAdministration.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/medicationesim1.json ==
+ERROR: Medication/medicationesim1: Medication.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drug is unknown, and not allowed here
+ERROR: Medication/medicationesim1: Medication.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct is unknown, and not allowed here
+INFORMATION: Medication/medicationesim1: Medication.extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.604.2014' is unknown so the code cannot be validated
+ERROR: Medication/medicationesim1: Medication.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength is unknown, and not allowed here
+ERROR: Medication/medicationesim1: Medication.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/narcotic is unknown, and not allowed here
+INFORMATION: Medication/medicationesim1: Medication.code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.32.2007' is unknown so the code cannot be validated
+== input/examples/medicationesim2.json ==
+ERROR: Medication/medicationesim2: Medication.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drug is unknown, and not allowed here
+ERROR: Medication/medicationesim2: Medication.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct is unknown, and not allowed here
+INFORMATION: Medication/medicationesim2: Medication.extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.6.604.2014' is unknown so the code cannot be validated
+ERROR: Medication/medicationesim2: Medication.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength is unknown, and not allowed here
+ERROR: Medication/medicationesim2: Medication.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/narcotic is unknown, and not allowed here
+ERROR: Medication/medicationesim2: Medication.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/CNSdrug is unknown, and not allowed here
+INFORMATION: Medication/medicationesim2: Medication.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40118.2006' is unknown so the code cannot be validated
+INFORMATION: Medication/medicationesim2: Medication.code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.32.2007' is unknown so the code cannot be validated
+== input/examples/medicationrequestesim1.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim1: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim2.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dosageInstruction[1].additionalInstruction: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.270.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[1].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[1].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[1].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.270.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.dosageInstruction[1].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim2: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim3.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Range).low: Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Range).high: Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim3: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim4.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Range).low: Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Range).high: Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim4: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim5.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dosageInstruction[1].additionalInstruction: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[1].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[1].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[1].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.dosageInstruction[1].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim5: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim6.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dosageInstruction[0].extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicinePauseInterval is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim6: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim7A.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.category: This property must be an Array, not an Object
+ERROR: MedicationRequest.category.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dosageInstruction[0].timing.repeat.bounds.ofType(Duration).extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/boundsDurationStartDate is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7A: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim7B.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.category: This property must be an Array, not an Object
+ERROR: MedicationRequest.category.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dosageInstruction[0].timing.repeat.bounds.ofType(Range).extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/boundsRangeStartDate is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim7B: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim8.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Quantity): Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim8: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/medicationrequestesim9.json ==
+ERROR: MedicationRequest.extension[11].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.statusReason.coding: This property must be an Array, not an Object
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[0].value[x]: Error parsing JSON: the primitive value must be a number
+ERROR: MedicationRequest.dispenseRequest.extension[1].extension[1].value[x]: Error parsing JSON: the primitive value must be a number
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.meta.security[0]: Code System URI 'urn:oid:1.2.246.537.5.40202.201901' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/versionNumber is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/neRep is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/permanentMedication is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/doseDispensing is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dosageIfNeeded is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/usage is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[6].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[6].extension[1].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40103.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/reservedStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[7].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40122.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/lockStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[8].extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40124.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[9]: The extension http://resepti.kanta.fi/StructureDefinition/extension/renewalStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[9].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40106.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[10]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionSavedByPharmacy is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[10].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40303.201501' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.extension[11]: The extension http://resepti.kanta.fi/StructureDefinition/extension/medicineId is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.statusReason.coding[0]: Code System URI 'urn:oid:1.2.246.537.5.40105.2006' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.category[0].coding[0]: Code System URI 'urn:oid:1.2.246.537.6.605.2014' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/weightPatientUnder12YearsOld is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dosageInstruction[0].extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/onlyTextDosageInUse is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dosageInstruction[0].extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/sic is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.1403.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Range).low: Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.dosageInstruction[0].doseAndRate[0].dose.ofType(Range).high: Code System URI 'urn:oid:1.2.246.537.6.138.202001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[0]: The extension http://resepti.kanta.fi/StructureDefinition/extension/prescriptionType is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[0].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40100.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[1]: The extension http://resepti.kanta.fi/StructureDefinition/extension/package is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[2]: The extension http://resepti.kanta.fi/StructureDefinition/extension/totalAmount is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[3]: The extension http://resepti.kanta.fi/StructureDefinition/extension/validityTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[4]: The extension http://resepti.kanta.fi/StructureDefinition/extension/realDispenseStatus is unknown, and not allowed here
+INFORMATION: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[4].value.ofType(Coding): Code System URI 'urn:oid:1.2.246.537.5.40123.2006' is unknown so the code cannot be validated
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[5]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugPrescribedQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[6]: The extension http://resepti.kanta.fi/StructureDefinition/extension/drugRemainingQuantityText is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[7]: The extension http://resepti.kanta.fi/StructureDefinition/extension/dispenseEffectiveTime is unknown, and not allowed here
+ERROR: MedicationRequest/medicationrequestesim9: MedicationRequest.dispenseRequest.extension[8]: The extension http://resepti.kanta.fi/StructureDefinition/extension/previousDispense is unknown, and not allowed here
+== input/examples/observation-example-StepsTaken-min.json ==
+INFORMATION: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8: Observation.category[0].coding[0]: Code System URI 'http://phr.kanta.fi/fiphr-cs-fitnesscategory' is unknown so the code cannot be validated
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8: Observation.code.coding[0]: The display "Steps" is not a valid display for the code {http://loinc.org}66334-4 - should be one of ['Steps taken [#] [PhenX]', 'Steps taken PhenX', '', 'Consensus measures for Phenotypes and eXposures' (zh-CN), 'PhenX' (zh-CN), '暴露' (zh-CN), '接触' (zh-CN), '表型与暴露共识指标' (zh-CN), '表现型与暴露共识指标' (zh-CN), '表型与暴露公认指标 Consensus measures for Phenotypes and eXposures' (zh-CN), '表型与暴露公认指标 个数' (zh-CN), '数量' (zh-CN), '数量或计数（非负整数）' (zh-CN), '计数 医疗服务对象' (zh-CN), '客户' (zh-CN), '病人' (zh-CN), '病患' (zh-CN), '病号' (zh-CN), '超系统 - 病人 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 所采取（迈出、走出、完成）的步数（步子数量、步骤数） 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间' (zh-CN), 'Numero (conta) paziente PhenX Punto nel tempo (episodio)' (it-IT), 'Количественный Количество Точка во времени' (ru-RU), 'Момент' (ru-RU)] (from http://tx.fhir.org/r4) for 'http://loinc.org#66334-4'
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/observation-example-bloodglucose-astext.json ==
+ERROR: Observation/bloodglucose-as-text: Observation.dataAbsentReason.coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/data-absent-reason#astext in http://terminology.hl7.org/CodeSystem/data-absent-reason for 'http://terminology.hl7.org/CodeSystem/data-absent-reason#astext'
+WARNING: Observation/bloodglucose-as-text: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/bloodglucose-as-text: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/observation-example-bloodglucose-dataabsentreason.json ==
+WARNING: Observation/bloodglucose-data-absent: Observation: Resource has a language, but the XHTML does not have an lang or an xml:lang tag (needs both - see https://www.w3.org/TR/i18n-html-tech-lang/#langvalues)
+WARNING: Observation/bloodglucose-data-absent: Observation.meta.profile[0]: Profile reference 'http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== input/examples/organization-Toimintayksikko ==
+== input/examples/organizationesim1.json ==
+== input/examples/organizationesim2.json ==
+== input/examples/patientesim1.json ==
+INFORMATION: Patient/patientesim1: Patient.identifier[0]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient|1.0.0-rc11
+== input/examples/practitionerRoleesim1.json ==
+== input/examples/practitioneresim1.json ==
+ERROR: Practitioner.identifier: This property must be an Array, not an Object
+ERROR: Practitioner.qualification: This property must be an Array, not an Object
+INFORMATION: Practitioner/practitioneresim1: Practitioner.qualification[0].code.coding[0]: Code System URI 'urn:oid:1.2.246.537.6.140.2008' is unknown so the code cannot be validated

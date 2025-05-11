@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "e4fed3ae-4e31-4f5a-9400-da37c41ef43c-69",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/e4fed3ae-4e31-4f5a-9400-da37c41ef43c-69",
+  "name" : "IntersectionLOINCCodesAndfiphr-vs-exercisetracking",
+  "title" : "Intersection of LOINC Codes And Value Set Finnish PHR Exercise Tracking",
+  "status" : "draft",
+  "date" : "2023-02-02T10:02:11+02:00"
+}

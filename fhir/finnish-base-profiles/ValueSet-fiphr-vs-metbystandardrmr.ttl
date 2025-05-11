@@ -1,0 +1,209 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-metbystandardrmr> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-vs-metbystandardrmr"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/82260-1/\">82260-1</a></td><td>Metabolic equivalent of task by standard resting metabolic rate panel</td><td>Metabolinen ekvivalentti standardissa lepoaineenvaihdunnassa -paneeli</td><td>Metabolisk ekvivalent genom standard viloämnesomsättning -panel</td><td>Metabolic equivalent of task by standard resting metabolic rate panel</td></tr><tr><td><a href=\"https://loinc.org/82284-1/\">82284-1</a></td><td>Standard resting metabolic rate</td><td>Standardi lepoaineenvaihdunta</td><td>Standard viloämnesomsättning</td><td>Standard resting metabolic rate</td></tr><tr><td><a href=\"https://loinc.org/82261-9/\">82261-9</a></td><td>Measured metabolic equivalent of task</td><td>Mitattu metabolinen ekvivalentti</td><td>Uppmätt metabolisk ekvivalent</td><td>Measured metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82262-7/\">82262-7</a></td><td>Estimated metabolic equivalent of task</td><td>Arvioitu metabolinen ekvivalentti</td><td>Uppskattad metabolisk ekvivalent</td><td>Estimated metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82280-9/\">82280-9</a></td><td>Source for estimated metabolic equivalent of task</td><td>Lähde arvioidulle metaboliselle ekvivalentille</td><td>Källa för uppskattad metabolisk ekvivalent</td><td>Source for estimated metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82263-5/\">82263-5</a></td><td>Reported metabolic equivalent of task</td><td>Raportoitu metabolinen ekvivalentti</td><td>Rapporterad metabolisk ekvivalent</td><td>Reported metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82281-7/\">82281-7</a></td><td>Source for reported metabolic equivalent of task</td><td>Lähde raportoidulle metaboliselle ekvivalentille</td><td>Källa för rapporterad metabolisk ekvivalent</td><td>Source for reported metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82271-8/\">82271-8</a></td><td>Adjusted metabolic equivalent of task</td><td>Korjattu metabolinen ekvivalentti</td><td>Justerad metabolisk ekvivalent</td><td>Adjusted metabolic equivalent of task</td></tr><tr><td><a href=\"https://loinc.org/82283-3/\">82283-3</a></td><td>Source for adjusted metabolic equivalent of task</td><td>Lähde korjatulle metaboliselle ekvivalentille</td><td>Källa för justerad metabolisk ekvivalent</td><td>Source for adjusted metabolic equivalent of task</td></tr></table></li></ul></div>"
+  ]; # 
+  fhir:ValueSet.url [ fhir:value "http://phr.kanta.fi/ValueSet/fiphr-vs-metbystandardrmr"]; # 
+  fhir:ValueSet.version [ fhir:value "0.4.0"]; # 
+  fhir:ValueSet.name [ fhir:value "fiphr-vs-metbystandardrmr"]; # 
+  fhir:ValueSet.title [ fhir:value "Value Set Finnish PHR MET by Standard RMR"]; # 
+  fhir:ValueSet.status [ fhir:value "active"]; # 
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:ValueSet.date [ fhir:value "2020-02-24"^^xsd:date]; # 
+  fhir:ValueSet.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ValueSet.description [ fhir:value "Finnish PHR MET by Standard RMR value set"]; # 
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://loinc.org" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82260-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Metabolic equivalent of task by standard resting metabolic rate panel" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Metabolinen ekvivalentti standardissa lepoaineenvaihdunnassa -paneeli" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Metabolisk ekvivalent genom standard viloämnesomsättning -panel" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Metabolic equivalent of task by standard resting metabolic rate panel" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82284-1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Standard resting metabolic rate" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Standardi lepoaineenvaihdunta" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Standard viloämnesomsättning" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Standard resting metabolic rate" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82261-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Measured metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Mitattu metabolinen ekvivalentti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uppmätt metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Measured metabolic equivalent of task" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82262-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Estimated metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Arvioitu metabolinen ekvivalentti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Uppskattad metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Estimated metabolic equivalent of task" ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82280-9" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Source for estimated metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lähde arvioidulle metaboliselle ekvivalentille" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Källa för uppskattad metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Source for estimated metabolic equivalent of task" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82263-5" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Reported metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Raportoitu metabolinen ekvivalentti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Rapporterad metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Reported metabolic equivalent of task" ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82281-7" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Source for reported metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lähde raportoidulle metaboliselle ekvivalentille" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Källa för rapporterad metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Source for reported metabolic equivalent of task" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82271-8" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adjusted metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Korjattu metabolinen ekvivalentti" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Justerad metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Adjusted metabolic equivalent of task" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "82283-3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Source for adjusted metabolic equivalent of task" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fi" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Lähde korjatulle metaboliselle ekvivalentille" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "sv" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Källa för justerad metabolisk ekvivalent" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "Source for adjusted metabolic equivalent of task" ]
+         ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-metbystandardrmr.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

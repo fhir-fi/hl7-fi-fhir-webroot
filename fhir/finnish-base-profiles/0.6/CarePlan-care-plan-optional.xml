@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="care-plan-optional"/>
+  <meta>
+    <profile value="http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4"/>
+    <profile value="http://example.oma/sd/careplan"/>
+  </meta>
+  <language value="fi"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+  
+
+    
+      <div>
+          <h2>Suunnitelman otsikko</h2>
+          <p>Alaselkäkipu tai -vamma</p>
+      </div>
+      <div>
+          <h2>Suunnitelman tila</h2>
+<p>Päättynyt</p>          
+      </div>
+      <div>
+          <h2>Suunnitelman ajanjakso</h2>
+          <p>06-10-2020 - 06-10-2020</p>      
+      </div>
+      <div>
+          <h2>Suunnitelman tyyppi</h2>
+          <p>Alaselkäkipu tai -vamma</p>
+      </div>
+      <div>
+          <h2>Suunnitelman yhteenveto</h2>
+          <div><div><p>Selkäkipusi takia sinun tulisi hakeutua välittömästi päivystysvastaanotolle.</p></div> <div><p>Alaselkäkipu on paikallista ja kestänyt 1 - 4 viikkoa.  Potilaalla on kuumetta 38C , potilas on sairastanut syövän tai sairastaa syöpää, vaikeuksia pidättää virtsaa, vaikeuksia pidättää ulostetta ja vaikeuksia virtsaamisessa (virtsaaminen ei onnistu).  Kiireellisesti terveydenhuollon ammattilaisen arviota vaativat oireet: virtsainkontinenssi, virtsaamisvaikeus ja ulosteinkontinenssi. Selkäoireeseen liittyy kipua, jonka voimakkuus on 5/10. Selkäkipu on alkanut välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen. Tapaturman sattumistapa: Kompastuin kengännauhoihin. Yleisvointi on kohtalainen (pystyy tekemään pakolliset päivittäiset toiminnot). Kipulääke auttaa. Tarvitsee sairauslomaa.</p></div></div>
+      </div>
+      <div>
+          <h2>Kysymykset ja vastaukset</h2>
+          
+    
+    
+    <div>
+      <p>Oma arvioni</p>
+	    
+	      <p>Arvelen tarvitsevani hoitoa ja haluan täyttää oirekyselyn</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Ikäsi (vuosia)</p>
+	    
+	      
+	      
+	      <p>30</p>
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Mikä selkäkivun oire on kyseessä?</p>
+	    
+	      <p>Alaselän oire</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Alkoiko selkäkipusi välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        <p>Kyllä</p>
+	        
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Oliko kyseessä <a href="https://www.tyosuojelu.fi/tyoterveys-ja-tapaturmat/tyotapaturmat">työtapaturma</a>?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Minkälaisen tapaturman seurauksena selkäkipu on alkanut?</p>
+	    
+	      
+	      
+	      
+	      <p>Kompastuin kengännauhoihin</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko lääkäri jo arvioinut selkäsi tilannetta edellä kuvaamasi tapaturman jälkeen?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Miten kauan selkäkipuoireesi on kestänyt?</p>
+	    
+	      <p>1 - 4 viikkoa</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko sinulle selkäoireesi yhteydessä ilmaantunut vaikeuksia pidättää virtsaa tai ulostetta?</p>
+	    
+	      <p>Vaikeuksia pidättää ulostetta</p>
+	      
+	      
+	      
+	              
+	    
+	      <p>Vaikeuksia pidättää virtsaa</p>
+	      
+	      
+	      
+	              
+	    
+	      <p>Vaikeuksia virtsaamisessa (virtsaaminen ei onnistu)</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko sinulla alaraajassa tai alaraajoissa tuoretta etenevää voiman puutetta (et pysty tukemaan alaraajan tai alaraajojen varaan)?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko sinulla toisen alaraajan tai molempien alaraajojen etenevää tunnottomuutta, puutumista tai voiman heikentymistä?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko kyseessä äkillisesti alkanut vatsakipu, joka säteilee myös selkään?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Miten voimakasta kipu on ollut viimeisen vuorokauden aikana?</p>
+	    
+	      <p>5</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Lievittyykö selkäkipusi, kun nukut sopivassa asennossa?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Millaisena kipu tuntuu?</p>
+	    
+	      <p>Kipu tuntuu selässä paikallisena tai ulottuu korkeintaan reiden tasoon</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Millainen on yleisvointisi?</p>
+	    
+	      <p>Pystyn olemaan jalkeilla, mutta selviydyn vain pakollisista kotiaskareista</p>
+	      
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko sinulla kuumetta (kuumeen rajana pidetään 37,5 astetta)?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        <p>Kyllä</p>
+	        
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Kuinka paljon kuumetta sinulla on ollut korkeimmillaan kuluneen vuorokauden aikana? Vastaa kymmenyksen tarkkuudella (esim. 37,8).</p>
+	    
+	      
+	      <p>38</p>
+	      
+	      
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Sairastatko tai oletko sairastanut syöpää?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        <p>Kyllä</p>
+	        
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Minkä syövän olet sairastanut tai mitä syöpää sairastat?</p>
+	    
+	      
+	      
+	      
+	      <p>Ihosyöpä</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Tarvitsetko selkäkipusi takia sairauslomaa?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        <p>Kyllä</p>
+	        
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Tarvitsetko selkäkivun vuoksi muuhun tarkoitukseen (esimerkiksi vakuutus tms.) lääkärin antaman todistuksen tai lausunnon?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko sinulla ollut samasta vaivasta viimeisen puolen vuoden aikana käyntejä fysioterapiassa?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Oletko käyttänyt nykyiseen oireeseesi kipulääkkeitä?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        <p>Kyllä</p>
+	        
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Oletko saanut kipulääkkeistä riittävän avun, niin että pärjäät kipusi kanssa?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        <p>Kyllä</p>
+	        
+	              
+	    
+    </div>
+               
+
+    <div>
+      <p>Onko sinulla ollut samasta vaivasta viimeisen puolen vuoden aikana käyntejä lääkärillä?</p>
+	    
+	      
+	      
+	      
+	      
+	      
+	        
+	        <p>Ei</p>
+	              
+	    
+    </div>
+               
+           
+
+      </div>
+      
+    
+
+    
+
+      
+
+  
+</div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:uuid:ietf:rfc:3986"/>
+    <value value="1"/>
+  </identifier>
+  <identifier>
+    <system value="urn:uuid:ietf:rfc:3981"/>
+    <value value="Omavalue"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory"/>
+      <code value="7"/>
+      <display value="Alaselkäkipu tai -vamma"/>
+    </coding>
+    <coding>
+      <system value="http://example.oma"/>
+      <code value="78"/>
+      <display value="Another CarePlan"/>
+    </coding>
+  </category>
+  <title value="Alaselkäkipu tai -vamma"/>
+  <description value="&lt;div class=&quot;read-alert&quot;&gt;&lt;p&gt;Selkäkipusi takia sinun tulisi hakeutua välittömästi päivystysvastaanotolle.&lt;/p&gt;&lt;/div&gt; &lt;div class=&quot;read-reminder&quot;&gt;&lt;p&gt;Esitiedot Omaolo-oirearviosta (22.5.2020 klo 12:13:14):  Alaselkäkipu on paikallista ja kestänyt 1 - 4 viikkoa.  Potilaalla on kuumetta 38°C , potilas on sairastanut syövän tai sairastaa syöpää, vaikeuksia pidättää virtsaa, vaikeuksia pidättää ulostetta ja vaikeuksia virtsaamisessa (virtsaaminen ei onnistu).  Kiireellisesti terveydenhuollon ammattilaisen arviota vaativat oireet: virtsainkontinenssi, virtsaamisvaikeus ja ulosteinkontinenssi. Selkäoireeseen liittyy kipua, jonka voimakkuus on 5/10. Selkäkipu on alkanut välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen. Tapaturman sattumistapa: Kompastuin kengännauhoihin. Yleisvointi on kohtalainen (pystyy tekemään pakolliset päivittäiset toiminnot). Kipulääke auttaa. Tarvitsee sairauslomaa.&lt;/p&gt;&lt;/div&gt;"/>
+  <subject>
+    <reference value="Patient/36749a02-1710-44e7-aa76-0e934eb7860a"/>
+  </subject>
+  <period>
+    <start value="2020-10-06"/>
+    <end value="2020-10-06"/>
+  </period>
+  <author>
+    <reference value="Patient/36749a02-1710-44e7-aa76-0e934eb7860a"/>
+  </author>
+</CarePlan>

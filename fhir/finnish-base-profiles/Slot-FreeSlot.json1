@@ -1,0 +1,44 @@
+{
+  "resourceType" : "Slot",
+  "id" : "FreeSlot",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Slot FreeSlot</b></p><a name=\"FreeSlot\"> </a><a name=\"hcFreeSlot\"> </a><a name=\"FreeSlot-fi-FI\"> </a><p><b>identifier</b>: 123456789</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50 SOTE3}\">Lääkäripalvelut</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49 EE}\">Yleislääkärin palvelu</span></p><p><b>appointmentType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.884 10}\">Kertakäynti toimipaikassa</span></p><p><b>schedule</b>: <a href=\"Schedule-ScheduleExample.html\">Schedule: identifier = http://example.org/scheduleid#45\u00a0(use:\u00a0usual,\u00a0); serviceCategory = General medical practice (qualifier value); serviceType = General practice service; specialty = General practice (specialty) (qualifier value); planningHorizon = 2023-01-01 09:15:00+0000 --&gt; 2033-12-25 09:30:00+0000</a></p><p><b>status</b>: Free</p><p><b>start</b>: 2023-01-01 12:00:00+0200</p><p><b>end</b>: 2023-01-01 12:30:00+0200</p></div>"
+  },
+  "identifier" : [{
+    "value" : "123456789"
+  }],
+  "serviceCategory" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.50",
+      "version" : "201801",
+      "code" : "SOTE3",
+      "display" : "Lääkäripalvelut"
+    }]
+  }],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.49",
+      "version" : "201501",
+      "code" : "EE",
+      "display" : "Yleislääkärin palvelu"
+    }]
+  }],
+  "appointmentType" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.884",
+      "version" : "2015",
+      "code" : "10",
+      "display" : "Kertakäynti toimipaikassa"
+    }]
+  },
+  "schedule" : {
+    "reference" : "Schedule/ScheduleExample"
+  },
+  "status" : "free",
+  "start" : "2023-01-01T12:00:00+02:00",
+  "end" : "2023-01-01T12:30:00+02:00"
+}

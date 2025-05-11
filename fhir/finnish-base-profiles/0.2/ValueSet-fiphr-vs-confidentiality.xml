@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-confidentiality"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2017-03-02T13:56:51.448+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">!-- Snipped for Brevity --&gt;</div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-confidentiality"/>
+  <version value="0.2.0"/>
+  <name value="fiphr-vs-confidentiality"/>
+  <title value="Value Set Finnish PHR Confidentiality"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2018-03-16T14:08:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Value set for confidentiality codes used in finnish PHR"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/v3/Confidentiality"/>
+      <concept>
+        <code value="R"/>
+        <display value="Restricted"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kielletty"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Förbjudet"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Restricted"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="U"/>
+        <display value="Unrestricted"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sallittu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Tillåtet"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Unrestricted"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Appointment/605790> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "605790"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment 605790</b></p><a name=\"605790\"> </a><a name=\"hc605790\"> </a><a name=\"605790-fi-FI\"> </a><p><b>status</b>: Booked</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50.201801 SOTE19}\">Perheoikeudelliset palvelut</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49.201501 NC}\">Isyyden selvittämispalvelu</span></p><p><b>appointmentType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.884.2015 10}\">Kertakäynti toimipaikassa</span></p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p><p><b>slot</b>: <a href=\"Slot-123456789.html\">Slot: identifier = 123456789; serviceCategory = Perheoikeudelliset palvelut; serviceType = Isyyden selvittämispalvelu; appointmentType = Kertakäynti toimipaikassa; status = free; start = 2020-01-01 12:00:00+0200; end = 2020-01-01 12:30:00+0200</a></p><p><b>created</b>: 2019-12-01</p><p><b>comment</b>: Äidillä ei ole virallista henkilöllisyystodistusta</p><p><b>patientInstruction</b>: Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia</p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType SBJ}\">subject</span></p><p><b>actor</b>: Pentti Potilas (Identifier: <code>urn:oid:1.2.246.21</code>/010101-123N)</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType LOC}\">location</span></p><p><b>actor</b>: Vastaanotto (Identifier: 1.2.246.10.10303777.10.777)</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"HealthcareService/example\">Lastenvalvojan vastaanotto</a></p><p><b>status</b>: Accepted</p></blockquote></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:ContactPoint ;
+       fhir:system [ fhir:v "sms" ] ;
+       fhir:value [ fhir:v "+3581234567" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "Cancellable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "Reschedulable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:serviceCategory ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.50.201801"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SOTE19" ] ;
+       fhir:display [ fhir:v "Perheoikeudelliset palvelut" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.49.201501"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NC" ] ;
+       fhir:display [ fhir:v "Isyyden selvittämispalvelu" ]
+     ] )
+  ] ) ; # 
+  fhir:appointmentType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:1.2.246.537.6.884.2015"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10" ] ;
+       fhir:display [ fhir:v "Kertakäynti toimipaikassa" ]
+     ] )
+  ] ; # 
+  fhir:start [ fhir:v "2020-01-01T12:00:00+02:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2020-01-01T12:30:00+02:00"^^xsd:dateTime] ; # 
+  fhir:slot ( [
+     fhir:link <https://hl7.fi/fhir/finnish-scheduling/Slot/123456789> ;
+     fhir:reference [ fhir:v "Slot/123456789" ]
+  ] ) ; # 
+  fhir:created [ fhir:v "2019-12-01"^^xsd:date] ; # 
+  fhir:comment [ fhir:v "Äidillä ei ole virallista henkilöllisyystodistusta"] ; # 
+  fhir:patientInstruction [ fhir:v "Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia"] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "SBJ" ] ;
+         fhir:display [ fhir:v "subject" ]
+       ] )
+     ] ) ;
+     fhir:actor [
+       fhir:identifier [
+         fhir:system [ fhir:v "urn:oid:1.2.246.21"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "010101-123N" ]
+       ] ;
+       fhir:display [ fhir:v "Pentti Potilas" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LOC" ] ;
+         fhir:display [ fhir:v "location" ]
+       ] )
+     ] ) ;
+     fhir:actor [
+       fhir:identifier [
+         fhir:value [ fhir:v "1.2.246.10.10303777.10.777" ]
+       ] ;
+       fhir:display [ fhir:v "Vastaanotto" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:link <https://hl7.fi/fhir/finnish-scheduling/HealthcareService/example> ;
+       fhir:reference [ fhir:v "HealthcareService/example" ] ;
+       fhir:display [ fhir:v "Lastenvalvojan vastaanotto" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

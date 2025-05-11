@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-exerciseactivity"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:1.2.246.537.6.301</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td>A0101</td><td>Basketball</td><td>Koripallo</td><td>Basketboll</td><td>Basketball</td></tr><tr><td>A0109</td><td>Soccer</td><td>Jalkapallo</td><td>Fotboll</td><td>Soccer</td></tr><tr><td>A0112</td><td>Volleyball</td><td>Lentopallo</td><td>Volleyboll</td><td>Volleyball</td></tr><tr><td>A0203</td><td>Ice hockey</td><td>Jääkiekko</td><td>Ishockey</td><td>Ice hockey</td></tr><tr><td>A0250</td><td>Baseball</td><td>Pesäpallo</td><td>Boboll</td><td>Baseball</td></tr><tr><td>A0251</td><td>Floorball</td><td>Salibandy</td><td>Innebandy</td><td>Floorball</td></tr><tr><td>B0405</td><td>Rowing or paddling</td><td>Soutu tai melonta</td><td>Rodd eller paddling</td><td>Rowing or paddling</td></tr><tr><td>B0450</td><td>Rowing indoors</td><td>Soutu soutulaitteella</td><td>Rodd med roddmaskin</td><td>Rowing indoors</td></tr><tr><td>B0507</td><td>Swimming</td><td>Uinti</td><td>Simning</td><td>Swimming</td></tr><tr><td>B0550</td><td>Aquajogging</td><td>Vesijuoksu</td><td>Vattenlöpning</td><td>Aquajogging</td></tr><tr><td>B0551</td><td>Water aerobics</td><td>Vesivoimistelu</td><td>Vattengymnastik</td><td>Water aerobics</td></tr><tr><td>B0603</td><td>Ice skating</td><td>Luistelu</td><td>Skridskoåkning</td><td>Ice skating</td></tr><tr><td>B0606</td><td>Cross-country skiing</td><td>Maastohiihto</td><td>Längdskidåkning</td><td>Cross-country skiing</td></tr><tr><td>B0655</td><td>Snowshoeing</td><td>Lumikenkäkävely</td><td>Snöskogång</td><td>Snowshoeing</td></tr><tr><td>B0701</td><td>Aerobics</td><td>Aerobic</td><td>Aerobics</td><td>Aerobics</td></tr><tr><td>B0702</td><td>Jogging</td><td>Hölkkä</td><td>Joggning</td><td>Jogging</td></tr><tr><td>B0718</td><td>Walking</td><td>Kävely</td><td>Gång</td><td>Walking</td></tr><tr><td>B0719</td><td>Yoga</td><td>Jooga</td><td>Yoga</td><td>Yoga</td></tr><tr><td>B0720</td><td>Running</td><td>Juoksu</td><td>Löpning</td><td>Running</td></tr><tr><td>B0721</td><td>Stretching</td><td>Venyttely</td><td>Töjning</td><td>Stretching</td></tr><tr><td>B0750</td><td>Nordic walking</td><td>Sauvakävely</td><td>Stavgång</td><td>Nordic walking</td></tr><tr><td>B0755</td><td>Pilates</td><td>Pilates</td><td>Pilates</td><td>Pilates</td></tr><tr><td>B0756</td><td>Asahi</td><td>Asahi</td><td>Asahi</td><td>Asahi</td></tr><tr><td>B0852</td><td>Home gymnastics</td><td>Kotivoimistelu</td><td>Hemgymnastik</td><td>Home gymnastics</td></tr><tr><td>B0855</td><td>Hula hooping</td><td>Hulavanteen pyöritys</td><td>Rockring rotation</td><td>Hula hooping</td></tr><tr><td>B0953</td><td>Solo dance</td><td>Yksintanssi</td><td>Solodans</td><td>Solo dance</td></tr><tr><td>B0954</td><td>Partner dance</td><td>Paritanssi</td><td>Pardans</td><td>Partner dance</td></tr><tr><td>B1001</td><td>Badminton</td><td>Sulkapallo</td><td>Badminton</td><td>Badminton</td></tr><tr><td>B1003</td><td>Squash</td><td>Squash</td><td>Squash</td><td>Squash</td></tr><tr><td>B1005</td><td>Tennis</td><td>Tennis</td><td>Tennis</td><td>Tennis</td></tr><tr><td>B1006</td><td>Padel</td><td>Padel</td><td>Padel</td><td>Padel</td></tr><tr><td>B1102</td><td>Boccia</td><td>Boccia</td><td>Boccia</td><td>Boccia</td></tr><tr><td>B1109</td><td>Golf</td><td>Golf</td><td>Golf</td><td>Golf</td></tr><tr><td>B1110</td><td>Bowling</td><td>Keilailu</td><td>Bowling</td><td>Bowling</td></tr><tr><td>B1116</td><td>Disc golf</td><td>Frisbeegolf</td><td>Discgolf</td><td>Disc golf</td></tr><tr><td>B1306</td><td>Kettlebell training</td><td>Kahvakuulaharjoittelu</td><td>Kettlebellträning</td><td>Kettlebell training</td></tr><tr><td>B1350</td><td>Gym training</td><td>Kuntosaliharjoittelu</td><td>Gymträning</td><td>Gym training</td></tr><tr><td>B1351</td><td>Circuit training</td><td>Kuntopiiri</td><td>Cirkelträning</td><td>Circuit training</td></tr><tr><td>B1504</td><td>Orienteering</td><td>Suunnistus</td><td>Orientering</td><td>Orienteering</td></tr><tr><td>B1507</td><td>Stair climbing</td><td>Portaiden kiipeäminen</td><td>Trappklättring</td><td>Stair climbing</td></tr><tr><td>B1702</td><td>Mountain biking</td><td>Maastopyöräily</td><td>Terrängcykling</td><td>Mountain biking</td></tr><tr><td>B1706</td><td>Cycling</td><td>Pyöräily</td><td>Cykling</td><td>Cycling</td></tr><tr><td>B1711</td><td>Kick scootering</td><td>Potkulautailu</td><td>Sparkcykling</td><td>Kick scootering</td></tr><tr><td>B1751</td><td>Cycling indoors</td><td>Pyöräily kuntopyörällä</td><td>Cykling med motionscykel</td><td>Cycling indoors</td></tr><tr><td>D2001</td><td>Household work</td><td>Kotityöt</td><td>Hushållsarbete</td><td>Household work</td></tr><tr><td>D2002</td><td>Yard work</td><td>Pihatyöt</td><td>Gårdsarbete</td><td>Yard work</td></tr><tr><td>D2003</td><td>Berry or mushroom picking</td><td>Marjastus tai sienestys</td><td>Bär- eller svampplockning</td><td>Berry or mushroom picking</td></tr><tr><td>D2006</td><td>Forest work</td><td>Metsätyöt</td><td>Skogsarbete</td><td>Forest work</td></tr><tr><td>C99</td><td>Other activity</td><td>Muu aktiviteetti</td><td>Annan aktivitet</td><td>Other activity</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseactivity"/>
+  <version value="0.4.0"/>
+  <name value="fiphr-vs-exerciseactivity"/>
+  <title value="Value Set Finnish PHR Exercise Activity"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2021-06-21"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Exercise Activity value set"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.246.537.6.301"/>
+      <concept>
+        <code value="A0101"/>
+        <display value="Basketball"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Koripallo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Basketboll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Basketball"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="A0109"/>
+        <display value="Soccer"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Jalkapallo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Fotboll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Soccer"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="A0112"/>
+        <display value="Volleyball"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lentopallo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Volleyboll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Volleyball"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="A0203"/>
+        <display value="Ice hockey"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Jääkiekko"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Ishockey"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Ice hockey"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="A0250"/>
+        <display value="Baseball"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Pesäpallo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Boboll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Baseball"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="A0251"/>
+        <display value="Floorball"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Salibandy"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Innebandy"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Floorball"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0405"/>
+        <display value="Rowing or paddling"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Soutu tai melonta"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Rodd eller paddling"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Rowing or paddling"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0450"/>
+        <display value="Rowing indoors"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Soutu soutulaitteella"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Rodd med roddmaskin"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Rowing indoors"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0507"/>
+        <display value="Swimming"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Uinti"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Simning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Swimming"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0550"/>
+        <display value="Aquajogging"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Vesijuoksu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Vattenlöpning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Aquajogging"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0551"/>
+        <display value="Water aerobics"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Vesivoimistelu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Vattengymnastik"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Water aerobics"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0603"/>
+        <display value="Ice skating"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Luistelu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Skridskoåkning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Ice skating"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0606"/>
+        <display value="Cross-country skiing"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Maastohiihto"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Längdskidåkning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Cross-country skiing"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0655"/>
+        <display value="Snowshoeing"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lumikenkäkävely"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Snöskogång"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Snowshoeing"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0701"/>
+        <display value="Aerobics"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Aerobic"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Aerobics"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Aerobics"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0702"/>
+        <display value="Jogging"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Hölkkä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Joggning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Jogging"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0718"/>
+        <display value="Walking"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kävely"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Gång"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Walking"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0719"/>
+        <display value="Yoga"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Jooga"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Yoga"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Yoga"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0720"/>
+        <display value="Running"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Juoksu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Löpning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Running"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0721"/>
+        <display value="Stretching"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Venyttely"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Töjning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Stretching"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0750"/>
+        <display value="Nordic walking"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sauvakävely"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Stavgång"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Nordic walking"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0755"/>
+        <display value="Pilates"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Pilates"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Pilates"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Pilates"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0756"/>
+        <display value="Asahi"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Asahi"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Asahi"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Asahi"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0852"/>
+        <display value="Home gymnastics"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kotivoimistelu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hemgymnastik"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Home gymnastics"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0855"/>
+        <display value="Hula hooping"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Hulavanteen pyöritys"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Rockring rotation"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Hula hooping"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0953"/>
+        <display value="Solo dance"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Yksintanssi"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Solodans"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Solo dance"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B0954"/>
+        <display value="Partner dance"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Paritanssi"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Pardans"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Partner dance"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1001"/>
+        <display value="Badminton"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sulkapallo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Badminton"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Badminton"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1003"/>
+        <display value="Squash"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Squash"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Squash"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Squash"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1005"/>
+        <display value="Tennis"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Tennis"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Tennis"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Tennis"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1006"/>
+        <display value="Padel"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Padel"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Padel"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Padel"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1102"/>
+        <display value="Boccia"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Boccia"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Boccia"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Boccia"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1109"/>
+        <display value="Golf"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Golf"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Golf"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Golf"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1110"/>
+        <display value="Bowling"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Keilailu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Bowling"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Bowling"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1116"/>
+        <display value="Disc golf"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Frisbeegolf"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Discgolf"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Disc golf"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1306"/>
+        <display value="Kettlebell training"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kahvakuulaharjoittelu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Kettlebellträning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Kettlebell training"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1350"/>
+        <display value="Gym training"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kuntosaliharjoittelu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Gymträning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Gym training"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1351"/>
+        <display value="Circuit training"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kuntopiiri"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Cirkelträning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Circuit training"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1504"/>
+        <display value="Orienteering"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Suunnistus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Orientering"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Orienteering"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1507"/>
+        <display value="Stair climbing"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Portaiden kiipeäminen"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Trappklättring"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Stair climbing"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1702"/>
+        <display value="Mountain biking"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Maastopyöräily"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Terrängcykling"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Mountain biking"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1706"/>
+        <display value="Cycling"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Pyöräily"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Cykling"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Cycling"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1711"/>
+        <display value="Kick scootering"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Potkulautailu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Sparkcykling"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Kick scootering"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="B1751"/>
+        <display value="Cycling indoors"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Pyöräily kuntopyörällä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Cykling med motionscykel"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Cycling indoors"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="D2001"/>
+        <display value="Household work"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kotityöt"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hushållsarbete"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Household work"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="D2002"/>
+        <display value="Yard work"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Pihatyöt"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Gårdsarbete"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Yard work"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="D2003"/>
+        <display value="Berry or mushroom picking"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Marjastus tai sienestys"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Bär- eller svampplockning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Berry or mushroom picking"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="D2006"/>
+        <display value="Forest work"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Metsätyöt"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Skogsarbete"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Forest work"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="C99"/>
+        <display value="Other activity"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Muu aktiviteetti"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Annan aktivitet"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Other activity"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

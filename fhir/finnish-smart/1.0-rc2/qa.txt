@@ -1,0 +1,35 @@
+﻿FinnishSmart : Validation Results
+=========================================
+
+err = 6, warn = 9, info = 1
+IG Publisher Version: 1.2.37
+Generated Mon Feb 20 08:30:49 EET 2023. FHIR version 4.0.1 for hl7.fhir.fi.smart#1.0.0-rc2 (canonical = https://hl7.fi/fhir/finnish-smart)
+ Build Errors : 0 / 4 / 0
+ /Users/mikael/GitHub/finnish-smart/fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner : 4 / 0 / 1
+ /Users/mikael/GitHub/finnish-smart/fsh-generated/resources/CapabilityStatement-apottiekosysteemi-capabilitystatement : 2 / 3 / 1
+ /Users/mikael/GitHub/finnish-smart/fsh-generated/resources/CapabilityStatement-fi-smart-server : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-smart/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart : 0 / 0 / 1
+ /Users/mikael/GitHub/finnish-smart/fsh-generated/resources/StructureDefinition-fi-smart-server-profile : 0 / 2 / 2
+</table>
+== n/a ==
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner.json ==
+ERROR: AuditEvent/apotti-ehr-launch-by-practitioner: AuditEvent.type: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/audit-event-type')
+ERROR: AuditEvent/apotti-ehr-launch-by-practitioner: AuditEvent.type: Unknown Code System 'http://hl7.org/fhir/ValueSet/audit-event-type'
+ERROR: AuditEvent/apotti-ehr-launch-by-practitioner: AuditEvent.source.type[0]: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/audit-source-type')
+ERROR: AuditEvent/apotti-ehr-launch-by-practitioner: AuditEvent.source.type[0]: Unknown Code System 'http://hl7.org/fhir/ValueSet/audit-source-type'
+== fsh-generated/resources/CapabilityStatement-apottiekosysteemi-capabilitystatement.json ==
+ERROR: CapabilityStatement/apottiekosysteemi-capabilitystatement: CapabilityStatement: Rule cpb-14: 'If kind = instance, implementation must be present and software may be present' Failed
+WARNING: CapabilityStatement/apottiekosysteemi-capabilitystatement: CapabilityStatement.rest[0].resource[11].searchParam[2].documentation: The markdown contains content that appears to be an embedded HTML tag starting at 'Se'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: CapabilityStatement/apottiekosysteemi-capabilitystatement: CapabilityStatement.rest[0].resource[26].searchParam[8].documentation: The markdown contains content that appears to be an embedded HTML tag starting at 'Se'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: CapabilityStatement/apottiekosysteemi-capabilitystatement: CapabilityStatement.rest[0].resource[27].searchParam[6].documentation: The markdown contains content that appears to be an embedded HTML tag starting at 'A '. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+ERROR: CapabilityStatement/apottiekosysteemi-capabilitystatement: CapabilityStatement.rest[0].resource[30].type: The value provided ('ProcedureRequest') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#ProcedureRequest in http://hl7.org/fhir/resource-types)
+== fsh-generated/resources/CapabilityStatement-fi-smart-server.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json ==
+WARNING: StructureDefinition/fi-smart-server-profile: StructureDefinition.snapshot.element[0].constraint[6].xpath: value should not start or finish with whitespace ' not(f:kind/@value='instance')...exists(f:software))'
+INFORMATION: StructureDefinition/fi-smart-server-profile: StructureDefinition.snapshot.element[43].pattern.ofType(canonical): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/fi-smart-server-profile: StructureDefinition.snapshot.element[43].pattern.ofType(canonical): The repeating element has a pattern value for a primitive type. The DotNet validator will not apply this to all the repeats - this is an error

@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "58ac55d9-3fd8-42cb-8b64-f81521b482c3-6",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/58ac55d9-3fd8-42cb-8b64-f81521b482c3-6",
+  "name" : "IntersectionObservationCategoryCodesAndfiphr-vs-fitnesscategory",
+  "title" : "Intersection of Observation Category Codes And Value Set Finnish PHR Fitness Category",
+  "status" : "draft",
+  "date" : "2023-02-02T09:44:26+02:00"
+}

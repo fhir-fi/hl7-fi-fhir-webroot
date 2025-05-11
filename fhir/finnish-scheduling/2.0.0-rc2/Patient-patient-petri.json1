@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-petri",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-petri</b></p><a name=\"patient-petri\"> </a><a name=\"hcpatient-petri\"> </a><a name=\"patient-petri-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://hl7.fi/fhir/finnish-base-profiles/1.0.0/StructureDefinition-fi-base-patient.html\">FI Base Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Petri Potilas  Male, DoB: 2010-10-11 ( urn:oid:1.2.246.21#101100A9277\u00a0(use:\u00a0official,\u00a0))</p><hr/></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.246.21",
+    "value" : "101100A9277"
+  }],
+  "name" : [{
+    "family" : "Potilas",
+    "given" : ["Petri"]
+  }],
+  "gender" : "male",
+  "birthDate" : "2010-10-11"
+}

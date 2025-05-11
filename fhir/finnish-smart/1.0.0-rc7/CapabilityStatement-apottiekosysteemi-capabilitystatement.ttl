@@ -1,0 +1,1294 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-smart/CapabilityStatement/apottiekosysteemi-capabilitystatement> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apottiekosysteemi-capabilitystatement"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-server-profile"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-server-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2/><table><tr><td>Mode</td><td>SERVER</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th></tr><tr><td>AllergyIntolerance</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Appointment</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Binary</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Condition</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Consent</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Coverage</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Device</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DeviceRequest</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DeviceUseStatement</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DiagnosticReport</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>DocumentReference</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Encounter</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Endpoint</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Flag</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Goal</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Immunization</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>ImmunizationRecommendation</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>List</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Location</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Medication</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>MedicationDispense</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationRequest</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>MedicationStatement</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>NutritionOrder</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Observation</td><td> </td><td>y</td><td>y</td><td>y</td><td>y</td></tr><tr><td>Organization</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Patient</td><td> </td><td>y</td><td>y</td><td></td><td>y</td></tr><tr><td>Practitioner</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>PractitionerRole</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Procedure</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>ProcedureRequest</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr><tr><td>Schedule</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Slot</td><td> </td><td>y</td><td></td><td></td><td></td></tr><tr><td>Specimen</td><td> </td><td>y</td><td>y</td><td></td><td></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-smart/CapabilityStatement/apottiekosysteemi-capabilitystatement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0-rc7"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-17T10:35:03Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Finland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Finland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.fi/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mikael@sensotrend.com" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FI" ] ;
+       fhir:display [ fhir:v "Finland" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright Epic 1979-2022"] ; # 
+  fhir:kind [ fhir:v "instance"] ; # 
+  fhir:software [
+     fhir:name [ fhir:v "Epic" ] ;
+     fhir:version [ fhir:v "toukokuu 2022" ] ;
+     fhir:releaseDate [ fhir:v "2022-09-12"^^xsd:date ]
+  ] ; # 
+  fhir:fhirVersion [ fhir:v "3.0.1"] ; # 
+  fhir:format ( [ fhir:v "xml"] [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:security [
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "authorize"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/authorize"^^xsd:anyURI ]
+         ] [
+           fhir:url [ fhir:v "token"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/token"^^xsd:anyURI ]
+         ] ) ;
+         fhir:url [ fhir:v "http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris"^^xsd:anyURI ]
+       ] ) ;
+       fhir:cors [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:service ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/restful-security-service"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "OAuth" ] ;
+           fhir:display [ fhir:v "OAuth" ]
+         ] ) ;
+         fhir:text [ fhir:v "OAuth" ]
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/restful-security-service"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "SMART-on-FHIR" ] ;
+           fhir:display [ fhir:v "SMART-on-FHIR" ]
+         ] ) ;
+         fhir:text [ fhir:v "SMART-on-FHIR" ]
+       ] [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/restful-security-service"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "Basic" ] ;
+           fhir:display [ fhir:v "Basic" ]
+         ] ) ;
+         fhir:text [ fhir:v "Basic" ]
+       ] )
+     ] ;
+     fhir:resource ( [
+       fhir:type [ fhir:v "AllergyIntolerance" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for AllergyIntolerance resources for a specified patient ID." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Appointment" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Appointment resources by date. By default, all Appointments are returned." ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Appointment resources by identifier." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Appointment resources for a specified patient ID." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Appointment resources by status. By default, all Appointments are returned." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Binary" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "Condition" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Condition resources by category. By default, the search returns problem list Condition resources." ]
+       ] [
+         fhir:name [ fhir:v "clinical-status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Condition resources by clinicalStatus. By default, the search returns active Condition resources. Only clinical statuses of resolved and active are supported." ]
+       ] [
+         fhir:name [ fhir:v "encounter" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Condition resources for specific encounters. If not provided, only problem list Condition results are returned." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Condition resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Condition resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Consent" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Consent resources by category." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Consent resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Consent resources by status." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Consent resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Coverage" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "beneficiary" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Coverage resource for a specific patient ID. You can use \"patient\" or \"beneficiary\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Coverage resource for a specific patient ID. You can use \"patient\" or \"beneficiary\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Device" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "device-name" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "A string that will match the Device.udi.name field. Not case sensitive." ]
+       ] [
+         fhir:name [ fhir:v "manufacturer" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Manufacturer of the device." ]
+       ] [
+         fhir:name [ fhir:v "model" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Model number of the device." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "The patient in whom this device is implanted. This is a required parameter." ]
+       ] [
+         fhir:name [ fhir:v "udi-carrier" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "The UDI barcode string - matches static UDI." ]
+       ] [
+         fhir:name [ fhir:v "udi-di" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "The UDI device identifier (DI)." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "DeviceRequest" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for a DeviceRequest resource for a specified patient ID." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for a DeviceRequest based on a device request status" ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "DeviceUseStatement" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for DeviceUseStatement resources for a specified patient ID." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "DiagnosticReport" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for DiagnosticReport resources by category." ]
+       ] [
+         fhir:name [ fhir:v "code" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for DiagnosticReport resources by code." ]
+       ] [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Refine a search for DiagnosticReport resources by specifying a date or date range that a DiagnosticReport was resulted or recorded. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included. Not supported by Care Plan Goal." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for DiagnosticReport resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for DiagnosticReport resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "DocumentReference" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "author" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for a given set of DocumentReferences on a patient by specifying a Practitioner ID that corresponds to the author of the document. Not supported for ccda-document or clinical-note search." ]
+       ] [
+         fhir:name [ fhir:v "class" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for DocumentReference resources by category. Only \"clinical-note\", \"ccda-document\", \"correspondence\", and \"imaging-result\" are supported." ]
+       ] [
+         fhir:name [ fhir:v "created" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the document creation time. Not supported for correspondence or imaging-result search." ]
+       ] [
+         fhir:name [ fhir:v "docstatus" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for a given set of DocumentReferences on a patient by specifying a docStatus. By default, all docStatuses are returned. Not supported for ccda-document, correspondence, or imaging-result search." ]
+       ] [
+         fhir:name [ fhir:v "encounter" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for DocumentReference resources for a specified encounter ID. Not supported for ccda-document, correspondence, or imaging-result search." ]
+       ] [
+         fhir:name [ fhir:v "indexed" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the document indexed time. Not supported for ccda-document or clinical-note search." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for DocumentReference resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "period" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for a given set of DocumentReferences on a patient by specifying a date or date range in ISO format (YYYY[-MM[-DD]]) that corresponds to the time of the service that is being documented." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for DocumentReference resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "type" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for a given set of DocumentReferences on a patient by specifying a LOINC code or internal category ID to return only documents of that type. Not supported for ccda-document search." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Encounter" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "class" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Encounter resources by class. By default, all classes are returned." ]
+       ] [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Encounter resources by date. By default, all Encounters are returned. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]]). Local server time is assumed if time zone information is not included." ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for Encounter resources by encounter identifier in the format <code system>|<code>" ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Encounter resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Encounter resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Endpoint" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "Flag" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Flag resources by category." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Flag resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Flag resources by status." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Flag resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Goal" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refines a search by Goal Category. This parameter is ignored if searching via _ID." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources for a specific patient ID. You can use \"patient\" or \"subject\" equivalently but they can't be used at the same time for different references. This parameter is ignored if searching via _ID." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refines a search based on Goal Status. This parameter is ignored if searching via _ID. This parameter is only supported by patient goals." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources for a specific patient ID. You can use \"patient\" or \"subject\" equivalently but they can't be used at the same time for different references. This parameter is ignored if searching via _ID." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Immunization" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Vaccine administration date. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included. This parameter is ignored if searching via ids." ]
+       ] [
+         fhir:name [ fhir:v "notgiven" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "A boolean that indicates whether or not an immunization has been administered. This parameter is ignored if searching via ids." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Immunization resources for a specified patient ID. This parameter is ignored if searching via ids." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Immunization by status. Completed is the only supported status." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "ImmunizationRecommendation" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "The FHIR id of a patient whose immunization recommendations you'd like to obtain. Only one of either patient or subject needs to be specified." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "List" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "code" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "The kind of list to search for (e.g. PatientList)" ]
+       ] [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Used to return patients that have questionnaires due by a certain date." ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "An internal id and system allowing access to a list without knowing its FHIR ID (currently supports Patient Lists)." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Location" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "Medication" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "MedicationDispense" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for MedicationDispense resources for a specified patient ID." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for MedicationDispense resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "MedicationRequest" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "authoredon" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for MedicationRequest resources for a given patient by specifying a date or a range of dates for when the medication was ordered. Note: all medications will be returned regardless of date range provided on the search." ]
+       ] [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for MedicationRequest resources by category. By default, the search returns all categories. Categories of inpatient, outpatient, and community are supported." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for MedicationRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for MedicationRequest resources by one or more statuses. By default, only medications with active statuses are returned. MedicationRequest searches support active, on-hold, completed and stopped. If searching by status, active must be included." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for MedicationRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "MedicationStatement" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for MedicationStatement resources by category. By default, the search returns all categories. Categories of inpatient, outpatient, community, and patientspecified are supported." ]
+       ] [
+         fhir:name [ fhir:v "effective" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Further refine a search for MedicationStatement resources for a given patient by specifying a date or a range of dates for when the medication was ordered. Note: all medications will be returned regardless of date range provided on the search." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for MedicationStatement resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for difference references." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for MedicationStatement resources by one or more statuses. By default, only medications with active statuses are returned. MedicationStatement searches support active, on-hold, completed, and stopped. If searching by status, active must be included." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for MedicationStatement resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "NutritionOrder" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for NutritionOrder resources for a specified patient ID." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Observation" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] [
+         fhir:code [ fhir:v "update" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Observation resources by category. Only laboratory, vital-signs, social-history, core-characteristics, functional-mental-status, LDA, and SNOMED codes 384821006 and 118228005 are supported." ]
+       ] [
+         fhir:name [ fhir:v "code" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Observation resources by LOINC code, SNOMED code, or flowsheet row IDs." ]
+       ] [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Observation resources by specifying a date or date range that a result- or vital sign-based Observation was resulted or recorded. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included." ]
+       ] [
+         fhir:name [ fhir:v "issued" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Observation resources by specifying a date or date range that a social-history-based Observation was made available. Enter dates in ISO format (YYYY[-MM[-DD[THH:MM[:SS][TZ]]]]). Local server time is assumed if time zone information is not included." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Observation resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Observation resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Organization" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "Patient" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "create" ]
+       ] [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "address" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using an address string." ]
+       ] [
+         fhir:name [ fhir:v "address-city" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using the city for a patient's home address. You can use this parameter along with other address parameters." ]
+       ] [
+         fhir:name [ fhir:v "address-postalcode" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using the postal code for a patient's home address. You can use this parameter along with other address parameters." ]
+       ] [
+         fhir:name [ fhir:v "address-state" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using the state for a patient's home address. You can use this parameter along with other address parameters." ]
+       ] [
+         fhir:name [ fhir:v "birthdate" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using a date of birth in ISO format (YYYY-MM-DD)." ]
+       ] [
+         fhir:name [ fhir:v "family" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by family (last) name. You can use the family parameter along with other name parameters to search by a patient's name. Family name searching supports exact matching, \"sounds like\" matching, and patient aliases." ]
+       ] [
+         fhir:name [ fhir:v "gender" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using the following gender codes: female, male, other, or unknown." ]
+       ] [
+         fhir:name [ fhir:v "given" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by given (first) name. You can use the given parameter along with other name parameters to search by a patient's name. Given name searching supports both exact and \"sounds like\" matches. Patient aliases and dominant name aliases (ex. Bob for Robert) are also supported." ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by a patient's identifier. You can use the identifier parameter as the only parameter in a search or in conjunction with other parameters. A patient's identifier must be in the format {<code system>|}<code> or {<ID Type>|}<ID>." ]
+       ] [
+         fhir:name [ fhir:v "legal-sex" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using the following gender codes: female, male, nonbinary, x, other, or unknown." ]
+       ] [
+         fhir:name [ fhir:v "name" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by a patient's name. To search on specific name parts use the name part parameters, such as family or given. This parameter is ignored if any name part parameters are used." ]
+       ] [
+         fhir:name [ fhir:v "own-name" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by patient's own last name, usually used in non-US names. You can use the own-name parameter along with other name parameters to search by a patient's name." ]
+       ] [
+         fhir:name [ fhir:v "own-prefix" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by patient's own last name prefix, usually used in non-US names. You can use the own-prefix parameter along with other name parameters to search by a patient's name, but own-name must also be included." ]
+       ] [
+         fhir:name [ fhir:v "partner-name" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by patient's spouse's last name, usually used in non-US names. You can use the partner-name parameter along with other name parameters to search by a patient's name, but own-name must also be included." ]
+       ] [
+         fhir:name [ fhir:v "partner-prefix" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources by patient's spouse's last name prefix, usually used in non-US names. You can use the partner-prefix parameter along with other name parameters to search by a patient's name, but own-name must also be included." ]
+       ] [
+         fhir:name [ fhir:v "telecom" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for Patient resources using a patient's home phone number, cell phone number, or email address." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Practitioner" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "address" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Any part of an address (street, city, etc.) where a practitioner can be visited. When used, family is also required. Only respected if no other address parameters are populated. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "address-city" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "The city where a practitioner can be visited. When used, address-state is also required. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "address-postalcode" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "The zip code where a practitioner can be found. When used, family is also required." ]
+       ] [
+         fhir:name [ fhir:v "address-state" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "The state where a practitioner can be found. When used, family is also required. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "family" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "A practitioner's family (last) name. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "given" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "A practitioner's given (first) name. When used, family is also required. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "A practitioner's identifier in the format <code system>|<code>. Code system must be a URN. When this parameter is provided, all others (except _id) are ignored." ]
+       ] [
+         fhir:name [ fhir:v "name" ] ;
+         fhir:type [ fhir:v "string" ] ;
+         fhir:documentation [ fhir:v "Any part of a practitioner's name. For full names, format should be first last. When specified, family and given are ignored. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "PractitionerRole" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "email" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for a PractitionerRole by entering a valid email address. Code system is ignored." ]
+       ] [
+         fhir:name [ fhir:v "identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for PractitionerRoles using identifiers. A code system is required. The code must be prepended with URN:OID. Some codes may need to be URL encoded prior to query." ]
+       ] [
+         fhir:name [ fhir:v "location" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for PractitionerRoles using a Location ID. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "organization" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for PractitionerRoles using an Organization ID. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "phone" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for a PractitionerRole by entering a valid phone number. Code system is ignored." ]
+       ] [
+         fhir:name [ fhir:v "practitioner" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for PractitionerRoles for a specified Practitioner ID. Only the first instance of this parameter is respected." ]
+       ] [
+         fhir:name [ fhir:v "role" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for a PractitionerRole by entering a valid role. System must be included." ]
+       ] [
+         fhir:name [ fhir:v "specialty" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Search for PractitionerRoles for a given specialty. A code system is required. Depending on the organization, NUCC may be supported." ]
+       ] [
+         fhir:name [ fhir:v "telecom" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for a PractitionerRole for a specific telecom. System must be specified as either 'phone' or 'email'" ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Procedure" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "category" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Procedure resources by category. Only the following values are supported: 103693007 (diagnostic procedures), 387713003 (surgical procedures), 9632001 (nursing procedures, Netherlands only), and 225317005 or freedom-restricting-intervention (restricting intervention, Netherlands only) are supported." ]
+       ] [
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "Refine a search for Procedure resources by specifying a date or date range that a Procedure was resulted. Enter dates in ISO format (YYYY[-MM[-DD]]). Not supported by nursing procedures or restricting interventions." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Procedure resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for Procedure resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "ProcedureRequest" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "encounter" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for ProcedureRequest resources for specific encounters. If not provided, all ProcedureRequest results are returned." ]
+       ] [
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for ProcedureRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "requester" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Refine a search for ProcedureRequest resources by individual making the request. By defualt, all ProcedureRequests are returned." ]
+       ] [
+         fhir:name [ fhir:v "status" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "Refine a search for ProcedureRequest resources by status. By default, only active ProcedureRequests are returned. Statuses of draft, active, completed, cancelled, and unknown are supported." ]
+       ] [
+         fhir:name [ fhir:v "subject" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "Search for ProcedureRequest resources for a specified patient ID. You can use \"patient\" or \"subject\" equivalently, but they cannot be used at the same time for different references." ]
+       ] [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] [
+       fhir:type [ fhir:v "Schedule" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "Slot" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ]
+     ] [
+       fhir:type [ fhir:v "Specimen" ] ;
+       fhir:interaction ( [
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:readHistory [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:updateCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalCreate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalRead [ fhir:v "not-supported" ] ;
+       fhir:conditionalUpdate [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:conditionalDelete [ fhir:v "not-supported" ] ;
+       fhir:searchInclude ( [ fhir:v "*" ] ) ;
+       fhir:searchParam ( [
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "FHIR resource IDs for the desired resources. If _id is used in a search, all other parameters will be ignored." ]
+       ] [
+         fhir:name [ fhir:v "_count" ] ;
+         fhir:type [ fhir:v "number" ] ;
+         fhir:documentation [ fhir:v "Number of results per page." ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

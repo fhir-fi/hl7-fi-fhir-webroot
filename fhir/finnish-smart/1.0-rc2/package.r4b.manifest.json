@@ -1,0 +1,6 @@
+{
+  "version" : "1.0.0-rc2",
+  "date" : "20230220082910",
+  "notForPublication" : true,
+  "name" : "hl7.fhir.fi.smart.r4b"
+}

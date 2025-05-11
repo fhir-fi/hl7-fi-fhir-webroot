@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fi-base-security-label-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fi-base-security-label-cs</b></p><a name=\"fi-base-security-label-cs\"> </a><a name=\"hcfi-base-security-label-cs\"> </a><a name=\"fi-base-security-label-cs-fi-FI\"> </a><p>This case-insensitive code system <code>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">TURVAKIELTO<a name=\"fi-base-security-label-cs-TURVAKIELTO\"> </a></td><td>Turvakielto</td><td>A non-disclosure for personal safety reasons according to DVV.</td></tr></table></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-security-label-cs",
+  "version" : "2.0.0-rc1",
+  "name" : "FiBaseSecurityLabelCS",
+  "title" : "Finnish CodeSystem for security labels",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-02-06T19:06:41+02:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "This is the CodeSystem for security labels in accordance with finnish authorities.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "TURVAKIELTO",
+    "display" : "Turvakielto",
+    "definition" : "A non-disclosure for personal safety reasons according to DVV."
+  }]
+}

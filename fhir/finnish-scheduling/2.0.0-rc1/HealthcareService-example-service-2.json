@@ -1,0 +1,22 @@
+{
+  "resourceType" : "HealthcareService",
+  "id" : "example-service-2",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: HealthcareService example-service-2</b></p><a name=\"example-service-2\"> </a><a name=\"hcexample-service-2\"> </a><a name=\"example-service-2-fi-FI\"> </a><p><b>providedBy</b>: <a href=\"Organization-example-org-unit.html\">Organization Esimerkki-Palveluyksikkö</a></p><p><b>type</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.1222 82}\">Vanhemmuuden selvittäminen</span></p><p><b>name</b>: Vanhemmuuden selvittäminen</p></div>"
+  },
+  "providedBy" : {
+    "reference" : "Organization/example-org-unit"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.1222",
+      "code" : "82",
+      "display" : "Vanhemmuuden selvittäminen"
+    }]
+  }],
+  "name" : "Vanhemmuuden selvittäminen"
+}

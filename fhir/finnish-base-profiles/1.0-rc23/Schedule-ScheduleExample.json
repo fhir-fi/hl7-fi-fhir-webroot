@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Schedule",
+  "id" : "ScheduleExample",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Schedule</b><a name=\"ScheduleExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Schedule &quot;ScheduleExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-schedule.html\">FI Base Schedule</a></p></div><p><b>identifier</b>: id:\u00a045\u00a0(use:\u00a0USUAL)</p><p><b>active</b>: true</p><p><b>serviceCategory</b>: 408443003 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#408443003)</span></p><p><b>serviceType</b>: 788007007 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#788007007)</span></p><p><b>specialty</b>: 394814009 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#394814009)</span></p><p><b>actor</b>: <a href=\"Location-LocationExample.html\">Location/LocationExample</a> &quot;Kirurgian poliklinikka&quot;</p><p><b>planningHorizon</b>: 2023-01-01 09:15:00+0000 --&gt; 2033-12-25 09:30:00+0000</p></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "system" : "http://example.org/scheduleid",
+    "value" : "45"
+  }],
+  "active" : true,
+  "serviceCategory" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "408443003"
+    }]
+  }],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "788007007"
+    }]
+  }],
+  "specialty" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "394814009"
+    }]
+  }],
+  "actor" : [{
+    "reference" : "Location/LocationExample"
+  }],
+  "planningHorizon" : {
+    "start" : "2023-01-01T09:15:00Z",
+    "end" : "2033-12-25T09:30:00Z"
+  }
+}

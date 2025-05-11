@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-child-encounter-2> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "id-for-child-encounter-2"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter";
+       fhir:index 0;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"id-for-child-encounter-2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;id-for-child-encounter-2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-encounter.html\">FI Base Encounter</a></p></div><p><b>status</b>: finished</p><p><b>class</b>: observation encounter (Details: http://terminology.hl7.org/ValueSet/v3-ActEncounterCode code OBSENC = 'OBSENC', stated as 'observation encounter')</p><p><b>subject</b>: <a href=\"Patient/id-for-patient\">Patient/id-for-patient</a></p><p><b>period</b>: 2022-02-28 12:03:00+0200 --&gt; 2022-02-28 12:18:00+0200</p><p><b>serviceProvider</b>: <span/></p><p><b>partOf</b>: <a href=\"Encounter-id-for-palvelutapahtuma.html\">Encounter/id-for-palvelutapahtuma</a></p></div>"
+  ]; # 
+  fhir:Encounter.status [ fhir:value "finished"]; # 
+  fhir:Encounter.class [
+     fhir:Coding.system [ fhir:value "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode" ];
+     fhir:Coding.code [ fhir:value "OBSENC" ];
+     fhir:Coding.display [ fhir:value "observation encounter" ]
+  ]; # 
+  fhir:Encounter.subject [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/id-for-patient>;
+     fhir:Reference.reference [ fhir:value "Patient/id-for-patient" ]
+  ]; # 
+  fhir:Encounter.period [
+     fhir:Period.start [ fhir:value "2022-02-28T12:03:00+02:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2022-02-28T12:18:00+02:00"^^xsd:dateTime ]
+  ]; # 
+  fhir:Encounter.serviceProvider [
+     fhir:Reference.type [ fhir:value "ServiceProvider" ];
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "1.2.246.10.8286189.10.100014" ]
+     ]
+  ]; # 
+  fhir:Encounter.partOf [
+     fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-palvelutapahtuma>;
+     fhir:Reference.reference [ fhir:value "Encounter/id-for-palvelutapahtuma" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-child-encounter-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

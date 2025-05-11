@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-nutrition"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/8999-5/">8999-5</a></td><td>Arvio nautitusta nestemäärästä</td><td>Arvio nautitusta nestemäärästä</td><td>Uppskattat oralt vätskeintag</td><td>Fluid intake oral Estimated</td></tr><tr><td><a href="https://loinc.org/9052-2/">9052-2</a></td><td>Kokonaisenergiamäärä</td><td>Kokonaisenergiamäärä</td><td>Totalt energiintag</td><td>Calorie intake total</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-nutrition"/>
+  <version value="0.2.1"/>
+  <name value="fiphr-vs-nutrition"/>
+  <title value="Value Set Finnish PHR Nutrition"/>
+  <status value="active"/>
+  <date value="2019-10-23T09:00:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Finnish PHR Nutrition Value Set that defines codes for Nutrition."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="8999-5"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Arvio nautitusta nestemäärästä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppskattat oralt vätskeintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Fluid intake oral Estimated"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9052-2"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kokonaisenergiamäärä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Totalt energiintag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Calorie intake total"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

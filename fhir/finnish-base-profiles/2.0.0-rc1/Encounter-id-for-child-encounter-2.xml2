@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="id-for-child-encounter-2"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter id-for-child-encounter-2</b></p><a name="id-for-child-encounter-2"> </a><a name="hcid-for-child-encounter-2"> </a><a name="id-for-child-encounter-2-fi-FI"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-OBSENC">ActCode OBSENC</a>: observation encounter</p><p><b>subject</b>: <a href="Patient-patient-of-municipality.html">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>period</b>: 2022-02-28 12:03:00+0200 --&gt; 2022-02-28 12:18:00+0200</p><p><b>serviceProvider</b>: Identifier: 1.2.246.10.8286189.10.100014</p><p><b>partOf</b>: <a href="Encounter-id-for-palvelutapahtuma.html">Encounter: identifier = urn:oid:1.2.246.10.6794809.14011.2023.200035 (use: official, ); status = in-progress; class = inpatient encounter (ActCode#IMP); period = 2022-02-27 01:03:00+0200 --&gt; (ongoing)</a></p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="OBSENC"/>
+    <display value="observation encounter"/>
+  </class>
+  <subject>
+    <reference value="Patient/patient-of-municipality"/>
+  </subject>
+  <period>
+    <start value="2022-02-28T12:03:00+02:00"/>
+    <end value="2022-02-28T12:18:00+02:00"/>
+  </period>
+  <serviceProvider>
+    <type value="ServiceProvider"/>
+    <identifier>
+      <value value="1.2.246.10.8286189.10.100014"/>
+    </identifier>
+  </serviceProvider>
+  <partOf>
+    <reference value="Encounter/id-for-palvelutapahtuma"/>
+  </partOf>
+</Encounter>

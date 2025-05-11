@@ -1,0 +1,9 @@
+[
+  {
+    "id" : "hl7.fhir.fi.smart",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart",
+    "version" : "0.3.0",
+    "name" : "FinnishSmart"
+  }
+]

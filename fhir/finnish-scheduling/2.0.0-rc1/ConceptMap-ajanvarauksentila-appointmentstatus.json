@@ -1,0 +1,135 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ajanvarauksentila-appointmentstatus",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ajanvarauksentila-appointmentstatus</b></p><a name=\"ajanvarauksentila-appointmentstatus\"> </a><a name=\"hcajanvarauksentila-appointmentstatus\"> </a><a name=\"ajanvarauksentila-appointmentstatus-fi-FI\"> </a><p>Mapping from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943 to <a href=\"http://hl7.org/fhir/R4/valueset-appointmentstatus.html\">AppointmentStatus</a></p><br/><p><b>Group 1 </b>Mapping from <code>https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</code> to <a href=\"http://hl7.org/fhir/R4/codesystem-appointmentstatus.html\">AppointmentStatus</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1 (Suunniteltu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>waitlist (Waitlisted)</td><td>Patient and need have been identified, the service provider and time have not.</td></tr><tr><td>2 (Tilattu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>proposed</td><td>Differs from Suunniteltu in that in Tilattu the service provider has been identified.</td></tr><tr><td>8 (Ehdotettu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>pending</td><td/></tr><tr><td>3 (Varattu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>booked</td><td/></tr><tr><td>4 (Peruttu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>cancelled</td><td/></tr><tr><td>5 (Siirretty)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>cancelled</td><td>There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated.</td></tr><tr><td>10 (Ilmoittautunut)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>checked-in</td><td/></tr><tr><td>6 (Alkanut)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>fulfilled</td><td>Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>7 (Toteutunut)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>fulfilled</td><td>Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>9 (Saapumatta)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>noshow</td><td/></tr></table></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus",
+  "version" : "2.0.0-rc1",
+  "name" : "FiAppointmentStatusCodeMap",
+  "title" : "Ajanvarauksen tila to Appointment status",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-02-09T17:06:35+00:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "Mapping between the Finnish logical model [*Ajanvaraus - Ajanvarauksen tila*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943) (oid `1.2.246.537.6.881`) and FHIR Appointment status codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "sourceUri" : "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943",
+  "targetCanonical" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+  "group" : [{
+    "source" : "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943",
+    "target" : "http://hl7.org/fhir/appointmentstatus",
+    "element" : [{
+      "code" : "1",
+      "display" : "Suunniteltu",
+      "target" : [{
+        "code" : "waitlist",
+        "display" : "Waitlisted",
+        "equivalence" : "equivalent",
+        "comment" : "Patient and need have been identified, the service provider and time have not."
+      }]
+    },
+    {
+      "code" : "2",
+      "display" : "Tilattu",
+      "target" : [{
+        "code" : "proposed",
+        "display" : "Proposed",
+        "equivalence" : "equivalent",
+        "comment" : "Differs from Suunniteltu in that in Tilattu the service provider has been identified."
+      }]
+    },
+    {
+      "code" : "8",
+      "display" : "Ehdotettu",
+      "target" : [{
+        "code" : "pending",
+        "display" : "Pending",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "3",
+      "display" : "Varattu",
+      "target" : [{
+        "code" : "booked",
+        "display" : "Booked",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "4",
+      "display" : "Peruttu",
+      "target" : [{
+        "code" : "cancelled",
+        "display" : "Cancelled",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "5",
+      "display" : "Siirretty",
+      "target" : [{
+        "code" : "cancelled",
+        "equivalence" : "wider",
+        "comment" : "There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated."
+      }]
+    },
+    {
+      "code" : "10",
+      "display" : "Ilmoittautunut",
+      "target" : [{
+        "code" : "checked-in",
+        "display" : "Checked In",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "6",
+      "display" : "Alkanut",
+      "target" : [{
+        "code" : "fulfilled",
+        "display" : "Fulfilled",
+        "equivalence" : "wider",
+        "comment" : "Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
+      }]
+    },
+    {
+      "code" : "7",
+      "display" : "Toteutunut",
+      "target" : [{
+        "code" : "fulfilled",
+        "display" : "Fulfilled",
+        "equivalence" : "wider",
+        "comment" : "Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment."
+      }]
+    },
+    {
+      "code" : "9",
+      "display" : "Saapumatta",
+      "target" : [{
+        "code" : "noshow",
+        "display" : "No Show",
+        "equivalence" : "equal"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-moderatetovigorouspa> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fiphr-cs-moderatetovigorouspa"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">82290-8-24h<a name=\"fiphr-cs-moderatetovigorouspa-82290-8-24h\"> </a></td><td>Daily Moderate to Vigorous Physical Activity in minutes</td><td>Daily PA minutes with MET &gt; 2.9</td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td>82290-8-24h</td><td>Daily moderate to vigorous physical activity, min</td><td>Päivittäinen kohtuullisen ja raskaan liikunnan määrä minuutteina</td><td>Måttlig eller hård aktivitet per dag, minuter</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.2.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "fiphr-cs-moderatetovigorouspa"]; # 
+  fhir:CodeSystem.title [ fhir:value "Code System Finnish PHR Moderate to Vigorous Physical Activity Fitness Observation Code"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2018-12-19T10:49:00+02:00"^^xsd:dateTime]; # 
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "Finnish PHR Fitness Codesystem, that defines the code used for daily minutes of moderate to vigorous physical activity. Will be replaced with LOINC system code when available."]; # 
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "82290-8-24h" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Daily Moderate to Vigorous Physical Activity in minutes" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Daily PA minutes with MET > 2.9" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fi" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Päivittäinen kohtuullisen ja raskaan liikunnan määrä minuutteina" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "sv" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Måttlig eller hård aktivitet per dag, minuter" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Daily moderate to vigorous physical activity, min" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-moderatetovigorouspa.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

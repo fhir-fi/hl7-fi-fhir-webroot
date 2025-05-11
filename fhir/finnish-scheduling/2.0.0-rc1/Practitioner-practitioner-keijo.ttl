@@ -1,0 +1,28 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Practitioner/practitioner-keijo> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-keijo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"^^xsd:anyURI ;
+       fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-keijo</b></p><a name=\"practitioner-keijo\"> </a><a name=\"hcpractitioner-keijo\"> </a><a name=\"practitioner-keijo-fi-FI\"> </a><p><b>name</b>: Keijo Kätilö</p></div>"
+  ] ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "Keijo Kätilö" ] ;
+     fhir:family [ fhir:v "Kätilö" ] ;
+     fhir:given ( [ fhir:v "Keijo" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

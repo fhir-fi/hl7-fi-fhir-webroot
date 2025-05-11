@@ -1,0 +1,107 @@
+[
+  {
+    "id" : "apotti-eko01",
+    "type" : "CapabilityStatement",
+    "url" : "https://hl7.fi/fhir/finnish-smart/CapabilityStatement/apotti-eko01",
+    "version" : "2.0.0-rc1",
+    "name" : "CapabilityStatementExampleApotti"
+  },
+  {
+    "id" : "fi-smart-server",
+    "type" : "CapabilityStatement",
+    "url" : "https://hl7.fi/fhir/finnish-smart/CapabilityStatement/fi-smart-server",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSmartServer"
+  },
+  {
+    "id" : "hl7.fhir.fi.smart",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart",
+    "version" : "2.0.0-rc1",
+    "name" : "FinnishSmart"
+  },
+  {
+    "id" : "fi-smart-allergy-intolerance",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-allergy-intolerance",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTAllergyIntolerance"
+  },
+  {
+    "id" : "fi-smart-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-condition",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTCondition"
+  },
+  {
+    "id" : "fi-smart-immunization",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-immunization",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTImmunization"
+  },
+  {
+    "id" : "fi-smart-medication",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-medication",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTMedication"
+  },
+  {
+    "id" : "fi-smart-medication-request",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-medication-request",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTMedicationRequest"
+  },
+  {
+    "id" : "fi-smart-medication-statement",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-medication-statement",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTMedicationStatement"
+  },
+  {
+    "id" : "fi-smart-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-observation",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTObservation"
+  },
+  {
+    "id" : "fi-smart-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-patient",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTPatient"
+  },
+  {
+    "id" : "fi-smart-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-practitioner",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTPractitioner"
+  },
+  {
+    "id" : "fi-smart-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-practitioner-role",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTPractitionerRole"
+  },
+  {
+    "id" : "fi-smart-problem-list-item",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-problem-list-item",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSMARTProblemListItem"
+  },
+  {
+    "id" : "fi-smart-server-profile",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-server-profile",
+    "version" : "2.0.0-rc1",
+    "name" : "FiSmartServerProfile"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "packages" : [
+    {
+      "path" : "finnish-base-profiles/package-list.json",
+      "package-id" : "hl7.fhir.fi.base",
+      "title" : "Finnish Base Profiles",
+      "canonical" : "https://hl7.fi/fhir/finnish-base-profiles",
+      "category" : "National Base",
+      "ci-build" : "https://fhir.fi/finnish-base-profiles/",
+      "version-count" : 19,
+      "latest" : {
+        "version" : "2.0.0-rc1",
+        "date" : "2025-02-06",
+        "path" : "https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1"
+      },
+      "milestone" : {
+        "version" : "2.0.0-rc1",
+        "date" : "2025-02-06",
+        "path" : "https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1"
+      }
+    },
+    {
+      "path" : "finnish-smart/package-list.json",
+      "package-id" : "hl7.fhir.fi.smart",
+      "title" : "Finnish Implementation Guide for SMART App Launch",
+      "canonical" : "https://hl7.fi/fhir/finnish-smart",
+      "category" : "National Base",
+      "ci-build" : "https://fhir.fi/finnish-smart/",
+      "version-count" : 9,
+      "latest" : {
+        "version" : "2.0.0-rc1",
+        "date" : "2025-02-06",
+        "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc1"
+      },
+      "milestone" : {
+        "version" : "2.0.0-rc1",
+        "date" : "2025-02-06",
+        "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc1"
+      }
+    },
+    {
+      "path" : "finnish-scheduling/package-list.json",
+      "package-id" : "hl7.fhir.fi.scheduling",
+      "title" : "Finnish Scheduling",
+      "canonical" : "https://hl7.fi/fhir/finnish-scheduling",
+      "category" : "Workflow",
+      "ci-build" : "https://fhir.fi/finnish-scheduling",
+      "version-count" : 6,
+      "latest" : {
+        "version" : "2.0.0-rc2",
+        "date" : "2025-05-09",
+        "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2"
+      },
+      "milestone" : {
+        "version" : "2.0.0-rc2",
+        "date" : "2025-05-09",
+        "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ajanvarauksentila-appointmentstatus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ajanvarauksentila-appointmentstatus</b></p><a name=\"ajanvarauksentila-appointmentstatus\"> </a><a name=\"hcajanvarauksentila-appointmentstatus\"> </a><a name=\"ajanvarauksentila-appointmentstatus-fi-FI\"> </a><p>Mapping from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943 to <a href=\"http://hl7.org/fhir/R4/valueset-appointmentstatus.html\">AppointmentStatus</a></p><br/><p><b>Group 1 </b>Mapping from <code>https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</code> to <a href=\"http://hl7.org/fhir/R4/codesystem-appointmentstatus.html\">AppointmentStatus</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1 (Suunniteltu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>waitlist (Waitlisted)</td><td>Patient and need have been identified, the service provider and time have not.</td></tr><tr><td>2 (Tilattu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>proposed</td><td>Differs from Suunniteltu in that in Tilattu the service provider has been identified.</td></tr><tr><td>8 (Ehdotettu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>pending</td><td/></tr><tr><td>3 (Varattu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>booked</td><td/></tr><tr><td>4 (Peruttu)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>cancelled</td><td/></tr><tr><td>5 (Siirretty)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>cancelled</td><td>There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated.</td></tr><tr><td>10 (Ilmoittautunut)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>checked-in</td><td/></tr><tr><td>6 (Alkanut)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>fulfilled</td><td>Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>7 (Toteutunut)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td>fulfilled</td><td>Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>9 (Saapumatta)</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td>noshow</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "2.0.0-rc1"] ; # 
+  fhir:name [ fhir:v "FiAppointmentStatusCodeMap"] ; # 
+  fhir:title [ fhir:v "Ajanvarauksen tila to Appointment status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2025-02-09T17:06:35+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Finland"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Finland" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.hl7.fi/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "mikael@sensotrend.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mapping between the Finnish logical model [*Ajanvaraus - Ajanvarauksen tila*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943) (oid `1.2.246.537.6.881`) and FHIR Appointment status codes."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FI" ] ;
+       fhir:display [ fhir:v "Finland" ]
+     ] )
+  ] ) ; # 
+  fhir:source [ fhir:v "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"^^xsd:anyURI] ; # 
+  fhir:target [
+     fhir:v "http://hl7.org/fhir/ValueSet/appointmentstatus"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/appointmentstatus>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://hl7.org/fhir/appointmentstatus"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Suunniteltu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "waitlist" ] ;
+         fhir:display [ fhir:v "Waitlisted" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "Patient and need have been identified, the service provider and time have not." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Tilattu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "proposed" ] ;
+         fhir:display [ fhir:v "Proposed" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "Differs from Suunniteltu in that in Tilattu the service provider has been identified." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "8" ] ;
+       fhir:display [ fhir:v "Ehdotettu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "pending" ] ;
+         fhir:display [ fhir:v "Pending" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Varattu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "booked" ] ;
+         fhir:display [ fhir:v "Booked" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "4" ] ;
+       fhir:display [ fhir:v "Peruttu" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "cancelled" ] ;
+         fhir:display [ fhir:v "Cancelled" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "5" ] ;
+       fhir:display [ fhir:v "Siirretty" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "cancelled" ] ;
+         fhir:equivalence [ fhir:v "wider" ] ;
+         fhir:comment [ fhir:v "There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "10" ] ;
+       fhir:display [ fhir:v "Ilmoittautunut" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "checked-in" ] ;
+         fhir:display [ fhir:v "Checked In" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "6" ] ;
+       fhir:display [ fhir:v "Alkanut" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "fulfilled" ] ;
+         fhir:display [ fhir:v "Fulfilled" ] ;
+         fhir:equivalence [ fhir:v "wider" ] ;
+         fhir:comment [ fhir:v "Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "7" ] ;
+       fhir:display [ fhir:v "Toteutunut" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "fulfilled" ] ;
+         fhir:display [ fhir:v "Fulfilled" ] ;
+         fhir:equivalence [ fhir:v "wider" ] ;
+         fhir:comment [ fhir:v "Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment." ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "9" ] ;
+       fhir:display [ fhir:v "Saapumatta" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "noshow" ] ;
+         fhir:display [ fhir:v "No Show" ] ;
+         fhir:equivalence [ fhir:v "equal" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

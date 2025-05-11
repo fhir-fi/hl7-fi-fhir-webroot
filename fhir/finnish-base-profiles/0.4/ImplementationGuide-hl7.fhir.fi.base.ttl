@@ -1,0 +1,2369 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "hl7.fhir.fi.base"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FinnishBaseProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base</pre><div><p>A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland</p>\n</div></div>"
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.4.0"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "FinnishBaseProfiles"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "Finnish Base Profiles"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-02T11:48:28+02:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Finland"]; # 
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Finland" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.fi/" ]
+     ]
+  ]; # 
+  fhir:ImplementationGuide.description [ fhir:value "A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland"]; # 
+  fhir:ImplementationGuide.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FI" ];
+       fhir:Coding.display [ fhir:value "Finland" ]
+     ]
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.fi.base"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ]; # 
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "hl7_fhir_uv_ipa" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa";
+       fhir:link <http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ipa" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "0.1.0" ]
+  ]; # 
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2022+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ballot" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "ipa-comparison" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "{last}" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://hl7.fi/fhir/finnish-base-profiles/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2022+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "ballot" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "ipa-comparison" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "{last}" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://hl7.fi/fhir/finnish-base-profiles/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-appointment" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Appointment" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Appointment resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-condition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Condition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Condition resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-consent>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-consent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Consent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Consent resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-device>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Device" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Device resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-diagnostic-report>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-diagnostic-report" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base DiagnosticReport" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the DiagnosticReport resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Encounter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Encounter resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-healthcare-service" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base HealthcareService" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the HealthcareService resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-location" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Location" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Location resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-medication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Medication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Medication resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-medication-administration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base MedicationAdministration" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the MedicationAdministration resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-medication-statement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base MedicationStatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the MedicationStatement resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Observation resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Organization resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Patient resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Practitioner resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-practitioner-role" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base PractitionerRole" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the PractitionerRole resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-schedule" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Schedule" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Schedule resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fi-base-slot" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FI Base Slot" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the Finnish base profile for the Slot resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/municipality-code" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MunicipalityCode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension for home municipality" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-profession" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient Profession Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Extension for presenting patient profession." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-visit>;
+         fhir:Reference.reference [ fhir:value "Encounter/id-for-visit" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter - patient primary care visit" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a FI Base encounter where a patient has completed a visit in primary care." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter";
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>
+       ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Encounter/id-for-ward-encounter>;
+         fhir:Reference.reference [ fhir:value "Encounter/id-for-ward-encounter" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter - patient is currently receiving care at a ward treating surgical patients" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a FI Base encounter where a patient is currently receiving care at a ward." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter";
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/patient-of-municipality>;
+         fhir:Reference.reference [ fhir:value "Patient/patient-of-municipality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient - with the MunicipalityCode extension." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example of a FI Base patient with the MunicipalityCode extension." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient";
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-max>;
+         fhir:Reference.reference [ fhir:value "Observation/bloodglucose-max" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - blood glucose optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example blood glucose measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-ext-boolean>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-ext-boolean" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-ext-boolean" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR extension structure to be used in boolean type extension element in profiles." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-ext-creatingapplication>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-ext-creatingapplication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-ext-creatingapplication" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Information about the application that created the resource instance" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-ext-pq-translation>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-ext-pq-translation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-ext-pq-translation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR extension to express an alternative representation of the same physical quantity expressed in a different unit from a different unit code system and possibly with a different value." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-unsignedint>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-unsignedint" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-unsignedint" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR extension structure to be used in unsignedInt type extension element in profiles." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/FIPHRMetByStandardRMR>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FIPHRMetByStandardRMR" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FIPHRMetByStandardRMR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-bloodglucose>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-bloodglucose" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-bloodglucose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for blood glucose measurement." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-bloodpressure>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-bloodpressure" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-bloodpressure" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for blood pressure measurement" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-bodyweight>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-bodyweight" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-bodyweight" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for Bodyweight observation resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-calorieintake>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-calorieintake" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-calorieintake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for Calorie Intake observation resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-selfcareplan-r4>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-selfcareplan-r4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-selfcareplan-r4" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "StructureDefinition for FinnishPHR SelfCarePlan resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-exercisetracking>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-exercisetracking" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-exercisetracking" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-fitness>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-fitness" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-fitness" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR base profile for Fitness Observation resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-insulindosing-r4>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-insulindosing-r4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-insulindosing-r4" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for Insulin Dosing" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-macronutrientintake>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-macronutrientintake" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-macronutrientintake" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for Macronutrient Intake observation resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-moderatetovigorouspatime>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-moderatetovigorouspatime" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-moderatetovigorouspatime" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for measured or patient-reported time spent on moderate to vigorous physical activity over a period. At this time weekly (period) and 24h period (dateTime) is coded. The profile is based on the Finnish PHR Fitness profile." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-nutrition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-nutrition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-nutrition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR base profile for nutrition Observation resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for representing a Finnish person" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-questionnaireresponse-r4>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-questionnaireresponse-r4" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-questionnaireresponse-r4" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR StructureDefinition for QuestionnaireResponse Resource." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-questionnaire>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-questionnaire" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR StructureDefinition for Questionnaire Resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-stepstaken>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-stepstaken" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-stepstaken" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR profile for fitness device measurement or patient-reported steps taken over a time period. The profile is based on the Finnish PHR Fitness profile." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fiphr-sd-vitalsigns>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/fiphr-sd-vitalsigns" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-sd-vitalsigns" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR base profile for Observation resource" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3>;
+         fhir:Reference.reference [ fhir:value "MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - Insulin dosage optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example insulin dosage with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration>
+       ]
+     ], [
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2>;
+         fhir:Reference.reference [ fhir:value "MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - Insulin dosage mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example insulin dosage with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration>
+       ]
+     ], [
+       fhir:index 47;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodpressure-max>;
+         fhir:Reference.reference [ fhir:value "Observation/bloodpressure-max" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - blood pressure optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example blood pressure measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 48;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodpressure-min>;
+         fhir:Reference.reference [ fhir:value "Observation/bloodpressure-min" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - blood pressure mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example blood pressure measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bodyweight-max>;
+         fhir:Reference.reference [ fhir:value "Observation/bodyweight-max" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - body weight optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example body weight measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bodyweight-min>;
+         fhir:Reference.reference [ fhir:value "Observation/bodyweight-min" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - body weight mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example body weight measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 51;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8>;
+         fhir:Reference.reference [ fhir:value "Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - calorie intake optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example calorie intake measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 52;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7>;
+         fhir:Reference.reference [ fhir:value "Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - calorie intake mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example calorie intake measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 53;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/2894b2e6-7ebf-4c33-93e4-31935effff22>;
+         fhir:Reference.reference [ fhir:value "Observation/2894b2e6-7ebf-4c33-93e4-31935effff22" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - carbohydrate intake optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example estimated carbohydrate intake measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 54;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/2894b2e6-7ebf-4c33-93e4-31935effff21>;
+         fhir:Reference.reference [ fhir:value "Observation/2894b2e6-7ebf-4c33-93e4-31935effff21" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - carbohydrate intake mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example estimated carbohydrate intake measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 55;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/71831b54-1a80-47c5-ba84-0180a5eb784b>;
+         fhir:Reference.reference [ fhir:value "Observation/71831b54-1a80-47c5-ba84-0180a5eb784b" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - exercise tracking optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example exercise tracking measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 56;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/71831b54-1a80-47c5-ba84-0180a5eb784a>;
+         fhir:Reference.reference [ fhir:value "Observation/71831b54-1a80-47c5-ba84-0180a5eb784a" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - exercise tracking mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example exercise tracking measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/48983b8b-ead3-4206-9583-fcdd40d762b7>;
+         fhir:Reference.reference [ fhir:value "Observation/48983b8b-ead3-4206-9583-fcdd40d762b7" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - MET measurement optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example MET measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/48983b8b-ead3-4206-9583-fcdd40d762b6>;
+         fhir:Reference.reference [ fhir:value "Observation/48983b8b-ead3-4206-9583-fcdd40d762b6" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - MET measurement mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example MET measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 59;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/mtvpa-max>;
+         fhir:Reference.reference [ fhir:value "Observation/mtvpa-max" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - physical activity optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example physical activity measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/mtvpa-min>;
+         fhir:Reference.reference [ fhir:value "Observation/mtvpa-min" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - physical activity mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example physical activity measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9>;
+         fhir:Reference.reference [ fhir:value "Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - step count optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example step count measurement with optional elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/1153859e-0c86-1000-abb8-511d0000b222>;
+         fhir:Reference.reference [ fhir:value "Observation/1153859e-0c86-1000-abb8-511d0000b222" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "1153859e-0c86-1000-abb8-511d0000b222" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-min>;
+         fhir:Reference.reference [ fhir:value "Observation/bloodglucose-min" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - blood glucose mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example blood glucose measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CapabilityStatement/kanta-phr-capabilitystatement-at>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/kanta-phr-capabilitystatement-at" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "kanta-phr-capabilitystatement-at" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The capability statement for Kanta PHR service client software acceptance testing environment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CapabilityStatement/kanta-phr-capabilitystatement>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/kanta-phr-capabilitystatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "kanta-phr-capabilitystatement" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The capability statement for Kanta PHR service production environment" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 66;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Bundle/diabetes-data-bundle-kantaphr-r4-en>;
+         fhir:Reference.reference [ fhir:value "Bundle/diabetes-data-bundle-kantaphr-r4-en" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient generated glucose observations and insulin administrations as a bundle, in English" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Bundle/diabetes-data-bundle-kantaphr-sv>;
+         fhir:Reference.reference [ fhir:value "Bundle/diabetes-data-bundle-kantaphr-sv" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient generated glucose observations and insulin administrations as a bundle, in Swedish" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Bundle/diabetes-data-bundle>;
+         fhir:Reference.reference [ fhir:value "Bundle/diabetes-data-bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient generated glucose observations and insulin administrations as a bundle, in Finnish" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Bundle of resources uploaded by a patient from a insulin delvery system containing both a continuous glucose sensor and an insulin pump." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CarePlan/b88191e3-ea47-4feb-9da9-e3b359fa8fca>;
+         fhir:Reference.reference [ fhir:value "CarePlan/b88191e3-ea47-4feb-9da9-e3b359fa8fca" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "b88191e3-ea47-4feb-9da9-e3b359fa8fca" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Selkäkipusi takia sinun tulisi hakeutua välittömästi päivystysvastaanotolle. Alaselkäkipu on paikallista ja kestänyt 1 - 4 viikkoa. Potilaalla on kuumetta 38C , potilas on sairastanut syövän tai sairastaa syöpää, vaikeuksia pidättää virtsaa, vaikeuksia pidättää ulostetta ja vaikeuksia virtsaamisessa (virtsaaminen ei onnistu). Kiireellisesti terveydenhuollon ammattilaisen arviota vaativat oireet: virtsainkontinenssi, virtsaamisvaikeus ja ulosteinkontinenssi. Selkäoireeseen liittyy kipua, jonka voimakkuus on 5/10. Selkäkipu on alkanut välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen. Tapaturman sattumistapa: Kompastuin kengännauhoihin. Yleisvointi on kohtalainen (pystyy tekemään pakolliset päivittäiset toiminnot). Kipulääke auttaa. Tarvitsee sairauslomaa." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 70;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CarePlan" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CarePlan/care-plan-optional>;
+         fhir:Reference.reference [ fhir:value "CarePlan/care-plan-optional" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "care-plan-optional" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "<div class=\"read-alert\"><p>Selkäkipusi takia sinun tulisi hakeutua välittömästi päivystysvastaanotolle.</p></div> <div class=\"read-reminder\"><p>Esitiedot Omaolo-oirearviosta (22.5.2020 klo 12:13:14):  Alaselkäkipu on paikallista ja kestänyt 1 - 4 viikkoa.  Potilaalla on kuumetta 38°C , potilas on sairastanut syövän tai sairastaa syöpää, vaikeuksia pidättää virtsaa, vaikeuksia pidättää ulostetta ja vaikeuksia virtsaamisessa (virtsaaminen ei onnistu).  Kiireellisesti terveydenhuollon ammattilaisen arviota vaativat oireet: virtsainkontinenssi, virtsaamisvaikeus ja ulosteinkontinenssi. Selkäoireeseen liittyy kipua, jonka voimakkuus on 5/10. Selkäkipu on alkanut välittömästi kaatumisen, selkään kohdistuneen iskun tai muun tapaturman jälkeen. Tapaturman sattumistapa: Kompastuin kengännauhoihin. Yleisvointi on kohtalainen (pystyy tekemään pakolliset päivittäiset toiminnot). Kipulääke auttaa. Tarvitsee sairauslomaa.</p></div>" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 71;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Patient/36749a02-1710-44e7-aa76-0e934eb7860a>;
+         fhir:Reference.reference [ fhir:value "Patient/36749a02-1710-44e7-aa76-0e934eb7860a" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "36749a02-1710-44e7-aa76-0e934eb7860a" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 72;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-careplancategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-careplancategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-careplancategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates the plan category." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 73;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-consentcategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-consentcategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-consentcategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Consent Category codes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 74;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-fitnesscategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-fitnesscategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-fitnesscategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation category code for Finnish PHR Fitness Category" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 75;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-insulincode>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-insulincode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-insulincode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Insulin Code System, includes codes indicating what kind of insulin has been administered." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 76;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-moderatetovigorouspa>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-moderatetovigorouspa" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-moderatetovigorouspa" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Fitness Codesystem, that defines the code used for daily minutes of moderate to vigorous physical activity. Will be replaced with LOINC system code when available." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-observationcategory>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-observationcategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-observationcategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Observation Category Code System that defines codes for Observation.category when there is no suitable code in the FHIR standard observation category code system." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 78;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fiphr-cs-vnrcode>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/fiphr-cs-vnrcode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-cs-vnrcode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR VNR codesystem, that defines VNR codes with CodeSystem.content as not-present." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 79;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-careplancategory>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-careplancategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-careplancategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates type of SelfCarePlan." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 80;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-confidentiality>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-confidentiality" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-confidentiality" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set for confidentiality codes used in finnish PHR" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 81;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-consentcategory>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-consentcategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-consentcategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Consent Category value set." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 82;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-exerciseactivity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-exerciseactivity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-exerciseactivity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Exercise Activity value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 83;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-exerciseintensity>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-exerciseintensity" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-exerciseintensity" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Exercise Intensity value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 84;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-exercisetracking>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-exercisetracking" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-exercisetracking" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Exercise Tracking value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 85;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-fitnesscategory-2>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-fitnesscategory-2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-fitnesscategory-2" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fitness Category code." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 86;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-fitnesscategory-3>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-fitnesscategory-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-fitnesscategory-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fitness Category code." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 87;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-fitnesscategory>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-fitnesscategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-fitnesscategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Fitness Category code." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 88;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-fitnessresult>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-fitnessresult" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-fitnessresult" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set indicates the allowed fitness or physical activity result types in Finnish PHR. The concept Daily Activity fitness panel (62812-3) is a grouping structure for a set of physical activity, and for convenience also vital sign, measurements and includes related links (with type=has-member) to the Observations in this set or the parallel Finnish PHR Vital Signs value set (e.g. steps taken, minimum or maximum heart rate, calories burned, moderate to vigorous physical activity minutes, sedentary activity minutes, sleep episodes and exercises)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 89;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-insulincode>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-insulincode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-insulincode" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A Finnish PHR value set for the codes to be used with insulin dosing. Includes VNR codes (reference to the national VNR code system) or specific codes to indicate what kind of insulin has been administered." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 90;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-macronutrients>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-macronutrients" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-macronutrients" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Macronutrition Value Set that defines codes for Macronutrients." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 91;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-metbystandardrmr>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-metbystandardrmr" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-metbystandardrmr" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR MET by Standard RMR value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 92;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-nutrition>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-nutrition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-nutrition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Nutrition Value Set that defines codes for Nutrition." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 93;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-observationcategory>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-observationcategory" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-observationcategory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Observation Category Value Set that defines codes for Observation.category when there is no suitable code in the FHIR standard observation category value set." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 94;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforadjustedmet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-sourceforadjustedmet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-sourceforadjustedmet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Source for Adjusted MET value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 95;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforestimatedmet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-sourceforestimatedmet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-sourceforestimatedmet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Source for Estimated MET value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 96;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-sourceforreportedmet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-sourceforreportedmet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-sourceforreportedmet" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Finnish PHR Source for Reported MET value set" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 97;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fiphr-vs-vitalsigns>;
+         fhir:Reference.reference [ fhir:value "ValueSet/fiphr-vs-vitalsigns" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "fiphr-vs-vitalsigns" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set indicates the allowed vital sign result types in Finnish PRH. The concept Vitals signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 98;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv>;
+         fhir:Reference.reference [ fhir:value "MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationAdministration example of insulin basal dose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration>
+       ]
+     ], [
+       fhir:index 99;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-bolus-dose-fi>;
+         fhir:Reference.reference [ fhir:value "MedicationAdministration/medication-administration-insulin-bolus-dose-fi" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationAdministration example of insulin dose" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration>
+       ]
+     ], [
+       fhir:index 100;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "MedicationAdministration" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en>;
+         fhir:Reference.reference [ fhir:value "MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MedicationAdministration example of temporary basal rate" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-medication-administration>
+       ]
+     ], [
+       fhir:index 101;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8>;
+         fhir:Reference.reference [ fhir:value "Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - step count mandatory" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An example step count measurement with mandatory elements." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 102;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-as-text>;
+         fhir:Reference.reference [ fhir:value "Observation/bloodglucose-as-text" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - blood glucose result as text" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code 'astext' must be used in dataAbsentReason.coding.code." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Observation/bloodglucose-data-absent>;
+         fhir:Reference.reference [ fhir:value "Observation/bloodglucose-data-absent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kanta PHR - blood glucose with data absent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is an example, where measurement device has failed to measure blood glucose reading. In this case 'error' must be used in dataAbsentReason.coding.code." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation";
+         fhir:link <http://fhir.fi/finnish-base-profiles/StructureDefinition/fi-base-observation>
+       ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ];
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 1;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "profiles.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "extensions.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "terminology.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 4;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "examples.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "examples.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Examples" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "downloads.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "history.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "history.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Version History" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

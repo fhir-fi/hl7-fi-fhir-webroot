@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "appointment-status-extension-01",
+  "meta" : {
+    "lastUpdated" : "2019-12-14T09:16:34.659+03:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment appointment-status-extension-01</b></p><a name=\"appointment-status-extension-01\"> </a><a name=\"hcappointment-status-extension-01\"> </a><a name=\"appointment-status-extension-01-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2019-12-14 09:16:34+0300</p></div><p><b>status</b>: Waitlisted</p><p><b>created</b>: 2019-12-14 09:16:34+0300</p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Patient-patient-petri.html\">Petri Potilas  Male, DoB: 2010-10-11 ( urn:oid:1.2.246.21#101100A9277\u00a0(use:\u00a0official,\u00a0))</a></td><td>Tentative</td></tr></table></div>"
+  },
+  "status" : "waitlist",
+  "_status" : {
+    "extension" : [{
+      "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ajanvarauksen-tila",
+      "valueCoding" : {
+        "system" : "urn:oid:1.2.246.537.6.881",
+        "code" : "1",
+        "display" : "Suunniteltu"
+      }
+    }]
+  },
+  "created" : "2019-12-14T09:16:34+03:00",
+  "participant" : [{
+    "actor" : {
+      "reference" : "Patient/patient-petri"
+    },
+    "status" : "tentative"
+  }]
+}

@@ -1,0 +1,142 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "appointmentstatus-ajanvarauksentila",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap appointmentstatus-ajanvarauksentila</b></p><a name=\"appointmentstatus-ajanvarauksentila\"> </a><a name=\"hcappointmentstatus-ajanvarauksentila\"> </a><a name=\"appointmentstatus-ajanvarauksentila-fi-FI\"> </a><p>Mapping from <a href=\"http://hl7.org/fhir/R4/valueset-appointmentstatus.html\">AppointmentStatus</a> to https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</p><br/><p><b>Group 1 </b>Mapping from <a href=\"http://hl7.org/fhir/R4/codesystem-appointmentstatus.html\">AppointmentStatus</a> to <code>https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</code></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"http://hl7.org/fhir/R4/codesystem-appointmentstatus.html\" title=\"http://hl7.org/fhir/appointmentstatus\">AppointmentStatus</a></td><td/><td colspan=\"2\"><b>Codes</b> from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</td><td/></tr><tr><td style=\"border-right-width: 0px\">proposed</td><td style=\"border-left-width: 0px\">Proposed</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">8</td><td style=\"border-left-width: 0px\">Ehdotettu</td><td>The Finnish logical model does not separate between proposed and pending codes</td></tr><tr><td style=\"border-right-width: 0px\">pending</td><td style=\"border-left-width: 0px\">Pending</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">8</td><td style=\"border-left-width: 0px\">Ehdotettu</td><td>The Finnish logical model does not separate between proposed and pending codes</td></tr><tr><td style=\"border-right-width: 0px\">booked</td><td style=\"border-left-width: 0px\">Booked</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">3</td><td style=\"border-left-width: 0px\">Varattu</td><td/></tr><tr><td style=\"border-right-width: 0px\">arrived</td><td style=\"border-left-width: 0px\">Arrived</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#wider\" title=\"wider\">maps to wider concept</a></td><td style=\"border-right-width: 0px\">10</td><td style=\"border-left-width: 0px\">Ilmoittautunut</td><td>The Finnish logical model does not separate between arrived and checked-in codes</td></tr><tr><td style=\"border-right-width: 0px\">fulfilled</td><td style=\"border-left-width: 0px\">Fulfilled</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">7</td><td style=\"border-left-width: 0px\">Toteutunut</td><td>Use Toteutunut when the service related to the Appointment has begun or is completed</td></tr><tr><td style=\"border-right-width: 0px\">cancelled</td><td style=\"border-left-width: 0px\">Cancelled</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">4</td><td style=\"border-left-width: 0px\">Peruttu</td><td/></tr><tr><td style=\"border-right-width: 0px\">noshow</td><td style=\"border-left-width: 0px\">No Show</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equal\" title=\"equal\">is equal to</a></td><td style=\"border-right-width: 0px\">9</td><td style=\"border-left-width: 0px\">Saapumatta</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">entered-in-error</td><td style=\"border-left-width: 0px\">Entered in error</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">checked-in</td><td style=\"border-left-width: 0px\">Checked In</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">10</td><td style=\"border-left-width: 0px\">Ilmoittautunut</td><td>The Finnish logical model does not separate between arrived and checked-in codes</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">waitlist</td><td style=\"border-left-width: 0px; border-bottom-style: none\">Waitlisted</td><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">1</td><td style=\"border-left-width: 0px\">Suunniteltu</td><td>Use Suunniteltu when no service provider has been identified</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-top-style: none; border-left-width: 0px\"/><td><a href=\"http://hl7.org/fhir/extensions/5.1.0/CodeSystem-concept-map-equivalence.html#narrower\" title=\"narrower\">narrower</a></td><td style=\"border-right-width: 0px\">2</td><td style=\"border-left-width: 0px\">Tilattu</td><td>Use Tilattu when a service provider has been identified</td></tr></table></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-scheduling/ConceptMap/appointmentstatus-ajanvarauksentila",
+  "version" : "0.3.0",
+  "name" : "FiAppointmentStatusCodeMap",
+  "title" : "Appointment status to Ajanvarauksen tila",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-10-22T00:30:31+03:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "Mapping between FHIR Appointment status codes and the Finnish logical model [*Ajanvaraus - Ajanvarauksen tila*](https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943) (oid `1.2.246.537.6.881`).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "sourceCanonical" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+  "targetUri" : "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943",
+  "group" : [{
+    "source" : "http://hl7.org/fhir/appointmentstatus",
+    "target" : "https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943",
+    "element" : [{
+      "code" : "proposed",
+      "display" : "Proposed",
+      "target" : [{
+        "code" : "8",
+        "display" : "Ehdotettu",
+        "equivalence" : "wider",
+        "comment" : "The Finnish logical model does not separate between proposed and pending codes"
+      }]
+    },
+    {
+      "code" : "pending",
+      "display" : "Pending",
+      "target" : [{
+        "code" : "8",
+        "display" : "Ehdotettu",
+        "equivalence" : "wider",
+        "comment" : "The Finnish logical model does not separate between proposed and pending codes"
+      }]
+    },
+    {
+      "code" : "booked",
+      "display" : "Booked",
+      "target" : [{
+        "code" : "3",
+        "display" : "Varattu",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "arrived",
+      "display" : "Arrived",
+      "target" : [{
+        "code" : "10",
+        "display" : "Ilmoittautunut",
+        "equivalence" : "wider",
+        "comment" : "The Finnish logical model does not separate between arrived and checked-in codes"
+      }]
+    },
+    {
+      "code" : "fulfilled",
+      "display" : "Fulfilled",
+      "target" : [{
+        "code" : "7",
+        "display" : "Toteutunut",
+        "equivalence" : "narrower",
+        "comment" : "Use Toteutunut when the service related to the Appointment has begun or is completed"
+      }]
+    },
+    {
+      "code" : "cancelled",
+      "display" : "Cancelled",
+      "target" : [{
+        "code" : "4",
+        "display" : "Peruttu",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "noshow",
+      "display" : "No Show",
+      "target" : [{
+        "code" : "9",
+        "display" : "Saapumatta",
+        "equivalence" : "equal"
+      }]
+    },
+    {
+      "code" : "entered-in-error",
+      "display" : "Entered in error",
+      "target" : [{
+        "equivalence" : "unmatched",
+        "comment" : "There is no code for erroneously entered records in the Finnish logical model"
+      }]
+    },
+    {
+      "code" : "checked-in",
+      "display" : "Checked In",
+      "target" : [{
+        "code" : "10",
+        "display" : "Ilmoittautunut",
+        "equivalence" : "equivalent",
+        "comment" : "The Finnish logical model does not separate between arrived and checked-in codes"
+      }]
+    },
+    {
+      "code" : "waitlist",
+      "display" : "Waitlisted",
+      "target" : [{
+        "code" : "1",
+        "display" : "Suunniteltu",
+        "equivalence" : "narrower",
+        "comment" : "Use Suunniteltu when no service provider has been identified"
+      },
+      {
+        "code" : "2",
+        "display" : "Tilattu",
+        "equivalence" : "narrower",
+        "comment" : "Use Tilattu when a service provider has been identified"
+      }]
+    }]
+  }]
+}

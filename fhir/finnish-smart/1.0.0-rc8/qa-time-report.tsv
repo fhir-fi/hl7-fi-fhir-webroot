@@ -1,0 +1,6 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json	3595	-	0	0	0	0	0	0	4	111	0	0	0	0	0	0	0	0	0	0	101	67	0	0	0	2	0	0
+input/examples/CapabilityStatement-apotti-ekosysteemi.json	139555	181	0	0	0	0	0	0	7	174	0	0	0	0	0	0	0	2	0	0	341	116	0	0	0	4	0	1
+fsh-generated/resources/CapabilityStatement-fi-smart-server.json	3003	13	0	0	1	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	25	12	0	0	0	1	0	0
+fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner.json	994	13	1	0	0	0	0	0	0	128	0	0	0	0	0	0	0	0	0	0	15	15	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json	1590	12	0	0	0	0	0	542	0	511	0	0	1	0	0	0	0	1	0	0	794	4340	0	1	0	11	1	2

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="medication-administration-insulin-bolus-dose-fi"/>
+  <meta>
+    <profile value="http://roche.com/fhir/rdc/StructureDefinition/medication-administration"/>
+  </meta>
+  <language value="fi"/>
+  <text>
+    <status value="generated"/><div lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br />Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br />Aika: 4.9.2021 19.13:48<br />Lyhytvaikutteinen insuliini 1.07 ky<br />Laite: tandemCIQ1002717799999</div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:a41e3987-cb6f-5224-8ea2-2a5a35125a22"/>
+    <assigner>
+      <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="https://www.sensotrend.com/"/>
+      </identifier>
+      <display value="Sensotrend Oy"/>
+    </assigner>
+  </identifier>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:c9494ac9-9303-4650-ae95-2b1cf95e32c0"/>
+    <assigner>
+      <identifier>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="https://www.tidepool.org/"/>
+      </identifier>
+      <display value="Tidepool"/>
+    </assigner>
+  </identifier>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="411531001"/>
+      <display value="Short-acting insulin (substance)"/>
+    </coding>
+    <coding>
+      <system value="http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode"/>
+      <code value="ins-short-fast"/>
+      <display value="Lyhytvaikutteinen insuliini"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="67866001"/>
+      <display value="Insulin (substance)"/>
+    </coding>
+    <text value="Lyhytvaikutteinen insuliini"/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/7257379"/>
+  </subject>
+  <effectiveDateTime value="2021-09-04T19:13:48.000+03:00"/>
+  <device>
+    <display value="tandemCIQ1002717799999"/>
+  </device>
+  <dosage>
+    <text value="Lyhytvaikutteinen insuliini 1.07 ky"/>
+    <dose>
+      <value value="1.06542"/>
+      <unit value="IU"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="[iU]"/>
+    </dose>
+  </dosage>
+</MedicationAdministration>

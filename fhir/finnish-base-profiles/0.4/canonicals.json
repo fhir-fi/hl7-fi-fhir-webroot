@@ -1,0 +1,492 @@
+[
+  {
+    "id" : "fiphr-cs-careplancategory",
+    "type" : "CodeSystem",
+    "url" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-cs-careplancategory"
+  },
+  {
+    "id" : "fiphr-cs-insulincode",
+    "type" : "CodeSystem",
+    "url" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode",
+    "version" : "0.4.0",
+    "name" : "fiphr-cs-insulincode"
+  },
+  {
+    "id" : "fiphr-cs-observationcategory",
+    "type" : "CodeSystem",
+    "url" : "http://phr.kanta.fi/CodeSystem/fiphr-cs-observationcategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-cs-observationcategory"
+  },
+  {
+    "id" : "fiphr-ext-boolean",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-ext-boolean",
+    "version" : "0.4.0",
+    "name" : "FIPHREXTBoolean"
+  },
+  {
+    "id" : "fiphr-ext-creatingapplication",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-ext-creatingapplication",
+    "version" : "0.4.0",
+    "name" : "FIPHREXTCreatingApplication"
+  },
+  {
+    "id" : "fiphr-ext-pq-translation",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-ext-pq-translation",
+    "version" : "0.4.0",
+    "name" : "FIPHREXTPqTranslation"
+  },
+  {
+    "id" : "fiphr-sd-bloodglucose",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodglucose",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDBloodglucose"
+  },
+  {
+    "id" : "fiphr-sd-bloodpressure",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bloodpressure",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDBloodpressure"
+  },
+  {
+    "id" : "fiphr-sd-bodyweight",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-bodyweight",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDBodyWeight"
+  },
+  {
+    "id" : "fiphr-sd-calorieintake",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-calorieintake",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDCalorieIntake"
+  },
+  {
+    "id" : "fiphr-sd-exercisetracking",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-exercisetracking",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDExerciseTracking"
+  },
+  {
+    "id" : "fiphr-sd-fitness",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-fitness",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDFitness"
+  },
+  {
+    "id" : "fiphr-sd-insulindosing-r4",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDInsulinDosageR4"
+  },
+  {
+    "id" : "fiphr-sd-macronutrientintake",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-macronutrientintake",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDMacronutrientIntake"
+  },
+  {
+    "id" : "FIPHRMetByStandardRMR",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-metbystandardrmr",
+    "version" : "0.4.0",
+    "name" : "FIPHRMetByStandardRMR"
+  },
+  {
+    "id" : "fiphr-sd-moderatetovigorouspatime",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDModerateToVigorousPATime"
+  },
+  {
+    "id" : "fiphr-sd-nutrition",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-nutrition",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDNutrition"
+  },
+  {
+    "id" : "fiphr-sd-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDPatient"
+  },
+  {
+    "id" : "fiphr-sd-questionnaire",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-questionnaire-r4",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDQuestionnaire"
+  },
+  {
+    "id" : "fiphr-sd-questionnaireresponse-r4",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-questionnaireresponse-r4",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDQuestionnairesResponsesR4"
+  },
+  {
+    "id" : "fiphr-sd-selfcareplan-r4",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-selfcareplan-r4",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDCarePlan"
+  },
+  {
+    "id" : "fiphr-sd-stepstaken",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-stepstaken",
+    "version" : "0.4.0",
+    "name" : "FIPHRSDStepsTaken"
+  },
+  {
+    "id" : "fiphr-sd-vitalsigns",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-sd-vitalsigns",
+    "version" : "0.4.0",
+    "name" : "FIPHRsdVitalsigns"
+  },
+  {
+    "id" : "fiphr-unsignedint",
+    "type" : "StructureDefinition",
+    "url" : "http://phr.kanta.fi/StructureDefinition/fiphr-unsignedint",
+    "version" : "0.4.0",
+    "name" : "FIPHREXTUnsignedInt"
+  },
+  {
+    "id" : "fiphr-vs-careplancategory",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-careplancategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-careplancategory"
+  },
+  {
+    "id" : "fiphr-vs-confidentiality",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-confidentiality",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-confidentiality"
+  },
+  {
+    "id" : "fiphr-vs-consentcategory",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-consentcategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-consentcategory"
+  },
+  {
+    "id" : "fiphr-vs-exerciseactivity",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseactivity",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-exerciseactivity"
+  },
+  {
+    "id" : "fiphr-vs-exerciseintensity",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exerciseintensity",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-exerciseintensity"
+  },
+  {
+    "id" : "fiphr-vs-exercisetracking",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-exercisetracking",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-exercisetracking"
+  },
+  {
+    "id" : "fiphr-vs-fitnessresult",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-fitnessresult",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-fitnessresult"
+  },
+  {
+    "id" : "fiphr-vs-insulincode",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-insulincode",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-insulincode"
+  },
+  {
+    "id" : "fiphr-vs-macronutrients",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-macronutrients",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-macronutrients"
+  },
+  {
+    "id" : "fiphr-vs-metbystandardrmr",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-metbystandardrmr",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-metbystandardrmr"
+  },
+  {
+    "id" : "fiphr-vs-nutrition",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-nutrition",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-nutrition"
+  },
+  {
+    "id" : "fiphr-vs-observationcategory",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-observationcategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-observationcategory"
+  },
+  {
+    "id" : "fiphr-vs-sourceforadjustedmet",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforadjustedmet",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-sourceforadjustedmet"
+  },
+  {
+    "id" : "fiphr-vs-sourceforestimatedmet",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforestimatedmet",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-sourceforestimatedmet"
+  },
+  {
+    "id" : "fiphr-vs-sourceforreportedmet",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforreportedmet",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-sourceforreportedmet"
+  },
+  {
+    "id" : "fiphr-vs-vitalsigns",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-vitalsigns",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-vitalsigns"
+  },
+  {
+    "id" : "fiphr-vs-fitnesscategory",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-fitnesscategory"
+  },
+  {
+    "id" : "fiphr-vs-fitnesscategory-2",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-fitnesscategory"
+  },
+  {
+    "id" : "fiphr-vs-fitnesscategory-3",
+    "type" : "ValueSet",
+    "url" : "http://phr.kanta.fi/ValueSet/fitness-category",
+    "version" : "0.4.0",
+    "name" : "fiphr-vs-fitnesscategory"
+  },
+  {
+    "id" : "kanta-phr-capabilitystatement-at",
+    "type" : "CapabilityStatement",
+    "url" : "http://phr.kanta.fi/capabilitystatementATR4",
+    "version" : "0.4.0",
+    "name" : "Finnish PHR's capability statement for acceptance testing R4"
+  },
+  {
+    "id" : "kanta-phr-capabilitystatement",
+    "type" : "CapabilityStatement",
+    "url" : "http://phr.kanta.fi/capabilitystatementR4",
+    "version" : "0.4.0",
+    "name" : "Finnish PHR's R4 capability statement"
+  },
+  {
+    "id" : "fiphr-cs-consentcategory",
+    "type" : "CodeSystem",
+    "url" : "http://phr.kanta.fi/fiphr-cs-consentcategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-cs-consentcategory"
+  },
+  {
+    "id" : "fiphr-cs-fitnesscategory",
+    "type" : "CodeSystem",
+    "url" : "http://phr.kanta.fi/fiphr-cs-fitnesscategory",
+    "version" : "0.4.0",
+    "name" : "fiphr-cs-fitnesscategory"
+  },
+  {
+    "id" : "fiphr-cs-moderatetovigorouspa",
+    "type" : "CodeSystem",
+    "url" : "http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa",
+    "version" : "0.4.0",
+    "name" : "fiphr-cs-moderatetovigorouspa"
+  },
+  {
+    "id" : "hl7.fhir.fi.base",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
+    "version" : "0.4.0",
+    "name" : "FinnishBaseProfiles"
+  },
+  {
+    "id" : "fi-base-appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment",
+    "version" : "0.4.0",
+    "name" : "FiBaseAppointment"
+  },
+  {
+    "id" : "fi-base-condition",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition",
+    "version" : "0.4.0",
+    "name" : "FiBaseCondition"
+  },
+  {
+    "id" : "fi-base-consent",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-consent",
+    "version" : "0.4.0",
+    "name" : "FiBaseConsent"
+  },
+  {
+    "id" : "fi-base-device",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-device",
+    "version" : "0.4.0",
+    "name" : "FiBaseDevice"
+  },
+  {
+    "id" : "fi-base-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-diagnostic-report",
+    "version" : "0.4.0",
+    "name" : "FiBaseDiagnosticReport"
+  },
+  {
+    "id" : "fi-base-encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter",
+    "version" : "0.4.0",
+    "name" : "FiBaseEncounter"
+  },
+  {
+    "id" : "fi-base-healthcare-service",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service",
+    "version" : "0.4.0",
+    "name" : "FiBaseHealthcareService"
+  },
+  {
+    "id" : "fi-base-location",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location",
+    "version" : "0.4.0",
+    "name" : "FiBaseLocation"
+  },
+  {
+    "id" : "fi-base-medication",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication",
+    "version" : "0.4.0",
+    "name" : "FiBaseMedication"
+  },
+  {
+    "id" : "fi-base-medication-administration",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration",
+    "version" : "0.4.0",
+    "name" : "FiBaseMedicationAdministration"
+  },
+  {
+    "id" : "fi-base-medication-statement",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement",
+    "version" : "0.4.0",
+    "name" : "FiBaseMedicationStatement"
+  },
+  {
+    "id" : "fi-base-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation",
+    "version" : "0.4.0",
+    "name" : "FiBaseObservation"
+  },
+  {
+    "id" : "fi-base-organization",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization",
+    "version" : "0.4.0",
+    "name" : "FiBaseOrganization"
+  },
+  {
+    "id" : "fi-base-patient",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient",
+    "version" : "0.4.0",
+    "name" : "FiBasePatient"
+  },
+  {
+    "id" : "fi-base-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner",
+    "version" : "0.4.0",
+    "name" : "FiBasePractitioner"
+  },
+  {
+    "id" : "fi-base-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role",
+    "version" : "0.4.0",
+    "name" : "FiBasePractitionerRole"
+  },
+  {
+    "id" : "fi-base-schedule",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule",
+    "version" : "0.4.0",
+    "name" : "FiBaseSchedule"
+  },
+  {
+    "id" : "fi-base-slot",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot",
+    "version" : "0.4.0",
+    "name" : "FiBaseSlot"
+  },
+  {
+    "id" : "municipality-code",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/municipality-code",
+    "version" : "0.4.0",
+    "name" : "MunicipalityCode"
+  },
+  {
+    "id" : "patient-profession",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/patient-profession",
+    "version" : "0.4.0",
+    "name" : "PatientProfession"
+  },
+  {
+    "id" : "fiphr-cs-vnrcode",
+    "type" : "CodeSystem",
+    "url" : "urn:oid:1.2.246.537.6.55",
+    "version" : "0.4.0",
+    "name" : "Code System Finnish PHR VNR Code"
+  }
+]

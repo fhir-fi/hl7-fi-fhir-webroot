@@ -1,0 +1,184 @@
+[
+  {
+    "id" : "ajanvarauksentila-appointmentstatus",
+    "type" : "ConceptMap",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus",
+    "version" : "0.3.1",
+    "name" : "FiAppointmentStatusCodeMap"
+  },
+  {
+    "id" : "appointmentstatus-ajanvarauksentila",
+    "type" : "ConceptMap",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/ConceptMap/appointmentstatus-ajanvarauksentila",
+    "version" : "0.3.1",
+    "name" : "FiAppointmentStatusCodeMap"
+  },
+  {
+    "id" : "hl7.fhir.fi.scheduling",
+    "type" : "ImplementationGuide",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/ImplementationGuide/hl7.fhir.fi.scheduling",
+    "version" : "0.3.1",
+    "name" : "FinnishScheduling"
+  },
+  {
+    "id" : "additional-information-url",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/additional-information-url",
+    "version" : "0.3.1",
+    "name" : "AdditionalInformationURL"
+  },
+  {
+    "id" : "care-guarantee-details",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/care-guarantee-details",
+    "version" : "0.3.1",
+    "name" : "CareGuaranteeDetails"
+  },
+  {
+    "id" : "careplan-identifier",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/careplan-identifier",
+    "version" : "0.3.1",
+    "name" : "CareplanIdentifier"
+  },
+  {
+    "id" : "customer-journey",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/customer-journey",
+    "version" : "0.3.1",
+    "name" : "CustomerJourney"
+  },
+  {
+    "id" : "fi-scheduling-appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment",
+    "version" : "0.3.1",
+    "name" : "FiSchedulingAppointment"
+  },
+  {
+    "id" : "fi-scheduling-healthcare-service",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service",
+    "version" : "0.3.1",
+    "name" : "FiSchedulingHealthcareService"
+  },
+  {
+    "id" : "fi-scheduling-location",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-location",
+    "version" : "0.3.1",
+    "name" : "FiSchedulingLocation"
+  },
+  {
+    "id" : "fi-scheduling-schedule",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-schedule",
+    "version" : "0.3.1",
+    "name" : "FiSchedulingSchedule"
+  },
+  {
+    "id" : "fi-scheduling-slot",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-slot",
+    "version" : "0.3.1",
+    "name" : "FiSchedulingSlot"
+  },
+  {
+    "id" : "mutable",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable",
+    "version" : "0.3.1",
+    "name" : "AppointmentMutability"
+  },
+  {
+    "id" : "notification-info",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-info",
+    "version" : "0.3.1",
+    "name" : "NotificationInfo"
+  },
+  {
+    "id" : "notification-medium",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-medium",
+    "version" : "0.3.1",
+    "name" : "NotificationMedium"
+  },
+  {
+    "id" : "parent-appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/parent-appointment",
+    "version" : "0.3.1",
+    "name" : "ParentAppointment"
+  },
+  {
+    "id" : "patient-instruction-url",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/patient-instruction-url",
+    "version" : "0.3.1",
+    "name" : "PatientInstructionURL"
+  },
+  {
+    "id" : "prectitioner-gender",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/prectitioner-gender",
+    "version" : "0.3.1",
+    "name" : "PractitionerGender"
+  },
+  {
+    "id" : "queue-number",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/queue-number",
+    "version" : "0.3.1",
+    "name" : "QueueNo"
+  },
+  {
+    "id" : "referral-id",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/referral-id",
+    "version" : "0.3.1",
+    "name" : "ReferralId"
+  },
+  {
+    "id" : "requested-service-info",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/requested-service-info",
+    "version" : "0.3.1",
+    "name" : "RequestedService"
+  },
+  {
+    "id" : "resource-calendar",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/resource-calendar",
+    "version" : "0.3.1",
+    "name" : "ResourceCalendarId"
+  },
+  {
+    "id" : "self-service-info",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/self-service-info",
+    "version" : "0.3.1",
+    "name" : "SelfServiceInfo"
+  },
+  {
+    "id" : "service-additional-information",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/service-additional-information",
+    "version" : "0.3.1",
+    "name" : "ServiceAdditionalInformation"
+  },
+  {
+    "id" : "ticket-number",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ticket-number",
+    "version" : "0.3.1",
+    "name" : "TicketNo"
+  },
+  {
+    "id" : "topic-id",
+    "type" : "StructureDefinition",
+    "url" : "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/topic-id",
+    "version" : "0.3.1",
+    "name" : "TopicId"
+  }
+]

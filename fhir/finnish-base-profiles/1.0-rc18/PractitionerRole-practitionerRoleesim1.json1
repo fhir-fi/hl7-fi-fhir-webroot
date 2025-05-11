@@ -1,0 +1,14 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "practitionerRoleesim1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"practitionerRoleesim1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;practitionerRoleesim1&quot; </p></div><p><b>practitioner</b>: <a href=\"Practitioner-practitioneresim1.html\">Practitioner/practitioneresim1</a> &quot; VAN DER KNAAPI&quot;</p><p><b>organization</b>: <a href=\"Organization-organizationesim1.html\">Organization/organizationesim1</a> &quot;Testi terveysasema&quot;</p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/practitioneresim1"
+  },
+  "organization" : {
+    "reference" : "Organization/organizationesim1"
+  }
+}

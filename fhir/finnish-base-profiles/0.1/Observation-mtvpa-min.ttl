@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/Observation/mtvpa-min> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "mtvpa-min"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime";
+       fhir:index 0;
+       fhir:link <http://phr.kanta.fi/StructureDefinition/fiphr-sd-moderatetovigorouspatime>
+     ]
+  ]; # 
+  fhir:Resource.language [ fhir:value "en"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Moderate to vigorous physical activity minutes in 24 hours (82290-8-24h)<br />Time: 20.11.2017 11:46<br />Result: 76 min </div>"
+  ]; # 
+  fhir:Observation.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:187e0c12-8dd2-67e2-99b2-bf273a9549222" ]
+  ]; # 
+  fhir:Observation.status [ fhir:value "final"]; # 
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://phr.kanta.fi/fiphr-cs-fitnesscategory" ];
+       fhir:Coding.code [ fhir:value "fitness" ];
+       fhir:Coding.display [ fhir:value "Fitness" ]
+     ]
+  ]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:82290-8;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "82290-8" ];
+       fhir:Coding.display [ fhir:value "Weekly moderate to vigorous physical activity in minutes" ]
+     ]
+  ]; # 
+  fhir:Observation.subject [
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2017-11-30T02:00:00.936+02:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2017-12-02T02:00:00.936+02:00"^^xsd:dateTime ]
+  ]; # 
+  fhir:Observation.issued [ fhir:value "2012-02-02T10:00:00.936+02:00"^^xsd:dateTime]; # 
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <http://fhir.fi/finnish-base-profiles/Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad>;
+     fhir:Reference.reference [ fhir:value "Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad" ]
+  ]; # 
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "76"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "min" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "min" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.fi/finnish-base-profiles/Observation/mtvpa-min.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

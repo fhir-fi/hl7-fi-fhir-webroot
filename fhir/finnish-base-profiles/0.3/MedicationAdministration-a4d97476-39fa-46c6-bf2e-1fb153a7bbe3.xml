@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="a4d97476-39fa-46c6-bf2e-1fb153a7bbe3"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-05-27T13:04:55.345+03:00"/>
+    <profile value="http://phr.kanta.fi/StructureDefinition/fiphr-sd-insulindosing-r4"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      Name of the medication: Actrapid <br/>
+      VNRCode: Glucose In Blood (15074-8) <br/>
+      Type of insulin: Fast-acting insulin (ins-short-fast) <br/>
+      Time: 18.5.2019 15:05 
+    </div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:2bc59f2d-5e28-4d1b-a403-bf3a27b1610c"/>
+  </identifier>
+  <status value="completed"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://phr.kanta.fi/CodeSystem/fiphr-cs-insulincode"/>
+      <code value="ins-short-fast"/>
+      <display value="Fast-acting insulin"/>
+    </coding>
+    <coding>
+      <system value="http://ownSystem.fi/CodeSystem/cs-insulincode"/>
+      <code value="1234"/>
+      <display value="Fast  insulin"/>
+    </coding>
+    <text value="A code for short and fast acting insulins, for example insulins that could be included in the group A10AB of the ATC Code System."/>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+  </subject>
+  <effectiveDateTime value="2020-10-05"/>
+  <performer>
+    <actor>
+      <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+    </actor>
+  </performer>
+  <note>
+    <authorString value="AuhtorString"/>
+    <time value="2019-05-27"/>
+    <text value="Note Text is Mandatory Field"/>
+  </note>
+  <dosage>
+    <text value="Dosage Text"/>
+    <dose>
+      <value value="3"/>
+      <unit value="[IU]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="[IU]"/>
+    </dose>
+    <rateQuantity>
+      <value value="5"/>
+      <unit value="g/min"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="g/min"/>
+    </rateQuantity>
+  </dosage>
+</MedicationAdministration>

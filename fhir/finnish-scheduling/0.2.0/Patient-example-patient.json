@@ -1,0 +1,54 @@
+{
+  "resourceType" : "Patient",
+  "id" : "example-patient",
+  "meta" : {
+    "lastUpdated" : "2021-03-02T11:06:59.579+00:00"
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient example-patient</b></p><a name=\"example-patient\"> </a><a name=\"hcexample-patient\"> </a><a name=\"example-patient-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2021-03-02 11:06:59+0000</p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Pentti Potilas  (no stated gender), DoB Unknown ( urn:oid:1.2.246.21#010101-123N\u00a0(use:\u00a0official,\u00a0))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Language spoken\">Language:</td><td colspan=\"3\"><span title=\"Codes:{urn:oid:1.2.246.537.5.40175 FI}\">Suomi</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Huoltaja\">Huoltaja:</td><td colspan=\"3\"><ul><li>Pappa Potilas </li><li>+3581234567</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"An extension for patient home municipality.\"><a href=\"StructureDefinition-HomeMunicipalityExtension.html\"/></td><td colspan=\"3\">unknown 564: Oulu</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.6.21.2003",
+      "code" : "564",
+      "display" : "Oulu"
+    }
+  }],
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:oid:1.2.246.21",
+    "value" : "010101-123N"
+  }],
+  "name" : [{
+    "family" : "Potilas",
+    "given" : ["Pentti"]
+  }],
+  "contact" : [{
+    "relationship" : [{
+      "coding" : [{
+        "system" : "urn:oid:1.2.246.537.6.882",
+        "code" : "1",
+        "display" : "Huoltaja"
+      }]
+    }],
+    "name" : {
+      "family" : "Potilas",
+      "given" : ["Pappa"]
+    },
+    "telecom" : [{
+      "system" : "sms",
+      "value" : "+3581234567"
+    }]
+  }],
+  "communication" : [{
+    "language" : {
+      "coding" : [{
+        "system" : "urn:oid:1.2.246.537.5.40175",
+        "code" : "FI",
+        "display" : "Suomi"
+      }]
+    }
+  }]
+}

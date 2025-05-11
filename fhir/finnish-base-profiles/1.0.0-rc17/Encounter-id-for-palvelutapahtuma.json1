@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "id-for-palvelutapahtuma",
+  "meta" : {
+    "profile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"id-for-palvelutapahtuma\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;id-for-palvelutapahtuma&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-encounter.html\">FI Base Encounter</a></p></div><p><b>identifier</b>: id:\u00a01.2.246.10.6794809.14011.2023.200035\u00a0(use:\u00a0OFFICIAL)</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Patient/patient-of-municipality</a> &quot; HENKILÖ&quot;</p><p><b>period</b>: 2022-02-27 01:03:00+0200 --&gt; (ongoing)</p><p><b>serviceProvider</b>: <a href=\"Organization-1.2.246.10.8286189.10.100012.html\">Organization/1.2.246.10.8286189.10.100012</a> &quot;Kirurgian vuodeosasto 4B, Länsi-Pohjan keskussairaala, LPSHP&quot;</p></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "value" : "1.2.246.10.6794809.14011.2023.200035"
+  }],
+  "status" : "in-progress",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "IMP",
+    "display" : "inpatient encounter"
+  },
+  "subject" : {
+    "reference" : "Patient/patient-of-municipality"
+  },
+  "period" : {
+    "start" : "2022-02-27T01:03:00+02:00"
+  },
+  "serviceProvider" : {
+    "reference" : "Organization/1.2.246.10.8286189.10.100012"
+  }
+}

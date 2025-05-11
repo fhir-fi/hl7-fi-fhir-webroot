@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="ProcedureColotomy"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Procedure ProcedureColotomy</b></p><a name="ProcedureColotomy"> </a><a name="hcProcedureColotomy"> </a><a name="ProcedureColotomy-fi-FI"> </a><p><b>identifier</b>: 3456</p><p><b>status</b>: Completed</p><p><b>category</b>: <span title="Codes:{urn:oid:1.2.246.537.6.601 TOI}">TOI</span></p><p><b>code</b>: <span title="Codes:{urn:oid:1.2.246.537.6.2 JFA16}, {http://snomed.info/sct 9215005}">Colotomy</span></p><p><b>subject</b>: <a href="Patient-patient-of-municipality.html">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>performed</b>: 2022-06-08 09:00:00+0000</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Practitioner-practitioner-licensed-physician.html">Practitioner Dave Doctor </a></td></tr></table><p><b>location</b>: <a href="Location-LocationExample.html">Location Kirurgian poliklinikka</a></p></div>
+  </text>
+  <identifier>
+    <value value="3456"/>
+  </identifier>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.601"/>
+      <version value="2013"/>
+      <code value="TOI"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.2"/>
+      <version value="2007"/>
+      <code value="JFA16"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="9215005"/>
+    </coding>
+    <text value="Colotomy"/>
+  </code>
+  <subject>
+    <reference value="Patient/patient-of-municipality"/>
+  </subject>
+  <performedDateTime value="2022-06-08T09:00:00.000Z"/>
+  <performer>
+    <actor>
+      <reference value="Practitioner/practitioner-licensed-physician"/>
+    </actor>
+  </performer>
+  <location>
+    <reference value="Location/LocationExample"/>
+  </location>
+</Procedure>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-fitnessresult"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="https://loinc.org/55421-2/">55421-2</a></td><td>Calories burned</td><td>Energiankulutus</td><td>Energiförbrukning</td><td>Calories burned</td></tr><tr><td><a href="https://loinc.org/41979-6/">41979-6</a></td><td>Calories burned in 24h</td><td>Energiankulutus vuorokaudessa</td><td>Energiförbrukning 24h</td><td>Calories burned in 24h</td></tr><tr><td><a href="https://loinc.org/41980-4/">41980-4</a></td><td>Weekly calories burned</td><td>Energiankulutus viikossa</td><td>Energiförbrukning i en vecka</td><td>Weekly calories burned</td></tr><tr><td><a href="https://loinc.org/55430-3/">55430-3</a></td><td>Distance</td><td>Kuljettu matka</td><td>Distans</td><td>Distance</td></tr><tr><td><a href="https://loinc.org/41953-1/">41953-1</a></td><td>Distance reached in 24h</td><td>Kuljettu matka vuorokaudessa</td><td>Distans per 24h</td><td>Distance reached in 24h</td></tr><tr><td><a href="https://loinc.org/41955-6/">41955-6</a></td><td>Distance reached in a week</td><td>Kuljettu matka viikossa</td><td>Distans per vecka</td><td>Distance reached in a week</td></tr><tr><td><a href="https://loinc.org/66334-4/">66334-4</a></td><td>Steps</td><td>Askelmäärä</td><td>Steg</td><td>Steps</td></tr><tr><td><a href="https://loinc.org/41950-7/">41950-7</a></td><td>Daily steps</td><td>Päivittäinen askelmäärä</td><td>Steg per dag</td><td>Daily steps</td></tr><tr><td><a href="https://loinc.org/41952-3/">41952-3</a></td><td>Weekly steps</td><td>Viikoittainen askelmäärä</td><td>Steg per vecka</td><td>Weekly steps</td></tr><tr><td><a href="https://loinc.org/82290-8/">82290-8</a></td><td>Weekly moderate to vigorous physical activity in minutes</td><td>Viikoittainen kohtuullisen ja raskaan liikunnan määrä minuutteina</td><td>Måttlig eller hård aktivitet per vecka, minuter</td><td>Weekly moderate to vigorous physical activity in minutes</td></tr></table></li><li>Include these codes as defined in <a href="CodeSystem-fiphr-cs-moderatetovigorouspa.html"><code>http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="CodeSystem-fiphr-cs-moderatetovigorouspa.html#fiphr-cs-moderatetovigorouspa-82290-8-24h">82290-8-24h</a></td><td>Daily moderate to vigorous physical activity in minutes</td><td>Daily PA minutes with MET &gt; 2.9</td><td>Päivittäinen kohtuullisen ja raskaan liikunnan määrä minuutteina</td><td>Måttlig eller hård aktivitet per dag, minuter</td><td>Daily moderate to vigorous physical activity in minutes</td></tr></table></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="0"/>
+  </extension>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-fitnessresult"/>
+  <version value="0.3.0"/>
+  <name value="fiphr-vs-fitnessresult"/>
+  <title value="Value Set Finnish PHR Fitness Results"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2018-12-21T13:54:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="This value set indicates the allowed fitness or physical activity result types in Finnish PHR. The concept Daily Activity fitness panel (62812-3) is a grouping structure for a set of physical activity, and for convenience also vital sign, measurements and includes related links (with type=has-member) to the Observations in this set or the parallel Finnish PHR Vital Signs value set (e.g. steps taken, minimum or maximum heart rate, calories burned, moderate to vigorous physical activity minutes, sedentary activity minutes, sleep episodes and exercises)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="55421-2"/>
+        <display value="Calories burned"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Energiankulutus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Energiförbrukning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Calories burned"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41979-6"/>
+        <display value="Calories burned in 24h"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Energiankulutus vuorokaudessa"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Energiförbrukning 24h"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Calories burned in 24h"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41980-4"/>
+        <display value="Weekly calories burned"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Energiankulutus viikossa"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Energiförbrukning i en vecka"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Weekly calories burned"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="55430-3"/>
+        <display value="Distance"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kuljettu matka"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Distans"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Distance"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41953-1"/>
+        <display value="Distance reached in 24h"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kuljettu matka vuorokaudessa"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Distans per 24h"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Distance reached in 24h"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41955-6"/>
+        <display value="Distance reached in a week"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kuljettu matka viikossa"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Distans per vecka"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Distance reached in a week"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="66334-4"/>
+        <display value="Steps"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Askelmäärä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Steg"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Steps"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41950-7"/>
+        <display value="Daily steps"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Päivittäinen askelmäärä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Steg per dag"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Daily steps"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41952-3"/>
+        <display value="Weekly steps"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Viikoittainen askelmäärä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Steg per vecka"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Weekly steps"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="82290-8"/>
+        <display value="Weekly moderate to vigorous physical activity in minutes"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Viikoittainen kohtuullisen ja raskaan liikunnan määrä minuutteina"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Måttlig eller hård aktivitet per vecka, minuter"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Weekly moderate to vigorous physical activity in minutes"/>
+        </designation>
+      </concept>
+    </include>
+    <include>
+      <system value="http://phr.kanta.fi/fiphr-cs-moderatetovigorouspa"/>
+      <concept>
+        <code value="82290-8-24h"/>
+        <display value="Daily moderate to vigorous physical activity in minutes"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Päivittäinen kohtuullisen ja raskaan liikunnan määrä minuutteina"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Måttlig eller hård aktivitet per dag, minuter"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Daily moderate to vigorous physical activity in minutes"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

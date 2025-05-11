@@ -1,0 +1,41 @@
+{
+  "resourceType" : "Medication",
+  "id" : "medicationesim1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Medication</b><a name=\"medicationesim1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Medication &quot;medicationesim1&quot; </p></div><p><b>identifier</b>: id:\u00a0403048</p><p><b>code</b>: ramipriili <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#C09AA05)</span></p><p><b>form</b>: tabletti <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/drug",
+    "valueString" : "CARDACE"
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.6.604.2014",
+      "code" : "1"
+    }
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength",
+    "valueString" : "5 mg"
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/narcotic",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "system" : "urn:oid:1.2.246.537.6.55.2004",
+    "value" : "403048"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.32.2007",
+      "code" : "C09AA05",
+      "display" : "ramipriili"
+    }]
+  },
+  "form" : {
+    "text" : "tabletti"
+  }
+}

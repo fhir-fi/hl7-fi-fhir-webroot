@@ -1,0 +1,116 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiphr-vs-sourceforadjustedmet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href=\"https://loinc.org/LA26234-7/\">LA26234-7</a></td><td>Wilms 2014 male</td><td>Wilms 2014 miehet</td><td>Wilms 2014 manlig</td><td>Wilms 2014 male</td></tr><tr><td><a href=\"https://loinc.org/LA26235-4/\">LA26235-4</a></td><td>Wilms 2014 female</td><td>Wilms 2014 naiset</td><td>Wilms 2014 kvinnlig</td><td>Wilms 2014 female</td></tr><tr><td><a href=\"https://loinc.org/LA26236-2/\">LA26236-2</a></td><td>Harris-Benedict male</td><td>Harris-Benedict miehet</td><td>Harris-Benedict manlig</td><td>Harris-Benedict male</td></tr><tr><td><a href=\"https://loinc.org/LA26237-0/\">LA26237-0</a></td><td>Harris-Benedict female</td><td>Harris-Benedict naiset</td><td>Harris-Benedict kvinnlig</td><td>Harris-Benedict female</td></tr><tr><td><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>Other, specify</td><td>Muu, tarkenna</td><td>Annat, specificera</td><td>Other, specity</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://phr.kanta.fi/ValueSet/fiphr-vs-sourceforadjustedmet",
+  "version" : "0.3.0",
+  "name" : "fiphr-vs-sourceforadjustedmet",
+  "title" : "Value Set Finnish PHR Source for Adjusted MET",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2020-02-24",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    }]
+  }],
+  "description" : "Finnish PHR Source for Adjusted MET value set",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LA26234-7",
+        "display" : "Wilms 2014 male",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Wilms 2014 miehet"
+        },
+        {
+          "language" : "sv",
+          "value" : "Wilms 2014 manlig"
+        },
+        {
+          "language" : "en",
+          "value" : "Wilms 2014 male"
+        }]
+      },
+      {
+        "code" : "LA26235-4",
+        "display" : "Wilms 2014 female",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Wilms 2014 naiset"
+        },
+        {
+          "language" : "sv",
+          "value" : "Wilms 2014 kvinnlig"
+        },
+        {
+          "language" : "en",
+          "value" : "Wilms 2014 female"
+        }]
+      },
+      {
+        "code" : "LA26236-2",
+        "display" : "Harris-Benedict male",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Harris-Benedict miehet"
+        },
+        {
+          "language" : "sv",
+          "value" : "Harris-Benedict manlig"
+        },
+        {
+          "language" : "en",
+          "value" : "Harris-Benedict male"
+        }]
+      },
+      {
+        "code" : "LA26237-0",
+        "display" : "Harris-Benedict female",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Harris-Benedict naiset"
+        },
+        {
+          "language" : "sv",
+          "value" : "Harris-Benedict kvinnlig"
+        },
+        {
+          "language" : "en",
+          "value" : "Harris-Benedict female"
+        }]
+      },
+      {
+        "code" : "LA46-8",
+        "display" : "Other, specify",
+        "designation" : [{
+          "language" : "fi",
+          "value" : "Muu, tarkenna"
+        },
+        {
+          "language" : "sv",
+          "value" : "Annat, specificera"
+        },
+        {
+          "language" : "en",
+          "value" : "Other, specity"
+        }]
+      }]
+    }]
+  }
+}

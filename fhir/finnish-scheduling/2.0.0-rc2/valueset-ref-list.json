@@ -1,0 +1,19 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AppointmentStatus",
+      "title" : "AppointmentStatus",
+      "description" : "The free/busy status of an appointment.",
+      "systems" : ["http://hl7.org/fhir/appointmentstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.484"],
+      "sources" : ["2.16.840.1.113883.4.642.3.484"],
+      "uses" : {
+      },
+      "ConceptMap-ajanvarauksentila-appointmentstatus.html" : "Ajanvarauksen tila to Appointment status",
+      "ConceptMap-appointmentstatus-ajanvarauksentila.html" : "Appointment status to Ajanvarauksen tila"
+    }
+  ]
+}

@@ -1,0 +1,2136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.fi.base"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FinnishBaseProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base</pre><div><p>A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland</p>
+</div></div>
+  </text>
+  <url value="https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"/>
+  <version value="1.0.0-rc23"/>
+  <name value="FinnishBaseProfiles"/>
+  <title value="Finnish Base Profiles"/>
+  <status value="draft"/>
+  <date value="2023-11-06T22:38:02+01:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="mikael@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <description value="A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.fhir.fi.base"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="5.3.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_ipa">
+    <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
+    <packageId value="hl7.fhir.uv.ipa"/>
+    <version value="1.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="qa-preview"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="ipa-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="{last}"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://phr.kanta.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://resepti.kanta.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://hl7.fi/fhir/finnish-base-profiles/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#current"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="qa-preview"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="ipa-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="{last}"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://phr.kanta.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="extension-domain"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://resepti.kanta.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://hl7.fi/fhir/finnish-base-profiles/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim1"/>
+      </reference>
+      <name value="1 tabletti 2 kertaa päivässä"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim7A"/>
+      </reference>
+      <name value="1 tabletti 2 kertaa päivässä 5 päivän ajan 15.1.2021 alkaen"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim7B"/>
+      </reference>
+      <name value="1 tabletti 2 kertaa päivässä 5-7 päivän ajan 15.1.2021 alkaen"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim4"/>
+      </reference>
+      <name value="1-2 tablettia 1-3 kertaa päivässä"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim3"/>
+      </reference>
+      <name value="1-2 tablettia kerran päivässä"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim2"/>
+      </reference>
+      <name value="2 tablettia aamulla ja 1 tabletti illalla 6 päivän ajan"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/daf8ca40-b46c-4c6b-99d5-d3a1b77074ad"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/25a53703-27f9-4354-8f1b-a8b2f8f3ee86"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/36749a02-1710-44e7-aa76-0e934eb4321a"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/7257379"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/cafbe8e7-38fe-4807-b995-6770e5390365"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/77c2c8d2-11ce-41d5-8150-75489f8b0b0a"/>
+      </reference>
+      <name value="A dummy patient entry"/>
+      <description value="A patient id supporting other examples, not included in the guide."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/1.2.246.10.31045308.10002.0"/>
+      </reference>
+      <name value="A high level organization"/>
+      <description value="Organization on Wellbeing Services County level"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/id-for-bed-3"/>
+      </reference>
+      <name value="A named bed"/>
+      <description value="Example of a bed recorded with the Location resource."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/practitionerRoleesim1"/>
+      </reference>
+      <name value="A simple practitioner role"/>
+      <description value="An example PractitionerRole instance from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/kanta-document-metadata-profile-test-example-1"/>
+      </reference>
+      <name value="A test example demonstrating that validation works"/>
+      <description value="This example does not have the role for the agent from system urn:oid:1.2.246.537.5.40172, as would be mandated by the Finnish Base Information Custodian profile. QA report is expected to show an error."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/kanta-document-metadata-profile-example"/>
+      </reference>
+      <name value="An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system"/>
+      <description value="This example demonstrates one way in which a system might use the Finnish Base Information Custodian profile."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/kanta-document-metadata-profile-example-2"/>
+      </reference>
+      <name value="An imaginary example of a Provenance resource instance conforming to the imaginary metadata profile for Kanta system, using the kanta code also for the custodian agent"/>
+      <description value="This example demonstrates one way in which a system might use the Finnish Base Information Custodian profile."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/kanta-document-other-metadata-profile"/>
+      </reference>
+      <name value="An imaginary profile for Kanta system, specifying things apart from the information custodian"/>
+      <description value="This is one way in which a system might use the Finnish Base Information Custodian profile. This profile defines other constraints. The profile KantaDocumentMetadata combines the requirements."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/kanta-document-metadata-profile"/>
+      </reference>
+      <name value="An imaginary profile for Kanta system, utilizing the Finnish Base Information Custodian profile"/>
+      <description value="This is one way in which a system might use the Finnish Base Information Custodian profile. Kanta has expressed the wish to have only one big Provenance resource containing all document metadata. This can be accomplished by creating a profile based on the Finnish Base Provenance profile and [imposing](http://hl7.org/fhir/extensions/StructureDefinition-structuredefinition-imposeProfile.html) the Finnish Base Information Custodian profile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/id-for-child-encounter-2"/>
+      </reference>
+      <name value="Another Encounter that is part of palvelutapahtuma"/>
+      <description value="An example of a FI Base encounter which is part of another encounter that corresponds to palvelutapahtuma in Kanta."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/kanta-document-metadata-profile-test-example-2"/>
+      </reference>
+      <name value="Another test example demonstrating that validation works"/>
+      <description value="This example does not have a role with the code system specified by Kanta. QA report is expected to show an error."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ColonBiopsy"/>
+      </reference>
+      <name value="Biopsy of Colon procedure example"/>
+      <description value="Sub-procedure for Colotomy procedure."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-categorization-of-accident"/>
+      </reference>
+      <name value="Categorization of the type of accident"/>
+      <description value="Encoded categorization of the type of accident leading to injury, illness or death."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-cause-of-adverse-effect"/>
+      </reference>
+      <name value="Cause of an adverse effect"/>
+      <description value="Encoded information on the cause of an adverse effect, when involving a procedure or medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="HealthcareService"/>
+      </extension>
+      <reference>
+        <reference value="HealthcareService/healthcareService-example"/>
+      </reference>
+      <name value="Codified healthcare service"/>
+      <description value="HealthcareService example which describes general practitioner services by using THL code systems."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-healthcare-service"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/id-for-diagnosis-1"/>
+      </reference>
+      <name value="Condition - an example diagnosis"/>
+      <description value="An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis is asserted by a clinician."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/id-for-diagnosis-3"/>
+      </reference>
+      <name value="Condition - an example diagnosis with an adverse effect."/>
+      <description value="An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has an adverse effect."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/id-for-diagnosis-2"/>
+      </reference>
+      <name value="Condition - an example diagnosis with external cause, accident and medication information."/>
+      <description value="An example of a diagnosis using the FiBaseReasonForCare profile. This diagnosis demonstrates a case that has external cause, accident and medication information."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-reason-for-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/custodian-individual"/>
+      </reference>
+      <name value="Custodian of information (rekisterinpitäjä), an individual provider"/>
+      <description value="Example of Provenance that communicates a private individual healthcare provider as the custodian of information for an episode of care."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-individual"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/custodian-occupational-healthcare"/>
+      </reference>
+      <name value="Custodian of information (rekisterinpitäjä), private occupational healthcare"/>
+      <description value="Example of Provenance that communicates a private occupational healthcare organization as the custodian of information for an episode of care."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-private"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/custodian-public-healthcare"/>
+      </reference>
+      <name value="Custodian of information (rekisterinpitäjä), public healthcare"/>
+      <description value="Example of Provenance that communicates a public healthcare organization as the custodian of information for an episode of care."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian-public"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/1.2.246.10.8286189.10.100012"/>
+      </reference>
+      <name value="Encounter - example primary care organization"/>
+      <description value="An example of a FI Base organization, a surgical ward. The partOf reference removed for brevity."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/id-for-ward-encounter"/>
+      </reference>
+      <name value="Encounter - patient is currently receiving care at a ward treating surgical patients"/>
+      <description value="An example of a FI Base encounter where a patient is currently receiving care at a ward."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/id-for-visit"/>
+      </reference>
+      <name value="Encounter - patient primary care visit"/>
+      <description value="An example of a FI Base encounter where a patient has completed a visit in primary care."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/id-for-palvelutapahtuma"/>
+      </reference>
+      <name value="Encounter that is a palvelutapahtuma in Kanta registry"/>
+      <description value="An example of a FI Base encounter which corresponds 1-1 to palvelutapahtuma in Kanta. Identifier with use=official marks the OID of palvelutapahtuma. Has sub-encounters."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/id-for-child-encounter"/>
+      </reference>
+      <name value="Encounter that is part of palvelutapahtuma"/>
+      <description value="An example of a FI Base encounter which is part of another encounter that corresponds palvelutapahtuma in Kanta."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-endocrinological-disorder"/>
+      </reference>
+      <name value="Endocrinological disorder"/>
+      <description value="Code for Endocrinological disorder."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="EpisodeOfCare"/>
+      </extension>
+      <reference>
+        <reference value="EpisodeOfCare/id-for-episode-1"/>
+      </reference>
+      <name value="Episode of care - with provenance"/>
+      <description value="Example of episode of care. A provenance example links to this."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-episode-of-care"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/kanta-provenance-agent-role"/>
+      </reference>
+      <name value="Example value set for provenance roles"/>
+      <description value="This example value set contains the systems that can be used for agent roles in Kanta profiles"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-external-cause"/>
+      </reference>
+      <name value="External cause for diagnosis"/>
+      <description value="External cause for diagnosis."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-appointment"/>
+      </reference>
+      <name value="FI Base Appointment"/>
+      <description value="This is the Finnish base profile for the Appointment resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-condition"/>
+      </reference>
+      <name value="FI Base Condition"/>
+      <description value="This is the Finnish base profile for the Condition resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-encounter"/>
+      </reference>
+      <name value="FI Base Encounter"/>
+      <description value="This is the Finnish base profile for the Encounter resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-episode-of-care"/>
+      </reference>
+      <name value="FI Base EpisodeOfCare"/>
+      <description value="This is the Finnish base profile for the EpisodeOfCare resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-healthcare-service"/>
+      </reference>
+      <name value="FI Base HealthcareService"/>
+      <description value="This is the Finnish base profile for the HealthcareService resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-immunization"/>
+      </reference>
+      <name value="Fi Base Immunization"/>
+      <description value="This is a base profile for Finnish Immunization resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-information-custodian-individual"/>
+      </reference>
+      <name value="FI Base Information Custodian (Individual Provider)"/>
+      <description value="This is the Finnish base profile for the Provenance resource, used to communicate an individual practitioner as the custodian of information (*rekisterinpitäjä*)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-information-custodian-private"/>
+      </reference>
+      <name value="FI Base Information Custodian (Private Organization)"/>
+      <description value="This is the Finnish base profile for the Provenance resource, used to communicate a private organization as the custodian of information (*rekisterinpitäjä*)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-information-custodian-public"/>
+      </reference>
+      <name value="FI Base Information Custodian (Public Organization)"/>
+      <description value="This is the Finnish base profile for the Provenance resource, used to communicate a public organization as the custodian of information (*rekisterinpitäjä*)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-information-custodian"/>
+      </reference>
+      <name value="FI Base InformationCustodian"/>
+      <description value="This is a Finnish abstract base profile for the Provenance resource, used to communicate the custodian of information (*rekisterinpitäjä*)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-location"/>
+      </reference>
+      <name value="FI Base Location"/>
+      <description value="This is the Finnish base profile for the Location resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-medication"/>
+      </reference>
+      <name value="FI Base Medication"/>
+      <description value="This is the Finnish base profile for the Medication resource for other than patient access use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-medication-administration"/>
+      </reference>
+      <name value="FI Base MedicationAdministration"/>
+      <description value="This is the Finnish base profile for the MedicationAdministration resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-medication-request"/>
+      </reference>
+      <name value="FI Base MedicationRequest"/>
+      <description value="This is the Finnish base profile for the MedicationRequest resource, for other than patient access use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-medication-statement"/>
+      </reference>
+      <name value="FI Base MedicationStatement"/>
+      <description value="This is the Finnish base profile for the MedicationStatement resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-observation"/>
+      </reference>
+      <name value="FI Base Observation"/>
+      <description value="This is the Finnish base profile for the Observation resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-organization"/>
+      </reference>
+      <name value="FI Base Organization"/>
+      <description value="This is the Finnish base profile for the Organization resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-patient"/>
+      </reference>
+      <name value="FI Base Patient"/>
+      <description value="This is the Finnish base profile for the Patient resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-patient-medication"/>
+      </reference>
+      <name value="FI Base Patient Medication"/>
+      <description value="This is the Finnish base profile for the Medication resource for patient access use case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-patient-medication-request"/>
+      </reference>
+      <name value="FI Base Patient MedicationRequest"/>
+      <description value="This is the Finnish base profile for the MedicationRequest resource for the patient access use case."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-practitioner"/>
+      </reference>
+      <name value="FI Base Practitioner"/>
+      <description value="This is the Finnish base profile for the Practitioner resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-practitioner-role"/>
+      </reference>
+      <name value="FI Base PractitionerRole"/>
+      <description value="This is the Finnish base profile for the PractitionerRole resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-procedure"/>
+      </reference>
+      <name value="Fi Base Procedure"/>
+      <description value="The Base profile for Finnish Procedure resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-provenance"/>
+      </reference>
+      <name value="FI Base Provenance"/>
+      <description value="This is the Finnish base profile for the Provenance resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-reason-for-care"/>
+      </reference>
+      <name value="FI Base Reason for Care (encounter-diagnosis and reason for visit)"/>
+      <description value="This is the Finnish base profile for the encounter-diagnosis and (nurse asserted) reason for visit Conditions."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-schedule"/>
+      </reference>
+      <name value="FI Base Schedule"/>
+      <description value="This is the Finnish base profile for the Schedule resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fi-base-slot"/>
+      </reference>
+      <name value="FI Base Slot"/>
+      <description value="This is the Finnish base profile for the Slot resource."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/fi-base-security-label-cs"/>
+      </reference>
+      <name value="Finnish CodeSystem for security labels"/>
+      <description value="This is the CodeSystem for security labels in accordance with finnish authorities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fi-base-security-label-vs"/>
+      </reference>
+      <name value="Finnish ValueSet for security labels in accordance with finnish authorities"/>
+      <description value="This is the ValueSet for security labels in accordance with finnish authorities."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fi-base-register-identifier"/>
+      </reference>
+      <name value="Finnish ValueSet for systems of registry specifiers"/>
+      <description value="This value set contains the systems that can be used to identify the registry specifier for information custodianship."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Slot"/>
+      </extension>
+      <reference>
+        <reference value="Slot/FreeSlot"/>
+      </reference>
+      <name value="Free slot (kertakäynti yleislääkärillä)"/>
+      <description value="Example of a free slot with reference to Schedule and information about service category, service type and appointment type presented in THL code system format."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-slot"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/appointment-general-practitioner"/>
+      </reference>
+      <name value="GP appointment"/>
+      <description value="Example of an appointment with general practitioner."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/id-for-provenance-1"/>
+      </reference>
+      <name value="id-for-provenance-1"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bloodglucose-min"/>
+      </reference>
+      <name value="Kanta PHR - blood glucose mandatory"/>
+      <description value="An example blood glucose measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bloodglucose-max"/>
+      </reference>
+      <name value="Kanta PHR - blood glucose optional"/>
+      <description value="An example blood glucose measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bloodglucose-as-text"/>
+      </reference>
+      <name value="Kanta PHR - blood glucose result as text"/>
+      <description value="This is an example, where measurement device has failed to measure numerical value for the blood glucose but the device still can store some result in the narrative element. In this case code 'astext' must be used in dataAbsentReason.coding.code."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bloodglucose-data-absent"/>
+      </reference>
+      <name value="Kanta PHR - blood glucose with data absent"/>
+      <description value="This is an example, where measurement device has failed to measure blood glucose reading. In this case 'error' must be used in dataAbsentReason.coding.code."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bloodpressure-min"/>
+      </reference>
+      <name value="Kanta PHR - blood pressure mandatory"/>
+      <description value="An example blood pressure measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bloodpressure-max"/>
+      </reference>
+      <name value="Kanta PHR - blood pressure optional"/>
+      <description value="An example blood pressure measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1153859e-0c86-1000-abb8-511d0000b222"/>
+      </reference>
+      <name value="Kanta PHR - body height optional"/>
+      <description value="An example body height measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bodyweight-min"/>
+      </reference>
+      <name value="Kanta PHR - body weight mandatory"/>
+      <description value="An example body weight measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/bodyweight-max"/>
+      </reference>
+      <name value="Kanta PHR - body weight optional"/>
+      <description value="An example body weight measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7"/>
+      </reference>
+      <name value="Kanta PHR - calorie intake mandatory"/>
+      <description value="An example calorie intake measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8"/>
+      </reference>
+      <name value="Kanta PHR - calorie intake optional"/>
+      <description value="An example calorie intake measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2894b2e6-7ebf-4c33-93e4-31935effff21"/>
+      </reference>
+      <name value="Kanta PHR - carbohydrate intake mandatory"/>
+      <description value="An example estimated carbohydrate intake measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2894b2e6-7ebf-4c33-93e4-31935effff22"/>
+      </reference>
+      <name value="Kanta PHR - carbohydrate intake optional"/>
+      <description value="An example estimated carbohydrate intake measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/71831b54-1a80-47c5-ba84-0180a5eb784a"/>
+      </reference>
+      <name value="Kanta PHR - exercise tracking mandatory"/>
+      <description value="An example exercise tracking measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/71831b54-1a80-47c5-ba84-0180a5eb784b"/>
+      </reference>
+      <name value="Kanta PHR - exercise tracking optional"/>
+      <description value="An example exercise tracking measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe2"/>
+      </reference>
+      <name value="Kanta PHR - Insulin dosage mandatory"/>
+      <description value="An example insulin dosage with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3"/>
+      </reference>
+      <name value="Kanta PHR - Insulin dosage optional"/>
+      <description value="An example insulin dosage with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/48983b8b-ead3-4206-9583-fcdd40d762b6"/>
+      </reference>
+      <name value="Kanta PHR - MET measurement mandatory"/>
+      <description value="An example MET measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/48983b8b-ead3-4206-9583-fcdd40d762b7"/>
+      </reference>
+      <name value="Kanta PHR - MET measurement optional"/>
+      <description value="An example MET measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/36749a02-1710-44e7-aa76-0e934eb7860a"/>
+      </reference>
+      <name value="Kanta PHR - patient 3"/>
+      <description value="An example patient for Kanta PHR."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mtvpa-min"/>
+      </reference>
+      <name value="Kanta PHR - physical activity mandatory"/>
+      <description value="An example physical activity measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/mtvpa-max"/>
+      </reference>
+      <name value="Kanta PHR - physical activity optional"/>
+      <description value="An example physical activity measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8"/>
+      </reference>
+      <name value="Kanta PHR - step count mandatory"/>
+      <description value="An example step count measurement with mandatory elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9"/>
+      </reference>
+      <name value="Kanta PHR - step count optional"/>
+      <description value="An example step count measurement with optional elements."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patientesim1"/>
+      </reference>
+      <name value="Karen van der Hentenryck"/>
+      <description value="An example patient from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioneresim1"/>
+      </reference>
+      <name value="Lars van der Knaapi"/>
+      <description value="An example practitioner from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner-licensed-physician"/>
+      </reference>
+      <name value="Licenced physician"/>
+      <description value="Example of Licensed Physician from CGI Pegasos EHR."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRoleGP"/>
+      </reference>
+      <name value="Licenced physician in primary care"/>
+      <description value="This is an example of PractitionerRole profile. The example describes the service which practitioner is performing in spesific location."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner-role"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim6"/>
+      </reference>
+      <name value="Lääke tauolla 1.3.2020 - 30.6.2020. Taukoa edeltävä annostus: 25 mg klo 08:00 10 päivän ajan ihon alle"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim5"/>
+      </reference>
+      <name value="Maanantaisin 1 tabletti ja tarvittaessa keskiviikkoisin 0,5 tablettia 01.06.2020 - 31.12.2020"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-caused-by-medication"/>
+      </reference>
+      <name value="Medication that caused this condition"/>
+      <description value="Encoded information of medication that caused this condition. Uses ATC-coding."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv"/>
+      </reference>
+      <name value="MedicationAdministration example of insulin basal dose"/>
+      <description value="A basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile, version STU3. In Swedish."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medication-administration-insulin-bolus-dose-fi"/>
+      </reference>
+      <name value="MedicationAdministration example of insulin dose"/>
+      <description value="A bolus dose of fast-acting insulin, administred with an insulin pump. In Finnish."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en"/>
+      </reference>
+      <name value="MedicationAdministration example of temporary basal rate"/>
+      <description value="A temporarily adjusted basal dose of fast-acting insulin, administred with an insulin pump. Conforms to the Kanta PHR profile. In English."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/municipality-code"/>
+      </reference>
+      <name value="Municipality Code"/>
+      <description value="Extension for home municipality. Home municipality is relevant for ex. in billing and listing available healthcare services, and for statistical purposes. It it not necessarily the place where a patient lives, rather closer to where they pay their taxes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medicationesim1"/>
+      </reference>
+      <name value="Myyntiluvallinen lääkevalmiste"/>
+      <description value="An example Medication instance from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/medicationesim2"/>
+      </reference>
+      <name value="Myyntiluvallinen lääkevalmiste, joka on PKV-lääke"/>
+      <description value="An example Medication instance from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/1.2.246.10.2085212.10.1306"/>
+      </reference>
+      <name value="Organization - example of a parent organization"/>
+      <description value="An example of a FI Base organization. Acts as a parent organization for another."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/1.2.246.10.2085212.10.1314"/>
+      </reference>
+      <name value="Organization - example primary care organization"/>
+      <description value="An example of a FI Base organization, a doctor's reception office. Data is from national SOTE-Rekisteri."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/LocationExample"/>
+      </reference>
+      <name value="Outpatient clinic"/>
+      <description value="Example of surgery outpatient clinic with refenrence to an organization."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-location"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-of-municipality"/>
+      </reference>
+      <name value="Patient - with the MunicipalityCode extension."/>
+      <description value="An example of a FI Base patient with the MunicipalityCode extension."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/diabetes-data-bundle-kantaphr-r4-en"/>
+      </reference>
+      <name value="Patient generated glucose observations and insulin administrations as a bundle, in English"/>
+      <description value="A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR R4 profiles."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/diabetes-data-bundle"/>
+      </reference>
+      <name value="Patient generated glucose observations and insulin administrations as a bundle, in Finnish"/>
+      <description value="A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/diabetes-data-bundle-kantaphr-sv"/>
+      </reference>
+      <name value="Patient generated glucose observations and insulin administrations as a bundle, in Swedish"/>
+      <description value="A Bundle of resources uploaded by a patient from a insulin delivery system containing both a continuous glucose sensor and an insulin pump. Conforms to Kanta PHR STU3 profiles."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-profession"/>
+      </reference>
+      <name value="Patient Profession Extension"/>
+      <description value="Extension for presenting patient profession."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient-with-turvakielto"/>
+      </reference>
+      <name value="Patient with a TURVAKIELTO security label."/>
+      <description value="An example of a FI Base patient that has the TURVAKIELTO security label indicating non-disclosure for personal safety reasons."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-permanence"/>
+      </reference>
+      <name value="Permanence of condition"/>
+      <description value="Encoded information of whether this is the permanent."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-primary"/>
+      </reference>
+      <name value="Primary condition for encounter"/>
+      <description value="Encoded information of whether this is the primary/main condition for encounter."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Procedure"/>
+      </extension>
+      <reference>
+        <reference value="Procedure/ProcedureColotomy"/>
+      </reference>
+      <name value="Procedure Colotomy example"/>
+      <description value="This example describes main procedure, colotomy, with reference to sub-procedure."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-procedure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/custodian-public-healthcare-kela"/>
+      </reference>
+      <name value="Provenance example for Kanta"/>
+      <description value="This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/medication-statement-insulin"/>
+      </reference>
+      <name value="Simple medication statement example"/>
+      <description value="Patient states they are taking long acting insulin (Lantus), but not the amount."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-statement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organizationesim2"/>
+      </reference>
+      <name value="Simple Organization example"/>
+      <description value="An example Organization from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Schedule"/>
+      </extension>
+      <reference>
+        <reference value="Schedule/ScheduleExample"/>
+      </reference>
+      <name value="SNOMED CT coded Schedule"/>
+      <description value="This is a Schedule example for appointment book. All of the used codes are from SNOMED code system."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-schedule"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim9"/>
+      </reference>
+      <name value="Tarvittaessa 1-2 tippaa 3-4 tunnin välein"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/medicationrequestesim8"/>
+      </reference>
+      <name value="Tarvittaessa 2 tablettia 3 kertaa viikossa 16.2.2021 alkaen"/>
+      <description value="An example MedicationRequest from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient-medication-request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organizationesim1"/>
+      </reference>
+      <name value="Testi terveysasema"/>
+      <description value="An example Organization from Kanta Prescription API"/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/condition-physical-excercise"/>
+      </reference>
+      <name value="Type of physical exercise during which injury occurred."/>
+      <description value="Encoded information of the type of physical exercise during which injury occurred."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/ImmunizationVaccinationExample"/>
+      </reference>
+      <name value="Vaccination for TBE"/>
+      <description value="An example vaccination against TBE."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vaccination-recorder"/>
+      </reference>
+      <name value="Vaccination Recorder"/>
+      <description value="Vaccination recorder may not be the same person who performed the addministration."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profiles.html"/>
+        </extension>
+        <nameUrl value="profiles.html"/>
+        <title value="Profiles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="extensions.html"/>
+        </extension>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="terminology.html"/>
+        </extension>
+        <nameUrl value="terminology.html"/>
+        <title value="Terminology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="examples.html"/>
+        </extension>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="versions.html"/>
+        </extension>
+        <nameUrl value="versions.html"/>
+        <title value="Version History"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

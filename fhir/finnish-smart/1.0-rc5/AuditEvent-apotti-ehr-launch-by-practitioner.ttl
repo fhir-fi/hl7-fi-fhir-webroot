@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-smart/AuditEvent/apotti-ehr-launch-by-practitioner> a fhir:AuditEvent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "apotti-ehr-launch-by-practitioner"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AuditEvent</b><a name=\"apotti-ehr-launch-by-practitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AuditEvent &quot;apotti-ehr-launch-by-practitioner&quot; </p></div><p><b>type</b>: User Authentication (Details: DICOM code 110114 = 'User Authentication', stated as 'User Authentication')</p><p><b>recorded</b>: Jan 24, 2023, 12:20:18 PM</p><blockquote><p><b>agent</b></p><p><b>who</b>: <span>: Apotti Ekosysteemi</span></p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>agent</b></p><p><b>who</b>: <span>: Sensotrend Oy</span></p><p><b>requestor</b>: false</p></blockquote><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td>*</td><td><span>: Sensotrend Oy</span></td><td>Web Server (Details: http://terminology.hl7.org/CodeSystem/security-source-type code 3 = 'Web Server', stated as 'Web Server')</td></tr></table></div>"
+  ] ; # 
+  fhir:type [
+     fhir:system [ fhir:v "http://dicom.nema.org/resources/ontology/DCM"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "110114" ] ;
+     fhir:display [ fhir:v "User Authentication" ]
+  ] ; # 
+  fhir:recorded [ fhir:v "2023-01-24T12:20:18.000+02:00"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:who [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Apotti Ekosysteemi" ]
+     ] ;
+     fhir:requestor [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:who [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Sensotrend Oy" ]
+     ] ;
+     fhir:requestor [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:source [
+     fhir:observer [
+       fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Sensotrend Oy" ]
+     ] ;
+     fhir:type ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/security-source-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ] ;
+       fhir:display [ fhir:v "Web Server" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

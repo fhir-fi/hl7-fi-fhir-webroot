@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Slot xmlns="http://hl7.org/fhir">
+  <id value="123456789"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Slot 123456789</b></p><a name="123456789"> </a><a name="hc123456789"> </a><a name="123456789-fi-FI"> </a><p><b>identifier</b>: 123456789</p><p><b>serviceCategory</b>: <span title="Codes:{urn:oid:1.2.246.537.6.50.201801 SOTE19}">Perheoikeudelliset palvelut</span></p><p><b>serviceType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.49.201501 NC}">Isyyden selvittämispalvelu</span></p><p><b>appointmentType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.884.2015 10}">Kertakäynti toimipaikassa</span></p><p><b>schedule</b>: <a href="Schedule/234567890">Schedule/234567890</a></p><p><b>status</b>: Free</p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p></div>
+  </text>
+  <identifier>
+    <value value="123456789"/>
+  </identifier>
+  <serviceCategory>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.50.201801"/>
+      <code value="SOTE19"/>
+      <display value="Perheoikeudelliset palvelut"/>
+    </coding>
+  </serviceCategory>
+  <serviceType>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.49.201501"/>
+      <code value="NC"/>
+      <display value="Isyyden selvittämispalvelu"/>
+    </coding>
+  </serviceType>
+  <appointmentType>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.884.2015"/>
+      <code value="10"/>
+      <display value="Kertakäynti toimipaikassa"/>
+    </coding>
+  </appointmentType>
+  <schedule>
+    <reference value="Schedule/234567890"/>
+  </schedule>
+  <status value="free"/>
+  <start value="2020-01-01T12:00:00+02:00"/>
+  <end value="2020-01-01T12:30:00+02:00"/>
+</Slot>

@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-careplancategory"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-fiphr-cs-careplancategory.html"><code>http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td><td><b>English (English, en)</b></td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-1">1</a></td><td>Hengitystietulehdus tai -oire</td><td>Hengitystietulehdus tai -oire</td><td>Luftvägsinfektion eller -symtom</td><td>Respiratory infection or symptom</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-2">2</a></td><td>Yskä</td><td>Yskä</td><td>Hosta</td><td>Cough</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-3">3</a></td><td>Virtsatietulehdus tai -oire (18–65v. naiset)</td><td>Virtsatietulehdus tai -oire (18–65v. naiset)</td><td>Urinvägsinfektion- eller symtom (kvinnor 18–65 år)</td><td>Urinary tract infection or symptom (women aged 18–65)</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-4">4</a></td><td>Korvan kipu tai lukkoisuus</td><td>Korvan kipu tai lukkoisuus</td><td>Ont i öronen eller lock för örat</td><td>Earache or ear plugging</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-5">5</a></td><td>Kurkkukipu tai nieluoire</td><td>Kurkkukipu tai nieluoire</td><td>Halsont eller svalgsymtom</td><td>Sore throat or throat symptom</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-6">6</a></td><td>Ripuli</td><td>Ripuli</td><td>Diarré</td><td>Diarrhoea</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-7">7</a></td><td>Alaselkäkipu tai -vamma</td><td>Alaselkäkipu tai -vamma</td><td>Ländryggssmärta eller -skada</td><td>Lower back pain or injury</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-8">8</a></td><td>Närästys</td><td>Närästys</td><td>Halsbränna</td><td>Heartburn</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-9">9</a></td><td>Olkapään kipu, jäykkyys tai vamma</td><td>Olkapään kipu, jäykkyys tai vamma</td><td>Smärta, stelhet eller skada i skuldran</td><td>Shoulder pain, stiffness or injury</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-10">10</a></td><td>Päänsärky</td><td>Päänsärky</td><td>Huvudvärk</td><td>Headache</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-11">11</a></td><td>Peräaukon seudun oire</td><td>Peräaukon seudun oire</td><td>Symtom vid ändtarmsöppningen</td><td>Anal region symptom</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-12">12</a></td><td>Polven oire tai vamma</td><td>Polven oire tai vamma</td><td>Symtom eller skada i knät</td><td>Knee symptom or injury</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-13">13</a></td><td>Silmän oire</td><td>Silmän oire</td><td>Symtom i öga</td><td>Eye symptom</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-14">14</a></td><td>Sukupuolitaudin oire</td><td>Sukupuolitaudin oire</td><td>Symtom på könssjukdom</td><td>Sexually transmitted disease symptom</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-15">15</a></td><td>Terveystarkastus</td><td>Terveystarkastus</td><td>Hälsokontroll</td><td>Health check-up</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-16">16</a></td><td>Henkilökohtainen apu</td><td>Henkilökohtainen apu</td><td>Personlig assistans</td><td>Personal assistance</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-17">17</a></td><td>Liikkuminen kodin ulkopuolella</td><td>Liikkuminen kodin ulkopuolella</td><td>Mobilitet utanför hemmet</td><td>Moving outside the home</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-18">18</a></td><td>Maahanmuuttajan hyvinvointi</td><td>Maahanmuuttajan hyvinvointi</td><td>Invandrarens välbefinnande</td><td>Well-being of an immigrant</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-19">19</a></td><td>Omaishoidon tuki</td><td>Omaishoidon tuki</td><td>Stöd för närståendevård</td><td>Informal care support</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-20">20</a></td><td>Läheishoitajan tarkastus</td><td>Läheishoitajan tarkastus</td><td>Kontroll för anhörig omsorgsgivare</td><td>Check-up of an informal carer</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-21">21</a></td><td>Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)</td><td>Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)</td><td>Hälsokontroll för femteklassist, föräldrar (borttagen)</td><td>Health check-up of a fifth-grader, parents (removed)</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-22">22</a></td><td>Viitosluokkalaisen terveystarkastus, lapsi (poistettu)</td><td>Viitosluokkalaisen terveystarkastus, lapsi (poistettu)</td><td>Hälsokontroll för femteklassist, barn (borttagen)</td><td>Health check-up of a fifth-grader, child (removed)</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-23">23</a></td><td>Yleinen hyvinvointikysely (WHOQOL-BREF)</td><td>Yleinen hyvinvointikysely (WHOQOL-BREF)</td><td>Allmän välfärdsenkät (WHOQOL-BREF)</td><td>General well-being survey (WHOQOL-BREF)</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-24">24</a></td><td>Elämäntilannekysely (3X10D)</td><td>Elämäntilannekysely (3X10D)</td><td>Enkät om livssituation (3X10D)</td><td>Life-situation survey (3X10D)</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-25">25</a></td><td>Opiskeluterveydenhuollon esitiedot</td><td>Opiskeluterveydenhuollon esitiedot</td><td>Förhandsuppgifter för studerandehälsovården</td><td>Preliminary information for student health care</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-26">26</a></td><td>Suun terveydentila, lapset ja nuoret</td><td>Suun terveydentila, lapset ja nuoret</td><td>Munhälsa, barn och unga</td><td>Oral health status, children and young persons</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-27">27</a></td><td>Omaishoitajan jaksaminen</td><td>Omaishoitajan jaksaminen</td><td>Närståendevårdarens ork</td><td>Family carer ability to cope</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-28">28</a></td><td>Puolitoistavuotiaan laaja terveystarkastus</td><td>Puolitoistavuotiaan laaja terveystarkastus</td><td>Omfattande hälsokontroll för barn, 18 månader</td><td>Extensive health check-up of a one-and-a-half-year-old</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-29">29</a></td><td>Yötyötä tekevän työterveystarkastus</td><td>Yötyötä tekevän työterveystarkastus</td><td>Hälsokontroll för nattarbetande</td><td>Occupational health check-up of a night worker</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-30">30</a></td><td>Kohonnut verenpaine</td><td>Kohonnut verenpaine</td><td>Hypertoni</td><td>High blood pressure</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-31">31</a></td><td>Yläkoululaisen terveystarkastus, vanhemmat (poistettu)</td><td>Yläkoululaisen terveystarkastus, vanhemmat (poistettu)</td><td>Hälsokontroll för högstadieelev, föräldrar (borttagen)</td><td>Health check-up of an upper comprehensive school pupil, parents (removed)</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-32">32</a></td><td>Viitosluokkalaisen terveystarkastus, vanhemmat</td><td>Viitosluokkalaisen terveystarkastus, vanhemmat</td><td>Hälsokontroll för femteklassist, föräldrar</td><td>Health check-up of a fifth-grader, parents</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-33">33</a></td><td>Hampaiden tai suun oire tai vamma</td><td>Hampaiden tai suun oire tai vamma</td><td>Symtom eller skada i tänder eller mun</td><td>Teeth or mouth symptom or injury</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-34">34</a></td><td>Suun terveydentila, aikuiset</td><td>Suun terveydentila, aikuiset</td><td>Munhälsa, vuxna</td><td>Oral health status, adults</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-35">35</a></td><td>Äitiysneuvolan esitiedot</td><td>Äitiysneuvolan esitiedot</td><td>Förhandsuppgifter till mödrarådgivningen</td><td>Preliminary information for the maternity clinic</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-36">36</a></td><td>Hyvinvointitarkastus</td><td>Hyvinvointitarkastus</td><td>Välfärdsenkät</td><td>Well-being check-up</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-37">37</a></td><td>Suunnitelma</td><td>Suunnitelma</td><td>Plan</td><td>Plan</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-38">38</a></td><td>Liikuntaohjelma askeltajille</td><td>Liikuntaohjelma askeltajille</td><td>Stegprogrammet</td><td>Exercise programme for walkers and runners</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-39">39</a></td><td>Lääkärintodistus, pyyntö</td><td>Lääkärintodistus, pyyntö</td><td>Läkarintyg, begäran</td><td>Medical certificate, request</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-40">40</a></td><td>Diabetes, riskitesti</td><td>Diabetes, riskitesti</td><td>Diabetes, risktest</td><td>Diabetes, risk test</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-41">41</a></td><td>Yleinen oirearvio</td><td>Yleinen oirearvio</td><td>Allmän symtombedömning</td><td>General symptom assessment</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-42">42</a></td><td>Painonhallinta</td><td>Painonhallinta</td><td>Viktkontroll</td><td>Weight management</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-43">43</a></td><td>Tupakoinnin lopettamisen valmennusohjelma</td><td>Tupakoinnin lopettamisen valmennusohjelma</td><td>Coachningsprogram för att sluta röka</td><td>Coaching programme for quitting smoking</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-44">44</a></td><td>Terveellinen ravinto -valmennusohjelma</td><td>Terveellinen ravinto -valmennusohjelma</td><td>Coachningsprogrammet Hälsosam näring</td><td>Healthy nutrition coaching programme</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-45">45</a></td><td>Univalmennus</td><td>Univalmennus</td><td>Sömncoachning</td><td>Sleep coaching</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-46">46</a></td><td>Avoin palvelupyyntö</td><td>Avoin palvelupyyntö</td><td>Öppen servicebegäran</td><td>Open service request</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-47">47</a></td><td>Raskausdiabeteksen jälkiseuranta</td><td>Raskausdiabeteksen jälkiseuranta</td><td>Uppföljning av graviditetsdiabetes</td><td>Gestational diabetes follow-up</td></tr><tr><td><a href="CodeSystem-fiphr-cs-careplancategory.html#fiphr-cs-careplancategory-48">48</a></td><td>Koronavirustauti</td><td>Koronavirustauti</td><td>Coronavirusinfektion</td><td>Coronavirus disease</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-careplancategory"/>
+  <version value="0.2.1"/>
+  <name value="fiphr-vs-careplancategory"/>
+  <title value="Finnish PHR CarePlan Category value set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-06-05"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="Indicates type of SelfCarePlan."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://phr.kanta.fi/CodeSystem/fiphr-cs-careplancategory"/>
+      <concept>
+        <code value="1"/>
+        <display value="Hengitystietulehdus tai -oire"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Hengitystietulehdus tai -oire"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Luftvägsinfektion eller -symtom"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Respiratory infection or symptom"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Yskä"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Yskä"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hosta"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Cough"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Virtsatietulehdus tai -oire (18–65v. naiset)"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Virtsatietulehdus tai -oire (18–65v. naiset)"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Urinvägsinfektion- eller symtom (kvinnor 18–65 år)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Urinary tract infection or symptom (women aged 18–65)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Korvan kipu tai lukkoisuus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Korvan kipu tai lukkoisuus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Ont i öronen eller lock för örat"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Earache or ear plugging"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="Kurkkukipu tai nieluoire"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kurkkukipu tai nieluoire"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Halsont eller svalgsymtom"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Sore throat or throat symptom"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="Ripuli"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Ripuli"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Diarré"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diarrhoea"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="Alaselkäkipu tai -vamma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Alaselkäkipu tai -vamma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Ländryggssmärta eller -skada"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Lower back pain or injury"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="Närästys"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Närästys"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Halsbränna"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Heartburn"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="Olkapään kipu, jäykkyys tai vamma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Olkapään kipu, jäykkyys tai vamma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Smärta, stelhet eller skada i skuldran"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Shoulder pain, stiffness or injury"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="Päänsärky"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Päänsärky"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Huvudvärk"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Headache"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="11"/>
+        <display value="Peräaukon seudun oire"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Peräaukon seudun oire"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Symtom vid ändtarmsöppningen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Anal region symptom"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="12"/>
+        <display value="Polven oire tai vamma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Polven oire tai vamma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Symtom eller skada i knät"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Knee symptom or injury"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="13"/>
+        <display value="Silmän oire"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Silmän oire"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Symtom i öga"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Eye symptom"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="Sukupuolitaudin oire"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sukupuolitaudin oire"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Symtom på könssjukdom"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Sexually transmitted disease symptom"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="15"/>
+        <display value="Terveystarkastus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Terveystarkastus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hälsokontroll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Health check-up"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="16"/>
+        <display value="Henkilökohtainen apu"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Henkilökohtainen apu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Personlig assistans"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Personal assistance"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="17"/>
+        <display value="Liikkuminen kodin ulkopuolella"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Liikkuminen kodin ulkopuolella"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Mobilitet utanför hemmet"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Moving outside the home"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="Maahanmuuttajan hyvinvointi"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Maahanmuuttajan hyvinvointi"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Invandrarens välbefinnande"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Well-being of an immigrant"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="19"/>
+        <display value="Omaishoidon tuki"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Omaishoidon tuki"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Stöd för närståendevård"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Informal care support"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="20"/>
+        <display value="Läheishoitajan tarkastus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Läheishoitajan tarkastus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Kontroll för anhörig omsorgsgivare"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Check-up of an informal carer"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="21"/>
+        <display value="Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Viitosluokkalaisen terveystarkastus, vanhemmat (poistettu)"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hälsokontroll för femteklassist, föräldrar (borttagen)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Health check-up of a fifth-grader, parents (removed)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="22"/>
+        <display value="Viitosluokkalaisen terveystarkastus, lapsi (poistettu)"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Viitosluokkalaisen terveystarkastus, lapsi (poistettu)"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hälsokontroll för femteklassist, barn (borttagen)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Health check-up of a fifth-grader, child (removed)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="23"/>
+        <display value="Yleinen hyvinvointikysely (WHOQOL-BREF)"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Yleinen hyvinvointikysely (WHOQOL-BREF)"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Allmän välfärdsenkät (WHOQOL-BREF)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="General well-being survey (WHOQOL-BREF)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="24"/>
+        <display value="Elämäntilannekysely (3X10D)"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Elämäntilannekysely (3X10D)"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Enkät om livssituation (3X10D)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Life-situation survey (3X10D)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="25"/>
+        <display value="Opiskeluterveydenhuollon esitiedot"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Opiskeluterveydenhuollon esitiedot"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Förhandsuppgifter för studerandehälsovården"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Preliminary information for student health care"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="26"/>
+        <display value="Suun terveydentila, lapset ja nuoret"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Suun terveydentila, lapset ja nuoret"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Munhälsa, barn och unga"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Oral health status, children and young persons"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="27"/>
+        <display value="Omaishoitajan jaksaminen"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Omaishoitajan jaksaminen"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Närståendevårdarens ork"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Family carer ability to cope"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="28"/>
+        <display value="Puolitoistavuotiaan laaja terveystarkastus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Puolitoistavuotiaan laaja terveystarkastus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Omfattande hälsokontroll för barn, 18 månader"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Extensive health check-up of a one-and-a-half-year-old"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29"/>
+        <display value="Yötyötä tekevän työterveystarkastus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Yötyötä tekevän työterveystarkastus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hälsokontroll för nattarbetande"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Occupational health check-up of a night worker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="30"/>
+        <display value="Kohonnut verenpaine"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kohonnut verenpaine"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hypertoni"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="High blood pressure"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="31"/>
+        <display value="Yläkoululaisen terveystarkastus, vanhemmat (poistettu)"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Yläkoululaisen terveystarkastus, vanhemmat (poistettu)"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hälsokontroll för högstadieelev, föräldrar (borttagen)"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Health check-up of an upper comprehensive school pupil, parents (removed)"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="32"/>
+        <display value="Viitosluokkalaisen terveystarkastus, vanhemmat"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Viitosluokkalaisen terveystarkastus, vanhemmat"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hälsokontroll för femteklassist, föräldrar"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Health check-up of a fifth-grader, parents"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="33"/>
+        <display value="Hampaiden tai suun oire tai vamma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Hampaiden tai suun oire tai vamma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Symtom eller skada i tänder eller mun"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Teeth or mouth symptom or injury"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="34"/>
+        <display value="Suun terveydentila, aikuiset"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Suun terveydentila, aikuiset"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Munhälsa, vuxna"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Oral health status, adults"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="35"/>
+        <display value="Äitiysneuvolan esitiedot"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Äitiysneuvolan esitiedot"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Förhandsuppgifter till mödrarådgivningen"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Preliminary information for the maternity clinic"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="36"/>
+        <display value="Hyvinvointitarkastus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Hyvinvointitarkastus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Välfärdsenkät"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Well-being check-up"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="37"/>
+        <display value="Suunnitelma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Suunnitelma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Plan"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Plan"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="38"/>
+        <display value="Liikuntaohjelma askeltajille"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Liikuntaohjelma askeltajille"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Stegprogrammet"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Exercise programme for walkers and runners"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="39"/>
+        <display value="Lääkärintodistus, pyyntö"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lääkärintodistus, pyyntö"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Läkarintyg, begäran"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Medical certificate, request"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="40"/>
+        <display value="Diabetes, riskitesti"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Diabetes, riskitesti"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Diabetes, risktest"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Diabetes, risk test"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41"/>
+        <display value="Yleinen oirearvio"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Yleinen oirearvio"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Allmän symtombedömning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="General symptom assessment"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="42"/>
+        <display value="Painonhallinta"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Painonhallinta"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Viktkontroll"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Weight management"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="43"/>
+        <display value="Tupakoinnin lopettamisen valmennusohjelma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Tupakoinnin lopettamisen valmennusohjelma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Coachningsprogram för att sluta röka"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Coaching programme for quitting smoking"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="44"/>
+        <display value="Terveellinen ravinto -valmennusohjelma"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Terveellinen ravinto -valmennusohjelma"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Coachningsprogrammet Hälsosam näring"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Healthy nutrition coaching programme"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="45"/>
+        <display value="Univalmennus"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Univalmennus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Sömncoachning"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Sleep coaching"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="46"/>
+        <display value="Avoin palvelupyyntö"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Avoin palvelupyyntö"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Öppen servicebegäran"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Open service request"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="47"/>
+        <display value="Raskausdiabeteksen jälkiseuranta"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Raskausdiabeteksen jälkiseuranta"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Uppföljning av graviditetsdiabetes"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Gestational diabetes follow-up"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="48"/>
+        <display value="Koronavirustauti"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Koronavirustauti"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Coronavirusinfektion"/>
+        </designation>
+        <designation>
+          <language value="en"/>
+          <value value="Coronavirus disease"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

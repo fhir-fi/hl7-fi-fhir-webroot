@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="kanta-provenance-agent-role"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet kanta-provenance-agent-role</b></p><a name="kanta-provenance-agent-role"> </a><a name="hckanta-provenance-agent-role"> </a><a name="kanta-provenance-agent-role-fi-FI"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>http://gen.kanta.fi/fikanta-cs-rolecategory</td><td>Kanta specified roles</td></tr></table></li><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>urn:oid:1.2.246.537.5.40172</td><td>eArkisto - Rekisteripitäjän laji</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://gen.kanta.fi/kanta-provenance-agent-role"/>
+  <version value="2.0.0-rc1"/>
+  <title value="Example value set for provenance roles"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2025-02-06T19:03:35+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="mikael@sensotrend.com"/>
+    </telecom>
+  </contact>
+  <description value="This example value set contains the systems that can be used for agent roles in Kanta profiles"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="urn:ietf:rfc:3986"/>
+      <concept>
+        <code value="http://gen.kanta.fi/fikanta-cs-rolecategory"/>
+        <display value="Kanta specified roles"/>
+      </concept>
+    </include>
+    <include>
+      <system value="urn:ietf:rfc:3986"/>
+      <concept>
+        <code value="urn:oid:1.2.246.537.5.40172"/>
+        <display value="eArkisto - Rekisteripitäjän laji"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

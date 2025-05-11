@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-licensed-physician"/>
+  <meta>
+    <profile value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="practitioner-licensed-physician"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;practitioner-licensed-physician&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-practitioner.html">FI Base Practitioner</a></p></div><p><b>identifier</b>: id: 00198705840 (use: OFFICIAL), id: 311080-999X (use: OFFICIAL), id: 032680 (use: OFFICIAL), MNEMONIC: DOCTODAV (use: SECONDARY), id: mailto:dave.doctor@cgi.com, user-domain-authority: 4ec06bf9-1df1-4336-bf5a-33ba1a2707b2, user-domain-authority: dave.doctor@iurcgifisaas.onmicrosoft.com</p><p><b>active</b>: true</p><p><b>name</b>: Dave Doctor </p><p><b>telecom</b>: <a href="mailto:dave.doctor@cgi.com">dave.doctor@cgi.com</a></p><p><b>gender</b>: male</p><blockquote><p><b>qualification</b></p><p><b>code</b>: 001 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[2008]#001)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: 86152-322 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[2008]#86152-322)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: 2131 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown[2001]#2131)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>code</b>: MD <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#MD)</span></p></blockquote></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.537.26"/>
+    <value value="00198705840"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.21"/>
+    <value value="311080-999X"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.246.537.25"/>
+    <value value="032680"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <code value="MNEMONIC"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="XX"/>
+      </coding>
+    </type>
+    <system value="urn:oid:1.2.246.537.10.3575029.12.2.10.2131.24001"/>
+    <value value="DOCTODAV"/>
+  </identifier>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="mailto:dave.doctor@cgi.com"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.cgi.fi/code/person-id-type"/>
+        <code value="user-domain-authority"/>
+      </coding>
+    </type>
+    <value value="4ec06bf9-1df1-4336-bf5a-33ba1a2707b2"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.cgi.fi/code/person-id-type"/>
+        <code value="user-domain-authority"/>
+      </coding>
+    </type>
+    <value value="dave.doctor@iurcgifisaas.onmicrosoft.com"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Doctor"/>
+    <given value="Dave"/>
+    <suffix value="dr."/>
+  </name>
+  <telecom>
+    <system value="email"/>
+    <value value="dave.doctor@cgi.com"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="male"/>
+  <qualification>
+    <code>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.140"/>
+        <version value="2008"/>
+        <code value="001"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <code>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.148"/>
+        <version value="2008"/>
+        <code value="86152-322"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <code>
+      <coding>
+        <system value="urn:oid:1.2.246.537.6.74"/>
+        <version value="2001"/>
+        <code value="2131"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.18.220"/>
+        <code value="MD"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

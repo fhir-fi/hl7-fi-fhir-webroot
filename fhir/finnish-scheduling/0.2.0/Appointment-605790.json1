@@ -1,0 +1,96 @@
+{
+  "resourceType" : "Appointment",
+  "id" : "605790",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment 605790</b></p><a name=\"605790\"> </a><a name=\"hc605790\"> </a><a name=\"605790-fi-FI\"> </a><p><b>status</b>: Booked</p><p><b>serviceCategory</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.50.201801 SOTE19}\">Perheoikeudelliset palvelut</span></p><p><b>serviceType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.49.201501 NC}\">Isyyden selvittämispalvelu</span></p><p><b>appointmentType</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.884.2015 10}\">Kertakäynti toimipaikassa</span></p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p><p><b>slot</b>: <a href=\"Slot-123456789.html\">Slot: identifier = 123456789; serviceCategory = Perheoikeudelliset palvelut; serviceType = Isyyden selvittämispalvelu; appointmentType = Kertakäynti toimipaikassa; status = free; start = 2020-01-01 12:00:00+0200; end = 2020-01-01 12:30:00+0200</a></p><p><b>created</b>: 2019-12-01</p><p><b>comment</b>: Äidillä ei ole virallista henkilöllisyystodistusta</p><p><b>patientInstruction</b>: Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia</p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType SBJ}\">subject</span></p><p><b>actor</b>: Pentti Potilas (Identifier: <code>urn:oid:1.2.246.21</code>/010101-123N)</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType LOC}\">location</span></p><p><b>actor</b>: Vastaanotto (Identifier: 1.2.246.10.10303777.10.777)</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"HealthcareService/example\">Lastenvalvojan vastaanotto</a></p><p><b>status</b>: Accepted</p></blockquote></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension",
+    "valueContactPoint" : {
+      "system" : "sms",
+      "value" : "+3581234567"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "Cancellable",
+      "valueBoolean" : true
+    },
+    {
+      "url" : "Reschedulable",
+      "valueBoolean" : false
+    }],
+    "url" : "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension"
+  }],
+  "status" : "booked",
+  "serviceCategory" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.50.201801",
+      "code" : "SOTE19",
+      "display" : "Perheoikeudelliset palvelut"
+    }]
+  }],
+  "serviceType" : [{
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.49.201501",
+      "code" : "NC",
+      "display" : "Isyyden selvittämispalvelu"
+    }]
+  }],
+  "appointmentType" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.884.2015",
+      "code" : "10",
+      "display" : "Kertakäynti toimipaikassa"
+    }]
+  },
+  "start" : "2020-01-01T12:00:00+02:00",
+  "end" : "2020-01-01T12:30:00+02:00",
+  "slot" : [{
+    "reference" : "Slot/123456789"
+  }],
+  "created" : "2019-12-01",
+  "comment" : "Äidillä ei ole virallista henkilöllisyystodistusta",
+  "patientInstruction" : "Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia",
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "SBJ",
+        "display" : "subject"
+      }]
+    }],
+    "actor" : {
+      "identifier" : {
+        "system" : "urn:oid:1.2.246.21",
+        "value" : "010101-123N"
+      },
+      "display" : "Pentti Potilas"
+    },
+    "status" : "accepted"
+  },
+  {
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "LOC",
+        "display" : "location"
+      }]
+    }],
+    "actor" : {
+      "identifier" : {
+        "value" : "1.2.246.10.10303777.10.777"
+      },
+      "display" : "Vastaanotto"
+    },
+    "status" : "accepted"
+  },
+  {
+    "actor" : {
+      "reference" : "HealthcareService/example",
+      "display" : "Lastenvalvojan vastaanotto"
+    },
+    "status" : "accepted"
+  }]
+}

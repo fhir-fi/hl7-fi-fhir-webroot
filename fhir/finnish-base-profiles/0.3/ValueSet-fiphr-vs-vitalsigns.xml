@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiphr-vs-vitalsigns"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Finnish (fi)</b></td><td><b>Swedish (sv)</b></td></tr><tr><td><a href="https://loinc.org/9279-1/">9279-1</a></td><td>Respiratory rate</td><td>Hengitystiheys</td><td>Andningsfrekvens</td></tr><tr><td><a href="https://loinc.org/8867-4/">8867-4</a></td><td>Heart rate</td><td>Syke</td><td>Puls</td></tr><tr><td><a href="https://loinc.org/41924-2/">41924-2</a></td><td>Heart rate 24 hour mean</td><td>Sydämen syke 24 h keskiarvo</td><td>Hjärtats puls 24 h genomsnittspuls</td></tr><tr><td><a href="https://loinc.org/8883-1/">8883-1</a></td><td>Heart rate 24 hour minimum</td><td>Sydämen syke 24 h minimiarvo</td><td>Hjärtats puls 24 h minimivärde</td></tr><tr><td><a href="https://loinc.org/8873-2/">8873-2</a></td><td>Heart rate 24 hour maximum</td><td>Sydämen syke 24 h maksimiarvo</td><td>Hjärtats puls 24 h maximivärde</td></tr><tr><td><a href="https://loinc.org/8310-5/">8310-5</a></td><td>Body temperature</td><td>Kehon lämpö</td><td>Kroppstemperatur</td></tr><tr><td><a href="https://loinc.org/8331-1/">8331-1</a></td><td>Oral temperature</td><td>Lämpö, suu</td><td>Temperatur, munnen</td></tr><tr><td><a href="https://loinc.org/8332-9/">8332-9</a></td><td>Rectal temperature</td><td>Lämpö, peräsuoli</td><td>Temperatur, ändtarmen</td></tr><tr><td><a href="https://loinc.org/76011-6/">76011-6</a></td><td>Ear temperature</td><td>Lämpö, korva</td><td>Termperatur, örat</td></tr><tr><td><a href="https://loinc.org/8328-7/">8328-7</a></td><td>Axillary temperature</td><td>Lämpö, kainalo</td><td>Temperatur, armhålan</td></tr><tr><td><a href="https://loinc.org/8302-2/">8302-2</a></td><td>Body height</td><td>Pituus</td><td>Längd</td></tr><tr><td><a href="https://loinc.org/29463-7/">29463-7</a></td><td>Body weight</td><td>Paino</td><td>Vikt</td></tr><tr><td><a href="https://loinc.org/85354-9/">85354-9</a></td><td>Blood pressure panel with all children optional</td><td>Verenpaine</td><td>Blodtryck</td></tr><tr><td><a href="https://loinc.org/8480-6/">8480-6</a></td><td>Systolic blood pressure</td><td>Systolinen verenpaine</td><td>Systoliskt blodtryck</td></tr><tr><td><a href="https://loinc.org/8462-4/">8462-4</a></td><td>Diastolic blood pressure</td><td>Diastolinen verenpaine</td><td>Diastoliskt blodtryck</td></tr><tr><td><a href="https://loinc.org/15074-8/">15074-8</a></td><td>Glucose [Moles/volume] in Blood</td><td>Verensokeri</td><td>Blodsocker</td></tr><tr><td><a href="https://loinc.org/14743-9/">14743-9</a></td><td>Glucose [Moles/volume] in Capillary blood by Glucometer</td><td>Verensokeri verensokerimittarilla</td><td>Blodsocker med blodsockermätare</td></tr><tr><td><a href="https://loinc.org/14745-4/">14745-4</a></td><td>Glucose [Moles/volume] in Body fluid</td><td>Kudossokeri</td><td>Vävnadssocker</td></tr><tr><td><a href="https://loinc.org/19935-6/">19935-6</a></td><td>Maximum expiratory gas flow Respiratory system airway by Peak flow meter</td><td>PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo</td><td>Maximalt utandningsflöde med PEF-mätare</td></tr><tr><td><a href="https://loinc.org/8280-0/">8280-0</a></td><td>Waist Circumference at umbilicus by Tape measure</td><td>Vyötärönympärys</td><td>Midjemått</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://phr.kanta.fi/ValueSet/fiphr-vs-vitalsigns"/>
+  <version value="0.3.0"/>
+  <name value="fiphr-vs-vitalsigns"/>
+  <title value="Value Set Finnish PHR Vital Signs"/>
+  <status value="active"/>
+  <date value="2020-04-03T09:00:00+02:00"/>
+  <publisher value="HL7 Finland"/>
+  <contact>
+    <name value="HL7 Finland"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.fi/"/>
+    </telecom>
+  </contact>
+  <description value="This value set indicates the allowed vital sign result types in Finnish PRH. The concept Vitals signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FI"/>
+      <display value="Finland"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This content from LOINC? is copyright ? 1995 Regenstrief Institute, Inc. and the LOINC    Committee, and available at no cost under the license at http://loinc.org/terms-of-use"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="9279-1"/>
+        <display value="Respiratory rate"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Hengitystiheys"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Andningsfrekvens"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8867-4"/>
+        <display value="Heart rate"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Syke"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Puls"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="41924-2"/>
+        <display value="Heart rate 24 hour mean"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sydämen syke 24 h keskiarvo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hjärtats puls 24 h genomsnittspuls"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8883-1"/>
+        <display value="Heart rate 24 hour minimum"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sydämen syke 24 h minimiarvo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hjärtats puls 24 h minimivärde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8873-2"/>
+        <display value="Heart rate 24 hour maximum"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Sydämen syke 24 h maksimiarvo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Hjärtats puls 24 h maximivärde"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8310-5"/>
+        <display value="Body temperature"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kehon lämpö"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Kroppstemperatur"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8331-1"/>
+        <display value="Oral temperature"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lämpö, suu"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Temperatur, munnen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8332-9"/>
+        <display value="Rectal temperature"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lämpö, peräsuoli"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Temperatur, ändtarmen"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="76011-6"/>
+        <display value="Ear temperature"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lämpö, korva"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Termperatur, örat"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8328-7"/>
+        <display value="Axillary temperature"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Lämpö, kainalo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Temperatur, armhålan"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8302-2"/>
+        <display value="Body height"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Pituus"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Längd"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="29463-7"/>
+        <display value="Body weight"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Paino"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Vikt"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="85354-9"/>
+        <display value="Blood pressure panel with all children optional"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Verenpaine"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Blodtryck"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Systolinen verenpaine"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Systoliskt blodtryck"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Diastolinen verenpaine"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Diastoliskt blodtryck"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="15074-8"/>
+        <display value="Glucose [Moles/volume] in Blood"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Verensokeri"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Blodsocker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14743-9"/>
+        <display value="Glucose [Moles/volume] in Capillary blood by Glucometer"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Verensokeri verensokerimittarilla"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Blodsocker med blodsockermätare"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="14745-4"/>
+        <display value="Glucose [Moles/volume] in Body fluid"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Kudossokeri"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Vävnadssocker"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="19935-6"/>
+        <display value="Maximum expiratory gas flow Respiratory system airway by Peak flow meter"/>
+        <designation>
+          <language value="fi"/>
+          <value value="PEF-mittarilla mitattu maksimaalinen uloshengitysvirtauksen arvo"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Maximalt utandningsflöde med PEF-mätare"/>
+        </designation>
+      </concept>
+      <concept>
+        <code value="8280-0"/>
+        <display value="Waist Circumference at umbilicus by Tape measure"/>
+        <designation>
+          <language value="fi"/>
+          <value value="Vyötärönympärys"/>
+        </designation>
+        <designation>
+          <language value="sv"/>
+          <value value="Midjemått"/>
+        </designation>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,632 @@
+{
+  "package": "hl7.fhir.fi.scheduling",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "FI",
+  "extensions": [
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/AdditionalInformationURLExtension",
+      "title": "AdditionalInformationURLExtension",
+      "types": [
+        "url"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension",
+      "title": "AppointmentMutabilityExtension",
+      "types": [
+        "boolean",
+        "boolean",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/CareGuaranteeExtension",
+      "title": "CareGuaranteeExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/CareplanIdentifierExtension",
+      "title": "CareplanIdentifierExtension",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/ChildAppointment",
+      "title": "ChildAppointment",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/CustomerJourneyExtension",
+      "title": "CustomerJourneyExtension",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension",
+      "title": "HomeMunicipalityExtension",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/MiscAppointmentDataExtension",
+      "title": "MiscAppointmentDataExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension",
+      "title": "NotificationInfoExtension",
+      "types": [
+        "ContactPoint"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/NotificationMediumExtension",
+      "title": "NotificationMediumExtension",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/ParentAppointment",
+      "title": "ParentAppointment",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/PatientInstructionURLExtension",
+      "title": "PatientInstructionURLExtension",
+      "types": [
+        "url"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/PractitionerGenderExtension",
+      "title": "PractitionerGenderExtension",
+      "types": [
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/QueueNoExt",
+      "title": "QueueNoExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/ReferralIdExtension",
+      "title": "ReferralIdExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/RequestedServiceExtension",
+      "title": "RequestedServiceExtension",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/ResourceCalendarIdExtension",
+      "title": "ResourceCalendarIdExtension",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/SelfServiceExtension",
+      "title": "SelfServiceExtension",
+      "types": [
+        "url",
+        "boolean",
+        "boolean",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt",
+      "title": "ServiceEventExtension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/TicketNoExt",
+      "title": "TicketNoExtension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/TopicIdExt",
+      "title": "TopicIdExtension",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.fi/fhir/StructureDefinition/VisibleToCustodian",
+      "title": "VisibleToCustodianExtension",
+      "types": [
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Appointment": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-appointment",
+        "title": "FiSchedulingAppointment"
+      }
+    ],
+    "HealthcareService": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-healthcare-service",
+        "title": "FiSchedulingHealthcareService"
+      }
+    ],
+    "Location": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-location",
+        "title": "FiSchedulingLocation"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPatient",
+        "title": "FinnishSchedulingPatient"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-schedule",
+        "title": "FiSchedulingSchedule"
+      }
+    ],
+    "Slot": [
+      {
+        "url": "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/fi-scheduling-slot",
+        "title": "FiSchedulingSlot"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPractitioner",
+        "title": "FinnishSchedulingPractitioner"
+      },
+      {
+        "url": "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPractitioner",
+        "title": "FinnishAppointmentPractitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.fi/fhir/StructureDefinition/FinnishSchedulingPractitionerRole",
+        "title": "FinnishSchedulingPractitionerRole"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.fi/fhir/StructureDefinition/AdditionalInformationURLExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/CareGuaranteeExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/CareplanIdentifierExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ChildAppointment": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/CustomerJourneyExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/HomeMunicipalityExtension": [
+      "Patient"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/MiscAppointmentDataExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/NotificationInfoExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/NotificationMediumExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ParentAppointment": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/PractitionerGenderExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/QueueNoExt": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ReferralIdExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/RequestedServiceExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ResourceCalendarIdExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/SelfServiceExtension": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/ServiceEventExt": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/TicketNoExt": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/TopicIdExt": [
+      "Appointment"
+    ],
+    "http://hl7.fi/fhir/StructureDefinition/VisibleToCustodian": [
+      "Appointment"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ]
+  }
+}
