@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart"/>
-  <version value="2.0.0-rc1"/>
+  <version value="2.0.0-rc2"/>
   <name value="FinnishSmart"/>
   <title value="Finnish Implementation Guide for SMART App Launch"/>
   <status value="draft"/>
-  <date value="2025-02-06T22:29:11+02:00"/>
+  <date value="2025-05-11T17:07:13+03:00"/>
   <publisher value="HL7 Finland ry"/>
   <contact>
     <name value="HL7 Finland ry"/>
@@ -41,7 +41,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.2.0"/>
+    <version value="6.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -49,17 +49,17 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.1.0"/>
+    <version value="5.2.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fi_base">
     <uri value="https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"/>
     <packageId value="hl7.fhir.fi.base"/>
-    <version value="2.0.0-rc1"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_ipa">
     <uri value="http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa"/>
     <packageId value="hl7.fhir.uv.ipa"/>
-    <version value="1.0.0"/>
+    <version value="1.1.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_smart_app_launch">
     <uri value="http://hl7.org/fhir/smart-app-launch/ImplementationGuide/hl7.fhir.uv.smart-app-launch"/>
@@ -284,7 +284,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.5.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">

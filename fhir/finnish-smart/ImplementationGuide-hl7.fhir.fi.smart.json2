@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.smart</b></p><a name=\"hl7.fhir.fi.smart\"> </a><a name=\"hchl7.fhir.fi.smart\"> </a><a name=\"hl7.fhir.fi.smart-fi-FI\"> </a><h2>FinnishSmart</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart</pre><div><p>Guidelines for using the SMART App Launch mechanism in Finland.</p>\n</div></div>"
   },
   "url" : "https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart",
-  "version" : "2.0.0-rc1",
+  "version" : "2.0.0-rc2",
   "name" : "FinnishSmart",
   "title" : "Finnish Implementation Guide for SMART App Launch",
   "status" : "draft",
-  "date" : "2025-02-06T22:29:11+02:00",
+  "date" : "2025-05-11T17:07:13+03:00",
   "publisher" : "HL7 Finland ry",
   "contact" : [{
     "name" : "HL7 Finland ry",
@@ -42,7 +42,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.2.0"
+    "version" : "6.3.0"
   },
   {
     "id" : "hl7ext",
@@ -52,19 +52,19 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.1.0"
+    "version" : "5.2.0"
   },
   {
     "id" : "hl7_fhir_fi_base",
     "uri" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
     "packageId" : "hl7.fhir.fi.base",
-    "version" : "2.0.0-rc1"
+    "version" : "1.0.0"
   },
   {
     "id" : "hl7_fhir_uv_ipa",
     "uri" : "http://hl7.org/fhir/uv/ipa/ImplementationGuide/hl7.fhir.uv.ipa",
     "packageId" : "hl7.fhir.uv.ipa",
-    "version" : "1.0.0"
+    "version" : "1.1.0"
   },
   {
     "id" : "hl7_fhir_uv_smart_app_launch",
@@ -372,7 +372,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.5.0"
     },
     {
       "extension" : [{

@@ -26,16 +26,16 @@
       "canonical" : "https://hl7.fi/fhir/finnish-smart",
       "category" : "National Base",
       "ci-build" : "https://fhir.fi/finnish-smart/",
-      "version-count" : 9,
+      "version-count" : 10,
       "latest" : {
-        "version" : "2.0.0-rc1",
-        "date" : "2025-02-06",
-        "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc1"
+        "version" : "2.0.0-rc2",
+        "date" : "2025-05-11",
+        "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc2"
       },
       "milestone" : {
-        "version" : "2.0.0-rc1",
-        "date" : "2025-02-06",
-        "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc1"
+        "version" : "2.0.0-rc2",
+        "date" : "2025-05-11",
+        "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc2"
       }
     },
     {

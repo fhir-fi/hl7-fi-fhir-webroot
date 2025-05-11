@@ -11,7 +11,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FI SMART Problem List Item - TTL Representation - Finnish Implementation Guide for SMART App Launch v2.0.0-rc1</title>
+    <title>FI SMART Problem List Item - TTL Representation - Finnish Implementation Guide for SMART App Launch v2.0.0-rc2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -70,7 +70,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Finnish Implementation Guide for SMART App Launch</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-rc1 - ballot
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
 
 
 
@@ -138,7 +138,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Implementation Guide for SMART App Launch (v2.0.0-rc1: <a no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fi/fhir/finnish-smart/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Implementation Guide for SMART App Launch (v2.0.0-rc2: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-smart/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -211,7 +211,7 @@
         
           Draft
           
-            as of 2025-02-06
+            as of 2025-05-11
           
         
       </td>
@@ -232,6 +232,7 @@
   <pre class="rdf" style="white-space: pre; overflow: hidden">
 @prefix fhir: &lt;http://hl7.org/fhir/&gt; .
 @prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
 @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
 @prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
@@ -242,20 +243,21 @@
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;fi-smart-problem-list-item&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureDefinition fi-smart-problem-list-item&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fi-smart-problem-list-item\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfi-smart-problem-list-item\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fi-smart-problem-list-item-fi-FI\&quot;&gt; &lt;/a&gt;&lt;table border=\&quot;0\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;The logical name of the element\&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Information about the use of the element\&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Minimum and Maximum # of times the element can appear in the instance\&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;width: 100px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Reference to the type of the element\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Additional information about the element\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_resource.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-fi-smart-problem-list-item-definitions.html#Condition\&quot;&gt;Condition&lt;/a&gt;&lt;a name=\&quot;Condition\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc1/StructureDefinition-fi-base-condition.html\&quot;&gt;FiBaseCondition&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Detailed information about conditions, problems or diagnoses&lt;/span&gt;&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;This profile also imposes the profile &lt;/span&gt;&lt;a style=\&quot;font-weight:bold; font-weight:bold\&quot; href=\&quot;http://hl7.org/fhir/uv/ipa/STU1/StructureDefinition-ipa-problem-list-item.html\&quot;&gt;IPA-problem-list-item&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: StructureDefinition fi-smart-problem-list-item&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fi-smart-problem-list-item\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfi-smart-problem-list-item\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fi-smart-problem-list-item-fi-FI\&quot;&gt; &lt;/a&gt;&lt;table border=\&quot;0\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;The logical name of the element\&quot;&gt;Name&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Information about the use of the element\&quot;&gt;Flags&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Minimum and Maximum # of times the element can appear in the instance\&quot;&gt;Card.&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;width: 100px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Reference to the type of the element\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Additional information about the element\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_resource.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Resource\&quot; class=\&quot;hierarchy\&quot;/&gt; &lt;a href=\&quot;StructureDefinition-fi-smart-problem-list-item-definitions.html#Condition\&quot;&gt;Condition&lt;/a&gt;&lt;a name=\&quot;Condition\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;0&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;..&lt;/span&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;*&lt;/span&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;https://hl7.fi/fhir/finnish-base-profiles/1.0.0/StructureDefinition-fi-base-condition.html\&quot;&gt;FiBaseCondition&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;span style=\&quot;opacity: 0.5\&quot;&gt;Detailed information about conditions, problems or diagnoses&lt;/span&gt;&lt;br/&gt;&lt;span style=\&quot;font-weight:bold\&quot;&gt;This profile also imposes the profile &lt;/span&gt;&lt;a style=\&quot;font-weight:bold; font-weight:bold\&quot; href=\&quot;http://hl7.org/fhir/uv/ipa/STU1.1/StructureDefinition-ipa-problem-list-item.html\&quot;&gt;IPA-problem-list-item (1.1.0)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral
   ] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.extension">fhir:extension</a> ( [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
-<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item&quot;^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item&gt;     ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">a</a> fhir:canonical ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item|1.1.0&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-problem-list-item|1.1.0&gt;     ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7.fi/fhir/finnish-smart/StructureDefinition/fi-smart-problem-list-item&quot;^^xsd:anyURI] ; # 
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.0.0-rc1&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2.0.0-rc2&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FiSMARTProblemListItem&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FI SMART Problem List Item&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-02-06T22:29:11+02:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2025-05-11T17:07:13+03:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 Finland ry&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HL7 Finland ry&quot; ] ;
@@ -299,7 +301,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.mapping.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SNOMED CT Attribute Binding&quot; ]
   ] ) ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;resource&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.abstract">fhir:abstract</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.abstract">fhir:abstract</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Condition&quot;^^xsd:anyURI] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.baseDefinition">fhir:baseDefinition</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-condition&quot;^^xsd:anyURI ;
@@ -307,6 +309,11 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.derivation">fhir:derivation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;constraint&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot">fhir:snapshot</a> [
+    ( <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.0.0&quot;       ]     ] ) ;
     ( <a href="http://hl7.org/fhir/R4/structuredefinition.html#StructureDefinition.snapshot.element">fhir:element</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition&quot; ] ;
@@ -321,9 +328,13 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint">fhir:constraint</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]         ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true           ]         ] [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Most systems will expect a clinicalStatus to be valued for problem-list-items that are managed over time, but might not need a clinicalStatus for point in time encounter-diagnosis.&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#markdown">a</a> fhir:markdown ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Most systems will expect a clinicalStatus to be valued for problem-list-items that are managed over time, but might not need a clinicalStatus for point in time encounter-diagnosis.&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;con-3&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;warning&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.clinicalStatus SHALL be present if verificationStatus is not entered-in-error and category is problem-list-item&quot; ] ;
@@ -382,9 +393,13 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/DomainResource&gt;         ]       ] [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]         ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">a</a> fhir:boolean ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true           ]         ] [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time.&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#markdown">a</a> fhir:markdown ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;When a resource has no narrative, only systems that fully understand the data can display the resource to a human safely. Including a human readable representation in the resource makes for a much more robust eco-system and cheaper handling of resources by intermediary systems. Some ecosystems restrict distribution of resources to only those systems that do fully understand the resources, and as a consequence implementers may believe that the narrative is superfluous. However experience shows that such eco-systems often open up to new participants over time.&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.key">fhir:key</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;dom-6&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.severity">fhir:severity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;warning&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.human">fhir:human</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A resource should have narrative for robust management&quot; ] ;
@@ -393,8 +408,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/DomainResource&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/DomainResource&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Entity. Role, or Act&quot; ]       ] [
@@ -420,10 +435,12 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:type</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;id&quot;^^xsd:anyURI ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">a</a> fhir:url ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;id&quot;^^xsd:anyURI           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ]     ] [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.meta&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.meta&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Metadata about the resource&quot; ] ;
@@ -445,8 +462,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ]     ] [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.implicitRules&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.implicitRules&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A set of rules under which this content was created&quot; ] ;
@@ -469,9 +486,9 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This element is labeled as a modifier because the implicit rules may provide additional knowledge about the resource that modifies it's meaning or interpretation&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ]     ] [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.language&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.language&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.short">fhir:short</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Language of the resource content&quot; ] ;
@@ -494,16 +511,19 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">a</a> fhir:canonical ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/ValueSet/all-languages&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/ValueSet/all-languages&gt;           ]         ] [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Language&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Language&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preferred&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A human language.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -532,8 +552,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Act.text?&quot; ]       ] )     ] [
@@ -551,8 +571,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;*&quot; ]       ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:type</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Resource&quot;^^xsd:anyURI ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]       ] )     ] [
@@ -587,8 +607,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]       ] )     ] [
@@ -624,9 +644,9 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the resource that contains them&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]       ] )     ] [
@@ -653,8 +673,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Event.identifier&quot; ]       ] [
@@ -685,13 +705,16 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This element is labeled as a modifier because the status contains codes that mark the condition as no longer active.&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionClinicalStatus&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionClinicalStatus&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;required&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The clinical status of the condition or diagnosis.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -731,13 +754,16 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This element is labeled as a modifier because the status contains the code refuted and entered-in-error that mark the Condition as not currently valid.&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionVerificationStatus&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionVerificationStatus&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;required&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The verification status to support or decline the clinical status of the condition or diagnosis.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -778,12 +804,15 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionCategory&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionCategory&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensible&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A category assigned to the condition.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -820,12 +849,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionSeverity&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionSeverity&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;preferred&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;A subjective assessment of the severity of the condition as evaluated by the clinician.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -848,7 +879,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Identification of the condition, problem or diagnosis.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.requirements">fhir:requirements</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;0..1 to account for primarily narrative only resources.&quot; ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.alias">fhir:alias</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;type&quot; ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;0&quot;^^xsd:nonNegativeInteger ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> &quot;1&quot;^^xsd:nonNegativeInteger ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base">fhir:base</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.base.path">fhir:path</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition.code&quot; ] ;
@@ -865,12 +896,15 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionKind&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionKind&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;example&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Identification of the condition or diagnosis.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -911,12 +945,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BodySite&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;BodySite&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;example&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Codes describing anatomical locations. May include laterality.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -955,8 +991,9 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mustSupport">fhir:mustSupport</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Event.subject&quot; ]       ] [
@@ -993,8 +1030,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Event.context&quot; ]       ] [
@@ -1030,8 +1067,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Event.occurrence[x]&quot; ]       ] [
@@ -1068,8 +1105,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FiveWs.done[x]&quot; ]       ] [
@@ -1096,8 +1133,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FiveWs.recorded&quot; ]       ] [
@@ -1135,8 +1172,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FiveWs.author&quot; ]       ] [
@@ -1172,8 +1209,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FiveWs.source&quot; ]       ] [
@@ -1210,8 +1247,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=\&quot;stage/grade\&quot;]&quot; ]       ] )     ] [
@@ -1229,10 +1266,12 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:type</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;string&quot;^^xsd:anyURI ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">a</a> fhir:url ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;string&quot;^^xsd:anyURI           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]       ] )     ] [
@@ -1267,8 +1306,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]       ] )     ] [
@@ -1304,9 +1343,9 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]       ] )     ] [
@@ -1332,12 +1371,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionStage&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionStage&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;example&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Codes describing condition stages (e.g. Cancer stages).&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -1379,8 +1420,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;.self&quot; ]       ] )     ] [
@@ -1405,12 +1446,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionStageType&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ConditionStageType&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;example&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Codes describing the kind of condition staging (e.g. clinical or pathological).&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -1449,8 +1492,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;.outboundRelationship[typeCode=SPRT].target[classCode=OBS, moodCode=EVN]&quot; ]       ] )     ] [
@@ -1468,10 +1511,12 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type">fhir:type</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;string&quot;^^xsd:anyURI ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">a</a> fhir:url ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;string&quot;^^xsd:anyURI           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.type.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhirpath/System.String&quot;^^xsd:anyURI ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]       ] )     ] [
@@ -1506,8 +1551,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;n/a&quot; ]       ] )     ] [
@@ -1543,9 +1588,9 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Extension&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Extension&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifierReason">fhir:isModifierReason</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Modifier extensions are expected to modify the meaning or interpretation of the element that contains them&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;rim&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;N/A&quot; ]       ] )     ] [
@@ -1571,12 +1616,14 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding">fhir:binding</a> [
         ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.extension">fhir:extension</a> [
 <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName&quot;^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ManifestationOrSymptom&quot; ]         ] ) ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">a</a> fhir:string ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ManifestationOrSymptom&quot;           ]         ] ) ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.strength">fhir:strength</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;example&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Codes that describe the manifestation or symptoms of a condition.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.binding.valueSet">fhir:valueSet</a> [
@@ -1616,8 +1663,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> true ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;w5&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FiveWs.why[x]&quot; ]       ] [
@@ -1644,8 +1691,8 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.constraint.source">fhir:source</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/Element&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/StructureDefinition/Element&gt;         ]       ] ) ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isModifier">fhir:isModifier</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.isSummary">fhir:isSummary</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> false ] ;
       ( <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping">fhir:mapping</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.identity">fhir:identity</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;workflow&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#ElementDefinition#ElementDefinition.mapping.map">fhir:map</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Event.note&quot; ]       ] [
@@ -1688,7 +1735,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland ry</a>.  Package hl7.fhir.fi.smart#2.0.0-rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 6, 2025 22:29+0200">2025-02-06</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland ry</a>.  Package hl7.fhir.fi.smart#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 17:07+0300">2025-05-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>

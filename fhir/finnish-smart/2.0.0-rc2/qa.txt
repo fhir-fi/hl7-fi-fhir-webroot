@@ -1,0 +1,43 @@
+FinnishSmart : Validation Results
+=========================================
+
+err = 2, warn = 0, info = 0
+IG Publisher Version: 1.8.26
+Generated Sun May 11 17:07:08 EEST 2025. FHIR version 4.0.1 for hl7.fhir.fi.smart#2.0.0-rc2 (canonical = https://hl7.fi/fhir/finnish-smart)
+ Build Errors : 0 / 0 / 0
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/CapabilityStatement-fi-smart-server : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-allergy-intolerance : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-condition : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-immunization : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-medication : 0 / 2 / 3
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-medication-request : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-medication-statement : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-observation : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-patient : 0 / 7 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-practitioner : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-practitioner-role : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-problem-list-item : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/fsh-generated/resources/StructureDefinition-fi-smart-server-profile : 0 / 4 / 3
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc2/input/examples/CapabilityStatement-apotti-ekosysteemi : 2 / 8 / 2
+</table>
+== n/a ==
+== fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner.json ==
+== fsh-generated/resources/CapabilityStatement-fi-smart-server.json ==
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-allergy-intolerance.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-condition.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-immunization.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-medication.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-medication-request.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-medication-statement.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-observation.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-patient.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-practitioner.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-practitioner-role.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-problem-list-item.json ==
+== fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json ==
+== input/examples/CapabilityStatement-apotti-ekosysteemi.json ==
+ERROR: CapabilityStatement/apotti-eko01: CapabilityStatement.instantiates[0]: Canonical URL 'http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data' does not resolve
+ERROR: CapabilityStatement/apotti-eko01: CapabilityStatement.rest[0].resource[24].operation[0].definition: Canonical URL 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export' does not resolve

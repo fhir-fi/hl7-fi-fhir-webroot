@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SMARTExampleApottiPractitionerEHR - Finnish Implementation Guide for SMART App Launch v2.0.0-rc2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+    <link href="assets/css/fi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6.15"}
+    h3,h4,h5,h6{--heading-prefix:"6.15"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Implementation Guide for SMART App Launch</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="conformance.html">Conformance</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SMARTExampleApottiPractitionerEHR</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Implementation Guide for SMART App Launch (v0.3.0: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 1 Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="https://hl7.fi/fhir/finnish-smart">2.0.0-rc2</a>.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-smart/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="AuditEvent-apotti-ehr-launch-by-practitioner.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="AuditEvent-apotti-ehr-launch-by-practitioner.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="AuditEvent-apotti-ehr-launch-by-practitioner.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example AuditEvent: SMARTExampleApottiPractitionerEHR</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>An example in <em>Apotti Ekosysteemi</em>, launching the development version of the Sensotrend app
+(client).</p>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>Sensotrend's app has been set up in the <a href="https://fhir.epic.com/">Epic on FHIR</a> portal and the
+Client ID has been downloaded to Apotti, and a launch button has been configured in Apotti.</p>
+
+<h3 id="app-launch">App Launch</h3>
+
+<p>When a practitioner clicks the <strong>Sensotrend</strong> button on the EHR, the EHR generates a launch request
+to the client:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://dev.sensotrend.fi/api/smart/launch?iss=https%3A%2F%2Fgw.apottiekosysteemi.fi%2FInterconnect-FHIR-EKO01%2Fapi%2FFHIR%2FSTU3&amp;launch=o7mz2mMwXCgpyJ6ygi6NY7dRMI4c4ucIWlD_1o-j1mNJAAV_ESS_wSXxUtpGk2qmro4jk5c1zL744IuNZs_EZC4XRPns6LESRo_3RocY0KoJv9u8MngnWmJUSv3g7PM5 
+</code></pre></div></div>
+
+<p>The client app can use the <code class="language-plaintext highlighter-rouge">iss</code> parameter to decide whether to process the request at all. In this
+case we want to continue.</p>
+
+<h3 id="server-metadata">Server Metadata</h3>
+
+<p>In order to learn more about the system that is launching the app, the client app fetches the
+server metadata (based on the <code class="language-plaintext highlighter-rouge">iss</code> parameter and the <code class="language-plaintext highlighter-rouge">.well-known</code> location):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/api/FHIR/STU3/.well-known/smart-configuration
+</code></pre></div></div>
+
+<p>The response is:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "authorization_endpoint": "https:\/\/gw.apottiekosysteemi.fi\/Interconnect-FHIR-EKO01\/oauth2\/authorize",
+  "token_endpoint": "https:\/\/gw.apottiekosysteemi.fi\/Interconnect-FHIR-EKO01\/oauth2\/token",
+  "token_endpoint_auth_methods_supported": ["client_secret_post", "client_secret_basic", "private_key_jwt"],
+  "scopes_supported": ["epic.scanning.dmsusername", "fhirUser", "launch", "openid", "profile"],
+  "response_types_supported": ["code"],
+  "capabilities": [
+    "launch-ehr",
+    "launch-standalone",
+    "client-public",
+    "client-confidential-symmetric",
+    "context-banner",
+    "context-style",
+    "context-ehr-patient",
+    "context-ehr-encounter",
+    "context-standalone-patient",
+    "permission-offline",
+    "permission-patient",
+    "permission-user",
+    "sso-openid-connect"
+  ]
+}
+</code></pre></div></div>
+
+<p>The client app can cache this information and use a conditional request on subsequent launches to
+verify whether the information is still up to date (using the information present in the HTTP
+header of the above response).</p>
+
+<h3 id="authorization-redirect">Authorization Redirect</h3>
+
+<p>The client then redirects the launch request to the authorization endpoint. The request includes
+the <code class="language-plaintext highlighter-rouge">scope</code>, the <code class="language-plaintext highlighter-rouge">redirect_url</code>, and the <code class="language-plaintext highlighter-rouge">client_id</code> known to the client app. The request could
+also include the client secret, in case of a confidential app. Importantly, the client app sets a
+one time <code class="language-plaintext highlighter-rouge">state</code> parameter through which it can identify the redirect back from the auth server.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/authorize?aud=https%3A%2F%2Fgw.apottiekosysteemi.fi%2FInterconnect-FHIR-EKO01%2Fapi%2FFHIR%2FSTU3&amp;scope=launch+openid+fhirUser+patient%2FObservation.read+patient%2FOrganization.read+patient%2FPatient.read+user%2FPractitioner.read+user%2FPractitionerRole.read+launch+launch%2Fencounter+launch%2Fpatient&amp;response_type=code&amp;launch=o7mz2mMwXCgpyJ6ygi6NY7dRMI4c4ucIWlD_1o-j1mNJAAV_ESS_wSXxUtpGk2qmro4jk5c1zL744IuNZs_EZC4XRPns6LESRo_3RocY0KoJv9u8MngnWmJUSv3g7PM5&amp;state=2c45ddb7-c830-4ef4-8922-7360b618768f&amp;redirect_uri=https%3A%2F%2Fdev.sensotrend.fi%2Fapi%2Fauthenticate%2Fsmart&amp;client_id=ba932e7a-d9c9-4d79-af8b-48159a727b01
+</code></pre></div></div>
+
+<h3 id="authorization-response">Authorization Response</h3>
+
+<p>The authorization server approves the request and redirects back to the indicated <code class="language-plaintext highlighter-rouge">redirect_uri</code>,
+together with the <code class="language-plaintext highlighter-rouge">state</code> parameter the client app issued, and a <code class="language-plaintext highlighter-rouge">code</code> that the client app can use
+to fetch the access token and context information.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET http://dev.sensotrend.fi/api/authenticate/smart?code=2Q7gMpAsZuZdJeRrQHsKF0JW9HxodF5CrFjWWihM9STOkCutWYPPG5dKGG6fuLe_5ddxgSoBH2coxAfeQW_CrKTSS02RXsoxXN8YZO2AIznbB4iiBQzQcEIs5mZ_-U6U&amp;state=2c45ddb7-c830-4ef4-8922-7360b618768f
+</code></pre></div></div>
+
+<h3 id="access-token-retrieval">Access Token Retrieval</h3>
+
+<p>The client app exchanges the <code class="language-plaintext highlighter-rouge">code</code> to access token and context information with a <code class="language-plaintext highlighter-rouge">POST</code> request
+to the token endpoint (retrieved earlier with the server metadata).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST 'code=2Q7gMpAsZuZdJeRrQHsKF0JW9HxodF5CrFjWWihM9STOkCutWYPPG5dKGG6fuLe_5ddxgSoBH2coxAfeQW_CrKTSS02RXsoxXN8YZO2AIznbB4iiBQzQcEIs5mZ_-U6U&amp;grant_type=authorization_code&amp;redirect_uri=https%3A%2F%2Fdev.sensotrend.fi%2Fapi%2Fauthenticate%2Fsmart&amp;client_id=ba932e7a-d9c9-4d79-af8b-48159a727b01' 
+</code></pre></div></div>
+
+<p>The response is:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "access_token": "ODwdzFxnt2XPLkPN99X13HdgBy7v55nZuysW2RYbVQl9NnBVMuQv8ER5_3JDD1oPiRSp6EWS2LQ6Lv2GHtrSx2a8YHJRakSV1ZkvGVRN9YSAN7CaPA9GQ_Dc_0iS7MXe",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "scope": "user/Appointment.read user/DocumentReference.write user/Encounter.Read user/Encounter.read user/Observation.Read user/Observation.Write user/Observation.read user/Observation.write user/Organization.read user/Patient.Read user/Patient.read user/Practitioner.Read user/Practitioner.read user/PractitionerRole.read launch launch/patient openid",
+  "state": "2c45ddb7-c830-4ef4-8922-7360b618768f",
+  "__epic.dstu2.patient": "TsRGy4u8N.QB9ggWS-RNnKLIRbxmCIW4Fvyw1-8bXPawB",
+  "deptID": "490771",
+  "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFlOHhRNTBiMFd3UGNmNjNYWENCcms4anFJUlErSVBwNTg0VlVLbmRwZXM9IiwidHlwIjoiSldUIn0.eyJhdWQiOiJiYTkzMmU3YS1kOWM5LTRkNzktYWY4Yi00ODE1OWE3MjdiMDEiLCJleHAiOjE2NzQ1NTYwNTQsImlhdCI6MTY3NDU1NTc1NCwiaXNzIjoiaHR0cHM6Ly9ndy5hcG90dGlla29zeXN0ZWVtaS5maS9JbnRlcmNvbm5lY3QtRkhJUi1FS08wMS9vYXV0aDIiLCJzdWIiOiJlaEhqcnJCbDJ1VWJDMC5vbG9DVFJVU2dqbzNjUGFaZVFaaHJiNDgxeWx4dzMifQ.ZL2NAp1g3BHMpJMdMn7IUOqhaBokSUjdc33k6UPYx-FA9TyAlneJDnxEJ8gVfRIck5Ix3zanyuBt0wOYOSfH160Jng54Qmhqgo_HRHHQzqoz-pS7jUd_LSrFpbrEKTBfsvrirhfExT9nGkzhPPMwfDzv5HSXR56WCljpXbPS9JkZv2NgQxc0PDEByPdFo_OH1icYa9z7b8Xq_MqwUG27bnDc3jzBTq9QBrQUO6jEYEJaZIc4KaakizHPzjYaf-Av39ZIiw2FnG59xawHEwP77xsYaOJA9sMwMeXvvshwlyN9EM152JbxjcYUWhJw07se-VRtKqI_f_O2BYp3Ly89KQ",
+  "loginDepartment": "eYvrM0-vLt2R54-Oq4G7jgA3",
+  "need_patient_banner": "true",
+  "patient": "e5Lq8kpLjGQOrUOSyW1Bwwg3",
+  "smart_style_url": "https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/api/epic/2016/EDI/HTTP/style/100016/I0YyRkFGOHwjQzEyMTI3fCMwMEFBRkZ8I0UwRjNFRXwjODZCNTQwfCMwMDAwMDB8MHB4fDEwcHh8fEFyaWFsLCBzYW5zLXNlcmlmfCdTZWdvZSBVSScsIEFyaWFsLCBzYW5zLXNlcmlmfHw%3D.json"
+}
+</code></pre></div></div>
+
+<p>The parameters <code class="language-plaintext highlighter-rouge">__epic.dstu2.patient</code>, <code class="language-plaintext highlighter-rouge">deptID</code>, and <code class="language-plaintext highlighter-rouge">loginDepartment</code> are Epic specific
+parameters, the rest are defined by the
+<a href="http://www.hl7.org/fhir/smart-app-launch/">SMART App Launch specification</a>.</p>
+
+<p>In this case, the client app uses the deptID to know the part of the organization the call comes
+from. The client app wants to limit the visibility of the app and the data to only specific clinics
+within Apotti.</p>
+
+<p>The standard way to do this would be through the
+<a href="http://www.hl7.org/fhir/smart-app-launch/scopes-and-launch-context.html#launch-context-arrives-with-your-access_token"><code class="language-plaintext highlighter-rouge">fhirContext</code></a>
+parameter.</p>
+
+<p>The client app can now use the <code class="language-plaintext highlighter-rouge">access_token</code> to fetch more information.</p>
+
+<h3 id="user-information">User Information</h3>
+
+<p>The client can decode the <code class="language-plaintext highlighter-rouge">id_token</code> to find out more about the person launching the app. It could
+be a patient, accessing the app through the patient portal, but in this case it is a practitioner.</p>
+
+<p>The client app SHOULD verify the signature of the <code class="language-plaintext highlighter-rouge">id_token</code>. The public key required for
+verification can be found through the <code class="language-plaintext highlighter-rouge">.well-known/openid-configuration</code>, in this case with:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/api/FHIR/STU3/.well-known/openid-configuration
+</code></pre></div></div>
+<p>The client app can then use the key set uri from the <code class="language-plaintext highlighter-rouge">jwks_uri</code> property to validate the token.</p>
+
+<p>An alternative is to use the
+<a href="http://www.hl7.org/fhir/smart-app-launch/token-introspection.html">token introspection</a> endpoint.</p>
+
+
+</div>
+
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AuditEvent apotti-ehr-launch-by-practitioner</b></p><a name="apotti-ehr-launch-by-practitioner"> </a><a name="hcapotti-ehr-launch-by-practitioner"> </a><a name="apotti-ehr-launch-by-practitioner-fi-FI"> </a><p><b>type</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110114">DICOM 110114</a>: User Authentication</p><p><b>subtype</b>: <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html#dicom-dcim-110120">DICOM 110120</a>: Application Start</p><p><b>action</b>: Execute</p><p><b>recorded</b>: 2023-01-24 12:20:18+0200</p><blockquote><p><b>agent</b></p><p><b>who</b>: Apotti Ekosysteemi</p><p><b>requestor</b>: true</p></blockquote><blockquote><p><b>agent</b></p><p><b>who</b>: Sensotrend Oy</p><p><b>requestor</b>: false</p></blockquote><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Observer</b></td><td><b>Type</b></td></tr><tr><td style="display: none">*</td><td>Sensotrend Oy</td><td><a href="http://terminology.hl7.org/5.5.0/CodeSystem-security-source-type.html#security-source-type-3">Audit Event Source Type 3</a>: Web Server</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+<h3>Notes:</h3>
+
+
+<div style="display:inline-block" markdown="1">
+
+<p>Sensotrend's client app manages patient-generated health data and therefore also manages the
+permissions that patients grant to different parties to access their data.</p>
+
+<p>The details of that mechanism can be viewed in the video below. This video shows the above example
+in action. In this case the app is not launched from Apotti, rather from the Epic on FHIR portal.</p>
+
+<div style="width: 100%; aspect-ratio: 16 / 9;">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Nw15LDwtCaI?start=857" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland ry</a>.  Package hl7.fhir.fi.smart#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 17:05+0300">2025-05-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-smart/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-smart/master/LICENSE"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-smart">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-smart/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

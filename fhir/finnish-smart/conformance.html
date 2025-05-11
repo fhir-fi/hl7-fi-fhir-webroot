@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Conformance - Finnish Implementation Guide for SMART App Launch v2.0.0-rc1</title>
+    <title>Conformance - Finnish Implementation Guide for SMART App Launch v2.0.0-rc2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Finnish Implementation Guide for SMART App Launch</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-rc1 - ballot
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
 
 
 
@@ -137,7 +137,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Implementation Guide for SMART App Launch (v2.0.0-rc1: <a no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fi/fhir/finnish-smart/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Implementation Guide for SMART App Launch (v2.0.0-rc2: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-smart/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Conformance</h2>
   
 
@@ -156,6 +156,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#capability-statement" id="markdown-toc-capability-statement">Capability Statement</a></li>
+  <li><a href="#profiles-defined-in-this-implementation-guide" id="markdown-toc-profiles-defined-in-this-implementation-guide">Profiles Defined in This Implementation Guide</a></li>
   <li><a href="#global-profiles" id="markdown-toc-global-profiles">Global Profiles</a></li>
 </ul>
 
@@ -171,6 +172,46 @@ IPA specification and for XML format.</p>
 <p>The
 <a href="StructureDefinition-fi-smart-server-profile.html">Finnish SMART Server Capability Statement Profile</a>
 is intended to help in validation of server capability statements.</p>
+
+<h3 id="profiles-defined-in-this-implementation-guide">Profiles Defined in This Implementation Guide</h3>
+
+<ul><li>
+    <a href="StructureDefinition-fi-smart-allergy-intolerance.html">FI SMART AllergyIntolerance</a>
+    <p>This is the Finnish patient facing profile for the AllergyIntolerance resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-condition.html">FI SMART Condition</a>
+    <p>This is the Finnish patient facing profile for the Condition resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-immunization.html">FI SMART Immunization</a>
+    <p>This is the Finnish patient facing profile for the Immunization resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-medication-request.html">FI SMART Medication Request</a>
+    <p>This is the Finnish base profile for the MedicationRequest resource for patient access use case.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-medication-statement.html">FI SMART MedicationStatement</a>
+    <p>This is the Finnish patient facing profile for the MedicationStatement resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-medication.html">FI SMART Medication</a>
+    <p>This is the Finnish base profile for the Medication resource for patient access use case.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-observation.html">FI SMART Observation</a>
+    <p>This is the Finnish patient facing profile for the Observation resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-patient.html">FI SMART Patient</a>
+    <p>This is the Finnish patient facing profile for the Patient resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-practitioner-role.html">FI SMART PractitionerRole</a>
+    <p>This is the Finnish patient facing profile for the PractitionerRole resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-practitioner.html">FI SMART Practitioner</a>
+    <p>This is the Finnish patient facing profile for the Practitioner resource.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-problem-list-item.html">FI SMART Problem List Item</a>
+    <p>This is the Finnish patient facing profile for the Condition resource for problem list items.</p>
+  </li><li>
+    <a href="StructureDefinition-fi-smart-server-profile.html">Finnish SMART Server Capability Statement Profile</a>
+    <p>This CapabilityStatement profile describes the basic rules for a server actor providing SMART App Launch in Finland.</p>
+  </li></ul>
 
 <h3 id="global-profiles">Global Profiles</h3>
 
@@ -195,7 +236,7 @@ is intended to help in validation of server capability statements.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland ry</a>.  Package hl7.fhir.fi.smart#2.0.0-rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 6, 2025 22:29+0200">2025-02-06</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland ry</a>.  Package hl7.fhir.fi.smart#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 17:07+0300">2025-05-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>

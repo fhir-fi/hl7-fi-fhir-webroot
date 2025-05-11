@@ -4,12 +4,23 @@
     <description>New publications by HL7 Finland&gt;</description>
     <link>http://hl7.fi/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Sun, 11 May 2025 04:26:48 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 11 May 2025 05:05:15 +0300</lastBuildDate>
     <atom:link href="http://hl7.fi/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 May 2025 04:26:48 +0300</pubDate>
+    <pubDate>Sun, 11 May 2025 05:05:15 +0300</pubDate>
     <language>en&gt;</language>
     <ttl>600</ttl>
   
+    <item>
+      <title>Finnish Implementation Guide for SMART App Launch version 2.0.0-rc2</title>
+      <description>Release Candidate 2 for v 2.0.0</description>
+      <link>https://hl7.fi/fhir/finnish-smart/2.0.0-rc2/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-smart/2.0.0-rc2/index.html</guid>
+      <dc:creator>HL7 Finland ry</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Sun, 11 May 2025 05:05:15 +0300</pubDate>
+      <fhir:details>Publication run at 11/05/2025 by mikael using Version 1.8.26 (Git# d479a7160a38). Built 2025-05-08T09:23:30.587Z (3 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>Finnish Base Profiles version 2.0.0-rc2</title>
       <description>Second release candidate for 2.0.0</description>
