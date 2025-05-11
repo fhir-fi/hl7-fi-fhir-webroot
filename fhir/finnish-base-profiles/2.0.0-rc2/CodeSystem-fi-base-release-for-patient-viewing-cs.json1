@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fi-base-release-for-patient-viewing-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fi-base-release-for-patient-viewing-cs</b></p><a name=\"fi-base-release-for-patient-viewing-cs\"> </a><a name=\"hcfi-base-release-for-patient-viewing-cs\"> </a><a name=\"fi-base-release-for-patient-viewing-cs-fi-FI\"> </a><p>This case-insensitive code system <code>https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-release-for-patient-viewing-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Finnish (fi)</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"fi-base-release-for-patient-viewing-cs-1\"> </a></td><td>Viivästetty</td><td>Tiedon näyttäminen kansalaiselle viivästetty.</td><td>Tiedon näyttäminen kansalaiselle viivästetty. Hakijan kuuluu tutkia viivästämisen päättymisaika Provenance-resurssilta.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"fi-base-release-for-patient-viewing-cs-2\"> </a></td><td>Ei viivästetty</td><td>Tiedon näyttämistä kansalaiselle ei ole viivästetty.</td><td>Tiedon näyttämistä kansalaiselle ei ole viivästetty.</td></tr></table></div>"
+  },
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/CodeSystem/fi-base-release-for-patient-viewing-cs",
+  "version" : "2.0.0-rc2",
+  "name" : "FiBaseReleaseforPatientViewingCS",
+  "title" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2025-05-11T20:13:28+03:00",
+  "publisher" : "HL7 Finland",
+  "contact" : [{
+    "name" : "HL7 Finland",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.fi/"
+    },
+    {
+      "system" : "email",
+      "value" : "mikael@sensotrend.com"
+    }]
+  }],
+  "description" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Viivästetty",
+    "definition" : "Tiedon näyttäminen kansalaiselle viivästetty.",
+    "designation" : [{
+      "language" : "fi",
+      "value" : "Tiedon näyttäminen kansalaiselle viivästetty. Hakijan kuuluu tutkia viivästämisen päättymisaika Provenance-resurssilta."
+    }]
+  },
+  {
+    "code" : "2",
+    "display" : "Ei viivästetty",
+    "definition" : "Tiedon näyttämistä kansalaiselle ei ole viivästetty.",
+    "designation" : [{
+      "language" : "fi",
+      "value" : "Tiedon näyttämistä kansalaiselle ei ole viivästetty."
+    }]
+  }]
+}

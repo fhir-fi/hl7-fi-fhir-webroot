@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter id-for-child-encounter</b></p><a name=\"id-for-child-encounter\"> </a><a name=\"hcid-for-child-encounter\"> </a><a name=\"id-for-child-encounter-fi-FI\"> </a><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode IMP</a>: inpatient encounter</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2022-02-27 01:03:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-id-for-bed-3.html\">Location Vuode 3</a></td><td>Active</td><td>2022-02-27 01:03:00+0200 --&gt; (ongoing)</td></tr></table><p><b>serviceProvider</b>: Identifier: 1.2.246.10.8286189.10.100013</p><p><b>partOf</b>: <a href=\"Encounter-id-for-palvelutapahtuma.html\">Encounter: identifier = urn:oid:1.2.246.10.6794809.14011.2023.200035\u00a0(use:\u00a0official,\u00a0); status = in-progress; class = inpatient encounter (ActCode#IMP); period = 2022-02-27 01:03:00+0200 --&gt; (ongoing)</a></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter id-for-child-encounter</b></p><a name=\"id-for-child-encounter\"> </a><a name=\"hcid-for-child-encounter\"> </a><a name=\"id-for-child-encounter-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fi-base-encounter.html\">FI Base Encounter</a></p></div><p><b>status</b>: In Progress</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html#v3-ActCode-IMP\">ActCode IMP</a>: inpatient encounter</p><p><b>subject</b>: <a href=\"Patient-patient-of-municipality.html\">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland\u00a0(use:\u00a0official,\u00a0))</a></p><p><b>period</b>: 2022-02-27 01:03:00+0200 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location-id-for-bed-3.html\">Location Vuode 3</a></td><td>Active</td><td>2022-02-27 01:03:00+0200 --&gt; (ongoing)</td></tr></table><p><b>serviceProvider</b>: Identifier: 1.2.246.10.8286189.10.100013</p><p><b>partOf</b>: <a href=\"Encounter-id-for-palvelutapahtuma.html\">Encounter: identifier = urn:oid:1.2.246.10.6794809.14011.2023.200035\u00a0(use:\u00a0official,\u00a0); status = in-progress; class = inpatient encounter (ActCode#IMP); period = 2022-02-27 01:03:00+0200 --&gt; (ongoing)</a></p></div>"
   },
   "status" : "in-progress",
   "class" : {
@@ -30,7 +30,7 @@
     }
   }],
   "serviceProvider" : {
-    "type" : "ServiceProvider",
+    "type" : "Organization",
     "identifier" : {
       "value" : "1.2.246.10.8286189.10.100013"
     }

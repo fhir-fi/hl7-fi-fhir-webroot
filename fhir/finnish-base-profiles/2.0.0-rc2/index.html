@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Finnish Base Profiles v2.0.0-rc2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+    <link href="assets/css/fi.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://hl7.fi/"><img height="50" alt="Visit the HL7 Finland website" src="assets/images/hl7-finland-logo.svg"/></a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/></a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
+            <br/>
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
+
+
+
+  <img alt="Finland flag" src="assets/images/fin.svg" height="16" title="Finland"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="profiles.html">Profiles</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v0.2.0: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 1 Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. The current version which supersedes this version is <a data-no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles">2.0.0-rc2</a>.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">2.0.0-rc2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base|2.0.0-rc2"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2025-05-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FinnishBaseProfiles</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#companion-specifications" id="markdown-toc-companion-specifications">Companion Specifications</a></li>
+  <li><a href="#why-do-we-need-finnish-fhir-base-profiles" id="markdown-toc-why-do-we-need-finnish-fhir-base-profiles">Why Do We Need Finnish FHIR Base Profiles?</a></li>
+  <li><a href="#notable-fhir-implementations-in-finland" id="markdown-toc-notable-fhir-implementations-in-finland">Notable FHIR Implementations in Finland</a></li>
+  <li><a href="#profiling-approach" id="markdown-toc-profiling-approach">Profiling Approach</a></li>
+  <li><a href="#governance" id="markdown-toc-governance">Governance</a></li>
+  <li><a href="#collaboration" id="markdown-toc-collaboration">Collaboration</a></li>
+  <li><a href="#safety-considerations" id="markdown-toc-safety-considerations">Safety Considerations</a></li>
+  <li><a href="#license-and-legal-terms" id="markdown-toc-license-and-legal-terms">License and Legal Terms</a></li>
+</ul>
+
+</div>
+<p>This implementation guide specifies the Finnish FHIR base profiles.</p>
+
+<p>This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both <a href="package.r4.tgz">R4 (hl7.fhir.fi.base.r4)</a> and <a href="package.r4b.tgz">R4B (hl7.fhir.fi.base.r4b)</a> are available.<!--$$2$$--> There is no plan yet to base this implementation
+guide on <a href="https://hl7.org/fhir/R5/">FHIR R5</a>.</p>
+
+<div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.base#2.0.0-rc2/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <span title="Canonical: https://hl7.fi/fhir/finnish-base-profiles">Finnish Base Profiles</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.fi.base/2.0.0-rc2">hl7.fhir.fi.base#2.0.0-rc2</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.base#2.0.0-rc2/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://terminology.hl7.org/6.3.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/6.3.0">hl7.terminology.r4#6.3.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.base#2.0.0-rc2/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="http://hl7.org/fhir/extensions/5.2.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/5.2.0">hl7.fhir.uv.extensions.r4#5.2.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on the HL7 Extension Pack</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.base#2.0.0-rc2/temp/pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy" /><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy" /> <a href="https://hl7.fi/fhir/finnish-scheduling/0.3.1" title="Canonical: https://hl7.fi/fhir/finnish-scheduling">Finnish Scheduling</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.fi.scheduling/0.3.1">hl7.fhir.fi.scheduling#0.3.1</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table></div>
+<!--$$3$$-->
+
+<p>The previous version of this implementation guide depended on the
+<a href="https://build.fhir.org/ig/HL7/fhir-ipa/">International Patient Access</a> specification, and many
+profile definitions of that version derive from IPA profiles. These IPA-derived profiles are now
+moved to the
+<a href="https://hl7.fi/fhir/finnish-smart/">Finnish Implementation Guide for SMART App Launch</a>.</p>
+
+<h3 id="companion-specifications">Companion Specifications</h3>
+
+<p>There is a separate
+<a href="https://hl7.fi/fhir/finnish-smart/">Finnish Implementation Guide for SMART App Launch</a> that
+describes how the
+<a href="https://hl7.org/fhir/smart-app-launch/">SMART</a> specification is applied in Finland.</p>
+
+<p>See also <a href="https://hl7.fi/fhir/">all FHIR implementation guides published by HL7 Finland</a> and also
+<a href="https://simplifier.net/organization/hl7finland">HL7 Finland in Simplifier</a>.</p>
+
+<p>The <a href="profiles.html#other-finnish-profiles">Profiles page</a> lists some Finnish FHIR implementation
+guides published by other parties.</p>
+
+<h3 id="why-do-we-need-finnish-fhir-base-profiles">Why Do We Need Finnish FHIR Base Profiles?</h3>
+
+<p>Better flow of information between systems is one of the key enablers for digitalization and
+improved efficiency of healthcare systems. Better flow of information is facilitated by
+interoperability standards. HL7 FHIR® is one of the most important standards for interoperability
+and exchange of healthcare data.</p>
+
+<p>For many things in healthcare it is hard to achieve a global consensus over what data should be
+coded and communicated, and how. The base HL7 FHIR standard does an excellent job in defining the
+global consensus where it exists. At the same time, it specifically allows and encourages smaller
+communities to come up with more specific profiles and implementation guides.</p>
+
+<p>In many cases, the HL7 FHIR standard allows for several ways to implement a functionality. There
+are increasing concerns that without a coordinated approach implementers will choose different ways
+to implement some features, and this will lead to challenges for interoperability. This
+implementation guide attempts to define a consensus within the Finnish FHIR implementers on which
+ways we have considered the best fit for use cases in Finland.</p>
+
+<p>In this implementation guide we also describe the code systems and identifiers that are specific
+to the Finnish healthcare system.</p>
+
+<h3 id="notable-fhir-implementations-in-finland">Notable FHIR Implementations in Finland</h3>
+
+<p>There are dozens of FHIR enabled systems and applications implemented and in use in Finland. This
+list does not attempt to be a complete list of all implementations. Rather, it is included here for
+readers not familiar with the Finnish healthcare system, as a quick glance to some of the most
+notable implementations at the time of writing of the first version of this guide.</p>
+
+<h4 id="kanta">Kanta</h4>
+
+<p><a href="https://www.kanta.fi/">Kanta</a> is the Finnish national central registry of health and social
+welfare information, with many services available for systems, providers, and citizens. Most of
+both the data and the APIs in Kanta system are based on HL7 V3 standards. However, there is
+ongoing work to open also FHIR based access to the information.</p>
+
+<p>The part where HL7 FHIR is used the most is the <a href="https://www.kanta.fi/phr">Kanta PHR</a>, a personal
+health record platform for storing and exchanging health and wellbeing data produced and governed
+by citizens. This part of Kanta is also the one most open to application developers.</p>
+
+<p>Kanta has also implemented a FHIR APIs for
+<a href="https://simplifier.net/PrescriptionR4">prescription data</a> and for
+<a href="https://simplifier.net/Kanta-sosiaalihuolto-R4">social welfare services</a>.</p>
+
+<h4 id="omaolo">Omaolo</h4>
+
+<p><a href="https://www.omaolo.fi">Omaolo</a> is a collection of services developed by DigiFinland, a publicly
+funded company. Omaolo has a fully HL7 FHIR based personal health record platform as its core.</p>
+
+<h4 id="terveyskylä--health-village">Terveyskylä / Health Village</h4>
+
+<p><a href="http://healthvillage.fi">Health Village</a> is yet another publicly funded group of services. It has
+built in HL7 <a href="https://www.hl7.org/fhir/smart-app-launch/">SMART App Launch</a> capability for
+interacting with third party apps.</p>
+
+<h4 id="apotti">Apotti</h4>
+
+<p><a href="https://www.apotti.fi/">Apotti</a> is a sizeable Epic installation in Finland.
+<a href="https://www.epic.com">Epic</a> is one of the biggest electronic health record system vendors
+globally.</p>
+
+<h4 id="cgi">CGI</h4>
+
+<p>The <a href="https://www.cgi.com/fi/fi/tuoteratkaisut/omni360">OMNI360</a> by CGI Finland is one of the
+prominent Finnish electronic health record systems and has several native FHIR APIs.</p>
+
+<h4 id="eskosystems">EskoSystems</h4>
+
+<p>The <a href="https://eskosystems.fi/tuoteperhe/integraatiot/">Esko APTJ</a> by Esko Systems is also one of the
+prominent Finnish electronic health record systems. It uses several FHIR APIs internally, and
+offers a SMART App Launch method to interact with third party systems.</p>
+
+<h4 id="learn-more">Learn more</h4>
+
+<p>The <a href="https://fhir.fi/en/demo2022/index.html">FHIR Demo 2022</a> showcase presented integrations
+implemented between a dozen platforms and more than a dozen FHIR apps, all based on HL7 FHIR.
+The <a href="https://fhir.fi/en/demo2023/">FHIR Demo 2023</a> concentrated on these base profiles.
+<a href="https://fhir.fi/en/demo2024/">FHIR Demo 2024</a> extended the geographical scope of the showcase
+to cover the Nordic countries. The latest FHIR Demo can always be found on
+<a href="https://fhir.fi/demo/">fhir.fi/demo</a>.</p>
+
+<p>Even those showcases do not cover the full extent to which HL7 FHIR is being used in Finland.
+There's a lot going on!</p>
+
+<p>To learn about the current status, please contact <a href="https://www.hl7.fi/">HL7 Finland</a>. We're happy
+to give you an overview.</p>
+
+<h3 id="profiling-approach">Profiling Approach</h3>
+
+<p>The base FHIR specification works on a global scope. It is hard to achieve consensus on many things
+globally. However, smaller regions and jurisdictions are in a better position to agree on tighter
+constraints.</p>
+
+<h4 id="local-considerations">Local Considerations</h4>
+
+<p>For instance, different coding systems and terminologies are used in different parts of the world.
+In this implementation guide, we document which code systems and terminologies are used in Finland
+and how they are applied in FHIR.</p>
+
+<p>The FHIR standard also allows implementers to implement many features in several ways. One example
+is scheduling. Some jurisdictions are working on scheduling API's based on FHIR operations. In
+Finland, existing solutions have chosen to go with a more fine grained approach with pure FHIR
+resources and the REST interface.</p>
+
+<h4 id="international-aspects">International Aspects</h4>
+<style>
+  @counter-style danose {
+    system: cyclic;
+    symbols: 🇩🇰 🇳🇴 🇸🇪;
+    suffix: " ";
+  }
+  @counter-style uscachauee {
+    system: cyclic;
+    symbols: 🇺🇸 🇨🇦 🇨🇭 🇦🇺 🇪🇪;
+    suffix: " ";
+  }
+</style>
+
+<p>Our main intent is still to limit profiling specific to Finland. During the process, we actively
+monitor other national base profiles. We attempt to harmonize our base profiles with already
+published base profiles from other Nordic countries:</p>
+<ul style="list-style: danose">
+  <li style="list-style-type='🇩🇰'">the Danish <a href="https://hl7.dk/fhir/core">DK Core</a></li>
+  <li style="list-style-type='🇳🇴'">the Norwegian core profiles for R4
+    <a href="https://simplifier.net/HL7Norwayno-basis/">HL7 Norway no-basis</a></li>
+  <li style="list-style-type='🇸🇪'">the <a href="https://hl7.se/fhir/ig/base/">Swedish Base
+    Profiles</a></li>
+</ul>
+
+<p>See the <a href="Vitalis2023-Nordic_harmonization_of_health_data.pdf">presentation slides</a> of the session
+<a href="https://invitepeople.com/public/events/edd1776c4a/seminars/ca0805fa9c">Nordic harmonization of health data</a>,
+given in the <a href="https://vitalis.nu/">Vitalis</a> conference in May, 2023. They include an initial
+comparison of the Danish, Finnish, Norwegian, and Swedish base profile specifications.</p>
+
+<p>Other national base profiles we have drawn inspiration from include</p>
+<ul style="list-style: uscachauee">
+  <li style="list-style-type='🇺🇸'">the <a href="https://hl7.org/fhir/us/core/">US Core</a></li>
+  <li style="list-style-type='🇨🇦'">the <a href="https://build.fhir.org/ig/HL7-Canada/ca-baseline/">Canadian baseline</a></li>
+  <li style="list-style-type='🇨🇭'">the Swiss <a href="http://fhir.ch/ig/ch-core/index.html">CH
+    Core</a></li>
+  <li style="list-style-type='🇦🇺'">the Australian <a href="http://hl7.org.au/fhir/4.0.0/">AU 
+    Base</a></li>
+  <li style="list-style-type='🇪🇪'">the <a href="https://build.fhir.org/ig/HL7EE/ig-ee-base/">Estonian Base Implementation Guide</a></li>
+</ul>
+
+<p>Regarding international cooperation, please see also the
+<a href="https://confluence.hl7.org/display/IC/National+IG+Implementations">National IG Implementations</a>
+page in HL7 International's Confluence.</p>
+
+<h4 id="baseline-and-core-profiles">Baseline and Core Profiles</h4>
+
+<p>The FHIR community is currently figuring out how different implementation guides interact and can
+be layered. See, for instance, the layering approach in the
+<a href="https://simplifier.net/guide/no-basis-entities-individuals/introduction?version=current">Norwegian base profiles</a>
+and the explanation on the
+<a href="https://build.fhir.org/ig/HL7-Canada/ca-baseline/#base-vs-baseline-vs-core">Canadian Baseline</a>
+specification.</p>
+
+<p>According to those terms, this version of this implementation guide is closest to the national
+baseline profile. Its main purpose is to inform implementers of approaches already chosen, and
+thereby avoid re-implementing the wheel in a different form for new implementations.</p>
+
+<p>There are other, more use case specific FHIR implementation guides in Finland. For instance, both
+the <a href="https://simplifier.net/finnishappointment">Finnish Appointment IG</a> and the 
+<a href="https://simplifier.net/finnishschedulingr4/">Finnish Scheduling IG</a> focus on scheduling.</p>
+
+<p>Especially the Kanta specific implementation guides for
+<a href="https://simplifier.net/FinnishPHRR4">Finnish PHR</a>,
+<a href="https://simplifier.net/PrescriptionR4">Kanta FHIR Prescription</a>, and
+<a href="https://simplifier.net/Kanta-sosiaalihuolto-R4">Kanta sosiaalihuolto</a> are closer to national Core
+profile specifications.</p>
+
+<p>This implementation guide may also in the future be extended to cover core profiles, in addition to
+the base profiles of this version.</p>
+
+<h4 id="must-support-rules">Must-Support Rules</h4>
+
+<p>This version of this implementation guide does not define any
+<a href="https://build.fhir.org/profiling.html#obligations">Must Support</a> rules.</p>
+
+<h4 id="profiles-and-examples">Profiles and Examples</h4>
+
+<p>We publish profile resources that help implementers validate their implementations.</p>
+
+<p>We also publish examples, as we think they are another good way to interoperability.</p>
+
+<p>Also, where we cannot find consensus and agree on one single approach, we attempt to
+document all different approaches used.</p>
+
+<p>The main aim of this implementation guide is to <em>inform</em> vendors on how to implement the FHIR
+specification in Finnish context. Requirements and constraints are limited, in order to allow for
+maximum reusability across a variety of use cases.</p>
+
+<p>In the first versions of the implementation guide, a lot of profiling is done on resource type
+level. For instance, the patient identifier is profiled for the Patient profile. Another approach
+would be to concentrate on data types. We may evolve the profiling towards that direction in the
+future.</p>
+
+<h3 id="governance">Governance</h3>
+
+<p>The profiling work is performed in a project driven by <a href="https://www.hl7.fi">HL7 Finland</a>.
+See the
+<a href="https://www.hl7.fi/hl7-fhir-profilointityo-kaynnistyy-tule-mukaan-vaikuttamaan-kansalliseen-tekemiseen/">announcement</a>
+(in Finnish), the
+<a href="https://docs.google.com/document/d/1yNq6XMLhWJqi6OELQtWC1DFwdtD9CQulzVOfz-zZCko/edit#">running memo</a>,
+and <a href="https://fhir.fi">some more details</a>. We warmly welcome new participants to the project. You
+may even be compensated for your efforts.</p>
+
+<p>The team involved in creating the first version of the specification includes</p>
+<ul>
+  <li>Arto Huusko, CGI Oyj</li>
+  <li>Janne Heikkinen, BCB Medical Oy</li>
+  <li>Jari Kariniemi, Kymenlaakson hyvinvointialue</li>
+  <li>Jari Vuonos, Apotti Oy</li>
+  <li>Joni Hirviniemi, Fujitsu</li>
+  <li>Jyrki Soikkeli, Apotti Oy</li>
+  <li>Kalle Moilanen, Esko Systems Oy</li>
+  <li>Marko Kaukonen, BCB Medical Oy</li>
+  <li>Markus Lind, Buddy Healthcare Oy</li>
+  <li>Markus Suonpää, CGI Finland Oyj</li>
+  <li>Miika Langille, Esko Systems Oy</li>
+  <li>Mika Jylhä, Esko Systems Oy</li>
+  <li>Mika Lentovaara, HUS</li>
+  <li>Mika Tuomainen, Kela</li>
+  <li>Mikael Rinnetmäki, Sensotrend Oy</li>
+  <li>Tero Pekkola, Esko Systems Oy</li>
+</ul>
+
+<p>Each published major version of this implementation guide goes through the ballot and voting
+processes of HL7 Finland, and then represents the consensus view of the Finnish FHIR community.</p>
+
+<h3 id="collaboration">Collaboration</h3>
+
+<p>We want this implementation guide to be useful for you.</p>
+
+<p>If you are implementing FHIR in a system or application that is meant to be used in Finland and are
+thinking of some implementation details, you are probably in the right place and this
+implementation guide should help you with those questions. If this implementation guide in any way
+fails to give you the answers you are looking for, we'd love to hear about it so we can make it
+better. Please do be in touch in one of the ways listed below.</p>
+
+<h4 id="open-an-issue-in-github">Open an Issue in GitHub</h4>
+
+<p>The source code of this implementation guide is maintained in a
+<a href="https://github.com/fhir-fi/finnish-base-profiles">publicly accessible repository</a> in GitHub.
+Issues opened in that GitHub repo are very welcome. They help the team pick up any proposed changes
+or additions and to discuss them publicly.</p>
+
+<h4 id="open-a-pull-request-in-github">Open a Pull Request in GitHub</h4>
+
+<p>Pull requests are even better. If you are in a position to suggest how exactly your proposal should
+be implemented in the specification, do it! It helps the team maintaining the implementation guide
+a great deal.</p>
+
+<h4 id="participate-in-ig-development-and-maintenance">Participate in IG Development and Maintenance</h4>
+
+<p>Please also consider joining the development effort. This is the best way to affect the outcome of
+the profiling work. You may even be compensated for your efforts. Please be in touch with HL7
+Finland to discuss options, if this even remotely interesting for you.</p>
+
+<p>The best implementation guide is the one that reflects the views and the consensus of the whole
+FHIR community!</p>
+
+<h3 id="safety-considerations">Safety Considerations</h3>
+<p>This implementation guide defines data elements, resources, formats, and methods for exchanging
+healthcare data between different participants in the healthcare process. As such, clinical safety
+is a key concern. Additional guidance regarding safety for the specification’s many and various
+implementations is available at
+<a href="https://www.hl7.org/FHIR/safety.html">https://www.hl7.org/FHIR/safety.html</a>.</p>
+
+<p>Although the present specification does give users the opportunity to observe data protection and
+data security regulations, its use does not guarantee compliance with these regulations. Effective
+compliance must be ensured by appropriate measures during implementation projects and in daily
+operations. The corresponding implementation measures are explained in the standard. In addition,
+the present specification can only influence compliance with the security regulations in the
+technical area of standardisation. It cannot influence organisational and contractual matters.</p>
+
+<h3 id="license-and-legal-terms">License and Legal Terms</h3>
+
+<p>This document is licensed under Creative Commons
+<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> Public Domain Dedication.</p>
+
+<p>This implementation guide contains and references intellectual property owned by third parties
+("Third Party IP"). Acceptance of these License Terms does not grant any rights with respect to
+Third Party IP. The licensee alone is responsible for identifying and obtaining any necessary
+licenses or authorizations to utilize Third Party IP in connection with the specification or
+otherwise.</p>
+
+<p>HL7®, HEALTH LEVEL SEVEN®, FHIR® and the FHIR <img src="icon-fhir-16.png" style="float: none; margin: 0px; padding: 0px; vertical-align: bottom" />® are trademarks owned
+by Health Level Seven International, registered with the United States Patent and Trademark Office.</p>
+
+<p>See also <a href="http://hl7.org/fhir/license.html">http://hl7.org/fhir/license.html</a>.</p>
+
+<h4 id="other-intellectual-property-statements">Other Intellectual Property Statements</h4>
+
+<p>This publication includes IP covered under the following statements.</p>
+<ul>
+<li>Copyright HL7. Licensed under creative commons public domain<div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0286.html">providerRole</a>: <a href="PractitionerRole-PractitionerRoleGP.html">PractitionerRole/PractitionerRoleGP</a></li>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0443.html">providerRole</a>: <a href="Immunization-ImmunizationVaccinationExample.html">Immunization/ImmunizationVaccinationExample</a></li>
+</ul>
+</div></li>
+<li>ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="StructureDefinition-condition-cause-of-adverse-effect.html">CauseOfAdverseEffect</a>, <a href="StructureDefinition-condition-categorization-of-accident.html">ConditionCategorizationOfAccident</a><span id="ips_3" onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 46 more</span></span><span id="ips2_3" style="display: none">, <a href="StructureDefinition-condition-caused-by-medication.html">ConditionCausedByMedication</a>, <a href="StructureDefinition-condition-external-cause.html">ConditionExternalCause</a>, <a href="StructureDefinition-condition-endocrinological-disorder.html">EndocrinologicalDisorder</a>, <a href="StructureDefinition-fi-base-appointment.html">FiBaseAppointment</a>, <a href="StructureDefinition-fi-base-condition.html">FiBaseCondition</a>, <a href="StructureDefinition-fi-base-encounter.html">FiBaseEncounter</a>, <a href="StructureDefinition-fi-base-episode-of-care.html">FiBaseEpisodeOfCare</a>, <a href="StructureDefinition-fi-base-healthcare-service.html">FiBaseHealthcareService</a>, <a href="StructureDefinition-fi-base-immunization.html">FiBaseImmunization</a>, <a href="StructureDefinition-fi-base-information-custodian.html">FiBaseInformationCustodian</a>, <a href="StructureDefinition-fi-base-information-custodian-individual.html">FiBaseInformationCustodianIndividual</a>, <a href="StructureDefinition-fi-base-information-custodian-private.html">FiBaseInformationCustodianPrivate</a>, <a href="StructureDefinition-fi-base-information-custodian-public.html">FiBaseInformationCustodianPublic</a>, <a href="StructureDefinition-fi-base-location.html">FiBaseLocation</a>, <a href="StructureDefinition-fi-base-medication.html">FiBaseMedication</a>, <a href="StructureDefinition-fi-base-medication-administration.html">FiBaseMedicationAdministration</a>, <a href="StructureDefinition-fi-base-medication-request.html">FiBaseMedicationRequest</a>, <a href="StructureDefinition-fi-base-medication-statement.html">FiBaseMedicationStatement</a>, <a href="StructureDefinition-fi-base-observation.html">FiBaseObservation</a>, <a href="StructureDefinition-fi-base-organization.html">FiBaseOrganization</a>, <a href="StructureDefinition-fi-base-patient.html">FiBasePatient</a>, <a href="StructureDefinition-fi-base-practitioner.html">FiBasePractitioner</a>, <a href="StructureDefinition-fi-base-practitioner-role.html">FiBasePractitionerRole</a>, <a href="StructureDefinition-fi-base-procedure.html">FiBaseProcedure</a>, <a href="StructureDefinition-fi-base-provenance.html">FiBaseProvenance</a>, <a href="StructureDefinition-fi-base-reason-for-care.html">FiBaseReasonForCare</a>, <a href="ValueSet-fi-base-register-identifier.html">FiBaseRegisterIdentifier</a>, <a href="CodeSystem-fi-base-release-for-patient-viewing-cs.html">FiBaseReleaseforPatientViewingCS</a>, <a href="ValueSet-fi-base-restriction-parent-vs.html">FiBaseRestrictionParentVS</a>, <a href="StructureDefinition-fi-base-schedule.html">FiBaseSchedule</a>, <a href="CodeSystem-fi-base-security-label-cs.html">FiBaseSecurityLabelCS</a>, <a href="ValueSet-fi-base-security-label-vs.html">FiBaseSecurityLabelVS</a>, <a href="StructureDefinition-fi-base-slot.html">FiBaseSlot</a>, <a href="index.html">FinnishBaseProfiles</a>, <a href="StructureDefinition-kanta-document-metadata-profile.html">KantaDocumentMetadata</a>, <a href="StructureDefinition-kanta-document-other-metadata-profile.html">KantaDocumentOtherMetadata</a>, <a href="StructureDefinition-municipality-code.html">MunicipalityCode</a>, <a href="StructureDefinition-patient-profession.html">PatientProfession</a>, <a href="StructureDefinition-condition-permanence.html">Permanence</a>, <a href="StructureDefinition-condition-physical-excercise.html">PhysicalExcercise</a>, <a href="StructureDefinition-condition-primary.html">PrimaryCondition</a>, <a href="StructureDefinition-ReleaseDateForPatientViewing.html">ReleaseDateForPatientViewing</a>, <a href="StructureDefinition-RestrictionParent.html">RestrictionParent</a>, <a href="StructureDefinition-service-event.html">ServiceEvent</a>, <a href="StructureDefinition-vaccination-recorder.html">VaccinationRecorder</a> and <a href="ValueSet-kanta-provenance-agent-role.html">ValueSet/kanta-provenance-agent-role</a></span></li>
+</ul>
+</div></li>
+<li>The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a><div id="ipp_3" onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>: <a href="Bundle-diabetes-data-bundle.html">Bundle/diabetes-data-bundle</a>, <a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html">Bundle/diabetes-data-bundle-kantaphr-r4-en</a><span id="ips_4" onclick="document.getElementById('ips_4').innerHTML = document.getElementById('ips2_4').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 26 more</span></span><span id="ips2_4" style="display: none">, <a href="Bundle-diabetes-data-bundle-kantaphr-sv.html">Bundle/diabetes-data-bundle-kantaphr-sv</a>, <a href="Immunization-ImmunizationVaccinationExample.html">Immunization/ImmunizationVaccinationExample</a>, <a href="MedicationAdministration-a4d97476-39fa-46c6-bf2e-1fb153a7bbe3.html">MedicationAdministration/a4d97476-39fa-46c6-bf2e-1fb153a7bbe3</a>, <a href="MedicationAdministration-medication-administration-insulin-basal-dose-kanta-stu3-sv.html">MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv</a>, <a href="MedicationAdministration-medication-administration-insulin-bolus-dose-fi.html">MedicationAdministration/medication-administration-insulin-bolus-dose-fi</a>, <a href="MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html">MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en</a>, <a href="MedicationRequest-medicationrequestesim6.html">MedicationRequest/medicationrequestesim6</a>, <a href="MedicationRequest-medicationrequestesim7B.html">MedicationRequest/medicationrequestesim7B</a>, <a href="Observation-1153859e-0c86-1000-abb8-511d0000b222.html">Observation/1153859e-0c86-1000-abb8-511d0000b222</a>, <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff21.html">Observation/2894b2e6-7ebf-4c33-93e4-31935effff21</a>, <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html">Observation/2894b2e6-7ebf-4c33-93e4-31935effff22</a>, <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f8.html">Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8</a>, <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html">Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9</a>, <a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b6.html">Observation/48983b8b-ead3-4206-9583-fcdd40d762b6</a>, <a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b7.html">Observation/48983b8b-ead3-4206-9583-fcdd40d762b7</a>, <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f7.html">Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7</a>, <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html">Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8</a>, <a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784b.html">Observation/71831b54-1a80-47c5-ba84-0180a5eb784b</a>, <a href="Observation-bloodglucose-max.html">Observation/bloodglucose-max</a>, <a href="Observation-bloodglucose-min.html">Observation/bloodglucose-min</a>, <a href="Observation-bloodpressure-max.html">Observation/bloodpressure-max</a>, <a href="Observation-bloodpressure-min.html">Observation/bloodpressure-min</a>, <a href="Observation-bodyweight-max.html">Observation/bodyweight-max</a>, <a href="Observation-bodyweight-min.html">Observation/bodyweight-min</a>, <a href="Observation-mtvpa-max.html">Observation/mtvpa-max</a> and <a href="Observation-mtvpa-min.html">Observation/mtvpa-min</a></span></li>
+</ul>
+</div></li>
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div id="ipp_4" onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-diabetes-data-bundle.html">Bundle/diabetes-data-bundle</a>, <a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html">Bundle/diabetes-data-bundle-kantaphr-r4-en</a><span id="ips_5" onclick="document.getElementById('ips_5').innerHTML = document.getElementById('ips2_5').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 22 more</span></span><span id="ips2_5" style="display: none">, <a href="Bundle-diabetes-data-bundle-kantaphr-sv.html">Bundle/diabetes-data-bundle-kantaphr-sv</a>, <a href="Observation-1153859e-0c86-1000-abb8-511d0000b222.html">Observation/1153859e-0c86-1000-abb8-511d0000b222</a>, <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff21.html">Observation/2894b2e6-7ebf-4c33-93e4-31935effff21</a>, <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html">Observation/2894b2e6-7ebf-4c33-93e4-31935effff22</a>, <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f8.html">Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f8</a>, <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html">Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9</a>, <a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b6.html">Observation/48983b8b-ead3-4206-9583-fcdd40d762b6</a>, <a href="Observation-48983b8b-ead3-4206-9583-fcdd40d762b7.html">Observation/48983b8b-ead3-4206-9583-fcdd40d762b7</a>, <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f7.html">Observation/542ae72e-c3b0-404f-8c06-8f77441e89f7</a>, <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html">Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8</a>, <a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784a.html">Observation/71831b54-1a80-47c5-ba84-0180a5eb784a</a>, <a href="Observation-71831b54-1a80-47c5-ba84-0180a5eb784b.html">Observation/71831b54-1a80-47c5-ba84-0180a5eb784b</a>, <a href="Observation-bloodglucose-as-text.html">Observation/bloodglucose-as-text</a>, <a href="Observation-bloodglucose-data-absent.html">Observation/bloodglucose-data-absent</a>, <a href="Observation-bloodglucose-max.html">Observation/bloodglucose-max</a>, <a href="Observation-bloodglucose-min.html">Observation/bloodglucose-min</a>, <a href="Observation-bloodpressure-max.html">Observation/bloodpressure-max</a>, <a href="Observation-bloodpressure-min.html">Observation/bloodpressure-min</a>, <a href="Observation-bodyweight-max.html">Observation/bodyweight-max</a>, <a href="Observation-bodyweight-min.html">Observation/bodyweight-min</a>, <a href="Observation-mtvpa-max.html">Observation/mtvpa-max</a> and <a href="Observation-mtvpa-min.html">Observation/mtvpa-min</a></span></li>
+</ul>
+</div></li>
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div id="ipp_5" onclick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_5" style="display: none">
+<ul>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="Bundle-diabetes-data-bundle.html">Bundle/diabetes-data-bundle</a>, <a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html">Bundle/diabetes-data-bundle-kantaphr-r4-en</a><span id="ips_6" onclick="document.getElementById('ips_6').innerHTML = document.getElementById('ips2_6').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 17 more</span></span><span id="ips2_6" style="display: none">, <a href="Bundle-diabetes-data-bundle-kantaphr-sv.html">Bundle/diabetes-data-bundle-kantaphr-sv</a>, <a href="Immunization-ImmunizationVaccinationExample.html">Immunization/ImmunizationVaccinationExample</a>, <a href="MedicationAdministration-medication-administration-insulin-basal-dose-kanta-stu3-sv.html">MedicationAdministration/medication-administration-insulin-basal-dose-kanta-stu3-sv</a>, <a href="MedicationAdministration-medication-administration-insulin-bolus-dose-fi.html">MedicationAdministration/medication-administration-insulin-bolus-dose-fi</a>, <a href="MedicationAdministration-medication-administration-insulin-dose-temp-basal-rate-kanta-en.html">MedicationAdministration/medication-administration-insulin-dose-temp-basal-rate-kanta-en</a>, <a href="MedicationStatement-medication-statement-insulin.html">MedicationStatement/medication-statement-insulin</a>, <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html">Observation/2894b2e6-7ebf-4c33-93e4-31935effff22</a>, <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html">Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9</a>, <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html">Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8</a>, <a href="Observation-bloodglucose-max.html">Observation/bloodglucose-max</a>, <a href="Observation-bloodpressure-max.html">Observation/bloodpressure-max</a>, <a href="Observation-bodyweight-max.html">Observation/bodyweight-max</a>, <a href="Observation-mtvpa-max.html">Observation/mtvpa-max</a>, <a href="PractitionerRole-PractitionerRoleGP.html">PractitionerRole/PractitionerRoleGP</a>, <a href="Procedure-ColonBiopsy.html">Procedure/ColonBiopsy</a>, <a href="Procedure-ProcedureColotomy.html">Procedure/ProcedureColotomy</a> and <a href="Schedule-ScheduleExample.html">Schedule/ScheduleExample</a></span></li>
+</ul>
+</div></li>
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div id="ipp_6" onclick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_6" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-condition-category.html">Condition Category Codes</a>: <a href="Condition-id-for-diagnosis-1.html">Condition/id-for-diagnosis-1</a>, <a href="Condition-id-for-diagnosis-2.html">Condition/id-for-diagnosis-2</a> and <a href="Condition-id-for-diagnosis-3.html">Condition/id-for-diagnosis-3</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>: <a href="Condition-id-for-diagnosis-1.html">Condition/id-for-diagnosis-1</a>, <a href="Condition-id-for-diagnosis-2.html">Condition/id-for-diagnosis-2</a> and <a href="Condition-id-for-diagnosis-3.html">Condition/id-for-diagnosis-3</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-data-absent-reason.html">DataAbsentReason</a>: <a href="Observation-bloodglucose-as-text.html">Observation/bloodglucose-as-text</a> and <a href="Observation-bloodglucose-data-absent.html">Observation/bloodglucose-data-absent</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-location-physical-type.html">Location type</a>: <a href="Location-id-for-bed-3.html">Vuode 3</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-observation-category.html">Observation Category Codes</a>: <a href="Bundle-diabetes-data-bundle-kantaphr-r4-en.html">Bundle/diabetes-data-bundle-kantaphr-r4-en</a>, <a href="Observation-bloodglucose-as-text.html">Observation/bloodglucose-as-text</a><span id="ips_11" onclick="document.getElementById('ips_11').innerHTML = document.getElementById('ips2_11').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 7 more</span></span><span id="ips2_11" style="display: none">, <a href="Observation-bloodglucose-data-absent.html">Observation/bloodglucose-data-absent</a>, <a href="Observation-bloodglucose-max.html">Observation/bloodglucose-max</a>, <a href="Observation-bloodglucose-min.html">Observation/bloodglucose-min</a>, <a href="Observation-bloodpressure-max.html">Observation/bloodpressure-max</a>, <a href="Observation-bloodpressure-min.html">Observation/bloodpressure-min</a>, <a href="Observation-bodyweight-max.html">Observation/bodyweight-max</a> and <a href="Observation-bodyweight-min.html">Observation/bodyweight-min</a></span></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-organization-type.html">Organization type</a>: <a href="Organization-1.2.246.10.31045308.10002.0.html">Esko-Testi pp HVA</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v2-0203.html">identifierType</a>: <a href="StructureDefinition-fi-base-information-custodian.html">FiBaseInformationCustodian</a>, <a href="StructureDefinition-fi-base-information-custodian-individual.html">FiBaseInformationCustodianIndividual</a><span id="ips_13" onclick="document.getElementById('ips_13').innerHTML = document.getElementById('ips2_13').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 14 more</span></span><span id="ips2_13" style="display: none">, <a href="StructureDefinition-fi-base-information-custodian-private.html">FiBaseInformationCustodianPrivate</a>, <a href="StructureDefinition-fi-base-information-custodian-public.html">FiBaseInformationCustodianPublic</a>, <a href="Patient-patient-of-municipality.html">Patient/patient-of-municipality</a>, <a href="Patient-patient-with-turvakielto.html">Patient/patient-with-turvakielto</a>, <a href="Practitioner-practitioner-licensed-physician.html">Practitioner/practitioner-licensed-physician</a>, <a href="Provenance-custodian-individual.html">Provenance/custodian-individual</a>, <a href="Provenance-custodian-occupational-healthcare.html">Provenance/custodian-occupational-healthcare</a>, <a href="Provenance-custodian-public-healthcare.html">Provenance/custodian-public-healthcare</a>, <a href="Provenance-custodian-public-healthcare-kela.html">Provenance/custodian-public-healthcare-kela</a>, <a href="Provenance-id-for-provenance-1.html">Provenance/id-for-provenance-1</a>, <a href="Provenance-kanta-document-metadata-profile-example.html">Provenance/kanta-document-metadata-profile-example</a>, <a href="Provenance-kanta-document-metadata-profile-example-2.html">Provenance/kanta-document-metadata-profile-example-2</a>, <a href="Provenance-kanta-document-metadata-profile-test-example-1.html">Provenance/kanta-document-metadata-profile-test-example-1</a> and <a href="Provenance-kanta-document-metadata-profile-test-example-2.html">Provenance/kanta-document-metadata-profile-test-example-2</a></span></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ActCode.html">ActCode</a>: <a href="Encounter-id-for-child-encounter.html">Encounter/id-for-child-encounter</a>, <a href="Encounter-id-for-child-encounter-2.html">Encounter/id-for-child-encounter-2</a>, <a href="Encounter-id-for-palvelutapahtuma.html">Encounter/id-for-palvelutapahtuma</a>, <a href="Encounter-id-for-visit.html">Encounter/id-for-visit</a> and <a href="Encounter-id-for-ward-encounter.html">Encounter/id-for-ward-encounter</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-Confidentiality.html">Confidentiality</a>: <a href="Observation-bloodglucose-max.html">Observation/bloodglucose-max</a></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>: <a href="Observation-2894b2e6-7ebf-4c33-93e4-31935effff22.html">Observation/2894b2e6-7ebf-4c33-93e4-31935effff22</a>, <a href="Observation-4137d1c4-1e87-4e86-8c15-344ad086e3f9.html">Observation/4137d1c4-1e87-4e86-8c15-344ad086e3f9</a><span id="ips_16" onclick="document.getElementById('ips_16').innerHTML = document.getElementById('ips2_16').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 5 more</span></span><span id="ips2_16" style="display: none">, <a href="Observation-542ae72e-c3b0-404f-8c06-8f77441e89f8.html">Observation/542ae72e-c3b0-404f-8c06-8f77441e89f8</a>, <a href="Observation-bloodglucose-max.html">Observation/bloodglucose-max</a>, <a href="Observation-bloodpressure-max.html">Observation/bloodpressure-max</a>, <a href="Observation-bodyweight-max.html">Observation/bodyweight-max</a> and <a href="Observation-mtvpa-max.html">Observation/mtvpa-max</a></span></li>
+<li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-ParticipationType.html">ParticipationType</a>: <a href="Appointment-appointment-general-practitioner.html">Appointment/appointment-general-practitioner</a>, <a href="StructureDefinition-fi-base-information-custodian.html">FiBaseInformationCustodian</a><span id="ips_17" onclick="document.getElementById('ips_17').innerHTML = document.getElementById('ips2_17').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 12 more</span></span><span id="ips2_17" style="display: none">, <a href="StructureDefinition-fi-base-information-custodian-individual.html">FiBaseInformationCustodianIndividual</a>, <a href="StructureDefinition-fi-base-information-custodian-private.html">FiBaseInformationCustodianPrivate</a>, <a href="StructureDefinition-fi-base-information-custodian-public.html">FiBaseInformationCustodianPublic</a>, <a href="Provenance-custodian-individual.html">Provenance/custodian-individual</a>, <a href="Provenance-custodian-occupational-healthcare.html">Provenance/custodian-occupational-healthcare</a>, <a href="Provenance-custodian-public-healthcare.html">Provenance/custodian-public-healthcare</a>, <a href="Provenance-custodian-public-healthcare-kela.html">Provenance/custodian-public-healthcare-kela</a>, <a href="Provenance-id-for-provenance-1.html">Provenance/id-for-provenance-1</a>, <a href="Provenance-kanta-document-metadata-profile-example.html">Provenance/kanta-document-metadata-profile-example</a>, <a href="Provenance-kanta-document-metadata-profile-example-2.html">Provenance/kanta-document-metadata-profile-example-2</a>, <a href="Provenance-kanta-document-metadata-profile-test-example-1.html">Provenance/kanta-document-metadata-profile-test-example-1</a> and <a href="Provenance-kanta-document-metadata-profile-test-example-2.html">Provenance/kanta-document-metadata-profile-test-example-2</a></span></li>
+</ul>
+</div></li>
+</ul>
+<!--$$1$$-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 20:13+0300">2025-05-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>| <a style="color: var(--footer-hyperlink-text-color)" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Version History</a>
+  | <a rel="license" href="https://raw.githubusercontent.com/fhir-fi/finnish-base-profiles/master/LICENSE.md"><img style="border-style: none;" alt="CC0-1.0" src="cc0.png"/></a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles">Source</a>
+  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/fhir-fi/finnish-base-profiles/issues/new">Propose a change</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "807fa3ae-7ecf-4f55-8801-09b50aef1b2d-126",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/807fa3ae-7ecf-4f55-8801-09b50aef1b2d-126",
+  "name" : "IntersectionFiBaseRegisterIdentifierAndFiBaseRegisterIdentifier",
+  "title" : "Intersection of Finnish ValueSet for systems of registry specifiers And Finnish ValueSet for systems of registry specifiers",
+  "status" : "draft",
+  "date" : "2025-05-11T20:15:10+03:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FI",
+      "display" : "Finland"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "urn:oid:1.2.246.537.5.40150",
+        "display" : "KanTa-palvelut - Potilasasiakirjan rekisteritunnus"
+      },
+      {
+        "code" : "urn:oid:1.2.246.537.6.1264",
+        "display" : "Sosiaalihuolto - Asiakirjan rekisteritunnus"
+      }]
+    }]
+  }
+}

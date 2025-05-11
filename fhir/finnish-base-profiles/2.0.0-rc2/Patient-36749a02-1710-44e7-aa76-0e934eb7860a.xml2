@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="36749a02-1710-44e7-aa76-0e934eb7860a"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2018-03-13T14:01:59.834+02:00"/>
+    <profile value="http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient"/>
+  </meta>
+  <language value="fi"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fi" lang="fi"><p class="res-header-id"><b>Generated Narrative: Patient 36749a02-1710-44e7-aa76-0e934eb7860a</b></p><a name="36749a02-1710-44e7-aa76-0e934eb7860a"> </a><a name="hc36749a02-1710-44e7-aa76-0e934eb7860a"> </a><a name="36749a02-1710-44e7-aa76-0e934eb7860a-fi-FI"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2018-03-13 14:01:59+0200; Language: fi</p><p style="margin-bottom: 0px">Profile: <code>http://phr.kanta.fi/StructureDefinition/fiphr-sd-patient</code></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Anonymous Patient (no stated gender), DoB Unknown ( UUID:36749a02-1710-44e7-aa76-0e934eb7860a)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:36749a02-1710-44e7-aa76-0e934eb7860a"/>
+  </identifier>
+  <active value="true"/>
+</Patient>

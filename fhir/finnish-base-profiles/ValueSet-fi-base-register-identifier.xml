@@ -6,12 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fi-base-register-identifier</b></p><a name="fi-base-register-identifier"> </a><a name="hcfi-base-register-identifier"> </a><a name="fi-base-register-identifier-fi-FI"> </a><ul><li>Include these codes as defined in <code>urn:ietf:rfc:3986</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>urn:oid:1.2.246.537.5.40150</td><td>KanTa-palvelut - Potilasasiakirjan rekisteritunnus</td></tr><tr><td>urn:oid:1.2.246.537.6.1264</td><td>Sosiaalihuolto - Asiakirjan rekisteritunnus</td></tr></table></li></ul></div>
   </text>
   <url value="https://hl7.fi/fhir/finnish-base-profiles/ValueSet/fi-base-register-identifier"/>
-  <version value="2.0.0-rc1"/>
+  <version value="2.0.0-rc2"/>
   <name value="FiBaseRegisterIdentifier"/>
   <title value="Finnish ValueSet for systems of registry specifiers"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2025-02-06T19:06:41+02:00"/>
+  <date value="2025-05-11T20:18:22+03:00"/>
   <publisher value="HL7 Finland"/>
   <contact>
     <name value="HL7 Finland"/>

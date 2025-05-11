@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>GP appointment - Finnish Base Profiles v2.0.0-rc1</title>
+    <title>GP appointment - Finnish Base Profiles v2.0.0-rc2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"8.74"}
-    h3,h4,h5,h6{--heading-prefix:"8.74"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.78"}
+    h3,h4,h5,h6{--heading-prefix:"8.78"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Finnish Base Profiles</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-rc1 - ballot
+            <span style="display:inline-block;">2.0.0-rc2 - ballot
 
 
 
@@ -136,7 +136,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v2.0.0-rc1: <a no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Base Profiles (v2.0.0-rc2: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-base-profiles/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
   
 
@@ -195,10 +195,17 @@
 
 <div style="display:inline-block" markdown="1">
 
-<p class="dragon">Note that this example refers to extensions defined in another implementation guide, the
-<a href="https://simplifier.net/finnishschedulingr4/">FinnishScheduling R4</a> IG. The schedulinig IG is about
-to be updadted and the canonical urls defined for the extensions may change, at least to have a
-<code class="language-plaintext highlighter-rouge">https</code> protocol instead of <code class="language-plaintext highlighter-rouge">http</code>.</p>
+<p class="dragon">Note that a previous version of this example referred to extensions defined in another
+implementation guide, the
+<a href="https://simplifier.net/finnishschedulingr4/">FinnishScheduling R4</a> IG. That schedulinig IG has
+since been updated and the canonical urls defined for the extensions have changed from
+<code class="language-plaintext highlighter-rouge">http://hl7.fi/fhir/StructureDefinition/ServiceEventExt</code>to
+<a href="./StructureDefinition-service-event.html"><code class="language-plaintext highlighter-rouge">https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/service-event</code></a>
+and from
+<code class="language-plaintext highlighter-rouge">http://hl7.fi/fhir/StructureDefinition/AppointmentMutabilityExtension</code> to
+<a href="https://hl7.fi/fhir/finnish-scheduling/StructureDefinition-mutable.html"><code class="language-plaintext highlighter-rouge">https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable</code></a>.
+Note that the service event extension has been moved to this implementation guide. Also note that
+the previous URLs do not resolve, the new ones do.</p>
 
 
 </div>
@@ -206,13 +213,7 @@ to be updadted and the canonical urls defined for the extensions may change, at 
 
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment appointment-general-practitioner</b></p><a name="appointment-general-practitioner"> </a><a name="hcappointment-general-practitioner"> </a><a name="appointment-general-practitioner-fi-FI"> </a><p><b>fi/fhir/StructureDefinition/ServiceEventExt</b>: <a href="http://terminology.hl7.org/6.2.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
-
-This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
-
-Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
-
-This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325</p><blockquote><p><b>fi/fhir/StructureDefinition/AppointmentMutabilityExtension</b></p><ul><li>Cancellable: false</li><li>Reschedulable: false</li></ul></blockquote><p><b>status</b>: Fulfilled</p><p><b>serviceCategory</b>: <span title="Codes:{urn:oid:1.2.246.537.6.50 SOTE9.2}">SOTE9.2</span></p><p><b>serviceType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.49 EEA}">EEA</span></p><p><b>appointmentType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.884 101}">101</span></p><p><b>description</b>: Kuume</p><p><b>start</b>: 2023-01-20 10:00:00+0200</p><p><b>end</b>: 2023-01-20 10:20:00+0200</p><p><b>slot</b>: <a href="Slot-FreeSlot.html">Slot: identifier = 123456789; serviceCategory = Lääkäripalvelut; serviceType = Yleislääkärin palvelu; appointmentType = Kertakäynti toimipaikassa; status = free; start = 2023-01-01 12:00:00+0200; end = 2023-01-01 12:30:00+0200</a></p><p><b>created</b>: 2023-01-20 08:45:15+0200</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient-patient-of-municipality.html">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}">primary performer</span></p><p><b>actor</b>: <a href="Practitioner-practitioner-licensed-physician.html">Practitioner Dave Doctor </a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Location-LocationExample.html">Location Kirurgian poliklinikka</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="HealthcareService-healthcareService-example.html">HealthcareService Vastaanottoaika*</a></p><p><b>status</b>: Accepted</p></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment appointment-general-practitioner</b></p><a name="appointment-general-practitioner"> </a><a name="hcappointment-general-practitioner"> </a><a name="appointment-general-practitioner-fi-FI"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fi-base-appointment.html">FI Base Appointment</a></p></div><p><b>ServiceEvent</b>: urn:oid:1.2.246.10.3575029.10.50.14131.2023.159325</p><blockquote><p><b>Appointment Mutability</b></p><ul><li>Cancellable: false</li><li>Reschedulable: false</li></ul></blockquote><p><b>status</b>: Fulfilled</p><p><b>serviceCategory</b>: <span title="Codes:{urn:oid:1.2.246.537.6.50 SOTE9.2}">SOTE9.2</span></p><p><b>serviceType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.49 EEA}">EEA</span></p><p><b>appointmentType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.884 101}">101</span></p><p><b>description</b>: Kuume</p><p><b>start</b>: 2023-01-20 10:00:00+0200</p><p><b>end</b>: 2023-01-20 10:20:00+0200</p><p><b>slot</b>: <a href="Slot-FreeSlot.html">Slot: identifier = 123456789; serviceCategory = Lääkäripalvelut; serviceType = Yleislääkärin palvelu; appointmentType = Kertakäynti toimipaikassa; status = free; start = 2023-01-01 12:00:00+0200; end = 2023-01-01 12:30:00+0200</a></p><p><b>created</b>: 2023-01-20 08:45:15+0200</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient-patient-of-municipality.html">Testi Henkilö Male, DoB: 1990-01-01 ( National Identifier for Finland (use: official, ))</a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}">primary performer</span></p><p><b>actor</b>: <a href="Practitioner-practitioner-licensed-physician.html">Practitioner Dave Doctor </a></p><p><b>required</b>: Required</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Location-LocationExample.html">Location Kirurgian poliklinikka</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="HealthcareService-healthcareService-example.html">HealthcareService Vastaanottoaika*</a></p><p><b>status</b>: Accepted</p></blockquote></div>
 
   
 
@@ -237,7 +238,7 @@ This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#2.0.0-rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 6, 2025 19:06+0200">2025-02-06</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.base#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, May 11, 2025 20:18+0300">2025-05-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>
