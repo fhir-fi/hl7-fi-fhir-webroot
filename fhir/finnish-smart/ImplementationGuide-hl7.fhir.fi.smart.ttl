@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.smart</b></p><a name=\"hl7.fhir.fi.smart\"> </a><a name=\"hchl7.fhir.fi.smart\"> </a><a name=\"hl7.fhir.fi.smart-fi-FI\"> </a><h2>FinnishSmart</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart</pre><div><p>Guidelines for using the SMART App Launch mechanism in Finland.</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.0-rc2"] ; # 
+  fhir:version [ fhir:v "2.0.0-rc3"] ; # 
   fhir:name [ fhir:v "FinnishSmart"] ; # 
   fhir:title [ fhir:v "Finnish Implementation Guide for SMART App Launch"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-11T17:07:13+03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-06-01T15:36:45+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Finland ry"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Finland ry" ] ;
@@ -55,7 +55,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.3.0" ]
+     fhir:version [ fhir:v "6.4.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -123,7 +123,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ballot"
+           fhir:v "qa-preview"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -534,7 +534,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ballot"
+           fhir:v "qa-preview"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]

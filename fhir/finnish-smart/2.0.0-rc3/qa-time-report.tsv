@@ -1,0 +1,17 @@
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json	7458	-	0	0	0	0	0	0	4	1310	0	0	0	0	0	0	0	1	0	0	49	42	0	0	0	1	0	0
+fsh-generated/resources/AuditEvent-apotti-ehr-launch-by-practitioner.json	994	5	0	0	2	0	0	0	0	730	0	0	0	0	0	0	0	0	0	0	13	14	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-fi-smart-server.json	3045	5	0	0	0	0	0	0	0	745	0	0	0	0	0	0	0	0	0	0	19	23	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-allergy-intolerance.json	957	5	0	21	1	0	0	0	1	682	0	0	1	0	0	0	0	0	0	0	106	194	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-fi-smart-condition.json	895	5	0	30	1	0	0	0	0	703	0	0	0	0	0	0	0	1	0	0	95	186	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-immunization.json	925	4	0	55	0	0	0	0	0	731	0	0	1	0	0	0	0	1	0	0	224	334	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-fi-smart-medication-request.json	968	4	0	28	1	0	0	0	0	721	0	0	0	0	0	0	0	0	0	0	75	141	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-medication-statement.json	998	5	0	51	0	0	0	0	0	718	0	0	0	0	0	0	0	0	0	0	115	139	0	0	0	2	1	1
+fsh-generated/resources/StructureDefinition-fi-smart-medication.json	923	4	0	34	1	0	0	0	0	704	0	0	1	0	0	0	0	1	0	0	76	74	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-observation.json	915	4	0	90	0	0	0	0	0	715	0	0	0	0	0	0	0	0	0	0	128	139	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-patient.json	875	5	0	34	1	0	0	0	0	731	0	0	0	0	0	0	0	1	0	0	177	185	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-fi-smart-practitioner-role.json	968	4	0	14	0	0	0	0	0	708	0	0	1	0	0	0	0	0	0	0	80	76	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-practitioner.json	925	4	0	17	1	0	0	0	0	723	0	0	0	0	0	0	0	0	0	0	112	112	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-problem-list-item.json	956	4	0	15	0	0	0	0	0	702	0	0	0	0	0	0	0	1	0	0	96	88	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json	1889	4	0	40	0	0	0	0	0	724	0	0	0	0	0	0	0	1	0	0	265	239	0	0	0	5	0	1
+input/examples/CapabilityStatement-apotti-ekosysteemi.json	139603	8	0	0	1	0	0	0	4	787	0	0	0	0	0	0	0	0	0	0	263	30	0	0	0	5	0	0

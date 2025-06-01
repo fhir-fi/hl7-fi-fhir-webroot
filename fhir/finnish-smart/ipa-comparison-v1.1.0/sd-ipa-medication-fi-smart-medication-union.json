@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "7db1fd72-9e80-4813-997a-43c51679acbf-23",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/7db1fd72-9e80-4813-997a-43c51679acbf-23",
+  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-23",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/018c9095-9018-4af1-8f93-bc833cef7afb-23",
   "name" : "UnionIPAMedicationAndFiSMARTMedication",
   "title" : "Union of IPA-Medication And FI SMART Medication",
   "status" : "active",
-  "date" : "2025-05-11T17:08:15+03:00",
+  "date" : "2025-06-01T15:37:57+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -380,7 +380,7 @@
       "short" : "Codes that identify this medication",
       "definition" : "A code (or set of codes) that specify this medication, or a textual description if no code is available. Usage note: This could be a standard medication code such as a code from RxNorm, SNOMED CT, IDMP etc. It could also be a national or local formulary code, optionally with translations to other code systems.",
       "comment" : "Depending on the context of use, the code that was actually selected by the user (prescriber, dispenser, etc.) will have the coding.userSelected set to true.  As described in the coding datatype: \"A coding may be marked as a \"userSelected\" if a user selected the particular coded value in a user interface (e.g. the user selects an item in a pick-list). If a user selected coding exists, it is the preferred choice for performing translations etc. Other codes can only be literal translations to alternative code systems, or codes at a lower level of granularity (e.g. a generic code for a vendor-specific primary one).",
-      "min" : 1,
+      "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"

@@ -1,0 +1,11 @@
+FinnishSmart
+=========================================
+
+/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc3/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 138470, Error - A definition could not be found for Canonical URL 'http://hl7.org/fhir/uv/bulkdata/CapabilityStatement/bulk-data' (INVALID)
+/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc3/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 138687, Warning - No definition could be found for URL value 'https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/api/FHIR/R4' (INVALID)
+/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc3/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 138903, Warning - No definition could be found for URL value 'https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/authorize' (INVALID)
+/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc3/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 139001, Warning - No definition could be found for URL value 'https://gw.apottiekosysteemi.fi/Interconnect-FHIR-EKO01/oauth2/token' (INVALID)
+/Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.smart#2.0.0-rc3/input/examples/CapabilityStatement-apotti-ekosysteemi.json: line 1, col 170187, Error - A definition could not be found for Canonical URL 'http://hl7.org/fhir/uv/bulkdata/OperationDefinition/group-export' (INVALID)
+
+err = 2, warn = 3, info = 0
+IG Publisher Version: 2.0.3

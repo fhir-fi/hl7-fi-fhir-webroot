@@ -1,11 +1,11 @@
 {
   "resourceType" : "CapabilityStatement",
-  "id" : "7db1fd72-9e80-4813-997a-43c51679acbf-41",
-  "url" : "http://hl7.org/fhir/comparison/CapabilityStatement/7db1fd72-9e80-4813-997a-43c51679acbf-41",
+  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-41",
+  "url" : "http://hl7.org/fhir/comparison/CapabilityStatement/018c9095-9018-4af1-8f93-bc833cef7afb-41",
   "name" : "UnionInternationalPatientAccessAPIAndCapabilityStatementExampleApotti",
   "title" : "Union of International Patient Access Server CapabilityStatement And null",
   "status" : "active",
-  "date" : "2025-05-11T17:08:15+03:00",
+  "date" : "2025-06-01T15:37:57+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart"/>
-  <version value="2.0.0-rc2"/>
+  <version value="2.0.0-rc3"/>
   <name value="FinnishSmart"/>
   <title value="Finnish Implementation Guide for SMART App Launch"/>
   <status value="draft"/>
-  <date value="2025-05-11T17:07:13+03:00"/>
+  <date value="2025-06-01T15:36:45+03:00"/>
   <publisher value="HL7 Finland ry"/>
   <contact>
     <name value="HL7 Finland ry"/>
@@ -41,7 +41,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.3.0"/>
+    <version value="6.4.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -80,7 +80,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ballot"/>
+        <valueString value="qa-preview"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -299,7 +299,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ballot"/>
+        <valueString value="qa-preview"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">

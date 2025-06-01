@@ -171,8 +171,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
       "StructureDefinition-fi-smart-observation.html" : "FI SMART Observation",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
       "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
     },
     {
@@ -660,18 +660,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-immunization.html" : "FI SMART Immunization",
-      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
-      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
-      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner",
-      "StructureDefinition-fi-smart-server-profile.html" : "Finnish SMART Server Capability Statement Profile",
-      "StructureDefinition-fi-smart-practitioner-role.html" : "FI SMART PractitionerRole",
-      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
       "StructureDefinition-fi-smart-observation.html" : "FI SMART Observation",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
+      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
+      "StructureDefinition-fi-smart-server-profile.html" : "Finnish SMART Server Capability Statement Profile",
+      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
+      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner",
       "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
-      "StructureDefinition-fi-smart-allergy-intolerance.html" : "FI SMART AllergyIntolerance"
+      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
+      "StructureDefinition-fi-smart-practitioner-role.html" : "FI SMART PractitionerRole",
+      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
+      "StructureDefinition-fi-smart-allergy-intolerance.html" : "FI SMART AllergyIntolerance",
+      "StructureDefinition-fi-smart-immunization.html" : "FI SMART Immunization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -745,8 +745,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
       "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
+      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
       "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication"
     },
     {
