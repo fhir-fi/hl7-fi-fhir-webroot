@@ -45,16 +45,16 @@
       "canonical" : "https://hl7.fi/fhir/finnish-scheduling",
       "category" : "Workflow",
       "ci-build" : "https://fhir.fi/finnish-scheduling",
-      "version-count" : 6,
+      "version-count" : 7,
       "latest" : {
-        "version" : "2.0.0-rc2",
-        "date" : "2025-05-09",
-        "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2"
+        "version" : "2.0.0-rc3",
+        "date" : "2025-08-27",
+        "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc3"
       },
       "milestone" : {
-        "version" : "2.0.0-rc2",
-        "date" : "2025-05-09",
-        "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2"
+        "version" : "2.0.0-rc3",
+        "date" : "2025-08-27",
+        "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc3"
       }
     }
   ]

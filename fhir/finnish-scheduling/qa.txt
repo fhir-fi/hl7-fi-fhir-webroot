@@ -1,80 +1,103 @@
 FinnishScheduling : Validation Results
 =========================================
 
-err = 0, warn = 19, info = 5
-IG Publisher Version: 1.8.26
-Generated Fri May 09 18:31:54 EEST 2025. FHIR version 4.0.1 for hl7.fhir.fi.scheduling#2.0.0-rc2 (canonical = https://hl7.fi/fhir/finnish-scheduling)
+err = 0, warn = 45, info = 5
+IG Publisher Version: 2.0.3 Out of date - current version is 2.0.15
+Generated Wed Aug 27 16:16:44 EEST 2025. FHIR version 4.0.1 for hl7.fhir.fi.scheduling#2.0.0-rc3 (canonical = https://hl7.fi/fhir/finnish-scheduling)
  Build Errors : 0 / 0 / 0
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-01 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-02 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-03 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-04 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-05 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-06 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-07 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-08 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-09 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-appointment-status-extension-10 : 0 / 1 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Appointment-example-appointment-4 : 0 / 17 / 11
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/ConceptMap-ajanvarauksentila-appointmentstatus : 0 / 2 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/ConceptMap-appointmentstatus-ajanvarauksentila : 0 / 2 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/HealthcareService-example-service-2 : 0 / 2 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.scheduling : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Organization-example-org-unit : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Patient-patient-pentti : 0 / 6 / 2
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Patient-patient-petri : 0 / 2 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Practitioner-practitioner-keijo : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Schedule-234567890 : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/Slot-123456789 : 0 / 6 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-additional-information-url : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-ajanvarauksen-tila : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-care-guarantee-details : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-careplan-identifier : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-child-appointment : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-customer-journey : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-fi-scheduling-appointment : 0 / 0 / 3
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-fi-scheduling-healthcare-service : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-mutable : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-notification-info : 0 / 0 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-notification-medium : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-patient-instruction-url : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-practitioner-gender : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-queue-number : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-referral-id : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-requested-service-info : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-resource-calendar : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-self-service-info : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-service-additional-information : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-ticket-number : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/fsh-generated/resources/StructureDefinition-topic-id : 0 / 1 / 1
- /Users/mikael/GitHub/fhir-fi-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc2-milestone/input/examples/appointment : 0 / 7 / 3
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-01 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-02 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-03 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-04 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-05 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-06 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-07 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-08 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-09 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-appointment-status-extension-10 : 0 / 1 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Appointment-example-appointment-4 : 0 / 17 / 11
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/ConceptMap-ajanvarauksentila-appointmentstatus : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/ConceptMap-appointmentstatus-ajanvarauksentila : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/HealthcareService-example-service-2 : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.scheduling : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Organization-example-org-unit : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Patient-patient-pentti : 0 / 6 / 2
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Patient-patient-petri : 0 / 2 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Practitioner-practitioner-keijo : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Schedule-234567890 : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/Slot-123456789 : 0 / 6 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-additional-information-url : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-ajanvarauksen-tila : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-care-guarantee-details : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-careplan-identifier : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-child-appointment : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-customer-journey : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-fi-scheduling-appointment : 0 / 0 / 3
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-fi-scheduling-healthcare-service : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-mutable : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-notification-info : 0 / 0 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-notification-medium : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-patient-instruction-url : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-practitioner-gender : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-queue-number : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-referral-id : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-requested-service-info : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-resource-calendar : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-self-service-info : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-service-additional-information : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-ticket-number : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/fsh-generated/resources/StructureDefinition-topic-id : 0 / 1 / 1
+ /Users/mikael/GitHub/hl7-fi-fhir-webroot/temp/ig-builds/hl7.fhir.fi.scheduling#2.0.0-rc3-milestone/input/examples/appointment : 0 / 7 / 3
 </table>
 == n/a ==
 == fsh-generated/resources/Appointment-appointment-status-extension-01.json ==
+WARNING: Appointment/appointment-status-extension-01: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-02.json ==
+WARNING: Appointment/appointment-status-extension-02: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-03.json ==
+WARNING: Appointment/appointment-status-extension-03: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-04.json ==
+WARNING: Appointment/appointment-status-extension-04: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-05.json ==
+WARNING: Appointment/appointment-status-extension-05: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-06.json ==
+WARNING: Appointment/appointment-status-extension-06: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-07.json ==
+WARNING: Appointment/appointment-status-extension-07: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-08.json ==
+WARNING: Appointment/appointment-status-extension-08: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-09.json ==
+WARNING: Appointment/appointment-status-extension-09: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-appointment-status-extension-10.json ==
+WARNING: Appointment/appointment-status-extension-10: Appointment.status.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.881'
 == fsh-generated/resources/Appointment-example-appointment-4.json ==
 INFORMATION: Appointment/example-appointment-4: Appointment.contained[0]/*Patient/patient-iida*/.identifier[1]: This element does not match any known slice defined in the profile https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Appointment/example-appointment-4: Appointment.contained[0]/*Patient/patient-iida*/.name[0]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
 WARNING: Appointment/example-appointment-4: Appointment.contained[0]/*Patient/patient-iida*/.name[1]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
+WARNING: Appointment/example-appointment-4: Appointment.contained[1]/*Condition/example-condition-1*/.code.coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.355.202001'
+WARNING: Appointment/example-appointment-4: Appointment.contained[2]/*Condition/example-condition-2*/.code.coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.355.202001'
+WARNING: Appointment/example-appointment-4: Appointment.contained[4]/*HealthcareService/example-service*/.category[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.50'
+WARNING: Appointment/example-appointment-4: Appointment.contained[4]/*HealthcareService/example-service*/.type[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.49'
+WARNING: Appointment/example-appointment-4: Appointment.serviceCategory[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.50'
+WARNING: Appointment/example-appointment-4: Appointment.serviceType[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.49'
 == fsh-generated/resources/ConceptMap-ajanvarauksentila-appointmentstatus.json ==
 == fsh-generated/resources/ConceptMap-appointmentstatus-ajanvarauksentila.json ==
 == fsh-generated/resources/HealthcareService-example-service-2.json ==
+WARNING: HealthcareService/example-service-2: HealthcareService.type[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.1222'
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.scheduling.json ==
 == fsh-generated/resources/Organization-example-org-unit.json ==
 == fsh-generated/resources/Patient-patient-pentti.json ==
+WARNING: Patient/patient-pentti: Patient.extension[0].value.ofType(Coding).system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.21'
+WARNING: Patient/patient-pentti: Patient.contact[0].relationship[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.882'
+WARNING: Patient/patient-pentti: Patient.communication[0].language.coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.5.40175'
 == fsh-generated/resources/Patient-patient-petri.json ==
 WARNING: Patient/patient-petri: Patient.name[0]: Constraint failed: ipa-pat-3: 'To be usable for a wide range of internationally available applications, the Patient.name.text SHOULD be present.' (defined in http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient) (Best Practice Recommendation)
 == fsh-generated/resources/Practitioner-practitioner-keijo.json ==
 == fsh-generated/resources/Schedule-234567890.json ==
 == fsh-generated/resources/Slot-123456789.json ==
+WARNING: Slot/123456789: Slot.serviceCategory[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.50.201801'
+WARNING: Slot/123456789: Slot.serviceType[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.49.201501'
+WARNING: Slot/123456789: Slot.appointmentType.coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.884.2015'
 == fsh-generated/resources/StructureDefinition-additional-information-url.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/additional-information-url'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ajanvarauksen-tila.json ==
@@ -87,8 +110,8 @@ WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling
 == fsh-generated/resources/StructureDefinition-customer-journey.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/customer-journey'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fi-scheduling-appointment.json ==
-INFORMATION: StructureDefinition/fi-scheduling-appointment: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated
-INFORMATION: StructureDefinition/fi-scheduling-appointment: StructureDefinition.snapshot.element[128].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
+INFORMATION: StructureDefinition/fi-scheduling-appointment: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.3.0-ballot-tc1 is deprecated with the note Use additionalBinding extension or element instead
+INFORMATION: StructureDefinition/fi-scheduling-appointment: StructureDefinition.snapshot.element[128].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0-ballot-tc1 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
 == fsh-generated/resources/StructureDefinition-fi-scheduling-healthcare-service.json ==
 == fsh-generated/resources/StructureDefinition-mutable.json ==
 == fsh-generated/resources/StructureDefinition-notification-info.json ==
@@ -115,5 +138,8 @@ WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling
 == fsh-generated/resources/StructureDefinition-topic-id.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/topic-id'): The Implementation Guide contains no examples for this extension
 == input/examples/appointment.json ==
+WARNING: Appointment/605790: Appointment.serviceCategory[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.50.201801'
+WARNING: Appointment/605790: Appointment.serviceType[0].coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.49.201501'
+WARNING: Appointment/605790: Appointment.appointmentType.coding[0].system: No definition could be found for URL value 'urn:oid:1.2.246.537.6.884.2015'
 INFORMATION: Appointment/605790: Appointment.participant[0].type[0].coding[0].display: 'subject' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ParticipationType has no Display Names for the language fi-FI
 INFORMATION: Appointment/605790: Appointment.participant[1].type[0].coding[0].display: 'location' is the default display; the code system http://terminology.hl7.org/CodeSystem/v3-ParticipationType has no Display Names for the language fi-FI

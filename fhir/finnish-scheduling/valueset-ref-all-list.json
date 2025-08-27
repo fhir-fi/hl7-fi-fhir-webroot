@@ -44,8 +44,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService",
-      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment"
+      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment",
+      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -104,8 +104,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService",
-      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment"
+      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment",
+      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
@@ -175,8 +175,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.516"],
       "uses" : {
       },
-      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService",
-      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment"
+      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment",
+      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-provision-conditions",
@@ -222,8 +222,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService",
-      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment"
+      "StructureDefinition-fi-scheduling-appointment.html" : "FiSchedulingAppointment",
+      "StructureDefinition-fi-scheduling-healthcare-service.html" : "FiSchedulingHealthcareService"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0276",

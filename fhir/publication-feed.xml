@@ -4,12 +4,23 @@
     <description>New publications by HL7 Finland&gt;</description>
     <link>http://hl7.fi/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Sun, 01 Jun 2025 03:34:41 +0300</lastBuildDate>
+    <lastBuildDate>Wed, 27 Aug 2025 04:14:26 +0300</lastBuildDate>
     <atom:link href="http://hl7.fi/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 01 Jun 2025 03:34:41 +0300</pubDate>
+    <pubDate>Wed, 27 Aug 2025 04:14:26 +0300</pubDate>
     <language>en&gt;</language>
     <ttl>600</ttl>
   
+    <item>
+      <title>Finnish Scheduling version 2.0.0-rc3</title>
+      <description>Third release candidate for 2.0.0</description>
+      <link>https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc3/index.html</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc3/index.html</guid>
+      <dc:creator>HL7 Finland ry</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Wed, 27 Aug 2025 04:14:26 +0300</pubDate>
+      <fhir:details>Publication run at 27/08/2025 by mikael using Version 2.0.3 (Git# 0d8955c5fbb4). Built 2025-05-30T03:07:24.991Z (89 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>Finnish Implementation Guide for SMART App Launch version 2.0.0-rc3</title>
       <description>Release Candidate 3 for v 2.0.0</description>

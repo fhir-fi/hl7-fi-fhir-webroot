@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Ajanvarauksen tila to Appointment status - Finnish Scheduling v2.0.0-rc2</title>
+    <title>Ajanvarauksen tila to Appointment status - Finnish Scheduling v2.0.0-rc3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -34,10 +34,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -62,7 +62,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Finnish Scheduling</span>
             <br/>
-            <span style="display:inline-block;">2.0.0-rc2 - ballot
+            <span style="display:inline-block;">2.0.0-rc3 - ballot
 
 
 
@@ -136,7 +136,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Scheduling (v2.0.0-rc2: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 2) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-scheduling/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Finnish Scheduling (v2.0.0-rc3: <a data-no-external="true" href="https://confluence.hl7.org/display/HL7/HL7+Balloting" title="Standard for Trial-Use">STU</a> 2 Ballot 3) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fi/fhir/finnish-scheduling/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -190,7 +190,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.0.0-rc2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus|2.0.0-rc2"/></span>
+      <span class="copy-text">2.0.0-rc3<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fi/fhir/finnish-scheduling/ConceptMap/ajanvarauksentila-appointmentstatus|2.0.0-rc3"/></span>
       </td>
     </tr>
 
@@ -206,7 +206,7 @@
         
           Draft
           
-            as of 2025-05-09
+            as of 2025-08-27
           
         
       </td>
@@ -251,7 +251,7 @@ logical model. This ordering is different from the numeric order of the codes.</
   
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ajanvarauksentila-appointmentstatus</b></p><a name="ajanvarauksentila-appointmentstatus"> </a><a name="hcajanvarauksentila-appointmentstatus"> </a><a name="ajanvarauksentila-appointmentstatus-fi-FI"> </a><p>Mapping from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943 to <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a></p><br/><p><b>Group 1 </b>Mapping from <code>https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</code> to <a href="http://hl7.org/fhir/R4/codesystem-appointmentstatus.html">AppointmentStatus</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1 (Suunniteltu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>waitlist (Waitlisted)</td><td>Patient and need have been identified, the service provider and time have not.</td></tr><tr><td>2 (Tilattu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>proposed</td><td>Differs from Suunniteltu in that in Tilattu the service provider has been identified.</td></tr><tr><td>8 (Ehdotettu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>pending</td><td/></tr><tr><td>3 (Varattu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>booked</td><td/></tr><tr><td>4 (Peruttu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>cancelled</td><td/></tr><tr><td>5 (Siirretty)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider" title="wider">maps to wider concept</a></td><td>cancelled</td><td>There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated.</td></tr><tr><td>10 (Ilmoittautunut)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>checked-in</td><td/></tr><tr><td>6 (Alkanut)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider" title="wider">maps to wider concept</a></td><td>fulfilled</td><td>Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>7 (Toteutunut)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider" title="wider">maps to wider concept</a></td><td>fulfilled</td><td>Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>9 (Saapumatta)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>noshow</td><td/></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="ajanvarauksentila-appointmentstatus"> </a><a name="hcajanvarauksentila-appointmentstatus"> </a><a name="ajanvarauksentila-appointmentstatus-fi-FI"> </a><p>Mapping from https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943 to <a href="http://hl7.org/fhir/R4/valueset-appointmentstatus.html">AppointmentStatus</a></p><br/><p><b>Group 1 </b>Mapping from <code>https://koodistopalvelu.kanta.fi/codeserver/pages/classification-view-page.xhtml?classificationKey=1943</code> to <a href="http://hl7.org/fhir/R4/codesystem-appointmentstatus.html">AppointmentStatus</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td><td><b>Comment</b></td></tr><tr><td>1 (Suunniteltu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>waitlist (Waitlisted)</td><td>Patient and need have been identified, the service provider and time have not.</td></tr><tr><td>2 (Tilattu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>proposed</td><td>Differs from Suunniteltu in that in Tilattu the service provider has been identified.</td></tr><tr><td>8 (Ehdotettu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>pending</td><td/></tr><tr><td>3 (Varattu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>booked</td><td/></tr><tr><td>4 (Peruttu)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>cancelled</td><td/></tr><tr><td>5 (Siirretty)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider" title="wider">maps to wider concept</a></td><td>cancelled</td><td>There is no separate status code in FHIR for rescheduled appointments. Note that this code is deprecated.</td></tr><tr><td>10 (Ilmoittautunut)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>checked-in</td><td/></tr><tr><td>6 (Alkanut)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider" title="wider">maps to wider concept</a></td><td>fulfilled</td><td>Alkanut means that the encounter has begun and is ongoing. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>7 (Toteutunut)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#wider" title="wider">maps to wider concept</a></td><td>fulfilled</td><td>Toteutunut means that the service the appointment is for has started or is complete. Most FHIR systems track this with the Encounter resource. There is no such state in Appointment.</td></tr><tr><td>9 (Saapumatta)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equal" title="equal">is equal to</a></td><td>noshow</td><td/></tr></table></div>
 
   <!-- insert notes if present -->
   
@@ -328,7 +328,7 @@ but that code is now deprecated.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.scheduling#2.0.0-rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 9, 2025 18:31+0300">2025-05-09</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.hl7.fi/">HL7 Finland</a>.  Package hl7.fhir.fi.scheduling#2.0.0-rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 27, 2025 16:16+0300">2025-08-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a>

@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Appointment/appointment-status-extension-07> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "appointment-status-extension-07"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-07-22T08:51:13.431+03:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Appointment appointment-status-extension-07</b></p><a name=\"appointment-status-extension-07\"> </a><a name=\"hcappointment-status-extension-07\"> </a><a name=\"appointment-status-extension-07-fi-FI\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2020-07-22 08:51:13+0300</p></div><p><b>status</b>: Arrived</p><p><b>start</b>: 2020-01-07 09:00:00+0300</p><p><b>end</b>: 2020-01-07 09:20:00+0300</p><p><b>created</b>: 2019-12-22 19:24:17+0300</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-patient-petri.html\">Petri Potilas  Male, DoB: 2010-10-11 ( urn:oid:1.2.246.21#101100A9277 (use: official, ))</a></p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Practitioner-practitioner-keijo.html\">Practitioner Keijo Kätilö</a></p><p><b>status</b>: Accepted</p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [
+     fhir:v "arrived" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ajanvarauksen-tila"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [ fhir:v "urn:oid:1.2.246.537.6.881"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Varattu" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:start [ fhir:v "2020-01-07T09:00:00+03:00"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2020-01-07T09:20:00+03:00"^^xsd:dateTime] ; # 
+  fhir:created [ fhir:v "2019-12-22T19:24:17+03:00"^^xsd:dateTime] ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:link <https://hl7.fi/fhir/finnish-scheduling/Patient/patient-petri> ;
+       fhir:reference [ fhir:v "Patient/patient-petri" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] [
+     fhir:actor [
+       fhir:link <https://hl7.fi/fhir/finnish-scheduling/Practitioner/practitioner-keijo> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-keijo" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

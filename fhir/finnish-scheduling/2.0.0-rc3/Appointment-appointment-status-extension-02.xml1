@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="appointment-status-extension-02"/>
+  <meta>
+    <lastUpdated value="2019-12-14T15:17:11.012+03:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment appointment-status-extension-02</b></p><a name="appointment-status-extension-02"> </a><a name="hcappointment-status-extension-02"> </a><a name="appointment-status-extension-02-fi-FI"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Last updated: 2019-12-14 15:17:11+0300</p></div><p><b>status</b>: Proposed</p><p><b>created</b>: 2019-12-14 09:16:34+0300</p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Patient-patient-petri.html">Petri Potilas  Male, DoB: 2010-10-11 ( urn:oid:1.2.246.21#101100A9277 (use: official, ))</a></p><p><b>status</b>: Tentative</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Practitioner-practitioner-keijo.html">Practitioner Keijo Kätilö</a></p><p><b>status</b>: Tentative</p></blockquote></div>
+  </text>
+  <status value="proposed">
+    <extension url="https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/ajanvarauksen-tila">
+      <valueCoding>
+        <system value="urn:oid:1.2.246.537.6.881"/>
+        <code value="2"/>
+        <display value="Tilattu"/>
+      </valueCoding>
+    </extension>
+  </status>
+  <created value="2019-12-14T09:16:34+03:00"/>
+  <participant>
+    <actor>
+      <reference value="Patient/patient-petri"/>
+    </actor>
+    <status value="tentative"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="Practitioner/practitioner-keijo"/>
+    </actor>
+    <status value="tentative"/>
+  </participant>
+</Appointment>

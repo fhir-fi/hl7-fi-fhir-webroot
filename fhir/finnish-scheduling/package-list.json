@@ -7,13 +7,23 @@
       "sequence" : "ci-build"
     },
     {
+      "version" : "2.0.0-rc3",
+      "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc3",
+      "status" : "ballot",
+      "sequence" : "STU 2",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-08-27",
+      "current" : true,
+      "desc" : "Third release candidate for 2.0.0",
+      "descmd" : "Third release candidate for 2.0.0. Development is stalled for now."
+    },
+    {
       "version" : "2.0.0-rc2",
       "path" : "https://hl7.fi/fhir/finnish-scheduling/2.0.0-rc2",
       "status" : "ballot",
       "sequence" : "STU 2",
       "fhirversion" : "4.0.1",
       "date" : "2025-05-09",
-      "current" : true,
       "desc" : "Second release candidate for 2.0.0",
       "descmd" : "Second release candidate for 2.0.0."
     },

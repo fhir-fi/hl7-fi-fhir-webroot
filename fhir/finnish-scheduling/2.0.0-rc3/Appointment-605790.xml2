@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="605790"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Appointment 605790</b></p><a name="605790"> </a><a name="hc605790"> </a><a name="605790-fi-FI"> </a><p><b>Notification Information</b>: +3581234567</p><blockquote><p><b>Appointment Mutability</b></p><ul><li>Cancellable: true</li><li>Reschedulable: false</li></ul></blockquote><p><b>status</b>: Booked</p><p><b>serviceCategory</b>: <span title="Codes:{urn:oid:1.2.246.537.6.50.201801 SOTE19.2}">Isyyden selvittäminen</span></p><p><b>serviceType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.49.201501 NC}">Isyyden selvittämispalvelu</span></p><p><b>appointmentType</b>: <span title="Codes:{urn:oid:1.2.246.537.6.884.2015 10}, {http://terminology.hl7.org/CodeSystem/v2-0276 ROUTINE}">Kertakäynti toimipaikassa</span></p><p><b>start</b>: 2020-01-01 12:00:00+0200</p><p><b>end</b>: 2020-01-01 12:30:00+0200</p><p><b>slot</b>: <a href="Slot-123456789.html">Slot: identifier = 123456789; serviceCategory = Perheoikeudelliset palvelut; serviceType = Isyyden selvittämispalvelu; appointmentType = Kertakäynti toimipaikassa; status = free; start = 2020-01-01 12:00:00+0200; end = 2020-01-01 12:30:00+0200</a></p><p><b>created</b>: 2019-12-01</p><p><b>comment</b>: Äidillä ei ole virallista henkilöllisyystodistusta</p><p><b>patientInstruction</b>: Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia</p><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType SBJ}">subject</span></p><p><b>actor</b>: Pentti Potilas (Identifier: <code>urn:oid:1.2.246.21</code>/010101-123N)</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType LOC}">location</span></p><p><b>actor</b>: Vastaanotto (Identifier: 1.2.246.10.10303777.10.777)</p><p><b>status</b>: Accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="HealthcareService-example-service-2.html">Lastenvalvojan vastaanotto</a></p><p><b>status</b>: Accepted</p></blockquote></div>
+  </text>
+  <extension url="https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/notification-info">
+    <valueContactPoint>
+      <system value="sms"/>
+      <value value="+3581234567"/>
+    </valueContactPoint>
+  </extension>
+  <extension url="https://hl7.fi/fhir/finnish-scheduling/StructureDefinition/mutable">
+    <extension url="Cancellable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="Reschedulable">
+      <valueBoolean value="false"/>
+    </extension>
+  </extension>
+  <status value="booked"/>
+  <serviceCategory>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.50.201801"/>
+      <code value="SOTE19.2"/>
+      <display value="Isyyden selvittäminen"/>
+    </coding>
+  </serviceCategory>
+  <serviceType>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.49.201501"/>
+      <code value="NC"/>
+      <display value="Isyyden selvittämispalvelu"/>
+    </coding>
+  </serviceType>
+  <appointmentType>
+    <coding>
+      <system value="urn:oid:1.2.246.537.6.884.2015"/>
+      <code value="10"/>
+      <display value="Kertakäynti toimipaikassa"/>
+    </coding>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0276"/>
+      <code value="ROUTINE"/>
+      <display value="Routine appointment - default if not valued"/>
+    </coding>
+    <text value="Kertakäynti toimipaikassa"/>
+  </appointmentType>
+  <start value="2020-01-01T12:00:00+02:00"/>
+  <end value="2020-01-01T12:30:00+02:00"/>
+  <slot>
+    <reference value="Slot/123456789"/>
+  </slot>
+  <created value="2019-12-01"/>
+  <comment value="Äidillä ei ole virallista henkilöllisyystodistusta"/>
+  <patientInstruction value="Vanhemmilla tulee olla mukana voimassa olevat henkilöllisyystodistukset sekä äidillä neuvolan äitiyskortti (todistus raskaudesta). Käynnin yhteydessä tehdään oikeusgeneettinen DNA-tutkimus. Ennen näytteen ottamista täyttyy olla syömättä, juomatta ja tupakoimatta vähintään 30 minuuttia"/>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="SBJ"/>
+        <display value="subject"/>
+      </coding>
+    </type>
+    <actor>
+      <identifier>
+        <system value="urn:oid:1.2.246.21"/>
+        <value value="010101-123N"/>
+      </identifier>
+      <display value="Pentti Potilas"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="LOC"/>
+        <display value="location"/>
+      </coding>
+    </type>
+    <actor>
+      <identifier>
+        <value value="1.2.246.10.10303777.10.777"/>
+      </identifier>
+      <display value="Vastaanotto"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+  <participant>
+    <actor>
+      <reference value="HealthcareService/example-service-2"/>
+      <display value="Lastenvalvojan vastaanotto"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

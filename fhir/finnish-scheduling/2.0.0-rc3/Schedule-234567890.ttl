@@ -1,0 +1,22 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://hl7.fi/fhir/finnish-scheduling/Schedule/234567890> a fhir:Schedule ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "234567890"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Schedule 234567890</b></p><a name=\"234567890\"> </a><a name=\"hc234567890\"> </a><a name=\"234567890-fi-FI\"> </a><p><b>actor</b>: <a href=\"Practitioner-practitioner-keijo.html\">Practitioner Keijo Kätilö</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:actor ( [
+     fhir:link <https://hl7.fi/fhir/finnish-scheduling/Practitioner/practitioner-keijo> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-keijo" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
