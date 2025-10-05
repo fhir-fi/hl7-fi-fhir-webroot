@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "17fa3220-495f-4565-8dd9-625c7675d7d3-17",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/17fa3220-495f-4565-8dd9-625c7675d7d3-17",
+  "id" : "96fea8a1-770f-49db-8af8-acaa3cc52ed9-17",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/96fea8a1-770f-49db-8af8-acaa3cc52ed9-17",
   "name" : "UnionIPAMedicationAndFiBaseMedication",
   "title" : "Union of IPA-Medication And FI Base Medication",
   "status" : "active",
-  "date" : "2025-05-11T20:19:35+03:00",
+  "date" : "2025-10-05T18:47:38+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",

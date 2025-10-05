@@ -9,7 +9,7 @@
   "language" : "fi",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Daily steps (41950-7)<br />Time: 20.11.2017 11:46<br />Result: 165 </div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Daily steps (41950-7)<br/>Time: 20.11.2017 11:46<br/>Result: 165 </div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

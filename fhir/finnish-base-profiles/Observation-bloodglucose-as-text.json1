@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Glucose [Moles/volume] in Capillary blood by Glucometer (14743-9)<br />Time: 20.11.2017 11:46<br />Result: HIGH</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Glucose [Moles/volume] in Capillary blood by Glucometer (14743-9)<br/>Time: 20.11.2017 11:46<br/>Result: HIGH</div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

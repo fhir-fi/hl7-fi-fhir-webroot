@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><div class="hapiHeaderText"> Hoitosuunnitelma<b>Boldattuu </b></div><table class="hapiPropertyTable"><tbody><tr><td>Identifier</td><td>Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde</td></tr></tbody></table></div>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><div class="hapiHeaderText"> Hoitosuunnitelma<b>Boldattuu </b></div><table class="hapiPropertyTable"><tbody><tr><td>Identifier</td><td>Patient/bb13623e-2673-4b3e-85d6-5c42f5333cde</td></tr></tbody></table></div>
   </text>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>

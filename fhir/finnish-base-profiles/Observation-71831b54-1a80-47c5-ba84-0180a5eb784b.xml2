@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Exercise tracking (55409-7)<br />Time: 26.11.2019<br />Result: Exercise activity (73985-4): Orienteering, Exercise duration (55411-3): 60 min, Exercise intensity (74008-4): Vigorous, Caloried burned (55421-2): 709 kcal</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Exercise tracking (55409-7)<br/>Time: 26.11.2019<br/>Result: Exercise activity (73985-4): Orienteering, Exercise duration (55411-3): 60 min, Exercise intensity (74008-4): Vigorous, Caloried burned (55421-2): 709 kcal</div>
   </text>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>

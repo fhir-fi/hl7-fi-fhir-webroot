@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "490334fd-1ed8-425f-8410-6482e2880f57-29",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/490334fd-1ed8-425f-8410-6482e2880f57-29",
+  "id" : "8b584771-40a9-499d-9614-644532712f38-29",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8b584771-40a9-499d-9614-644532712f38-29",
   "name" : "UnionFiBaseAppointmentAndFiBaseAppointment",
   "title" : "Union of FI Base Appointment And FI Base Appointment",
   "status" : "active",
-  "date" : "2025-02-06T19:06:55+02:00",
+  "date" : "2025-10-05T18:47:32+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -289,8 +289,8 @@
     },
     {
       "path" : "Appointment.extension",
-      "short" : "Additional content defined by implementations",
-      "definition" : "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+      "short" : "left: Additional content defined by implementations; right: Extension",
+      "definition" : "left: May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.; right: An Extension",
       "comment" : "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
       "alias" : ["extensions",
       "user content"],

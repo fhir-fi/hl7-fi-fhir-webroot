@@ -1,0 +1,19 @@
+{
+  "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
+  "name" : "FinnishBaseProfiles",
+  "title" : "Finnish Base Profiles",
+  "description" : "A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland",
+  "status" : "active",
+  "package-id" : "hl7.fhir.fi.base",
+  "ig-ver" : "2.0.0",
+  "date" : "Sun, 05 Oct, 2025 18:38:53 +0300",
+  "dateISO8601" : "2025-10-05T18:38:53+03:00",
+  "errs" : 91,
+  "warnings" : 55,
+  "hints" : 90,
+  "suppressed-hints" : 120,
+  "suppressed-warnings" : 1279,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 4593131024
+}

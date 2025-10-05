@@ -7,7 +7,7 @@
   </meta>
   <language value="fi"/>
   <text>
-    <status value="generated"/><div lang="fi" xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br />Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br />Aika: 4.9.2021 19.13:48<br />Lyhytvaikutteinen insuliini 1.07 ky<br />Laite: tandemCIQ1002717799999</div>
+    <status value="generated"/><div xml:lang="fi" xmlns="http://www.w3.org/1999/xhtml" lang="fi">Insuliinin tyyppi: Lyhytvaikutteinen insuliini<br/>Koodi: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Lyhytvaikutteinen insuliini), SNOMED 67866001 (Insulin (substance))<br/>Aika: 4.9.2021 19.13:48<br/>Lyhytvaikutteinen insuliini 1.07 ky<br/>Laite: tandemCIQ1002717799999</div>
   </text>
   <identifier>
     <use value="official"/>

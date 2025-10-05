@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Exercise tracking (55409-7)<br />Time: 26.11.2019<br />Result: Exercise activity (73985-4): Orienteering, Exercise duration (55411-3): 60 min, Exercise intensity (74008-4): Vigorous, Caloried burned (55421-2): 709 kcal</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Exercise tracking (55409-7)<br/>Time: 26.11.2019<br/>Result: Exercise activity (73985-4): Orienteering, Exercise duration (55411-3): 60 min, Exercise intensity (74008-4): Vigorous, Caloried burned (55421-2): 709 kcal</div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

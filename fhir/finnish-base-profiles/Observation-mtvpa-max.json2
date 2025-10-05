@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Weekly moderate to vigorous physical activity in minutes (82290-8)<br />Time: 20.11.2017 11:46<br />Result: 254 min </div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Weekly moderate to vigorous physical activity in minutes (82290-8)<br/>Time: 20.11.2017 11:46<br/>Result: 254 min </div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

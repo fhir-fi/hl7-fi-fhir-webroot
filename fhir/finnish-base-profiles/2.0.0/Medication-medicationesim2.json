@@ -1,0 +1,48 @@
+{
+  "resourceType" : "Medication",
+  "id" : "medicationesim2",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication medicationesim2</b></p><a name=\"medicationesim2\"> </a><a name=\"hcmedicationesim2\"> </a><a name=\"medicationesim2-fi-FI\"> </a><p><b>fi/StructureDefinition/extension/drug</b>: DIAPAM</p><p><b>fi/StructureDefinition/extension/typeOfMedicinalProduct</b>: unknown 1: 1</p><p><b>fi/StructureDefinition/extension/pharmaceuticalProductStrength</b>: 5 mg</p><p><b>fi/StructureDefinition/extension/narcotic</b>: false</p><p><b>fi/StructureDefinition/extension/CNSdrug</b>: unknown Z: Z</p><p><b>identifier</b>: <code>urn:oid:1.2.246.537.6.55.2004</code>/469437</p><p><b>code</b>: <span title=\"Codes:{urn:oid:1.2.246.537.6.32.2007 N05BA01}\">diatsepaami</span></p><p><b>form</b>: <span title=\"Codes:\">tabletti</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/drug",
+    "valueString" : "DIAPAM"
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/typeOfMedicinalProduct",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.6.604.2014",
+      "code" : "1"
+    }
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/pharmaceuticalProductStrength",
+    "valueString" : "5 mg"
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/narcotic",
+    "valueBoolean" : false
+  },
+  {
+    "url" : "http://resepti.kanta.fi/StructureDefinition/extension/CNSdrug",
+    "valueCoding" : {
+      "system" : "urn:oid:1.2.246.537.5.40118.2006",
+      "code" : "Z"
+    }
+  }],
+  "identifier" : [{
+    "system" : "urn:oid:1.2.246.537.6.55.2004",
+    "value" : "469437"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "urn:oid:1.2.246.537.6.32.2007",
+      "code" : "N05BA01",
+      "display" : "diatsepaami"
+    }]
+  },
+  "form" : {
+    "text" : "tabletti"
+  }
+}

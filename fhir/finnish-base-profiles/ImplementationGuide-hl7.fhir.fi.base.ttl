@@ -14,11 +14,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.base</b></p><a name=\"hl7.fhir.fi.base\"> </a><a name=\"hchl7.fhir.fi.base\"> </a><a name=\"hl7.fhir.fi.base-fi-FI\"> </a><h2>FinnishBaseProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base</pre><div><p>A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.0-rc2"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "FinnishBaseProfiles"] ; # 
   fhir:title [ fhir:v "Finnish Base Profiles"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-05-11T20:18:22+03:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-05T18:45:07+03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Finland"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Finland" ] ;
@@ -55,7 +55,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.3.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -70,7 +70,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0-ballot-tc1" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_fi_scheduling" ] ;
      fhir:uri [
@@ -107,7 +107,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ballot"
+           fhir:v "release"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -198,6 +198,51 @@
          fhir:value [
            a fhir:string ;
            fhir:v "http://resepti.kanta.fi/"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "special-url"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://gen.kanta.fi/kanta-provenance-agent-role"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "STU 2"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "version-comparison"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "1.0.0"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -578,7 +623,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "ballot"
+           fhir:v "release"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -669,6 +714,51 @@
          fhir:value [
            a fhir:string ;
            fhir:v "http://resepti.kanta.fi/"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "special-url"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://gen.kanta.fi/kanta-provenance-agent-role"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "STU 2"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "version-comparison"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "1.0.0"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -3307,6 +3397,25 @@
          a fhir:canonical ;
          fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"^^xsd:anyURI ;
          fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Provenance"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/Provenance/ESE-289490> ;
+         fhir:reference [ fhir:v "Provenance/ESE-289490" ]
+       ] ;
+       fhir:name [ fhir:v "Provenance example with registy information in reason field" ] ;
+       fhir:description [ fhir:v "An example Provenance resource instance demonstrating how the custodian registry information is encoded into the `.reason` field." ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"^^xsd:anyURI ;
+         fhir:link <https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian>
        ]
      ] [
        fhir:extension ( [

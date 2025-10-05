@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="ESE-289490"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance ESE-289490</b></p><a name="ESE-289490"> </a><a name="hcESE-289490"> </a><a name="ESE-289490-fi-FI"> </a><p>Provenance for <a href="Encounter/SE-289490">Encounter/SE-289490</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2025-08-31 17:14:02+0300</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>Role</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType CST}">custodian</span></td><td/><td>Logica (Identifier: Provider number/1.2.246.10.3575029.19.0)</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Encounter/SE-289490"/>
+    <identifier>
+      <use value="official"/>
+      <system value="urn:ietf:rfc:3986"/>
+      <value value="urn:oid:1.2.246.10.3575029.10.99.14131.2025.289490"/>
+    </identifier>
+  </target>
+  <recorded value="2025-08-31T17:14:02.117+03:00"/>
+  <reason>
+    <coding>
+      <system value="urn:oid:1.2.246.537.5.40150"/>
+      <code value="2"/>
+    </coding>
+  </reason>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="CST"/>
+      </coding>
+    </type>
+    <role>
+      <coding>
+        <system value="urn:oid:1.2.246.537.5.40172"/>
+        <code value="1"/>
+      </coding>
+    </role>
+    <who>
+      <identifier>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+            <code value="PRN"/>
+          </coding>
+        </type>
+        <system value="urn:oid:1.2.246.537.6.40174"/>
+        <value value="1.2.246.10.3575029.19.0"/>
+      </identifier>
+      <display value="Logica"/>
+    </who>
+  </agent>
+</Provenance>

@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "490334fd-1ed8-425f-8410-6482e2880f57-26",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/490334fd-1ed8-425f-8410-6482e2880f57-26",
+  "id" : "8b584771-40a9-499d-9614-644532712f38-26",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8b584771-40a9-499d-9614-644532712f38-26",
   "name" : "UnionPrimaryConditionAndPrimaryCondition",
   "title" : "Union of Primary condition for encounter And Primary condition for encounter",
   "status" : "active",
-  "date" : "2025-02-06T19:06:55+02:00",
+  "date" : "2025-10-05T18:47:32+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

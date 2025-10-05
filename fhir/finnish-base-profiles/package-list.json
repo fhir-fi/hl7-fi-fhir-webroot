@@ -15,13 +15,23 @@
       "current" : true
     },
     {
+      "version" : "2.0.0",
+      "path" : "https://hl7.fi/fhir/finnish-base-profiles/2.0.0",
+      "status" : "trial-use",
+      "sequence" : "STU 2",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-10-05",
+      "current" : true,
+      "desc" : "Release v2.0.0, STU2",
+      "descmd" : "Release v2.0.0, STU 2."
+    },
+    {
       "version" : "2.0.0-rc2",
       "path" : "https://hl7.fi/fhir/finnish-base-profiles/2.0.0-rc2",
       "status" : "ballot",
       "sequence" : "STU 2",
       "fhirversion" : "4.0.1",
       "date" : "2025-05-11",
-      "current" : true,
       "desc" : "Second release candidate for 2.0.0",
       "descmd" : "Second release candidate for 2.0.0."
     },

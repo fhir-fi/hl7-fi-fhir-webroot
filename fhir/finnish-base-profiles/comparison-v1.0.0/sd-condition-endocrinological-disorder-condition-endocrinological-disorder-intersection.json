@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "490334fd-1ed8-425f-8410-6482e2880f57-15",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/490334fd-1ed8-425f-8410-6482e2880f57-15",
+  "id" : "8b584771-40a9-499d-9614-644532712f38-15",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/8b584771-40a9-499d-9614-644532712f38-15",
   "name" : "IntersectionEndocrinologicalDisorderAndEndocrinologicalDisorder",
   "title" : "Intersection of Endocrinological disorder And Endocrinological disorder",
   "status" : "active",
-  "date" : "2025-02-06T19:06:55+02:00",
+  "date" : "2025-10-05T18:47:32+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

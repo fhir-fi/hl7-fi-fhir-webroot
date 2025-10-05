@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">Type of insulin: Fast-acting insulin<br />Code: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Fast-acting insulin), SNOMED 67866001 (Insulin (substance))<br />Time: 9/4/2021 17:23:17 - 17:28:16<br />Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)</div>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Type of insulin: Fast-acting insulin<br/>Code: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Fast-acting insulin), SNOMED 67866001 (Insulin (substance))<br/>Time: 9/4/2021 17:23:17 - 17:28:16<br/>Fast-acting insulin 0.07 IU (0.79 IU/h, 1.13 % = 0.89 IU/h)</div>
   </text>
   <identifier>
     <use value="official"/>

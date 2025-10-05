@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Blood pressure (85354-9) / Systolic blood pressure (observable entity)(46973005)<br />Time: 20.11.2017 11:46<br />Result: Systolic blood pressure (8480-6): 95 mm[Hg], Diastolic blood pressure (8462-4): 65 mm[Hg]</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Blood pressure (85354-9) / Systolic blood pressure (observable entity)(46973005)<br/>Time: 20.11.2017 11:46<br/>Result: Systolic blood pressure (8480-6): 95 mm[Hg], Diastolic blood pressure (8462-4): 65 mm[Hg]</div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

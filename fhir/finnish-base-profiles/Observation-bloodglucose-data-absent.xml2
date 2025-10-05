@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Glucose [Moles/volume] in Capillary blood by Glucometer (14743-9)<br />Time: 20.11.2017 11:46<br /> result: error</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Code: Glucose [Moles/volume] in Capillary blood by Glucometer (14743-9)<br/>Time: 20.11.2017 11:46<br/> result: error</div>
   </text>
   <identifier>
     <system value="urn:ietf:rfc:3986"/>

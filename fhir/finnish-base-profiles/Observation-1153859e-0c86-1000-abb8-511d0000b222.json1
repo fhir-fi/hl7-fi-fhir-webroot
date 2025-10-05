@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\t<b>Code:</b> Body height (8302-2)<br />\r\n\t\t<b>Time:</b> 20.11.2020 11:46<br />\r\n\t\t<b>Result:</b> 182 cm </div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">\r\n\t\t<b>Code:</b> Body height (8302-2)<br/>\r\n\t\t<b>Time:</b> 20.11.2020 11:46<br/>\r\n\t\t<b>Result:</b> 182 cm </div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

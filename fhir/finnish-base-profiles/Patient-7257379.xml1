@@ -5,10 +5,9 @@
   <meta>
     <versionId value="1"/>
     <lastUpdated value="2023-01-04T21:48:17.697+00:00"/>
-    <source value="#wwxXZ0JfKRZKOH5g"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div class="hapiHeaderText">Test <b>PATIENT </b></div><table class="hapiPropertyTable"><tbody></tbody></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div class="hapiHeaderText">Test <b>PATIENT </b></div><table class="hapiPropertyTable"><tbody/></table></div>
   </text>
   <name>
     <family value="Patient"/>

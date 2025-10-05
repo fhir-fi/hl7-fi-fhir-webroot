@@ -1,11 +1,11 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "490334fd-1ed8-425f-8410-6482e2880f57-2",
-  "url" : "http://hl7.org/fhir/comparison/CodeSystem/490334fd-1ed8-425f-8410-6482e2880f57-2",
+  "id" : "8b584771-40a9-499d-9614-644532712f38-2",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/8b584771-40a9-499d-9614-644532712f38-2",
   "name" : "UnionFiBaseSecurityLabelCSAndFiBaseSecurityLabelCS",
   "title" : "Union of Finnish CodeSystem for security labels And Finnish CodeSystem for security labels",
   "status" : "active",
-  "date" : "2025-02-06T19:06:55+02:00",
+  "date" : "2025-10-05T18:47:32+03:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

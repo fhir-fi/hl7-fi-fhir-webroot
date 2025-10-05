@@ -7,7 +7,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Moderate to vigorous physical activity minutes in 24 hours (82290-8-24h)<br />Time: 20.11.2017 11:46<br />Result: 76 min </div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Code: Moderate to vigorous physical activity minutes in 24 hours (82290-8-24h)<br/>Time: 20.11.2017 11:46<br/>Result: 76 min </div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

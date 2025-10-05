@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base"/>
-  <version value="2.0.0-rc2"/>
+  <version value="2.0.0"/>
   <name value="FinnishBaseProfiles"/>
   <title value="Finnish Base Profiles"/>
-  <status value="draft"/>
-  <date value="2025-05-11T20:18:22+03:00"/>
+  <status value="active"/>
+  <date value="2025-10-05T18:45:07+03:00"/>
   <publisher value="HL7 Finland"/>
   <contact>
     <name value="HL7 Finland"/>
@@ -41,7 +41,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.3.0"/>
+    <version value="6.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -49,7 +49,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0-ballot-tc1"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fi_scheduling">
     <uri value="https://hl7.fi/fhir/finnish-scheduling/ImplementationGuide/hl7.fhir.fi.scheduling"/>
@@ -70,7 +70,7 @@
         <valueString value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ballot"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -119,6 +119,30 @@
       </extension>
       <extension url="value">
         <valueString value="http://resepti.kanta.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://gen.kanta.fi/kanta-provenance-agent-role"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU 2"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="1.0.0"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -321,7 +345,7 @@
         <valueCode value="releaselabel"/>
       </extension>
       <extension url="value">
-        <valueString value="ballot"/>
+        <valueString value="release"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -370,6 +394,30 @@
       </extension>
       <extension url="value">
         <valueString value="http://resepti.kanta.fi/"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://gen.kanta.fi/kanta-provenance-agent-role"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="STU 2"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="version-comparison"/>
+      </extension>
+      <extension url="value">
+        <valueString value="1.0.0"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1908,6 +1956,17 @@
       <name value="Provenance example for Kanta"/>
       <description value="This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example."/>
       <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/ESE-289490"/>
+      </reference>
+      <name value="Provenance example with registy information in reason field"/>
+      <description value="An example Provenance resource instance demonstrating how the custodian registry information is encoded into the `.reason` field."/>
+      <exampleCanonical value="https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

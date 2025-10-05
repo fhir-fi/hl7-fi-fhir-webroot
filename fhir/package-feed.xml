@@ -4,11 +4,22 @@
     <description>New Packages published by HL7 Finland&gt;</description>
     <link>http://hl7.fi/fhir/package-feed.xml</link>
     <generator>HL7, Inc FHIR Publication tooling</generator>
-    <lastBuildDate>Wed, 27 Aug 2025 04:14:26 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 05 Oct 2025 06:38:26 +0300</lastBuildDate>
     <atom:link href="http://hl7.fi/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 27 Aug 2025 04:14:26 +0300</pubDate>
+    <pubDate>Sun, 05 Oct 2025 06:38:26 +0300</pubDate>
     <language>en</language>
     <ttl>600</ttl>
+    <item>
+      <title>hl7.fhir.fi.base#2.0.0</title>
+      <description>Release v2.0.0, STU2</description>
+      <link>https://hl7.fi/fhir/finnish-base-profiles/2.0.0/package.tgz</link>
+      <guid isPermaLink="true">https://hl7.fi/fhir/finnish-base-profiles/2.0.0/package.tgz</guid>
+      <dc:creator>HL7 Finland ry</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Sun, 05 Oct 2025 06:38:26 +0300</pubDate>
+      <fhir:details>Publication run at 05/10/2025 by mikael using Version 2.0.3 (Git# 0d8955c5fbb4). Built 2025-05-30T03:07:24.991Z (128 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>hl7.fhir.fi.scheduling#2.0.0-rc3</title>
       <description>Third release candidate for 2.0.0</description>

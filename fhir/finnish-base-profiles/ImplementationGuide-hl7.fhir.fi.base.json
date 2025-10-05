@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.base</b></p><a name=\"hl7.fhir.fi.base\"> </a><a name=\"hchl7.fhir.fi.base\"> </a><a name=\"hl7.fhir.fi.base-fi-FI\"> </a><h2>FinnishBaseProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base</pre><div><p>A core set of FHIR resources profiled for use in Finland, published and maintained by HL7 Finland</p>\n</div></div>"
   },
   "url" : "https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base",
-  "version" : "2.0.0-rc2",
+  "version" : "2.0.0",
   "name" : "FinnishBaseProfiles",
   "title" : "Finnish Base Profiles",
-  "status" : "draft",
-  "date" : "2025-05-11T20:18:22+03:00",
+  "status" : "active",
+  "date" : "2025-10-05T18:45:07+03:00",
   "publisher" : "HL7 Finland",
   "contact" : [{
     "name" : "HL7 Finland",
@@ -42,7 +42,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.3.0"
+    "version" : "6.5.0"
   },
   {
     "id" : "hl7ext",
@@ -52,7 +52,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
+    "version" : "5.3.0-ballot-tc1"
   },
   {
     "id" : "hl7_fhir_fi_scheduling",
@@ -79,7 +79,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -146,6 +146,39 @@
       {
         "url" : "value",
         "valueString" : "http://resepti.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://gen.kanta.fi/kanta-provenance-agent-role"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "STU 2"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "version-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "1.0.0"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -424,7 +457,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "ballot"
+        "valueString" : "release"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -491,6 +524,39 @@
       {
         "url" : "value",
         "valueString" : "http://resepti.kanta.fi/"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://gen.kanta.fi/kanta-provenance-agent-role"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "STU 2"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "version-comparison"
+      },
+      {
+        "url" : "value",
+        "valueString" : "1.0.0"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -2222,6 +2288,18 @@
       "name" : "Provenance example for Kanta",
       "description" : "This example resource shows how information custodianship can be implemented with the support of the Finnish base profiles. It is derived from a provided example.",
       "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/kanta-document-metadata-profile"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/ESE-289490"
+      },
+      "name" : "Provenance example with registy information in reason field",
+      "description" : "An example Provenance resource instance demonstrating how the custodian registry information is encoded into the `.reason` field.",
+      "exampleCanonical" : "https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-information-custodian"
     },
     {
       "extension" : [{

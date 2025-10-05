@@ -13,7 +13,7 @@
   "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\" xml:lang=\"en\"><div class=\"hapiHeaderText\"><b>Verensokeri</b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Subject</td><td>Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c</td></tr><tr><td>Code</td><td>ins-short-fast</td></tr><tr><td>Display</td><td>Fast-acting insulin</td></tr><tr><td>Text</td><td>Lyhytvaikutteinen insuliini</td></tr></tbody></table></div>"
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><div class=\"hapiHeaderText\"><b>Verensokeri</b></div><table class=\"hapiPropertyTable\"><tbody><tr><td>Subject</td><td>Patient/f1fa0b52-eccf-44af-96c7-84a3251bb22c</td></tr><tr><td>Code</td><td>ins-short-fast</td></tr><tr><td>Display</td><td>Fast-acting insulin</td></tr><tr><td>Text</td><td>Lyhytvaikutteinen insuliini</td></tr></tbody></table></div>"
   },
   "identifier" : [{
     "system" : "urn:ietf:rfc:3986",

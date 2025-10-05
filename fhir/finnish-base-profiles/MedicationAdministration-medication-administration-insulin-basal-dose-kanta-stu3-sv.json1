@@ -7,7 +7,7 @@
   "language" : "sv",
   "text" : {
     "status" : "generated",
-    "div" : "<div lang=\"sv\" xml:lang=\"sv\" xmlns=\"http://www.w3.org/1999/xhtml\">Typ av insulin: Direktverkande insulin<br />Kod: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Direktverkande insulin), SNOMED 67866001 (Insulin (substance))<br />Tid: 4.9.2021 17.38:18 - 18.21:18<br />Direktverkande insulin 0.50 IE (0.7 [iU]/h)</div>"
+    "div" : "<div xml:lang=\"sv\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"sv\">Typ av insulin: Direktverkande insulin<br/>Kod: SNOMED 411531001 (Short-acting insulin (substance)), ins-short-fast (Direktverkande insulin), SNOMED 67866001 (Insulin (substance))<br/>Tid: 4.9.2021 17.38:18 - 18.21:18<br/>Direktverkande insulin 0.50 IE (0.7 [iU]/h)</div>"
   },
   "identifier" : [{
     "use" : "official",
