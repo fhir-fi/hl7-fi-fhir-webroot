@@ -15,34 +15,6 @@
       "StructureDefinition-fi-smart-server-profile.html" : "Finnish SMART Server Capability Statement Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTAdditionalDosageInstructions",
-      "title" : "SNOMED CT Additional Dosage Instructions",
-      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.95"],
-      "sources" : ["2.16.840.1.113883.4.642.3.95"],
-      "uses" : {
-      },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTAdministrationMethodCodes",
-      "title" : "SNOMED CT Administration Method Codes",
-      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.97"],
-      "sources" : ["2.16.840.1.113883.4.642.3.97"],
-      "uses" : {
-      },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
       "version" : "4.0.1",
       "status" : "active",
@@ -54,8 +26,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner",
-      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient"
+      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
+      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -146,20 +118,6 @@
       "StructureDefinition-fi-smart-allergy-intolerance.html" : "FI SMART AllergyIntolerance"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
-      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
-      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.346"],
-      "sources" : ["2.16.840.1.113883.4.642.3.346"],
-      "uses" : {
-      },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
       "version" : "4.0.1",
       "status" : "draft",
@@ -171,9 +129,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-observation.html" : "FI SMART Observation",
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
       "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-observation.html" : "FI SMART Observation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -243,8 +201,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.162"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -258,8 +216,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -273,9 +231,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
       "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -289,8 +247,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.168"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -304,8 +262,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.170"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -319,8 +277,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.171"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -334,8 +292,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.166"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/conditional-delete-status",
@@ -408,20 +366,6 @@
       "StructureDefinition-fi-smart-server-profile.html" : "Finnish SMART Server Capability Statement Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DoseAndRateType",
-      "title" : "DoseAndRateType",
-      "description" : "The kind of dose or rate specified.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.981"],
-      "sources" : ["2.16.840.1.113883.4.642.3.981"],
-      "uses" : {
-      },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/event-capability-mode",
       "version" : "4.0.1",
       "status" : "active",
@@ -447,8 +391,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner",
-      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient"
+      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
+      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -462,8 +406,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner",
-      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient"
+      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
+      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/immunization-function",
@@ -660,18 +604,18 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-observation.html" : "FI SMART Observation",
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
+      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
+      "StructureDefinition-fi-smart-immunization.html" : "FI SMART Immunization",
       "StructureDefinition-fi-smart-server-profile.html" : "Finnish SMART Server Capability Statement Profile",
       "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
-      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
-      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
       "StructureDefinition-fi-smart-practitioner-role.html" : "FI SMART PractitionerRole",
-      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
       "StructureDefinition-fi-smart-allergy-intolerance.html" : "FI SMART AllergyIntolerance",
-      "StructureDefinition-fi-smart-immunization.html" : "FI SMART Immunization"
+      "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient",
+      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
+      "StructureDefinition-fi-smart-observation.html" : "FI SMART Observation",
+      "StructureDefinition-fi-smart-practitioner.html" : "FI SMART Practitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -699,8 +643,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.169"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition",
-      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item"
+      "StructureDefinition-fi-smart-problem-list-item.html" : "FI SMART Problem List Item",
+      "StructureDefinition-fi-smart-condition.html" : "FI SMART Condition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -720,20 +664,6 @@
       "StructureDefinition-fi-smart-patient.html" : "FI SMART Patient"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
-      "title" : "SNOMED CT Medication As Needed Reason Codes",
-      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.96"],
-      "sources" : ["2.16.840.1.113883.4.642.3.96"],
-      "uses" : {
-      },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
       "version" : "4.0.1",
       "status" : "draft",
@@ -745,9 +675,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.375"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
+      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
       "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
-      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication"
+      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
@@ -761,8 +691,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.374"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
-      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication"
+      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
+      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
@@ -806,8 +736,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.376"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request",
-      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication"
+      "StructureDefinition-fi-smart-medication.html" : "FI SMART Medication",
+      "StructureDefinition-fi-smart-medication-request.html" : "FI SMART Medication Request"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/message-transport",
@@ -1085,7 +1015,6 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-fi-smart-medication-statement.html" : "FI SMART MedicationStatement",
       "StructureDefinition-fi-smart-allergy-intolerance.html" : "FI SMART AllergyIntolerance"
     },
     {

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "75abb281-d10f-460a-b34f-ae1295592a0d-14",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/75abb281-d10f-460a-b34f-ae1295592a0d-14",
+  "name" : "UnionSubstanceCodeAndSubstanceCode",
+  "title" : "Union of Substance Code And Substance Code",
+  "status" : "draft",
+  "date" : "2025-10-26T13:23:33+02:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "105590001"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    }]
+  }
+}

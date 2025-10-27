@@ -1,0 +1,40 @@
+# hl7.fhir.fi.smart#2.0.0: Finnish Implementation Guide for SMART App Launch
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+* [Conformance](conformance.md)
+* [Downloads](downloads.md)
+* [Version History](versions.md)
+* [Examples](examples.md)
+
+## Resources
+
+### Resource Profiles
+
+* [FI SMART AllergyIntolerance](StructureDefinition-fi-smart-allergy-intolerance.md)
+* [FI SMART Condition](StructureDefinition-fi-smart-condition.md)
+* [FI SMART Immunization](StructureDefinition-fi-smart-immunization.md)
+* [FI SMART Medication Request](StructureDefinition-fi-smart-medication-request.md)
+* [FI SMART MedicationStatement](StructureDefinition-fi-smart-medication-statement.md)
+* [FI SMART Medication](StructureDefinition-fi-smart-medication.md)
+* [FI SMART Observation](StructureDefinition-fi-smart-observation.md)
+* [FI SMART Patient](StructureDefinition-fi-smart-patient.md)
+* [FI SMART PractitionerRole](StructureDefinition-fi-smart-practitioner-role.md)
+* [FI SMART Practitioner](StructureDefinition-fi-smart-practitioner.md)
+* [FI SMART Problem List Item](StructureDefinition-fi-smart-problem-list-item.md)
+* [Finnish SMART Server Capability Statement Profile](StructureDefinition-fi-smart-server-profile.md)
+
+### CapabilityStatements
+
+* [Finnish SMART Server Capability Statement](CapabilityStatement-fi-smart-server.md)
+
+### ImplementationGuides
+
+* [Finnish Implementation Guide for SMART App Launch](index.md)
+
+### Examples
+
+* [apotti-ehr-launch-by-practitioner (AuditEvent)](AuditEvent-apotti-ehr-launch-by-practitioner.md)
+* [CapabilityStatementExampleApotti (CapabilityStatement)](CapabilityStatement-apotti-eko01.md)

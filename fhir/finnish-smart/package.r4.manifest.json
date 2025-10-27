@@ -1,5 +1,5 @@
 {
-  "version" : "2.0.0-rc3",
-  "date" : "20250601153645",
+  "version" : "2.0.0",
+  "date" : "20251026132416",
   "name" : "hl7.fhir.fi.smart.r4"
 }

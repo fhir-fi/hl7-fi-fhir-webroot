@@ -15,13 +15,23 @@
       "current" : true
     },
     {
+      "version" : "2.0.0",
+      "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0",
+      "status" : "trial-use",
+      "sequence" : "STU 2",
+      "fhirversion" : "4.0.1",
+      "date" : "2025-10-26",
+      "current" : true,
+      "desc" : "Release v2.0.0, STU 2",
+      "descmd" : "Release v2.0.0, STU 2"
+    },
+    {
       "version" : "2.0.0-rc3",
       "path" : "https://hl7.fi/fhir/finnish-smart/2.0.0-rc3",
       "status" : "ballot",
       "sequence" : "STU 2",
       "fhirversion" : "4.0.1",
       "date" : "2025-06-01",
-      "current" : true,
       "desc" : "Release Candidate 3 for v 2.0.0",
       "descmd" : "Release Candidate 3 for v 2.0.0"
     },

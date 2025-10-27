@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-5",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/018c9095-9018-4af1-8f93-bc833cef7afb-5",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-5",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-5",
   "name" : "UnionIPAAllergyIntoleranceAndFiSMARTAllergyIntolerance",
   "title" : "Union of IPA-AllergyIntolerance And FI SMART AllergyIntolerance",
   "status" : "active",
-  "date" : "2025-06-01T15:37:57+03:00",
+  "date" : "2025-10-26T13:25:08+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -222,7 +222,7 @@
       "binding" : {
         "strength" : "preferred",
         "description" : "A human language.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/languages"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-8"
       }
     },
     {
@@ -642,7 +642,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Type of the substance/product, allergy or intolerance condition, or negation/exclusion codes for reporting no known allergies.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-11"
       },
       "mapping" : [{
         "identity" : "w5",
@@ -666,7 +666,7 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"]
       }],
       "constraint" : [{
         "extension" : [{
@@ -1113,7 +1113,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Codes defining the type of the substance (including pharmaceutical products).",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/substance-code"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-14"
       },
       "mapping" : [{
         "identity" : "rim",
@@ -1149,7 +1149,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "Clinical symptoms and/or signs that are observed or associated with an Adverse Reaction Event.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/clinical-findings"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-17"
       },
       "mapping" : [{
         "identity" : "v2",
@@ -1284,7 +1284,7 @@
       "binding" : {
         "strength" : "example",
         "description" : "A coded concept describing the route or physiological path of administration of a therapeutic agent into or onto the body of a subject.",
-        "valueSet" : "http://hl7.org/fhir/ValueSet/route-codes"
+        "valueSet" : "http://hl7.org/fhir/comparison/ValueSet/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-20"
       },
       "mapping" : [{
         "identity" : "rim",

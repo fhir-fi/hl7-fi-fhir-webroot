@@ -1,0 +1,63 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-12",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-12",
+  "name" : "IntersectionAllergyIntoleranceSubstance/Product,ConditionAndNegationCodesAndAllergyIntoleranceSubstance/Product,ConditionAndNegationCodes",
+  "title" : "Intersection of AllergyIntolerance Substance/Product, Condition and Negation Codes And AllergyIntolerance Substance/Product, Condition and Negation Codes",
+  "status" : "draft",
+  "date" : "2025-10-26T13:25:08+02:00",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/substance-code|4.0.1"]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "418038007"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "267425008"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "29736007"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "340519003"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "190753003"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "413427002"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "716186003"
+      }]
+    }]
+  }
+}

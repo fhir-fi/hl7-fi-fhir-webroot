@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "hl7.fhir.fi.smart"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.smart</b></p><a name=\"hl7.fhir.fi.smart\"> </a><a name=\"hchl7.fhir.fi.smart\"> </a><a name=\"hl7.fhir.fi.smart-fi-FI\"> </a><h2>FinnishSmart</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart</pre><div><p>Guidelines for using the SMART App Launch mechanism in Finland.</p>\n</div></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fi.smart</b></p><a name=\"hl7.fhir.fi.smart\"> </a><a name=\"hchl7.fhir.fi.smart\"> </a><h2>FinnishSmart</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart</pre><div><p>Guidelines for using the SMART App Launch mechanism in Finland.</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fi/fhir/finnish-smart/ImplementationGuide/hl7.fhir.fi.smart"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.0-rc3"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "FinnishSmart"] ; # 
   fhir:title [ fhir:v "Finnish Implementation Guide for SMART App Launch"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-06-01T15:36:45+03:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-26T13:24:16+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Finland ry"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Finland ry" ] ;
@@ -55,7 +55,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "6.4.0" ]
+     fhir:version [ fhir:v "6.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -78,7 +78,7 @@
        fhir:link <https://hl7.fi/fhir/finnish-base-profiles/ImplementationGuide/hl7.fhir.fi.base>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.fi.base" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "2.0.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_ipa" ] ;
      fhir:uri [
@@ -123,7 +123,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "qa-preview"
+           fhir:v "release"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
@@ -506,7 +506,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.5.0"
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
        ]
      ] [
        fhir:extension ( [
@@ -534,7 +534,7 @@
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
-           fhir:v "qa-preview"
+           fhir:v "release"
          ]
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]

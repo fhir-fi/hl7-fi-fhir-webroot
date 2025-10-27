@@ -1,50 +1,55 @@
 {
-  "date" : "Sun, 01 Jun, 2025 15:37:14 +0300",
+  "date" : "Sun, 26 Oct, 2025 13:24:39 +0200",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.fi.smart.json",
-      "size" : 7458,
+      "size" : 7452,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 8
-        },
-        {
-          "activity" : "checkR4R4B",
-          "start" : 153,
-          "length" : 2
-        },
-        {
-          "activity" : "generateNarratives",
-          "start" : 153,
-          "length" : 953
-        },
-        {
-          "activity" : "validate",
-          "start" : 168,
-          "length" : 16611
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 195,
+          "start" : 142,
           "length" : 1
         },
         {
+          "activity" : "load",
+          "start" : 142,
+          "length" : 7
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 143,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 143,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 149,
+          "length" : 7900
+        },
+        {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 34
+          "start" : 171,
+          "length" : 41
         },
         {
           "activity" : "generate2",
-          "start" : 198,
-          "length" : 17
+          "start" : 174,
+          "length" : 26
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 2
+          "start" : 188,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 197,
+          "length" : 1
         }
       ]
     },
@@ -54,33 +59,33 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 153,
+          "start" : 142,
           "length" : 6
         },
         {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 2
+        },
+        {
           "activity" : "generateNarratives",
-          "start" : 154,
-          "length" : 704
+          "start" : 143,
+          "length" : 3
         },
         {
           "activity" : "validate",
-          "start" : 195,
-          "length" : 9
+          "start" : 171,
+          "length" : 13
         },
         {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 10
+          "start" : 171,
+          "length" : 15
         },
         {
           "activity" : "generate2",
-          "start" : 198,
-          "length" : 9
+          "start" : 174,
+          "length" : 13
         }
       ]
     },
@@ -90,700 +95,725 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 6
         },
         {
           "activity" : "load-configure",
-          "start" : 153,
+          "start" : 143,
           "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 154,
-          "length" : 704
+          "start" : 143,
+          "length" : 12
         },
         {
           "activity" : "validate",
-          "start" : 168,
-          "length" : 18
+          "start" : 149,
+          "length" : 33
         },
         {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 16
+          "start" : 171,
+          "length" : 21
         },
         {
           "activity" : "generate2",
-          "start" : 198,
-          "length" : 8
+          "start" : 174,
+          "length" : 13
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-allergy-intolerance.json",
-      "size" : 957,
+      "size" : 958,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 12
+          "start" : 142,
+          "length" : 20
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 155,
-          "length" : 708
+          "start" : 143,
+          "length" : 41
         },
         {
           "activity" : "validate",
-          "start" : 164,
-          "length" : 797
+          "start" : 143,
+          "length" : 1578
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 157,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 96
+          "start" : 171,
+          "length" : 97
         },
         {
           "activity" : "generate2",
-          "start" : 198,
-          "length" : 95
+          "start" : 174,
+          "length" : 415
         },
         {
           "activity" : "generate2",
-          "start" : 200,
+          "start" : 176,
           "length" : 74
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-condition.json",
-      "size" : 895,
+      "size" : 896,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 2
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 12
+          "start" : 142,
+          "length" : 37
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 156,
-          "length" : 701
+          "start" : 143,
+          "length" : 11
         },
         {
           "activity" : "validate",
-          "start" : 165,
-          "length" : 261
+          "start" : 144,
+          "length" : 346
         },
         {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 88
+          "start" : 171,
+          "length" : 92
         },
         {
           "activity" : "generate2",
-          "start" : 198,
-          "length" : 96
+          "start" : 175,
+          "length" : 122
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 66
+          "start" : 177,
+          "length" : 65
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 1
+          "start" : 188,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-immunization.json",
-      "size" : 925,
+      "size" : 926,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 25
+          "start" : 142,
+          "length" : 33
         },
         {
-          "activity" : "generateNarratives",
-          "start" : 156,
-          "length" : 716
-        },
-        {
-          "activity" : "validate",
-          "start" : 165,
-          "length" : 496
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 185,
+          "activity" : "load-configure",
+          "start" : 143,
           "length" : 1
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 195,
+          "activity" : "generateNarratives",
+          "start" : 143,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 145,
+          "length" : 786
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 157,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 212
+          "start" : 171,
+          "length" : 215
         },
         {
           "activity" : "generate2",
-          "start" : 198,
-          "length" : 200
+          "start" : 175,
+          "length" : 261
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 172
+          "start" : 177,
+          "length" : 164
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 4
-        },
-        {
-          "activity" : "scanExamplesForR5",
-          "start" : 217,
-          "length" : 1
+          "start" : 188,
+          "length" : 6
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-medication-request.json",
-      "size" : 968,
+      "size" : 969,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 10
+          "start" : 142,
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 157,
-          "length" : 702
+          "start" : 143,
+          "length" : 9
         },
         {
           "activity" : "validate",
-          "start" : 166,
-          "length" : 135
+          "start" : 146,
+          "length" : 215
         },
         {
           "activity" : "generate1",
-          "start" : 195,
-          "length" : 72
+          "start" : 172,
+          "length" : 82
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 81
+          "start" : 175,
+          "length" : 98
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 56
+          "start" : 177,
+          "length" : 53
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 2
+          "start" : 188,
+          "length" : 1
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 197,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 197,
+          "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-medication-statement.json",
-      "size" : 998,
+      "size" : 999,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 6
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 15
+          "start" : 142,
+          "length" : 13
         },
         {
           "activity" : "generateNarratives",
-          "start" : 158,
-          "length" : 697
+          "start" : 143,
+          "length" : 8
         },
         {
           "activity" : "validate",
-          "start" : 166,
-          "length" : 233
+          "start" : 146,
+          "length" : 240
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 171,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 106
+          "start" : 172,
+          "length" : 75
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 117
+          "start" : 175,
+          "length" : 95
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 86
+          "start" : 177,
+          "length" : 51
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-medication.json",
-      "size" : 923,
+      "size" : 905,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 6
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 9
+          "start" : 142,
+          "length" : 13
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 158,
-          "length" : 699
+          "start" : 143,
+          "length" : 8
         },
         {
           "activity" : "validate",
-          "start" : 166,
-          "length" : 134
+          "start" : 146,
+          "length" : 296
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 70
+          "start" : 172,
+          "length" : 72
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 68
+          "start" : 175,
+          "length" : 91
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 53
+          "start" : 177,
+          "length" : 52
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-observation.json",
-      "size" : 915,
+      "size" : 916,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 2
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 16
-        },
-        {
-          "activity" : "load-configure",
-          "start" : 153,
-          "length" : 1
+          "start" : 142,
+          "length" : 23
         },
         {
           "activity" : "generateNarratives",
-          "start" : 159,
-          "length" : 712
+          "start" : 143,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 166,
-          "length" : 281
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 195,
-          "length" : 1
+          "start" : 146,
+          "length" : 449
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 121
+          "start" : 172,
+          "length" : 118
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 142
+          "start" : 175,
+          "length" : 160
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 95
+          "start" : 177,
+          "length" : 96
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 3
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-patient.json",
-      "size" : 875,
+      "size" : 876,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 21
+          "start" : 142,
+          "length" : 30
         },
         {
           "activity" : "generateNarratives",
-          "start" : 160,
-          "length" : 705
+          "start" : 143,
+          "length" : 12
         },
         {
           "activity" : "validate",
-          "start" : 166,
-          "length" : 400
-        },
-        {
-          "activity" : "checkConformanceResources",
-          "start" : 185,
-          "length" : 1
+          "start" : 147,
+          "length" : 577
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 177
+          "start" : 172,
+          "length" : 157
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 181
+          "start" : 176,
+          "length" : 212
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 141
+          "start" : 177,
+          "length" : 132
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 3
-        },
-        {
-          "activity" : "scanProfilesForR5",
-          "start" : 217,
-          "length" : 1
+          "start" : 188,
+          "length" : 5
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 217,
+          "start" : 197,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-practitioner-role.json",
-      "size" : 968,
+      "size" : 969,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 10
+          "start" : 142,
+          "length" : 14
         },
         {
           "activity" : "generateNarratives",
-          "start" : 161,
-          "length" : 703
+          "start" : 143,
+          "length" : 8
         },
         {
           "activity" : "validate",
-          "start" : 167,
-          "length" : 143
+          "start" : 147,
+          "length" : 242
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 157,
+          "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 73
+          "start" : 172,
+          "length" : 76
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 95
+          "start" : 176,
+          "length" : 90
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 55
+          "start" : 177,
+          "length" : 67
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-practitioner.json",
-      "size" : 925,
+      "size" : 926,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 4
+          "start" : 142,
+          "length" : 7
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 13
+          "start" : 142,
+          "length" : 17
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 1
         },
         {
           "activity" : "generateNarratives",
-          "start" : 161,
-          "length" : 699
+          "start" : 143,
+          "length" : 10
         },
         {
           "activity" : "validate",
-          "start" : 167,
-          "length" : 233
+          "start" : 148,
+          "length" : 364
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 195,
+          "start" : 171,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 105
+          "start" : 172,
+          "length" : 108
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 110
+          "start" : 176,
+          "length" : 127
         },
         {
           "activity" : "generate2",
-          "start" : 200,
+          "start" : 177,
           "length" : 81
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-problem-list-item.json",
-      "size" : 956,
+      "size" : 957,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 2
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 2
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 12
+          "start" : 142,
+          "length" : 15
         },
         {
           "activity" : "generateNarratives",
-          "start" : 162,
-          "length" : 699
+          "start" : 143,
+          "length" : 7
         },
         {
           "activity" : "validate",
-          "start" : 167,
-          "length" : 198
+          "start" : 148,
+          "length" : 366
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 89
+          "start" : 172,
+          "length" : 93
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 80
+          "start" : 176,
+          "length" : 106
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 63
+          "start" : 177,
+          "length" : 61
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 1
+          "start" : 188,
+          "length" : 2
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/StructureDefinition-fi-smart-server-profile.json",
-      "size" : 1889,
+      "size" : 1890,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 3
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 4
+          "start" : 142,
+          "length" : 5
         },
         {
           "activity" : "generateSnapshots",
-          "start" : 152,
-          "length" : 33
+          "start" : 142,
+          "length" : 39
         },
         {
           "activity" : "generateNarratives",
-          "start" : 163,
-          "length" : 706
+          "start" : 143,
+          "length" : 13
         },
         {
           "activity" : "validate",
-          "start" : 167,
-          "length" : 515
-        },
-        {
-          "activity" : "scanForUsageStats",
-          "start" : 195,
-          "length" : 1
+          "start" : 148,
+          "length" : 966
         },
         {
           "activity" : "generate1",
-          "start" : 196,
-          "length" : 245
+          "start" : 172,
+          "length" : 249
         },
         {
           "activity" : "generate2",
-          "start" : 199,
-          "length" : 185
+          "start" : 176,
+          "length" : 220
         },
         {
           "activity" : "generate2",
-          "start" : 201,
-          "length" : 201
+          "start" : 177,
+          "length" : 198
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
-          "length" : 5
+          "start" : 188,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 197,
+          "length" : 1
         }
       ]
     },
@@ -793,47 +823,52 @@
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 152,
-          "length" : 5
+          "start" : 142,
+          "length" : 7
         },
         {
           "activity" : "load",
-          "start" : 152,
-          "length" : 14
+          "start" : 142,
+          "length" : 12
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 143,
+          "length" : 1
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 153,
-          "length" : 4
+          "start" : 143,
+          "length" : 7
         },
         {
           "activity" : "generateNarratives",
-          "start" : 163,
-          "length" : 756
+          "start" : 143,
+          "length" : 48
         },
         {
           "activity" : "validate",
-          "start" : 168,
-          "length" : 71
+          "start" : 149,
+          "length" : 151
         },
         {
           "activity" : "generate1",
-          "start" : 196,
+          "start" : 173,
           "length" : 264
         },
         {
           "activity" : "generate2",
-          "start" : 200,
-          "length" : 25
+          "start" : 176,
+          "length" : 34
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 209,
+          "start" : 188,
           "length" : 7
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 217,
+          "start" : 197,
           "length" : 1
         }
       ]

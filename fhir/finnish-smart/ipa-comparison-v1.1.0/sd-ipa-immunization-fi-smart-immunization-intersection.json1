@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-12",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/018c9095-9018-4af1-8f93-bc833cef7afb-12",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-30",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-30",
   "name" : "IntersectionIPAImmunizationAndFiSMARTImmunization",
   "title" : "Intersection of IPA-Immunization And FI SMART Immunization",
   "status" : "active",
-  "date" : "2025-06-01T15:37:57+03:00",
+  "date" : "2025-10-26T13:25:08+02:00",
   "snapshot" : {
     "element" : [{
       "path" : "Immunization",
@@ -443,7 +443,7 @@
         "expression" : "hasValue() or (children().count() > id.count())",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "mustSupport" : true,
+      "mustSupport" : false,
       "isModifier" : false,
       "isSummary" : false,
       "binding" : {
@@ -525,7 +525,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://hl7.fi/fhir/finnish-base-profiles/StructureDefinition/fi-base-patient"]
+        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-patient",
+        "#sd-ipa-patient-fi-base-patient"]
       }],
       "constraint" : [{
         "extension" : [{

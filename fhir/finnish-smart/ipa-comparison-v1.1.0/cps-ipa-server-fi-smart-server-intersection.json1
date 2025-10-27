@@ -1,11 +1,11 @@
 {
   "resourceType" : "CapabilityStatement",
-  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-3",
-  "url" : "http://hl7.org/fhir/comparison/CapabilityStatement/018c9095-9018-4af1-8f93-bc833cef7afb-3",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-3",
+  "url" : "http://hl7.org/fhir/comparison/CapabilityStatement/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-3",
   "name" : "IntersectionInternationalPatientAccessAPIAndFiSmartServer",
   "title" : "Intersection of International Patient Access Server CapabilityStatement And Finnish SMART Server Capability Statement",
   "status" : "active",
-  "date" : "2025-06-01T15:37:56+03:00",
+  "date" : "2025-10-26T13:25:07+02:00",
   "format" : ["json",
   "xml"],
   "_format" : [{

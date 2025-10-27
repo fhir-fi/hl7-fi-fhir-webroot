@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-18",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/018c9095-9018-4af1-8f93-bc833cef7afb-18",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-36",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-36",
   "name" : "IntersectionIPAMedicationAndFiSMARTMedicationRequest",
   "title" : "Intersection of IPA-Medication And FI SMART Medication Request",
   "status" : "active",
-  "date" : "2025-06-01T15:37:57+03:00",
+  "date" : "2025-10-26T13:25:08+02:00",
   "snapshot" : {
     "element" : [{
       "path" : "Medication",

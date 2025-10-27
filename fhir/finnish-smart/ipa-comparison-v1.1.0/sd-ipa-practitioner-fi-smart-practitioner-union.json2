@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-35",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/018c9095-9018-4af1-8f93-bc833cef7afb-35",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-56",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-56",
   "name" : "UnionIPAPractitionerAndFiSMARTPractitioner",
   "title" : "Union of IPA-Practitioner And FI SMART Practitioner",
   "status" : "active",
-  "date" : "2025-06-01T15:37:57+03:00",
+  "date" : "2025-10-26T13:25:08+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -426,9 +426,9 @@
       "path" : "Practitioner.name",
       "short" : "The name(s) associated with the practitioner",
       "definition" : "The name(s) associated with the practitioner.",
-      "comment" : "In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element",
+      "comment" : "left: In some contexts, the real name of the practitioner is obscured. However this is handled, the resource must include at least some useable name for the practitioner in the name.text element; right: The selection of the use property should ensure that there is a single usual name specified, and others use the nickname (alias), old, or other values as appropriate.  \r\rIn general, select the value to be used in the ResourceReference.display based on this:\r\r1. There is more than 1 name\r2. Use = usual\r3. Period is current to the date of the usage\r4. Use = official\r5. Other order as decided by internal business rules.",
       "requirements" : "The name(s) that a Practitioner is known by. Where there are multiple, the name that the practitioner is usually known as should be used in the display.",
-      "min" : 1,
+      "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "HumanName"

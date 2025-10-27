@@ -1,11 +1,11 @@
 {
   "resourceType" : "StructureDefinition",
-  "id" : "018c9095-9018-4af1-8f93-bc833cef7afb-32",
-  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/018c9095-9018-4af1-8f93-bc833cef7afb-32",
+  "id" : "ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-50",
+  "url" : "http://hl7.org/fhir/comparison/StructureDefinition/ea2e6fdd-3aac-400d-8812-9f2ec079e4f7-50",
   "name" : "UnionIPAPractitionerRoleAndFiSMARTPractitionerRole",
   "title" : "Union of IPA-PractitionerRole And FI SMART PractitionerRole",
   "status" : "active",
-  "date" : "2025-06-01T15:37:57+03:00",
+  "date" : "2025-10-26T13:25:08+02:00",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
@@ -475,7 +475,8 @@
       "max" : "1",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner"]
+        "targetProfile" : ["http://hl7.org/fhir/uv/ipa/StructureDefinition/ipa-practitioner",
+        "#sd-ipa-practitioner-fi-base-practitioner"]
       }],
       "constraint" : [{
         "extension" : [{
